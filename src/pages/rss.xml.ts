@@ -29,17 +29,18 @@ function renderContent(digest: any): string {
 export async function GET(context: APIContext) {
   const all = await getCollection("digests");
   const sorted = all.sort((a, b) => b.data.date.localeCompare(a.data.date));
+  const base = import.meta.env.BASE_URL;
 
   return rss({
     title: "Athanor",
     description: "Distillation quotidienne de veille technique.",
-    site: context.site!,
+    site: new URL(base, context.site!).href,
     items: sorted.map((entry) => {
       const d = entry.data;
       const categoryNames = d.categories.map((c: any) => c.name);
       return {
         title: d.headline,
-        link: `/digest/${d.date}/`,
+        link: `${base}digest/${d.date}/`,
         pubDate: parseDigestDate(d.date),
         description: `${d.window.count} · ${categoryNames.join(" · ")}`,
         content: renderContent(d),

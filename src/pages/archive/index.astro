@@ -5,6 +5,7 @@ import { formatDateLong } from "../../utils/format";
 
 const all = await getCollection("digests");
 const sorted = all.sort((a, b) => b.data.date.localeCompare(a.data.date));
+const base = import.meta.env.BASE_URL;
 
 const totalSources = sorted.reduce((acc, e) => {
   return acc + e.data.categories.reduce(
@@ -21,7 +22,7 @@ const totalSources = sorted.reduce((acc, e) => {
         <li>
           <div class="date">{formatDateLong(entry.data.date)}</div>
           <div class="title">
-            <a href={`/digest/${entry.data.date}/`}>{entry.data.headline}</a>
+            <a href={`${base}digest/${entry.data.date}/`}>{entry.data.headline}</a>
           </div>
           <div class="count">{entry.data.window.count}</div>
         </li>

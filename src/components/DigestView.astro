@@ -1,0 +1,24 @@
+---
+import Masthead from "./Masthead.astro";
+import Category from "./Category.astro";
+import CategoryNav from "./CategoryNav.astro";
+import Appendix from "./Appendix.astro";
+import ArchiveStrip from "./ArchiveStrip.astro";
+
+interface ArchiveEntry { date: string; headline: string }
+
+interface Props {
+  digest: any;
+  archive: ArchiveEntry[];
+}
+
+const { digest, archive } = Astro.props;
+
+const navCategories = digest.categories.map((c: any) => ({ slug: c.slug, name: c.name }));
+---
+<Masthead headline={digest.headline} />
+{digest.alert && <div class="alert" set:html={digest.alert} />}
+<ArchiveStrip entries={archive} currentDate={digest.date} />
+<CategoryNav categories={navCategories} />
+{digest.categories.map((cat: any) => <Category {...cat} />)}
+<Appendix items={digest.appendix ?? []} />

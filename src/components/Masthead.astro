@@ -1,0 +1,10 @@
+---
+interface Props {
+  headline: string;
+}
+
+const { headline } = Astro.props;
+---
+<header class="masthead">
+  <h1>{headline}</h1>
+</header>

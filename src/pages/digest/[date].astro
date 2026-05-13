@@ -20,7 +20,8 @@ export async function getStaticPaths() {
 
 const { digest, archive } = Astro.props;
 const pageTitle = digest.title_tag || `Athanor — ${formatDateLong(digest.date)}`;
+const ogDescription = `${digest.window.count} · ${digest.categories.map((c: any) => c.name).join(" · ")}`;
 ---
-<BaseLayout title={pageTitle} description={digest.headline} footer={digest.footer} date={digest.date} ogType="article">
+<BaseLayout title={pageTitle} description={digest.headline} footer={digest.footer} date={digest.date} ogType="article" ogTitle={digest.headline} ogDescription={ogDescription}>
   <DigestView digest={digest} archive={archive} />
 </BaseLayout>

@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { formatDateLong } from "../../utils/format";
+
+const all = await getCollection("digests");
+const sorted = all.sort((a, b) => b.data.date.localeCompare(a.data.date));
+
+const totalSources = sorted.reduce((acc, e) => {
+  return acc + e.data.categories.reduce(
+    (n, c) => n + c.topics.reduce((m, t) => m + t.sources.length, 0),
+    0,
+  );
+}, 0);
+---
+<BaseLayout title="Archive — Athanor" description="Tous les digests publiés.">
+  <div class="archive-page">
+    <h1>Archive</h1>
+    <ul class="archive-grid">
+      {sorted.map((entry) => (
+        <li>
+          <div class="date">{formatDateLong(entry.data.date)}</div>
+          <div class="title">
+            <a href={`/digest/${entry.data.date}/`}>{entry.data.headline}</a>
+          </div>
+          <div class="count">{entry.data.window.count}</div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>

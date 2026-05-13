@@ -1,0 +1,25 @@
+---
+import SourceCard from "./SourceCard.astro";
+
+interface Source {
+  feed: string;
+  date: string;
+  url: string;
+  title: string;
+}
+
+interface Props {
+  title: string;
+  lede_html: string;
+  sources: Source[];
+}
+
+const { title, lede_html, sources } = Astro.props;
+---
+<section class="topic">
+  <h3>{title}</h3>
+  <p class="lede" set:html={lede_html}></p>
+  <ul class="sources">
+    {sources.map((s) => <SourceCard {...s} />)}
+  </ul>
+</section>

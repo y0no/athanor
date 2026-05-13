@@ -1,0 +1,547 @@
+[
+  {
+    "date": "2026-05-13",
+    "title_tag": "Athanor — 13 mai 2026",
+    "headline": "Patch Tuesday record et vulnérabilités critiques à chainer",
+    "window": {
+      "from": "12 mai 2026 13:08 UTC",
+      "to": "13 mai 2026 12:54 UTC",
+      "count": "147 articles"
+    },
+    "alert": "",
+    "categories": [
+      {
+        "slug": "ia",
+        "name": "IA",
+        "tagline": "AGENTS, DISTILLATION ET MONÉTISATION : L'IA SORT DE SA PHASE EXPÉRIMENTALE",
+        "topics": [
+          {
+            "title": "Agents IA : fiabilité, interfaces et nouveaux paradigmes",
+            "lede_html": "Alors que les agents IA s'invitent partout, trois projets illustrent des réponses opposées au même problème : rendre l'action prévisible. <strong>Statewright</strong> impose des <em>machines à états visuelles</em> comme garde-fous déterministes pour encadrer les agents, quand <strong>Hopper</strong> (Hypercubic) plonge dans l'opacité du <em>mainframe</em> en pilotant <code>TN3270</code>, <code>JCL</code> et <code>VSAM</code> via un environnement agentique dédié. De son côté, <strong>Google DeepMind</strong> réinvente le pointeur de souris avec <em>Magic Pointer</em>, où <strong>Gemini</strong> comprend le contexte visuel de l'élément survolé pour exécuter l'action demandée — posant la question : faut-il <em>contraindre</em> l'agent ou <em>lui donner plus de contexte</em> ?",
+            "sources": [
+              {
+                "feed": "Hacker News",
+                "date": "12/05 16:24",
+                "url": "https://github.com/statewright/statewright",
+                "title": "Show HN: Statewright – Visual state machines that make AI agents reliable"
+              },
+              {
+                "feed": "Korben",
+                "date": "13/05 13:18",
+                "url": "https://korben.info/magic-pointer-le-pointeur-de-souris-pense-par-google-deepmind.html",
+                "title": "Magic Pointer, le pointeur de souris pensé par Google DeepMind"
+              },
+              {
+                "feed": "Hacker News",
+                "date": "12/05 19:40",
+                "url": "https://deepmind.google/blog/ai-pointer/",
+                "title": "Reimagining the mouse pointer for the AI era"
+              },
+              {
+                "feed": "Hacker News",
+                "date": "12/05 19:10",
+                "url": "https://www.hypercubic.ai/hopper",
+                "title": "Show HN: Agentic interface for mainframes and COBOL"
+              },
+              {
+                "feed": "Journal du hacker",
+                "date": "12/05 15:23",
+                "url": "https://www.youtube.com/watch?v=Vlr-d0WODyg",
+                "title": "IA Agentique : et si on arrêtait de relire le code ?"
+              }
+            ]
+          },
+          {
+            "title": "Distillation et efficacité des modèles",
+            "lede_html": "Alors que <strong>Needle</strong> distille les capacités de <em>tool calling</em> de <strong>Gemini</strong> en un modèle de seulement <strong>26M</strong> paramètres conçu pour tourner sur des appareils minuscules, le papier <em>Beyond Semantic Similarity</em> propose d'abandonner les index vectoriels au profit d'une <em>interaction directe avec le corpus</em> via des outils shell génériques — <code>grep</code>, lectures de fichiers, scripts légers — et montre que cette approche surpasse les retrieveurs denses et sparse sur BRIGHT, BEIR et BrowseComp-Plus. Ces deux travaux convergent: <strong>la puissance brute cède du terrain</strong> à des interfaces plus résolues et des architectures plus ingénieuses, que ce soit en compression de modèle ou en conception du pipeline de recherche.",
+            "sources": [
+              {
+                "feed": "Hacker News",
+                "date": "12/05 20:03",
+                "url": "https://github.com/cactus-compute/needle",
+                "title": "Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model"
+              },
+              {
+                "feed": "Hacker News",
+                "date": "12/05 21:51",
+                "url": "https://arxiv.org/abs/2605.05242",
+                "title": "Beyond Semantic Similarity"
+              }
+            ]
+          },
+          {
+            "title": "Monétisation et souveraineté : l'IA entre en phase industrielle",
+            "lede_html": "Alors que <strong>ChatGPT</strong> déploie une boucle d'attribution publicitaire complète — cookies de pistage et profilage annonceur inclus —, <strong>AWS</strong> formalise son offre de <em>souveraineté IA</em> en promettant contrôle des données, résidence et indépendance opérationnelle sur l'ensemble de la pile. En parallèle, la startup française <strong>White Circle</strong> lève <strong>11 M$</strong> pour sa plateforme de contrôle du comportement des modèles, ciblant <em>hallucinations</em>, <em>prompt injection</em> et fuites de données sensibles : l'IA entre dans une phase où <em>monétisation</em> et <em>conformité</em> se structurent aussi vite que la technologie.",
+            "sources": [
+              {
+                "feed": "Liens en vrac de sebsauvage",
+                "date": "13/05 08:16",
+                "url": "https://www.buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop/",
+                "title": "How ChatGPT serves ads. Here's the full attribution loop."
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 17:18",
+                "url": "https://aws.amazon.com/blogs/security/enabling-ai-sovereignty-on-aws/",
+                "title": "Enabling AI sovereignty on AWS [cloud]"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 17:40",
+                "url": "https://www.securityweek.com/white-circle-raises-11-million-for-ai-control-platform/",
+                "title": "White Circle Raises $11 Million for AI Control Platform [app]"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "infosec",
+        "name": "Infosec",
+        "tagline": "CYBERATTACKES MASSIVES, PATCH TUESDAY RECORD ET SUPPLY CHAIN EN TENSION",
+        "topics": [
+          {
+            "title": "Patch Tuesday record et vulnérabilités critiques à chainer",
+            "lede_html": "Le <strong>Patch Tuesday de mai 2026</strong> établit un nouveau record avec <strong>137 à 138 CVE</strong> corrigées chez Microsoft — dont une trentaine critiques — mais <em>aucun zero‑day activement exploité</em>, une première depuis près de deux ans. Hors Redmond, le paysage se tend : <strong>CVE‑2026‑45185</strong> (« Dead.Letter ») offre une RCE non authentifiée sur <code>Exim</code> via un <em>use‑after‑free TLS</em> touchant les builds GnuTLS, tandis que <strong>CVE‑2026‑41940</strong> permet à l'acteur <strong>Mr_Rot13</strong> de déployer des backdoors sur <strong>cPanel</strong> à grande échelle — deux chaînes d'exploitation qui rendent ce mois particulièrement propice au <em>chaining</em>.",
+            "sources": [
+              {
+                "feed": "The Hacker News",
+                "date": "13/05 12:36",
+                "url": "https://thehackernews.com/2026/05/microsoft-patches-138-vulnerabilities.html",
+                "title": "Microsoft Patches 138 Vulnerabilities, Including DNS and Netlogon RCE Flaws"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 23:46",
+                "url": "https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/",
+                "title": "Patch Tuesday, May 2026 Edition [app]"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 23:03",
+                "url": "https://www.darkreading.com/application-security/patch-tuesday-microsoft-zero-day-sight",
+                "title": "It's Patch Tuesday for Microsoft and Not a Zero-Day In Sight"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 21:57",
+                "url": "https://blog.talosintelligence.com/microsoft-patch-tuesday-may-2026/",
+                "title": "Microsoft Patch Tuesday for May 2026 — Snort rules and prominent vulnerabilities [sys]"
+              },
+              {
+                "feed": "Qualys Blog",
+                "date": "12/05 21:50",
+                "url": "https://blog.qualys.com/vulnerabilities-threat-research/2026/05/12/microsoft-patch-tuesday-may-2026-security-update-review",
+                "title": "Microsoft and Adobe Patch Tuesday, May 2026 Security Update Review"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 20:42",
+                "url": "https://www.zerodayinitiative.com/blog/2026/5/12/the-may-2026-security-update-review",
+                "title": "Zero Day Initiative — The May 2026 Security Update Review [app]"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 20:07",
+                "url": "https://www.securityweek.com/microsoft-patches-137-vulnerabilities/",
+                "title": "Microsoft Patches 137 Vulnerabilities [app]"
+              },
+              {
+                "feed": "The Hacker News",
+                "date": "12/05 18:44",
+                "url": "https://thehackernews.com/2026/05/new-exim-bdat-vulnerability-exposes.html",
+                "title": "New Exim BDAT Vulnerability Exposes GnuTLS Builds to Potential Code Execution"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 18:58",
+                "url": "https://www.scworld.com/brief/threat-actor-mrrot13-exploits-critical-cpanel-flaw-to-deploy-filemanager-backdoor",
+                "title": "Threat actor Mr_Rot13 exploits critical cPanel flaw to deploy Filemanager backdoor [app] [exp] [net] [mal]"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 19:41",
+                "url": "https://xbow.com/blog/dead-letter-cve-2026-45185-xbow-found-rce-exim",
+                "title": "XBOW - Dead.Letter (CVE-2026-45185) How XBOW found an unauthenticated RCE on Exim [app] [exp]"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 21:40",
+                "url": "https://www.hacktron.ai/blog/rce-in-vscode-copilot",
+                "title": "RCE in VSCode Copilot Chat [app] [exp]"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 20:33",
+                "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40361",
+                "title": "CVE-2026-40361 - Security Update Guide - Microsoft - Microsoft Word Remote Code Execution Vulnerability [app] [exp]"
+              }
+            ]
+          },
+          {
+            "title": "Ransomware et sabotage : la vague d'attaques contre infrastructures et industriels",
+            "lede_html": "De <strong>Foxconn</strong> à <strong>West Pharmaceutical</strong>, les rançongiciels saturent l'actualité : <strong>Nitrogen</strong> revendique le vol de <strong>8 To</strong> de données industrielles chez le sous-traitant, tandis que <strong>Cl0p</strong> est resté <em>invisible près de deux ans</em> dans les systèmes d'une compagnie des eaux britannique, exposant plus de <strong>600 000</strong> clients. À cela s'ajoute un sabotage interne — un administrateur licencié détruisant <strong>96 bases</strong> gouvernementales — et la rançon payée par <strong>Instructure</strong> aux <strong>ShinyHunters</strong>, confirmant que <em>la destruction et l'extorsion</em> frappent désormais sans distinction de secteur.",
+            "sources": [
+              {
+                "feed": "ZATAZ News",
+                "date": "13/05 13:13",
+                "url": "https://www.zataz.com/pour-se-venger-il-supprime-96-bases-de-donnees-gouvernementales/",
+                "title": "Par vengeance, il supprime 96 bases de données gouvernementales."
+              },
+              {
+                "feed": "ZATAZ News",
+                "date": "13/05 12:59",
+                "url": "https://www.zataz.com/hackers-cache-pendant-deux-ans-dans-une-societe/",
+                "title": "Hacker caché pendant deux ans dans une société"
+              },
+              {
+                "feed": "ZATAZ News",
+                "date": "13/05 12:34",
+                "url": "https://www.zataz.com/instructure-paie-les-pirates-apres-lattaque-de-canvas/",
+                "title": "Instructure paie les pirates après l'attaque de Canvas !"
+              },
+              {
+                "feed": "ZATAZ News",
+                "date": "13/05 11:52",
+                "url": "https://www.zataz.com/west-pharmaceutical-frappe-par-un-rancongiciel/",
+                "title": "West Pharmaceutical frappé par un rançongiciel"
+              },
+              {
+                "feed": "ZATAZ News",
+                "date": "13/05 11:39",
+                "url": "https://www.zataz.com/foxconn-relance-ses-usines-apres-une-cyberattaque/",
+                "title": "Foxconn relance ses usines après une cyberattaque"
+              },
+              {
+                "feed": "Korben",
+                "date": "13/05 09:56",
+                "url": "https://korben.info/8-to-de-donnees-de-foxconn-volees.html",
+                "title": "8 To de données de Foxconn volées"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 15:08",
+                "url": "https://www.securityweek.com/west-pharmaceutical-services-hit-by-disruptive-ransomware-attack/",
+                "title": "West Pharmaceutical Services Hit by Disruptive Ransomware Attack [mal]"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 15:08",
+                "url": "https://therecord.media/uk-water-company-had-hackers-lurking-for-years",
+                "title": "UK water company allowed hackers to lurk undetected for nearly two years, regulator finds [ics] [net]"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 16:36",
+                "url": "https://www.securityweek.com/free-onlyfans-lure-used-to-spread-cross-platform-crpx0-malware/",
+                "title": "Free OnlyFans Lure Used to Spread Cross-Platform CRPx0 Malware [social] [mal]"
+              }
+            ]
+          },
+          {
+            "title": "Supply chain et écosystème open-source sous pression",
+            "lede_html": "La campagne <strong>GemStuffer</strong> a inondé <strong>RubyGems</strong> de plus de 150 gems détournés comme canal d'exfiltration de données, poussant le registre à suspendre les inscriptions — une mesure <em>exceptionnelle</em> face à une attaque massive de la chaîne d'approvisionnement Ruby. Parallèlement, <strong>Hugging Face</strong> voit ses modèles locaux weaponisés via une simple modification du fichier <code>tokenizer.json</code>, permettant interception MitM, fuite d'URL et d'identifiants à travers les formats <code>SafeTensors</code>, <code>ONNX</code> et <code>GGUF</code>. Ces incidents confirment que les dépendances open-source et les tiers de confiance sont devenus le <em>nouveau terrain de manœuvre</em> des attaquants, bien au-delà des vulnérabilités zero-day.",
+            "sources": [
+              {
+                "feed": "The Hacker News",
+                "date": "13/05 10:08",
+                "url": "https://thehackernews.com/2026/05/gemstuffer-abuses-150-rubygems-to.html",
+                "title": "GemStuffer Abuses 150+ RubyGems to Exfiltrate Scraped U.K. Council Portal Data"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 19:40",
+                "url": "https://thehackernews.com/2026/05/rubygems-suspends-new-signups-after.html",
+                "title": "RubyGems Suspends New Signups After Hundreds of Malicious Packages Are Uploaded [app] [mal]"
+              },
+              {
+                "feed": "The Hacker News",
+                "date": "12/05 16:47",
+                "url": "https://thehackernews.com/2026/05/rubygems-suspends-new-signups-after.html",
+                "title": "RubyGems Suspends New Signups After Hundreds of Malicious Packages Are Uploaded"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 16:00",
+                "url": "https://www.darkreading.com/cloud-security/hugging-face-packages-weaponized-single-file-tweak",
+                "title": "Hugging Face Packages Weaponized With a Single File Tweak [app]"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 17:00",
+                "url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/undermining-the-trust-boundary-investigating-a-stealthy-intrusion-through-third-party-compromise/",
+                "title": "Undermining the trust boundary: Investigating a stealthy intrusion through third-party compromise [exp]"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 16:54",
+                "url": "https://hackerone.com/reports/3577145",
+                "title": "AWS VDP disclosed on HackerOne: QuickSight Authorization Bypass:... [app] [cloud]"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 15:08",
+                "url": "https://www.securityweek.com/apple-patches-dozens-of-vulnerabilities-in-macos-ios/",
+                "title": "Apple Patches Dozens of Vulnerabilities in macOS, iOS [app] [exp] [sys]"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "devops",
+        "name": "DevOps",
+        "tagline": "INFRASTRUCTURE, CLOUD ET OUTILS DU QUOTIDIEN",
+        "topics": [
+          {
+            "title": "Kubernetes et écosystème conteneurisé : nouveaux outils et gestion de plugins",
+            "lede_html": "L'écosystème Kubernetes se densifie sur deux fronts : côté infrastructure, <strong>Clever Cloud</strong> lance <strong>CKE</strong>, un Kubernetes managé <em>vanilla sans lock-in</em> reposant sur <code>Materia etcd</code> (serverless sur FoundationDB) et <code>Cilium</code>/eBPF natif ; côté outillage, l'approche déclarative gagne du terrain avec <strong>Mise+Krew</strong>, qui comble l'absence de versionnement des plugins <code>kubectl</code> en centralisant leur déclaration dans un <code>.mise.toml</code> reproductible en équipe.",
+            "sources": [
+              {
+                "feed": "Journal du hacker",
+                "date": "12/05 20:09",
+                "url": "https://blog.zwindler.fr/2026/05/12/test-cke-kubernetes-manage-clever-cloud-partie-1/",
+                "title": "Test de CKE, le Kubernetes managé chez Clever Cloud (partie 1)"
+              },
+              {
+                "feed": "Journal du hacker",
+                "date": "12/05 19:09",
+                "url": "https://une-tasse-de.cafe/expresso/mise-krew/",
+                "title": "Mise + Krew : vos plugins kubectl en mode déclaratif"
+              }
+            ]
+          },
+          {
+            "title": "Stockage et systèmes de fichiers : OpenZFS rattrape Linux 7.0",
+            "lede_html": "<strong>OpenZFS 2.4.2</strong> comble le retard de compatibilité avec le noyau <strong>Linux 7.0</strong>, là où la version 2.4.1 plafonnait à <strong>Linux 6.19</strong> et bloquait les admins ayant mis à jour leur distribution. Cette release corrige aussi <code>initramfs</code> et ajoute le support de <code>POSIX_FADV_DONTNEED</code> pour libérer de la RAM, tout en conservant une compatibilité <em>remontant</em> jusqu'à Linux 4.18 et FreeBSD 13.3+.",
+            "sources": [
+              {
+                "feed": "Korben",
+                "date": "13/05 14:15",
+                "url": "https://korben.info/openzfs-2-4-2-sort-avec-le-support-du-noyau-linux-7-0.html",
+                "title": "OpenZFS 2.4.2 sort avec le support du noyau Linux 7.0"
+              }
+            ]
+          },
+          {
+            "title": "Sécurité cloud : entre fausses alertes et scan de code à grande échelle",
+            "lede_html": "Alors que les outils AppSec traditionnels noient les équipes sous des milliers d'alertes <em>« toast »</em> sans distinguer les chemins d'attaque réels, <strong>AWS</strong> lance en preview le <em>full repository code review</em> de son <strong>Security Agent</strong>, un scanneur contextuel qui modélise l'architecture, les frontières de confiance et les flux de données de tout un dépôt pour remonter des failles systémiques que le <em>pattern-matching</em> ignore. Le webinaire Wiz/Okta/GitLab dénonce le même problème depuis l'autre bord : la plupart des outils ratent la <em>« Lethal Chain »</em>, cette chaîne d'exploitation où des micro-failles isolées se combinent en un chemin critique vers les données — un signal faible que le bruit des alertes masque.",
+            "sources": [
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 23:34",
+                "url": "https://aws.amazon.com/blogs/security/aws-security-agent-full-repository-code-scanning-feature-now-available-in-preview/",
+                "title": "AWS Security Agent full repository code scanning feature now available in preview [app] [cloud]"
+              },
+              {
+                "feed": "The Hacker News",
+                "date": "13/05 13:52",
+                "url": "https://thehackernews.com/2026/05/webinar-why-your-appsec-tools-miss.html",
+                "title": "[Webinar] Why Your AppSec Tools Miss the \"Lethal Path\" (and How to Fix It)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "diy",
+        "name": "DIY",
+        "tagline": "BIDOUILLES, RÉPARATIONS ET MACHINES IMPOSSIBLES",
+        "topics": [
+          {
+            "title": "L'IA et le rétrocomputing : quand les LLM s'invitent sur du matériel obsolète",
+            "lede_html": "En convertissant <strong>TinyStories-260K</strong> en nombres entiers pour contourner l'absence de calculs flottants du processeur <em>8 bits</em> de 1998, Maddie Dreese fait générer des histoires sur <strong>Game Boy Color</strong> — à raison d'environ <strong>0,01 token/s</strong> et un contexte plafonné à 16 mots. À l'inverse, <strong>Baltazar Studios</strong> choisit la voie hardware en gravant un <code>CPU</code> maison à jeu d'instructions 12 bits sur <code>FPGA</code>, optimisé en <em>nibbles 4 bits</em> pour le décimal codé binaire, pour alimenter une calculatrice scientifique imprimée en 3D — prouvant que l'innovation low-tech peut aussi passer par la conception de son propre silicium.",
+            "sources": [
+              {
+                "feed": "Korben",
+                "date": "13/05 09:44",
+                "url": "https://korben.info/transformer-game-boy-color.html",
+                "title": "TinyStories sur Game Boy Color - Le LLM le plus lent du monde"
+              },
+              {
+                "feed": "Hack a Day",
+                "date": "13/05 10:00",
+                "url": "https://hackaday.com/2026/05/13/build-the-cpu-then-build-the-calculator/",
+                "title": "Build The CPU, Then Build The Calculator"
+              }
+            ]
+          },
+          {
+            "title": "La réparation board-level face à l'obsolescence programmée",
+            "lede_html": "En tentant de ressusciter une <strong>GoPro Hero 10</strong> achetée 100 dollars pour une erreur <code>no camera input</code>, <strong>Hugh Jeffreys</strong> illustre les impasses de la réparation board‑level : écran collé, absence de schémas, et un module caméra de remplacement qui ne change rien — le problème se loge quelque part sur la carte mère, sans <em>indice visible</em>. Ironie du démontage, la seconde GoPro rachetée 40 dollars pour pièces, <em>supposée morte</em> après un dégât d'eau, repart après un simple nettoyage de PCB, laissant la première caméra toujours condamnée par un défaut que ni reset ni firmware ne résolvent.",
+            "sources": [
+              {
+                "feed": "Korben",
+                "date": "13/05 13:45",
+                "url": "https://korben.info/il-essaye-de-reparer-une-gopro-hero-10-et-cest-lenfer.html",
+                "title": "Il essaye de réparer une GoPro Hero 10, et c'est l'enfer"
+              },
+              {
+                "feed": "Hack a Day",
+                "date": "13/05 01:00",
+                "url": "https://hackaday.com/2026/05/12/trying-to-fix-a-gopro-hero-10-with-no-camera-input-issue/",
+                "title": "Trying to Fix a GoPro Hero 10 With No Camera Input Issue"
+              }
+            ]
+          },
+          {
+            "title": "Cyberdecks et machines impossibles : le DIY à l'extrême",
+            "lede_html": "Du <strong>Pi Zero</strong> logé dans une boîte d'<strong>Altoids</strong> au <strong>PinkPad</strong> ressuscité depuis un jouet <strong>VTech</strong>, la scène cyberdeck prouve qu'un portable Linux tient dans n'importe quel boîtier — pourvu qu'on accepte de <em>bricoler les charnières</em> et de compiler le pilote <code>SPI</code> qui va bien. À côté, un <strong>Youtuber britannique</strong> fait tourner <strong>Minecraft</strong> sur un téléviseur mécanique à disque de <strong>Nipkow</strong> de 32 lignes, tandis que <strong>UnDUNE II</strong> compresse l'intégralité du RTS fondateur de <strong>Westwood</strong> en 128×128 pixels et 384 Ko via la <em>fantasy console</em> <code>PICO-8</code> — prouvant que la contrainte matérielle reste le meilleur moteur de l'ingéniosité.",
+            "sources": [
+              {
+                "feed": "Hack a Day",
+                "date": "12/05 20:30",
+                "url": "https://hackaday.com/2026/05/12/a-cyberdeck-that-runs-linux-in-an-altoids-tin/",
+                "title": "A Cyberdeck That Runs Linux…in an Altoids Tin"
+              },
+              {
+                "feed": "Hack a Day",
+                "date": "12/05 22:00",
+                "url": "https://hackaday.com/2026/05/12/crts-are-too-mainstream-so-game-on-a-mechanical-tv-instead/",
+                "title": "CRTs Are Too Mainstream, So Game on a Mechanical TV Instead"
+              },
+              {
+                "feed": "Hack a Day",
+                "date": "13/05 13:00",
+                "url": "https://hackaday.com/2026/05/13/vtech-toy-becomes-pinkpad-the-diy-linux-laptop/",
+                "title": "VTech Toy Becomes PinkPad, the DIY Linux Laptop"
+              },
+              {
+                "feed": "Korben",
+                "date": "13/05 07:57",
+                "url": "https://korben.info/undune2-demake-dune-ii-pico-8.html",
+                "title": "UnDUNE II - Dune II en entier dans 12 cartouches PICO-8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "societe",
+        "name": "Société & régulation",
+        "tagline": "TECHNOLOGIE, POUVOIR ET FRACTURES SOCIALES",
+        "topics": [
+          {
+            "title": "Surveillance numérique : les frontières du contrôle",
+            "lede_html": "De la frontière américaine au Canada, les gouvernements étendent leurs prérogatives de surveillance électronique, suscitant une résistance juridique croissante de la part des défenseurs des libertés numériques.",
+            "sources": [
+              {
+                "feed": "Hacker News",
+                "date": "12/05 21:48",
+                "url": "https://www.eff.org/deeplinks/2026/05/eff-fourth-circuit-electronic-device-searches-border-require-warrant",
+                "title": "EFF to 4th Circuit: Electronic Device Searches at the Border Require a Warrant"
+              },
+              {
+                "feed": "Hacker News",
+                "date": "12/05 17:35",
+                "url": "https://www.eff.org/deeplinks/2026/05/canadas-bill-c-22-repackaged-version-last-years-surveillance-nightmare",
+                "title": "Canada's Bill C-22 Is a Repackaged Version of Last Year's Surveillance Nightmare"
+              }
+            ]
+          },
+          {
+            "title": "IA au travail : productivité forcée et crise de l'expertise",
+            "lede_html": "Entre <strong>Amazon</strong>, où des développeurs gonflent artificiellement leur consommation de tokens via <code>MeshClaw</code> pour satisfaire des objectifs d'adoption de l'IA, et <strong>OCTO</strong>, qui voit dans la simulation algorithmique un <em>syndrome de l'imposteur augmenté</em> érodant la confiance en l'expertise humaine, se dessine une crise de la compétence : la pression managériale transforme l'outil d'assistance en instrument de conformité, tandis que <strong>GitLab</strong> justifie ses licenciements par une restructuration centrée sur le développement <em>AI-driven</em>, achevant de subordonner l'humain à la métrique.",
+            "sources": [
+              {
+                "feed": "OCTO Talks !",
+                "date": "13/05 14:54",
+                "url": "https://blog.octo.com/l-ia-ou-le-syndrome-de-l-imposteur-augmente",
+                "title": "L'IA ou le syndrome de l'Imposteur Augmenté"
+              },
+              {
+                "feed": "Hacker News",
+                "date": "12/05 18:29",
+                "url": "https://arstechnica.com/ai/2026/05/amazon-employees-are-tokenmaxxing-due-to-pressure-to-use-ai-tools/",
+                "title": "Amazon employees are tokenmaxxing due to pressure to use AI tools"
+              },
+              {
+                "feed": "Talkback Home",
+                "date": "12/05 15:17",
+                "url": "https://www.businessinsider.com/gitlab-layoffs-memo-2026-5",
+                "title": "GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring openly."
+              }
+            ]
+          },
+          {
+            "title": "Démocratie numérique : archives, médias et choix de société",
+            "lede_html": "Alors que les <strong>aides publiques aux entreprises</strong> croissent plus vite que les <strong>aides sociales</strong>, la mémoire collective du journalisme se délite : depuis février, le <strong>New York Times</strong> a exigé que la <code>Wayback Machine</code> cesse d'archiver ses articles, suivi par <strong>USA Today</strong> et <strong>The Atlantic</strong>, au motif <em>hypothétique</em> d'un risque lié à l'IA. Face à ce double mouvement — <em>privilégier le capital au social</em> et <em>verrouiller l'archive au nom de la propriété</em> — des initiatives comme <strong>Link-ed.info</strong> tentent de soutenir des médias indépendants qui, eux, œuvrent pour que l'information reste accessible et traçable.",
+            "sources": [
+              {
+                "feed": "Liens en vrac de sebsauvage",
+                "date": "13/05 08:21",
+                "url": "https://blogs.mediapart.fr/maxime-combes/blog/100725/les-aides-publiques-aux-entreprises-augmentent-plus-vite-que-les-aides-sociales-1",
+                "title": "Les aides publiques aux entreprises augmentent plus vite que les aides sociales | Le Club"
+              },
+              {
+                "feed": "Liens en vrac de sebsauvage",
+                "date": "13/05 10:45",
+                "url": "https://reflets.info/articles/link-ed-info-un-outil-pour-les-lier-tous",
+                "title": "Link-ed.info : un outil pour les lier tous | Reflets.info"
+              },
+              {
+                "feed": "Hacker News",
+                "date": "13/05 01:11",
+                "url": "https://www.savethearchive.com/newsleaders/",
+                "title": "Tell NYT, Atlantic, USA Today to keep Wayback Machine"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "appendix": [
+      {
+        "url": "https://www.ycombinator.com/companies/substrate/jobs/T2fMBhD-technical-success-manager",
+        "title": "Substrate (YC S24) Is Hiring a Technical Success Manager",
+        "note": ""
+      },
+      {
+        "url": "https://monokai.com/articles/how-i-moved-my-digital-stack-to-europe/",
+        "title": "I Moved My Digital Stack to Europe",
+        "note": ""
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=_suhY9QNJHQ",
+        "title": "Veille techno : ma méthode sans algo pour rester à jour",
+        "note": ""
+      },
+      {
+        "url": "https://www.gamingonlinux.com/2026/05/if-you-drop-or-throw-your-new-steam-controller-it-will-scream-at-you/",
+        "title": "If you drop (or throw) your new Steam Controller it will scream at you | GamingOnLinux",
+        "note": ""
+      },
+      {
+        "url": "https://www.thestandard.com.hk/world/article/331886/I-applied-to-be-pope-Losing-grip-on-reality-while-using-ChatGPT",
+        "title": "I applied to be pope",
+        "note": ""
+      },
+      {
+        "url": "https://developpeurs-anonymes.fr/posts/claude-code-mon-geolier-tres-competent/",
+        "title": "Claude Code, mon geôlier très compétent",
+        "note": ""
+      },
+      {
+        "url": "https://hackaday.com/2026/05/12/the-truth-about-the-hindenberg/",
+        "title": "The Truth about the Hindenberg",
+        "note": ""
+      },
+      {
+        "url": "https://www.spacex.com/updates",
+        "title": "Starship V3",
+        "note": ""
+      },
+      {
+        "url": "https://www.bbc.com/culture/article/20260511-kraftwerks-radical-1976-track-radioactivity-became-an-anti-nuclear-anthem",
+        "title": "Kraftwerk's radical 1976 track",
+        "note": ""
+      },
+      {
+        "url": "https://typesetinthefuture.com/2016/02/18/futuristic/",
+        "title": "How to make your text look futuristic (2016)",
+        "note": ""
+      }
+    ],
+    "footer": "Ether-News - 147 articles agrégés"
+  }
+]

@@ -1,0 +1,64 @@
+---
+import "../styles/global.css";
+import { formatDateLong } from "../utils/format";
+import Icon from "../components/Icon.astro";
+
+interface Props {
+    title: string;
+    description?: string;
+    footer?: string;
+    date?: string;
+}
+
+const {
+    title,
+    description = "Athanor — distillation quotidienne de veille technique.",
+    footer,
+    date,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content={description} />
+        <link rel="alternate" type="application/rss+xml" title="Athanor" href="/rss.xml" />
+        <title>{title}</title>
+    </head>
+    <body>
+        <div class="wrap">
+            <nav class="site-nav">
+                <div class="brand-wrap">
+                    <a href="/" class="brand">Athanor</a>
+                    {
+                        date && (
+                            <span class="brand-date">
+                                · {formatDateLong(date)}
+                            </span>
+                        )
+                    }
+                </div>
+                <div class="links">
+                    <a href="/">
+                        <Icon name="flame" />
+                        <span>Dernier</span>
+                    </a>
+                    <a href="/archive/">
+                        <Icon name="archive" />
+                        <span>Archive</span>
+                    </a>
+                    <a href="/rss.xml">
+                        <Icon name="rss" />
+                        <span>RSS</span>
+                    </a>
+                </div>
+            </nav>
+            <slot />
+            <footer class="site-footer">
+                Athanor is made with ♥️ by <a href="https://y0no.fr">y0no</a>
+            </footer>
+        </div>
+    </body>
+</html>

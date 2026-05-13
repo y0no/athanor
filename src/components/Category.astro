@@ -1,0 +1,30 @@
+---
+import Topic from "./Topic.astro";
+import { categoryAccent } from "../utils/colors";
+
+interface TopicData {
+  title: string;
+  lede_html: string;
+  sources: { feed: string; date: string; url: string; title: string }[];
+}
+
+interface Props {
+  slug: string;
+  name: string;
+  tagline?: string;
+  topics: TopicData[];
+}
+
+const { slug, name, tagline, topics } = Astro.props;
+const accent = categoryAccent(slug);
+---
+<section
+  class="category"
+  id={`cat-${slug}`}
+  data-cat={slug}
+  style={`--cat-accent: ${accent}`}
+>
+  <h2 class="category-title">{name}</h2>
+  {tagline && <p class="category-tagline">{tagline}</p>}
+  {topics.map((t) => <Topic {...t} />)}
+</section>

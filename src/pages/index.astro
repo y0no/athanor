@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import DigestView from "../components/DigestView.astro";
+import { formatDateLong } from "../utils/format";
+
+const all = await getCollection("digests");
+const sorted = all.sort((a, b) => b.data.date.localeCompare(a.data.date));
+
+if (sorted.length === 0) {
+  throw new Error("No digests found in src/content/digests/");
+}
+
+const latest = sorted[0].data;
+const archive = sorted.slice(0, 30).map((e) => ({
+  date: e.data.date,
+  headline: e.data.headline,
+}));
+
+const pageTitle = latest.title_tag || `Athanor — ${formatDateLong(latest.date)}`;
+---
+<BaseLayout title={pageTitle} description={latest.headline} footer={latest.footer} date={latest.date}>
+  <DigestView digest={latest} archive={archive} />
+</BaseLayout>

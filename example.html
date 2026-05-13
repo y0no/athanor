@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digest tech-watch — 13 mai 2026</title>
+<style>
+  :root {
+    --bg: #0f1419;
+    --bg-card: #1a212b;
+    --bg-card-hover: #1f2731;
+    --ink: #e6e8ec;
+    --ink-strong: #f5f6f8;
+    --ink-muted: #9aa6b6;
+    --ink-faint: #5d6675;
+    --accent: #f59e5b;
+    --accent-strong: #fb923c;
+    --rule: #232932;
+    --rule-strong: #2e3641;
+    --code-bg: #232932;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 64px 40px 96px;
+  }
+  a { color: var(--accent-strong); }
+
+  /* Masthead */
+  header.masthead {
+    border-bottom: 1px solid var(--rule-strong);
+    padding-bottom: 32px;
+    margin-bottom: 64px;
+  }
+  .eyebrow {
+    font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+  h1 {
+    font-size: 38px;
+    line-height: 1.15;
+    margin: 0 0 16px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink-strong);
+  }
+  .meta {
+    color: var(--ink-muted);
+    font-size: 13.5px;
+    margin: 0;
+    font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+  }
+  .meta .sep { color: var(--ink-faint); margin: 0 10px; }
+
+  .alert {
+    background: var(--bg-card);
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    margin: 24px 0 0;
+    border-radius: 0 6px 6px 0;
+    color: var(--ink-muted);
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .alert strong { color: var(--ink-strong); font-weight: 600; }
+
+  /* Category — top-level grouping (IA, Infosec, DevOps, DIY, Société) */
+  section.category {
+    margin-bottom: 88px;
+    scroll-margin-top: 24px;
+  }
+  section.category:last-of-type { margin-bottom: 64px; }
+  section.category > .category-title {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 800;
+    margin: 0 0 6px;
+    letter-spacing: -0.025em;
+    color: var(--ink-strong);
+  }
+  section.category > .category-tagline {
+    margin: 0 0 36px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--rule-strong);
+    color: var(--ink-muted);
+    font-size: 13px;
+    font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+  }
+
+  /* Topic — thematic story inside a category */
+  section.topic { margin-bottom: 52px; }
+  section.topic:last-child { margin-bottom: 0; }
+  section.topic h3 {
+    font-size: 21px;
+    line-height: 1.3;
+    margin: 0 0 18px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: var(--ink-strong);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  section.topic h3::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 19px;
+    background: var(--accent-strong);
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+  section.topic .lede {
+    color: var(--ink);
+    margin: 0 0 24px;
+    font-size: 16.5px;
+    line-height: 1.7;
+  }
+  section.topic .lede strong { font-weight: 600; color: var(--ink-strong); }
+  section.topic .lede em { color: var(--ink-muted); }
+
+  /* Source cards grid */
+  ul.sources {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  ul.sources li {
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 14px 18px;
+    transition: background 0.15s, border-color 0.15s, transform 0.15s;
+  }
+  ul.sources li:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--rule-strong);
+  }
+  ul.sources .card-meta {
+    font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-faint);
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  ul.sources .card-meta .src {
+    color: var(--accent);
+    font-style: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  ul.sources .card-meta .date { color: var(--ink-faint); flex-shrink: 0; }
+  ul.sources .card-title a {
+    color: var(--ink-strong);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14.5px;
+    line-height: 1.45;
+    display: block;
+  }
+  ul.sources li:hover .card-title a { color: var(--accent-strong); }
+
+  /* Appendix "À creuser" */
+  section.appendix {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule-strong);
+  }
+  section.appendix h2 {
+    font-size: 14px;
+    margin: 0 0 24px;
+    color: var(--ink-muted);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+  }
+  section.appendix ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 28px;
+  }
+  section.appendix li {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--ink-muted);
+    padding-left: 14px;
+    border-left: 2px solid var(--rule-strong);
+  }
+  section.appendix li a {
+    color: var(--ink-strong);
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid var(--rule-strong);
+    transition: color 0.15s, border-color 0.15s;
+  }
+  section.appendix li a:hover {
+    color: var(--accent-strong);
+    border-bottom-color: var(--accent-strong);
+  }
+
+  code {
+    background: var(--code-bg);
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+    font-size: 0.88em;
+    color: var(--accent);
+    border: 1px solid var(--rule);
+  }
+
+  footer {
+    margin-top: 72px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-faint);
+    font-size: 12.5px;
+    font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  @media (max-width: 820px) {
+    .wrap { padding: 32px 20px 64px; }
+    h1 { font-size: 28px; }
+    section.category > .category-title { font-size: 24px; }
+    section.topic h3 { font-size: 18px; }
+    ul.sources { grid-template-columns: 1fr; }
+    section.appendix ul { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <p class="eyebrow">Digest tech-watch</p>
+  <h1>Patch Tuesday record et vulnérabilités critiques à chainer</h1>
+  <p class="meta">12 mai 2026 13:08 UTC<span class="sep">→</span>13 mai 2026 12:54 UTC<span class="sep">·</span>147 articles</p>
+
+</header>
+
+<section class="category" id="cat-ia">
+  <h2 class="category-title">IA</h2>
+  <p class="category-tagline">AGENTS, DISTILLATION ET MONÉTISATION : L'IA SORT DE SA PHASE EXPÉRIMENTALE</p>
+  <section class="topic">
+    <h3>Agents IA : fiabilité, interfaces et nouveaux paradigmes</h3>
+    <p class="lede">Alors que les agents IA s'invitent partout, trois projets illustrent des réponses opposées au même problème : rendre l'action prévisible. <strong>Statewright</strong> impose des <em>machines à états visuelles</em> comme garde-fous déterministes pour encadrer les agents, quand <strong>Hopper</strong> (Hypercubic) plonge dans l'opacité du <em>mainframe</em> en pilotant <code>TN3270</code>, <code>JCL</code> et <code>VSAM</code> via un environnement agentique dédié. De son côté, <strong>Google DeepMind</strong> réinvente le pointeur de souris avec <em>Magic Pointer</em>, où <strong>Gemini</strong> comprend le contexte visuel de l'élément survolé pour exécuter l'action demandée — posant la question : faut-il <em>contraindre</em> l'agent ou <em>lui donner plus de contexte</em> ?</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">Hacker News</span><span class="date">12/05 16:24</span></div>
+        <div class="card-title"><a href="https://github.com/statewright/statewright">Show HN: Statewright – Visual state machines that make AI agents reliable</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Korben</span><span class="date">13/05 13:18</span></div>
+        <div class="card-title"><a href="https://korben.info/magic-pointer-le-pointeur-de-souris-pense-par-google-deepmind.html">Magic Pointer, le pointeur de souris pensé par Google DeepMind</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Hacker News</span><span class="date">12/05 19:40</span></div>
+        <div class="card-title"><a href="https://deepmind.google/blog/ai-pointer/">Reimagining the mouse pointer for the AI era</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Hacker News</span><span class="date">12/05 19:10</span></div>
+        <div class="card-title"><a href="https://www.hypercubic.ai/hopper">Show HN: Agentic interface for mainframes and COBOL</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Journal du hacker</span><span class="date">12/05 15:23</span></div>
+        <div class="card-title"><a href="https://www.youtube.com/watch?v=Vlr-d0WODyg">IA Agentique : et si on arrêtait de relire le code ?</a></div>
+      </li>
+    </ul>
+  </section>
+  <section class="topic">
+    <h3>Distillation et efficacité des modèles</h3>
+    <p class="lede">Alors que <strong>Needle</strong> distille les capacités de <em>tool calling</em> de <strong>Gemini</strong> en un modèle de seulement <strong>26M</strong> paramètres conçu pour tourner sur des appareils minuscules, le papier <em>Beyond Semantic Similarity</em> propose d'abandonner les index vectoriels au profit d'une <em>interaction directe avec le corpus</em> via des outils shell génériques — <code>grep</code>, lectures de fichiers, scripts légers — et montre que cette approche surpasse les retrieveurs denses et sparse sur BRIGHT, BEIR et BrowseComp-Plus. Ces deux travaux convergent: <strong>la puissance brute cède du terrain</strong> à des interfaces plus résolues et des architectures plus ingénieuses, que ce soit en compression de modèle ou en conception du pipeline de recherche.</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">Hacker News</span><span class="date">12/05 20:03</span></div>
+        <div class="card-title"><a href="https://github.com/cactus-compute/needle">Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Hacker News</span><span class="date">12/05 21:51</span></div>
+        <div class="card-title"><a href="https://arxiv.org/abs/2605.05242">Beyond Semantic Similarity</a></div>
+      </li>
+    </ul>
+  </section>
+  <section class="topic">
+    <h3>Monétisation et souveraineté : l'IA entre en phase industrielle</h3>
+    <p class="lede">Alors que <strong>ChatGPT</strong> déploie une boucle d'attribution publicitaire complète — cookies de pistage et profilage annonceur inclus —, <strong>AWS</strong> formalise son offre de <em>souveraineté IA</em> en promettant contrôle des données, résidence et indépendance opérationnelle sur l'ensemble de la pile. En parallèle, la startup française <strong>White Circle</strong> lève <strong>11 M$</strong> pour sa plateforme de contrôle du comportement des modèles, ciblant <em>hallucinations</em>, <em>prompt injection</em> et fuites de données sensibles : l'IA entre dans une phase où <em>monétisation</em> et <em>conformité</em> se structurent aussi vite que la technologie.</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">Liens en vrac de sebsauvage</span><span class="date">13/05 08:16</span></div>
+        <div class="card-title"><a href="https://www.buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop/">How ChatGPT serves ads. Here's the full attribution loop.</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 17:18</span></div>
+        <div class="card-title"><a href="https://aws.amazon.com/blogs/security/enabling-ai-sovereignty-on-aws/">Enabling AI sovereignty on AWS [cloud]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 17:40</span></div>
+        <div class="card-title"><a href="https://www.securityweek.com/white-circle-raises-11-million-for-ai-control-platform/">White Circle Raises $11 Million for AI Control Platform [app]</a></div>
+      </li>
+    </ul>
+  </section>
+</section>
+
+<section class="category" id="cat-infosec">
+  <h2 class="category-title">Infosec</h2>
+  <p class="category-tagline">CYBERATTACKES MASSIVES, PATCH TUESDAY RECORD ET SUPPLY CHAIN EN TENSION</p>
+  <section class="topic">
+    <h3>Patch Tuesday record et vulnérabilités critiques à chainer</h3>
+    <p class="lede">Le <strong>Patch Tuesday de mai 2026</strong> établit un nouveau record avec <strong>137 à 138 CVE</strong> corrigées chez Microsoft — dont une trentaine critiques — mais <em>aucun zero‑day activement exploité</em>, une première depuis près de deux ans. Hors Redmond, le paysage se tend : <strong>CVE‑2026‑45185</strong> (« Dead.Letter ») offre une RCE non authentifiée sur <code>Exim</code> via un <em>use‑after‑free TLS</em> touchant les builds GnuTLS, tandis que <strong>CVE‑2026‑41940</strong> permet à l'acteur <strong>Mr_Rot13</strong> de déployer des backdoors sur <strong>cPanel</strong> à grande échelle — deux chaînes d'exploitation qui rendent ce mois particulièrement propice au <em>chaining</em>.</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">The Hacker News</span><span class="date">13/05 12:36</span></div>
+        <div class="card-title"><a href="https://thehackernews.com/2026/05/microsoft-patches-138-vulnerabilities.html">Microsoft Patches 138 Vulnerabilities, Including DNS and Netlogon RCE Flaws</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 23:46</span></div>
+        <div class="card-title"><a href="https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/">Patch Tuesday, May 2026 Edition [app]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 23:03</span></div>
+        <div class="card-title"><a href="https://www.darkreading.com/application-security/patch-tuesday-microsoft-zero-day-sight">It's Patch Tuesday for Microsoft and Not a Zero-Day In Sight</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 21:57</span></div>
+        <div class="card-title"><a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-may-2026/">Microsoft Patch Tuesday for May 2026 — Snort rules and prominent vulnerabilities [sys]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Qualys Blog</span><span class="date">12/05 21:50</span></div>
+        <div class="card-title"><a href="https://blog.qualys.com/vulnerabilities-threat-research/2026/05/12/microsoft-patch-tuesday-may-2026-security-update-review">Microsoft and Adobe Patch Tuesday, May 2026 Security Update Review</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 20:42</span></div>
+        <div class="card-title"><a href="https://www.zerodayinitiative.com/blog/2026/5/12/the-may-2026-security-update-review">Zero Day Initiative — The May 2026 Security Update Review [app]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 20:07</span></div>
+        <div class="card-title"><a href="https://www.securityweek.com/microsoft-patches-137-vulnerabilities/">Microsoft Patches 137 Vulnerabilities [app]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">The Hacker News</span><span class="date">12/05 18:44</span></div>
+        <div class="card-title"><a href="https://thehackernews.com/2026/05/new-exim-bdat-vulnerability-exposes.html">New Exim BDAT Vulnerability Exposes GnuTLS Builds to Potential Code Execution</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 18:58</span></div>
+        <div class="card-title"><a href="https://www.scworld.com/brief/threat-actor-mrrot13-exploits-critical-cpanel-flaw-to-deploy-filemanager-backdoor">Threat actor Mr_Rot13 exploits critical cPanel flaw to deploy Filemanager backdoor [app] [exp] [net] [mal]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 19:41</span></div>
+        <div class="card-title"><a href="https://xbow.com/blog/dead-letter-cve-2026-45185-xbow-found-rce-exim">XBOW - Dead.Letter (CVE-2026-45185) How XBOW found an unauthenticated RCE on Exim [app] [exp]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 21:40</span></div>
+        <div class="card-title"><a href="https://www.hacktron.ai/blog/rce-in-vscode-copilot">RCE in VSCode Copilot Chat [app] [exp]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 20:33</span></div>
+        <div class="card-title"><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40361">CVE-2026-40361 - Security Update Guide - Microsoft - Microsoft Word Remote Code Execution Vulnerability [app] [exp]</a></div>
+      </li>
+    </ul>
+  </section>
+  <section class="topic">
+    <h3>Ransomware et sabotage : la vague d'attaques contre infrastructures et industriels</h3>
+    <p class="lede">De <strong>Foxconn</strong> à <strong>West Pharmaceutical</strong>, les rançongiciels saturent l'actualité : <strong>Nitrogen</strong> revendique le vol de <strong>8 To</strong> de données industrielles chez le sous-traitant, tandis que <strong>Cl0p</strong> est resté <em>invisible près de deux ans</em> dans les systèmes d'une compagnie des eaux britannique, exposant plus de <strong>600 000</strong> clients. À cela s'ajoute un sabotage interne — un administrateur licencié détruisant <strong>96 bases</strong> gouvernementales — et la rançon payée par <strong>Instructure</strong> aux <strong>ShinyHunters</strong>, confirmant que <em>la destruction et l'extorsion</em> frappent désormais sans distinction de secteur.</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">ZATAZ News</span><span class="date">13/05 13:13</span></div>
+        <div class="card-title"><a href="https://www.zataz.com/pour-se-venger-il-supprime-96-bases-de-donnees-gouvernementales/">Par vengeance, il supprime 96 bases de données gouvernementales.</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">ZATAZ News</span><span class="date">13/05 12:59</span></div>
+        <div class="card-title"><a href="https://www.zataz.com/hackers-cache-pendant-deux-ans-dans-une-societe/">Hacker caché pendant deux ans dans une société</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">ZATAZ News</span><span class="date">13/05 12:34</span></div>
+        <div class="card-title"><a href="https://www.zataz.com/instructure-paie-les-pirates-apres-lattaque-de-canvas/">Instructure paie les pirates après l'attaque de Canvas !</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">ZATAZ News</span><span class="date">13/05 11:52</span></div>
+        <div class="card-title"><a href="https://www.zataz.com/west-pharmaceutical-frappe-par-un-rancongiciel/">West Pharmaceutical frappé par un rançongiciel</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">ZATAZ News</span><span class="date">13/05 11:39</span></div>
+        <div class="card-title"><a href="https://www.zataz.com/foxconn-relance-ses-usines-apres-une-cyberattaque/">Foxconn relance ses usines après une cyberattaque</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Korben</span><span class="date">13/05 09:56</span></div>
+        <div class="card-title"><a href="https://korben.info/8-to-de-donnees-de-foxconn-volees.html">8 To de données de Foxconn volées</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 15:08</span></div>
+        <div class="card-title"><a href="https://www.securityweek.com/west-pharmaceutical-services-hit-by-disruptive-ransomware-attack/">West Pharmaceutical Services Hit by Disruptive Ransomware Attack [mal]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 15:08</span></div>
+        <div class="card-title"><a href="https://therecord.media/uk-water-company-had-hackers-lurking-for-years">UK water company allowed hackers to lurk undetected for nearly two years, regulator finds [ics] [net]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 16:36</span></div>
+        <div class="card-title"><a href="https://www.securityweek.com/free-onlyfans-lure-used-to-spread-cross-platform-crpx0-malware/">Free OnlyFans Lure Used to Spread Cross-Platform CRPx0 Malware [social] [mal]</a></div>
+      </li>
+    </ul>
+  </section>
+  <section class="topic">
+    <h3>Supply chain et écosystème open-source sous pression</h3>
+    <p class="lede">La campagne <strong>GemStuffer</strong> a inondé <strong>RubyGems</strong> de plus de 150 gems détournés comme canal d'exfiltration de données, poussant le registre à suspendre les inscriptions — une mesure <em>exceptionnelle</em> face à une attaque massive de la chaîne d'approvisionnement Ruby. Parallèlement, <strong>Hugging Face</strong> voit ses modèles locaux weaponisés via une simple modification du fichier <code>tokenizer.json</code>, permettant interception MitM, fuite d'URL et d'identifiants à travers les formats <code>SafeTensors</code>, <code>ONNX</code> et <code>GGUF</code>. Ces incidents confirment que les dépendances open-source et les tiers de confiance sont devenus le <em>nouveau terrain de manœuvre</em> des attaquants, bien au-delà des vulnérabilités zero-day.</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">The Hacker News</span><span class="date">13/05 10:08</span></div>
+        <div class="card-title"><a href="https://thehackernews.com/2026/05/gemstuffer-abuses-150-rubygems-to.html">GemStuffer Abuses 150+ RubyGems to Exfiltrate Scraped U.K. Council Portal Data</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 19:40</span></div>
+        <div class="card-title"><a href="https://thehackernews.com/2026/05/rubygems-suspends-new-signups-after.html">RubyGems Suspends New Signups After Hundreds of Malicious Packages Are Uploaded [app] [mal]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">The Hacker News</span><span class="date">12/05 16:47</span></div>
+        <div class="card-title"><a href="https://thehackernews.com/2026/05/rubygems-suspends-new-signups-after.html">RubyGems Suspends New Signups After Hundreds of Malicious Packages Are Uploaded</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 16:00</span></div>
+        <div class="card-title"><a href="https://www.darkreading.com/cloud-security/hugging-face-packages-weaponized-single-file-tweak">Hugging Face Packages Weaponized With a Single File Tweak [app]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 17:00</span></div>
+        <div class="card-title"><a href="https://www.microsoft.com/en-us/security/blog/2026/05/12/undermining-the-trust-boundary-investigating-a-stealthy-intrusion-through-third-party-compromise/">Undermining the trust boundary: Investigating a stealthy intrusion through third-party compromise [exp]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 16:54</span></div>
+        <div class="card-title"><a href="https://hackerone.com/reports/3577145">AWS VDP disclosed on HackerOne: QuickSight Authorization Bypass:... [app] [cloud]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 15:08</span></div>
+        <div class="card-title"><a href="https://www.securityweek.com/apple-patches-dozens-of-vulnerabilities-in-macos-ios/">Apple Patches Dozens of Vulnerabilities in macOS, iOS [app] [exp] [sys]</a></div>
+      </li>
+    </ul>
+  </section>
+</section>
+
+<section class="category" id="cat-devops">
+  <h2 class="category-title">DevOps</h2>
+  <p class="category-tagline">INFRASTRUCTURE, CLOUD ET OUTILS DU QUOTIDIEN</p>
+  <section class="topic">
+    <h3>Kubernetes et écosystème conteneurisé : nouveaux outils et gestion de plugins</h3>
+    <p class="lede">L'écosystème Kubernetes se densifie sur deux fronts : côté infrastructure, <strong>Clever Cloud</strong> lance <strong>CKE</strong>, un Kubernetes managé <em>vanilla sans lock-in</em> reposant sur <code>Materia etcd</code> (serverless sur FoundationDB) et <code>Cilium</code>/eBPF natif ; côté outillage, l'approche déclarative gagne du terrain avec <strong>Mise+Krew</strong>, qui comble l'absence de versionnement des plugins <code>kubectl</code> en centralisant leur déclaration dans un <code>.mise.toml</code> reproductible en équipe.</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">Journal du hacker</span><span class="date">12/05 20:09</span></div>
+        <div class="card-title"><a href="https://blog.zwindler.fr/2026/05/12/test-cke-kubernetes-manage-clever-cloud-partie-1/">Test de CKE, le Kubernetes managé chez Clever Cloud (partie 1)</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Journal du hacker</span><span class="date">12/05 19:09</span></div>
+        <div class="card-title"><a href="https://une-tasse-de.cafe/expresso/mise-krew/">Mise + Krew : vos plugins kubectl en mode déclaratif</a></div>
+      </li>
+    </ul>
+  </section>
+  <section class="topic">
+    <h3>Stockage et systèmes de fichiers : OpenZFS rattrape Linux 7.0</h3>
+    <p class="lede"><strong>OpenZFS 2.4.2</strong> comble le retard de compatibilité avec le noyau <strong>Linux 7.0</strong>, là où la version 2.4.1 plafonnait à <strong>Linux 6.19</strong> et bloquait les admins ayant mis à jour leur distribution. Cette release corrige aussi <code>initramfs</code> et ajoute le support de <code>POSIX_FADV_DONTNEED</code> pour libérer de la RAM, tout en conservant une compatibilité <em>remontant</em> jusqu'à Linux 4.18 et FreeBSD 13.3+.</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">Korben</span><span class="date">13/05 14:15</span></div>
+        <div class="card-title"><a href="https://korben.info/openzfs-2-4-2-sort-avec-le-support-du-noyau-linux-7-0.html">OpenZFS 2.4.2 sort avec le support du noyau Linux 7.0</a></div>
+      </li>
+    </ul>
+  </section>
+  <section class="topic">
+    <h3>Sécurité cloud : entre fausses alertes et scan de code à grande échelle</h3>
+    <p class="lede">Alors que les outils AppSec traditionnels noient les équipes sous des milliers d'alertes <em>« toast »</em> sans distinguer les chemins d'attaque réels, <strong>AWS</strong> lance en preview le <em>full repository code review</em> de son <strong>Security Agent</strong>, un scanneur contextuel qui modélise l'architecture, les frontières de confiance et les flux de données de tout un dépôt pour remonter des failles systémiques que le <em>pattern-matching</em> ignore. Le webinaire Wiz/Okta/GitLab dénonce le même problème depuis l'autre bord : la plupart des outils ratent la <em>« Lethal Chain »</em>, cette chaîne d'exploitation où des micro-failles isolées se combinent en un chemin critique vers les données — un signal faible que le bruit des alertes masque.</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 23:34</span></div>
+        <div class="card-title"><a href="https://aws.amazon.com/blogs/security/aws-security-agent-full-repository-code-scanning-feature-now-available-in-preview/">AWS Security Agent full repository code scanning feature now available in preview [app] [cloud]</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">The Hacker News</span><span class="date">13/05 13:52</span></div>
+        <div class="card-title"><a href="https://thehackernews.com/2026/05/webinar-why-your-appsec-tools-miss.html">[Webinar] Why Your AppSec Tools Miss the "Lethal Path" (and How to Fix It)</a></div>
+      </li>
+    </ul>
+  </section>
+</section>
+
+<section class="category" id="cat-diy">
+  <h2 class="category-title">DIY</h2>
+  <p class="category-tagline">BIDOUILLES, RÉPARATIONS ET MACHINES IMPOSSIBLES</p>
+  <section class="topic">
+    <h3>L'IA et le rétrocomputing : quand les LLM s'invitent sur du matériel obsolète</h3>
+    <p class="lede">En convertissant <strong>TinyStories-260K</strong> en nombres entiers pour contourner l'absence de calculs flottants du processeur <em>8 bits</em> de 1998, Maddie Dreese fait générer des histoires sur <strong>Game Boy Color</strong> — à raison d'environ <strong>0,01 token/s</strong> et un contexte plafonné à 16 mots. À l'inverse, <strong>Baltazar Studios</strong> choisit la voie hardware en gravant un <code>CPU</code> maison à jeu d'instructions 12 bits sur <code>FPGA</code>, optimisé en <em>nibbles 4 bits</em> pour le décimal codé binaire, pour alimenter une calculatrice scientifique imprimée en 3D — prouvant que l'innovation low-tech peut aussi passer par la conception de son propre silicium.</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">Korben</span><span class="date">13/05 09:44</span></div>
+        <div class="card-title"><a href="https://korben.info/transformer-game-boy-color.html">TinyStories sur Game Boy Color - Le LLM le plus lent du monde</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Hack a Day</span><span class="date">13/05 10:00</span></div>
+        <div class="card-title"><a href="https://hackaday.com/2026/05/13/build-the-cpu-then-build-the-calculator/">Build The CPU, Then Build The Calculator</a></div>
+      </li>
+    </ul>
+  </section>
+  <section class="topic">
+    <h3>La réparation board-level face à l'obsolescence programmée</h3>
+    <p class="lede">En tentant de ressusciter une <strong>GoPro Hero 10</strong> achetée 100 dollars pour une erreur <code>no camera input</code>, <strong>Hugh Jeffreys</strong> illustre les impasses de la réparation board‑level : écran collé, absence de schémas, et un module caméra de remplacement qui ne change rien — le problème se loge quelque part sur la carte mère, sans <em>indice visible</em>. Ironie du démontage, la seconde GoPro rachetée 40 dollars pour pièces, <em>supposée morte</em> après un dégât d'eau, repart après un simple nettoyage de PCB, laissant la première caméra toujours condamnée par un défaut que ni reset ni firmware ne résolvent.</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">Korben</span><span class="date">13/05 13:45</span></div>
+        <div class="card-title"><a href="https://korben.info/il-essaye-de-reparer-une-gopro-hero-10-et-cest-lenfer.html">Il essaye de réparer une GoPro Hero 10, et c'est l'enfer</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Hack a Day</span><span class="date">13/05 01:00</span></div>
+        <div class="card-title"><a href="https://hackaday.com/2026/05/12/trying-to-fix-a-gopro-hero-10-with-no-camera-input-issue/">Trying to Fix a GoPro Hero 10 With No Camera Input Issue</a></div>
+      </li>
+    </ul>
+  </section>
+  <section class="topic">
+    <h3>Cyberdecks et machines impossibles : le DIY à l'extrême</h3>
+    <p class="lede">Du <strong>Pi Zero</strong> logé dans une boîte d'<strong>Altoids</strong> au <strong>PinkPad</strong> ressuscité depuis un jouet <strong>VTech</strong>, la scène cyberdeck prouve qu'un portable Linux tient dans n'importe quel boîtier — pourvu qu'on accepte de <em>bricoler les charnières</em> et de compiler le pilote <code>SPI</code> qui va bien. À côté, un <strong>Youtuber britannique</strong> fait tourner <strong>Minecraft</strong> sur un téléviseur mécanique à disque de <strong>Nipkow</strong> de 32 lignes, tandis que <strong>UnDUNE II</strong> compresse l'intégralité du RTS fondateur de <strong>Westwood</strong> en 128×128 pixels et 384 Ko via la <em>fantasy console</em> <code>PICO-8</code> — prouvant que la contrainte matérielle reste le meilleur moteur de l'ingéniosité.</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">Hack a Day</span><span class="date">12/05 20:30</span></div>
+        <div class="card-title"><a href="https://hackaday.com/2026/05/12/a-cyberdeck-that-runs-linux-in-an-altoids-tin/">A Cyberdeck That Runs Linux…in an Altoids Tin</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Hack a Day</span><span class="date">12/05 22:00</span></div>
+        <div class="card-title"><a href="https://hackaday.com/2026/05/12/crts-are-too-mainstream-so-game-on-a-mechanical-tv-instead/">CRTs Are Too Mainstream, So Game on a Mechanical TV Instead</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Hack a Day</span><span class="date">13/05 13:00</span></div>
+        <div class="card-title"><a href="https://hackaday.com/2026/05/13/vtech-toy-becomes-pinkpad-the-diy-linux-laptop/">VTech Toy Becomes PinkPad, the DIY Linux Laptop</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Korben</span><span class="date">13/05 07:57</span></div>
+        <div class="card-title"><a href="https://korben.info/undune2-demake-dune-ii-pico-8.html">UnDUNE II - Dune II en entier dans 12 cartouches PICO-8</a></div>
+      </li>
+    </ul>
+  </section>
+</section>
+
+<section class="category" id="cat-societe">
+  <h2 class="category-title">Société &amp; régulation</h2>
+  <p class="category-tagline">TECHNOLOGIE, POUVOIR ET FRACTURES SOCIALES</p>
+  <section class="topic">
+    <h3>Surveillance numérique : les frontières du contrôle</h3>
+    <p class="lede">De la frontière américaine au Canada, les gouvernements étendent leurs prérogatives de surveillance électronique, suscitant une résistance juridique croissante de la part des défenseurs des libertés numériques.</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">Hacker News</span><span class="date">12/05 21:48</span></div>
+        <div class="card-title"><a href="https://www.eff.org/deeplinks/2026/05/eff-fourth-circuit-electronic-device-searches-border-require-warrant">EFF to 4th Circuit: Electronic Device Searches at the Border Require a Warrant</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Hacker News</span><span class="date">12/05 17:35</span></div>
+        <div class="card-title"><a href="https://www.eff.org/deeplinks/2026/05/canadas-bill-c-22-repackaged-version-last-years-surveillance-nightmare">Canada’s Bill C-22 Is a Repackaged Version of Last Year’s Surveillance Nightmare</a></div>
+      </li>
+    </ul>
+  </section>
+  <section class="topic">
+    <h3>IA au travail : productivité forcée et crise de l'expertise</h3>
+    <p class="lede">Entre <strong>Amazon</strong>, où des développeurs gonflent artificiellement leur consommation de tokens via <code>MeshClaw</code> pour satisfaire des objectifs d'adoption de l'IA, et <strong>OCTO</strong>, qui voit dans la simulation algorithmique un <em>syndrome de l'imposteur augmenté</em> érodant la confiance en l'expertise humaine, se dessine une crise de la compétence : la pression managériale transforme l'outil d'assistance en instrument de conformité, tandis que <strong>GitLab</strong> justifie ses licenciements par une restructuration centrée sur le développement <em>AI-driven</em>, achevant de subordonner l'humain à la métrique.</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">OCTO Talks !</span><span class="date">13/05 14:54</span></div>
+        <div class="card-title"><a href="https://blog.octo.com/l&#x27;ia-ou-le-syndrome-de-l&#x27;imposteur-augmente">L'IA ou le syndrome de l'Imposteur Augmenté</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Hacker News</span><span class="date">12/05 18:29</span></div>
+        <div class="card-title"><a href="https://arstechnica.com/ai/2026/05/amazon-employees-are-tokenmaxxing-due-to-pressure-to-use-ai-tools/">Amazon employees are "tokenmaxxing" due to pressure to use AI tools</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Talkback Home</span><span class="date">12/05 15:17</span></div>
+        <div class="card-title"><a href="https://www.businessinsider.com/gitlab-layoffs-memo-2026-5">GitLab employees are the latest to face layoffs limbo. Read the CEO's memo about restructuring 'openly.' [cloud]</a></div>
+      </li>
+    </ul>
+  </section>
+  <section class="topic">
+    <h3>Démocratie numérique : archives, médias et choix de société</h3>
+    <p class="lede">Alors que les <strong>aides publiques aux entreprises</strong> croissent plus vite que les <strong>aides sociales</strong>, la mémoire collective du journalisme se délite : depuis février, le <strong>New York Times</strong> a exigé que la <code>Wayback Machine</code> cesse d'archiver ses articles, suivi par <strong>USA Today</strong> et <strong>The Atlantic</strong>, au motif <em>hypothétique</em> d'un risque lié à l'IA. Face à ce double mouvement — <em>privilégier le capital au social</em> et <em>verrouiller l'archive au nom de la propriété</em> — des initiatives comme <strong>Link-ed.info</strong> tentent de soutenir des médias indépendants qui, eux, œuvrent pour que l'information reste accessible et traçable.</p>
+    <ul class="sources">
+      <li>
+        <div class="card-meta"><span class="src">Liens en vrac de sebsauvage</span><span class="date">13/05 08:21</span></div>
+        <div class="card-title"><a href="https://blogs.mediapart.fr/maxime-combes/blog/100725/les-aides-publiques-aux-entreprises-augmentent-plus-vite-que-les-aides-sociales-1">Les aides publiques aux entreprises augmentent plus vite que les aides sociales | Le Club</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Liens en vrac de sebsauvage</span><span class="date">13/05 10:45</span></div>
+        <div class="card-title"><a href="https://reflets.info/articles/link-ed-info-un-outil-pour-les-lier-tous">Link-ed.info : un outil pour les lier tous | Reflets.info</a></div>
+      </li>
+      <li>
+        <div class="card-meta"><span class="src">Hacker News</span><span class="date">13/05 01:11</span></div>
+        <div class="card-title"><a href="https://www.savethearchive.com/newsleaders/">Tell NYT, Atlantic, USA Today to keep Wayback Machine</a></div>
+      </li>
+    </ul>
+  </section>
+</section>
+
+<section class="appendix">
+  <h2>À creuser</h2>
+  <ul>
+    <li><a href="https://www.ycombinator.com/companies/substrate/jobs/T2fMBhD-technical-success-manager">Substrate (YC S24) Is Hiring a Technical Success Manager</a></li>
+    <li><a href="https://monokai.com/articles/how-i-moved-my-digital-stack-to-europe/">I Moved My Digital Stack to Europe</a></li>
+    <li><a href="https://www.youtube.com/watch?v=_suhY9QNJHQ">Veille techno : ma méthode sans algo pour rester à jour</a></li>
+    <li><a href="https://www.gamingonlinux.com/2026/05/if-you-drop-or-throw-your-new-steam-controller-it-will-scream-at-you/">If you drop (or throw) your new Steam Controller it will scream at you | GamingOnLinux</a></li>
+    <li><a href="https://www.thestandard.com.hk/world/article/331886/I-applied-to-be-pope-Losing-grip-on-reality-while-using-ChatGPT">"I applied to be pope"</a></li>
+    <li><a href="https://developpeurs-anonymes.fr/posts/claude-code-mon-geolier-tres-competent/">Claude Code, mon geôlier très compétent</a></li>
+    <li><a href="https://hackaday.com/2026/05/12/the-truth-about-the-hindenberg/">The Truth about the Hindenberg</a></li>
+    <li><a href="https://www.spacex.com/updates#starship-v3">Starship V3</a></li>
+    <li><a href="https://www.bbc.com/culture/article/20260511-kraftwerks-radical-1976-track-radioactivity-became-an-anti-nuclear-anthem">Kraftwerk's radical 1976 track</a></li>
+    <li><a href="https://typesetinthefuture.com/2016/02/18/futuristic/">How to make your text look futuristic (2016)</a></li>
+  </ul>
+</section>
+
+<footer>
+  Ether-News - 147 articles agrégés
+</footer>
+
+</div>
+</body>
+</html>

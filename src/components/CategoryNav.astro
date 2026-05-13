@@ -1,0 +1,57 @@
+---
+import { categoryAccent } from "../utils/colors";
+
+interface CategoryEntry {
+  slug: string;
+  name: string;
+}
+
+interface Props {
+  categories: CategoryEntry[];
+}
+
+const { categories } = Astro.props;
+---
+<nav class="category-nav" aria-label="Catégories">
+  <ul>
+    {categories.map((c) => (
+      <li>
+        <a
+          href={`#cat-${c.slug}`}
+          data-target={`cat-${c.slug}`}
+          style={`--cat-accent: ${categoryAccent(c.slug)}`}
+        >
+          {c.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>
+
+<script>
+  const links = document.querySelectorAll<HTMLAnchorElement>(".category-nav a[data-target]");
+  if (links.length > 0) {
+    const sections: HTMLElement[] = Array.from(links)
+      .map((l) => document.getElementById(l.dataset.target!))
+      .filter((el): el is HTMLElement => el !== null);
+
+    const update = () => {
+      const offset = 100;
+      let currentId: string | null = null;
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top <= offset) {
+          currentId = section.id;
+        } else {
+          break;
+        }
+      }
+      links.forEach((l) => {
+        l.classList.toggle("current", l.dataset.target === currentId);
+      });
+    };
+
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update, { passive: true });
+    update();
+  }
+</script>

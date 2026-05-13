@@ -1,0 +1,26 @@
+---
+interface Item {
+  url: string;
+  title: string;
+  note?: string;
+}
+
+interface Props {
+  items: Item[];
+}
+
+const { items } = Astro.props;
+---
+{items.length > 0 && (
+  <section class="appendix">
+    <h2>À creuser</h2>
+    <ul>
+      {items.map((item) => (
+        <li>
+          <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>
+          {item.note && <span class="note"> — {item.note}</span>}
+        </li>
+      ))}
+    </ul>
+  </section>
+)}

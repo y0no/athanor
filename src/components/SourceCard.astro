@@ -1,0 +1,25 @@
+---
+import { parseTrailingTags, tagGroup } from "../utils/tags";
+
+interface Props {
+  feed: string;
+  date: string;
+  url: string;
+  title: string;
+}
+
+const { feed, date, url, title } = Astro.props;
+const { cleanTitle, tags } = parseTrailingTags(title);
+---
+<li>
+  <div class="card-meta">
+    <span class="src">{feed}</span>
+    <span class="date">{date}</span>
+  </div>
+  <div class="card-title"><a href={url} target="_blank" rel="noopener noreferrer">{cleanTitle}</a></div>
+  {tags.length > 0 && (
+    <div class="card-tags">
+      {tags.map((t) => <span class={`chip chip--${tagGroup(t)}`}>{t}</span>)}
+    </div>
+  )}
+</li>

@@ -46,7 +46,10 @@ const digestSchema = z.object({
 
 const digests = defineCollection({
   loader: glob({ pattern: "**/*.json", base: "./src/content/digests" }),
-  schema: z.array(digestSchema).nonempty().transform((arr) => arr[0]),
+  schema: z.preprocess(
+    (input) => (Array.isArray(input) ? input[0] : input),
+    digestSchema,
+  ),
 });
 
 export const collections = { digests };

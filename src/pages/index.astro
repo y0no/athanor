@@ -19,6 +19,6 @@ const archive = sorted.slice(0, 30).map((e) => ({
 
 const pageTitle = latest.title_tag || `Athanor — ${formatDateLong(latest.date)}`;
 ---
-<BaseLayout title={pageTitle} description={latest.headline} footer={latest.footer} date={latest.date}>
+<BaseLayout title={pageTitle} description={latest.headline} footer={latest.footer} date={latest.date} ogType="article">
   <DigestView digest={latest} archive={archive} />
 </BaseLayout>

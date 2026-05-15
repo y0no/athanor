@@ -7,18 +7,14 @@ import { formatDateLong } from "../../utils/format";
 export async function getStaticPaths() {
     const all = await getCollection("digests");
     const sorted = all.sort((a, b) => b.data.date.localeCompare(a.data.date));
-    const archive = sorted.slice(0, 30).map((e) => ({
-        date: e.data.date,
-        headline: e.data.headline,
-    }));
 
     return sorted.map((entry) => ({
         params: { date: entry.data.date },
-        props: { digest: entry.data, archive },
+        props: { digest: entry.data },
     }));
 }
 
-const { digest, archive } = Astro.props;
+const { digest } = Astro.props;
 const pageTitle =
     digest.title_tag || `Athanor — ${formatDateLong(digest.date)}`;
 const ogDescription = `Daily tech digest · ${digest.categories.map((c: any) => c.name).join(" · ")}`;
@@ -33,5 +29,5 @@ const ogDescription = `Daily tech digest · ${digest.categories.map((c: any) => 
     ogTitle={digest.headline}
     ogDescription={ogDescription}
 >
-    <DigestView digest={digest} archive={archive} />
+    <DigestView digest={digest} />
 </BaseLayout>

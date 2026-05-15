@@ -8,7 +8,3 @@ export function formatDateLong(date: string): string {
   return `${d} ${MONTHS_FR[m - 1]} ${y}`;
 }
 
-export function formatArchiveLabel(date: string): string {
-  const [, m, d] = date.split("-");
-  return `${d}/${m}`;
-}

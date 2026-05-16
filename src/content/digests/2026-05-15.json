@@ -1,1 +1,473 @@
-{"date":"2026-05-15","title_tag":"Digest tech-watch — 15 mai 2026","headline":"Cisco SD-WAN : exploitation active d'une faille d'authentification …","window":{"from":"14 mai 2026 07:25 UTC","to":"15 mai 2026 02:35 UTC","count":"133 articles"},"alert":"","categories":[{"slug":"ia","name":"IA","tagline":"AGENTS, CYBER ET HALLUCINATIONS : L'IA SORT DU CHAT","topics":[{"title":"Microsoft et Anthropic : la bataille de l'IA offensive en cybersécurité","lede_html":"Microsoft déploie <strong>MDASH</strong>, un système multi-agents composé de plus de 100 agents spécialisés qui a déjà découvert <strong>16 vulnérabilités Windows</strong> inédites — dont des RCE réseau sans authentification sur la pile <code>tcpip.sys</code> et le service IKEv2 — et surpasse <strong>Anthropic Mythos</strong> sur le benchmark <em>CyberGym</em>. Cette avancée souligne le basculement vers une IA <em>offensive</em> à double usage, tandis qu'un autre article rappelle que les <em>hallucinations</em> des modèles injectent des risques réels dans les infrastructures critiques : faute de mécanisme d'incertitude, l'IA produit des réponses hautement confiantes mais erronées, exploitant la confiance humaine.","sources":[{"feed":"Talkback Home","date":"14/05 19:41","url":"https://www.scworld.com/brief/microsoft-details-new-ai-system-for-vulnerability-discovery","title":"Microsoft details new AI system for vulnerability discovery [app]"},{"feed":"Talkback Home","date":"14/05 14:04","url":"https://www.geekwire.com/2026/microsofts-multi-agent-ai-system-tops-anthropics-mythos-on-cybersecurity-benchmark/","title":"Microsoft’s multi-agent AI system tops Anthropic’s Mythos on cybersecurity benchmark [app]"},{"feed":"The Hacker News","date":"14/05 13:30","url":"https://thehackernews.com/2026/05/how-ai-hallucinations-are-creating-real.html","title":"How AI Hallucinations Are Creating Real Security Risks"}]},{"title":"Claude déborde du chatbot : juridique, physique et crypto","lede_html":"<strong>Anthropic</strong> pousse <strong>Claude</strong> au-delà du chatbot générique avec <strong>claude-for-legal</strong>, un dépôt GitHub de plugins pour les workflows juridiques, et une collaboration en physique des hautes énergies où le modèle agit comme <em>assistant doctoral</em> sous supervision humaine. Pendant ce temps, un utilisateur a récupéré <strong>400 000 dollars</strong> en Bitcoin grâce à Claude, le bot essayant <strong>3,5 billions</strong> de mots de passe sur un portefeuille vieux de 11 ans — un usage <em>imprévu</em> qui souligne la capacité des LLM à s'immiscer dans des niches verticales bien loin du simple dialogue.","sources":[{"feed":"Hacker News","date":"14/05 23:05","url":"https://github.com/anthropics/claude-for-legal","title":"Claude for Legal"},{"feed":"Hacker News","date":"14/05 16:49","url":"https://www.tomshardware.com/tech-industry/cryptocurrency/bitcoin-trader-recovers-usd400-000-using-claude-ai-after-losing-wallet-password-11-years-ago-bot-tried-3-5-trillion-passwords-before-decrypting-an-old-wallet-backup","title":"Claude AI recovers an 11 yrs old BTC wallet holding 400k USD"},{"feed":"Talkback Home","date":"14/05 19:48","url":"https://www.anthropic.com/research/vibe-physics","title":"Vibe physics: The AI grad student"}]},{"title":"L'IA générative se déploie : images, code mobile et essaims d'agents","lede_html":"L'IA générative s'industrialise sur trois fronts : <strong>OpenAI</strong> déploie <strong>Codex</strong> dans l'app mobile <strong>ChatGPT</strong>, rendant l'écriture de code accessible en situation de mobilité ; la communauté compile <strong>400+</strong> prompts inversés et <strong>20+</strong> templates industriels pour <strong>GPT-Image2</strong>, transformant la génération d'images en <em>discipline reproductible</em> ; tandis que <strong>ClawTeam</strong> propose une orchestration d'<em>essaims d'agents</em> auto-organisés sur multi-GPU, rapprochant l'IA agentique d'une automatisation <em>quasi-autonome</em>.","sources":[{"feed":"Talkback Home","date":"14/05 15:46","url":"https://github.com/freestylefly/awesome-gpt-image-2","title":"GitHub - freestylefly/awesome-gpt-image-2: Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中 [rev]"},{"feed":"Hacker News","date":"14/05 22:06","url":"https://openai.com/index/work-with-codex-from-anywhere/","title":"Codex is now in the ChatGPT mobile app"},{"feed":"Talkback Home","date":"14/05 15:45","url":"https://github.com/HKUDS/ClawTeam","title":"GitHub - HKUDS/ClawTeam: \"ClawTeam: Agent Swarm Intelligence\" (One Command → Full Automation) [cloud]"}]}]},{"slug":"infosec","name":"Infosec","tagline":"EXPLOITATION MASSIVE DE FAILLES CRITIQUES ET CAMPAGNES D'APT EN HAUTE INTENSITÉ","topics":[{"title":"Cisco SD-WAN : exploitation active d'une faille d'authentification critique","lede_html":"La faille d'authentification <strong>CVE-2026-20182</strong> (CVSS <strong>10.0</strong>) dans les contrôleurs et managers <strong>Cisco Catalyst SD-WAN</strong> permet à un attaquant non authentifié d'obtenir des privilèges administratifs, et elle est <em>activement exploitée</em> par l'acteur étatique que Talos regroupe sous <strong>UAT-8616</strong>. Les attaques multi-étapes déployent notamment le webshell JSP <code>XenShell</code> et s'appuient aussi sur d'autres failles corrigées en février (<strong>CVE-2026-20133</strong>, <strong>CVE-2026-20128</strong>, <strong>CVE-2026-20122</strong>), soulignant l'urgence d'appliquer les correctifs publiés par <strong>Cisco</strong>.","sources":[{"feed":"Talkback Home","date":"14/05 22:25","url":"https://www.darkreading.com/vulnerabilities-threats/maximum-severity-cisco-sd-wan-bug-exploited","title":"Maximum Severity Cisco SD-WAN Bug Exploited in the Wild [exp] [net]"},{"feed":"CISA Known Exploited Vulnerabilities Catalog","date":"14/05 21:01","url":"https://nvd.nist.gov/vuln/detail/CVE-2026-20182","title":"2026-05-14: [CVE-2026-20182] Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability"},{"feed":"Talkback Home","date":"14/05 19:45","url":"https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html","title":"Cisco Catalyst SD-WAN Controller Auth Bypass Actively Exploited to Gain Admin Access [exp] [net]"},{"feed":"The Hacker News","date":"14/05 19:45","url":"https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html","title":"Cisco Catalyst SD-WAN Controller Auth Bypass Actively Exploited to Gain Admin Access"},{"feed":"Talkback Home","date":"14/05 18:02","url":"https://blog.talosintelligence.com/sd-wan-ongoing-exploitation/","title":"Ongoing exploitation of Cisco Catalyst SD-WAN vulnerabilities [app] [net]"}]},{"title":"Nouvelles vulnérabilités noyau et contournements de sécurité matérielle","lede_html":"En quelques jours, l'équipe Calif démontre la <strong>première corruption mémoire noyau macOS</strong> sur silicium <strong>Apple M5</strong>, contournant <em>MIE</em> — le système de marquage mémoire qu'Apple a mis cinq ans à durcir en hardware — via une chaîne d'élévation de privilèges <em>data-only</em> ciblant <strong>macOS 26.4.1</strong>. Pendant ce temps, <strong>Synacktiv</strong> contourne le ratchet anti-downgrade du <strong>Tesla Wall Connector Gen 3</strong> en exploitant l'ordre d'écriture entre table de partitions et effacement de slot, et un chercheur anonyme révèle deux zero-days Windows — <strong>YellowKey</strong> (bypass <strong>BitLocker</strong>) et <strong>GreenPlasma</strong> (élévation via <code>CTFMON</code>) —, tandis qu'un travail de <em>hacking de firmware HDD</em> rappelle que le contrôle du microcode disque reste un vecteur d'attaque largement sous-estimé.","sources":[{"feed":"Hacker News","date":"14/05 20:25","url":"https://blog.calif.io/p/first-public-kernel-memory-corruption","title":"First public macOS kernel memory corruption exploit on Apple M5"},{"feed":"Hacker News","date":"14/05 22:41","url":"https://www.synacktiv.com/en/publications/exploiting-the-tesla-wall-connector-from-its-charge-port-connector-part-2-bypassing","title":"Tesla Wall Connector bootloader bypasses the firmware downgrade ratchet"},{"feed":"The Hacker News","date":"14/05 11:25","url":"https://thehackernews.com/2026/05/windows-zero-days-expose-bitlocker.html","title":"Windows Zero-Days Expose BitLocker Bypasses And CTFMON Privilege Escalation"},{"feed":"Hacker News","date":"14/05 18:19","url":"https://icode4.coffee/?p=1465","title":"HDD Firmware Hacking"}]},{"title":"Campagnes d'espionnage ciblées en Europe de l'Est et secteur énergétique","lede_html":"Les groupes <strong>Ghostwriter</strong> et <strong>FrostyNeighbor</strong> – en réalité un même ensemble belarusien aussi suivi sous les monikers <code>PUSHCHA</code>, <code>Storm-0257</code> et <code>UAC-0057</code> – mènent depuis mars 2026 des campagnes de spear-phishing géofencé contre des entités gouvernementales ukrainiennes et polonaises, déployant <code>Cobalt Strike</code> via des PDF piégés. Parallèlement, <strong>FamousSparrow</strong>, lié à la Chine, exploite des failles <strong>Exchange</strong> pour frapper en plusieurs vagues un opérateur pétrolier azerbaïdjanais entre décembre 2025 et février 2026, marquant <em>la première incursion connue contre les infrastructures énergétiques du Sud-Caucase</em>.","sources":[{"feed":"Talkback Home","date":"14/05 18:59","url":"https://www.darkreading.com/cyberattacks-data-breaches/frostyneighbor-apt-govt-orgs-poland-ukraine","title":"'FrostyNeighbor' APT Carefully Targets Govt Orgs in Poland, Ukraine [mal]"},{"feed":"Talkback Home","date":"14/05 18:20","url":"https://thehackernews.com/2026/05/ghostwriter-targets-ukrainian.html","title":"Ghostwriter Targets Ukrainian Government With Geofenced PDF Phishing, Cobalt Strike [net] [mal]"},{"feed":"The Hacker News","date":"14/05 16:00","url":"https://thehackernews.com/2026/05/ghostwriter-targets-ukrainian.html","title":"Ghostwriter Targets Ukrainian Government With Geofenced PDF Phishing, Cobalt Strike"},{"feed":"Talkback Home","date":"14/05 11:34","url":"https://securityaffairs.com/192113/apt/famoussparrow-targets-azerbaijani-energy-sector-in-multi-wave-espionage-campaign.html","title":"FamousSparrow targets Azerbaijani energy sector in multi-wave espionage campaign [exp] [net] [mal]"},{"feed":"Talkback Home","date":"14/05 18:22","url":"https://hackread.com/famoussparrow-oil-gas-ms-exchange-server-exploit/","title":"FamousSparrow Targeted Oil and Gas Industry via MS Exchange Server Exploit [exp] [mal]"}]}]},{"slug":"devops","name":"DevOps","tagline":"SÉCURITÉ, REPRODUCTIBILITÉ ET OUTILS OPEN SOURCE","topics":[{"title":"Sécurité applicative et cloud : consolidation du marché et nouveaux outils open source","lede_html":"Le paysage AppSec se scinde : <strong>Akamai</strong> renforce son portefeuille Zero Trust en rachetant <strong>LayerX</strong> pour <strong>205 M$</strong>, tandis que <strong>Qualys</strong> décroche l'autorisation <strong>FedRAMP High</strong> pour <code>TotalCloud</code>, consolidant l'offre CNAPP pour les environnements fédéraux. En parallèle, la communauté réplique par l'open source — <code>Velonus</code> déduplique le bruit SAST via un copilote <em>AI-native</em>, et <code>CLAUDIT-SEC</code> audite en lecture seule les agents <strong>Claude</strong> sur macOS/Windows —, illustrant une <em>tension entre consolidation commerciale et innovation communautaire</em> dans la sécurité DevOps.","sources":[{"feed":"Talkback Home","date":"14/05 18:21","url":"https://www.securityweek.com/akamai-to-acquire-ai-and-browser-security-firm-layerx-for-205-million/","title":"Akamai to Acquire AI and Browser Security Firm LayerX for $205 Million [app]"},{"feed":"Hacker News","date":"15/05 03:02","url":"https://github.com/AliAmmar15/Velonus","title":"Velonus – Open-source AppSec scanner that deduplicates SAST noise"},{"feed":"Qualys Blog","date":"14/05 14:45","url":"https://blog.qualys.com/product-tech/2026/05/14/qualys-totalcloud-achieves-fedramp-high-authorization-for-cloud-security-and-compliance-assurance","title":"FedRAMP High Authorized: Qualys TotalCloud CNAPP – From Compliance to Defense"},{"feed":"Talkback Home","date":"14/05 14:52","url":"https://github.com/HarmonicSecurity/claudit-sec","title":"GitHub - HarmonicSecurity/claudit-sec: Security audit tool for Claude Desktop and Claude Code on macOS — single-command visibility into MCP servers, extensions, plugins, connectors, scheduled tasks, and permissions. [app]"}]},{"title":"Reproductibilité et fiabilité des chaînes de build","lede_html":"<strong>Debian</strong> franchit un cap : la reproductibilité bit-à-bit est désormais <em>obligatoire</em> pour tout paquet entrant ou se maintenant dans <code>testing</code>, et donc dans la future version <strong>Forky 14</strong>. Avec <strong>98,29 %</strong> des paquets indépendants de l'architecture déjà reproductibles (23 371 OK, 414 KO), cette exigence traduit une exigence de traçabilité qui dépasse <strong>Debian</strong> et interpelle l'ensemble des pipelines de livraison logicielle.","sources":[{"feed":"LinuxFr.org : les dépéches","date":"14/05 11:00","url":"https://linuxfr.org/news/reproductibilite-obligatoire-tests-de-paquets-binaires-et-nouvelle-architecture","title":"Reproductibilité obligatoire, tests de paquets binaires et nouvelle architecture"}]},{"title":"Outils et runtime : évolutions techniques et communautaires","lede_html":"Le runtime <strong>Bun</strong> franchit un cap majeur avec le merge d'une réécriture en <strong>Rust</strong> couvrant 6755 commits, marquant une bascule stratégique vers un langage <em>plus sûr et performant</em> pour son cœur d'exécution. Parallèlement, le second relais public <strong>ODoH</strong> ouvre l'accès anonyme au DNS sans compte, tandis qu'<strong>autoskills</strong> automatise en une seule commande la détection et l'installation sécurisée de compétences pour agents IA, <em>réduisant la friction</em> d'intégration de stacks hétérogènes.","sources":[{"feed":"Hacker News","date":"14/05 10:15","url":"https://github.com/oven-sh/bun/pull/30412","title":"Rewrite Bun in Rust has been merged"},{"feed":"Hacker News","date":"14/05 12:44","url":"https://numa.rs/blog/posts/odoh-anonymous-dns-without-an-account.html","title":"Show HN: Running the second public ODoH relay"},{"feed":"Talkback Home","date":"14/05 18:24","url":"https://github.com/midudev/autoskills","title":"GitHub - midudev/autoskills: One command. Your entire AI skill stack. Installed. [app]"}]}]},{"slug":"diy","name":"DIY","tagline":"HARDWARE, FIRMWARE, ET BIDOUILLES QUI POUSSENT LES LIMITES","topics":[{"title":"Capteurs matriciels LiDAR : la vision 3D démocratisée pour robots makers","lede_html":"Les capteurs LiDAR matriciels, qui échantillonnent <strong>64 points</strong> de distance simultanément de <strong>2 cm</strong> à <strong>3,5 m</strong>, sortent enfin des voitures autonomes pour atterrir sur des robots makers : <strong>Mellow Labs</strong> a greffé un <code>SEN0628</code> sur <em>Zippy</em>, un tank imprimé en 3D piloté par <code>ESP32</code>, transformant un châssis télécommandé en robot autonome — bien que la moitié des lignes capte le sol et qu'un code en partie généré par <em>LLM</em> ait nécessité plusieurs itérations.","sources":[{"feed":"Korben","date":"14/05 16:30","url":"https://korben.info/un-capteur-lidar-matriciel-pour-donner-la-vue-en-relief-a-un-petit-robot.html","title":"Un capteur LiDAR matriciel pour donner la vue en relief à un petit robot"},{"feed":"Hack a Day","date":"14/05 10:00","url":"https://hackaday.com/2026/05/14/lidar-matrix-sensor-sees-in-3d/","title":"LiDAR Matrix Sensor Sees in 3D"}]},{"title":"Infrastructure DIY : irrigation à l'échelle et gestion intelligente des batteries","lede_html":"De la ferme à l'atelier, les makers repoussent les limites de l'infrastructure <em>DIY</em> : <strong>Vinnie</strong> étend son irrigation sur des hectares grâce à un bus <code>RS-485</code> piloté par <strong>Raspberry Pi</strong>, avec des valves à solénoïdes latch et un protocole de noeuds adressables, tandis que <strong>DaverDavid</strong> propose <strong>ChargeCap</strong>, un circuit qui échantillonne le courant de charge pour déconnecter les lithium-ion avant leur seuil maximal — une stratégie de <em>stockage à tension intermédiaire</em> que la plupart appareils intégrés ignorent.","sources":[{"feed":"Hack a Day","date":"14/05 22:00","url":"https://hackaday.com/2026/05/14/rs-485-sprinkler-control-scaling-irrigation-across-the-farm/","title":"RS-485 Sprinkler Control: Scaling Irrigation Across the Farm"},{"feed":"Hack a Day","date":"14/05 20:30","url":"https://hackaday.com/2026/05/14/chargecap-helps-your-batteries-last-longer-by-limiting-charge-level/","title":"ChargeCap Helps Your Batteries Last Longer By Limiting Charge Level"}]},{"title":"Open hardware et RISC-V : nouvelles briques pour l'autonomie technologique","lede_html":"Le <strong>routeur RISC-V</strong> de Start9 lève actuellement des fonds pour proposer un appareil réseau entièrement open-source sur une architecture libre, tandis que la carte <strong>pic0rick</strong> remplace les conceptions FPGA par un <code>RP2040</code>/<code>RP2350</code> pour l'acquisition ultrasonore à <em>60 Msps</em>. Ces deux projets illustrent une convergence : l'<em>hardware libre</em> n'est plus cantonné aux prototypes marginaux, il vise désormais des usages critiques — routage réseau et instrumentation — comme alternatives crédibles aux plateformes propriétaires verrouillées.","sources":[{"feed":"Hacker News","date":"14/05 22:06","url":"https://router.start9.com/","title":"RISC-V Router"},{"feed":"Hacker News","date":"14/05 20:01","url":"http://un0rick.cc/pic0rick","title":"DIY open-source ultrasound hardware on the rp2040/rp2350"}]}]},{"slug":"societe","name":"Société & régulation","tagline":"RÉGULATION, RESPONSABILITÉ ET RÉSISTANCE FACE À L'ACCÉLÉRATION TECHNOLOGIQUE","topics":[{"title":"L'IA sous pression : politiques, fiabilité et zombification des institutions","lede_html":"De la politique d'entreprise à l'université en passant par les dossiers médicaux, l'IA se heurte à une crise de crédibilité institutionnelle où l'urgence de déploiement fait face à des failles opérationnelles et éthiques documentées.","sources":[{"feed":"Hacker News","date":"14/05 23:24","url":"https://brianmeeker.me/2026/05/14/have-a-coherent-ai-policy/","title":"Have a Coherent AI Policy"},{"feed":"Hacker News","date":"14/05 22:37","url":"https://www.theregister.com/ai-ml/2026/05/14/ontario-auditors-find-doctors-ai-note-takers-routinely-blow-basic-facts/5240771","title":"Ontario auditors find doctors' AI note takers routinely blow basic facts"},{"feed":"Hacker News","date":"14/05 18:37","url":"https://www.thenewcritic.com/p/the-great-zombification","title":"The AI Zombification of Universities"},{"feed":"Hacker News","date":"14/05 20:39","url":"https://twitter.com/tdietterich/status/2055000956144935055","title":"New arXiv policy: 1-year ban for hallucinated references"}]},{"title":"Meta et les géants du numérique face à la contre-offre réglementaire","lede_html":"Alors que la <strong>CJUE</strong> confirme le droit de l'Italie d'imposer à <strong>Meta</strong> une rémunération équitable des contenus de presse, le Canada fait face à une menace symétrique : le <strong>Bill C-22</strong> pourrait contraindre les plateformes à affaiblir le chiffrement de bout en bout, poussant <strong>Signal</strong> et <strong>Meta</strong> à envisager un retrait du pays. Parallèlement, un rapport du <strong>CCDH</strong> révèle que <strong>Meta</strong> a engrangé <strong>14,3 millions de dollars</strong> de revenus publicitaires en <em>2025</em> grâce à des arnaques Medicare ciblant les seniors — entre <em>deepfakes</em> de célébrités et fausses promesses d'avantages gratuits.","sources":[{"feed":"Hacker News","date":"14/05 13:38","url":"https://www.niemanlab.org/2026/05/the-eu-backs-italys-right-to-make-meta-pay-for-news/","title":"The European Union backs Italy's right to make Meta pay for news"},{"feed":"Talkback Home","date":"14/05 21:37","url":"https://citizenlab.ca/signal-warns-it-would-pull-out-of-canada-if-made-to-comply-with-lawful-access-bill/","title":"Signal Warns It Would Pull Out of Canada if Made to Comply with Lawful Access Bill [crypto]"},{"feed":"Liens en vrac de sebsauvage","date":"14/05 12:17","url":"https://mashable.com/article/meta-profited-from-medicare-scam-ads-report","title":"Meta made tens of millions off scam ads that ripped off seniors | Mashable"}]},{"title":"Gouvernance tech et confiance publique : encryption, data centers et démocratie numérique","lede_html":"Alors que <strong>Signal</strong> et <strong>Meta</strong> menacent de quitter le <strong>Canada</strong> si le <em>Bill C-22</em> impose la collecte de métadonnées et brise le chiffrement de bout en bout, <strong>70 %</strong> des Américains s'opposent à l'implantation de <em>data centers</em> dans leur communauté — préférant même vivre près d'une centrale nucléaire. Parallèlement, les fonds de pension de <strong>New York</strong> et de <strong>Californie</strong> dénoncent la structure de contrôle <em>extrême</em> de <strong>SpaceX</strong>, illustrant une <em>contestation citoyenne et institutionnelle</em> croissante face à une tech qui concentre pouvoir et infrastructures.","sources":[{"feed":"Talkback Home","date":"14/05 21:37","url":"https://citizenlab.ca/signal-warns-it-would-pull-out-of-canada-if-made-to-comply-with-lawful-access-bill/","title":"Signal Warns It Would Pull Out of Canada if Made to Comply with Lawful Access Bill [crypto]"},{"feed":"Hacker News","date":"15/05 03:21","url":"https://www.washingtonpost.com/nation/2026/05/13/7-10-americans-oppose-data-centers-being-built-their-communities/","title":"7 in 10 Americans oppose data centers being built in their communities"},{"feed":"Hacker News","date":"14/05 14:21","url":"https://www.reuters.com/legal/government/new-york-california-pension-leaders-oppose-extreme-spacex-control-structure-2026-05-14/","title":"New York, California pension leaders oppose 'extreme' SpaceX control structure"}]}]}],"appendix":[{"url":"https://internals-for-interns.com/posts/linux-kernel-startup/","title":"Understanding the Linux Kernel: The Linux Kernel Startup","note":""},{"url":"https://news.vt.edu/articles/2026/05/drought-united-states-la-nina-expert.html","title":"More than sixty percent of the United States is experiencing drought conditions","note":""},{"url":"https://antirez.com/news/165","title":"A few words on DS4","note":""},{"url":"https://www.gsb.stanford.edu/insights/power-free-popsicle","title":"The Power of a Free Popsicle (2018)","note":""},{"url":"https://jpain.io/god-damn-ai-is-making-me-dumb/","title":"AI is making me dumb","note":""},{"url":"https://www.nytimes.com/2026/05/13/technology/andreessen-horowitz-politics.html","title":"Andreessen Horowitz Is Spending on Politics Like No Other","note":""},{"url":"https://www.franceinfo.fr/societe/securite-routiere/en-saone-et-loire-la-gendarmerie-appelle-a-la-prudence-face-aux-chevreuils-ivres-sur-les-routes_8002100.html","title":"En Saône-et-Loire, la gendarmerie appelle à la prudence face aux chevreuils ivres sur les routes","note":""},{"url":"https://www.gamingonlinux.com/2026/05/the-original-metro-2033-and-metro-last-light-complete-edition-enter-the-gog-preservation-program/","title":"The original Metro 2033 and Metro: Last Light Complete Edition enter the GOG Preservation Program | GamingOnLinux","note":""},{"url":"https://www.upi.com/Top_News/World-News/2026/05/14/Cuba-says-oil-reserves-totally-drained/9311778746907/","title":"Cuba says it has run out of fuel, blames U.S. embargo","note":""},{"url":"https://www.schneier.com/blog/archives/2026/05/upcoming-speaking-engagements-56.html","title":"Upcoming Speaking Engagements [social]","note":""}],"footer":"Ether-News - 133 articles agrégés"}
+{
+  "date": "2026-05-15",
+  "title_tag": "Digest tech-watch — 15 mai 2026",
+  "headline": "Cisco SD-WAN : exploitation active d'une faille d'authentification …",
+  "window": {
+    "from": "14 mai 2026 07:25 UTC",
+    "to": "15 mai 2026 02:35 UTC",
+    "count": "133 articles"
+  },
+  "alert": "",
+  "categories": [
+    {
+      "slug": "ia",
+      "name": "IA",
+      "tagline": "AGENTS, CYBER ET HALLUCINATIONS : L'IA SORT DU CHAT",
+      "topics": [
+        {
+          "title": "Microsoft et Anthropic : la bataille de l'IA offensive en cybersécurité",
+          "lede_html": "Microsoft déploie <strong>MDASH</strong>, un système multi-agents composé de plus de 100 agents spécialisés qui a déjà découvert <strong>16 vulnérabilités Windows</strong> inédites — dont des RCE réseau sans authentification sur la pile <code>tcpip.sys</code> et le service IKEv2 — et surpasse <strong>Anthropic Mythos</strong> sur le benchmark <em>CyberGym</em>. Cette avancée souligne le basculement vers une IA <em>offensive</em> à double usage, tandis qu'un autre article rappelle que les <em>hallucinations</em> des modèles injectent des risques réels dans les infrastructures critiques : faute de mécanisme d'incertitude, l'IA produit des réponses hautement confiantes mais erronées, exploitant la confiance humaine.",
+          "sources": [
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 19:41",
+              "url": "https://www.scworld.com/brief/microsoft-details-new-ai-system-for-vulnerability-discovery",
+              "title": "Microsoft details new AI system for vulnerability discovery [app]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 14:04",
+              "url": "https://www.geekwire.com/2026/microsofts-multi-agent-ai-system-tops-anthropics-mythos-on-cybersecurity-benchmark/",
+              "title": "Microsoft’s multi-agent AI system tops Anthropic’s Mythos on cybersecurity benchmark [app]"
+            },
+            {
+              "feed": "The Hacker News",
+              "date": "14/05 13:30",
+              "url": "https://thehackernews.com/2026/05/how-ai-hallucinations-are-creating-real.html",
+              "title": "How AI Hallucinations Are Creating Real Security Risks"
+            }
+          ]
+        },
+        {
+          "title": "Claude déborde du chatbot : juridique, physique et crypto",
+          "lede_html": "<strong>Anthropic</strong> pousse <strong>Claude</strong> au-delà du chatbot générique avec <strong>claude-for-legal</strong>, un dépôt GitHub de plugins pour les workflows juridiques, et une collaboration en physique des hautes énergies où le modèle agit comme <em>assistant doctoral</em> sous supervision humaine. Pendant ce temps, un utilisateur a récupéré <strong>400 000 dollars</strong> en Bitcoin grâce à Claude, le bot essayant <strong>3,5 billions</strong> de mots de passe sur un portefeuille vieux de 11 ans — un usage <em>imprévu</em> qui souligne la capacité des LLM à s'immiscer dans des niches verticales bien loin du simple dialogue.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "14/05 23:05",
+              "url": "https://github.com/anthropics/claude-for-legal",
+              "title": "Claude for Legal"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "14/05 16:49",
+              "url": "https://www.tomshardware.com/tech-industry/cryptocurrency/bitcoin-trader-recovers-usd400-000-using-claude-ai-after-losing-wallet-password-11-years-ago-bot-tried-3-5-trillion-passwords-before-decrypting-an-old-wallet-backup",
+              "title": "Claude AI recovers an 11 yrs old BTC wallet holding 400k USD"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 19:48",
+              "url": "https://www.anthropic.com/research/vibe-physics",
+              "title": "Vibe physics: The AI grad student"
+            }
+          ]
+        },
+        {
+          "title": "L'IA générative se déploie : images, code mobile et essaims d'agents",
+          "lede_html": "L'IA générative s'industrialise sur trois fronts : <strong>OpenAI</strong> déploie <strong>Codex</strong> dans l'app mobile <strong>ChatGPT</strong>, rendant l'écriture de code accessible en situation de mobilité ; la communauté compile <strong>400+</strong> prompts inversés et <strong>20+</strong> templates industriels pour <strong>GPT-Image2</strong>, transformant la génération d'images en <em>discipline reproductible</em> ; tandis que <strong>ClawTeam</strong> propose une orchestration d'<em>essaims d'agents</em> auto-organisés sur multi-GPU, rapprochant l'IA agentique d'une automatisation <em>quasi-autonome</em>.",
+          "sources": [
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 15:46",
+              "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+              "title": "GitHub - freestylefly/awesome-gpt-image-2: Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中 [rev]"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "14/05 22:06",
+              "url": "https://openai.com/index/work-with-codex-from-anywhere/",
+              "title": "Codex is now in the ChatGPT mobile app"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 15:45",
+              "url": "https://github.com/HKUDS/ClawTeam",
+              "title": "GitHub - HKUDS/ClawTeam: \"ClawTeam: Agent Swarm Intelligence\" (One Command → Full Automation) [cloud]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "infosec",
+      "name": "Infosec",
+      "tagline": "EXPLOITATION MASSIVE DE FAILLES CRITIQUES ET CAMPAGNES D'APT EN HAUTE INTENSITÉ",
+      "topics": [
+        {
+          "title": "Cisco SD-WAN : exploitation active d'une faille d'authentification critique",
+          "lede_html": "La faille d'authentification <strong>CVE-2026-20182</strong> (CVSS <strong>10.0</strong>) dans les contrôleurs et managers <strong>Cisco Catalyst SD-WAN</strong> permet à un attaquant non authentifié d'obtenir des privilèges administratifs, et elle est <em>activement exploitée</em> par l'acteur étatique que Talos regroupe sous <strong>UAT-8616</strong>. Les attaques multi-étapes déployent notamment le webshell JSP <code>XenShell</code> et s'appuient aussi sur d'autres failles corrigées en février (<strong>CVE-2026-20133</strong>, <strong>CVE-2026-20128</strong>, <strong>CVE-2026-20122</strong>), soulignant l'urgence d'appliquer les correctifs publiés par <strong>Cisco</strong>.",
+          "sources": [
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 22:25",
+              "url": "https://www.darkreading.com/vulnerabilities-threats/maximum-severity-cisco-sd-wan-bug-exploited",
+              "title": "Maximum Severity Cisco SD-WAN Bug Exploited in the Wild [exp] [net]"
+            },
+            {
+              "feed": "CISA Known Exploited Vulnerabilities Catalog",
+              "date": "14/05 21:01",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20182",
+              "title": "2026-05-14: [CVE-2026-20182] Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 19:45",
+              "url": "https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html",
+              "title": "Cisco Catalyst SD-WAN Controller Auth Bypass Actively Exploited to Gain Admin Access [exp] [net]"
+            },
+            {
+              "feed": "The Hacker News",
+              "date": "14/05 19:45",
+              "url": "https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html",
+              "title": "Cisco Catalyst SD-WAN Controller Auth Bypass Actively Exploited to Gain Admin Access"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 18:02",
+              "url": "https://blog.talosintelligence.com/sd-wan-ongoing-exploitation/",
+              "title": "Ongoing exploitation of Cisco Catalyst SD-WAN vulnerabilities [app] [net]"
+            }
+          ]
+        },
+        {
+          "title": "Nouvelles vulnérabilités noyau et contournements de sécurité matérielle",
+          "lede_html": "En quelques jours, l'équipe Calif démontre la <strong>première corruption mémoire noyau macOS</strong> sur silicium <strong>Apple M5</strong>, contournant <em>MIE</em> — le système de marquage mémoire qu'Apple a mis cinq ans à durcir en hardware — via une chaîne d'élévation de privilèges <em>data-only</em> ciblant <strong>macOS 26.4.1</strong>. Pendant ce temps, <strong>Synacktiv</strong> contourne le ratchet anti-downgrade du <strong>Tesla Wall Connector Gen 3</strong> en exploitant l'ordre d'écriture entre table de partitions et effacement de slot, et un chercheur anonyme révèle deux zero-days Windows — <strong>YellowKey</strong> (bypass <strong>BitLocker</strong>) et <strong>GreenPlasma</strong> (élévation via <code>CTFMON</code>) —, tandis qu'un travail de <em>hacking de firmware HDD</em> rappelle que le contrôle du microcode disque reste un vecteur d'attaque largement sous-estimé.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "14/05 20:25",
+              "url": "https://blog.calif.io/p/first-public-kernel-memory-corruption",
+              "title": "First public macOS kernel memory corruption exploit on Apple M5"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "14/05 22:41",
+              "url": "https://www.synacktiv.com/en/publications/exploiting-the-tesla-wall-connector-from-its-charge-port-connector-part-2-bypassing",
+              "title": "Tesla Wall Connector bootloader bypasses the firmware downgrade ratchet"
+            },
+            {
+              "feed": "The Hacker News",
+              "date": "14/05 11:25",
+              "url": "https://thehackernews.com/2026/05/windows-zero-days-expose-bitlocker.html",
+              "title": "Windows Zero-Days Expose BitLocker Bypasses And CTFMON Privilege Escalation"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "14/05 18:19",
+              "url": "https://icode4.coffee/?p=1465",
+              "title": "HDD Firmware Hacking"
+            }
+          ]
+        },
+        {
+          "title": "Campagnes d'espionnage ciblées en Europe de l'Est et secteur énergétique",
+          "lede_html": "Les groupes <strong>Ghostwriter</strong> et <strong>FrostyNeighbor</strong> – en réalité un même ensemble belarusien aussi suivi sous les monikers <code>PUSHCHA</code>, <code>Storm-0257</code> et <code>UAC-0057</code> – mènent depuis mars 2026 des campagnes de spear-phishing géofencé contre des entités gouvernementales ukrainiennes et polonaises, déployant <code>Cobalt Strike</code> via des PDF piégés. Parallèlement, <strong>FamousSparrow</strong>, lié à la Chine, exploite des failles <strong>Exchange</strong> pour frapper en plusieurs vagues un opérateur pétrolier azerbaïdjanais entre décembre 2025 et février 2026, marquant <em>la première incursion connue contre les infrastructures énergétiques du Sud-Caucase</em>.",
+          "sources": [
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 18:59",
+              "url": "https://www.darkreading.com/cyberattacks-data-breaches/frostyneighbor-apt-govt-orgs-poland-ukraine",
+              "title": "'FrostyNeighbor' APT Carefully Targets Govt Orgs in Poland, Ukraine [mal]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 18:20",
+              "url": "https://thehackernews.com/2026/05/ghostwriter-targets-ukrainian.html",
+              "title": "Ghostwriter Targets Ukrainian Government With Geofenced PDF Phishing, Cobalt Strike [net] [mal]"
+            },
+            {
+              "feed": "The Hacker News",
+              "date": "14/05 16:00",
+              "url": "https://thehackernews.com/2026/05/ghostwriter-targets-ukrainian.html",
+              "title": "Ghostwriter Targets Ukrainian Government With Geofenced PDF Phishing, Cobalt Strike"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 11:34",
+              "url": "https://securityaffairs.com/192113/apt/famoussparrow-targets-azerbaijani-energy-sector-in-multi-wave-espionage-campaign.html",
+              "title": "FamousSparrow targets Azerbaijani energy sector in multi-wave espionage campaign [exp] [net] [mal]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 18:22",
+              "url": "https://hackread.com/famoussparrow-oil-gas-ms-exchange-server-exploit/",
+              "title": "FamousSparrow Targeted Oil and Gas Industry via MS Exchange Server Exploit [exp] [mal]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "devops",
+      "name": "DevOps",
+      "tagline": "SÉCURITÉ, REPRODUCTIBILITÉ ET OUTILS OPEN SOURCE",
+      "topics": [
+        {
+          "title": "Sécurité applicative et cloud : consolidation du marché et nouveaux outils open source",
+          "lede_html": "Le paysage AppSec se scinde : <strong>Akamai</strong> renforce son portefeuille Zero Trust en rachetant <strong>LayerX</strong> pour <strong>205 M$</strong>, tandis que <strong>Qualys</strong> décroche l'autorisation <strong>FedRAMP High</strong> pour <code>TotalCloud</code>, consolidant l'offre CNAPP pour les environnements fédéraux. En parallèle, la communauté réplique par l'open source — <code>Velonus</code> déduplique le bruit SAST via un copilote <em>AI-native</em>, et <code>CLAUDIT-SEC</code> audite en lecture seule les agents <strong>Claude</strong> sur macOS/Windows —, illustrant une <em>tension entre consolidation commerciale et innovation communautaire</em> dans la sécurité DevOps.",
+          "sources": [
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 18:21",
+              "url": "https://www.securityweek.com/akamai-to-acquire-ai-and-browser-security-firm-layerx-for-205-million/",
+              "title": "Akamai to Acquire AI and Browser Security Firm LayerX for $205 Million [app]"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "15/05 03:02",
+              "url": "https://github.com/AliAmmar15/Velonus",
+              "title": "Velonus – Open-source AppSec scanner that deduplicates SAST noise"
+            },
+            {
+              "feed": "Qualys Blog",
+              "date": "14/05 14:45",
+              "url": "https://blog.qualys.com/product-tech/2026/05/14/qualys-totalcloud-achieves-fedramp-high-authorization-for-cloud-security-and-compliance-assurance",
+              "title": "FedRAMP High Authorized: Qualys TotalCloud CNAPP – From Compliance to Defense"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 14:52",
+              "url": "https://github.com/HarmonicSecurity/claudit-sec",
+              "title": "GitHub - HarmonicSecurity/claudit-sec: Security audit tool for Claude Desktop and Claude Code on macOS — single-command visibility into MCP servers, extensions, plugins, connectors, scheduled tasks, and permissions. [app]"
+            }
+          ]
+        },
+        {
+          "title": "Reproductibilité et fiabilité des chaînes de build",
+          "lede_html": "<strong>Debian</strong> franchit un cap : la reproductibilité bit-à-bit est désormais <em>obligatoire</em> pour tout paquet entrant ou se maintenant dans <code>testing</code>, et donc dans la future version <strong>Forky 14</strong>. Avec <strong>98,29 %</strong> des paquets indépendants de l'architecture déjà reproductibles (23 371 OK, 414 KO), cette exigence traduit une exigence de traçabilité qui dépasse <strong>Debian</strong> et interpelle l'ensemble des pipelines de livraison logicielle.",
+          "sources": [
+            {
+              "feed": "LinuxFr.org : les dépéches",
+              "date": "14/05 11:00",
+              "url": "https://linuxfr.org/news/reproductibilite-obligatoire-tests-de-paquets-binaires-et-nouvelle-architecture",
+              "title": "Reproductibilité obligatoire, tests de paquets binaires et nouvelle architecture"
+            }
+          ]
+        },
+        {
+          "title": "Outils et runtime : évolutions techniques et communautaires",
+          "lede_html": "Le runtime <strong>Bun</strong> franchit un cap majeur avec le merge d'une réécriture en <strong>Rust</strong> couvrant 6755 commits, marquant une bascule stratégique vers un langage <em>plus sûr et performant</em> pour son cœur d'exécution. Parallèlement, le second relais public <strong>ODoH</strong> ouvre l'accès anonyme au DNS sans compte, tandis qu'<strong>autoskills</strong> automatise en une seule commande la détection et l'installation sécurisée de compétences pour agents IA, <em>réduisant la friction</em> d'intégration de stacks hétérogènes.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "14/05 10:15",
+              "url": "https://github.com/oven-sh/bun/pull/30412",
+              "title": "Rewrite Bun in Rust has been merged"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "14/05 12:44",
+              "url": "https://numa.rs/blog/posts/odoh-anonymous-dns-without-an-account.html",
+              "title": "Show HN: Running the second public ODoH relay"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 18:24",
+              "url": "https://github.com/midudev/autoskills",
+              "title": "GitHub - midudev/autoskills: One command. Your entire AI skill stack. Installed. [app]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "diy",
+      "name": "DIY",
+      "tagline": "HARDWARE, FIRMWARE, ET BIDOUILLES QUI POUSSENT LES LIMITES",
+      "topics": [
+        {
+          "title": "Capteurs matriciels LiDAR : la vision 3D démocratisée pour robots makers",
+          "lede_html": "Les capteurs LiDAR matriciels, qui échantillonnent <strong>64 points</strong> de distance simultanément de <strong>2 cm</strong> à <strong>3,5 m</strong>, sortent enfin des voitures autonomes pour atterrir sur des robots makers : <strong>Mellow Labs</strong> a greffé un <code>SEN0628</code> sur <em>Zippy</em>, un tank imprimé en 3D piloté par <code>ESP32</code>, transformant un châssis télécommandé en robot autonome — bien que la moitié des lignes capte le sol et qu'un code en partie généré par <em>LLM</em> ait nécessité plusieurs itérations.",
+          "sources": [
+            {
+              "feed": "Korben",
+              "date": "14/05 16:30",
+              "url": "https://korben.info/un-capteur-lidar-matriciel-pour-donner-la-vue-en-relief-a-un-petit-robot.html",
+              "title": "Un capteur LiDAR matriciel pour donner la vue en relief à un petit robot"
+            },
+            {
+              "feed": "Hack a Day",
+              "date": "14/05 10:00",
+              "url": "https://hackaday.com/2026/05/14/lidar-matrix-sensor-sees-in-3d/",
+              "title": "LiDAR Matrix Sensor Sees in 3D"
+            }
+          ]
+        },
+        {
+          "title": "Infrastructure DIY : irrigation à l'échelle et gestion intelligente des batteries",
+          "lede_html": "De la ferme à l'atelier, les makers repoussent les limites de l'infrastructure <em>DIY</em> : <strong>Vinnie</strong> étend son irrigation sur des hectares grâce à un bus <code>RS-485</code> piloté par <strong>Raspberry Pi</strong>, avec des valves à solénoïdes latch et un protocole de noeuds adressables, tandis que <strong>DaverDavid</strong> propose <strong>ChargeCap</strong>, un circuit qui échantillonne le courant de charge pour déconnecter les lithium-ion avant leur seuil maximal — une stratégie de <em>stockage à tension intermédiaire</em> que la plupart appareils intégrés ignorent.",
+          "sources": [
+            {
+              "feed": "Hack a Day",
+              "date": "14/05 22:00",
+              "url": "https://hackaday.com/2026/05/14/rs-485-sprinkler-control-scaling-irrigation-across-the-farm/",
+              "title": "RS-485 Sprinkler Control: Scaling Irrigation Across the Farm"
+            },
+            {
+              "feed": "Hack a Day",
+              "date": "14/05 20:30",
+              "url": "https://hackaday.com/2026/05/14/chargecap-helps-your-batteries-last-longer-by-limiting-charge-level/",
+              "title": "ChargeCap Helps Your Batteries Last Longer By Limiting Charge Level"
+            }
+          ]
+        },
+        {
+          "title": "Open hardware et RISC-V : nouvelles briques pour l'autonomie technologique",
+          "lede_html": "Le <strong>routeur RISC-V</strong> de Start9 lève actuellement des fonds pour proposer un appareil réseau entièrement open-source sur une architecture libre, tandis que la carte <strong>pic0rick</strong> remplace les conceptions FPGA par un <code>RP2040</code>/<code>RP2350</code> pour l'acquisition ultrasonore à <em>60 Msps</em>. Ces deux projets illustrent une convergence : l'<em>hardware libre</em> n'est plus cantonné aux prototypes marginaux, il vise désormais des usages critiques — routage réseau et instrumentation — comme alternatives crédibles aux plateformes propriétaires verrouillées.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "14/05 22:06",
+              "url": "https://router.start9.com/",
+              "title": "RISC-V Router"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "14/05 20:01",
+              "url": "http://un0rick.cc/pic0rick",
+              "title": "DIY open-source ultrasound hardware on the rp2040/rp2350"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "societe",
+      "name": "Société & régulation",
+      "tagline": "RÉGULATION, RESPONSABILITÉ ET RÉSISTANCE FACE À L'ACCÉLÉRATION TECHNOLOGIQUE",
+      "topics": [
+        {
+          "title": "L'IA sous pression : politiques, fiabilité et zombification des institutions",
+          "lede_html": "De la politique d'entreprise à l'université en passant par les dossiers médicaux, l'IA se heurte à une crise de crédibilité institutionnelle où l'urgence de déploiement fait face à des failles opérationnelles et éthiques documentées.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "14/05 23:24",
+              "url": "https://brianmeeker.me/2026/05/14/have-a-coherent-ai-policy/",
+              "title": "Have a Coherent AI Policy"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "14/05 22:37",
+              "url": "https://www.theregister.com/ai-ml/2026/05/14/ontario-auditors-find-doctors-ai-note-takers-routinely-blow-basic-facts/5240771",
+              "title": "Ontario auditors find doctors' AI note takers routinely blow basic facts"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "14/05 18:37",
+              "url": "https://www.thenewcritic.com/p/the-great-zombification",
+              "title": "The AI Zombification of Universities"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "14/05 20:39",
+              "url": "https://twitter.com/tdietterich/status/2055000956144935055",
+              "title": "New arXiv policy: 1-year ban for hallucinated references"
+            }
+          ]
+        },
+        {
+          "title": "Meta et les géants du numérique face à la contre-offre réglementaire",
+          "lede_html": "Alors que la <strong>CJUE</strong> confirme le droit de l'Italie d'imposer à <strong>Meta</strong> une rémunération équitable des contenus de presse, le Canada fait face à une menace symétrique : le <strong>Bill C-22</strong> pourrait contraindre les plateformes à affaiblir le chiffrement de bout en bout, poussant <strong>Signal</strong> et <strong>Meta</strong> à envisager un retrait du pays. Parallèlement, un rapport du <strong>CCDH</strong> révèle que <strong>Meta</strong> a engrangé <strong>14,3 millions de dollars</strong> de revenus publicitaires en <em>2025</em> grâce à des arnaques Medicare ciblant les seniors — entre <em>deepfakes</em> de célébrités et fausses promesses d'avantages gratuits.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "14/05 13:38",
+              "url": "https://www.niemanlab.org/2026/05/the-eu-backs-italys-right-to-make-meta-pay-for-news/",
+              "title": "The European Union backs Italy's right to make Meta pay for news"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 21:37",
+              "url": "https://citizenlab.ca/signal-warns-it-would-pull-out-of-canada-if-made-to-comply-with-lawful-access-bill/",
+              "title": "Signal Warns It Would Pull Out of Canada if Made to Comply with Lawful Access Bill [crypto]"
+            },
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "14/05 12:17",
+              "url": "https://mashable.com/article/meta-profited-from-medicare-scam-ads-report",
+              "title": "Meta made tens of millions off scam ads that ripped off seniors | Mashable"
+            }
+          ]
+        },
+        {
+          "title": "Gouvernance tech et confiance publique : encryption, data centers et démocratie numérique",
+          "lede_html": "Alors que <strong>Signal</strong> et <strong>Meta</strong> menacent de quitter le <strong>Canada</strong> si le <em>Bill C-22</em> impose la collecte de métadonnées et brise le chiffrement de bout en bout, <strong>70 %</strong> des Américains s'opposent à l'implantation de <em>data centers</em> dans leur communauté — préférant même vivre près d'une centrale nucléaire. Parallèlement, les fonds de pension de <strong>New York</strong> et de <strong>Californie</strong> dénoncent la structure de contrôle <em>extrême</em> de <strong>SpaceX</strong>, illustrant une <em>contestation citoyenne et institutionnelle</em> croissante face à une tech qui concentre pouvoir et infrastructures.",
+          "sources": [
+            {
+              "feed": "Talkback Home",
+              "date": "14/05 21:37",
+              "url": "https://citizenlab.ca/signal-warns-it-would-pull-out-of-canada-if-made-to-comply-with-lawful-access-bill/",
+              "title": "Signal Warns It Would Pull Out of Canada if Made to Comply with Lawful Access Bill [crypto]"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "15/05 03:21",
+              "url": "https://www.washingtonpost.com/nation/2026/05/13/7-10-americans-oppose-data-centers-being-built-their-communities/",
+              "title": "7 in 10 Americans oppose data centers being built in their communities"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "14/05 14:21",
+              "url": "https://www.reuters.com/legal/government/new-york-california-pension-leaders-oppose-extreme-spacex-control-structure-2026-05-14/",
+              "title": "New York, California pension leaders oppose 'extreme' SpaceX control structure"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "appendix": [
+    {
+      "url": "https://internals-for-interns.com/posts/linux-kernel-startup/",
+      "title": "Understanding the Linux Kernel: The Linux Kernel Startup",
+      "note": ""
+    },
+    {
+      "url": "https://news.vt.edu/articles/2026/05/drought-united-states-la-nina-expert.html",
+      "title": "More than sixty percent of the United States is experiencing drought conditions",
+      "note": ""
+    },
+    {
+      "url": "https://antirez.com/news/165",
+      "title": "A few words on DS4",
+      "note": ""
+    },
+    {
+      "url": "https://www.gsb.stanford.edu/insights/power-free-popsicle",
+      "title": "The Power of a Free Popsicle (2018)",
+      "note": ""
+    },
+    {
+      "url": "https://jpain.io/god-damn-ai-is-making-me-dumb/",
+      "title": "AI is making me dumb",
+      "note": ""
+    },
+    {
+      "url": "https://www.nytimes.com/2026/05/13/technology/andreessen-horowitz-politics.html",
+      "title": "Andreessen Horowitz Is Spending on Politics Like No Other",
+      "note": ""
+    },
+    {
+      "url": "https://www.franceinfo.fr/societe/securite-routiere/en-saone-et-loire-la-gendarmerie-appelle-a-la-prudence-face-aux-chevreuils-ivres-sur-les-routes_8002100.html",
+      "title": "En Saône-et-Loire, la gendarmerie appelle à la prudence face aux chevreuils ivres sur les routes",
+      "note": ""
+    },
+    {
+      "url": "https://www.gamingonlinux.com/2026/05/the-original-metro-2033-and-metro-last-light-complete-edition-enter-the-gog-preservation-program/",
+      "title": "The original Metro 2033 and Metro: Last Light Complete Edition enter the GOG Preservation Program | GamingOnLinux",
+      "note": ""
+    },
+    {
+      "url": "https://www.upi.com/Top_News/World-News/2026/05/14/Cuba-says-oil-reserves-totally-drained/9311778746907/",
+      "title": "Cuba says it has run out of fuel, blames U.S. embargo",
+      "note": ""
+    },
+    {
+      "url": "https://www.schneier.com/blog/archives/2026/05/upcoming-speaking-engagements-56.html",
+      "title": "Upcoming Speaking Engagements [social]",
+      "note": ""
+    }
+  ],
+  "footer": "Ether-News - 133 articles agrégés"
+}

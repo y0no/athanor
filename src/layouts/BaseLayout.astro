@@ -85,11 +85,10 @@ const ogImage = new URL(`${base}og-image.png`, Astro.site).href;
         <div class="wrap">
             <nav class="site-nav">
                 <div class="brand-wrap">
-                    <a href={base} class="brand">Athanor</a>
                     {
                         date && (
                             <span class="brand-date">
-                                · {formatDateLong(date)}
+                                {formatDateLong(date)}
                             </span>
                         )
                     }
@@ -111,7 +110,8 @@ const ogImage = new URL(`${base}og-image.png`, Astro.site).href;
             </nav>
             <slot />
             <footer class="site-footer">
-                Athanor is made with ♥️ by <a href="https://y0no.fr">y0no</a>
+                <a href="https://github.com/y0no/athanor">Athanor</a> is made with
+                ♥️ by <a href="https://y0no.fr">y0no</a>
             </footer>
         </div>
     </body>

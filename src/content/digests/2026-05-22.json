@@ -1,1 +1,497 @@
-{"date":"2026-05-22","title_tag":"Digest tech-watch — 22 mai 2026","headline":"Vagues de vulnérabilités critiques : Microsoft Defender, noyaux Lin…","window":{"from":"21 mai 2026 06:19 UTC","to":"22 mai 2026 04:03 UTC","count":"140 articles"},"alert":"","categories":[{"slug":"ia","name":"IA","tagline":"AGENTS, ARCHITECTURES ET OUTILS POUR LA PRODUCTION","topics":[{"title":"Multi-Stream LLMs : repenser l'architecture des modèles","lede_html":"Le papier <strong>Multi-Stream LLMs</strong> propose de remplacer le paradigme séquentiel des LLMs par une architecture à <em>flux parallèles</em> où lecture, raisonnement et action s'exécutent simultanément dans des streams distincts, levant le goulot d'étranglement qui empêche aujourd'hui un agent de réagir pendant qu'il écrit ou de penser pendant qu'il lit. En parallèle, l'écosystème s'empare de l'optimisation des tokens : <strong>OpenSquilla</strong> mise sur le routage on-device et la mémoire persistante pour maximiser la <em>densité d'intelligence</em> à budget constant, tandis que <strong>CodeSight</strong> réduit la consommation tokenique de plus de <strong>90×</strong> via une analyse de code zéro-dépendance alimentant <code>Claude Code</code>, <code>Cursor</code> ou <code>Copilot</code>.","sources":[{"feed":"Hacker News","date":"21/05 21:37","url":"https://arxiv.org/abs/2605.12460","title":"Multi-Stream LLMs: new paper on parallelizing/separating prompts, thinking, I/O"},{"feed":"Talkback Home","date":"21/05 10:08","url":"https://github.com/opensquilla/opensquilla","title":"GitHub - opensquilla/opensquilla: OpenSquilla — Token-Efficient AI Agent with same budget, higher intelligence density [app]"},{"feed":"Talkback Home","date":"21/05 10:08","url":"https://github.com/Houseofmvps/codesight","title":"GitHub - Houseofmvps/codesight: Universal AI context generator. Saves thousands of tokens per conversation in Claude Code, Cursor, Copilot, Codex, and more."}]},{"title":"L'IA s'installe dans le workflow de développement","lede_html":"De Claude Code aux agents sandboxés de Runtime, les outils d'IA gagnent en structure, en spécifications et en isolation pour devenir des collègues de code fiables.","sources":[{"feed":"Hacker News","date":"22/05 03:17","url":"https://news.ycombinator.com/item?id=48231575","title":"Show HN: Spec-Driven Development Workflow for Claude Code"},{"feed":"Hacker News","date":"21/05 16:07","url":"https://www.runtm.com/","title":"Launch HN: Runtime (YC P26) – Sandboxed coding agents for everyone on a team"},{"feed":"Talkback Home","date":"21/05 08:16","url":"https://github.com/ai-boost/awesome-harness-engineering","title":"GitHub - ai-boost/awesome-harness-engineering: Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration. [ics]"},{"feed":"Journal du hacker","date":"21/05 14:54","url":"https://codeheroes.fr/blog/profiler-son-application-node-js-un-profiler-pour-les-agents-ia/","title":"Profiler son application Node.js : un profiler pensé pour les agents IA"}]},{"title":"RAG local et modèles compacts : l'indépendance du edge","lede_html":"Un <strong>MacBook 2021</strong> avec 50 Go de swap suffit à <strong>Gemma4-31B</strong> pour indexer localement une année entière de vidéo, démontrant que les modèles de grande taille deviennent viables en dehors du cloud — même si le coût reste un <em>swap massif</em> qui rappelle les limites matérielles. En parallèle, <strong>embdr</strong> démocratise le RAG auto-hébergé via une API de retrieval en une commande, avec recherche hybride, OCR et multiples backends LLM, rendant le <em>rag local</em> accessible hors des datacenters.","sources":[{"feed":"Hacker News","date":"21/05 16:01","url":"https://blog.simbastack.com/indexed-a-year-of-video-locally/","title":"Indexing a year of video locally on a 2021 MacBook with Gemma4-31B (50GB swap)"},{"feed":"Talkback Home","date":"21/05 10:00","url":"https://github.com/Mar8x/embdr","title":"GitHub - Mar8x/embdr: Turn your own documents into a ChatGPT GP,  self-hosted RAG with a one-command retrieval API. [app]"}]}]},{"slug":"infosec","name":"Infosec","tagline":"PATCH TUESDAY XXL : ZERO-DAYS, FAILLES KERNEL ET ARRESTATIONS DE BOTMASTERS","topics":[{"title":"Vagues de vulnérabilités critiques : Microsoft Defender, noyaux Linux et routeurs","lede_html":"Les fondations mêmes des infrastructures sont attaquées : <strong>Microsoft Defender</strong> est frappé par deux <em>zero-days actifs</em> (<strong>CVE-2026-41091</strong> en élévation de privilèges vers SYSTEM, <strong>CVE-2026-45498</strong> en déni de service), tandis qu'une faille noyau Linux vieille de <strong>9 ans</strong> — <strong>CVE-2026-46333</strong> (<code>ssh-keysign-pwn</code>) — permet à tout utilisateur local de passer <em>root</em> sur les distributions majeures. Côté réseau, un <em>zero-day Huawei</em> a provoqué la coupure nationale des télécoms luxembourgeoises en juillet 2025, et <strong>CVE-2026-45250</strong> offre une escalade locale immédiate sur <strong>FreeBSD 14.x</strong> via un débordement dans <code>setcred(2)</code>.","sources":[{"feed":"The Hacker News","date":"21/05 12:55","url":"https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html","title":"Microsoft Warns of Two Actively Exploited Defender Vulnerabilities"},{"feed":"Talkback Home","date":"21/05 12:55","url":"https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html","title":"Microsoft Warns of Two Actively Exploited Defender Vulnerabilities"},{"feed":"Talkback Home","date":"21/05 11:52","url":"https://www.securityweek.com/microsoft-patches-exploited-undefend-and-redsun-defender-zero-days/","title":"Microsoft Patches Exploited UnDefend and RedSun Defender Zero-Days [exp]"},{"feed":"Korben","date":"21/05 12:21","url":"https://korben.info/faille-kernel-linux-ssh-keysign-pwn.html","title":"ssh-keysign-pwn - La faille kernel Linux cachée depuis 9 ans"},{"feed":"The Hacker News","date":"21/05 09:35","url":"https://thehackernews.com/2026/05/9-year-old-linux-kernel-flaw-enables.html","title":"9-Year-Old Linux Kernel Flaw Enables Root Command Execution on Major Distros"},{"feed":"Talkback Home","date":"21/05 09:35","url":"https://thehackernews.com/2026/05/9-year-old-linux-kernel-flaw-enables.html","title":"9-Year-Old Linux Kernel Flaw Enables Root Command Execution on Major Distros [exp] [sys]"},{"feed":"Talkback Home","date":"21/05 14:48","url":"https://therecord.media/huawei-zero-day-behind-last-year-luxembourg-telecom-outage","title":"Huawei zero-day attack behind last year's crash of Luxembourg's entire telecoms network [exp] [net]"},{"feed":"Talkback Home","date":"21/05 17:46","url":"https://minanagehsalalma.github.io/cve-2026-34474-zte-h298a-h108n-sensitive-data-exposure/","title":"CVE-2026-34474: ZTE H298A / H108N Credential Leak via ETHCheat [net]"},{"feed":"CISA Known Exploited Vulnerabilities Catalog","date":"21/05 21:01","url":"https://nvd.nist.gov/vuln/detail/CVE-2026-34926","title":"2026-05-21: [CVE-2026-34926] Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability"},{"feed":"CISA Known Exploited Vulnerabilities Catalog","date":"21/05 21:01","url":"https://nvd.nist.gov/vuln/detail/CVE-2025-34291","title":"2026-05-21: [CVE-2025-34291] Langflow Origin Validation Error Vulnerability"},{"feed":"Talkback Home","date":"21/05 14:04","url":"https://www.securityweek.com/cisco-patches-critical-vulnerability-in-secure-workload/","title":"Cisco Patches Critical Vulnerability in Secure Workload [app] [net]"},{"feed":"Talkback Home","date":"21/05 12:58","url":"https://www.securityweek.com/drupal-patches-highly-critical-vulnerability-exposing-websites-to-hacking/","title":"Drupal Patches Highly Critical Vulnerability Exposing Websites to Hacking [app] [exp]"},{"feed":"Talkback Home","date":"21/05 17:58","url":"https://voidsec.com/cve-2026-40369-browser-sandbox-escape/","title":"CVE-2026-40369: Twelve Bytes to Escape the Browser Sandbox [exp] [sys]"},{"feed":"Schneier on Security","date":"21/05 18:03","url":"https://www.schneier.com/blog/archives/2026/05/macos-kernel-memory-corruption-exploit.html","title":"macOS Kernel Memory Corruption Exploit"},{"feed":"Hacker News","date":"21/05 14:15","url":"https://fatgid.io/","title":"FatGid: FreeBSD 14.x kernel local privilege escalation"}]},{"title":"Malware et opérations : du botnet Kimwolf aux backdoors télécoms","lede_html":"L'arrestation à Ottawa du présumé <strong>botmaster</strong> du botnet <strong>Kimwolf</strong>, responsable de <em>millions</em> d'objets IoT détournés pour des attaques DDoS massives, illustre les progrès de la répression judiciaire — mais elle coïncide avec l'émergence de <strong>Showboat</strong>, un framework Linux <em>modulaire</em> déployé depuis 2022 contre un opérateur télécom au Moyen-Orient, capable d'ouvrir un shell distant et d'agir comme proxy <code>SOCKS5</code>. Là où la police démonte des réseaux criminels opportunistes, les <em>APT</em> chinoises consolident des accès persistants dans les infrastructures critiques, rappelant que la <em>menace</em> se déplace des botnets de volume vers l'exploitation <em>silencieuse</em> de composants de confiance.","sources":[{"feed":"Krebs on Security","date":"21/05 23:50","url":"https://krebsonsecurity.com/2026/05/alleged-kimwolf-botmaster-dort-arrested-charged-in-u-s-and-canada/","title":"Alleged Kimwolf Botmaster 'Dort' Arrested, Charged in U.S. and Canada"},{"feed":"The Hacker News","date":"21/05 16:17","url":"https://thehackernews.com/2026/05/showboat-linux-malware-hits-middle-east.html","title":"Showboat Linux Malware Hits Middle East Telecom with SOCKS5 Proxy Backdoor"},{"feed":"Talkback Home","date":"21/05 17:49","url":"https://thehackernews.com/2026/05/showboat-linux-malware-hits-middle-east.html","title":"Showboat Linux Malware Hits Middle East Telecom with SOCKS5 Proxy Backdoor [mal]"}]},{"title":"Supply chain et confiance dégradée : packages Python, GitHub Actions et écosystème","lede_html":"Le compromis du package <strong>durabletask</strong> sur PyPi, lié à <strong>TeamPCP</strong>, déploie des droppers silencieux ciblant les identifiants cloud avec des capacités de propagation et de <em>disk-wiping</em>, tandis que le <em>cache poisoning</em> de <strong>GitHub Actions</strong> persiste depuis plus de deux ans pour injecter du code malveillant via des caches partagés. Ces attaques illustrent une <em>crise structurelle</em> de la chaîne d'approvisionnement logicielle, où la prolifération des vulnérabilities dépasse la visibilité des défenseurs — une dynamique que <strong>DOMPurify 3.4.5</strong> rappelle en colmatant un bypass XSS via <code>selectedcontent</code>.","sources":[{"feed":"Talkback Home","date":"21/05 21:49","url":"https://www.aikido.dev/blog/durabletask-package-compromised-mini-shai-hulud","title":"Microsoft's durabletask package on PyPi Compromised. Mini Shai Hulud attacks again... again! [app] [cloud] [mal]"},{"feed":"Talkback Home","date":"21/05 18:29","url":"https://neciudan.dev/github-actions-poisoning","title":"GitHub Actions Cache Poisoning is eating open source [app] [exp]"},{"feed":"Talkback Home","date":"21/05 10:14","url":"https://www.securityweek.com/supply-chain-security-crisis-too-many-vulnerabilities-too-little-visibility/","title":"Supply Chain Security Crisis: Too Many Vulnerabilities, Too Little Visibility [app]"},{"feed":"Talkback Home","date":"21/05 08:22","url":"https://github.com/cure53/DOMPurify/security/advisories/GHSA-87xg-pxx2-7hvx","title":"DOMPurify XSS via `selectedcontent` re-clone [app] [exp]"}]}]},{"slug":"devops","name":"DevOps","tagline":"INFRASTRUCTURE, CONTENEURS ET HAUTE DISPONIBILITÉ","topics":[{"title":"Docker dévoile une API MicroVM cachée dans son sandbox","lede_html":"<strong>Rivet</strong> a reverse-engineeré l'API <strong>MicroVM</strong> non documentée que <strong>Docker</strong> a discrètement intégrée à son offre Sandbox, révélant que l'isolation repose sur des <em>microVMs à noyau séparé</em> plutôt que sur les namespaces habituels des conteneurs. Cette couche, conçue pour exécuter du code non fiable — agents IA type <strong>Claude Code</strong> ou <strong>Codex</strong> — avec l'option <code>--dangerously-skip-permissions</code>, ne fonctionne aujourd'hui que sous <em>macOS/Windows</em> et exige la virtualisation imbriquée, ce qui limite son adoption immédiate en production.","sources":[{"feed":"Hacker News","date":"21/05 16:50","url":"https://rivet.dev/blog/2026-02-04-we-reverse-engineered-docker-sandbox-undocumented-microvm-api/","title":"We Reverse-Engineered Docker Sandbox's Undocumented MicroVM API"}]},{"title":"Netflix pousse le streaming vidéo à 400 Gb/s","lede_html":"Netflix détaille son architecture de distribution vidéo capable de servir du trafic à 400 Gb/s et au-delà, un benchmark d'ingénierie à grande échelle.","sources":[{"feed":"Hacker News","date":"21/05 18:29","url":"https://nabstreamingsummit.com/wp-content/uploads/2022/05/2022-Streaming-Summit-Netflix.pdf","title":"Serving Netflix Video Traffic at 400Gb/S and Beyond (2022) [pdf]"}]},{"title":"DNS haute disponibilité : retour d'expérience Technitium et AdGuard","lede_html":"Un homelabber dresse le bilan d'une refonte DNS passant d'un <em>SPOF</em> unique — un LXC où <code>AdGuard Home</code> cohabitait avec NPM — à une architecture <strong>haute disponibilité</strong> articulée autour de <strong>Technitium DNS Server</strong> en autoritaire récursif et <code>AdGuard Home</code> en relais filtrant. Les deux instances <strong>Technitium</strong> se synchronisent nativement en primaire/secondaire, éliminant le hairpin NAT et assurant la résolution locale même si un nœud <strong>Proxmox</strong> tombe, tandis qu'<code>AdGuard Home</code> centralise les règles de filtrage par client.","sources":[{"feed":"Journal du hacker","date":"21/05 08:41","url":"https://domopi.eu/refonte-complete-de-mon-infrastructure-dns-avec-technitium-et-adguard-home-en-haute-disponibilite/","title":"Refonte complète de mon infrastructure DNS avec Technitium et AdGuard Home en haute disponibilité"}]}]},{"slug":"diy","name":"DIY","tagline":"BRICOLAGE CONNECTÉ, CYBERDECKS ET LINUX DE POCHE","topics":[{"title":"Flipper One : le successeur du Zero inquiète ses créateurs","lede_html":"<strong>Flipper Devices</strong> dévoile le <strong>Flipper One</strong>, un mini-PC <code>Linux</code> ARM de poche doté de 2× <strong>Gigabit Ethernet</strong>, <strong>Wi‑Fi 6E</strong> et connecteurs <code>PCIe</code>/<code>USB 3.0</code>/<code>SATA</code> pour modules SDR ou modem 5G — un saut vers la <em>couche réseau IP</em>, loin du Flipper Zero centré sur les protocoles bas niveau. Le co-fondateur <strong>Pavel Zhovner</strong> lance un appel à la communauté, avouant être <em>« franchement terrifié »</em> par les risques de détournement d'une plateforme aussi ouverte, et demande de co-construire les garde-fous dès les premières phases de développement.","sources":[{"feed":"Hacker News","date":"21/05 13:03","url":"https://blog.flipper.net/flipper-one-we-need-your-help/","title":"Flipper One – we need your help"},{"feed":"Korben","date":"21/05 15:16","url":"https://korben.info/flipper-one-plateforme-linux-ouverte.html","title":"Flipper One - Le Linux de poche qui terrifie ses propres créateurs"},{"feed":"rtl-sdr.com","date":"22/05 02:51","url":"https://www.rtl-sdr.com/early-development-plans-for-flipper-one-announced/","title":"Early Development Plans for Flipper One Announced"}]},{"title":"Cyberdecks et objets connectés artisanaux","lede_html":"La scène maker réinvente le portable et l'objet ludique avec deux projets aux philosophies opposées : d'un côté un <strong>cyberdeck</strong> à écran coulissant articulé autour d'un <strong>Raspberry Pi 5</strong> et d'un clavier mécanique <em>compact</em>, de l'autre un <em>fortune cookie</em> électronique autonome piloté par un <code>ESP32</code> et un écran <em>e-paper</em> capable de stocker plus de <strong>3 000</strong> prédictions sans aucune connexion. L'un mise sur la <em>modularité brute</em>, l'autre sur la <em>simplicité déconnectée</em>.","sources":[{"feed":"Hack a Day","date":"21/05 22:00","url":"https://hackaday.com/2026/05/21/sliding-screen-cyberdeck-has-chunky-rugged-design/","title":"Sliding-Screen Cyberdeck Has Chunky, Rugged Design"},{"feed":"Hack a Day","date":"22/05 01:00","url":"https://hackaday.com/2026/05/21/e-fortune-cookie-will-humble-but-never-crumble/","title":"E-Fortune Cookie Will Humble, But Never Crumble"}]},{"title":"Synchronisation sans maître et interfaces physiques revisitées","lede_html":"Avec <strong>CrowdClock</strong>, <strong>Tony Goacher</strong> prouve qu'une synchronisation lumineuse parfaite ne nécessite ni maître ni appairage : chaque badge propage son horloge interne via <code>ESP-NOW</code>, et le réseau s'accorde de lui-même, <em>par simple propagation pair-à-pair</em>. De son côté, <strong>[Garage Tinkering]</strong> remplace le frustrant contrôleur <strong>iDrive</strong> de BMW par un bouton rotatif intégrant un écran rond et un <code>ESP32-S3</code>, montrant que l'interface physique automobile peut être repensée <em>depuis le hardware</em> plutôt que par logiciel.","sources":[{"feed":"Korben","date":"21/05 17:18","url":"https://korben.info/ces-badges-led-de-festival-se-synchronisent-tout-seuls.html","title":"Ces badges LED de festival se synchronisent tout seuls"},{"feed":"Hack a Day","date":"21/05 10:00","url":"https://hackaday.com/2026/05/21/building-a-better-automotive-rotary-controller/","title":"Building a Better Automotive Rotary Controller"}]}]},{"slug":"societe","name":"Société & régulation","tagline":"SURVEILLANCE, IDENTITÉ ET RÉSISTANCE NUMÉRIQUE","topics":[{"title":"Surveillance étatique et privée : la résistance s'organise","lede_html":"Alors que <strong>Seattle Shield</strong> révèle l'intégration d'acteurs privés comme <strong>Amazon</strong>, <strong>Facebook</strong> et <strong>ICE</strong> dans un réseau de renseignement policier, la résistance s'organise sur plusieurs fronts : le maire de Londres <strong>Sadiq Khan</strong> bloque un contrat de <strong>50 M£</strong> avec <strong>Palantir</strong>, et un amendement bipartite au Congrès américain vise à interdire les <em>lecteurs automatiques de plaques d'immatriculation</em> sauf pour le péage. Parallèlement, un audit confirme que <strong>Telegram</strong> expose ses utilisateurs à un suivi passif via une clé d'authentification, rappelant que la surveillance <em>commerciale</em> n'est pas en reste.","sources":[{"feed":"Hacker News","date":"21/05 19:55","url":"https://prismreports.org/2026/05/20/seattle-shield-private-companies-surveillance/","title":"Seattle Shield, an intelligence-sharing network operated by the Seattle police"},{"feed":"Hacker News","date":"21/05 18:35","url":"https://www.theguardian.com/uk-news/2026/may/21/london-mayor-sadiq-khan-blocks-met-police-deal-with-palantir","title":"London Mayor Blocks Palantir"},{"feed":"ZATAZ News","date":"21/05 16:34","url":"https://www.zataz.com/telegram-lidentifiant-qui-inquiete/","title":"Telegram, l'identifiant qui inquiète"},{"feed":"Hacker News","date":"21/05 14:58","url":"https://www.wired.com/story/a-bipartisan-amendment-would-end-police-license-plate-tracking-nationwide/","title":"A Bipartisan Amendment Would End Police License Plate Tracking Nationwide"}]},{"title":"Identité en ligne : vérification d'âge et archivage menacé","lede_html":"Sous prétexte de protéger les mineur·es, le Parlement français s’apprête à interdire l’accès aux réseaux sociaux aux moins de <strong>15 ans</strong> et à imposer une vérification d’âge qui se muerait en <em>contrôle d’identité généralisé</em>, porté tant par la France que par la Commission européenne au détriment du droit à l’anonymat. Parallèlement, plus de <strong>340</strong> titres de presse locale américaine — dont les chaînes <strong>McClatchy</strong>, <strong>Advance Local</strong> et <strong>Tribune Publishing</strong> — bloquent désormais les robots de l’<strong>Internet Archive</strong>, craignant que leurs archives ne servent de matière au <em>scraping IA</em>, et fragilisant ainsi la préservation à long terme du journalisme.","sources":[{"feed":"Liens en vrac de sebsauvage","date":"21/05 18:50","url":"https://www.laquadrature.net/2026/05/21/derriere-la-verification-dage-sur-les-reseaux-sociaux-la-generalisation-du-controle-didentite-en-ligne/","title":"Derrière la vérification d'âge sur les réseaux sociaux, la généralisation du contrôle d'identité en ligne – La Quadrature du Net"},{"feed":"Hacker News","date":"21/05 18:59","url":"https://www.niemanlab.org/2026/05/more-than-340-local-news-outlets-are-limiting-the-internet-archives-access-to-their-journalism/","title":"News outlets are limiting the Internet Archive's access to their journalism"}]},{"title":"IA : critique, spiritualité et redistribution des profits","lede_html":"Pendant que <strong>48 %</strong> des chrétiens américains confient leur guidance spirituelle aux LLM, transformant l'IA en <em>relation sacramentelle</em>, les critiques radicales s'organisent : dénonciation d'un <em>plagiat non autorisé à grande échelle</em> et appel à une <strong>constituance anti-IA</strong> face aux discours d'inévitabilité martelés par des dirigeants comme l'ex-PDG de Google <strong>Eric Schmidt</strong>. Sur le versant économique, les salariés semi-conducteurs de <strong>Samsung</strong> empochent en moyenne <strong>340 000 $</strong> de bonus, cristallisant le contraste entre <em>profits algorithmiques concentrés</em> et précarité des créateurs spoliés.","sources":[{"feed":"Hacker News","date":"21/05 15:36","url":"https://www.thehandbasket.co/p/hating-ai-is-good-actually","title":"Hating AI Is Good"},{"feed":"Hacker News","date":"21/05 15:38","url":"https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/","title":"AI is just unauthorised plagiarism at a bigger scale"},{"feed":"Liens en vrac de sebsauvage","date":"21/05 19:06","url":"https://www.theregister.com/ai-ml/2026/05/21/deus-ex-machina-half-of-us-christians-trust-ais-spiritual-advice/5244371","title":"Deus ex machina: Half of US Christians trust AI's spiritual advice"},{"feed":"Hacker News","date":"22/05 03:30","url":"https://qz.com/samsung-chip-workers-bonus-ai-profits-052126","title":"Samsung chip workers will get an average $340k bonus as AI profits soar"}]}]}],"appendix":[{"url":"https://www.barebones.com/products/bbedit/bbedit16.html","title":"BBEdit 16","note":""},{"url":"https://www.thek6project.co.uk/","title":"Where are all the UK red telephone kiosks?","note":""},{"url":"https://discover.swns.com/2026/05/chewing-gum-restores-dads-taste-and-smell-years-after-covid/","title":"Chewing gum restores dad's taste and smell years after Covid","note":""},{"url":"https://burogu.makotoworkshop.org/index.php?post/2026/05/21/Welcome-to-Dotclear%21","title":"Welcome to Dotclear!","note":""},{"url":"https://korben.info/android-17-travaille-sur-sa-version-de-continuite-dapple.html","title":"Android 17 travaille sur sa version de \"Continuité\" d'Apple","note":""},{"url":"https://www.hollywoodreporter.com/music/music-industry-news/spotify-will-start-reserving-concert-tickets-for-superfans-1236603106/","title":"Spotify will start reserving concert tickets for fans","note":""},{"url":"https://valhovey.github.io/gaia-mary/","title":"Project Hail Mary – Stellar Navigation Chart","note":""},{"url":"https://www.calculators.de/","title":"Museum of Pocket Calculating Devices","note":""},{"url":"https://hackaday.com/2026/05/21/transforming-lamp-built-with-led-filaments/","title":"Transforming Lamp Built With LED Filaments","note":""},{"url":"https://www.bigfinish.com/news/v/michael-keating-1947-2026","title":"Michael Keating has died","note":""}],"footer":"Athanor - 140 articles agrégés"}
+{
+  "date": "2026-05-22",
+  "title_tag": "Digest tech-watch — 22 mai 2026",
+  "headline": "Vagues de vulnérabilités critiques : Microsoft Defender, noyaux Linux et routeurs",
+  "window": {
+    "from": "21 mai 2026 06:19 UTC",
+    "to": "22 mai 2026 04:03 UTC",
+    "count": "140 articles"
+  },
+  "alert": "",
+  "categories": [
+    {
+      "slug": "ia",
+      "name": "IA",
+      "tagline": "AGENTS, ARCHITECTURES ET OUTILS POUR LA PRODUCTION",
+      "topics": [
+        {
+          "title": "Multi-Stream LLMs : repenser l'architecture des modèles",
+          "lede_html": "Le papier <strong>Multi-Stream LLMs</strong> propose de remplacer le paradigme séquentiel des LLMs par une architecture à <em>flux parallèles</em> où lecture, raisonnement et action s'exécutent simultanément dans des streams distincts, levant le goulot d'étranglement qui empêche aujourd'hui un agent de réagir pendant qu'il écrit ou de penser pendant qu'il lit. En parallèle, l'écosystème s'empare de l'optimisation des tokens : <strong>OpenSquilla</strong> mise sur le routage on-device et la mémoire persistante pour maximiser la <em>densité d'intelligence</em> à budget constant, tandis que <strong>CodeSight</strong> réduit la consommation tokenique de plus de <strong>90×</strong> via une analyse de code zéro-dépendance alimentant <code>Claude Code</code>, <code>Cursor</code> ou <code>Copilot</code>.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "21/05 21:37",
+              "url": "https://arxiv.org/abs/2605.12460",
+              "title": "Multi-Stream LLMs: new paper on parallelizing/separating prompts, thinking, I/O"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 10:08",
+              "url": "https://github.com/opensquilla/opensquilla",
+              "title": "GitHub - opensquilla/opensquilla: OpenSquilla — Token-Efficient AI Agent with same budget, higher intelligence density [app]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 10:08",
+              "url": "https://github.com/Houseofmvps/codesight",
+              "title": "GitHub - Houseofmvps/codesight: Universal AI context generator. Saves thousands of tokens per conversation in Claude Code, Cursor, Copilot, Codex, and more."
+            }
+          ]
+        },
+        {
+          "title": "L'IA s'installe dans le workflow de développement",
+          "lede_html": "De Claude Code aux agents sandboxés de Runtime, les outils d'IA gagnent en structure, en spécifications et en isolation pour devenir des collègues de code fiables.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "22/05 03:17",
+              "url": "https://news.ycombinator.com/item?id=48231575",
+              "title": "Show HN: Spec-Driven Development Workflow for Claude Code"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "21/05 16:07",
+              "url": "https://www.runtm.com/",
+              "title": "Launch HN: Runtime (YC P26) – Sandboxed coding agents for everyone on a team"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 08:16",
+              "url": "https://github.com/ai-boost/awesome-harness-engineering",
+              "title": "GitHub - ai-boost/awesome-harness-engineering: Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration. [ics]"
+            },
+            {
+              "feed": "Journal du hacker",
+              "date": "21/05 14:54",
+              "url": "https://codeheroes.fr/blog/profiler-son-application-node-js-un-profiler-pour-les-agents-ia/",
+              "title": "Profiler son application Node.js : un profiler pensé pour les agents IA"
+            }
+          ]
+        },
+        {
+          "title": "RAG local et modèles compacts : l'indépendance du edge",
+          "lede_html": "Un <strong>MacBook 2021</strong> avec 50 Go de swap suffit à <strong>Gemma4-31B</strong> pour indexer localement une année entière de vidéo, démontrant que les modèles de grande taille deviennent viables en dehors du cloud — même si le coût reste un <em>swap massif</em> qui rappelle les limites matérielles. En parallèle, <strong>embdr</strong> démocratise le RAG auto-hébergé via une API de retrieval en une commande, avec recherche hybride, OCR et multiples backends LLM, rendant le <em>rag local</em> accessible hors des datacenters.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "21/05 16:01",
+              "url": "https://blog.simbastack.com/indexed-a-year-of-video-locally/",
+              "title": "Indexing a year of video locally on a 2021 MacBook with Gemma4-31B (50GB swap)"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 10:00",
+              "url": "https://github.com/Mar8x/embdr",
+              "title": "GitHub - Mar8x/embdr: Turn your own documents into a ChatGPT GP,  self-hosted RAG with a one-command retrieval API. [app]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "infosec",
+      "name": "Infosec",
+      "tagline": "PATCH TUESDAY XXL : ZERO-DAYS, FAILLES KERNEL ET ARRESTATIONS DE BOTMASTERS",
+      "topics": [
+        {
+          "title": "Vagues de vulnérabilités critiques : Microsoft Defender, noyaux Linux et routeurs",
+          "lede_html": "Les fondations mêmes des infrastructures sont attaquées : <strong>Microsoft Defender</strong> est frappé par deux <em>zero-days actifs</em> (<strong>CVE-2026-41091</strong> en élévation de privilèges vers SYSTEM, <strong>CVE-2026-45498</strong> en déni de service), tandis qu'une faille noyau Linux vieille de <strong>9 ans</strong> — <strong>CVE-2026-46333</strong> (<code>ssh-keysign-pwn</code>) — permet à tout utilisateur local de passer <em>root</em> sur les distributions majeures. Côté réseau, un <em>zero-day Huawei</em> a provoqué la coupure nationale des télécoms luxembourgeoises en juillet 2025, et <strong>CVE-2026-45250</strong> offre une escalade locale immédiate sur <strong>FreeBSD 14.x</strong> via un débordement dans <code>setcred(2)</code>.",
+          "sources": [
+            {
+              "feed": "The Hacker News",
+              "date": "21/05 12:55",
+              "url": "https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html",
+              "title": "Microsoft Warns of Two Actively Exploited Defender Vulnerabilities"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 12:55",
+              "url": "https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html",
+              "title": "Microsoft Warns of Two Actively Exploited Defender Vulnerabilities"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 11:52",
+              "url": "https://www.securityweek.com/microsoft-patches-exploited-undefend-and-redsun-defender-zero-days/",
+              "title": "Microsoft Patches Exploited UnDefend and RedSun Defender Zero-Days [exp]"
+            },
+            {
+              "feed": "Korben",
+              "date": "21/05 12:21",
+              "url": "https://korben.info/faille-kernel-linux-ssh-keysign-pwn.html",
+              "title": "ssh-keysign-pwn - La faille kernel Linux cachée depuis 9 ans"
+            },
+            {
+              "feed": "The Hacker News",
+              "date": "21/05 09:35",
+              "url": "https://thehackernews.com/2026/05/9-year-old-linux-kernel-flaw-enables.html",
+              "title": "9-Year-Old Linux Kernel Flaw Enables Root Command Execution on Major Distros"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 09:35",
+              "url": "https://thehackernews.com/2026/05/9-year-old-linux-kernel-flaw-enables.html",
+              "title": "9-Year-Old Linux Kernel Flaw Enables Root Command Execution on Major Distros [exp] [sys]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 14:48",
+              "url": "https://therecord.media/huawei-zero-day-behind-last-year-luxembourg-telecom-outage",
+              "title": "Huawei zero-day attack behind last year's crash of Luxembourg's entire telecoms network [exp] [net]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 17:46",
+              "url": "https://minanagehsalalma.github.io/cve-2026-34474-zte-h298a-h108n-sensitive-data-exposure/",
+              "title": "CVE-2026-34474: ZTE H298A / H108N Credential Leak via ETHCheat [net]"
+            },
+            {
+              "feed": "CISA Known Exploited Vulnerabilities Catalog",
+              "date": "21/05 21:01",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34926",
+              "title": "2026-05-21: [CVE-2026-34926] Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability"
+            },
+            {
+              "feed": "CISA Known Exploited Vulnerabilities Catalog",
+              "date": "21/05 21:01",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34291",
+              "title": "2026-05-21: [CVE-2025-34291] Langflow Origin Validation Error Vulnerability"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 14:04",
+              "url": "https://www.securityweek.com/cisco-patches-critical-vulnerability-in-secure-workload/",
+              "title": "Cisco Patches Critical Vulnerability in Secure Workload [app] [net]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 12:58",
+              "url": "https://www.securityweek.com/drupal-patches-highly-critical-vulnerability-exposing-websites-to-hacking/",
+              "title": "Drupal Patches Highly Critical Vulnerability Exposing Websites to Hacking [app] [exp]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 17:58",
+              "url": "https://voidsec.com/cve-2026-40369-browser-sandbox-escape/",
+              "title": "CVE-2026-40369: Twelve Bytes to Escape the Browser Sandbox [exp] [sys]"
+            },
+            {
+              "feed": "Schneier on Security",
+              "date": "21/05 18:03",
+              "url": "https://www.schneier.com/blog/archives/2026/05/macos-kernel-memory-corruption-exploit.html",
+              "title": "macOS Kernel Memory Corruption Exploit"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "21/05 14:15",
+              "url": "https://fatgid.io/",
+              "title": "FatGid: FreeBSD 14.x kernel local privilege escalation"
+            }
+          ]
+        },
+        {
+          "title": "Malware et opérations : du botnet Kimwolf aux backdoors télécoms",
+          "lede_html": "L'arrestation à Ottawa du présumé <strong>botmaster</strong> du botnet <strong>Kimwolf</strong>, responsable de <em>millions</em> d'objets IoT détournés pour des attaques DDoS massives, illustre les progrès de la répression judiciaire — mais elle coïncide avec l'émergence de <strong>Showboat</strong>, un framework Linux <em>modulaire</em> déployé depuis 2022 contre un opérateur télécom au Moyen-Orient, capable d'ouvrir un shell distant et d'agir comme proxy <code>SOCKS5</code>. Là où la police démonte des réseaux criminels opportunistes, les <em>APT</em> chinoises consolident des accès persistants dans les infrastructures critiques, rappelant que la <em>menace</em> se déplace des botnets de volume vers l'exploitation <em>silencieuse</em> de composants de confiance.",
+          "sources": [
+            {
+              "feed": "Krebs on Security",
+              "date": "21/05 23:50",
+              "url": "https://krebsonsecurity.com/2026/05/alleged-kimwolf-botmaster-dort-arrested-charged-in-u-s-and-canada/",
+              "title": "Alleged Kimwolf Botmaster 'Dort' Arrested, Charged in U.S. and Canada"
+            },
+            {
+              "feed": "The Hacker News",
+              "date": "21/05 16:17",
+              "url": "https://thehackernews.com/2026/05/showboat-linux-malware-hits-middle-east.html",
+              "title": "Showboat Linux Malware Hits Middle East Telecom with SOCKS5 Proxy Backdoor"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 17:49",
+              "url": "https://thehackernews.com/2026/05/showboat-linux-malware-hits-middle-east.html",
+              "title": "Showboat Linux Malware Hits Middle East Telecom with SOCKS5 Proxy Backdoor [mal]"
+            }
+          ]
+        },
+        {
+          "title": "Supply chain et confiance dégradée : packages Python, GitHub Actions et écosystème",
+          "lede_html": "Le compromis du package <strong>durabletask</strong> sur PyPi, lié à <strong>TeamPCP</strong>, déploie des droppers silencieux ciblant les identifiants cloud avec des capacités de propagation et de <em>disk-wiping</em>, tandis que le <em>cache poisoning</em> de <strong>GitHub Actions</strong> persiste depuis plus de deux ans pour injecter du code malveillant via des caches partagés. Ces attaques illustrent une <em>crise structurelle</em> de la chaîne d'approvisionnement logicielle, où la prolifération des vulnérabilities dépasse la visibilité des défenseurs — une dynamique que <strong>DOMPurify 3.4.5</strong> rappelle en colmatant un bypass XSS via <code>selectedcontent</code>.",
+          "sources": [
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 21:49",
+              "url": "https://www.aikido.dev/blog/durabletask-package-compromised-mini-shai-hulud",
+              "title": "Microsoft's durabletask package on PyPi Compromised. Mini Shai Hulud attacks again... again! [app] [cloud] [mal]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 18:29",
+              "url": "https://neciudan.dev/github-actions-poisoning",
+              "title": "GitHub Actions Cache Poisoning is eating open source [app] [exp]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 10:14",
+              "url": "https://www.securityweek.com/supply-chain-security-crisis-too-many-vulnerabilities-too-little-visibility/",
+              "title": "Supply Chain Security Crisis: Too Many Vulnerabilities, Too Little Visibility [app]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "21/05 08:22",
+              "url": "https://github.com/cure53/DOMPurify/security/advisories/GHSA-87xg-pxx2-7hvx",
+              "title": "DOMPurify XSS via `selectedcontent` re-clone [app] [exp]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "devops",
+      "name": "DevOps",
+      "tagline": "INFRASTRUCTURE, CONTENEURS ET HAUTE DISPONIBILITÉ",
+      "topics": [
+        {
+          "title": "Docker dévoile une API MicroVM cachée dans son sandbox",
+          "lede_html": "<strong>Rivet</strong> a reverse-engineeré l'API <strong>MicroVM</strong> non documentée que <strong>Docker</strong> a discrètement intégrée à son offre Sandbox, révélant que l'isolation repose sur des <em>microVMs à noyau séparé</em> plutôt que sur les namespaces habituels des conteneurs. Cette couche, conçue pour exécuter du code non fiable — agents IA type <strong>Claude Code</strong> ou <strong>Codex</strong> — avec l'option <code>--dangerously-skip-permissions</code>, ne fonctionne aujourd'hui que sous <em>macOS/Windows</em> et exige la virtualisation imbriquée, ce qui limite son adoption immédiate en production.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "21/05 16:50",
+              "url": "https://rivet.dev/blog/2026-02-04-we-reverse-engineered-docker-sandbox-undocumented-microvm-api/",
+              "title": "We Reverse-Engineered Docker Sandbox's Undocumented MicroVM API"
+            }
+          ]
+        },
+        {
+          "title": "Netflix pousse le streaming vidéo à 400 Gb/s",
+          "lede_html": "Netflix détaille son architecture de distribution vidéo capable de servir du trafic à 400 Gb/s et au-delà, un benchmark d'ingénierie à grande échelle.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "21/05 18:29",
+              "url": "https://nabstreamingsummit.com/wp-content/uploads/2022/05/2022-Streaming-Summit-Netflix.pdf",
+              "title": "Serving Netflix Video Traffic at 400Gb/S and Beyond (2022) [pdf]"
+            }
+          ]
+        },
+        {
+          "title": "DNS haute disponibilité : retour d'expérience Technitium et AdGuard",
+          "lede_html": "Un homelabber dresse le bilan d'une refonte DNS passant d'un <em>SPOF</em> unique — un LXC où <code>AdGuard Home</code> cohabitait avec NPM — à une architecture <strong>haute disponibilité</strong> articulée autour de <strong>Technitium DNS Server</strong> en autoritaire récursif et <code>AdGuard Home</code> en relais filtrant. Les deux instances <strong>Technitium</strong> se synchronisent nativement en primaire/secondaire, éliminant le hairpin NAT et assurant la résolution locale même si un nœud <strong>Proxmox</strong> tombe, tandis qu'<code>AdGuard Home</code> centralise les règles de filtrage par client.",
+          "sources": [
+            {
+              "feed": "Journal du hacker",
+              "date": "21/05 08:41",
+              "url": "https://domopi.eu/refonte-complete-de-mon-infrastructure-dns-avec-technitium-et-adguard-home-en-haute-disponibilite/",
+              "title": "Refonte complète de mon infrastructure DNS avec Technitium et AdGuard Home en haute disponibilité"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "diy",
+      "name": "DIY",
+      "tagline": "BRICOLAGE CONNECTÉ, CYBERDECKS ET LINUX DE POCHE",
+      "topics": [
+        {
+          "title": "Flipper One : le successeur du Zero inquiète ses créateurs",
+          "lede_html": "<strong>Flipper Devices</strong> dévoile le <strong>Flipper One</strong>, un mini-PC <code>Linux</code> ARM de poche doté de 2× <strong>Gigabit Ethernet</strong>, <strong>Wi‑Fi 6E</strong> et connecteurs <code>PCIe</code>/<code>USB 3.0</code>/<code>SATA</code> pour modules SDR ou modem 5G — un saut vers la <em>couche réseau IP</em>, loin du Flipper Zero centré sur les protocoles bas niveau. Le co-fondateur <strong>Pavel Zhovner</strong> lance un appel à la communauté, avouant être <em>« franchement terrifié »</em> par les risques de détournement d'une plateforme aussi ouverte, et demande de co-construire les garde-fous dès les premières phases de développement.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "21/05 13:03",
+              "url": "https://blog.flipper.net/flipper-one-we-need-your-help/",
+              "title": "Flipper One – we need your help"
+            },
+            {
+              "feed": "Korben",
+              "date": "21/05 15:16",
+              "url": "https://korben.info/flipper-one-plateforme-linux-ouverte.html",
+              "title": "Flipper One - Le Linux de poche qui terrifie ses propres créateurs"
+            },
+            {
+              "feed": "rtl-sdr.com",
+              "date": "22/05 02:51",
+              "url": "https://www.rtl-sdr.com/early-development-plans-for-flipper-one-announced/",
+              "title": "Early Development Plans for Flipper One Announced"
+            }
+          ]
+        },
+        {
+          "title": "Cyberdecks et objets connectés artisanaux",
+          "lede_html": "La scène maker réinvente le portable et l'objet ludique avec deux projets aux philosophies opposées : d'un côté un <strong>cyberdeck</strong> à écran coulissant articulé autour d'un <strong>Raspberry Pi 5</strong> et d'un clavier mécanique <em>compact</em>, de l'autre un <em>fortune cookie</em> électronique autonome piloté par un <code>ESP32</code> et un écran <em>e-paper</em> capable de stocker plus de <strong>3 000</strong> prédictions sans aucune connexion. L'un mise sur la <em>modularité brute</em>, l'autre sur la <em>simplicité déconnectée</em>.",
+          "sources": [
+            {
+              "feed": "Hack a Day",
+              "date": "21/05 22:00",
+              "url": "https://hackaday.com/2026/05/21/sliding-screen-cyberdeck-has-chunky-rugged-design/",
+              "title": "Sliding-Screen Cyberdeck Has Chunky, Rugged Design"
+            },
+            {
+              "feed": "Hack a Day",
+              "date": "22/05 01:00",
+              "url": "https://hackaday.com/2026/05/21/e-fortune-cookie-will-humble-but-never-crumble/",
+              "title": "E-Fortune Cookie Will Humble, But Never Crumble"
+            }
+          ]
+        },
+        {
+          "title": "Synchronisation sans maître et interfaces physiques revisitées",
+          "lede_html": "Avec <strong>CrowdClock</strong>, <strong>Tony Goacher</strong> prouve qu'une synchronisation lumineuse parfaite ne nécessite ni maître ni appairage : chaque badge propage son horloge interne via <code>ESP-NOW</code>, et le réseau s'accorde de lui-même, <em>par simple propagation pair-à-pair</em>. De son côté, <strong>[Garage Tinkering]</strong> remplace le frustrant contrôleur <strong>iDrive</strong> de BMW par un bouton rotatif intégrant un écran rond et un <code>ESP32-S3</code>, montrant que l'interface physique automobile peut être repensée <em>depuis le hardware</em> plutôt que par logiciel.",
+          "sources": [
+            {
+              "feed": "Korben",
+              "date": "21/05 17:18",
+              "url": "https://korben.info/ces-badges-led-de-festival-se-synchronisent-tout-seuls.html",
+              "title": "Ces badges LED de festival se synchronisent tout seuls"
+            },
+            {
+              "feed": "Hack a Day",
+              "date": "21/05 10:00",
+              "url": "https://hackaday.com/2026/05/21/building-a-better-automotive-rotary-controller/",
+              "title": "Building a Better Automotive Rotary Controller"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "societe",
+      "name": "Société & régulation",
+      "tagline": "SURVEILLANCE, IDENTITÉ ET RÉSISTANCE NUMÉRIQUE",
+      "topics": [
+        {
+          "title": "Surveillance étatique et privée : la résistance s'organise",
+          "lede_html": "Alors que <strong>Seattle Shield</strong> révèle l'intégration d'acteurs privés comme <strong>Amazon</strong>, <strong>Facebook</strong> et <strong>ICE</strong> dans un réseau de renseignement policier, la résistance s'organise sur plusieurs fronts : le maire de Londres <strong>Sadiq Khan</strong> bloque un contrat de <strong>50 M£</strong> avec <strong>Palantir</strong>, et un amendement bipartite au Congrès américain vise à interdire les <em>lecteurs automatiques de plaques d'immatriculation</em> sauf pour le péage. Parallèlement, un audit confirme que <strong>Telegram</strong> expose ses utilisateurs à un suivi passif via une clé d'authentification, rappelant que la surveillance <em>commerciale</em> n'est pas en reste.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "21/05 19:55",
+              "url": "https://prismreports.org/2026/05/20/seattle-shield-private-companies-surveillance/",
+              "title": "Seattle Shield, an intelligence-sharing network operated by the Seattle police"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "21/05 18:35",
+              "url": "https://www.theguardian.com/uk-news/2026/may/21/london-mayor-sadiq-khan-blocks-met-police-deal-with-palantir",
+              "title": "London Mayor Blocks Palantir"
+            },
+            {
+              "feed": "ZATAZ News",
+              "date": "21/05 16:34",
+              "url": "https://www.zataz.com/telegram-lidentifiant-qui-inquiete/",
+              "title": "Telegram, l'identifiant qui inquiète"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "21/05 14:58",
+              "url": "https://www.wired.com/story/a-bipartisan-amendment-would-end-police-license-plate-tracking-nationwide/",
+              "title": "A Bipartisan Amendment Would End Police License Plate Tracking Nationwide"
+            }
+          ]
+        },
+        {
+          "title": "Identité en ligne : vérification d'âge et archivage menacé",
+          "lede_html": "Sous prétexte de protéger les mineur·es, le Parlement français s’apprête à interdire l’accès aux réseaux sociaux aux moins de <strong>15 ans</strong> et à imposer une vérification d’âge qui se muerait en <em>contrôle d’identité généralisé</em>, porté tant par la France que par la Commission européenne au détriment du droit à l’anonymat. Parallèlement, plus de <strong>340</strong> titres de presse locale américaine — dont les chaînes <strong>McClatchy</strong>, <strong>Advance Local</strong> et <strong>Tribune Publishing</strong> — bloquent désormais les robots de l’<strong>Internet Archive</strong>, craignant que leurs archives ne servent de matière au <em>scraping IA</em>, et fragilisant ainsi la préservation à long terme du journalisme.",
+          "sources": [
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "21/05 18:50",
+              "url": "https://www.laquadrature.net/2026/05/21/derriere-la-verification-dage-sur-les-reseaux-sociaux-la-generalisation-du-controle-didentite-en-ligne/",
+              "title": "Derrière la vérification d'âge sur les réseaux sociaux, la généralisation du contrôle d'identité en ligne – La Quadrature du Net"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "21/05 18:59",
+              "url": "https://www.niemanlab.org/2026/05/more-than-340-local-news-outlets-are-limiting-the-internet-archives-access-to-their-journalism/",
+              "title": "News outlets are limiting the Internet Archive's access to their journalism"
+            }
+          ]
+        },
+        {
+          "title": "IA : critique, spiritualité et redistribution des profits",
+          "lede_html": "Pendant que <strong>48 %</strong> des chrétiens américains confient leur guidance spirituelle aux LLM, transformant l'IA en <em>relation sacramentelle</em>, les critiques radicales s'organisent : dénonciation d'un <em>plagiat non autorisé à grande échelle</em> et appel à une <strong>constituance anti-IA</strong> face aux discours d'inévitabilité martelés par des dirigeants comme l'ex-PDG de Google <strong>Eric Schmidt</strong>. Sur le versant économique, les salariés semi-conducteurs de <strong>Samsung</strong> empochent en moyenne <strong>340 000 $</strong> de bonus, cristallisant le contraste entre <em>profits algorithmiques concentrés</em> et précarité des créateurs spoliés.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "21/05 15:36",
+              "url": "https://www.thehandbasket.co/p/hating-ai-is-good-actually",
+              "title": "Hating AI Is Good"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "21/05 15:38",
+              "url": "https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/",
+              "title": "AI is just unauthorised plagiarism at a bigger scale"
+            },
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "21/05 19:06",
+              "url": "https://www.theregister.com/ai-ml/2026/05/21/deus-ex-machina-half-of-us-christians-trust-ais-spiritual-advice/5244371",
+              "title": "Deus ex machina: Half of US Christians trust AI's spiritual advice"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "22/05 03:30",
+              "url": "https://qz.com/samsung-chip-workers-bonus-ai-profits-052126",
+              "title": "Samsung chip workers will get an average $340k bonus as AI profits soar"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "appendix": [
+    {
+      "url": "https://www.barebones.com/products/bbedit/bbedit16.html",
+      "title": "BBEdit 16",
+      "note": ""
+    },
+    {
+      "url": "https://www.thek6project.co.uk/",
+      "title": "Where are all the UK red telephone kiosks?",
+      "note": ""
+    },
+    {
+      "url": "https://discover.swns.com/2026/05/chewing-gum-restores-dads-taste-and-smell-years-after-covid/",
+      "title": "Chewing gum restores dad's taste and smell years after Covid",
+      "note": ""
+    },
+    {
+      "url": "https://burogu.makotoworkshop.org/index.php?post/2026/05/21/Welcome-to-Dotclear%21",
+      "title": "Welcome to Dotclear!",
+      "note": ""
+    },
+    {
+      "url": "https://korben.info/android-17-travaille-sur-sa-version-de-continuite-dapple.html",
+      "title": "Android 17 travaille sur sa version de \"Continuité\" d'Apple",
+      "note": ""
+    },
+    {
+      "url": "https://www.hollywoodreporter.com/music/music-industry-news/spotify-will-start-reserving-concert-tickets-for-superfans-1236603106/",
+      "title": "Spotify will start reserving concert tickets for fans",
+      "note": ""
+    },
+    {
+      "url": "https://valhovey.github.io/gaia-mary/",
+      "title": "Project Hail Mary – Stellar Navigation Chart",
+      "note": ""
+    },
+    {
+      "url": "https://www.calculators.de/",
+      "title": "Museum of Pocket Calculating Devices",
+      "note": ""
+    },
+    {
+      "url": "https://hackaday.com/2026/05/21/transforming-lamp-built-with-led-filaments/",
+      "title": "Transforming Lamp Built With LED Filaments",
+      "note": ""
+    },
+    {
+      "url": "https://www.bigfinish.com/news/v/michael-keating-1947-2026",
+      "title": "Michael Keating has died",
+      "note": ""
+    }
+  ],
+  "footer": "Athanor - 140 articles agrégés"
+}

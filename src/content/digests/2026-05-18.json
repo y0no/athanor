@@ -1,1 +1,391 @@
-{"date":"2026-05-18","title_tag":"Digest tech-watch — 18 mai 2026","headline":"Vague de correctifs Apple : de l'iPhone au Vision Pro, un écosystèm…","window":{"from":"17 mai 2026 07:33 UTC","to":"18 mai 2026 06:44 UTC","count":"62 articles"},"alert":"","categories":[{"slug":"ia","name":"IA","tagline":"MÉMOIRE, OUTILS ET BRUIT : L'IA AGENTIQUE PREND FORME","topics":[{"title":"Mémoire long terme et outils pour agents : l'infrastructure IA se densifie","lede_html":"Pendant que <strong>Tencent</strong> open-source un système de mémoire hiérarchique 100 % local pour agents — <em>zéro dépendance API externe</em> —, <strong>Semble</strong> propose un moteur de recherche de code agentique consommant <strong>98 %</strong> de tokens en moins que <code>grep</code>. Ces deux projets illustrent un virage commun : l'infrastructure agentique s'éloigne des <em>LLM monolithiques gourmands</em> pour privilégier <em>efficience</em> et <em>autonomie locale</em>.","sources":[{"feed":"Talkback Home","date":"17/05 18:52","url":"https://github.com/Tencent/TencentDB-Agent-Memory","title":"GitHub - Tencent/TencentDB-Agent-Memory: TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies."},{"feed":"Hacker News","date":"17/05 17:37","url":"https://github.com/MinishLab/semble","title":"Show HN: Semble – Code search for agents that uses 98% fewer tokens than grep"}]},{"title":"Le revers de l'IA générative : quand les outils automatisés noient les mainteneurs sous le bruit","lede_html":"<strong>Linus Torvalds</strong> qualifie la liste de sécurité <strong>Linux</strong> d'<em>« presque entièrement ingérable »</em> : les chasseurs de bugs dopés à l'IA y multiplient les rapports dupliqués, transformant le maintien en <em>bruit improductif</em>. Il appelle à utiliser ces outils de manière <em>collaborative et ouverte</em>, plutôt que d'engorger un canal privé où les doublons se superposent sans visibilité mutuelle.","sources":[{"feed":"Talkback Home","date":"18/05 02:51","url":"https://www.theregister.com/security/2026/05/18/linus-torvalds-says-ai-powered-bug-hunters-have-made-linux-security-mailing-list-almost-entirely-unmanageable/5241633","title":"Linus Torvalds says AI-powered bug hunters have made Linux security mailing list ‘almost entirely unmanageable’"}]}]},{"slug":"infosec","name":"Infosec","tagline":"PATCH TUESDAY APPLE, ZERO-DAY WINDOWS ET CYBER-SABOTAGE NUCLEAIRE","topics":[{"title":"Vague de correctifs Apple : de l'iPhone au Vision Pro, un écosystème sous haute surveillance","lede_html":"<strong>Apple</strong> déploie une salve de onze correctifs couvrant <strong>iOS 26.5</strong>, <strong>iPadOS 26.5</strong>, <strong>macOS Tahoe 26.5</strong>, <strong>tvOS 26.5</strong>, <strong>watchOS 26.5</strong>, <strong>visionOS 26.5</strong> et <strong>Safari 26.5</strong>, tout en maintenant les branches <em>legacy</em> jusqu'à <strong>iOS 15.8.8</strong>. Parmi les failles les plus préoccupantes, <strong>CVE-2026-28995</strong> permettait à une application malveillante de sortir de son <em>sandbox</em>, et <strong>CVE-2026-28959</strong> exposait <code>APFS</code> à un débordement de tampon provoquant l'arrêt inattendu du système. Cette synchronisation inédite souligne la tension entre la promesse de sécurité d'un écosystème fermé et l'effort croissant requis pour maintenir à jour un parc matériel s'étendant de l'<strong>iPhone 6s</strong> au <strong>Vision Pro</strong>.","sources":[{"feed":"Full Disclosure","date":"17/05 23:16","url":"https://seclists.org/fulldisclosure/2026/May/5","title":"APPLE-SA-05-11-2026-1 iOS 26.5 and iPadOS 26.5"},{"feed":"Full Disclosure","date":"17/05 23:16","url":"https://seclists.org/fulldisclosure/2026/May/6","title":"APPLE-SA-05-11-2026-2 iOS 18.7.9 and iPadOS 18.7.9"},{"feed":"Full Disclosure","date":"17/05 23:16","url":"https://seclists.org/fulldisclosure/2026/May/8","title":"APPLE-SA-05-11-2026-3 iPadOS 17.7.11"},{"feed":"Full Disclosure","date":"17/05 23:16","url":"https://seclists.org/fulldisclosure/2026/May/9","title":"APPLE-SA-05-11-2026-4 iOS 16.7.16 and iPadOS 16.7.16"},{"feed":"Full Disclosure","date":"17/05 23:16","url":"https://seclists.org/fulldisclosure/2026/May/10","title":"APPLE-SA-05-11-2026-5 iOS 15.8.8 and iPadOS 15.8.8"},{"feed":"Full Disclosure","date":"17/05 23:16","url":"https://seclists.org/fulldisclosure/2026/May/11","title":"APPLE-SA-05-11-2026-6 macOS Tahoe 26.5"},{"feed":"Full Disclosure","date":"17/05 23:16","url":"https://seclists.org/fulldisclosure/2026/May/12","title":"APPLE-SA-05-11-2026-7 macOS Sequoia 15.7.7"},{"feed":"Full Disclosure","date":"17/05 23:16","url":"https://seclists.org/fulldisclosure/2026/May/7","title":"APPLE-SA-05-11-2026-8 macOS Sonoma 14.8.7"},{"feed":"Full Disclosure","date":"17/05 23:16","url":"https://seclists.org/fulldisclosure/2026/May/13","title":"APPLE-SA-05-11-2026-9 tvOS 26.5"},{"feed":"Full Disclosure","date":"17/05 23:16","url":"https://seclists.org/fulldisclosure/2026/May/14","title":"APPLE-SA-05-11-2026-10 watchOS 26.5"},{"feed":"Full Disclosure","date":"17/05 23:16","url":"https://seclists.org/fulldisclosure/2026/May/15","title":"APPLE-SA-05-11-2026-11 visionOS 26.5"},{"feed":"Full Disclosure","date":"17/05 23:16","url":"https://seclists.org/fulldisclosure/2026/May/16","title":"APPLE-SA-05-13-2026-1 Safari 26.5"}]},{"title":"Windows MiniPlasma : un zero-day récurrent expose la dette technique de la sécurité Microsoft","lede_html":"La faille d'élévation de privilèges <strong>MiniPlasma</strong>, censée être colmatée par <strong>Microsoft</strong> en décembre 2020, réapparaît avec un PoC public offrant un accès <strong>SYSTEM</strong> — illustrant une <em>régression</em> dans le cycle de patches plutôt qu'une simple omission. Ce retour d'un <em>zero-day récurrent</em> soulève des questions sur la dette technique accumulée dans les composants Windows et la capacité de l'éditeur à maintenir la <em>continuité de sécurité</em> entre correctifs successifs.","sources":[{"feed":"Liens en vrac de sebsauvage","date":"18/05 08:15","url":"https://www.bleepingcomputer.com/news/microsoft/new-windows-miniplasma-zero-day-exploit-gives-system-access-poc-released/","title":"New Windows 'MiniPlasma' zero-day exploit gives SYSTEM access, PoC released"}]},{"title":"Du sabotage nucléaire au bypass LSM : la créativité offensive redéfinit les frontières de la menace","lede_html":"La confirmation que <strong>Fast16</strong>, malware apparenté à <strong>Stuxnet</strong>, manipulait les données de simulation pour saboter les essais nucléaires iraniens rappelle que le cyber-sabotage stratégique reste un outil d'État redoutable. Sur le terrain systémique, le projet <strong>LID</strong> démontre qu'un hook <code>eBPF</code> peut réécrire les chemins en mémoire utilisateur avant l'évaluation <code>AppArmor</code>, contournant les <em>LSM</em> sans laisser de trace d'audit — prouvant que <em>l'intégrité des mécanismes de contrôle d'accès</em> est désormais contestable sur Linux.","sources":[{"feed":"Talkback Home","date":"17/05 14:50","url":"https://www.zetter-zeroday.com/experts-confirm-the-fast16-malware-was-sabotaging-nuclear-weapons-tests-likely-in-iran/","title":"Experts Confirm the Fast16 Malware Was Sabotaging Nuclear Weapons Tests, Likely in Iran [ics] [mal]"},{"feed":"Talkback Home","date":"17/05 14:29","url":"https://github.com/azqzazq1/LID/","title":"GitHub - azqzazq1/LID: LID — Linux Integrity Drift: Bypassing AppArmor via eBPF pathname rewriting. Pre-LSM syscall argument manipulation with zero audit footprint. \"Linux is Dying\" [exp] [sys]"}]}]},{"slug":"devops","name":"DevOps","tagline":"AUTOMATION, COMPLIANCE & OPEN SOURCE DYNAMICS","topics":[{"title":"Ansible et la sécurité des pipelines CI/CD","lede_html":"Un cadre de sécurité <strong>Ansible</strong> récent rappelle que le modèle <em>agentless</em> déplace le risque vers le nœud de contrôle et la gestion des clés SSH — d'où la nécessité de <strong>durcir</strong> le bastion, d'épingler les versions de collections dans <code>requirements.yml</code> et de ne désactiver <code>host_key_checking</code> que dans les environnements CI éphémères. Côté secrets, <strong>Ansible Vault</strong> chiffre en AES-256-CTR mais reste un mécanisme de stockage, pas un gestionnaire : en production, les playbooks doivent privilégier les <em>lookup plugins</em> vers <strong>HashiCorp Vault</strong>, <strong>AWS Secrets Manager</strong> ou <strong>Azure Key Vault</strong> pour obtenir des credentials dynamiques à l'exécution.","sources":[{"feed":"Talkback Home","date":"17/05 18:43","url":"https://slicker.me/netsec/ansible-security-compliance.html","title":"Ansible Security & Compliance"}]},{"title":"Tensions autour de la licence AGPL dans l'écosystème open-source","lede_html":"Le composant <code>bambu_networking</code> intégré à <strong>Bambu Studio</strong> contournerait les obligations de la licence <strong>AGPLv3</strong> en ne publiant ni le code source correspondant ni les modifications, ravivant le débat sur la <em>conformité copyleft</em> dans les projets open-source liés au matériel. Cette tension entre <em>modèle propriétaire embarqué</em> et exigences de redistribution illustre les frictions structurelles auxquelles se heurtent les éditeurs d'appareils connectés.","sources":[{"feed":"Hacker News","date":"18/05 07:18","url":"https://github.com/jarczakpawel/OrcaSlicer-bambulab/blob/main/bambu_agpl.md","title":"Why bambu_networking violates the AGPL in Bambu Studio"},{"feed":"Journal du hacker","date":"17/05 09:33","url":"https://www.romainleclaire.com/p/budslink-lapplication-open-source","title":"BudsLink - L'application open-source qui libère vos écouteurs sous Linux"}]},{"title":"L'explosion de PyPI sous l'effet de l'IA","lede_html":"Le volume de nouvelles versions publiées sur <strong>PyPI</strong> a bondi de <strong>30 %</strong> depuis 2025, poussé par la prolifération de projets générés par IA qui encombrent le registre de packages <em>vibecodés</em> et recourent abusivement à <code>eval</code>, <code>exec</code> et <code>subprocess</code>. Ces pratiques brouillent la détection de code malveillant, tandis que des comportements abusifs — jusqu'à <strong>392</strong> publications d'un même package en une journée — accentuent la pression sur les mainteneurs et les coûts de stockage de la <strong>PSF</strong>.","sources":[{"feed":"Artem Golubin","date":"17/05 16:14","url":"https://rushter.com/blog/pypi-packages/","title":"PyPI packages are increasing rapidly"}]}]},{"slug":"diy","name":"DIY","tagline":"BRICOLAGE NUMÉRIQUE : RÉCUP, RÉTRO ET RÉSEAUTAGE","topics":[{"title":"Récupération et détournement de matériel","lede_html":"Les makers refusent le tout-neuf : <strong>[ScuffedBits]</strong> ressuscite des panneaux LCD de portables déclassés en moniteurs nomades, écartant au passage les <em>CCFL</em> et matrices passives jugées impraticables, tandis qu'une tablette <strong>RK3562</strong> à <strong>80 $</strong> se métamorphose en station de travail <code>Debian</code> grâce au projet <strong>rk3562deb</strong>. Deux approches qui illustrent une même logique : <em>détourner plutôt que jeter</em>, et extraire d'un hardware considéré obsolète une valeur fonctionnelle inattendue.","sources":[{"feed":"Hack a Day","date":"18/05 04:00","url":"https://hackaday.com/2026/05/17/turning-a-junk-laptop-screen-into-a-portable-monitor/","title":"Turning a Junk Laptop Screen Into a Portable Monitor"},{"feed":"Hacker News","date":"17/05 15:16","url":"https://github.com/tech4bot/rk3562deb","title":"I turned a $80 RK3562 Android tablet into a Debian Linux workstation"}]},{"title":"Rétrocomputing et hardware hacking créatif","lede_html":"Le rétrocomputing se réinvente en terrain d'expérimentation : <strong>ThroatyMumbo</strong> fait tourner <strong>Windows CE 2.11</strong> sur une vraie <strong>Nintendo 64</strong>, <em>pas via un émulateur</em> mais en bootant un bureau complet sur la console, tandis que <strong>Bitroller</strong> ressuscite les cartes perforées en les imprimant en 3D pour y stocker des secrets lisibles par webcam. Plus loin, <strong>GloriousCow</strong> pousse le vieux standard <code>CGA</code> au-delà de ses spécifications en interceptant son ROM caractère à l'aide d'un <strong>Raspberry Pi Pico 2</strong>, prouvant que <em>les contraintes d'antan sont les terrains de jeu d'aujourd'hui</em>.","sources":[{"feed":"Korben","date":"17/05 11:35","url":"https://korben.info/il-fait-tourner-windows-ce-sur-une-nintendo-64-et-ca-marche-pour-de-vrai.html","title":"Il fait tourner Windows CE sur une Nintendo 64, et ça marche pour de vrai"},{"feed":"Korben","date":"17/05 11:47","url":"https://korben.info/des-cartes-perforees-imprimees-en-3d-et-lues-par-une-webcam-parfait-pour-stocker-vos-mots-de-passe-a-vie.html","title":"Des cartes perforées imprimées en 3D et lues par une webcam, parfait pour stocker vos mots de passe à vie"},{"feed":"Hack a Day","date":"17/05 19:00","url":"https://hackaday.com/2026/05/17/cga-as-you-have-never-seen-it-before/","title":"CGA As You Have Never Seen It Before"}]},{"title":"Connectivité alternative et objets communicants","lede_html":"Alors que <strong>LoRa</strong> s'impose comme <em>infrastructure de survie</em> déconnectée — mesh <strong>Meshtastic</strong>, passerelles MQTT, nodes hybrides GPS/WiFi —, le Vermont ressuscite ses cabines téléphoniques rurales via <strong>VoIP</strong>, prouvant que les réseaux parallèles ne sont pas qu'une utopie survivaliste. Pendant ce temps, <strong>Qualcomm</strong> vient bousculer le règne de l'<strong>ESP32</strong> avec sa gamme <code>QCC74x</code> embarquant WiFi 6, Bluetooth 5.4 et <code>802.15.4</code> sur un cœur RISC‑V à 352 MHz : les makers n'ont jamais eu autant de leviers pour tisser leurs propres maillages.","sources":[{"feed":"Journal du hacker","date":"17/05 11:40","url":"https://docs.scourzic.net/2026-05-08_Quand-LORA-relie-le-monde/","title":"Quand LORA relie le monde"},{"feed":"Hacker News","date":"17/05 21:39","url":"https://spectrum.ieee.org/payphone-voip","title":"VoIP brings back old-fashioned pay phones to rural Vermont (2025)"},{"feed":"Hack a Day","date":"17/05 16:00","url":"https://hackaday.com/2026/05/17/qualcomms-new-qcc74x-appears-to-target-the-esp32-mcus/","title":"Qualcomm’s New QCC74x Appears to Target the ESP32 MCUs"}]}]},{"slug":"societe","name":"Société & régulation","tagline":"SURVEILLANCE, INGÉRENCE ET COÛTS CACHÉS DU NUMÉRIQUE","topics":[{"title":"La double face de la surveillance algorithmique : quand l'IA épingle les citoyens mais indigne les policiers","lede_html":"La <strong>Metropolitan Police</strong> a déployé en secret une IA de surveillance interne pistant déplacements, communications et accès informatiques de ses propres effectifs — <strong>près de 600 cas</strong> signalés, dont <strong>42</strong> impliquant des gradés —, provoquant la colère de la <strong>Police Federation</strong> qui dénonce une <em>« invasion de la vie privée outrageante et impardonnable »</em>. Ce renversement met en lumière une <em>fracture asymétrique</em> : les forces qui normalisent la surveillance des citoyens refusent viscéralement celle dont elles feraient l'objet, invalidant l'argument habituel <em>« si vous n'avez rien à vous reprocher… »</em>.","sources":[{"feed":"Liens en vrac de sebsauvage","date":"18/05 08:37","url":"https://www.biometricupdate.com/202605/police-use-of-ai-outrageous-and-unforgivable-privacy-invasion-say-the-police","title":"Police use of AI ‘outrageous and unforgivable privacy invasion’ – say the police | Biometric Update"}]},{"title":"Influence étrangère et démocratie locale : l'ingérence israélienne dans les municipales françaises","lede_html":"Les services de renseignement français confirment que la campagne de déstabilisation ayant ciblé des candidats <strong>LFI</strong> aux municipales de mars a été pilotée depuis <strong>Israël</strong>, via une entité nommée <strong>BlackCore</strong>, décrite comme une <em>entreprise d'élite spécialisée dans l'influence</em>. L'opération, dévoilée par <strong>Viginum</strong> le 10 mars, reposait sur des sites et comptes présentant des <em>caractéristiques d'inauthenticité</em>, notamment des photos générées par <em>intelligence artificielle</em> — soulignant la vulnérabilité des scrutins locaux face aux <em>campagnes de manipulation transnationales</em>.","sources":[{"feed":"Liens en vrac de sebsauvage","date":"18/05 08:44","url":"https://www.huffingtonpost.fr/politique/article/la-campagne-d-ingerence-visant-des-candidats-lfi-aux-municipales-a-bien-ete-operee-depuis-israel_263748.html","title":"La campagne d'ingérence visant des candidats LFI aux municipales a bien été opérée depuis Israël"}]},{"title":"L'IA face à ses contradictions : facturations surprises, promesses déçues et scepticisme croissant","lede_html":"Des clients <strong>AWS</strong> et <strong>Google Cloud</strong> se retrouvent avec des factures massives et imprévues, symptôme d'un resserrement tarifaire alors que les fournisseurs tentent de stopper l'hémorragie financière de l'IA — et la facturation au coût réel ne fera qu'aggraver la situation. Pendant ce temps, la critique s'organise : Frederick Van Brabant rappelle que <em>accélérer un processus ne se résume pas à y injecter de l'IA</em>, les goulots d'étranglement étant ailleurs, tandis que Marcello Vitali-Rosati dénonce un <em>discours publicitaire</em> des GAFAM qui a remplacé la réalité par sa propre simulation, qualifiant l'expression même d'<strong>« intelligence artificielle »</strong> de formulation racoleuse inventée en 1955 pour obtenir des financements.","sources":[{"feed":"Liens en vrac de sebsauvage","date":"18/05 08:18","url":"https://www.theregister.com/ai-ml/2026/05/18/surprise-ai-bills-leave-aws-and-google-cloud-users-aghast/5241348","title":"Surprise AI bills leave AWS and Google Cloud users aghast"},{"feed":"Hacker News","date":"17/05 14:13","url":"https://frederickvanbrabant.com/blog/2026-05-15-i-dont-think-ai-will-make-your-processes-go-faster/","title":"I don't think AI will make your processes go faster"},{"feed":"Liens en vrac de sebsauvage","date":"17/05 12:17","url":"https://blog.sens-public.org/marcellovitalirosati/iaanerie.html","title":"L'\"IA\" est une ânerie: arrêtez de relayer le discours publicitaire!"}]}]}],"appendix":[{"url":"https://www.youtube.com/watch?v=1OIxzewWilc","title":"Étienne Ghys: The Shape of Letters: From Leonardo da Vinci to Donald Knuth","note":""},{"url":"https://hellmood.111mb.de//wake_up_16b_writeup.html","title":"WriteUp: 16 Bytes of x86 that turn Matrix rain into sound","note":""},{"url":"https://hackaday.com/2026/05/17/hackaday-links-may-17-2026/","title":"Hackaday Links: May 17, 2026","note":""},{"url":"https://www.jdhodges.com/blog/thinkpad-history/","title":"The History of ThinkPad: From IBM’s Bento Box to Lenovo’s AI Workstations","note":""},{"url":"https://idahonews.com/news/local/two-f-18-fighter-jets-have-crashed-during-an-airshow-at-mountain-home-air-force-base","title":"Two EA-18 fighter jets collide at Mountain Home airshow, pilots ejected safely","note":""},{"url":"https://gencad.github.io/","title":"GenCAD","note":""},{"url":"https://www.metalevel.at/prolog/horror","title":"Prolog Coding Horror","note":""},{"url":"https://github.com/alternbits/awesome-cuda-books","title":"CUDA Books","note":""},{"url":"https://www.bbc.com/future/article/20260514-how-hallucinogenic-ibogaine-helps-veterans-overcome-ptsd","title":"Trials on veterans suggest ibogaine could provide a new treatment for PTSD","note":""},{"url":"https://hackaday.com/2026/05/17/extract-3d-video-game-content-by-firing-up-photo-mode/","title":"Extract 3D Video Game Content By Firing Up Photo Mode","note":""}],"footer":"Ether-News - 62 articles agrégés"}
+{
+  "date": "2026-05-18",
+  "title_tag": "Digest tech-watch — 18 mai 2026",
+  "headline": "Vague de correctifs Apple : de l'iPhone au Vision Pro, un écosystème sous haute surveillance",
+  "window": {
+    "from": "17 mai 2026 07:33 UTC",
+    "to": "18 mai 2026 06:44 UTC",
+    "count": "62 articles"
+  },
+  "alert": "",
+  "categories": [
+    {
+      "slug": "ia",
+      "name": "IA",
+      "tagline": "MÉMOIRE, OUTILS ET BRUIT : L'IA AGENTIQUE PREND FORME",
+      "topics": [
+        {
+          "title": "Mémoire long terme et outils pour agents : l'infrastructure IA se densifie",
+          "lede_html": "Pendant que <strong>Tencent</strong> open-source un système de mémoire hiérarchique 100 % local pour agents — <em>zéro dépendance API externe</em> —, <strong>Semble</strong> propose un moteur de recherche de code agentique consommant <strong>98 %</strong> de tokens en moins que <code>grep</code>. Ces deux projets illustrent un virage commun : l'infrastructure agentique s'éloigne des <em>LLM monolithiques gourmands</em> pour privilégier <em>efficience</em> et <em>autonomie locale</em>.",
+          "sources": [
+            {
+              "feed": "Talkback Home",
+              "date": "17/05 18:52",
+              "url": "https://github.com/Tencent/TencentDB-Agent-Memory",
+              "title": "GitHub - Tencent/TencentDB-Agent-Memory: TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies."
+            },
+            {
+              "feed": "Hacker News",
+              "date": "17/05 17:37",
+              "url": "https://github.com/MinishLab/semble",
+              "title": "Show HN: Semble – Code search for agents that uses 98% fewer tokens than grep"
+            }
+          ]
+        },
+        {
+          "title": "Le revers de l'IA générative : quand les outils automatisés noient les mainteneurs sous le bruit",
+          "lede_html": "<strong>Linus Torvalds</strong> qualifie la liste de sécurité <strong>Linux</strong> d'<em>« presque entièrement ingérable »</em> : les chasseurs de bugs dopés à l'IA y multiplient les rapports dupliqués, transformant le maintien en <em>bruit improductif</em>. Il appelle à utiliser ces outils de manière <em>collaborative et ouverte</em>, plutôt que d'engorger un canal privé où les doublons se superposent sans visibilité mutuelle.",
+          "sources": [
+            {
+              "feed": "Talkback Home",
+              "date": "18/05 02:51",
+              "url": "https://www.theregister.com/security/2026/05/18/linus-torvalds-says-ai-powered-bug-hunters-have-made-linux-security-mailing-list-almost-entirely-unmanageable/5241633",
+              "title": "Linus Torvalds says AI-powered bug hunters have made Linux security mailing list ‘almost entirely unmanageable’"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "infosec",
+      "name": "Infosec",
+      "tagline": "PATCH TUESDAY APPLE, ZERO-DAY WINDOWS ET CYBER-SABOTAGE NUCLEAIRE",
+      "topics": [
+        {
+          "title": "Vague de correctifs Apple : de l'iPhone au Vision Pro, un écosystème sous haute surveillance",
+          "lede_html": "<strong>Apple</strong> déploie une salve de onze correctifs couvrant <strong>iOS 26.5</strong>, <strong>iPadOS 26.5</strong>, <strong>macOS Tahoe 26.5</strong>, <strong>tvOS 26.5</strong>, <strong>watchOS 26.5</strong>, <strong>visionOS 26.5</strong> et <strong>Safari 26.5</strong>, tout en maintenant les branches <em>legacy</em> jusqu'à <strong>iOS 15.8.8</strong>. Parmi les failles les plus préoccupantes, <strong>CVE-2026-28995</strong> permettait à une application malveillante de sortir de son <em>sandbox</em>, et <strong>CVE-2026-28959</strong> exposait <code>APFS</code> à un débordement de tampon provoquant l'arrêt inattendu du système. Cette synchronisation inédite souligne la tension entre la promesse de sécurité d'un écosystème fermé et l'effort croissant requis pour maintenir à jour un parc matériel s'étendant de l'<strong>iPhone 6s</strong> au <strong>Vision Pro</strong>.",
+          "sources": [
+            {
+              "feed": "Full Disclosure",
+              "date": "17/05 23:16",
+              "url": "https://seclists.org/fulldisclosure/2026/May/5",
+              "title": "APPLE-SA-05-11-2026-1 iOS 26.5 and iPadOS 26.5"
+            },
+            {
+              "feed": "Full Disclosure",
+              "date": "17/05 23:16",
+              "url": "https://seclists.org/fulldisclosure/2026/May/6",
+              "title": "APPLE-SA-05-11-2026-2 iOS 18.7.9 and iPadOS 18.7.9"
+            },
+            {
+              "feed": "Full Disclosure",
+              "date": "17/05 23:16",
+              "url": "https://seclists.org/fulldisclosure/2026/May/8",
+              "title": "APPLE-SA-05-11-2026-3 iPadOS 17.7.11"
+            },
+            {
+              "feed": "Full Disclosure",
+              "date": "17/05 23:16",
+              "url": "https://seclists.org/fulldisclosure/2026/May/9",
+              "title": "APPLE-SA-05-11-2026-4 iOS 16.7.16 and iPadOS 16.7.16"
+            },
+            {
+              "feed": "Full Disclosure",
+              "date": "17/05 23:16",
+              "url": "https://seclists.org/fulldisclosure/2026/May/10",
+              "title": "APPLE-SA-05-11-2026-5 iOS 15.8.8 and iPadOS 15.8.8"
+            },
+            {
+              "feed": "Full Disclosure",
+              "date": "17/05 23:16",
+              "url": "https://seclists.org/fulldisclosure/2026/May/11",
+              "title": "APPLE-SA-05-11-2026-6 macOS Tahoe 26.5"
+            },
+            {
+              "feed": "Full Disclosure",
+              "date": "17/05 23:16",
+              "url": "https://seclists.org/fulldisclosure/2026/May/12",
+              "title": "APPLE-SA-05-11-2026-7 macOS Sequoia 15.7.7"
+            },
+            {
+              "feed": "Full Disclosure",
+              "date": "17/05 23:16",
+              "url": "https://seclists.org/fulldisclosure/2026/May/7",
+              "title": "APPLE-SA-05-11-2026-8 macOS Sonoma 14.8.7"
+            },
+            {
+              "feed": "Full Disclosure",
+              "date": "17/05 23:16",
+              "url": "https://seclists.org/fulldisclosure/2026/May/13",
+              "title": "APPLE-SA-05-11-2026-9 tvOS 26.5"
+            },
+            {
+              "feed": "Full Disclosure",
+              "date": "17/05 23:16",
+              "url": "https://seclists.org/fulldisclosure/2026/May/14",
+              "title": "APPLE-SA-05-11-2026-10 watchOS 26.5"
+            },
+            {
+              "feed": "Full Disclosure",
+              "date": "17/05 23:16",
+              "url": "https://seclists.org/fulldisclosure/2026/May/15",
+              "title": "APPLE-SA-05-11-2026-11 visionOS 26.5"
+            },
+            {
+              "feed": "Full Disclosure",
+              "date": "17/05 23:16",
+              "url": "https://seclists.org/fulldisclosure/2026/May/16",
+              "title": "APPLE-SA-05-13-2026-1 Safari 26.5"
+            }
+          ]
+        },
+        {
+          "title": "Windows MiniPlasma : un zero-day récurrent expose la dette technique de la sécurité Microsoft",
+          "lede_html": "La faille d'élévation de privilèges <strong>MiniPlasma</strong>, censée être colmatée par <strong>Microsoft</strong> en décembre 2020, réapparaît avec un PoC public offrant un accès <strong>SYSTEM</strong> — illustrant une <em>régression</em> dans le cycle de patches plutôt qu'une simple omission. Ce retour d'un <em>zero-day récurrent</em> soulève des questions sur la dette technique accumulée dans les composants Windows et la capacité de l'éditeur à maintenir la <em>continuité de sécurité</em> entre correctifs successifs.",
+          "sources": [
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "18/05 08:15",
+              "url": "https://www.bleepingcomputer.com/news/microsoft/new-windows-miniplasma-zero-day-exploit-gives-system-access-poc-released/",
+              "title": "New Windows 'MiniPlasma' zero-day exploit gives SYSTEM access, PoC released"
+            }
+          ]
+        },
+        {
+          "title": "Du sabotage nucléaire au bypass LSM : la créativité offensive redéfinit les frontières de la menace",
+          "lede_html": "La confirmation que <strong>Fast16</strong>, malware apparenté à <strong>Stuxnet</strong>, manipulait les données de simulation pour saboter les essais nucléaires iraniens rappelle que le cyber-sabotage stratégique reste un outil d'État redoutable. Sur le terrain systémique, le projet <strong>LID</strong> démontre qu'un hook <code>eBPF</code> peut réécrire les chemins en mémoire utilisateur avant l'évaluation <code>AppArmor</code>, contournant les <em>LSM</em> sans laisser de trace d'audit — prouvant que <em>l'intégrité des mécanismes de contrôle d'accès</em> est désormais contestable sur Linux.",
+          "sources": [
+            {
+              "feed": "Talkback Home",
+              "date": "17/05 14:50",
+              "url": "https://www.zetter-zeroday.com/experts-confirm-the-fast16-malware-was-sabotaging-nuclear-weapons-tests-likely-in-iran/",
+              "title": "Experts Confirm the Fast16 Malware Was Sabotaging Nuclear Weapons Tests, Likely in Iran [ics] [mal]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "17/05 14:29",
+              "url": "https://github.com/azqzazq1/LID/",
+              "title": "GitHub - azqzazq1/LID: LID — Linux Integrity Drift: Bypassing AppArmor via eBPF pathname rewriting. Pre-LSM syscall argument manipulation with zero audit footprint. \"Linux is Dying\" [exp] [sys]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "devops",
+      "name": "DevOps",
+      "tagline": "AUTOMATION, COMPLIANCE & OPEN SOURCE DYNAMICS",
+      "topics": [
+        {
+          "title": "Ansible et la sécurité des pipelines CI/CD",
+          "lede_html": "Un cadre de sécurité <strong>Ansible</strong> récent rappelle que le modèle <em>agentless</em> déplace le risque vers le nœud de contrôle et la gestion des clés SSH — d'où la nécessité de <strong>durcir</strong> le bastion, d'épingler les versions de collections dans <code>requirements.yml</code> et de ne désactiver <code>host_key_checking</code> que dans les environnements CI éphémères. Côté secrets, <strong>Ansible Vault</strong> chiffre en AES-256-CTR mais reste un mécanisme de stockage, pas un gestionnaire : en production, les playbooks doivent privilégier les <em>lookup plugins</em> vers <strong>HashiCorp Vault</strong>, <strong>AWS Secrets Manager</strong> ou <strong>Azure Key Vault</strong> pour obtenir des credentials dynamiques à l'exécution.",
+          "sources": [
+            {
+              "feed": "Talkback Home",
+              "date": "17/05 18:43",
+              "url": "https://slicker.me/netsec/ansible-security-compliance.html",
+              "title": "Ansible Security & Compliance"
+            }
+          ]
+        },
+        {
+          "title": "Tensions autour de la licence AGPL dans l'écosystème open-source",
+          "lede_html": "Le composant <code>bambu_networking</code> intégré à <strong>Bambu Studio</strong> contournerait les obligations de la licence <strong>AGPLv3</strong> en ne publiant ni le code source correspondant ni les modifications, ravivant le débat sur la <em>conformité copyleft</em> dans les projets open-source liés au matériel. Cette tension entre <em>modèle propriétaire embarqué</em> et exigences de redistribution illustre les frictions structurelles auxquelles se heurtent les éditeurs d'appareils connectés.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "18/05 07:18",
+              "url": "https://github.com/jarczakpawel/OrcaSlicer-bambulab/blob/main/bambu_agpl.md",
+              "title": "Why bambu_networking violates the AGPL in Bambu Studio"
+            },
+            {
+              "feed": "Journal du hacker",
+              "date": "17/05 09:33",
+              "url": "https://www.romainleclaire.com/p/budslink-lapplication-open-source",
+              "title": "BudsLink - L'application open-source qui libère vos écouteurs sous Linux"
+            }
+          ]
+        },
+        {
+          "title": "L'explosion de PyPI sous l'effet de l'IA",
+          "lede_html": "Le volume de nouvelles versions publiées sur <strong>PyPI</strong> a bondi de <strong>30 %</strong> depuis 2025, poussé par la prolifération de projets générés par IA qui encombrent le registre de packages <em>vibecodés</em> et recourent abusivement à <code>eval</code>, <code>exec</code> et <code>subprocess</code>. Ces pratiques brouillent la détection de code malveillant, tandis que des comportements abusifs — jusqu'à <strong>392</strong> publications d'un même package en une journée — accentuent la pression sur les mainteneurs et les coûts de stockage de la <strong>PSF</strong>.",
+          "sources": [
+            {
+              "feed": "Artem Golubin",
+              "date": "17/05 16:14",
+              "url": "https://rushter.com/blog/pypi-packages/",
+              "title": "PyPI packages are increasing rapidly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "diy",
+      "name": "DIY",
+      "tagline": "BRICOLAGE NUMÉRIQUE : RÉCUP, RÉTRO ET RÉSEAUTAGE",
+      "topics": [
+        {
+          "title": "Récupération et détournement de matériel",
+          "lede_html": "Les makers refusent le tout-neuf : <strong>[ScuffedBits]</strong> ressuscite des panneaux LCD de portables déclassés en moniteurs nomades, écartant au passage les <em>CCFL</em> et matrices passives jugées impraticables, tandis qu'une tablette <strong>RK3562</strong> à <strong>80 $</strong> se métamorphose en station de travail <code>Debian</code> grâce au projet <strong>rk3562deb</strong>. Deux approches qui illustrent une même logique : <em>détourner plutôt que jeter</em>, et extraire d'un hardware considéré obsolète une valeur fonctionnelle inattendue.",
+          "sources": [
+            {
+              "feed": "Hack a Day",
+              "date": "18/05 04:00",
+              "url": "https://hackaday.com/2026/05/17/turning-a-junk-laptop-screen-into-a-portable-monitor/",
+              "title": "Turning a Junk Laptop Screen Into a Portable Monitor"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "17/05 15:16",
+              "url": "https://github.com/tech4bot/rk3562deb",
+              "title": "I turned a $80 RK3562 Android tablet into a Debian Linux workstation"
+            }
+          ]
+        },
+        {
+          "title": "Rétrocomputing et hardware hacking créatif",
+          "lede_html": "Le rétrocomputing se réinvente en terrain d'expérimentation : <strong>ThroatyMumbo</strong> fait tourner <strong>Windows CE 2.11</strong> sur une vraie <strong>Nintendo 64</strong>, <em>pas via un émulateur</em> mais en bootant un bureau complet sur la console, tandis que <strong>Bitroller</strong> ressuscite les cartes perforées en les imprimant en 3D pour y stocker des secrets lisibles par webcam. Plus loin, <strong>GloriousCow</strong> pousse le vieux standard <code>CGA</code> au-delà de ses spécifications en interceptant son ROM caractère à l'aide d'un <strong>Raspberry Pi Pico 2</strong>, prouvant que <em>les contraintes d'antan sont les terrains de jeu d'aujourd'hui</em>.",
+          "sources": [
+            {
+              "feed": "Korben",
+              "date": "17/05 11:35",
+              "url": "https://korben.info/il-fait-tourner-windows-ce-sur-une-nintendo-64-et-ca-marche-pour-de-vrai.html",
+              "title": "Il fait tourner Windows CE sur une Nintendo 64, et ça marche pour de vrai"
+            },
+            {
+              "feed": "Korben",
+              "date": "17/05 11:47",
+              "url": "https://korben.info/des-cartes-perforees-imprimees-en-3d-et-lues-par-une-webcam-parfait-pour-stocker-vos-mots-de-passe-a-vie.html",
+              "title": "Des cartes perforées imprimées en 3D et lues par une webcam, parfait pour stocker vos mots de passe à vie"
+            },
+            {
+              "feed": "Hack a Day",
+              "date": "17/05 19:00",
+              "url": "https://hackaday.com/2026/05/17/cga-as-you-have-never-seen-it-before/",
+              "title": "CGA As You Have Never Seen It Before"
+            }
+          ]
+        },
+        {
+          "title": "Connectivité alternative et objets communicants",
+          "lede_html": "Alors que <strong>LoRa</strong> s'impose comme <em>infrastructure de survie</em> déconnectée — mesh <strong>Meshtastic</strong>, passerelles MQTT, nodes hybrides GPS/WiFi —, le Vermont ressuscite ses cabines téléphoniques rurales via <strong>VoIP</strong>, prouvant que les réseaux parallèles ne sont pas qu'une utopie survivaliste. Pendant ce temps, <strong>Qualcomm</strong> vient bousculer le règne de l'<strong>ESP32</strong> avec sa gamme <code>QCC74x</code> embarquant WiFi 6, Bluetooth 5.4 et <code>802.15.4</code> sur un cœur RISC‑V à 352 MHz : les makers n'ont jamais eu autant de leviers pour tisser leurs propres maillages.",
+          "sources": [
+            {
+              "feed": "Journal du hacker",
+              "date": "17/05 11:40",
+              "url": "https://docs.scourzic.net/2026-05-08_Quand-LORA-relie-le-monde/",
+              "title": "Quand LORA relie le monde"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "17/05 21:39",
+              "url": "https://spectrum.ieee.org/payphone-voip",
+              "title": "VoIP brings back old-fashioned pay phones to rural Vermont (2025)"
+            },
+            {
+              "feed": "Hack a Day",
+              "date": "17/05 16:00",
+              "url": "https://hackaday.com/2026/05/17/qualcomms-new-qcc74x-appears-to-target-the-esp32-mcus/",
+              "title": "Qualcomm’s New QCC74x Appears to Target the ESP32 MCUs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "societe",
+      "name": "Société & régulation",
+      "tagline": "SURVEILLANCE, INGÉRENCE ET COÛTS CACHÉS DU NUMÉRIQUE",
+      "topics": [
+        {
+          "title": "La double face de la surveillance algorithmique : quand l'IA épingle les citoyens mais indigne les policiers",
+          "lede_html": "La <strong>Metropolitan Police</strong> a déployé en secret une IA de surveillance interne pistant déplacements, communications et accès informatiques de ses propres effectifs — <strong>près de 600 cas</strong> signalés, dont <strong>42</strong> impliquant des gradés —, provoquant la colère de la <strong>Police Federation</strong> qui dénonce une <em>« invasion de la vie privée outrageante et impardonnable »</em>. Ce renversement met en lumière une <em>fracture asymétrique</em> : les forces qui normalisent la surveillance des citoyens refusent viscéralement celle dont elles feraient l'objet, invalidant l'argument habituel <em>« si vous n'avez rien à vous reprocher… »</em>.",
+          "sources": [
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "18/05 08:37",
+              "url": "https://www.biometricupdate.com/202605/police-use-of-ai-outrageous-and-unforgivable-privacy-invasion-say-the-police",
+              "title": "Police use of AI ‘outrageous and unforgivable privacy invasion’ – say the police | Biometric Update"
+            }
+          ]
+        },
+        {
+          "title": "Influence étrangère et démocratie locale : l'ingérence israélienne dans les municipales françaises",
+          "lede_html": "Les services de renseignement français confirment que la campagne de déstabilisation ayant ciblé des candidats <strong>LFI</strong> aux municipales de mars a été pilotée depuis <strong>Israël</strong>, via une entité nommée <strong>BlackCore</strong>, décrite comme une <em>entreprise d'élite spécialisée dans l'influence</em>. L'opération, dévoilée par <strong>Viginum</strong> le 10 mars, reposait sur des sites et comptes présentant des <em>caractéristiques d'inauthenticité</em>, notamment des photos générées par <em>intelligence artificielle</em> — soulignant la vulnérabilité des scrutins locaux face aux <em>campagnes de manipulation transnationales</em>.",
+          "sources": [
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "18/05 08:44",
+              "url": "https://www.huffingtonpost.fr/politique/article/la-campagne-d-ingerence-visant-des-candidats-lfi-aux-municipales-a-bien-ete-operee-depuis-israel_263748.html",
+              "title": "La campagne d'ingérence visant des candidats LFI aux municipales a bien été opérée depuis Israël"
+            }
+          ]
+        },
+        {
+          "title": "L'IA face à ses contradictions : facturations surprises, promesses déçues et scepticisme croissant",
+          "lede_html": "Des clients <strong>AWS</strong> et <strong>Google Cloud</strong> se retrouvent avec des factures massives et imprévues, symptôme d'un resserrement tarifaire alors que les fournisseurs tentent de stopper l'hémorragie financière de l'IA — et la facturation au coût réel ne fera qu'aggraver la situation. Pendant ce temps, la critique s'organise : Frederick Van Brabant rappelle que <em>accélérer un processus ne se résume pas à y injecter de l'IA</em>, les goulots d'étranglement étant ailleurs, tandis que Marcello Vitali-Rosati dénonce un <em>discours publicitaire</em> des GAFAM qui a remplacé la réalité par sa propre simulation, qualifiant l'expression même d'<strong>« intelligence artificielle »</strong> de formulation racoleuse inventée en 1955 pour obtenir des financements.",
+          "sources": [
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "18/05 08:18",
+              "url": "https://www.theregister.com/ai-ml/2026/05/18/surprise-ai-bills-leave-aws-and-google-cloud-users-aghast/5241348",
+              "title": "Surprise AI bills leave AWS and Google Cloud users aghast"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "17/05 14:13",
+              "url": "https://frederickvanbrabant.com/blog/2026-05-15-i-dont-think-ai-will-make-your-processes-go-faster/",
+              "title": "I don't think AI will make your processes go faster"
+            },
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "17/05 12:17",
+              "url": "https://blog.sens-public.org/marcellovitalirosati/iaanerie.html",
+              "title": "L'\"IA\" est une ânerie: arrêtez de relayer le discours publicitaire!"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "appendix": [
+    {
+      "url": "https://www.youtube.com/watch?v=1OIxzewWilc",
+      "title": "Étienne Ghys: The Shape of Letters: From Leonardo da Vinci to Donald Knuth",
+      "note": ""
+    },
+    {
+      "url": "https://hellmood.111mb.de//wake_up_16b_writeup.html",
+      "title": "WriteUp: 16 Bytes of x86 that turn Matrix rain into sound",
+      "note": ""
+    },
+    {
+      "url": "https://hackaday.com/2026/05/17/hackaday-links-may-17-2026/",
+      "title": "Hackaday Links: May 17, 2026",
+      "note": ""
+    },
+    {
+      "url": "https://www.jdhodges.com/blog/thinkpad-history/",
+      "title": "The History of ThinkPad: From IBM’s Bento Box to Lenovo’s AI Workstations",
+      "note": ""
+    },
+    {
+      "url": "https://idahonews.com/news/local/two-f-18-fighter-jets-have-crashed-during-an-airshow-at-mountain-home-air-force-base",
+      "title": "Two EA-18 fighter jets collide at Mountain Home airshow, pilots ejected safely",
+      "note": ""
+    },
+    { "url": "https://gencad.github.io/", "title": "GenCAD", "note": "" },
+    {
+      "url": "https://www.metalevel.at/prolog/horror",
+      "title": "Prolog Coding Horror",
+      "note": ""
+    },
+    {
+      "url": "https://github.com/alternbits/awesome-cuda-books",
+      "title": "CUDA Books",
+      "note": ""
+    },
+    {
+      "url": "https://www.bbc.com/future/article/20260514-how-hallucinogenic-ibogaine-helps-veterans-overcome-ptsd",
+      "title": "Trials on veterans suggest ibogaine could provide a new treatment for PTSD",
+      "note": ""
+    },
+    {
+      "url": "https://hackaday.com/2026/05/17/extract-3d-video-game-content-by-firing-up-photo-mode/",
+      "title": "Extract 3D Video Game Content By Firing Up Photo Mode",
+      "note": ""
+    }
+  ],
+  "footer": "Ether-News - 62 articles agrégés"
+}

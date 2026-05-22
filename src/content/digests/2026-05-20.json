@@ -1,1 +1,427 @@
-{"date":"2026-05-20","title_tag":"Digest tech-watch — 20 mai 2026","headline":"Exploits kernel Linux et vulnérabilités critiques : la course aux p…","window":{"from":"19 mai 2026 06:24 UTC","to":"20 mai 2026 04:12 UTC","count":"119 articles"},"alert":"","categories":[{"slug":"ia","name":"IA","tagline":"GOOGLE PRESSÉ, L'ÉCOSYSTÈME TENDU","topics":[{"title":"Google déploie Gemini 3.5 et restructure son tooling","lede_html":"Google dévoile <strong>Gemini 3.5 Flash</strong> et <strong>Gemini Omni</strong>, accélérant la course aux modèles, mais impose en parallèle la fin de <strong>Gemini CLI</strong> dès le 18 juin 2026 au profit d'<em>Antigravity CLI</em>, son successeur multi-agent en Go. Si les fonctionnalités clés — <code>Agent Skills</code>, <code>Hooks</code>, <code>Subagents</code> — sont conservées sous forme de plugins, l'absence de parité immédiate et la migration forcée créent une <em>friction tangible</em> pour les développeurs déjà installés sur l'outil historique.","sources":[{"feed":"Hacker News","date":"19/05 19:49","url":"https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/","title":"Gemini 3.5 Flash"},{"feed":"Hacker News","date":"19/05 19:46","url":"https://deepmind.google/models/gemini-omni/","title":"Gemini Omni"},{"feed":"Hacker News","date":"19/05 20:03","url":"https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/","title":"Gemini CLI will stop working from June 18, 2026"}]},{"title":"La guerre des watermarks IA fait rage","lede_html":"<strong>OpenAI</strong> adopte le standard <strong>SynthID</strong> de Google pour tatouer les images générées par ses modèles, accompagné d'un outil de vérification de provenance — un rapprochement inattendu entre concurrents sur la traçabilité. Moins de trois heures plus tard, le dépôt <code>remove-ai-watermarks</code> propose déjà une CLI capable de supprimer les filigranes visibles <em>et</em> invisibles, y compris <strong>SynthID</strong> et <strong>C2PA</strong>, soulignant la <em>fragilité structurelle</em> des mécanismes de watermarking face à des contournements triviaux.","sources":[{"feed":"Hacker News","date":"19/05 21:34","url":"https://openai.com/index/advancing-content-provenance/","title":"OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool"},{"feed":"Hacker News","date":"20/05 00:30","url":"https://github.com/wiltodelta/remove-ai-watermarks","title":"Remove–AI–Watermarks – CLI and library for removing AI watermarks from images"}]},{"title":"Quand l'IA sort des rails : évaluations, autonomie et confiance","lede_html":"De la flotte de <strong>Waymo</strong> prise en boucle fermée dans une impasse d'Atlanta aux quatre radios pilotées par <strong>Claude Opus 4.7</strong>, <strong>GPT-5.5</strong> et consœurs dérivant en cinq mois vers le <em>grand n'importe quoi</em>, l'IA déployée sans garde-fou montre qu'elle ne se comporte pas comme prévu. <strong>Microsoft</strong> enfonce le clou en recommandant de ne pas faire confiance aux modèles pour les documents critiques, tandis qu'un chercheur alerte : nos <em>évaluations</em> actuelles sont incapables de détecter les <em>transitions qualitatives</em> de capacité — le prochain saut nous surprendra <em>en silence</em>.","sources":[{"feed":"Korben","date":"19/05 15:11","url":"https://korben.info/un-essaim-de-waymo-sest-mis-a-tourner-en-boucle-dans-une-rue-residentielle.html","title":"Un essaim de Waymo s'est mis à tourner en boucle dans une rue résidentielle"},{"feed":"Hacker News","date":"20/05 05:10","url":"https://wanglun1996.github.io/blog/your-evals-will-break.html","title":"Evals will break"},{"feed":"Talkback Home","date":"19/05 14:50","url":"https://cybernews.com/ai-news/microsoft-research-ai-models-corruption-trust/","title":"Ultimate irony: Microsoft researchers say you shouldn't trust AI with work docs"},{"feed":"Korben","date":"19/05 10:34","url":"https://korben.info/andon-fm-quatre-ia-radios-autonomes.html","title":"Andon FM - Quand les IA gèrent des radios et pètent un plomb"}]}]},{"slug":"infosec","name":"Infosec","tagline":"BREACHES, EXPLOITS ET SUPPLY CHAIN SOUS PRESSION","topics":[{"title":"GitHub compromis : TeamPCP revendique l'accès à 4 000 dépôts internes","lede_html":"<strong>GitHub</strong> confirme une compromission via une extension <code>VS Code</code> piégée ayant permis l'exfiltration d'environ <strong>3 800 dépôts internes</strong>, tandis que <strong>TeamPCP</strong> met en vente le code source pour <strong>50 000 $</strong> sur un forum cybercriminel, menaçant de <em>leak gratuit</em> sans acheteur. La plateforme assure qu'aucune donnée client hors périmètre interne n'est impactée, mais la rotation des secrets critiques et la compromission d'un appareil employé soulignent <em>la porosité persistante</em> des chaînes d'approvisionnement logicielles.","sources":[{"feed":"Hacker News","date":"20/05 06:12","url":"https://twitter.com/i/status/2056949168208552080","title":"GitHub Compromised"},{"feed":"The Hacker News","date":"20/05 06:01","url":"https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html","title":"GitHub Investigating TeamPCP Claimed Breach of ~4,000 Internal Repositories"},{"feed":"Hacker News","date":"20/05 02:01","url":"https://twitter.com/github/status/2056884788179726685","title":"GitHub is investigating unauthorized access to their internal repositories"}]},{"title":"CISA expose ses clés AWS GovCloud sur GitHub : le gardien mal gardé","lede_html":"Un dépôt GitHub public nommé <strong>Private-CISA</strong>, tenu par un prestataire de l'agence, a exposé des clés administratives <strong>AWS GovCloud</strong>, des mots de passe en clair et des tokens internes — le tout après désactivation délibérée de la détection de secrets native de GitHub. GitGuardian qualifie l'incident de <em>pire fuite de credentials gouvernementaux</em> observée à ce jour, révélant un fossé saisissant entre la posture réglementaire de <strong>CISA</strong> et ses pratiques opérationnelles de sécurité.","sources":[{"feed":"Hacker News","date":"19/05 09:45","url":"https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/","title":"CISA Admin Leaked AWS GovCloud Keys on GitHub"},{"feed":"Talkback Home","date":"19/05 21:49","url":"https://www.darkreading.com/cybersecurity-operations/cisa-exposes-secrets-credentials-private-repo","title":"CISA Exposes Secrets, Credentials in 'Private' Repo [app] [cloud]"},{"feed":"Hacker News","date":"19/05 14:24","url":"https://gizmodo.com/the-worst-leak-that-ive-witnessed-u-s-cybersecurity-agency-leaves-its-digital-keys-out-in-public-on-github-2000760330","title":"U.S. Cybersecurity Agency Leaves Its Digital Keys Out in Public on GitHub"}]},{"title":"Exploits kernel Linux et vulnérabilités critiques : la course aux patches s'accélère","lede_html":"La publication d'un PoC pour <strong>CVE-2026-31635</strong> (<em>DirtyDecrypt</em>), permettant une escalade de privilèges locale et potentiellement une évasion de conteneur sur les distributions activant <code>CONFIG_RXGK</code>, illustre une <em>accélération des cycles d'exploitation</em> que confirment les vulnérabilités kernel <strong>Copy Fail</strong>, <strong>Dirty Frag</strong> et <strong>Fragnesia</strong> détaillées par Gentoo. Pendant ce temps, <strong>Drupal</strong> prépare un correctif critique le 20 mai face à un risque d'exploitation rapide, et le <strong>DBIR 2026</strong> de Verizon décrit des défenseurs courant sur un <em>tapis roulant qui accélère</em>, peinant à suivre le rythme des attaquants.","sources":[{"feed":"The Hacker News","date":"19/05 16:56","url":"https://thehackernews.com/2026/05/dirtydecrypt-poc-released-for-linux.html","title":"DirtyDecrypt PoC Released for Linux Kernel CVE-2026-31635 LPE Vulnerability"},{"feed":"Talkback Home","date":"19/05 18:22","url":"https://www.securityweek.com/drupal-to-patch-highly-critical-vulnerability-at-risk-of-quick-exploitation/","title":"Drupal to Patch Highly Critical Vulnerability at Risk of Quick Exploitation [app]"},{"feed":"Talkback Home","date":"19/05 15:20","url":"https://thehackernews.com/2026/05/drupal-to-release-urgent-core-security.html","title":"Drupal to Release Urgent Core Security Updates on May 20, Sites Told to Prepare [app]"},{"feed":"Talkback Home","date":"19/05 12:10","url":"https://www.securityweek.com/poc-released-for-dirtydecrypt-linux-kernel-vulnerability/","title":"PoC Released for DirtyDecrypt Linux Kernel Vulnerability [exp] [sys]"},{"feed":"Hacker News","date":"19/05 17:27","url":"https://www.gentoo.org/news/2026/05/19/copy-fail-fragnesia-vulnerabilities.html","title":"Copy Fail, Dirty Frag, and Fragnesia kernel vulnerabilities"},{"feed":"Qualys Blog","date":"19/05 18:27","url":"https://blog.qualys.com/vulnerabilities-threat-research/2026/05/19/inside-the-2026-verizon-dbir-what-one-billion-records-revealed-about-vulnerability-remediation","title":"Inside the 2026 Verizon DBIR: What One Billion Records Revealed About Vulnerability Remediation"}]}]},{"slug":"devops","name":"DevOps","tagline":"INFRASTRUCTURE, OBSERVABILITÉ ET RÉSILIENCE CLOUD","topics":[{"title":"Observabilité autonome et incidents cloud","lede_html":"Pendant que <strong>Superlog</strong> (YC P26) promet une observabilité <em>auto-installée</em> capable de corriger les bugs sans intervention humaine, <strong>Railway</strong> voit son compte <strong>Google Cloud</strong> bloqué sans préavis, paralysant builds et workloads, et les <strong>agents cloud de Cursor</strong> restent inopérants pendant des heures — trois incidents qui illustrent la <em>tension entre automatisation et dépendance</em> aux fournisseurs cloud. La promesse d'une plateforme qui se déploie et se répare elle-même se heurte à la réalité de comptes suspendus et de services critiques à l'arrêt, rappelant que <em>l'observabilité autonome ne résout pas la fragilité structurelle</em> des infrastructures.","sources":[{"feed":"Hacker News","date":"19/05 17:54","url":"https://superlog.sh/","title":"Show HN: Superlog (YC P26) – Observability that installs itself and fixes bugs"},{"feed":"Hacker News","date":"20/05 02:23","url":"https://status.railway.com/?date=20260519","title":"Railway Blocked by Google Cloud"},{"feed":"Hacker News","date":"19/05 19:37","url":"https://forum.cursor.com/t/cloud-agents-broken-ii/161036","title":"Cursor Cloud Agents Down"}]},{"title":"Gestion d'infrastructure et réseaux","lede_html":"En homelab monoserveur, <strong>Proxmox</strong> structure le réseau autour d'un conteneur LXC faisant office de routeur et de <em>deux VLANs dédiés</em>, sans exiger de switch gérant les VLANs — une approche viable pour les petits environnements, <em>mais pas pour un usage professionnel</em>. À l'échelle supérieure, <strong>phpIPAM</strong> propose une interface web centralisée pour inventorier sous-réseaux, VLANs et VRF, avec scan automatique des hôtes et gestion <code>IPv4</code>/<code>IPv6</code>, remplaçant le fichier Excel devenu insuffisant dès que le parc grandit.","sources":[{"feed":"Journal du hacker","date":"19/05 19:26","url":"https://www.linuxtricks.fr/wiki/proxmox-gestion-des-reseaux-homelab-monoserveur","title":"Proxmox : Gestion des réseaux homelab monoserveur"},{"feed":"Journal du hacker","date":"19/05 10:27","url":"https://www.it-connect.fr/phpipam-une-solution-open-source-pour-gerer-les-adresses-ip/","title":"phpIPAM : une solution open source pour gérer les adresses IP"}]},{"title":"Écosystème open source : pérennité et nouveaux outils","lede_html":"Alors qu'<strong>Andrew Nesbitt</strong> dresse un inventaire clinique des façons dont meurent les projets open source — mainteneur fantôme, <em>corporate orphan</em>, <em>funding cliff</em> —, <strong>ShadowBroker</strong> rappelle que l'écosystème sait aussi naître : ce tableau de bord OSINT agrège <strong>60+ flux</strong> publics en temps réel, installable via un simple <code>git clone</code>. La tension est vive entre <em>vigilance sur la pérennité</em> des dépendances et <em>appétit pour l'innovation communautaire</em> rapide.","sources":[{"feed":"Hacker News","date":"19/05 21:22","url":"https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html","title":"Dumb ways for an open source project to die"},{"feed":"Korben","date":"19/05 10:13","url":"https://korben.info/shadowbroker-osint-temps-reel.html","title":"ShadowBroker - Une salle de crise OSINT mondiale chez vous"}]}]},{"slug":"diy","name":"DIY","tagline":"BRICOLAGE, HACKS ET OBJETS CONNECTÉS MAISON","topics":[{"title":"Electroplaquage 3D : cuivrer sans cuve industrielle","lede_html":"Plutôt que d'investir dans une cuve industrielle, <strong>Hendrik</strong> retourne le problème : si la pièce imprimée en 3D ne rentre pas dans le bac, on la fait <em>tourner lentement</em> dans un volume réduit, submergeant progressivement chaque face. L'électroplaquage maison devient ainsi accessible aux makers, à condition de poncer, d'appliquer une <code>peinture conductrice</code>, et de bricoler un mécanisme de rotation — <em>pas besoin d'équipement professionnel</em> pour obtenir une finition cuivrée correcte.","sources":[{"feed":"Korben","date":"19/05 17:38","url":"https://korben.info/cuivrer-une-piece-imprimee-3d-sans-cuve-geante-cest-possible-en-la-faisant-tourner.html","title":"Cuivrer une pièce imprimée 3D sans cuve géante, c'est possible en la faisant tourner"}]},{"title":"Vision nocturne et imagerie WiFi : le DIY repousse les frontières de la perception","lede_html":"Deux projets DIY repoussent la perception humaine au-delà du spectre visible : d'un côté, <strong>Project 326</strong> assemble un télescope imprimé en 3D couplé à une webcam modifiée et un laser <code>940 nm</code> de deux watts pour voir à <strong>650 mètres</strong> dans l'obscurité totale ; de l'autre, <strong>RuView</strong> transforme le signal WiFi ordinaire en <em>intelligence spatiale en temps réel</em>, détection de présence et monitoring de signaux vitaux — sans aucune caméra. L'un éclaire l'obscurité, l'autre <em>traverse les murs</em> : le bricolage repousse les frontières du visible par le bas.","sources":[{"feed":"Korben","date":"19/05 15:34","url":"https://korben.info/voir-a-650-metres-dans-le-noir-avec-un-laser-infrarouge-et-une-webcam-cest-faisable.html","title":"Voir à 650 mètres dans le noir avec un laser infrarouge et une webcam : c'est faisable"},{"feed":"Hacker News","date":"19/05 18:19","url":"https://github.com/ruvnet/RuView","title":"RuView – See through walls with WiFi"}]},{"title":"Objets connectés rétro-futuristes et serveurs minimalistes","lede_html":"La scène maker prouve que <em>contrainte et esthétique</em> fertilisent l'ingénierie : d'un côté, un <strong>Pip-Boy</strong> grandeur nature greffé sur une carte <code>Xiao ESP32-S3</code> avec capteur cardiaque <code>MAX30102</code>, de l'autre, un serveur HTTP public tiré d'un simple <strong>AVR 8-bit</strong> qui crache une page pré-enregistrée au prix d'un réseau maison. L'un puise dans la fiction pour façonner l'objet, l'autre repousse les limites du <em>minimalisme</em> pour exister sur le Web.","sources":[{"feed":"Hack a Day","date":"19/05 22:00","url":"https://hackaday.com/2026/05/19/building-a-pip-boy-themed-smartwatch/","title":"Building a Pip Boy Themed Smartwatch"},{"feed":"Hack a Day","date":"20/05 01:00","url":"https://hackaday.com/2026/05/19/the-8-bit-web-server/","title":"The 8-bit Web Server"}]}]},{"slug":"societe","name":"Société & régulation","tagline":"CONCENTRATION DU POUVOIR ET RÉGULATION EN TENSION","topics":[{"title":"Concentration du pouvoir économique et médiatique","lede_html":"En quatorze ans, la fortune des <strong>500 familles les plus riches de France</strong> est passée de <strong>12 %</strong> à <strong>42 %</strong> du PIB, invalidant le mythe du <em>ruissellement</em> — pendant que <strong>Vincent Bolloré</strong> purge les salariés de <strong>Canal+</strong> au nom d'une <em>cancel culture</em> sélective, et que <strong>Disney</strong> fait disparaître purement et simplement les archives de <strong>FiveThirtyEight</strong>, effaçant d'un clic une décennie de journalisme de données. Ces trois signaux, sur deux continents, dessinent la même trajectoire : la concentration du pouvoir économique se double d'une <em>concentration du pouvoir médiatique</em>, où les propriétaires décident non seulement des profits, mais de ce qui reste visible.","sources":[{"feed":"Liens en vrac de sebsauvage","date":"19/05 21:33","url":"https://lareleveetlapeste.fr/en-14-ans-la-fortune-des-500-familles-les-plus-riches-de-france-est-passee-de-12-a-42-du-pib/","title":"« En 14 ans, la fortune des 500 familles les plus riches de France est passée de 12% à 42% du PIB »"},{"feed":"Liens en vrac de sebsauvage","date":"19/05 20:37","url":"https://www.politis.fr/articles/2026/05/parti-pris-cinema-bollore-realise-une-purge/","title":"Cinéma : Bolloré réalise une purge - POLITIS"},{"feed":"Hacker News","date":"19/05 20:56","url":"https://www.natesilver.net/p/disney-erased-fivethirtyeight","title":"Disney erased FiveThirtyEight"}]},{"title":"Régulation des marchés et de l'IA face à l'accélération technologique","lede_html":"Le <strong>Minnesota</strong> signe la première loi américaine criminalisant les marchés prédictifs, ciblant <strong>Kalshi</strong> et <strong>Polymarket</strong> d'un délit passible de prison — une prohibition s'étendant même aux <em>VPN</em> permettant de contourner l'interdiction —, tandis que l'administration Trump attaque le texte en justice. Pendant ce temps, l'industrie musicale met en garde les diplômés contre une <em>IA générative</em> perçue comme menace existentielle, et l'<strong>opération Ramz</strong> arrête <strong>201</strong> individus dans <strong>13</strong> pays MENA, démantelant infrastructures de phishing et malwares : trois fronts réglementaires révélant des <em>réponses fragmentées</em> face à des disruptions qui ne ralentissent pas.","sources":[{"feed":"Hacker News","date":"19/05 21:13","url":"https://www.npr.org/2026/05/19/nx-s1-5821265/minnesota-ban-prediction-markets","title":"Minnesota becomes first state to ban prediction markets"},{"feed":"Hacker News","date":"19/05 18:14","url":"https://www.independent.co.uk/tv/news/ai-students-scott-borchetta-middle-tennessee-state-university-video-b2979573.html","title":"'You can hear me now or pay me later' Music exec tells graduates booing AI"},{"feed":"Talkback Home","date":"19/05 12:32","url":"https://www.securityweek.com/201-arrested-in-crackdown-on-cybercrime-in-middle-east-north-africa/","title":"201 Arrested in Crackdown on Cybercrime in Middle East, North Africa [net]"}]},{"title":"Coûts environnementaux de la transition énergétique","lede_html":"La raffinerie de lithium de <strong>Tesla</strong> au Texas, présentée comme un procédé <em>« sans acide »</em>, rejette <strong>231 000 gallons</strong> d'eaux usées noires par jour dans un fossé du comté de Nueces — découverte fortuite par un district de drainage en inspection de routine, <em>aucune déclaration</em> de l'entreprise ni des régulateurs. Les analyses menées se sont révélées conformes, mais <em>omettent de tester</em> plusieurs paramètres pertinents, illustrant les failles réglementaires qui entourent la chaîne d'approvisionnement des batteries électriques.","sources":[{"feed":"Hacker News","date":"19/05 21:52","url":"https://www.autonocion.com/us/tesla-lithium-refinery-texas/","title":"Tesla's lithium refinery discharges 231,000 gallons of polluted wastewater a day"}]}]}],"appendix":[{"url":"https://fivethirtyeightindex.com/","title":"FiveThirtyEight articles on the Internet Archive","note":""},{"url":"https://status.railway.com/#/","title":"Railway Is Having a Major Outage","note":""},{"url":"https://korben.info/virtual-os-museum.html","title":"Virtual OS Museum - 1700 OS de 1948 à nos jours dans une VM","note":""},{"url":"https://hackaday.com/2026/05/19/how-search-engines-enabled-finding-needles-in-a-www-sized-haystack/","title":"How Search Engines Enabled Finding Needles in a WWW-Sized Haystack","note":""},{"url":"https://linuxfr.org/news/revue-de-presse-de-l-april-pour-la-semaine-20-de-l-annee-2026","title":"Revue de presse de l’April pour la semaine 20 de l’année 2026","note":""},{"url":"https://blog.google/products-and-platforms/products/search/search-io-2026/","title":"Google changes its search box","note":""},{"url":"https://techcrunch.com/2026/05/19/google-search-as-you-know-it-is-over/","title":"Google Search as you know it is over","note":""},{"url":"https://io.google/2026/","title":"Google I/O","note":""},{"url":"https://hackaday.com/2026/05/19/how-pulse-oximetry-figures-out-your-blood-oxygen-levels/","title":"How Pulse Oximetry Figures Out Your Blood Oxygen Levels","note":""},{"url":"https://zero-irp.github.io/Proj-Blog/","title":"Index [rev]","note":""}],"footer":"Athanor - 119 articles agrégés"}
+{
+  "date": "2026-05-20",
+  "title_tag": "Digest tech-watch — 20 mai 2026",
+  "headline": "Exploits kernel Linux et vulnérabilités critiques : la course aux patches s'accélère",
+  "window": {
+    "from": "19 mai 2026 06:24 UTC",
+    "to": "20 mai 2026 04:12 UTC",
+    "count": "119 articles"
+  },
+  "alert": "",
+  "categories": [
+    {
+      "slug": "ia",
+      "name": "IA",
+      "tagline": "GOOGLE PRESSÉ, L'ÉCOSYSTÈME TENDU",
+      "topics": [
+        {
+          "title": "Google déploie Gemini 3.5 et restructure son tooling",
+          "lede_html": "Google dévoile <strong>Gemini 3.5 Flash</strong> et <strong>Gemini Omni</strong>, accélérant la course aux modèles, mais impose en parallèle la fin de <strong>Gemini CLI</strong> dès le 18 juin 2026 au profit d'<em>Antigravity CLI</em>, son successeur multi-agent en Go. Si les fonctionnalités clés — <code>Agent Skills</code>, <code>Hooks</code>, <code>Subagents</code> — sont conservées sous forme de plugins, l'absence de parité immédiate et la migration forcée créent une <em>friction tangible</em> pour les développeurs déjà installés sur l'outil historique.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "19/05 19:49",
+              "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+              "title": "Gemini 3.5 Flash"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "19/05 19:46",
+              "url": "https://deepmind.google/models/gemini-omni/",
+              "title": "Gemini Omni"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "19/05 20:03",
+              "url": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/",
+              "title": "Gemini CLI will stop working from June 18, 2026"
+            }
+          ]
+        },
+        {
+          "title": "La guerre des watermarks IA fait rage",
+          "lede_html": "<strong>OpenAI</strong> adopte le standard <strong>SynthID</strong> de Google pour tatouer les images générées par ses modèles, accompagné d'un outil de vérification de provenance — un rapprochement inattendu entre concurrents sur la traçabilité. Moins de trois heures plus tard, le dépôt <code>remove-ai-watermarks</code> propose déjà une CLI capable de supprimer les filigranes visibles <em>et</em> invisibles, y compris <strong>SynthID</strong> et <strong>C2PA</strong>, soulignant la <em>fragilité structurelle</em> des mécanismes de watermarking face à des contournements triviaux.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "19/05 21:34",
+              "url": "https://openai.com/index/advancing-content-provenance/",
+              "title": "OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "20/05 00:30",
+              "url": "https://github.com/wiltodelta/remove-ai-watermarks",
+              "title": "Remove–AI–Watermarks – CLI and library for removing AI watermarks from images"
+            }
+          ]
+        },
+        {
+          "title": "Quand l'IA sort des rails : évaluations, autonomie et confiance",
+          "lede_html": "De la flotte de <strong>Waymo</strong> prise en boucle fermée dans une impasse d'Atlanta aux quatre radios pilotées par <strong>Claude Opus 4.7</strong>, <strong>GPT-5.5</strong> et consœurs dérivant en cinq mois vers le <em>grand n'importe quoi</em>, l'IA déployée sans garde-fou montre qu'elle ne se comporte pas comme prévu. <strong>Microsoft</strong> enfonce le clou en recommandant de ne pas faire confiance aux modèles pour les documents critiques, tandis qu'un chercheur alerte : nos <em>évaluations</em> actuelles sont incapables de détecter les <em>transitions qualitatives</em> de capacité — le prochain saut nous surprendra <em>en silence</em>.",
+          "sources": [
+            {
+              "feed": "Korben",
+              "date": "19/05 15:11",
+              "url": "https://korben.info/un-essaim-de-waymo-sest-mis-a-tourner-en-boucle-dans-une-rue-residentielle.html",
+              "title": "Un essaim de Waymo s'est mis à tourner en boucle dans une rue résidentielle"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "20/05 05:10",
+              "url": "https://wanglun1996.github.io/blog/your-evals-will-break.html",
+              "title": "Evals will break"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "19/05 14:50",
+              "url": "https://cybernews.com/ai-news/microsoft-research-ai-models-corruption-trust/",
+              "title": "Ultimate irony: Microsoft researchers say you shouldn't trust AI with work docs"
+            },
+            {
+              "feed": "Korben",
+              "date": "19/05 10:34",
+              "url": "https://korben.info/andon-fm-quatre-ia-radios-autonomes.html",
+              "title": "Andon FM - Quand les IA gèrent des radios et pètent un plomb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "infosec",
+      "name": "Infosec",
+      "tagline": "BREACHES, EXPLOITS ET SUPPLY CHAIN SOUS PRESSION",
+      "topics": [
+        {
+          "title": "GitHub compromis : TeamPCP revendique l'accès à 4 000 dépôts internes",
+          "lede_html": "<strong>GitHub</strong> confirme une compromission via une extension <code>VS Code</code> piégée ayant permis l'exfiltration d'environ <strong>3 800 dépôts internes</strong>, tandis que <strong>TeamPCP</strong> met en vente le code source pour <strong>50 000 $</strong> sur un forum cybercriminel, menaçant de <em>leak gratuit</em> sans acheteur. La plateforme assure qu'aucune donnée client hors périmètre interne n'est impactée, mais la rotation des secrets critiques et la compromission d'un appareil employé soulignent <em>la porosité persistante</em> des chaînes d'approvisionnement logicielles.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "20/05 06:12",
+              "url": "https://twitter.com/i/status/2056949168208552080",
+              "title": "GitHub Compromised"
+            },
+            {
+              "feed": "The Hacker News",
+              "date": "20/05 06:01",
+              "url": "https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html",
+              "title": "GitHub Investigating TeamPCP Claimed Breach of ~4,000 Internal Repositories"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "20/05 02:01",
+              "url": "https://twitter.com/github/status/2056884788179726685",
+              "title": "GitHub is investigating unauthorized access to their internal repositories"
+            }
+          ]
+        },
+        {
+          "title": "CISA expose ses clés AWS GovCloud sur GitHub : le gardien mal gardé",
+          "lede_html": "Un dépôt GitHub public nommé <strong>Private-CISA</strong>, tenu par un prestataire de l'agence, a exposé des clés administratives <strong>AWS GovCloud</strong>, des mots de passe en clair et des tokens internes — le tout après désactivation délibérée de la détection de secrets native de GitHub. GitGuardian qualifie l'incident de <em>pire fuite de credentials gouvernementaux</em> observée à ce jour, révélant un fossé saisissant entre la posture réglementaire de <strong>CISA</strong> et ses pratiques opérationnelles de sécurité.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "19/05 09:45",
+              "url": "https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/",
+              "title": "CISA Admin Leaked AWS GovCloud Keys on GitHub"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "19/05 21:49",
+              "url": "https://www.darkreading.com/cybersecurity-operations/cisa-exposes-secrets-credentials-private-repo",
+              "title": "CISA Exposes Secrets, Credentials in 'Private' Repo [app] [cloud]"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "19/05 14:24",
+              "url": "https://gizmodo.com/the-worst-leak-that-ive-witnessed-u-s-cybersecurity-agency-leaves-its-digital-keys-out-in-public-on-github-2000760330",
+              "title": "U.S. Cybersecurity Agency Leaves Its Digital Keys Out in Public on GitHub"
+            }
+          ]
+        },
+        {
+          "title": "Exploits kernel Linux et vulnérabilités critiques : la course aux patches s'accélère",
+          "lede_html": "La publication d'un PoC pour <strong>CVE-2026-31635</strong> (<em>DirtyDecrypt</em>), permettant une escalade de privilèges locale et potentiellement une évasion de conteneur sur les distributions activant <code>CONFIG_RXGK</code>, illustre une <em>accélération des cycles d'exploitation</em> que confirment les vulnérabilités kernel <strong>Copy Fail</strong>, <strong>Dirty Frag</strong> et <strong>Fragnesia</strong> détaillées par Gentoo. Pendant ce temps, <strong>Drupal</strong> prépare un correctif critique le 20 mai face à un risque d'exploitation rapide, et le <strong>DBIR 2026</strong> de Verizon décrit des défenseurs courant sur un <em>tapis roulant qui accélère</em>, peinant à suivre le rythme des attaquants.",
+          "sources": [
+            {
+              "feed": "The Hacker News",
+              "date": "19/05 16:56",
+              "url": "https://thehackernews.com/2026/05/dirtydecrypt-poc-released-for-linux.html",
+              "title": "DirtyDecrypt PoC Released for Linux Kernel CVE-2026-31635 LPE Vulnerability"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "19/05 18:22",
+              "url": "https://www.securityweek.com/drupal-to-patch-highly-critical-vulnerability-at-risk-of-quick-exploitation/",
+              "title": "Drupal to Patch Highly Critical Vulnerability at Risk of Quick Exploitation [app]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "19/05 15:20",
+              "url": "https://thehackernews.com/2026/05/drupal-to-release-urgent-core-security.html",
+              "title": "Drupal to Release Urgent Core Security Updates on May 20, Sites Told to Prepare [app]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "19/05 12:10",
+              "url": "https://www.securityweek.com/poc-released-for-dirtydecrypt-linux-kernel-vulnerability/",
+              "title": "PoC Released for DirtyDecrypt Linux Kernel Vulnerability [exp] [sys]"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "19/05 17:27",
+              "url": "https://www.gentoo.org/news/2026/05/19/copy-fail-fragnesia-vulnerabilities.html",
+              "title": "Copy Fail, Dirty Frag, and Fragnesia kernel vulnerabilities"
+            },
+            {
+              "feed": "Qualys Blog",
+              "date": "19/05 18:27",
+              "url": "https://blog.qualys.com/vulnerabilities-threat-research/2026/05/19/inside-the-2026-verizon-dbir-what-one-billion-records-revealed-about-vulnerability-remediation",
+              "title": "Inside the 2026 Verizon DBIR: What One Billion Records Revealed About Vulnerability Remediation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "devops",
+      "name": "DevOps",
+      "tagline": "INFRASTRUCTURE, OBSERVABILITÉ ET RÉSILIENCE CLOUD",
+      "topics": [
+        {
+          "title": "Observabilité autonome et incidents cloud",
+          "lede_html": "Pendant que <strong>Superlog</strong> (YC P26) promet une observabilité <em>auto-installée</em> capable de corriger les bugs sans intervention humaine, <strong>Railway</strong> voit son compte <strong>Google Cloud</strong> bloqué sans préavis, paralysant builds et workloads, et les <strong>agents cloud de Cursor</strong> restent inopérants pendant des heures — trois incidents qui illustrent la <em>tension entre automatisation et dépendance</em> aux fournisseurs cloud. La promesse d'une plateforme qui se déploie et se répare elle-même se heurte à la réalité de comptes suspendus et de services critiques à l'arrêt, rappelant que <em>l'observabilité autonome ne résout pas la fragilité structurelle</em> des infrastructures.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "19/05 17:54",
+              "url": "https://superlog.sh/",
+              "title": "Show HN: Superlog (YC P26) – Observability that installs itself and fixes bugs"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "20/05 02:23",
+              "url": "https://status.railway.com/?date=20260519",
+              "title": "Railway Blocked by Google Cloud"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "19/05 19:37",
+              "url": "https://forum.cursor.com/t/cloud-agents-broken-ii/161036",
+              "title": "Cursor Cloud Agents Down"
+            }
+          ]
+        },
+        {
+          "title": "Gestion d'infrastructure et réseaux",
+          "lede_html": "En homelab monoserveur, <strong>Proxmox</strong> structure le réseau autour d'un conteneur LXC faisant office de routeur et de <em>deux VLANs dédiés</em>, sans exiger de switch gérant les VLANs — une approche viable pour les petits environnements, <em>mais pas pour un usage professionnel</em>. À l'échelle supérieure, <strong>phpIPAM</strong> propose une interface web centralisée pour inventorier sous-réseaux, VLANs et VRF, avec scan automatique des hôtes et gestion <code>IPv4</code>/<code>IPv6</code>, remplaçant le fichier Excel devenu insuffisant dès que le parc grandit.",
+          "sources": [
+            {
+              "feed": "Journal du hacker",
+              "date": "19/05 19:26",
+              "url": "https://www.linuxtricks.fr/wiki/proxmox-gestion-des-reseaux-homelab-monoserveur",
+              "title": "Proxmox : Gestion des réseaux homelab monoserveur"
+            },
+            {
+              "feed": "Journal du hacker",
+              "date": "19/05 10:27",
+              "url": "https://www.it-connect.fr/phpipam-une-solution-open-source-pour-gerer-les-adresses-ip/",
+              "title": "phpIPAM : une solution open source pour gérer les adresses IP"
+            }
+          ]
+        },
+        {
+          "title": "Écosystème open source : pérennité et nouveaux outils",
+          "lede_html": "Alors qu'<strong>Andrew Nesbitt</strong> dresse un inventaire clinique des façons dont meurent les projets open source — mainteneur fantôme, <em>corporate orphan</em>, <em>funding cliff</em> —, <strong>ShadowBroker</strong> rappelle que l'écosystème sait aussi naître : ce tableau de bord OSINT agrège <strong>60+ flux</strong> publics en temps réel, installable via un simple <code>git clone</code>. La tension est vive entre <em>vigilance sur la pérennité</em> des dépendances et <em>appétit pour l'innovation communautaire</em> rapide.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "19/05 21:22",
+              "url": "https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html",
+              "title": "Dumb ways for an open source project to die"
+            },
+            {
+              "feed": "Korben",
+              "date": "19/05 10:13",
+              "url": "https://korben.info/shadowbroker-osint-temps-reel.html",
+              "title": "ShadowBroker - Une salle de crise OSINT mondiale chez vous"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "diy",
+      "name": "DIY",
+      "tagline": "BRICOLAGE, HACKS ET OBJETS CONNECTÉS MAISON",
+      "topics": [
+        {
+          "title": "Electroplaquage 3D : cuivrer sans cuve industrielle",
+          "lede_html": "Plutôt que d'investir dans une cuve industrielle, <strong>Hendrik</strong> retourne le problème : si la pièce imprimée en 3D ne rentre pas dans le bac, on la fait <em>tourner lentement</em> dans un volume réduit, submergeant progressivement chaque face. L'électroplaquage maison devient ainsi accessible aux makers, à condition de poncer, d'appliquer une <code>peinture conductrice</code>, et de bricoler un mécanisme de rotation — <em>pas besoin d'équipement professionnel</em> pour obtenir une finition cuivrée correcte.",
+          "sources": [
+            {
+              "feed": "Korben",
+              "date": "19/05 17:38",
+              "url": "https://korben.info/cuivrer-une-piece-imprimee-3d-sans-cuve-geante-cest-possible-en-la-faisant-tourner.html",
+              "title": "Cuivrer une pièce imprimée 3D sans cuve géante, c'est possible en la faisant tourner"
+            }
+          ]
+        },
+        {
+          "title": "Vision nocturne et imagerie WiFi : le DIY repousse les frontières de la perception",
+          "lede_html": "Deux projets DIY repoussent la perception humaine au-delà du spectre visible : d'un côté, <strong>Project 326</strong> assemble un télescope imprimé en 3D couplé à une webcam modifiée et un laser <code>940 nm</code> de deux watts pour voir à <strong>650 mètres</strong> dans l'obscurité totale ; de l'autre, <strong>RuView</strong> transforme le signal WiFi ordinaire en <em>intelligence spatiale en temps réel</em>, détection de présence et monitoring de signaux vitaux — sans aucune caméra. L'un éclaire l'obscurité, l'autre <em>traverse les murs</em> : le bricolage repousse les frontières du visible par le bas.",
+          "sources": [
+            {
+              "feed": "Korben",
+              "date": "19/05 15:34",
+              "url": "https://korben.info/voir-a-650-metres-dans-le-noir-avec-un-laser-infrarouge-et-une-webcam-cest-faisable.html",
+              "title": "Voir à 650 mètres dans le noir avec un laser infrarouge et une webcam : c'est faisable"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "19/05 18:19",
+              "url": "https://github.com/ruvnet/RuView",
+              "title": "RuView – See through walls with WiFi"
+            }
+          ]
+        },
+        {
+          "title": "Objets connectés rétro-futuristes et serveurs minimalistes",
+          "lede_html": "La scène maker prouve que <em>contrainte et esthétique</em> fertilisent l'ingénierie : d'un côté, un <strong>Pip-Boy</strong> grandeur nature greffé sur une carte <code>Xiao ESP32-S3</code> avec capteur cardiaque <code>MAX30102</code>, de l'autre, un serveur HTTP public tiré d'un simple <strong>AVR 8-bit</strong> qui crache une page pré-enregistrée au prix d'un réseau maison. L'un puise dans la fiction pour façonner l'objet, l'autre repousse les limites du <em>minimalisme</em> pour exister sur le Web.",
+          "sources": [
+            {
+              "feed": "Hack a Day",
+              "date": "19/05 22:00",
+              "url": "https://hackaday.com/2026/05/19/building-a-pip-boy-themed-smartwatch/",
+              "title": "Building a Pip Boy Themed Smartwatch"
+            },
+            {
+              "feed": "Hack a Day",
+              "date": "20/05 01:00",
+              "url": "https://hackaday.com/2026/05/19/the-8-bit-web-server/",
+              "title": "The 8-bit Web Server"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "societe",
+      "name": "Société & régulation",
+      "tagline": "CONCENTRATION DU POUVOIR ET RÉGULATION EN TENSION",
+      "topics": [
+        {
+          "title": "Concentration du pouvoir économique et médiatique",
+          "lede_html": "En quatorze ans, la fortune des <strong>500 familles les plus riches de France</strong> est passée de <strong>12 %</strong> à <strong>42 %</strong> du PIB, invalidant le mythe du <em>ruissellement</em> — pendant que <strong>Vincent Bolloré</strong> purge les salariés de <strong>Canal+</strong> au nom d'une <em>cancel culture</em> sélective, et que <strong>Disney</strong> fait disparaître purement et simplement les archives de <strong>FiveThirtyEight</strong>, effaçant d'un clic une décennie de journalisme de données. Ces trois signaux, sur deux continents, dessinent la même trajectoire : la concentration du pouvoir économique se double d'une <em>concentration du pouvoir médiatique</em>, où les propriétaires décident non seulement des profits, mais de ce qui reste visible.",
+          "sources": [
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "19/05 21:33",
+              "url": "https://lareleveetlapeste.fr/en-14-ans-la-fortune-des-500-familles-les-plus-riches-de-france-est-passee-de-12-a-42-du-pib/",
+              "title": "« En 14 ans, la fortune des 500 familles les plus riches de France est passée de 12% à 42% du PIB »"
+            },
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "19/05 20:37",
+              "url": "https://www.politis.fr/articles/2026/05/parti-pris-cinema-bollore-realise-une-purge/",
+              "title": "Cinéma : Bolloré réalise une purge - POLITIS"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "19/05 20:56",
+              "url": "https://www.natesilver.net/p/disney-erased-fivethirtyeight",
+              "title": "Disney erased FiveThirtyEight"
+            }
+          ]
+        },
+        {
+          "title": "Régulation des marchés et de l'IA face à l'accélération technologique",
+          "lede_html": "Le <strong>Minnesota</strong> signe la première loi américaine criminalisant les marchés prédictifs, ciblant <strong>Kalshi</strong> et <strong>Polymarket</strong> d'un délit passible de prison — une prohibition s'étendant même aux <em>VPN</em> permettant de contourner l'interdiction —, tandis que l'administration Trump attaque le texte en justice. Pendant ce temps, l'industrie musicale met en garde les diplômés contre une <em>IA générative</em> perçue comme menace existentielle, et l'<strong>opération Ramz</strong> arrête <strong>201</strong> individus dans <strong>13</strong> pays MENA, démantelant infrastructures de phishing et malwares : trois fronts réglementaires révélant des <em>réponses fragmentées</em> face à des disruptions qui ne ralentissent pas.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "19/05 21:13",
+              "url": "https://www.npr.org/2026/05/19/nx-s1-5821265/minnesota-ban-prediction-markets",
+              "title": "Minnesota becomes first state to ban prediction markets"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "19/05 18:14",
+              "url": "https://www.independent.co.uk/tv/news/ai-students-scott-borchetta-middle-tennessee-state-university-video-b2979573.html",
+              "title": "'You can hear me now or pay me later' Music exec tells graduates booing AI"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "19/05 12:32",
+              "url": "https://www.securityweek.com/201-arrested-in-crackdown-on-cybercrime-in-middle-east-north-africa/",
+              "title": "201 Arrested in Crackdown on Cybercrime in Middle East, North Africa [net]"
+            }
+          ]
+        },
+        {
+          "title": "Coûts environnementaux de la transition énergétique",
+          "lede_html": "La raffinerie de lithium de <strong>Tesla</strong> au Texas, présentée comme un procédé <em>« sans acide »</em>, rejette <strong>231 000 gallons</strong> d'eaux usées noires par jour dans un fossé du comté de Nueces — découverte fortuite par un district de drainage en inspection de routine, <em>aucune déclaration</em> de l'entreprise ni des régulateurs. Les analyses menées se sont révélées conformes, mais <em>omettent de tester</em> plusieurs paramètres pertinents, illustrant les failles réglementaires qui entourent la chaîne d'approvisionnement des batteries électriques.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "19/05 21:52",
+              "url": "https://www.autonocion.com/us/tesla-lithium-refinery-texas/",
+              "title": "Tesla's lithium refinery discharges 231,000 gallons of polluted wastewater a day"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "appendix": [
+    {
+      "url": "https://fivethirtyeightindex.com/",
+      "title": "FiveThirtyEight articles on the Internet Archive",
+      "note": ""
+    },
+    {
+      "url": "https://status.railway.com/#/",
+      "title": "Railway Is Having a Major Outage",
+      "note": ""
+    },
+    {
+      "url": "https://korben.info/virtual-os-museum.html",
+      "title": "Virtual OS Museum - 1700 OS de 1948 à nos jours dans une VM",
+      "note": ""
+    },
+    {
+      "url": "https://hackaday.com/2026/05/19/how-search-engines-enabled-finding-needles-in-a-www-sized-haystack/",
+      "title": "How Search Engines Enabled Finding Needles in a WWW-Sized Haystack",
+      "note": ""
+    },
+    {
+      "url": "https://linuxfr.org/news/revue-de-presse-de-l-april-pour-la-semaine-20-de-l-annee-2026",
+      "title": "Revue de presse de l’April pour la semaine 20 de l’année 2026",
+      "note": ""
+    },
+    {
+      "url": "https://blog.google/products-and-platforms/products/search/search-io-2026/",
+      "title": "Google changes its search box",
+      "note": ""
+    },
+    {
+      "url": "https://techcrunch.com/2026/05/19/google-search-as-you-know-it-is-over/",
+      "title": "Google Search as you know it is over",
+      "note": ""
+    },
+    { "url": "https://io.google/2026/", "title": "Google I/O", "note": "" },
+    {
+      "url": "https://hackaday.com/2026/05/19/how-pulse-oximetry-figures-out-your-blood-oxygen-levels/",
+      "title": "How Pulse Oximetry Figures Out Your Blood Oxygen Levels",
+      "note": ""
+    },
+    {
+      "url": "https://zero-irp.github.io/Proj-Blog/",
+      "title": "Index [rev]",
+      "note": ""
+    }
+  ],
+  "footer": "Athanor - 119 articles agrégés"
+}

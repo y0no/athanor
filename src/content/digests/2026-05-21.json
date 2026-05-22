@@ -1,1 +1,527 @@
-{"date":"2026-05-21","title_tag":"Digest tech-watch — 21 mai 2026","headline":"Vulnérabilités applicatives critiques : Drupal, NASM et outils de s…","window":{"from":"20 mai 2026 09:04 UTC","to":"21 mai 2026 04:27 UTC","count":"150 articles"},"alert":"<strong>Truncation</strong> — 160 articles dans la fenêtre, capés aux 150 plus récents.","categories":[{"slug":"ia","name":"IA","tagline":"AGENTS, SÉCURITÉ ET INFRASTRUCTURE : L'IA BASCULE EN PRODUCTION","topics":[{"title":"Sécurité des agents IA : de la sandbox à la production","lede_html":"Alors que les agents IA déployés en production révèlent des failles d'accès et de comportement, <strong>Microsoft</strong> ouvre <code>RAMPART</code> et <code>Clarity</code> pour tester la sécurité dès le développement, tandis que <strong>HOL Guard</strong> propose un antivirus pour agents développeurs. Face à l'insuffisance des <em>contraintes comportementales</em> dans les prompts, la communauté explore des <em>portes structurelles</em> — vérification formelle, typeurs, linters — qui refusent le code incorrect plutôt que d'espérer qu'un modèle s'en souvienne.","sources":[{"feed":"Talkback Home","date":"20/05 13:00","url":"https://www.securityweek.com/caught-off-guard-securing-ai-after-it-hits-production/","title":"Caught Off Guard: Securing AI After It Hits Production [app]"},{"feed":"Talkback Home","date":"20/05 19:06","url":"https://thehackernews.com/2026/05/microsoft-open-sources-rampart-and.html","title":"Microsoft Open-Sources RAMPART and Clarity to Secure AI Agents During Development"},{"feed":"The Hacker News","date":"20/05 19:06","url":"https://thehackernews.com/2026/05/microsoft-open-sources-rampart-and.html","title":"Microsoft Open-Sources RAMPART and Clarity to Secure AI Agents During Development"},{"feed":"Talkback Home","date":"20/05 11:34","url":"https://github.com/hashgraph-online/hol-guard","title":"GitHub - hashgraph-online/hol-guard: AI antivirus for developer agents: protect Codex, Claude Code, Cursor, Gemini, OpenCode, plugins, skills, MCP servers, and AI harnesses before tools run. [app]"},{"feed":"Hacker News","date":"20/05 17:25","url":"https://reubenbrooks.dev/blog/structural-backpressure-beats-smarter-agents/","title":"Formal Verification Gates for AI Coding Loops"}]},{"title":"Anthropic et Qwen redessinent les frontières des agents et du compute","lede_html":"Pendant qu'<strong>Anthropic</strong> verrouille sa chaîne développeur en rachetant <strong>Stainless</strong> pour plus de 300 M$ et déploie <strong>Colossus2</strong> sur des <strong>GB200</strong> via un partenariat <strong>SpaceX</strong>, <strong>Qwen</strong> pousse l'agentique avec <strong>Qwen3.7-Max</strong> et <em>PopuLoRA</em> fait émerger un raisonnement autonome par co-évolution de populations <strong>LLM</strong> en self-play — deux stratégies opposées où l'une <em>achète l'infrastructure</em> quand l'autre <em>génère sa propre donnée d'entraînement</em>.","sources":[{"feed":"Hacker News","date":"20/05 12:35","url":"https://qwen.ai/blog?id=qwen3.7","title":"Qwen3.7-Max: The Agent Frontier"},{"feed":"Hacker News","date":"20/05 23:11","url":"https://vmax.ai/team/populora-co-evolving-llm-populations-for-reasoning-self-play","title":"PopuLoRA: Co-Evolving LLM Populations for Reasoning Self- Play"},{"feed":"Hacker News","date":"20/05 22:55","url":"https://xcancel.com/nottombrown/status/2057194829986300375","title":"Anthropic is expanding to Colossus2. Will use GB200"},{"feed":"Korben","date":"20/05 15:05","url":"https://korben.info/anthropic-rachete-stainless-loutil-qui-fabrique-aussi-les-sdk-de-ses-concurrents.html","title":"Anthropic rachète Stainless, l'outil qui fabrique aussi les SDK de ses concurrents"},{"feed":"Talkback Home","date":"20/05 14:55","url":"https://www.anthropic.com/engineering/harness-design-long-running-apps","title":"Harness design for long-running application development"}]},{"title":"Google transforme sa recherche et l'IA générative s'universalise","lede_html":"En enterrant les <em>dix liens bleus</em>, <strong>Google</strong> impose un agent conversationnel au cœur de la recherche — et découvre que ce « one true answer » est déjà manipulé à grande échelle, poussant la firme à renforcer ses politiques anti-spam. Pendant ce temps, <strong>ByteDance</strong> ouvre <code>Lance</code>, un modèle unifié 3B pour compréhension et génération d'images et vidéos, tandis que <strong>Stability AI</strong> publie <code>Stable Audio 3</code>, une famille de modèles ouverts capables de produire plusieurs minutes d'audio en <strong>moins de 2 s</strong> sur GPU H200.","sources":[{"feed":"Hacker News","date":"20/05 12:57","url":"https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results","title":"Google's AI is being manipulated. The search giant is quietly fighting back"},{"feed":"Liens en vrac de sebsauvage","date":"20/05 11:40","url":"https://techcrunch.com/2026/05/19/google-search-as-you-know-it-is-over/","title":"Google Search as you know it is over | TechCrunch"},{"feed":"Hacker News","date":"20/05 17:45","url":"https://github.com/bytedance/Lance","title":"Show HN: Lance – image/video generation and understanding in one model"},{"feed":"Hacker News","date":"20/05 17:10","url":"https://arxiv.org/abs/2605.17991","title":"Stable Audio 3"}]}]},{"slug":"infosec","name":"Infosec","tagline":"SUPPLY CHAIN, KERNEL ZERO-DAYS AND BITLOCKER BYPASSES DOMINATE THE WEEK","topics":[{"title":"GitHub et la chaîne d'approvisionnement : extension VS Code empoisonnée","lede_html":"GitHub confirme que <strong>3 800 dépôts internes</strong> ont été exfiltrés après qu'un employé a installé une version empoisonnée de l'extension VS Code <code>nrwl.angular-console</code> (Nx Console), dont le compte d'un développeur avait été préalablement compromis. Le groupe <strong>TeamPCP</strong>, qui revendique le vol et réclame <strong>50 000 $</strong> pour les données, est aussi lié à une attaque <em>supply chain</em> parallèle touchant plus de <strong>320 paquets NPM</strong>, soulignant la <em>convergence</em> des menaces sur l'ensemble de la chaîne d'approvisionnement logicielle.","sources":[{"feed":"The Hacker News","date":"21/05 06:27","url":"https://thehackernews.com/2026/05/github-internal-repositories-breached.html","title":"GitHub Internal Repositories Breached via Malicious Nx Console VS Code Extension"},{"feed":"Hacker News","date":"20/05 15:43","url":"https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/","title":"GitHub confirms breach of 3,800 repos via malicious VSCode extension"},{"feed":"Talkback Home","date":"20/05 13:35","url":"https://xcancel.com/github/status/2056949168208552080","title":"GitHub (@github) [app]"},{"feed":"Talkback Home","date":"20/05 11:28","url":"https://www.securityweek.com/github-confirms-hack-impacting-3800-internal-repositories/","title":"GitHub Confirms Hack Impacting 3,800 Internal Repositories [app]"},{"feed":"Liens en vrac de sebsauvage","date":"20/05 11:19","url":"https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/","title":"GitHub confirms breach of 3,800 repos via malicious VSCode extension"},{"feed":"Talkback Home","date":"20/05 13:06","url":"https://www.securityweek.com/over-320-npm-packages-hit-by-fresh-mini-shai-hulud-supply-chain-attack/","title":"Over 320 NPM Packages Hit by Fresh Mini Shai-Hulud Supply Chain Attack [app] [mal]"}]},{"title":"Zero-days noyau Linux et Windows : escalation de privilèges massive","lede_html":"Deux zéro-jours frappent simultanément les fondations de Linux et Windows : <strong>CVE-2026-46333</strong> exploite un défaut logique dans <code>__ptrace_may_access()</code> présent depuis <strong>2016</strong> dans le noyau Linux, offrant une élévation <em>root</em> fiable via <code>pidfd_getfd()</code> ; pendant ce temps, <strong>CVE-2026-45585</strong> (YellowKey) contourne le chiffrement BitLocker en manipulant le répertoire <code>FsTx</code> de l’environnement de récupération, obtenant <em>SYSTEM</em> sans mot de passe ni TPM. À cela s’ajoute <strong>CVE-2026-31635</strong> (DirtyDecrypt), une escalade locale Linux sur les configurations <code>CONFIG_RXGK</code> dont le PoC circule déjà, tandis que GreenPlasma élargit les failles de frontière de confiance Windows.","sources":[{"feed":"Qualys Blog","date":"20/05 17:40","url":"https://blog.qualys.com/vulnerabilities-threat-research/2026/05/20/cve-2026-46333-local-root-privilege-escalation-and-credential-disclosure-in-the-linux-kernel-ptrace-path","title":"CVE-2026-46333: Local Root Privilege Escalation and Credential Disclosure in the Linux Kernel ptrace Path"},{"feed":"Talkback Home","date":"20/05 17:39","url":"https://www.securityweek.com/microsoft-rolls-out-mitigations-for-yellowkey-bitlocker-bypass/","title":"Microsoft Rolls Out Mitigations for ‘YellowKey’ BitLocker Bypass [app] [exp]"},{"feed":"Talkback Home","date":"20/05 16:22","url":"https://www.zerodaybrief.blog/episodes/ep07-yellowkey/","title":"CVE-2026-45585: Windows BitLocker — YellowKey Recovery Bypass Analysis [exp] [sys]"},{"feed":"Talkback Home","date":"20/05 20:18","url":"https://hetmehta.com/posts/breaking-greenplasma-yellowkey/","title":"Breaking Down GreenPlasma and YellowKey: Windows Trust Boundaries Doing Windows Things [app] [exp]"},{"feed":"Talkback Home","date":"20/05 11:17","url":"https://securityaffairs.com/192436/uncategorized/dirtydecrypt-poc-released-for-yet-another-linux-flaw.html","title":"DirtyDecrypt: PoC Released for yet another Linux flaw [exp] [sys]"},{"feed":"Liens en vrac de sebsauvage","date":"20/05 11:44","url":"https://www.it-connect.fr/la-faille-dirtydecrypt-menace-les-serveurs-linux-un-poc-a-ete-publie/","title":"La faille DirtyDecrypt menace les serveurs Linux : un PoC a été publié"}]},{"title":"Vulnérabilités applicatives critiques : Drupal, NASM et outils de sécurité","lede_html":"Trois écosystèmes très déployés – <strong>Drupal</strong>, <strong>NASM</strong> et <strong>Microsoft Defender</strong> – concentrent cette semaine des failles RCE et d’escalade de privilèges, tandis qu’<em>ExifTool</em> et <em>Istio/Kubeflow</em> élargissent la surface d’attaque aux images et aux clusters cloud. La vulnérabilité <strong>CVE-2026-9082</strong> dans l’API d’abstraction PostgreSQL de Drupal permet une exécution de code à distance, <strong>CVE-2026-6068</strong> transforme un <em>use-after-free</em> de <code>nasm</code> en RCE persistante, et <strong>CVE-2026-45584</strong> ouvre une RCE dans Defender – sans compter <strong>CVE-2026-41091</strong> qui y offre une élévation locale via <em>link following</em>.","sources":[{"feed":"The Hacker News","date":"21/05 05:44","url":"https://thehackernews.com/2026/05/highly-critical-drupal-core-flaw.html","title":"Highly Critical Drupal Core Flaw Exposes PostgreSQL Sites to RCE Attacks"},{"feed":"Talkback Home","date":"20/05 16:40","url":"https://sekai.team/blog/nasm-cve-disclosure/cve-2026-6068","title":"CVE-2026-6068 – From Heap UAF to Persistent RCE in NASM [app] [exp]"},{"feed":"Talkback Home","date":"20/05 17:56","url":"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45584","title":"CVE-2026-45584 - Security Update Guide - Microsoft - Microsoft Defender Remote Code Execution Vulnerability [app] [exp]"},{"feed":"CISA Known Exploited Vulnerabilities Catalog","date":"20/05 21:01","url":"https://nvd.nist.gov/vuln/detail/CVE-2026-41091","title":"2026-05-20: [CVE-2026-41091] Microsoft Defender Link Following Vulnerability"},{"feed":"CISA Known Exploited Vulnerabilities Catalog","date":"20/05 21:01","url":"https://nvd.nist.gov/vuln/detail/CVE-2026-45498","title":"2026-05-20: [CVE-2026-45498] Microsoft Defender Denial of Service Vulnerability"},{"feed":"Talkback Home","date":"20/05 20:39","url":"https://github.com/dinosn/drupal-sa-core-2026-004-lab","title":"GitHub - dinosn/drupal-sa-core-2026-004-lab: Drupal SA-CORE-2026-004 (PostgreSQL Entity Query SQLi via JSON:API filter array keys) — reproduction lab + generic detection PoC + line-by-line analysis. Patch available upstream. [app] [exp]"},{"feed":"Talkback Home","date":"20/05 12:25","url":"https://securelist.com/exiftool-compromise-mac/119866/","title":"How a single image takes control of a Mac [app] [exp]"},{"feed":"Talkback Home","date":"20/05 13:25","url":"https://insinuator.net/2026/05/cve-2026-47237-overly-permissive-istio-permissions-allow-kubeflow-authorization-token-stealing/","title":"CVE-2026-47237 – Overly Permissive Istio Permissions Allow Kubeflow Authorization Token Stealing – Insinuator.net [app] [cloud] [net]"}]}]},{"slug":"devops","name":"DevOps","tagline":"INFRA, RELEASES ET INCIDENTS CLOUD","topics":[{"title":"Incident Google Cloud : Railway débranché sans préavis","lede_html":"Google Cloud a basculé le compte de <strong>Railway</strong> en statut restreint sans préavis ni explication, provoquant <strong>six heures</strong> de panne totale sur le PaaS — y compris son <code>control plane</code> et son API. L'ironie : Railway dépense plus de <strong>10 millions de dollars</strong> par an chez Google, <em>mais aucun humain n'a validé la suspension</em>, révélant la brutalité des automatismes des hyperscalers. Déjà partiellement migré en colocation depuis 2024, Railway avait conservé l'orchestration chez son concurrent direct, une dépendance <em>stratégiquement fragile</em> qui vient de se payer au prix fort.","sources":[{"feed":"Korben","date":"20/05 14:03","url":"https://korben.info/google-cloud-debranche-railway-sans-prevenir.html","title":"Google Cloud débranche Railway sans prévenir"}]},{"title":"Refroidissement cuivre et sobriété des data centers","lede_html":"En 2025, les data centers ont consommé <strong>485 TWh</strong> d'électricité, dont <strong>30 %</strong> — plus que la consommation annuelle de la Suède — dédiée au refroidissement. Des chercheurs de l'<strong>University of Illinois Urbana-Champaign</strong> présentent des plaques de refroidissement en cuivre pur, produites par <em>impression 3D</em> à partir d'un algorithme d'optimisation, capables de réduire la part du refroidissement de <strong>30 %</strong> à <strong>1,1 %</strong>, soit une baisse de plus de <strong>90 %</strong> de la consommation énergétique liée au <code>cooling</code>.","sources":[{"feed":"Hacker News","date":"20/05 20:15","url":"https://newatlas.com/energy/cooling-copper-plates-data-center-energy-use/","title":"Cooling copper plates could slash data center energy use by 90%"}]},{"title":"Mastodon et PeerTube : patchs de sécurité en cascade","lede_html":"<strong>Mastodon</strong> déploie trois correctifs simultanés (v4.3.23, v4.4.17, v4.5.10) pour colmater un contournement de protection <em>SSRF</em> et un bypass de signature Linked-Data via <code>JSON-LD</code>, tandis que <strong>PeerTube</strong> 8.1.6 corrige une injection SQL dans l'URL de l'actor inbox et renforce lui aussi ses défenses <em>SSRF</em> et <code>JSON-LD</code>. Ces correctifs croisés illustrent les <em>défis récurrents</em> de sécurisation des plateformes fédérées auto-hébergées, où la même surface d'attaque touche plusieurs projets simultanément.","sources":[{"feed":"Release notes from mastodon","date":"20/05 15:41","url":"https://github.com/mastodon/mastodon/releases/tag/v4.3.23","title":"v4.3.23"},{"feed":"Release notes from mastodon","date":"20/05 15:31","url":"https://github.com/mastodon/mastodon/releases/tag/v4.4.17","title":"v4.4.17"},{"feed":"Release notes from mastodon","date":"20/05 15:19","url":"https://github.com/mastodon/mastodon/releases/tag/v4.5.10","title":"v4.5.10"},{"feed":"Release notes from PeerTube","date":"20/05 16:02","url":"https://github.com/Chocobozzz/PeerTube/releases/tag/v8.1.6","title":"v8.1.6"},{"feed":"Release notes from PeerTube","date":"20/05 16:10","url":"https://github.com/Chocobozzz/PeerTube/releases/tag/v8.2.0-rc.2","title":"v8.2.0-rc.2"}]}]},{"slug":"diy","name":"DIY","tagline":"RADIO, SDR ET BIDOUILLE HARDWARE AU MENU","topics":[{"title":"Écosystème SDR : nouveaux outils open source et interfaces modernes","lede_html":"L'écosystème SDR open source se renouvelle sur trois fronts : <strong>no-sdr</strong> propose un WebSDR multi-utilisateur en <code>Go</code>/<code>Node.js</code>, dockerisé et compatible x86 comme Raspberry Pi, pour partager plusieurs <strong>RTL-SDR</strong> via le réseau ; <strong>rpitx-ui</strong> modernise le classique émetteur <code>rpitx</code> de F5OEO en une interface plus accessible pour transformer un Pi en émetteur RF sur GPIO — <em>toujours sans Pi 5</em> ; et <strong>sdrrat</strong> délivre une TUI Rust complète (FFT, waterfall, VFO, démodulations WBFM/NBFM/AM) pour <strong>RTL-SDR</strong> et <strong>HackRF</strong>, construite sur <code>Ratatui</code> et <code>FutureSDR</code>.","sources":[{"feed":"rtl-sdr.com","date":"21/05 03:06","url":"https://www.rtl-sdr.com/no-sdr-a-new-open-source-multi-user-websdr-for-rtl-sdr/","title":"No-SDR: A New Open Source Multi-User WebSDR for RTL-SDR"},{"feed":"rtl-sdr.com","date":"21/05 03:47","url":"https://www.rtl-sdr.com/rpitx-ui-a-modernized-easier-to-use-fork-of-the-rpitx-raspberry-pi-transmitter-software/","title":"RPITX-UI: A Modernized, Easier to Use Fork of the RPITX Raspberry Pi Transmitter Software"},{"feed":"rtl-sdr.com","date":"21/05 02:29","url":"https://www.rtl-sdr.com/sdrrat-an-sdr-receiver-terminal-user-interface-for-rtl-sdr-hackrf/","title":"sdrrat: An SDR receiver Terminal User Interface for RTL-SDR & HackRF"}]},{"title":"Radio clandestine : l'ingénierie de la discrétion pendant la guerre","lede_html":"Fin 1942, deux ingénieurs du <strong>Royal Corps of Signals</strong> bouleversent la logique radio : au lieu de maximiser la portée, ils conçoivent le <strong>S-Phone</strong>, un émetteur-récepteur à moins de <strong>200 mW</strong> sur <strong>380 MHz</strong>, fréquence alors inhabituelle qui complique la détection ennemie. L'antenne directionnelle rend le signal <em>quasiment indétectable</em> au-delà d'un mile au sol, tandis qu'un avion à moins de <strong>10 000 pieds</strong> peut capter la voix jusqu'à <strong>30 miles</strong> — une ingénierie de la discrétion où <em>survivre prime sur dominer</em>.","sources":[{"feed":"Hack a Day","date":"20/05 19:00","url":"https://hackaday.com/2026/05/20/spy-tech-a-quiet-radio-for-spies/","title":"Spy Tech: A Quiet Radio for Spies"}]},{"title":"Objets connectés et bidouilles : badges, lune et rétro-compatibilité","lede_html":"L'<strong>ESP32</strong> se taille la part du lion cette semaine : les <strong>CrowdClock</strong> de <strong>Tony Goacher</strong> synchronisent des badges de festival via <code>ESP-NOW</code> sans aucune infrastructure, tandis que le mini-globe lunaire de <strong>Karsten Mueller</strong> restitue en temps réel l'illumination réelle de la Lune à partir de vos coordonnées. À l'opposé du spectre, <em>le patrimoine hardware</em> trouve refuge dans le navigateur grâce à une émulation x86 minimale qui ressuscite un vieux scanner privé de pilotes — <em>une pirouette logicielle</em> qui rappelle que l'obsolescence est souvent plus politique que technique.","sources":[{"feed":"Hack a Day","date":"21/05 01:00","url":"https://hackaday.com/2026/05/20/building-festival-badges-that-sync-themselves-up/","title":"Building Festival Badges That Sync Themselves Up"},{"feed":"Hack a Day","date":"20/05 13:00","url":"https://hackaday.com/2026/05/20/bring-back-that-aged-scanner-in-your-browser/","title":"Bring Back That Aged Scanner, in Your Browser"},{"feed":"Hack a Day","date":"20/05 17:30","url":"https://hackaday.com/2026/05/20/put-the-moon-on-your-desk/","title":"Put the Moon on Your Desk"}]}]},{"slug":"societe","name":"Société & régulation","tagline":"SURVEILLANCE, SOUVERAINETÉ ET RÉSISTANCE NUMÉRIQUE","topics":[{"title":"Surveillance de masse : Londres, la Chine et les caméras IoT","lede_html":"Deux continents, même logique : <strong>700 000</strong> requêtes de données adressées par la police londonienne aux plateformes tech en 2025, tandis qu'au moins <strong>un million</strong> de caméras IoT de l'ODM chinois <strong>Meari Technology</strong> présentent des failles critiques permettant l'accès distant aux flux vidéo de 118 pays — béances sécuritaires confirmées par cinq CVE à haut risque. D'un côté un État démocratique qui <em>normalise</em> la captation massive de métadonnées, y compris auprès de services chiffrés comme <strong>Proton</strong> et <strong>Signal</strong> ; de l'autre un écosystème industriel <em>insécurisé par conception</em>, où la transparence et la réactivité des fabricants font cruellement défaut.","sources":[{"feed":"Talkback Home","date":"20/05 19:42","url":"https://www.nattothoughts.com/p/is-this-chinese-company-watching","title":"Is This Chinese Company Watching the World to Train its AI?"},{"feed":"Talkback Home","date":"20/05 11:48","url":"https://www.theregister.com/databases/2026/05/20/londons-police-asked-big-tech-for-comms-data-over-700000-times-last-year/5242590","title":"London's police asked Big Tech for comms data over 700,000 times last year"}]},{"title":"Souveraineté numérique : paiements, cloud et alternatives","lede_html":"L'Europe affiche l'ambition d'un paiement <em>souverain</em> pour <strong>130 millions</strong> d'utilisateurs dès 2026, mais le schéma technique dévoilé repose sur un smartphone <strong>Apple</strong> ou <strong>Google</strong> non rooté côté client et sur l'infrastructure <strong>AWS</strong> côté serveur — soit une chaîne de dépendances <em>toujours américaine</em>. En miroir, l'hébergeur suisse <strong>Infomaniak</strong> transfère <strong>65 %</strong> de ses droits de vote à une fondation d'utilité publique, verrouillant son indépendance tout en s'ouvrant à de nouveaux investisseurs — un modèle de gouvernance que d'autres acteurs du cloud européen pourraient suivre.","sources":[{"feed":"Liens en vrac de sebsauvage","date":"20/05 16:06","url":"https://www.lesnumeriques.com/banque-en-ligne/adieu-visa-et-mastercard-130-millions-d-europeens-basculent-vers-un-paiement-100-souverain-des-2026-n250918.html","title":"Adieu Visa et Mastercard : 130 millions d'Européens basculent vers un paiement 100 % souverain dès 2026 - Les Numériques"},{"feed":"Hacker News","date":"20/05 15:02","url":"https://www.lesnumeriques.com/banque-en-ligne/adieu-visa-et-mastercard-130-millions-d-europeens-basculent-vers-un-paiement-100-souverain-des-2026-n250918.html","title":"Goodbye Visa and Mastercard: 130M Europeans switching to sovereign payment"},{"feed":"Liens en vrac de sebsauvage","date":"20/05 11:04","url":"https://next.ink/238508/cloud-infomaniak-se-place-sous-le-controle-dune-fondation/","title":"Cloud : Infomaniak se place sous le contrôle d'une fondation - Next"}]},{"title":"Régulation et résistance : âge, propriété intellectuelle et transparence","lede_html":"Le Colorado amende <strong>SB051</strong> pour exclure les projets open source de ses obligations de vérification d'âge, une concession qui ne rassure pas <strong>GitHub</strong> — la plateforme alerte que ces lois d'<em>age assurance</em> imposent aux développeurs des charges techniques et juridiques disproportionnées. Pendant ce temps, <strong>Anna's Archive</strong> écope d'un jugement par défaut record de <strong>19,5 M$</strong> et d'une injonction mondiale ciblant registres et hébergeurs, révélant la tension croissante entre <em>transparence</em> numérique et répression légale.","sources":[{"feed":"Hacker News","date":"20/05 22:28","url":"https://legiscan.com/CO/bill/SB051/2026","title":"Colorado Amended SB051 (Age Verification Bill) to Exclude Open Source Projects"},{"feed":"Hacker News","date":"20/05 23:14","url":"https://github.blog/news-insights/policy-news-and-insights/why-age-assurance-laws-matter-for-developers/","title":"GitHub's take on age assurance for developers"},{"feed":"Hacker News","date":"20/05 14:30","url":"https://torrentfreak.com/annas-archive-hit-with-19-5m-default-judgment-and-global-domain-takedown-order/","title":"Anna's Archive Hit with $19.5M Default Judgment and Global Domain Takedown Order"}]}]}],"appendix":[{"url":"https://gwern.net/doc/design/typography/1980-knuth.pdf","title":"The Letter S, by Donald Knuth (1980) [pdf]","note":""},{"url":"https://www.spacex.com/launches/starship-flight-12","title":"Starship's Twelfth Flight Test","note":""},{"url":"https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm","title":"SpaceX S-1","note":""},{"url":"https://www.scientificamerican.com/article/spacex-punts-starship-v3-launch-to-may-21-as-investigation-opens-into-starbase-worker-death/","title":"SpaceX punts Starship launch as investigation opens into Starbase worker's death","note":""},{"url":"https://www.science.org/content/article/not-alive-not-dead-disembodied-human-brains-used-drug-testing","title":"Not alive, but not dead: disembodied human brains used for drug testing","note":""},{"url":"https://www.usni.org/magazines/naval-history/2025/december/missile-genius-america-lost-and-china-gained","title":"Qian Xuesen: The missile genius America lost and China gained (2025)","note":""},{"url":"https://www.manton.org/2026/05/19/why-is-inkwell-stuck-in.html","title":"Why is Inkwell stuck in review","note":""},{"url":"https://news.ycombinator.com/item?id=48210590","title":"Ask HN: Shouldn't Google need to give a public statement about Railway incident?","note":""},{"url":"https://twitter.com/pokemoncentral/status/2057123807404638250","title":"Apparently Google hates us now","note":""},{"url":"https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5","title":"OpenAI Is Preparing to File for an IPO Soon","note":""}],"footer":"Athanor - 150 articles agrégés"}
+{
+  "date": "2026-05-21",
+  "title_tag": "Digest tech-watch — 21 mai 2026",
+  "headline": "Vulnérabilités applicatives critiques : Drupal, NASM et outils de sécurité",
+  "window": {
+    "from": "20 mai 2026 09:04 UTC",
+    "to": "21 mai 2026 04:27 UTC",
+    "count": "150 articles"
+  },
+  "alert": "<strong>Truncation</strong> — 160 articles dans la fenêtre, capés aux 150 plus récents.",
+  "categories": [
+    {
+      "slug": "ia",
+      "name": "IA",
+      "tagline": "AGENTS, SÉCURITÉ ET INFRASTRUCTURE : L'IA BASCULE EN PRODUCTION",
+      "topics": [
+        {
+          "title": "Sécurité des agents IA : de la sandbox à la production",
+          "lede_html": "Alors que les agents IA déployés en production révèlent des failles d'accès et de comportement, <strong>Microsoft</strong> ouvre <code>RAMPART</code> et <code>Clarity</code> pour tester la sécurité dès le développement, tandis que <strong>HOL Guard</strong> propose un antivirus pour agents développeurs. Face à l'insuffisance des <em>contraintes comportementales</em> dans les prompts, la communauté explore des <em>portes structurelles</em> — vérification formelle, typeurs, linters — qui refusent le code incorrect plutôt que d'espérer qu'un modèle s'en souvienne.",
+          "sources": [
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 13:00",
+              "url": "https://www.securityweek.com/caught-off-guard-securing-ai-after-it-hits-production/",
+              "title": "Caught Off Guard: Securing AI After It Hits Production [app]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 19:06",
+              "url": "https://thehackernews.com/2026/05/microsoft-open-sources-rampart-and.html",
+              "title": "Microsoft Open-Sources RAMPART and Clarity to Secure AI Agents During Development"
+            },
+            {
+              "feed": "The Hacker News",
+              "date": "20/05 19:06",
+              "url": "https://thehackernews.com/2026/05/microsoft-open-sources-rampart-and.html",
+              "title": "Microsoft Open-Sources RAMPART and Clarity to Secure AI Agents During Development"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 11:34",
+              "url": "https://github.com/hashgraph-online/hol-guard",
+              "title": "GitHub - hashgraph-online/hol-guard: AI antivirus for developer agents: protect Codex, Claude Code, Cursor, Gemini, OpenCode, plugins, skills, MCP servers, and AI harnesses before tools run. [app]"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "20/05 17:25",
+              "url": "https://reubenbrooks.dev/blog/structural-backpressure-beats-smarter-agents/",
+              "title": "Formal Verification Gates for AI Coding Loops"
+            }
+          ]
+        },
+        {
+          "title": "Anthropic et Qwen redessinent les frontières des agents et du compute",
+          "lede_html": "Pendant qu'<strong>Anthropic</strong> verrouille sa chaîne développeur en rachetant <strong>Stainless</strong> pour plus de 300 M$ et déploie <strong>Colossus2</strong> sur des <strong>GB200</strong> via un partenariat <strong>SpaceX</strong>, <strong>Qwen</strong> pousse l'agentique avec <strong>Qwen3.7-Max</strong> et <em>PopuLoRA</em> fait émerger un raisonnement autonome par co-évolution de populations <strong>LLM</strong> en self-play — deux stratégies opposées où l'une <em>achète l'infrastructure</em> quand l'autre <em>génère sa propre donnée d'entraînement</em>.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "20/05 12:35",
+              "url": "https://qwen.ai/blog?id=qwen3.7",
+              "title": "Qwen3.7-Max: The Agent Frontier"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "20/05 23:11",
+              "url": "https://vmax.ai/team/populora-co-evolving-llm-populations-for-reasoning-self-play",
+              "title": "PopuLoRA: Co-Evolving LLM Populations for Reasoning Self- Play"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "20/05 22:55",
+              "url": "https://xcancel.com/nottombrown/status/2057194829986300375",
+              "title": "Anthropic is expanding to Colossus2. Will use GB200"
+            },
+            {
+              "feed": "Korben",
+              "date": "20/05 15:05",
+              "url": "https://korben.info/anthropic-rachete-stainless-loutil-qui-fabrique-aussi-les-sdk-de-ses-concurrents.html",
+              "title": "Anthropic rachète Stainless, l'outil qui fabrique aussi les SDK de ses concurrents"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 14:55",
+              "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+              "title": "Harness design for long-running application development"
+            }
+          ]
+        },
+        {
+          "title": "Google transforme sa recherche et l'IA générative s'universalise",
+          "lede_html": "En enterrant les <em>dix liens bleus</em>, <strong>Google</strong> impose un agent conversationnel au cœur de la recherche — et découvre que ce « one true answer » est déjà manipulé à grande échelle, poussant la firme à renforcer ses politiques anti-spam. Pendant ce temps, <strong>ByteDance</strong> ouvre <code>Lance</code>, un modèle unifié 3B pour compréhension et génération d'images et vidéos, tandis que <strong>Stability AI</strong> publie <code>Stable Audio 3</code>, une famille de modèles ouverts capables de produire plusieurs minutes d'audio en <strong>moins de 2 s</strong> sur GPU H200.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "20/05 12:57",
+              "url": "https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results",
+              "title": "Google's AI is being manipulated. The search giant is quietly fighting back"
+            },
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "20/05 11:40",
+              "url": "https://techcrunch.com/2026/05/19/google-search-as-you-know-it-is-over/",
+              "title": "Google Search as you know it is over | TechCrunch"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "20/05 17:45",
+              "url": "https://github.com/bytedance/Lance",
+              "title": "Show HN: Lance – image/video generation and understanding in one model"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "20/05 17:10",
+              "url": "https://arxiv.org/abs/2605.17991",
+              "title": "Stable Audio 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "infosec",
+      "name": "Infosec",
+      "tagline": "SUPPLY CHAIN, KERNEL ZERO-DAYS AND BITLOCKER BYPASSES DOMINATE THE WEEK",
+      "topics": [
+        {
+          "title": "GitHub et la chaîne d'approvisionnement : extension VS Code empoisonnée",
+          "lede_html": "GitHub confirme que <strong>3 800 dépôts internes</strong> ont été exfiltrés après qu'un employé a installé une version empoisonnée de l'extension VS Code <code>nrwl.angular-console</code> (Nx Console), dont le compte d'un développeur avait été préalablement compromis. Le groupe <strong>TeamPCP</strong>, qui revendique le vol et réclame <strong>50 000 $</strong> pour les données, est aussi lié à une attaque <em>supply chain</em> parallèle touchant plus de <strong>320 paquets NPM</strong>, soulignant la <em>convergence</em> des menaces sur l'ensemble de la chaîne d'approvisionnement logicielle.",
+          "sources": [
+            {
+              "feed": "The Hacker News",
+              "date": "21/05 06:27",
+              "url": "https://thehackernews.com/2026/05/github-internal-repositories-breached.html",
+              "title": "GitHub Internal Repositories Breached via Malicious Nx Console VS Code Extension"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "20/05 15:43",
+              "url": "https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/",
+              "title": "GitHub confirms breach of 3,800 repos via malicious VSCode extension"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 13:35",
+              "url": "https://xcancel.com/github/status/2056949168208552080",
+              "title": "GitHub (@github) [app]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 11:28",
+              "url": "https://www.securityweek.com/github-confirms-hack-impacting-3800-internal-repositories/",
+              "title": "GitHub Confirms Hack Impacting 3,800 Internal Repositories [app]"
+            },
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "20/05 11:19",
+              "url": "https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/",
+              "title": "GitHub confirms breach of 3,800 repos via malicious VSCode extension"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 13:06",
+              "url": "https://www.securityweek.com/over-320-npm-packages-hit-by-fresh-mini-shai-hulud-supply-chain-attack/",
+              "title": "Over 320 NPM Packages Hit by Fresh Mini Shai-Hulud Supply Chain Attack [app] [mal]"
+            }
+          ]
+        },
+        {
+          "title": "Zero-days noyau Linux et Windows : escalation de privilèges massive",
+          "lede_html": "Deux zéro-jours frappent simultanément les fondations de Linux et Windows : <strong>CVE-2026-46333</strong> exploite un défaut logique dans <code>__ptrace_may_access()</code> présent depuis <strong>2016</strong> dans le noyau Linux, offrant une élévation <em>root</em> fiable via <code>pidfd_getfd()</code> ; pendant ce temps, <strong>CVE-2026-45585</strong> (YellowKey) contourne le chiffrement BitLocker en manipulant le répertoire <code>FsTx</code> de l’environnement de récupération, obtenant <em>SYSTEM</em> sans mot de passe ni TPM. À cela s’ajoute <strong>CVE-2026-31635</strong> (DirtyDecrypt), une escalade locale Linux sur les configurations <code>CONFIG_RXGK</code> dont le PoC circule déjà, tandis que GreenPlasma élargit les failles de frontière de confiance Windows.",
+          "sources": [
+            {
+              "feed": "Qualys Blog",
+              "date": "20/05 17:40",
+              "url": "https://blog.qualys.com/vulnerabilities-threat-research/2026/05/20/cve-2026-46333-local-root-privilege-escalation-and-credential-disclosure-in-the-linux-kernel-ptrace-path",
+              "title": "CVE-2026-46333: Local Root Privilege Escalation and Credential Disclosure in the Linux Kernel ptrace Path"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 17:39",
+              "url": "https://www.securityweek.com/microsoft-rolls-out-mitigations-for-yellowkey-bitlocker-bypass/",
+              "title": "Microsoft Rolls Out Mitigations for ‘YellowKey’ BitLocker Bypass [app] [exp]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 16:22",
+              "url": "https://www.zerodaybrief.blog/episodes/ep07-yellowkey/",
+              "title": "CVE-2026-45585: Windows BitLocker — YellowKey Recovery Bypass Analysis [exp] [sys]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 20:18",
+              "url": "https://hetmehta.com/posts/breaking-greenplasma-yellowkey/",
+              "title": "Breaking Down GreenPlasma and YellowKey: Windows Trust Boundaries Doing Windows Things [app] [exp]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 11:17",
+              "url": "https://securityaffairs.com/192436/uncategorized/dirtydecrypt-poc-released-for-yet-another-linux-flaw.html",
+              "title": "DirtyDecrypt: PoC Released for yet another Linux flaw [exp] [sys]"
+            },
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "20/05 11:44",
+              "url": "https://www.it-connect.fr/la-faille-dirtydecrypt-menace-les-serveurs-linux-un-poc-a-ete-publie/",
+              "title": "La faille DirtyDecrypt menace les serveurs Linux : un PoC a été publié"
+            }
+          ]
+        },
+        {
+          "title": "Vulnérabilités applicatives critiques : Drupal, NASM et outils de sécurité",
+          "lede_html": "Trois écosystèmes très déployés – <strong>Drupal</strong>, <strong>NASM</strong> et <strong>Microsoft Defender</strong> – concentrent cette semaine des failles RCE et d’escalade de privilèges, tandis qu’<em>ExifTool</em> et <em>Istio/Kubeflow</em> élargissent la surface d’attaque aux images et aux clusters cloud. La vulnérabilité <strong>CVE-2026-9082</strong> dans l’API d’abstraction PostgreSQL de Drupal permet une exécution de code à distance, <strong>CVE-2026-6068</strong> transforme un <em>use-after-free</em> de <code>nasm</code> en RCE persistante, et <strong>CVE-2026-45584</strong> ouvre une RCE dans Defender – sans compter <strong>CVE-2026-41091</strong> qui y offre une élévation locale via <em>link following</em>.",
+          "sources": [
+            {
+              "feed": "The Hacker News",
+              "date": "21/05 05:44",
+              "url": "https://thehackernews.com/2026/05/highly-critical-drupal-core-flaw.html",
+              "title": "Highly Critical Drupal Core Flaw Exposes PostgreSQL Sites to RCE Attacks"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 16:40",
+              "url": "https://sekai.team/blog/nasm-cve-disclosure/cve-2026-6068",
+              "title": "CVE-2026-6068 – From Heap UAF to Persistent RCE in NASM [app] [exp]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 17:56",
+              "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45584",
+              "title": "CVE-2026-45584 - Security Update Guide - Microsoft - Microsoft Defender Remote Code Execution Vulnerability [app] [exp]"
+            },
+            {
+              "feed": "CISA Known Exploited Vulnerabilities Catalog",
+              "date": "20/05 21:01",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41091",
+              "title": "2026-05-20: [CVE-2026-41091] Microsoft Defender Link Following Vulnerability"
+            },
+            {
+              "feed": "CISA Known Exploited Vulnerabilities Catalog",
+              "date": "20/05 21:01",
+              "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45498",
+              "title": "2026-05-20: [CVE-2026-45498] Microsoft Defender Denial of Service Vulnerability"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 20:39",
+              "url": "https://github.com/dinosn/drupal-sa-core-2026-004-lab",
+              "title": "GitHub - dinosn/drupal-sa-core-2026-004-lab: Drupal SA-CORE-2026-004 (PostgreSQL Entity Query SQLi via JSON:API filter array keys) — reproduction lab + generic detection PoC + line-by-line analysis. Patch available upstream. [app] [exp]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 12:25",
+              "url": "https://securelist.com/exiftool-compromise-mac/119866/",
+              "title": "How a single image takes control of a Mac [app] [exp]"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 13:25",
+              "url": "https://insinuator.net/2026/05/cve-2026-47237-overly-permissive-istio-permissions-allow-kubeflow-authorization-token-stealing/",
+              "title": "CVE-2026-47237 – Overly Permissive Istio Permissions Allow Kubeflow Authorization Token Stealing – Insinuator.net [app] [cloud] [net]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "devops",
+      "name": "DevOps",
+      "tagline": "INFRA, RELEASES ET INCIDENTS CLOUD",
+      "topics": [
+        {
+          "title": "Incident Google Cloud : Railway débranché sans préavis",
+          "lede_html": "Google Cloud a basculé le compte de <strong>Railway</strong> en statut restreint sans préavis ni explication, provoquant <strong>six heures</strong> de panne totale sur le PaaS — y compris son <code>control plane</code> et son API. L'ironie : Railway dépense plus de <strong>10 millions de dollars</strong> par an chez Google, <em>mais aucun humain n'a validé la suspension</em>, révélant la brutalité des automatismes des hyperscalers. Déjà partiellement migré en colocation depuis 2024, Railway avait conservé l'orchestration chez son concurrent direct, une dépendance <em>stratégiquement fragile</em> qui vient de se payer au prix fort.",
+          "sources": [
+            {
+              "feed": "Korben",
+              "date": "20/05 14:03",
+              "url": "https://korben.info/google-cloud-debranche-railway-sans-prevenir.html",
+              "title": "Google Cloud débranche Railway sans prévenir"
+            }
+          ]
+        },
+        {
+          "title": "Refroidissement cuivre et sobriété des data centers",
+          "lede_html": "En 2025, les data centers ont consommé <strong>485 TWh</strong> d'électricité, dont <strong>30 %</strong> — plus que la consommation annuelle de la Suède — dédiée au refroidissement. Des chercheurs de l'<strong>University of Illinois Urbana-Champaign</strong> présentent des plaques de refroidissement en cuivre pur, produites par <em>impression 3D</em> à partir d'un algorithme d'optimisation, capables de réduire la part du refroidissement de <strong>30 %</strong> à <strong>1,1 %</strong>, soit une baisse de plus de <strong>90 %</strong> de la consommation énergétique liée au <code>cooling</code>.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "20/05 20:15",
+              "url": "https://newatlas.com/energy/cooling-copper-plates-data-center-energy-use/",
+              "title": "Cooling copper plates could slash data center energy use by 90%"
+            }
+          ]
+        },
+        {
+          "title": "Mastodon et PeerTube : patchs de sécurité en cascade",
+          "lede_html": "<strong>Mastodon</strong> déploie trois correctifs simultanés (v4.3.23, v4.4.17, v4.5.10) pour colmater un contournement de protection <em>SSRF</em> et un bypass de signature Linked-Data via <code>JSON-LD</code>, tandis que <strong>PeerTube</strong> 8.1.6 corrige une injection SQL dans l'URL de l'actor inbox et renforce lui aussi ses défenses <em>SSRF</em> et <code>JSON-LD</code>. Ces correctifs croisés illustrent les <em>défis récurrents</em> de sécurisation des plateformes fédérées auto-hébergées, où la même surface d'attaque touche plusieurs projets simultanément.",
+          "sources": [
+            {
+              "feed": "Release notes from mastodon",
+              "date": "20/05 15:41",
+              "url": "https://github.com/mastodon/mastodon/releases/tag/v4.3.23",
+              "title": "v4.3.23"
+            },
+            {
+              "feed": "Release notes from mastodon",
+              "date": "20/05 15:31",
+              "url": "https://github.com/mastodon/mastodon/releases/tag/v4.4.17",
+              "title": "v4.4.17"
+            },
+            {
+              "feed": "Release notes from mastodon",
+              "date": "20/05 15:19",
+              "url": "https://github.com/mastodon/mastodon/releases/tag/v4.5.10",
+              "title": "v4.5.10"
+            },
+            {
+              "feed": "Release notes from PeerTube",
+              "date": "20/05 16:02",
+              "url": "https://github.com/Chocobozzz/PeerTube/releases/tag/v8.1.6",
+              "title": "v8.1.6"
+            },
+            {
+              "feed": "Release notes from PeerTube",
+              "date": "20/05 16:10",
+              "url": "https://github.com/Chocobozzz/PeerTube/releases/tag/v8.2.0-rc.2",
+              "title": "v8.2.0-rc.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "diy",
+      "name": "DIY",
+      "tagline": "RADIO, SDR ET BIDOUILLE HARDWARE AU MENU",
+      "topics": [
+        {
+          "title": "Écosystème SDR : nouveaux outils open source et interfaces modernes",
+          "lede_html": "L'écosystème SDR open source se renouvelle sur trois fronts : <strong>no-sdr</strong> propose un WebSDR multi-utilisateur en <code>Go</code>/<code>Node.js</code>, dockerisé et compatible x86 comme Raspberry Pi, pour partager plusieurs <strong>RTL-SDR</strong> via le réseau ; <strong>rpitx-ui</strong> modernise le classique émetteur <code>rpitx</code> de F5OEO en une interface plus accessible pour transformer un Pi en émetteur RF sur GPIO — <em>toujours sans Pi 5</em> ; et <strong>sdrrat</strong> délivre une TUI Rust complète (FFT, waterfall, VFO, démodulations WBFM/NBFM/AM) pour <strong>RTL-SDR</strong> et <strong>HackRF</strong>, construite sur <code>Ratatui</code> et <code>FutureSDR</code>.",
+          "sources": [
+            {
+              "feed": "rtl-sdr.com",
+              "date": "21/05 03:06",
+              "url": "https://www.rtl-sdr.com/no-sdr-a-new-open-source-multi-user-websdr-for-rtl-sdr/",
+              "title": "No-SDR: A New Open Source Multi-User WebSDR for RTL-SDR"
+            },
+            {
+              "feed": "rtl-sdr.com",
+              "date": "21/05 03:47",
+              "url": "https://www.rtl-sdr.com/rpitx-ui-a-modernized-easier-to-use-fork-of-the-rpitx-raspberry-pi-transmitter-software/",
+              "title": "RPITX-UI: A Modernized, Easier to Use Fork of the RPITX Raspberry Pi Transmitter Software"
+            },
+            {
+              "feed": "rtl-sdr.com",
+              "date": "21/05 02:29",
+              "url": "https://www.rtl-sdr.com/sdrrat-an-sdr-receiver-terminal-user-interface-for-rtl-sdr-hackrf/",
+              "title": "sdrrat: An SDR receiver Terminal User Interface for RTL-SDR & HackRF"
+            }
+          ]
+        },
+        {
+          "title": "Radio clandestine : l'ingénierie de la discrétion pendant la guerre",
+          "lede_html": "Fin 1942, deux ingénieurs du <strong>Royal Corps of Signals</strong> bouleversent la logique radio : au lieu de maximiser la portée, ils conçoivent le <strong>S-Phone</strong>, un émetteur-récepteur à moins de <strong>200 mW</strong> sur <strong>380 MHz</strong>, fréquence alors inhabituelle qui complique la détection ennemie. L'antenne directionnelle rend le signal <em>quasiment indétectable</em> au-delà d'un mile au sol, tandis qu'un avion à moins de <strong>10 000 pieds</strong> peut capter la voix jusqu'à <strong>30 miles</strong> — une ingénierie de la discrétion où <em>survivre prime sur dominer</em>.",
+          "sources": [
+            {
+              "feed": "Hack a Day",
+              "date": "20/05 19:00",
+              "url": "https://hackaday.com/2026/05/20/spy-tech-a-quiet-radio-for-spies/",
+              "title": "Spy Tech: A Quiet Radio for Spies"
+            }
+          ]
+        },
+        {
+          "title": "Objets connectés et bidouilles : badges, lune et rétro-compatibilité",
+          "lede_html": "L'<strong>ESP32</strong> se taille la part du lion cette semaine : les <strong>CrowdClock</strong> de <strong>Tony Goacher</strong> synchronisent des badges de festival via <code>ESP-NOW</code> sans aucune infrastructure, tandis que le mini-globe lunaire de <strong>Karsten Mueller</strong> restitue en temps réel l'illumination réelle de la Lune à partir de vos coordonnées. À l'opposé du spectre, <em>le patrimoine hardware</em> trouve refuge dans le navigateur grâce à une émulation x86 minimale qui ressuscite un vieux scanner privé de pilotes — <em>une pirouette logicielle</em> qui rappelle que l'obsolescence est souvent plus politique que technique.",
+          "sources": [
+            {
+              "feed": "Hack a Day",
+              "date": "21/05 01:00",
+              "url": "https://hackaday.com/2026/05/20/building-festival-badges-that-sync-themselves-up/",
+              "title": "Building Festival Badges That Sync Themselves Up"
+            },
+            {
+              "feed": "Hack a Day",
+              "date": "20/05 13:00",
+              "url": "https://hackaday.com/2026/05/20/bring-back-that-aged-scanner-in-your-browser/",
+              "title": "Bring Back That Aged Scanner, in Your Browser"
+            },
+            {
+              "feed": "Hack a Day",
+              "date": "20/05 17:30",
+              "url": "https://hackaday.com/2026/05/20/put-the-moon-on-your-desk/",
+              "title": "Put the Moon on Your Desk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "societe",
+      "name": "Société & régulation",
+      "tagline": "SURVEILLANCE, SOUVERAINETÉ ET RÉSISTANCE NUMÉRIQUE",
+      "topics": [
+        {
+          "title": "Surveillance de masse : Londres, la Chine et les caméras IoT",
+          "lede_html": "Deux continents, même logique : <strong>700 000</strong> requêtes de données adressées par la police londonienne aux plateformes tech en 2025, tandis qu'au moins <strong>un million</strong> de caméras IoT de l'ODM chinois <strong>Meari Technology</strong> présentent des failles critiques permettant l'accès distant aux flux vidéo de 118 pays — béances sécuritaires confirmées par cinq CVE à haut risque. D'un côté un État démocratique qui <em>normalise</em> la captation massive de métadonnées, y compris auprès de services chiffrés comme <strong>Proton</strong> et <strong>Signal</strong> ; de l'autre un écosystème industriel <em>insécurisé par conception</em>, où la transparence et la réactivité des fabricants font cruellement défaut.",
+          "sources": [
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 19:42",
+              "url": "https://www.nattothoughts.com/p/is-this-chinese-company-watching",
+              "title": "Is This Chinese Company Watching the World to Train its AI?"
+            },
+            {
+              "feed": "Talkback Home",
+              "date": "20/05 11:48",
+              "url": "https://www.theregister.com/databases/2026/05/20/londons-police-asked-big-tech-for-comms-data-over-700000-times-last-year/5242590",
+              "title": "London's police asked Big Tech for comms data over 700,000 times last year"
+            }
+          ]
+        },
+        {
+          "title": "Souveraineté numérique : paiements, cloud et alternatives",
+          "lede_html": "L'Europe affiche l'ambition d'un paiement <em>souverain</em> pour <strong>130 millions</strong> d'utilisateurs dès 2026, mais le schéma technique dévoilé repose sur un smartphone <strong>Apple</strong> ou <strong>Google</strong> non rooté côté client et sur l'infrastructure <strong>AWS</strong> côté serveur — soit une chaîne de dépendances <em>toujours américaine</em>. En miroir, l'hébergeur suisse <strong>Infomaniak</strong> transfère <strong>65 %</strong> de ses droits de vote à une fondation d'utilité publique, verrouillant son indépendance tout en s'ouvrant à de nouveaux investisseurs — un modèle de gouvernance que d'autres acteurs du cloud européen pourraient suivre.",
+          "sources": [
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "20/05 16:06",
+              "url": "https://www.lesnumeriques.com/banque-en-ligne/adieu-visa-et-mastercard-130-millions-d-europeens-basculent-vers-un-paiement-100-souverain-des-2026-n250918.html",
+              "title": "Adieu Visa et Mastercard : 130 millions d'Européens basculent vers un paiement 100 % souverain dès 2026 - Les Numériques"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "20/05 15:02",
+              "url": "https://www.lesnumeriques.com/banque-en-ligne/adieu-visa-et-mastercard-130-millions-d-europeens-basculent-vers-un-paiement-100-souverain-des-2026-n250918.html",
+              "title": "Goodbye Visa and Mastercard: 130M Europeans switching to sovereign payment"
+            },
+            {
+              "feed": "Liens en vrac de sebsauvage",
+              "date": "20/05 11:04",
+              "url": "https://next.ink/238508/cloud-infomaniak-se-place-sous-le-controle-dune-fondation/",
+              "title": "Cloud : Infomaniak se place sous le contrôle d'une fondation - Next"
+            }
+          ]
+        },
+        {
+          "title": "Régulation et résistance : âge, propriété intellectuelle et transparence",
+          "lede_html": "Le Colorado amende <strong>SB051</strong> pour exclure les projets open source de ses obligations de vérification d'âge, une concession qui ne rassure pas <strong>GitHub</strong> — la plateforme alerte que ces lois d'<em>age assurance</em> imposent aux développeurs des charges techniques et juridiques disproportionnées. Pendant ce temps, <strong>Anna's Archive</strong> écope d'un jugement par défaut record de <strong>19,5 M$</strong> et d'une injonction mondiale ciblant registres et hébergeurs, révélant la tension croissante entre <em>transparence</em> numérique et répression légale.",
+          "sources": [
+            {
+              "feed": "Hacker News",
+              "date": "20/05 22:28",
+              "url": "https://legiscan.com/CO/bill/SB051/2026",
+              "title": "Colorado Amended SB051 (Age Verification Bill) to Exclude Open Source Projects"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "20/05 23:14",
+              "url": "https://github.blog/news-insights/policy-news-and-insights/why-age-assurance-laws-matter-for-developers/",
+              "title": "GitHub's take on age assurance for developers"
+            },
+            {
+              "feed": "Hacker News",
+              "date": "20/05 14:30",
+              "url": "https://torrentfreak.com/annas-archive-hit-with-19-5m-default-judgment-and-global-domain-takedown-order/",
+              "title": "Anna's Archive Hit with $19.5M Default Judgment and Global Domain Takedown Order"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "appendix": [
+    {
+      "url": "https://gwern.net/doc/design/typography/1980-knuth.pdf",
+      "title": "The Letter S, by Donald Knuth (1980) [pdf]",
+      "note": ""
+    },
+    {
+      "url": "https://www.spacex.com/launches/starship-flight-12",
+      "title": "Starship's Twelfth Flight Test",
+      "note": ""
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm",
+      "title": "SpaceX S-1",
+      "note": ""
+    },
+    {
+      "url": "https://www.scientificamerican.com/article/spacex-punts-starship-v3-launch-to-may-21-as-investigation-opens-into-starbase-worker-death/",
+      "title": "SpaceX punts Starship launch as investigation opens into Starbase worker's death",
+      "note": ""
+    },
+    {
+      "url": "https://www.science.org/content/article/not-alive-not-dead-disembodied-human-brains-used-drug-testing",
+      "title": "Not alive, but not dead: disembodied human brains used for drug testing",
+      "note": ""
+    },
+    {
+      "url": "https://www.usni.org/magazines/naval-history/2025/december/missile-genius-america-lost-and-china-gained",
+      "title": "Qian Xuesen: The missile genius America lost and China gained (2025)",
+      "note": ""
+    },
+    {
+      "url": "https://www.manton.org/2026/05/19/why-is-inkwell-stuck-in.html",
+      "title": "Why is Inkwell stuck in review",
+      "note": ""
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=48210590",
+      "title": "Ask HN: Shouldn't Google need to give a public statement about Railway incident?",
+      "note": ""
+    },
+    {
+      "url": "https://twitter.com/pokemoncentral/status/2057123807404638250",
+      "title": "Apparently Google hates us now",
+      "note": ""
+    },
+    {
+      "url": "https://www.wsj.com/tech/ai/openai-is-preparing-to-file-for-an-ipo-very-soon-0ec95af5",
+      "title": "OpenAI Is Preparing to File for an IPO Soon",
+      "note": ""
+    }
+  ],
+  "footer": "Athanor - 150 articles agrégés"
+}

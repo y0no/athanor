@@ -1,0 +1,419 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { formatDateLong } from "../utils/format";
+import { categoryAccent, categoryLabel, CATEGORY_ORDER } from "../utils/colors";
+import { momentumMeta } from "../utils/momentum";
+import trends from "../content/tendances.json";
+
+interface Theme {
+  label: string;
+  category: string;
+  first_seen: string;
+  last_seen: string;
+  momentum: string;
+  note: string;
+}
+
+interface WatchItem {
+  label: string;
+  category: string;
+  since: string;
+  note: string;
+}
+
+interface Tension {
+  label: string;
+  note: string;
+}
+
+interface Current {
+  label: string;
+  note: string;
+  categories: string[];
+}
+
+interface Synthesis {
+  headline: string;
+  narrative: string;
+}
+
+const synthesis = (trends.synthesis ?? { headline: "", narrative: "" }) as Synthesis;
+const currents = (trends.currents ?? []) as Current[];
+const themes = trends.themes as Theme[];
+const watchlist = trends.watchlist as WatchItem[];
+const tensions = trends.tensions as Tension[];
+
+// Group themes by category, in the canonical order, dropping empty buckets.
+const themesByCategory = CATEGORY_ORDER
+  .map((slug) => ({
+    slug,
+    name: categoryLabel(slug),
+    themes: themes.filter((t) => t.category === slug),
+  }))
+  .filter((g) => g.themes.length > 0);
+
+const title = "Tendances — Athanor";
+const description = "Le radar de la veille : thèmes de fond, signaux faibles et tensions structurantes.";
+---
+<BaseLayout title={title} description={description}>
+  <header class="trends-head">
+    <p class="eyebrow">
+      <span>Tendances — radar de la veille</span>
+      <span class="eyebrow-date">Mis à jour le {formatDateLong(trends.updated_at)}</span>
+    </p>
+    <h1 class="hero-headline">{synthesis.headline || "Tendances"}</h1>
+    {synthesis.narrative && <p class="hero-narrative" set:html={synthesis.narrative} />}
+  </header>
+
+  {currents.length > 0 && (
+    <section class="block">
+      <h2 class="block-title">Courants de fond</h2>
+      <p class="block-sub">Les dynamiques qui traversent les catégories.</p>
+      <ul class="current-list">
+        {currents.map((c) => (
+          <li class="current">
+            <div class="current-head">
+              <span class="current-label">{c.label}</span>
+              <span class="current-cats">
+                {c.categories.map((slug) => (
+                  <span class="cat-chip" style={`--cat-accent: ${categoryAccent(slug)}`}>
+                    {categoryLabel(slug)}
+                  </span>
+                ))}
+              </span>
+            </div>
+            <p class="current-note">{c.note}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section class="block">
+    <h2 class="block-title">Thèmes de fond</h2>
+    {themesByCategory.map((group) => (
+      <div class="cat-group" style={`--cat-accent: ${categoryAccent(group.slug)}`}>
+        <h3 class="cat-name">{group.name}</h3>
+        <ul class="theme-grid">
+          {group.themes.map((t) => {
+            const m = momentumMeta(t.momentum);
+            return (
+              <li class="theme-card">
+                <div class="theme-top">
+                  <span class="theme-label">{t.label}</span>
+                  <span class="momentum" style={`--m-color: ${m.color}`}>
+                    <span class="glyph">{m.glyph}</span>{m.label}
+                  </span>
+                </div>
+                <p class="theme-note">{t.note}</p>
+                <div class="theme-meta">
+                  {formatDateLong(t.first_seen)} → {formatDateLong(t.last_seen)}
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    ))}
+  </section>
+
+  <section class="block">
+    <h2 class="block-title">Signaux faibles <span class="count">{watchlist.length}</span></h2>
+    <p class="block-sub">À surveiller — émergents, encore trop ténus pour être des thèmes.</p>
+    <ul class="watch-grid">
+      {watchlist.map((w) => (
+        <li class="watch-card" style={`--cat-accent: ${categoryAccent(w.category)}`}>
+          <div class="watch-top">
+            <span class="watch-label">{w.label}</span>
+            <span class="watch-cat">{categoryLabel(w.category)}</span>
+          </div>
+          <p class="watch-note">{w.note}</p>
+          <div class="watch-since">depuis le {formatDateLong(w.since)}</div>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="block">
+    <h2 class="block-title">Tensions</h2>
+    <p class="block-sub">Les forces opposées qui structurent le paysage.</p>
+    <ul class="tension-list">
+      {tensions.map((t) => (
+        <li class="tension">
+          <span class="tension-label">{t.label}</span>
+          <p class="tension-note">{t.note}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Hero — the synthesis IS the page masthead (front-page lead, not a callout) */
+  .trends-head {
+    margin-bottom: 56px;
+  }
+  .trends-head .eyebrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+  .trends-head .eyebrow-date {
+    color: var(--ink-faint);
+    letter-spacing: 0.14em;
+  }
+  .hero-headline {
+    font-family: var(--font-body);
+    font-size: clamp(1.9rem, 4.4vw, 3rem);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    color: var(--ink-strong);
+    margin: 0 0 22px;
+    text-wrap: balance;
+  }
+  .hero-narrative {
+    font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+    line-height: 1.7;
+    color: var(--ink);
+    margin: 0 0 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+  .hero-narrative :global(strong) {
+    color: var(--ink-strong);
+    font-weight: 600;
+  }
+  .hero-narrative :global(em) {
+    color: var(--accent-strong);
+    font-style: italic;
+  }
+  .hero-narrative :global(code) {
+    font-family: var(--font-mono);
+    font-size: 0.88em;
+    background: var(--bg-card);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+  /* Currents — cross-category through-lines */
+  .current-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 14px;
+  }
+  .current {
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 18px 20px;
+  }
+  .current-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+  .current-label {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--ink-strong);
+  }
+  .current-cats {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    flex: none;
+  }
+  .cat-chip {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--cat-accent);
+    border: 1px solid color-mix(in srgb, var(--cat-accent) 40%, transparent);
+    border-radius: 999px;
+    padding: 2px 8px;
+    white-space: nowrap;
+  }
+  .current-note {
+    margin: 0;
+    color: var(--ink);
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .block {
+    margin: 0 0 64px;
+  }
+  .block-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--ink-strong);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 10px;
+    margin: 0 0 8px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .block-title .count {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    font-weight: 400;
+  }
+  .block-sub {
+    color: var(--ink-muted);
+    font-size: 0.95rem;
+    margin: 0 0 24px;
+  }
+
+  /* Themes */
+  .cat-group {
+    margin-bottom: 22px;
+  }
+  .cat-name {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--cat-accent);
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .cat-name::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--cat-accent);
+    flex: none;
+  }
+  .theme-grid,
+  .watch-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+    gap: 10px;
+  }
+  .theme-card,
+  .watch-card {
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--cat-accent);
+    border-radius: 7px;
+    padding: 11px 13px;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+  .theme-card:hover,
+  .watch-card:hover {
+    background: var(--bg-card-hover);
+  }
+  .theme-top,
+  .watch-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+  .theme-label,
+  .watch-label {
+    font-weight: 600;
+    color: var(--ink-strong);
+    font-size: 0.88rem;
+    line-height: 1.3;
+  }
+  .momentum {
+    flex: none;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--m-color);
+    border: 1px solid color-mix(in srgb, var(--m-color) 40%, transparent);
+    border-radius: 999px;
+    padding: 2px 7px;
+    white-space: nowrap;
+  }
+  .momentum .glyph {
+    margin-right: 3px;
+  }
+  .theme-note,
+  .watch-note {
+    color: var(--ink-muted);
+    font-size: 0.8rem;
+    line-height: 1.45;
+    margin: 0 0 7px;
+  }
+  .theme-meta,
+  .watch-since {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    color: var(--ink-faint);
+  }
+  .watch-cat {
+    flex: none;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--cat-accent);
+    white-space: nowrap;
+  }
+
+  /* Tensions */
+  .tension-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 14px;
+  }
+  .tension {
+    background: var(--bg-card);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 18px 20px;
+    position: relative;
+  }
+  .tension-label {
+    display: block;
+    font-weight: 600;
+    color: var(--accent-strong);
+    margin-bottom: 6px;
+  }
+  .tension-note {
+    margin: 0;
+    color: var(--ink);
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  @media (max-width: 560px) {
+    .theme-top,
+    .watch-top {
+      flex-direction: column;
+      gap: 6px;
+    }
+  }
+</style>

@@ -1,0 +1,241 @@
+{
+  "updated_at": "2026-06-07",
+  "synthesis": {
+    "headline": "L’IA n’est plus une rubrique : elle est le substrat de toute la veille",
+    "narrative": "<strong>L’IA</strong> a cessé d’être une catégorie pour devenir le <em>substrat</em> commun : elle arme l’offensive <strong>infosec</strong> (Meta AI détourné, <code>PentesterFlow</code>), redéfinit le métier <strong>devops</strong> (le développeur devient curateur de contexte) et nourrit le <strong>désenchantement</strong> social (érosion des compétences, médias générés). En face montent deux contre-mouvements : la <em>frugalité</em> (modèles compacts, edge, doute sur le scaling) et le <em>verrouillage</em> (isolation des agents, identité cloud comme cible). La question du jour n’est pas « quoi de neuf en IA » mais « jusqu’où l’IA recompose chaque domaine »."
+  },
+  "currents": [
+    {
+      "label": "L’IA passe à l’offensive",
+      "categories": [
+        "ia",
+        "infosec"
+      ],
+      "note": "L’automatisation IA arme l’attaque (Meta AI détourné, agents pentest, contournement EDR) pendant que la supply chain humaine reflue : le front se déplace."
+    },
+    {
+      "label": "Le développeur devient curateur de contexte",
+      "categories": [
+        "ia",
+        "devops"
+      ],
+      "note": "sem, design-md, agents de code : l’auteur de code s’efface au profit de l’orchestrateur de contexte — adoubement ou précarisation ?"
+    },
+    {
+      "label": "Frugalité contre démesure",
+      "categories": [
+        "ia",
+        "devops",
+        "diy"
+      ],
+      "note": "Modèles compacts/edge, doute sur le scaling, durable execution minimaliste, embarqué : un courant d’efficience face à la course aux frontières."
+    },
+    {
+      "label": "L’humain sous capteurs",
+      "categories": [
+        "societe",
+        "ia",
+        "diy"
+      ],
+      "note": "Surveillance domestique (smart TV, lunettes à reco faciale) + IA qui produit le contenu : la donnée personnelle devient matière première, la liberté recule."
+    }
+  ],
+  "themes": [
+    {
+      "label": "Agents IA en production",
+      "category": "ia",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-07",
+      "momentum": "stable",
+      "note": "Infra agentique maturée : mémoire portable (UMP), isolation (TakoVM), coût caché tokens (59% review), hardware agentique (Computex). Design et code réabsorbés."
+    },
+    {
+      "label": "Mémoire & contexte des agents",
+      "category": "ia",
+      "first_seen": "2026-05-14",
+      "last_seen": "2026-06-07",
+      "momentum": "stable",
+      "note": "UMP standardise la mémoire portable signée bi-temporelle ; la brique d'interopérabilité manquante se met en place."
+    },
+    {
+      "label": "Économie & PMF de l'IA générative",
+      "category": "ia",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-07",
+      "momentum": "stable",
+      "note": "Tokenomics confirme coûts cachés (59% tokens en review), désenchantement persistant, le scepticisme structurel s'installe."
+    },
+    {
+      "label": "IA locale / edge & modèles compacts",
+      "category": "ia",
+      "first_seen": "2026-05-16",
+      "last_seen": "2026-06-07",
+      "momentum": "stable",
+      "note": "PromptPurify sur CPU illustre course aux garde-fous compacts ; diffusion single-image sans entraînement renouvelle la frugalité."
+    },
+    {
+      "label": "Attaques supply chain open-source",
+      "category": "infosec",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-07",
+      "momentum": "déclin",
+      "note": "Toujours #1 infosec mais en repli mesuré (16→7/sem) ; pic mi-mai (Megalodon), reflux ensuite."
+    },
+    {
+      "label": "IA offensive",
+      "category": "infosec",
+      "first_seen": "2026-05-24",
+      "last_seen": "2026-06-07",
+      "momentum": "montant",
+      "note": "Signal confirmé : Meta AI détourné (20k comptes), agents pentest (PentesterFlow), contournements EDR/sandbox. Automatisation offensive réelle."
+    },
+    {
+      "label": "Exploitation active & fenêtres de patch réduites",
+      "category": "infosec",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-07",
+      "momentum": "stable",
+      "note": "Plateau haut : ajout M365 longue haleine (UNC5221) et vishing ; délai d'exploitation toujours en chute."
+    },
+    {
+      "label": "Convergence Microsoft ↔ Linux",
+      "category": "devops",
+      "first_seen": "2026-05-19",
+      "last_seen": "2026-06-06",
+      "momentum": "montant",
+      "note": "Hausse nette (1→4/sem) : distro serveur, Azure Linux 4.0, WSL2, pg_durable open-sourcé."
+    },
+    {
+      "label": "Durable execution (Postgres/SQLite)",
+      "category": "devops",
+      "first_seen": "2026-05-29",
+      "last_seen": "2026-06-06",
+      "momentum": "montant",
+      "note": "Pattern émergent : workflows durables SQLite/Postgres, Streambed, pg_durable ; faible mais à confirmer."
+    },
+    {
+      "label": "Rétrocomputing & préservation",
+      "category": "diy",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-07",
+      "momentum": "stable",
+      "note": "Socle DIY (~28/sem) : réparer, émuler, réanimer matériel vintage ; enjeu stratégique faible."
+    },
+    {
+      "label": "SDR & radio logicielle",
+      "category": "diy",
+      "first_seen": "2026-05-14",
+      "last_seen": "2026-06-04",
+      "momentum": "stable",
+      "note": "Régulier : outils open source, fin du RTL-SDR phare, montée des portables."
+    },
+    {
+      "label": "Surveillance & biométrie",
+      "category": "societe",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-07",
+      "momentum": "stable",
+      "note": "Smart TV comme nœud scraping IA, contre-espionnage Israël/US critique ; surveillance domestique s'institutionnalise."
+    },
+    {
+      "label": "Régulation plateformes & IA",
+      "category": "societe",
+      "first_seen": "2026-05-15",
+      "last_seen": "2026-06-07",
+      "momentum": "déclin",
+      "note": "Pic mi-mai (11/sem) puis repli (5) : EU, vérification d'âge, mineurs, audits IA ; possiblement cyclique."
+    },
+    {
+      "label": "Désenchantement IA au travail",
+      "category": "societe",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-07",
+      "momentum": "montant",
+      "note": "Accélération : érosion des compétences, chômage diplômés US, MSN médias IA, smartphones poussent l'IA sans demande."
+    },
+    {
+      "label": "Recherche : au-delà du scaling",
+      "category": "ia",
+      "first_seen": "2026-06-07",
+      "last_seen": "2026-06-07",
+      "momentum": "nouveau",
+      "note": "Diffusion single-image sans entraînement et grokking par catapulting questionnent le dogme du scaling ; efficience comme nouveau levier."
+    }
+  ],
+  "watchlist": [
+    {
+      "label": "Auto-amélioration récursive de l'IA",
+      "category": "ia",
+      "since": "2026-06-05",
+      "note": "Anthropic explore le self-improvement ; rare mais potentiellement structurant pour la trajectoire des modèles."
+    },
+    {
+      "label": "Worms supply chain auto-répliquants",
+      "category": "infosec",
+      "since": "2026-05-28",
+      "note": "GlassWorm puis IronWorm/Miasma : l'auto-réplication change l'échelle des attaques npm."
+    },
+    {
+      "label": "io_uring & primitives kernel",
+      "category": "infosec",
+      "since": "2026-06-05",
+      "note": "Lecture mémoire kernel Linux via io_uring ; surface d'attaque sous-estimée."
+    },
+    {
+      "label": "Reconnaissance faciale embarquée (lunettes)",
+      "category": "societe",
+      "since": "2026-06-05",
+      "note": "Meta intègre la reco faciale à ses lunettes : bascule privacy vers surveillance ambiante."
+    },
+    {
+      "label": "Impression 3D industrielle (Bambu)",
+      "category": "diy",
+      "since": "2026-06-07",
+      "note": "Glissement du loisir vers performances industrielles ; le DIY rejoint la production (Bambu vs Stratasys)."
+    },
+    {
+      "label": "Souveraineté numérique grand public",
+      "category": "societe",
+      "since": "2026-06-07",
+      "note": "Migration Proton Mail + domaine propre après piratage ; réaction grand public face aux services verrouillés."
+    },
+    {
+      "label": "Érosion de la liberté académique",
+      "category": "societe",
+      "since": "2026-06-07",
+      "note": "Chercheurs expulsés pour un éditorial scientifique ; pression politique sur la recherche, symptôme plus large."
+    },
+    {
+      "label": "Semantic code / développeur curateur",
+      "category": "devops",
+      "since": "2026-06-07",
+      "note": "sem et design-md-chrome : le dev devient curateur de contexte pour agents, auteur de code en déclin."
+    }
+  ],
+  "tensions": [
+    {
+      "label": "Productivité IA vs désenchantement",
+      "note": "Promesse de gains ↔ coûts cachés, érosion des compétences et rejet au travail ; la fracture entre discours et vécu s'élargit."
+    },
+    {
+      "label": "Le front d'attaque se déplace : humain/dépendances → IA",
+      "note": "Supply chain classique en repli ↔ IA offensive en hausse (Meta AI détourné, PentesterFlow) et sandbox contournées ; le risque migre vers l'automatisation."
+    },
+    {
+      "label": "Gros modèles vs IA locale",
+      "note": "Course aux frontières (Opus 4.8, Gemini) ↔ modèles compacts/edge (Gemma 4, MoE, PromptPurify CPU) : centralisation vs décentralisation."
+    },
+    {
+      "label": "Capacité des agents vs encadrement",
+      "note": "Agents autonomes, mémoire unifiée et hardware agentique ↔ isolation (TakoVM), garde-fous compacts et régulation en repli ; l'écart se creuse."
+    },
+    {
+      "label": "Microsoft ouvert vs verrouillé",
+      "note": "Embrasse Linux (Azure Linux, WSL, pg_durable) ↔ M365 reste le chaînon faible (UNC5221, vishing) et verrouillage commercial."
+    },
+    {
+      "label": "Liberté académique vs contrôle politique",
+      "note": "Recherche biomédicale attaquée, chercheurs expulsés pour un texte ↔ politique de l'innovation et conformité ; la science devient dissidence."
+    }
+  ]
+}

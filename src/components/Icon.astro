@@ -1,6 +1,6 @@
 ---
 interface Props {
-  name: "flame" | "archive" | "rss";
+  name: "flame" | "archive" | "rss" | "compass";
   size?: number;
 }
 
@@ -23,5 +23,11 @@ const { name, size = 15 } = Astro.props;
     <path d="M4 11a9 9 0 0 1 9 9"/>
     <path d="M4 4a16 16 0 0 1 16 16"/>
     <circle cx="5" cy="19" r="1"/>
+  </svg>
+)}
+{name === "compass" && (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="10"/>
+    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
   </svg>
 )}

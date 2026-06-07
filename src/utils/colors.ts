@@ -9,3 +9,17 @@ const CATEGORY_COLORS: Record<string, string> = {
 export function categoryAccent(slug: string): string {
   return CATEGORY_COLORS[slug] ?? "#8b5cf6";
 }
+
+const CATEGORY_NAMES: Record<string, string> = {
+  ia: "IA",
+  infosec: "Infosec",
+  devops: "DevOps",
+  diy: "DIY",
+  societe: "Société & régulation",
+};
+
+export function categoryLabel(slug: string): string {
+  return CATEGORY_NAMES[slug] ?? slug;
+}
+
+export const CATEGORY_ORDER = ["ia", "infosec", "devops", "diy", "societe"];

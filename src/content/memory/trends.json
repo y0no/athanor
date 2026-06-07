@@ -1,0 +1,192 @@
+{
+  "themes": [
+    {
+      "label": "Agents IA en production",
+      "category": "ia",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-07",
+      "momentum": "stable",
+      "note": "Plateau à haut volume (~15/sem) : thème dominant mais sans accélération ; angle qui se déplace vers sécurité et déploiement."
+    },
+    {
+      "label": "Mémoire & contexte des agents",
+      "category": "ia",
+      "first_seen": "2026-05-14",
+      "last_seen": "2026-06-07",
+      "momentum": "stable",
+      "note": "Récurrent (~6/sem) : mémoire persistante puis contexte unifié ; brique d'infra agentique installée."
+    },
+    {
+      "label": "Économie & PMF de l'IA générative",
+      "category": "ia",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-04",
+      "momentum": "stable",
+      "note": "Rentabilité, coûts cachés, désenchantement ; présent en continu sans pic, le scepticisme s'installe."
+    },
+    {
+      "label": "IA locale / edge & modèles compacts",
+      "category": "ia",
+      "first_seen": "2026-05-16",
+      "last_seen": "2026-06-06",
+      "momentum": "stable",
+      "note": "RAG local, CPU, MoE sur GPU limité, Gemma 4 ; volume élevé mais léger repli récent."
+    },
+    {
+      "label": "Attaques supply chain open-source",
+      "category": "infosec",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-07",
+      "momentum": "déclin",
+      "note": "Toujours #1 infosec mais en repli mesuré (16→7/sem) ; pic mi-mai (Megalodon), reflux ensuite."
+    },
+    {
+      "label": "IA offensive",
+      "category": "infosec",
+      "first_seen": "2026-05-24",
+      "last_seen": "2026-06-07",
+      "momentum": "montant",
+      "note": "Vrai signal en hausse (3→5/sem) : exploits générés, évasion EDR, agents détournés."
+    },
+    {
+      "label": "Exploitation active & fenêtres de patch réduites",
+      "category": "infosec",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-07",
+      "momentum": "stable",
+      "note": "Plateau le plus haut du flux (~22/sem) : Exchange, Cisco SD-WAN, PAN-OS, Nginx RCE ; délai d'exploitation en chute."
+    },
+    {
+      "label": "Microsoft sous pression (zero-days)",
+      "category": "infosec",
+      "first_seen": "2026-05-14",
+      "last_seen": "2026-06-04",
+      "momentum": "déclin",
+      "note": "Vague concentrée mi-mai (Exchange, MiniPlasma) ; sujet retombé depuis."
+    },
+    {
+      "label": "Convergence Microsoft ↔ Linux",
+      "category": "devops",
+      "first_seen": "2026-05-19",
+      "last_seen": "2026-06-06",
+      "momentum": "montant",
+      "note": "Hausse nette (1→4/sem) : distro serveur, Azure Linux 4.0, WSL2, pg_durable open-sourcé."
+    },
+    {
+      "label": "Durable execution (Postgres/SQLite)",
+      "category": "devops",
+      "first_seen": "2026-05-29",
+      "last_seen": "2026-06-06",
+      "momentum": "montant",
+      "note": "Pattern émergent : workflows durables SQLite/Postgres, Streambed, pg_durable ; faible mais à confirmer."
+    },
+    {
+      "label": "Rétrocomputing & préservation",
+      "category": "diy",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-07",
+      "momentum": "stable",
+      "note": "Socle du flux DIY (~28/sem) : réparer, émuler, réanimer le matériel vintage ; enjeu stratégique faible."
+    },
+    {
+      "label": "SDR & radio logicielle",
+      "category": "diy",
+      "first_seen": "2026-05-14",
+      "last_seen": "2026-06-04",
+      "momentum": "stable",
+      "note": "Régulier : outils open source, fin du RTL-SDR phare, montée des portables."
+    },
+    {
+      "label": "Surveillance & biométrie",
+      "category": "societe",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-07",
+      "momentum": "stable",
+      "note": "Présent en continu (~7/sem) : LPR, caméras IoT, reconnaissance faciale ; institutionnalisation en cours."
+    },
+    {
+      "label": "Régulation plateformes & IA",
+      "category": "societe",
+      "first_seen": "2026-05-15",
+      "last_seen": "2026-06-07",
+      "momentum": "déclin",
+      "note": "Pic mi-mai (11/sem) puis repli (5) : EU, vérification d'âge, mineurs, audits IA ; possiblement cyclique."
+    },
+    {
+      "label": "Désenchantement IA au travail",
+      "category": "societe",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-04",
+      "momentum": "stable",
+      "note": "Productivité forcée, emploi, bulle ; plainte historique de la Floride contre OpenAI."
+    }
+  ],
+  "watchlist": [
+    {
+      "label": "Auto-amélioration récursive de l'IA",
+      "category": "ia",
+      "since": "2026-06-05",
+      "note": "Anthropic explore le self-improvement ; rare mais potentiellement structurant pour la trajectoire des modèles."
+    },
+    {
+      "label": "PC agentique & matériel orienté agents",
+      "category": "ia",
+      "since": "2026-06-07",
+      "note": "Computex 2026 : nouvelle catégorie hardware pensée pour les agents, à surveiller comme inflexion."
+    },
+    {
+      "label": "Worms supply chain auto-répliquants",
+      "category": "infosec",
+      "since": "2026-05-28",
+      "note": "GlassWorm puis IronWorm/Miasma : l'auto-réplication change l'échelle des attaques npm."
+    },
+    {
+      "label": "io_uring & primitives kernel",
+      "category": "infosec",
+      "since": "2026-06-05",
+      "note": "Lecture mémoire kernel Linux via io_uring ; surface d'attaque sous-estimée."
+    },
+    {
+      "label": "Reconnaissance faciale embarquée (lunettes)",
+      "category": "societe",
+      "since": "2026-06-05",
+      "note": "Meta intègre la reco faciale à ses lunettes : bascule privacy potentielle vers la surveillance ambiante."
+    },
+    {
+      "label": "Impression 3D industrielle (Bambu)",
+      "category": "diy",
+      "since": "2026-06-07",
+      "note": "Glissement du loisir vers des performances industrielles ; le DIY rejoint la production."
+    }
+  ],
+  "tensions": [
+    {
+      "label": "Productivité IA vs désenchantement",
+      "note": "Promesse de gains ↔ coûts cachés, emploi et rejet au travail ; la fracture entre discours et vécu s'élargit."
+    },
+    {
+      "label": "Le front d'attaque se déplace : humain/dépendances → IA",
+      "note": "Supply chain classique en repli (16→7/sem) ↔ IA offensive en hausse (3→5) ; l'automatisation déplace le risque."
+    },
+    {
+      "label": "Gros modèles vs IA locale",
+      "note": "Course aux frontières (Opus 4.8, Gemini) ↔ modèles compacts/edge (Gemma 4, MoE sur petit GPU) : centralisation vs décentralisation."
+    },
+    {
+      "label": "Capacité des agents vs encadrement",
+      "note": "Agents de plus en plus autonomes (auto-amélioration) ↔ régulation et audits ; l'écart capacité/gouvernance se creuse."
+    },
+    {
+      "label": "Microsoft ouvert vs verrouillé",
+      "note": "Embrasse Linux (Azure Linux, WSL, pg_durable) ↔ verrouille le commercial (fin des licences perpétuelles, tokens volés)."
+    }
+  ],
+  "strategy_notes": [
+    "L'IA est transversale : elle structure l'actu IA mais aussi l'infosec (IA offensive) et la société (régulation, désenchantement). Croiser ces angles plutôt que les cloisonner.",
+    "Méfiance avec les plateaux bruyants (exploit actif, rétrocomputing) : volume élevé ≠ nouveauté. La valeur est dans la watchlist et les vrais montants (IA offensive, MS↔Linux).",
+    "Fenêtres de patch en chute libre : privilégier les 0-day exploités activement et les absences de patch (ex. Cisco SD-WAN) sur les CVE théoriques.",
+    "Signal-clé : le risque infosec migre de la supply chain humaine vers l'IA offensive autonome — suivre cette bascule de près.",
+    "Côté société, surveillance et déploiement IA avancent ; la régulation suit par à-coups (cyclique). Chercher les liens déploiement tech ↔ réponse réglementaire."
+  ],
+  "updated_at": "2026-06-07"
+}

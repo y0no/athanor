@@ -6,7 +6,7 @@
       "first_seen": "2026-05-13",
       "last_seen": "2026-06-07",
       "momentum": "stable",
-      "note": "Plateau à haut volume (~15/sem) : thème dominant mais sans accélération ; angle qui se déplace vers sécurité et déploiement."
+      "note": "Infra agentique maturée : mémoire portable (UMP), isolation (TakoVM), coût caché tokens (59% review), hardware agentique (Computex). Design et code réabsorbés."
     },
     {
       "label": "Mémoire & contexte des agents",
@@ -14,23 +14,23 @@
       "first_seen": "2026-05-14",
       "last_seen": "2026-06-07",
       "momentum": "stable",
-      "note": "Récurrent (~6/sem) : mémoire persistante puis contexte unifié ; brique d'infra agentique installée."
+      "note": "UMP standardise la mémoire portable signée bi-temporelle ; la brique d'interopérabilité manquante se met en place."
     },
     {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-04",
+      "last_seen": "2026-06-07",
       "momentum": "stable",
-      "note": "Rentabilité, coûts cachés, désenchantement ; présent en continu sans pic, le scepticisme s'installe."
+      "note": "Tokenomics confirme coûts cachés (59% tokens en review), désenchantement persistant, le scepticisme structurel s'installe."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-06-06",
+      "last_seen": "2026-06-07",
       "momentum": "stable",
-      "note": "RAG local, CPU, MoE sur GPU limité, Gemma 4 ; volume élevé mais léger repli récent."
+      "note": "PromptPurify sur CPU illustre course aux garde-fous compacts ; diffusion single-image sans entraînement renouvelle la frugalité."
     },
     {
       "label": "Attaques supply chain open-source",
@@ -46,7 +46,7 @@
       "first_seen": "2026-05-24",
       "last_seen": "2026-06-07",
       "momentum": "montant",
-      "note": "Vrai signal en hausse (3→5/sem) : exploits générés, évasion EDR, agents détournés."
+      "note": "Signal confirmé : Meta AI détourné (20k comptes), agents pentest (PentesterFlow), contournements EDR/sandbox. Automatisation offensive réelle."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
@@ -54,15 +54,7 @@
       "first_seen": "2026-05-13",
       "last_seen": "2026-06-07",
       "momentum": "stable",
-      "note": "Plateau le plus haut du flux (~22/sem) : Exchange, Cisco SD-WAN, PAN-OS, Nginx RCE ; délai d'exploitation en chute."
-    },
-    {
-      "label": "Microsoft sous pression (zero-days)",
-      "category": "infosec",
-      "first_seen": "2026-05-14",
-      "last_seen": "2026-06-04",
-      "momentum": "déclin",
-      "note": "Vague concentrée mi-mai (Exchange, MiniPlasma) ; sujet retombé depuis."
+      "note": "Plateau haut : ajout M365 longue haleine (UNC5221) et vishing ; délai d'exploitation toujours en chute."
     },
     {
       "label": "Convergence Microsoft ↔ Linux",
@@ -86,7 +78,7 @@
       "first_seen": "2026-05-13",
       "last_seen": "2026-06-07",
       "momentum": "stable",
-      "note": "Socle du flux DIY (~28/sem) : réparer, émuler, réanimer le matériel vintage ; enjeu stratégique faible."
+      "note": "Socle DIY (~28/sem) : réparer, émuler, réanimer matériel vintage ; enjeu stratégique faible."
     },
     {
       "label": "SDR & radio logicielle",
@@ -102,7 +94,7 @@
       "first_seen": "2026-05-13",
       "last_seen": "2026-06-07",
       "momentum": "stable",
-      "note": "Présent en continu (~7/sem) : LPR, caméras IoT, reconnaissance faciale ; institutionnalisation en cours."
+      "note": "Smart TV comme nœud scraping IA, contre-espionnage Israël/US critique ; surveillance domestique s'institutionnalise."
     },
     {
       "label": "Régulation plateformes & IA",
@@ -116,9 +108,17 @@
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-04",
-      "momentum": "stable",
-      "note": "Productivité forcée, emploi, bulle ; plainte historique de la Floride contre OpenAI."
+      "last_seen": "2026-06-07",
+      "momentum": "montant",
+      "note": "Accélération : érosion des compétences, chômage diplômés US, MSN médias IA, smartphones poussent l'IA sans demande."
+    },
+    {
+      "label": "Recherche : au-delà du scaling",
+      "category": "ia",
+      "first_seen": "2026-06-07",
+      "last_seen": "2026-06-07",
+      "momentum": "nouveau",
+      "note": "Diffusion single-image sans entraînement et grokking par catapulting questionnent le dogme du scaling ; efficience comme nouveau levier."
     }
   ],
   "watchlist": [
@@ -127,12 +127,6 @@
       "category": "ia",
       "since": "2026-06-05",
       "note": "Anthropic explore le self-improvement ; rare mais potentiellement structurant pour la trajectoire des modèles."
-    },
-    {
-      "label": "PC agentique & matériel orienté agents",
-      "category": "ia",
-      "since": "2026-06-07",
-      "note": "Computex 2026 : nouvelle catégorie hardware pensée pour les agents, à surveiller comme inflexion."
     },
     {
       "label": "Worms supply chain auto-répliquants",
@@ -150,43 +144,65 @@
       "label": "Reconnaissance faciale embarquée (lunettes)",
       "category": "societe",
       "since": "2026-06-05",
-      "note": "Meta intègre la reco faciale à ses lunettes : bascule privacy potentielle vers la surveillance ambiante."
+      "note": "Meta intègre la reco faciale à ses lunettes : bascule privacy vers surveillance ambiante."
     },
     {
       "label": "Impression 3D industrielle (Bambu)",
       "category": "diy",
       "since": "2026-06-07",
-      "note": "Glissement du loisir vers des performances industrielles ; le DIY rejoint la production."
+      "note": "Glissement du loisir vers performances industrielles ; le DIY rejoint la production (Bambu vs Stratasys)."
+    },
+    {
+      "label": "Souveraineté numérique grand public",
+      "category": "societe",
+      "since": "2026-06-07",
+      "note": "Migration Proton Mail + domaine propre après piratage ; réaction grand public face aux services verrouillés."
+    },
+    {
+      "label": "Érosion de la liberté académique",
+      "category": "societe",
+      "since": "2026-06-07",
+      "note": "Chercheurs expulsés pour un éditorial scientifique ; pression politique sur la recherche, symptôme plus large."
+    },
+    {
+      "label": "Semantic code / développeur curateur",
+      "category": "devops",
+      "since": "2026-06-07",
+      "note": "sem et design-md-chrome : le dev devient curateur de contexte pour agents, auteur de code en déclin."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Promesse de gains ↔ coûts cachés, emploi et rejet au travail ; la fracture entre discours et vécu s'élargit."
+      "note": "Promesse de gains ↔ coûts cachés, érosion des compétences et rejet au travail ; la fracture entre discours et vécu s'élargit."
     },
     {
       "label": "Le front d'attaque se déplace : humain/dépendances → IA",
-      "note": "Supply chain classique en repli (16→7/sem) ↔ IA offensive en hausse (3→5) ; l'automatisation déplace le risque."
+      "note": "Supply chain classique en repli ↔ IA offensive en hausse (Meta AI détourné, PentesterFlow) et sandbox contournées ; le risque migre vers l'automatisation."
     },
     {
       "label": "Gros modèles vs IA locale",
-      "note": "Course aux frontières (Opus 4.8, Gemini) ↔ modèles compacts/edge (Gemma 4, MoE sur petit GPU) : centralisation vs décentralisation."
+      "note": "Course aux frontières (Opus 4.8, Gemini) ↔ modèles compacts/edge (Gemma 4, MoE, PromptPurify CPU) : centralisation vs décentralisation."
     },
     {
       "label": "Capacité des agents vs encadrement",
-      "note": "Agents de plus en plus autonomes (auto-amélioration) ↔ régulation et audits ; l'écart capacité/gouvernance se creuse."
+      "note": "Agents autonomes, mémoire unifiée et hardware agentique ↔ isolation (TakoVM), garde-fous compacts et régulation en repli ; l'écart se creuse."
     },
     {
       "label": "Microsoft ouvert vs verrouillé",
-      "note": "Embrasse Linux (Azure Linux, WSL, pg_durable) ↔ verrouille le commercial (fin des licences perpétuelles, tokens volés)."
+      "note": "Embrasse Linux (Azure Linux, WSL, pg_durable) ↔ M365 reste le chaînon faible (UNC5221, vishing) et verrouillage commercial."
+    },
+    {
+      "label": "Liberté académique vs contrôle politique",
+      "note": "Recherche biomédicale attaquée, chercheurs expulsés pour un texte ↔ politique de l'innovation et conformité ; la science devient dissidence."
     }
   ],
   "strategy_notes": [
-    "L'IA est transversale : elle structure l'actu IA mais aussi l'infosec (IA offensive) et la société (régulation, désenchantement). Croiser ces angles plutôt que les cloisonner.",
-    "Méfiance avec les plateaux bruyants (exploit actif, rétrocomputing) : volume élevé ≠ nouveauté. La valeur est dans la watchlist et les vrais montants (IA offensive, MS↔Linux).",
-    "Fenêtres de patch en chute libre : privilégier les 0-day exploités activement et les absences de patch (ex. Cisco SD-WAN) sur les CVE théoriques.",
-    "Signal-clé : le risque infosec migre de la supply chain humaine vers l'IA offensive autonome — suivre cette bascule de près.",
-    "Côté société, surveillance et déploiement IA avancent ; la régulation suit par à-coups (cyclique). Chercher les liens déploiement tech ↔ réponse réglementaire."
+    "L'IA structure l'actu IA, infosec (offensive), devops (mutation métier) et société (désenchantement) : croiser ces angles plutôt que les cloisonner.",
+    "Méfiance avec les plateaux bruyants ; la valeur est dans les montants confirmés (IA offensive, désenchantement) et les signaux faibles de la watchlist.",
+    "Le développeur mute de rôle : auteur de code à orchestrateur de contexte (sem, Netlify). Surveiller si c'est adoubement ou précarisation.",
+    "Identité cloud (M365) remplace le endpoint comme cible privilégiée : vishing, fileless, longue haleine. Le périmètre de sécurité doit bouger.",
+    "Recherche : doute sur le scaling law (diffusion sans entraînement, grokking). Si confirmé, changement de paradigme pour les ressources et la compétition."
   ],
   "updated_at": "2026-06-07"
 }

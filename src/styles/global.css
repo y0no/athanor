@@ -386,54 +386,153 @@ code {
 }
 
 /* Archive page */
+.archive-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 0 0 24px;
+}
 .archive-page h1 {
-  font-size: 32px;
-  margin: 0 0 32px;
+  font-size: 26px;
+  margin: 0;
   font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--ink-strong);
 }
-.archive-grid {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Calendar grid */
+.cal {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto;
+  grid-auto-rows: 4.5rem;
+  gap: 6px;
 }
-.archive-grid li {
-  background: var(--bg-card);
-  border: 1px solid var(--rule);
-  border-radius: 8px;
-  padding: 18px 20px;
-  transition: background 0.15s, border-color 0.15s;
-}
-.archive-grid li:hover {
-  background: var(--bg-card-hover);
-  border-color: var(--rule-strong);
-}
-.archive-grid .date {
-  font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
-  font-size: 11.5px;
+.cal-wd {
+  font-family: var(--font-mono);
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--accent);
-  margin-bottom: 6px;
+  color: var(--ink-faint);
+  text-align: center;
+  padding-bottom: 4px;
 }
-.archive-grid .title a {
-  color: var(--ink-strong);
+.cal-day {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 5px 7px;
+  border-radius: 8px;
+  border: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: 12.5px;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 15.5px;
-  line-height: 1.4;
+  overflow: hidden;
 }
-.archive-grid li:hover .title a { color: var(--accent-strong); }
-.archive-grid .count {
-  margin-top: 10px;
+.cal-day .d {
+  align-self: flex-end;
+  color: var(--ink-muted);
+  line-height: 1;
+}
+.cal-day.empty {
+  border-style: dashed;
+  border-color: color-mix(in srgb, var(--rule) 60%, transparent);
+}
+.cal-day.empty .d {
+  color: var(--ink-faint);
+  opacity: 0.5;
+}
+/* Days with a digest */
+a.cal-day {
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg-card));
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--rule));
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+}
+a.cal-day .d {
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+a.cal-day .hl {
+  font-family: var(--font-body);
+  font-size: 11px;
+  line-height: 1.25;
+  color: var(--ink-muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+a.cal-day:hover {
+  background: color-mix(in srgb, var(--accent) 22%, var(--bg-card));
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+a.cal-day:hover .hl { color: var(--ink); }
+@media (max-width: 560px) {
+  .cal { gap: 4px; grid-auto-rows: 2.75rem; }
+  a.cal-day .hl { display: none; }
+  .cal-day { padding: 5px 6px; font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  a.cal-day:hover { transform: none; }
+}
+.archive-meta {
+  margin: 6px 0 0;
   color: var(--ink-faint);
   font-size: 12.5px;
-  font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
+  letter-spacing: 0.04em;
 }
+
+/* Month switcher */
+.month-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ms-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--rule-strong);
+  background: var(--bg-card);
+  color: var(--ink-muted);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.ms-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+.ms-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.ms-select {
+  flex: 0 1 auto;
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--rule-strong);
+  background: var(--bg-card);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+.ms-select:hover { border-color: var(--accent); }
+
+/* Single-month mode (only when JS enabled) */
+.archive-months.js .month-panel { display: none; }
+.archive-months.js .month-panel.active { display: block; }
+.month-panel { margin-bottom: 44px; }
+.archive-months.js .month-panel { margin-bottom: 0; }
 
 footer.site-footer {
   margin-top: 72px;

@@ -1,7 +1,12 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { formatDateLong } from "../../utils/format";
+import {
+  formatDateLong,
+  formatMonthYear,
+  monthCalendar,
+  WEEKDAYS_FR,
+} from "../../utils/format";
 
 const all = await getCollection("digests");
 const sorted = all.sort((a, b) => b.data.date.localeCompare(a.data.date));
@@ -13,20 +18,114 @@ const totalSources = sorted.reduce((acc, e) => {
     0,
   );
 }, 0);
+
+// Group digests by "YYYY-MM" (descending), keyed by day for quick lookup.
+type Entry = (typeof sorted)[number];
+const months: { key: string; byDay: Map<number, Entry> }[] = [];
+for (const entry of sorted) {
+  const key = entry.data.date.slice(0, 7);
+  const day = Number(entry.data.date.slice(8, 10));
+  let bucket = months[months.length - 1];
+  if (!bucket || bucket.key !== key) {
+    bucket = { key, byDay: new Map() };
+    months.push(bucket);
+  }
+  bucket.byDay.set(day, entry);
+}
 ---
 <BaseLayout title="Archive — Athanor" description="Tous les digests publiés.">
   <div class="archive-page">
-    <h1>Archive</h1>
-    <ul class="archive-grid">
-      {sorted.map((entry) => (
-        <li>
-          <div class="date">{formatDateLong(entry.data.date)}</div>
-          <div class="title">
-            <a href={`${base}digest/${entry.data.date}/`}>{entry.data.headline}</a>
+    <header class="archive-head">
+      <div class="archive-title">
+        <h1>Archive</h1>
+        <p class="archive-meta">
+          {sorted.length} digests · {totalSources} sources
+        </p>
+      </div>
+
+      {months.length > 1 && (
+        <div class="month-switch" role="group" aria-label="Choisir un mois">
+          <button type="button" class="ms-btn ms-older" aria-label="Mois précédent">‹</button>
+          <select class="ms-select" aria-label="Mois">
+            {months.map((month) => (
+              <option value={month.key}>
+                {formatMonthYear(month.key)} ({month.byDay.size})
+              </option>
+            ))}
+          </select>
+          <button type="button" class="ms-btn ms-newer" aria-label="Mois suivant">›</button>
+        </div>
+      )}
+    </header>
+
+    <div class="archive-months">
+      {months.map((month, i) => (
+        <section class={`month-panel${i === 0 ? " active" : ""}`} id={month.key} data-month={month.key}>
+          <div class="cal" role="grid" aria-label={formatMonthYear(month.key)}>
+            {WEEKDAYS_FR.map((wd) => (
+              <div class="cal-wd" role="columnheader">{wd}</div>
+            ))}
+            {monthCalendar(month.key).flat().map((day) => {
+              if (day === null) return <div class="cal-pad" aria-hidden="true"></div>;
+              const entry = month.byDay.get(day);
+              if (!entry) {
+                return (
+                  <div class="cal-day empty" role="gridcell" aria-disabled="true">
+                    <span class="d">{day}</span>
+                  </div>
+                );
+              }
+              return (
+                <a
+                  class="cal-day"
+                  role="gridcell"
+                  href={`${base}digest/${entry.data.date}/`}
+                  title={entry.data.headline}
+                  aria-label={`${formatDateLong(entry.data.date)} — ${entry.data.headline}`}
+                >
+                  <span class="d">{day}</span>
+                  <span class="hl">{entry.data.headline}</span>
+                </a>
+              );
+            })}
           </div>
-          <div class="count">{entry.data.window.count}</div>
-        </li>
+        </section>
       ))}
-    </ul>
+    </div>
   </div>
+
+  <script is:inline>
+    // Enable single-month mode only when JS is available (no-JS shows all).
+    document.querySelector(".archive-months")?.classList.add("js");
+  </script>
 </BaseLayout>
+
+<script>
+  const container = document.querySelector<HTMLElement>(".archive-months");
+  const panels = Array.from(document.querySelectorAll<HTMLElement>(".month-panel"));
+  const select = document.querySelector<HTMLSelectElement>(".ms-select");
+  const older = document.querySelector<HTMLButtonElement>(".ms-older");
+  const newer = document.querySelector<HTMLButtonElement>(".ms-newer");
+
+  if (container && panels.length > 0) {
+    const keys = panels.map((p) => p.dataset.month!);
+    let index = 0; // 0 = most recent month
+
+    const show = (i: number) => {
+      index = Math.max(0, Math.min(panels.length - 1, i));
+      panels.forEach((p, n) => p.classList.toggle("active", n === index));
+      if (select) select.value = keys[index];
+      // Array is descending: older months are at higher indices.
+      if (older) older.disabled = index >= panels.length - 1;
+      if (newer) newer.disabled = index <= 0;
+    };
+
+    select?.addEventListener("change", () => show(keys.indexOf(select.value)));
+    older?.addEventListener("click", () => show(index + 1));
+    newer?.addEventListener("click", () => show(index - 1));
+
+    // Honor a #YYYY-MM hash on load (e.g. linked from elsewhere).
+    const fromHash = keys.indexOf(location.hash.slice(1));
+    show(fromHash >= 0 ? fromHash : 0);
+  }
+</script>

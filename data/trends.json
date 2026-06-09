@@ -9,27 +9,19 @@
       "note": "VibeOS premier OS natif IA, last30days-skill et open-code-review confirment l'agent comme couche logicielle standard du kernel au workflow."
     },
     {
-      "label": "Mémoire & contexte des agents",
-      "category": "ia",
-      "first_seen": "2026-05-14",
-      "last_seen": "2026-06-07",
-      "momentum": "stable",
-      "note": "UMP standardise la mémoire portable signée bi-temporelle. La brique d'interopérabilité manquante se met en place."
-    },
-    {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-08",
+      "last_seen": "2026-06-09",
       "momentum": "stable",
-      "note": "DeepSeek V4 Pro dépasse GPT-5.5 Pro en précision ; le monopole cloud des modèles frontière vacille face à l'efficience algorithmique."
+      "note": "Apple baisse les coûts pour les petits devs ; Glasswing et le blocage de l'Archive témoignent d'une PMF qui peine à résoudre la confiance."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
       "last_seen": "2026-06-08",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Surface RTX Spark Dev Box porte l'IA frontière en local (~1 PF, 120B params) ; la course au hardware dédié accélère."
     },
     {
@@ -37,103 +29,95 @@
       "category": "ia",
       "first_seen": "2026-06-07",
       "last_seen": "2026-06-08",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Modèles de diffusion single-image sans entraînement et percées de DeepSeek confirment que l'efficience redistribue les cartes."
     },
     {
       "label": "IA offensive",
       "category": "infosec",
       "first_seen": "2026-05-24",
-      "last_seen": "2026-06-08",
+      "last_seen": "2026-06-09",
       "momentum": "montant",
-      "note": "Claude Opus 4.8 sur Zcash, PentesterFlow, rusty-bof-pe : l'automatisation offensive gagne en maturité et en spécialisation."
+      "note": "Automatisation offensive (Zcash, scams 900M$) et détournement des marques IA ; le vibe coding creuse la dette sécuritaire."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-08",
+      "last_seen": "2026-06-09",
       "momentum": "stable",
-      "note": "Triptyque furtif : EDRChoker (aveuglement EDR), EtherLeak (exfiltration réseau), UNC5221 (18 mois M365) et C0XMO (IoT DD-WRT obsolète)."
-    },
-    {
-      "label": "Attaques supply chain open-source",
-      "category": "infosec",
-      "first_seen": "2026-05-13",
-      "last_seen": "2026-06-07",
-      "momentum": "déclin",
-      "note": "#1 infosec historique mais en repli mesuré ; pic mi-mai (Megalodon), reflux depuis."
+      "note": "Check Point IKEv1 contourné un mois durant, UAF Linux kernel nf_tables exploit public : délais de patch et protocoles dépréciés structurels."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-08",
+      "last_seen": "2026-06-09",
       "momentum": "montant",
-      "note": "open-code-review hybride Alibaba et last30days-skill confirment le shift : le dev devient architecte de contexte pour agents."
+      "note": "Vibe coding généralisé sans gouvernance sécurité ; le dev glisse du code à l'orchestration d'automates et de sandboxes."
     },
     {
-      "label": "Convergence Microsoft ↔ Linux",
+      "label": "Isolation et sandboxing : du poste au réseau",
       "category": "devops",
-      "first_seen": "2026-05-19",
-      "last_seen": "2026-06-06",
-      "momentum": "stable",
-      "note": "Hausse nette : distro serveur, Azure Linux 4.0, WSL2, pg_durable open-sourcé. Microsoft embrasse Linux côté stack."
+      "first_seen": "2026-06-07",
+      "last_seen": "2026-06-09",
+      "momentum": "montant",
+      "note": "Greywall, Cilium eBPF et Win11Debloat confirment que l'isolation outil/réseau/poste devient primitive de sécurité par défaut."
     },
     {
-      "label": "Durable execution (Postgres/SQLite)",
+      "label": "Langages systèmes compilés et zero-dependency",
       "category": "devops",
-      "first_seen": "2026-05-29",
-      "last_seen": "2026-06-06",
-      "momentum": "stable",
-      "note": "Pattern workflows durables SQLite/Postgres, Streambed, pg_durable. Émergent, à confirmer mais signal structurel."
+      "first_seen": "2026-06-07",
+      "last_seen": "2026-06-09",
+      "momentum": "montant",
+      "note": "Rust, Zig et Mach convergent vers des toolchains statiques et zero-dependency ; le runtime interprété recule face à la compilation native."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-08",
+      "last_seen": "2026-06-09",
       "momentum": "stable",
-      "note": "IBM 604, PC Engine LT, gramophone Bluetooth, APC-2 : la préservation matérielle et logicielle reste un socle DIY actif."
+      "note": "Reverse engineering TI-84, DOOM en COBOL, hardware obsolète réanimé : la préservation devient activement créative."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-07",
+      "last_seen": "2026-06-09",
       "momentum": "stable",
-      "note": "Netlify CTO acte la fin du code pur ; témoignages d'érosion, chômage diplômés US, rejet citoyen smartphones IA."
+      "note": "Témoignages d'érosion des métiers, blocage de l'Archive et appel à pause : le rejet s'institutionnalise."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-08",
+      "last_seen": "2026-06-09",
       "momentum": "montant",
-      "note": "SDSU déploie 1300 caméras IA dont 330 dans les chambres ; les monocultures algorithmiques du recrutement standardisent le tri."
+      "note": "Résistance privacy structurale (Signal, Massachusetts, C-22) contre l'expansion de la surveillance ; la biométrie fait face à une riposte."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-07",
-      "momentum": "déclin",
-      "note": "Pic mi-mai puis repli (5/sem). EU, vérification âge, audits IA. Possiblement cyclique."
+      "last_seen": "2026-06-09",
+      "momentum": "montant",
+      "note": "Appel à pause mondiale de l'IA, C-22 et vérification d'âge : la régulation resurgit sous la pression des risques et de la résistance."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-08",
+      "last_seen": "2026-06-09",
       "momentum": "montant",
-      "note": "Ripping DVD à 22$, gamers contre extinction des jeux, article Science sur les risques démocratiques d'Internet : la riposte s'organise."
+      "note": "Internets parallèles, radio artisanale et compartimentation d'identité : l'autonomie technique devient infrastructure de contournement."
     },
     {
       "label": "Liberté académique et politisation de la recherche",
       "category": "societe",
       "first_seen": "2026-06-07",
       "last_seen": "2026-06-08",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Diabetes Care dénonce le démantèlement politique ; chercheurs expulsés pour des tirés-à-part. La liberté est sanctionnée physiquement."
     }
   ],
@@ -154,25 +138,13 @@
       "label": "io_uring & primitives kernel",
       "category": "infosec",
       "since": "2026-06-05",
-      "note": "Lecture mémoire kernel Linux via io_uring ; surface d'attaque sous-estimée."
+      "note": "nf_tables UAF public confirme que les primitives kernel (io_uring inclus) restent sous-estimées ; la surface d'attaque noyau s'élargit."
     },
     {
       "label": "Reconnaissance faciale embarquée (lunettes)",
       "category": "societe",
       "since": "2026-06-05",
       "note": "Meta intègre la reco faciale à ses lunettes : bascule privacy vers surveillance ambiante."
-    },
-    {
-      "label": "WASM comme sandbox autohébergé",
-      "category": "devops",
-      "since": "2026-06-07",
-      "note": "Kyushu confirme le sandbox WASM autohébergé ; substitut au conteneur à surface réduite pour l'isolation."
-    },
-    {
-      "label": "Builds zero-dependency",
-      "category": "devops",
-      "since": "2026-06-07",
-      "note": "Port sqlite sans CGo, binaires Go statiques ; élimination de libc comme tendance de portabilité."
     },
     {
       "label": "Rust comme socle offensif",
@@ -185,28 +157,40 @@
       "category": "diy",
       "since": "2026-06-08",
       "note": "LIPS, QuadRF et dessalement solaire comblent des vides laissés par l'industrie : accessibilité, radio et écotech."
+    },
+    {
+      "label": "Protocoles dépréciés comme vecteurs persistants",
+      "category": "infosec",
+      "since": "2026-06-09",
+      "note": "IKEv1 Check Point montre que les protocoles legacy restent des portes d'entrée critiques malgré les mises à jour."
+    },
+    {
+      "label": "Guerre du scraping IA contre archives web",
+      "category": "societe",
+      "since": "2026-06-09",
+      "note": "Blocage de l'Internet Archive par les médias : le scraping IA menace la préservation numérique et la mémoire collective."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Promesse de gains ↔ coûts cachés, érosion des compétences et rejet au travail ; la fracture entre discours et vécu s'élargit."
+      "note": "Promesse de gains ↔ coûts cachés, érosion des compétences et rejet au travail ; la fracture s'élargit avec le vibe coding sans sécurité."
     },
     {
       "label": "Le front d'attaque se déplace : humain/dépendances → IA",
-      "note": "Supply chain classique en repli ↔ IA offensive en hausse (audit Zcash, PentesterFlow) et sandbox contournées ; le risque migre vers l'automatisation."
+      "note": "Exploitation de protocoles dépréciés et kernel UAF ↔ IA offensive (Zcash, scams 900M$) ; le risque migre vers l'automatisation."
     },
     {
       "label": "Gros modèles vs IA locale",
-      "note": "Course aux frontières ↔ modèles compacts/edge et recherche sans entraînement ; centralisation vs décentralisation."
+      "note": "Apple mise sur Gemini cloud et CoreAI ↔ modèles compacts/edge ; centralisation et externalisation l'emportent sur l'agent local."
     },
     {
       "label": "Capacité des agents vs encadrement",
-      "note": "Agents autonomes, mémoire unifiée et hardware agentique ↔ isolation (TakoVM), garde-fous compacts et régulation en repli ; l'écart se creuse."
+      "note": "Glasswing promet un audit IA universel mais Schneier dénonce l'opacité ; Anthropic réclame une pause sans freiner sa course."
     },
     {
-      "label": "Microsoft ouvert vs verrouillé",
-      "note": "Embrasse Linux (Azure Linux, WSL, pg_durable) ↔ M365 reste le chaînon faible (UNC5221, vishing) et verrouillage commercial."
+      "label": "Surveillance d'État vs autonomie citoyenne",
+      "note": "Massachusetts et Signal ripostent aux monocultures de données ↔ C-22, FICOBA et vérification d'âge étendent la collecte ; la privacy devient politique."
     },
     {
       "label": "Liberté académique vs contrôle politique",
@@ -214,10 +198,10 @@
     }
   ],
   "strategy_notes": [
-    "Croiser agent autonome et offensive IA : le cycle audit-exploitation sans humain se profile et pose la question de la responsabilité légale.",
-    "DeepSeek V4 Pro et Surface RTX Spark confirment que l'efficience redistribue les cartes entre cloud et edge ; ne pas sous-estimer la fracture.",
-    "SDSU et les monocultures de recrutement algorithmique montrent que la surveillance progresse là où le consentement est faible ; lier avec la résistance DIY.",
-    "Le hardware marginal (Pico 2W, DD-WRT) est à la fois outil DIY et surface d'attaque : une zone grise stratégique à surveiller."
+    "Apple mise sur Gemini cloud pendant que les attaquants exploitent les marques IA (Meta, LiteLLM) ; la surface d'attaque suit l'adoption.",
+    "L'isolation outil/réseau gagne du terrain (Greywall, Cilium) comme réponse transverse aux failles kernel et à la surveillance de masse.",
+    "Signal menace de quitter le Canada et Massachusetts interdit la vente de localisation : la privacy devient ligne de fracture commerciale.",
+    "Vibe coding et agent autonome (Glasswing) creusent l'écart entre capacité IA et garde-fous ; la responsabilité légale reste en suspens."
   ],
-  "updated_at": "2026-06-08"
+  "updated_at": "2026-06-09"
 }

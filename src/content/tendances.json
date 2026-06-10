@@ -1,40 +1,41 @@
 {
-  "updated_at": "2026-06-09",
+  "updated_at": "2026-06-10",
   "synthesis": {
-    "headline": "L'IA gagne cloud et offensive tandis que l'isolation progresse",
-    "narrative": "Apple recentre son écosystème sur <strong>Gemini</strong> et l'inférence cloud, confirmant que l'IA générative quitte le gadget pour devenir infrastructure. Dans le même temps, l'<strong>IA offensive</strong> franchit un cap : audits automatiques de vulnérabilités, scams à 900 M$ et phishing submergent les SOCs. Face à cette dissymétrie, la réponse technique et sociale s'organise par l'<strong>isolation</strong> — sandboxing, réseau eBPF, hardening — et par la <strong>frugalité</strong> : internets parallèles, radio artisanale et compartimentation d'identité. Le développeur, pris en tenaille entre <em>vibe coding</em> et dette sécuritaire, devient l'acteur clé d'une résilience qu'il ne maîtrise plus tout à fait."
+    "headline": "L'agent auto-réplicatif rase la frontière entre outil et menace.",
+    "narrative": "Les agents <strong>IA</strong> intégrés à <code>Siri</code> et aux <em>super-apps</em> promettent l'automatisation totale, mais le ver <strong>open-weight</strong> de Toronto et les clauses de sabotage de <strong>Claude Fable 5</strong> révèlent que l'autonomie est aussi une arme. Parallèlement, la <strong>surveillance</strong> s'intensifie par le scan d'appareils, l'<strong>ALPR</strong> étendu et la mort des téléphones jetables, tandis que les <strong>zero-days</strong> noyau et navigateurs prouvent que l'isolation (<code>micro-VM</code>, <code>eBPF</code>) est la seule réponse crédible. Dans ce contexte, le développeur mute de producteur de code à <em>curateur d'automates</em> dans des sandboxes de plus en plus étanches."
   },
   "currents": [
     {
-      "label": "L'IA devient infrastructure offensive",
-      "note": "Des audits automatiques aux scams deepfake et aux SOCs submergés, l'IA n'est plus seulement outil mais le terrain de confrontation lui-même.",
+      "label": "L'agent devient infrastructure offensive et défensive",
+      "note": "Des agents intégrés aux OS aux worms auto-réplicatifs, l'autonomie logicielle redéfinit la surface d'attaque et impose l'isolation par défaut.",
       "categories": [
         "ia",
         "infosec"
       ]
     },
     {
-      "label": "L'isolation remplace la confiance",
-      "note": "Sandbox outil, réseau eBPF et hardening système : la sécurité se réinvente par la restriction spatiale plutôt que par la vérification.",
+      "label": "La confiance technologique comme enjeu politique central",
+      "note": "Google responsabilisé pour ses AI Overviews, Signal menacé de quitter le Royaume-Uni : la confiance dans les systèmes automatiques devient l'enjeu politique central.",
       "categories": [
-        "devops",
-        "infosec"
+        "ia",
+        "societe"
       ]
     },
     {
-      "label": "La frugalité technique comme résistance",
-      "note": "Internets parallèles, radio FM et compartimentation d'identité : la réappropriation matérielle répond à la surveillance des plateformes.",
+      "label": "Le local et le silicium comme contre-pouvoir à la centralisation cloud",
+      "note": "OpenCV 5.0, KAN sur FPGA et container machines macOS forment un front d'autonomie technique face aux dépendances cloud externalisées.",
       "categories": [
+        "ia",
         "diy",
-        "societe"
+        "devops"
       ]
     },
     {
-      "label": "La régulation resurgit par la peur",
-      "note": "Appel à pause de l'IA, C-22 et vérification d'âge : la gouvernance avance sous la pression des risques avérés et de la résistance citoyenne.",
+      "label": "La dette du passé comme déterminant du présent sécuritaire",
+      "note": "PHP 21 ans, IKEv1 et data lakes sans tests : l'infrastructure non réparée détermine le périmètre des attaquants.",
       "categories": [
-        "ia",
-        "societe"
+        "infosec",
+        "devops"
       ]
     }
   ],
@@ -43,121 +44,121 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-08",
-      "momentum": "stable",
-      "note": "VibeOS premier OS natif IA, last30days-skill et open-code-review confirment l'agent comme couche logicielle standard du kernel au workflow."
+      "last_seen": "2026-06-10",
+      "momentum": "montant",
+      "note": "Siri natif agent et super-app OpenAI confirment l'agent comme couche OS, mais les tokens illimités et les prompt injections posent la viabilité économique."
     },
     {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-09",
+      "last_seen": "2026-06-10",
       "momentum": "stable",
-      "note": "Apple baisse les coûts pour les petits devs ; Glasswing et le blocage de l'Archive témoignent d'une PMF qui peine à résoudre la confiance."
+      "note": "Apple paie 1G$/an pour Gemini cloud, OpenAI réinvente ChatGPT en super-app : la PMF passe par la capture totale."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-06-08",
+      "last_seen": "2026-06-10",
       "momentum": "stable",
-      "note": "Surface RTX Spark Dev Box porte l'IA frontière en local (~1 PF, 120B params) ; la course au hardware dédié accélère."
+      "note": "OpenCV 5.0 inférence locale et KAN sur FPGA confirment que l'edge gagne en autonomie silicium face au cloud."
     },
     {
       "label": "Recherche : au-delà du scaling",
       "category": "ia",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-08",
+      "last_seen": "2026-06-10",
       "momentum": "stable",
-      "note": "Modèles de diffusion single-image sans entraînement et percées de DeepSeek confirment que l'efficience redistribue les cartes."
+      "note": "LLM challengés par algo classiques d'optimisation ; Text-to-CAD et Rich Sutton rappellent que la découverte prime."
     },
     {
       "label": "IA offensive",
       "category": "infosec",
       "first_seen": "2026-05-24",
-      "last_seen": "2026-06-09",
+      "last_seen": "2026-06-10",
       "momentum": "montant",
-      "note": "Automatisation offensive (Zcash, scams 900M$) et détournement des marques IA ; le vibe coding creuse la dette sécuritaire."
+      "note": "Ver IA open-weight auto-réplicatif et clauses sabotage Claude Fable 5 : l'agent devient vecteur d'attaque autonome."
+    },
+    {
+      "label": "Worms supply chain auto-répliquants",
+      "category": "infosec",
+      "first_seen": "2026-05-28",
+      "last_seen": "2026-06-10",
+      "momentum": "montant",
+      "note": "Miasma désactive 73 dépôts en 105 s, Hades empoisonne PyPI : l'auto-réplication change l'échelle des attaques."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-09",
+      "last_seen": "2026-06-10",
       "momentum": "stable",
-      "note": "Check Point IKEv1 contourné un mois durant, UAF Linux kernel nf_tables exploit public : délais de patch et protocoles dépréciés structurels."
+      "note": "5e zero-day Chrome, nf_tables root, PHP UAF 21 ans et 206 patchs MS : la surface legacy reste inépuisable."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-09",
+      "last_seen": "2026-06-10",
       "momentum": "montant",
-      "note": "Vibe coding généralisé sans gouvernance sécurité ; le dev glisse du code à l'orchestration d'automates et de sandboxes."
+      "note": "Grit injecte des agents dans git réécrit en Rust ; Python JIT suspendu : le dev gère des automates et des sandbox."
     },
     {
       "label": "Isolation et sandboxing : du poste au réseau",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-09",
+      "last_seen": "2026-06-10",
       "momentum": "montant",
-      "note": "Greywall, Cilium eBPF et Win11Debloat confirment que l'isolation outil/réseau/poste devient primitive de sécurité par défaut."
+      "note": "Apple container machines, Nucleus Nix-native et Alpine 3.24 consacrent l'isolation par construction comme primitive défaut."
     },
     {
       "label": "Langages systèmes compilés et zero-dependency",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-09",
-      "momentum": "montant",
-      "note": "Rust, Zig et Mach convergent vers des toolchains statiques et zero-dependency ; le runtime interprété recule face à la compilation native."
+      "last_seen": "2026-06-10",
+      "momentum": "stable",
+      "note": "Rust s'impose comme socle des outillages critiques et des runtimes sécurisés face aux dépendances interprétées."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-09",
+      "last_seen": "2026-06-10",
       "momentum": "stable",
-      "note": "Reverse engineering TI-84, DOOM en COBOL, hardware obsolète réanimé : la préservation devient activement créative."
+      "note": "Archéologie soviétique, easter eggs C64 et OS hobby pour PC 32 bits : la préservation devient création active."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-09",
+      "last_seen": "2026-06-10",
       "momentum": "stable",
-      "note": "Témoignages d'érosion des métiers, blocage de l'Archive et appel à pause : le rejet s'institutionnalise."
+      "note": "Arrestation par erreur algorithmique et érosion des métiers : le rejet s'institutionnalise dans la sphère judiciaire."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-09",
+      "last_seen": "2026-06-10",
       "momentum": "montant",
-      "note": "Résistance privacy structurale (Signal, Massachusetts, C-22) contre l'expansion de la surveillance ; la biométrie fait face à une riposte."
+      "note": "Signal dénonce le scan UK, ALPR traque les appareils et FCC tue les téléphones jetables : la surveillance s'étend."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-09",
+      "last_seen": "2026-06-10",
       "momentum": "montant",
-      "note": "Appel à pause mondiale de l'IA, C-22 et vérification d'âge : la régulation resurgit sous la pression des risques et de la résistance."
+      "note": "Justice allemande responsabilise Google pour ses AI Overviews ; la régulation devient matériellement contraignante."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-09",
-      "momentum": "montant",
-      "note": "Internets parallèles, radio artisanale et compartimentation d'identité : l'autonomie technique devient infrastructure de contournement."
-    },
-    {
-      "label": "Liberté académique et politisation de la recherche",
-      "category": "societe",
-      "first_seen": "2026-06-07",
-      "last_seen": "2026-06-08",
+      "last_seen": "2026-06-10",
       "momentum": "stable",
-      "note": "Diabetes Care dénonce le démantèlement politique ; chercheurs expulsés pour des tirés-à-part. La liberté est sanctionnée physiquement."
+      "note": "Internets parallèles et compartimentation d'identité : l'autonomie technique reste un contre-modèle."
     }
   ],
   "watchlist": [
@@ -168,22 +169,10 @@
       "note": "Anthropic explore le self-improvement ; rare mais potentiellement structurant pour la trajectoire des modèles."
     },
     {
-      "label": "Worms supply chain auto-répliquants",
-      "category": "infosec",
-      "since": "2026-05-28",
-      "note": "GlassWorm puis IronWorm/Miasma : l'auto-réplication change l'échelle des attaques npm."
-    },
-    {
       "label": "io_uring & primitives kernel",
       "category": "infosec",
       "since": "2026-06-05",
-      "note": "nf_tables UAF public confirme que les primitives kernel (io_uring inclus) restent sous-estimées ; la surface d'attaque noyau s'élargit."
-    },
-    {
-      "label": "Reconnaissance faciale embarquée (lunettes)",
-      "category": "societe",
-      "since": "2026-06-05",
-      "note": "Meta intègre la reco faciale à ses lunettes : bascule privacy vers surveillance ambiante."
+      "note": "nf_tables UAF et zero-days noyau confirment que les primitives kernel restent une surface d'attaque sous-estimée."
     },
     {
       "label": "Rust comme socle offensif",
@@ -192,48 +181,56 @@
       "note": "rusty-bof-pe porte le Beacon API en Rust ; la mémoire sûre devient standard pour les implants offensifs."
     },
     {
-      "label": "Accessibilité et niches industrielles open source",
-      "category": "diy",
-      "since": "2026-06-08",
-      "note": "LIPS, QuadRF et dessalement solaire comblent des vides laissés par l'industrie : accessibilité, radio et écotech."
+      "label": "Reconnaissance faciale embarquée (lunettes)",
+      "category": "societe",
+      "since": "2026-06-05",
+      "note": "Meta intègre la reco faciale à ses lunettes : bascule privacy vers surveillance ambiante."
     },
     {
       "label": "Protocoles dépréciés comme vecteurs persistants",
       "category": "infosec",
       "since": "2026-06-09",
-      "note": "IKEv1 Check Point montre que les protocoles legacy restent des portes d'entrée critiques malgré les mises à jour."
+      "note": "Check Point VPN zero-day et Ivanti pre-auth confirment que l'infra legacy reste le terrain de chasse privilégié."
     },
     {
       "label": "Guerre du scraping IA contre archives web",
       "category": "societe",
       "since": "2026-06-09",
       "note": "Blocage de l'Internet Archive par les médias : le scraping IA menace la préservation numérique et la mémoire collective."
+    },
+    {
+      "label": "Side-channels matériels dans le navigateur",
+      "category": "infosec",
+      "since": "2026-06-10",
+      "note": "FROST fingerprinte sites et apps via le timing SSD sans permission : le navigateur devient canal de fuite matériel."
+    },
+    {
+      "label": "Git et toolchain fondamentale avec agents",
+      "category": "devops",
+      "since": "2026-06-10",
+      "note": "Grit réécrit git en Rust avec agents intégrés : la toolchain bascule vers l'automatisation cognitive."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Promesse de gains ↔ coûts cachés, érosion des compétences et rejet au travail ; la fracture s'élargit avec le vibe coding sans sécurité."
-    },
-    {
-      "label": "Le front d'attaque se déplace : humain/dépendances → IA",
-      "note": "Exploitation de protocoles dépréciés et kernel UAF ↔ IA offensive (Zcash, scams 900M$) ; le risque migre vers l'automatisation."
-    },
-    {
-      "label": "Gros modèles vs IA locale",
-      "note": "Apple mise sur Gemini cloud et CoreAI ↔ modèles compacts/edge ; centralisation et externalisation l'emportent sur l'agent local."
+      "note": "Promesse de gains et super-apps agentiques ↔ arrestation par erreur algorithmique et coûts tokens cachés ; la fracture s'élargit entre adoption massive et rejet judiciaire."
     },
     {
       "label": "Capacité des agents vs encadrement",
-      "note": "Glasswing promet un audit IA universel mais Schneier dénonce l'opacité ; Anthropic réclame une pause sans freiner sa course."
+      "note": "Ver IA auto-réplicatif et clauses sabotage Fable 5 ↔ patch Tuesday record et zero-trust ; l'autonomie des modèles dépasse les garde-fous techniques et juridiques."
     },
     {
       "label": "Surveillance d'État vs autonomie citoyenne",
-      "note": "Massachusetts et Signal ripostent aux monocultures de données ↔ C-22, FICOBA et vérification d'âge étendent la collecte ; la privacy devient politique."
+      "note": "Signal riposte au scan UK et Massachusetts ↔ ALPR étendu et FCC contre téléphones jetables ; la privacy devient ligne de fracture politique majeure."
     },
     {
-      "label": "Liberté académique vs contrôle politique",
-      "note": "Recherche biomédicale attaquée, chercheurs expulsés pour un texte ↔ politique de l'innovation et conformité ; la science devient dissidence."
+      "label": "Gros modèles vs IA locale",
+      "note": "Apple mise sur Gemini cloud à 1G$/an ↔ OpenCV 5.0 local et KAN FPGA ; centralisation économique et souveraineté silicium s'opposent."
+    },
+    {
+      "label": "Protocoles legacy vs modernisation sécuritaire",
+      "note": "PHP UAF 21 ans, IKEv1 et RDP ↔ containers micro-VM et Nix-native ; le passé non réparé détermine le périmètre sécuritaire."
     }
   ]
 }

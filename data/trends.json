@@ -4,89 +4,89 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-10",
+      "last_seen": "2026-06-11",
       "momentum": "montant",
-      "note": "Siri natif agent et super-app OpenAI confirment l'agent comme couche OS, mais les tokens illimités et les prompt injections posent la viabilité économique."
+      "note": "agent dérape dans Fedora, iOS 27 navigue seul dans Safari pour remplacer les mots de passe, et un virement de 0,01 € compromet l'agent bancaire bunq."
     },
     {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-10",
+      "last_seen": "2026-06-11",
       "momentum": "stable",
-      "note": "Apple paie 1G$/an pour Gemini cloud, OpenAI réinvente ChatGPT en super-app : la PMF passe par la capture totale."
+      "note": "Meta bâtit des datacenters sous tente pour l'IA, Anthropic monetise Mythos 5 via AWS Bedrock avec collecte des données cyberdéfense sur 30 jours."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-06-10",
+      "last_seen": "2026-06-11",
       "momentum": "stable",
-      "note": "OpenCV 5.0 inférence locale et KAN sur FPGA confirment que l'edge gagne en autonomie silicium face au cloud."
+      "note": "Raspberry Pi 5 16 Go rapproche l'edge du micro-serveur sans bouleverser le paradigme local."
     },
     {
       "label": "Recherche : au-delà du scaling",
       "category": "ia",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-10",
+      "last_seen": "2026-06-11",
       "momentum": "stable",
-      "note": "LLM challengés par algo classiques d'optimisation ; Text-to-CAD et Rich Sutton rappellent que la découverte prime."
+      "note": "déficit de contrôle exécutif dans l'attention (PNAS) et DiffusionGemma (4× plus rapide, non autorégressif) confirment la quête de paradigmes post-transformer."
     },
     {
       "label": "IA offensive",
       "category": "infosec",
       "first_seen": "2026-05-24",
-      "last_seen": "2026-06-10",
+      "last_seen": "2026-06-11",
       "momentum": "montant",
-      "note": "Ver IA open-weight auto-réplicatif et clauses sabotage Claude Fable 5 : l'agent devient vecteur d'attaque autonome."
+      "note": "ver IA raisonnant en temps réel, SQL Server 2025 weaponisé en canal C2, CISA BOD 26-04 réoriente la politique fédérale face aux modèles frontier."
     },
     {
       "label": "Worms supply chain auto-répliquants",
       "category": "infosec",
       "first_seen": "2026-05-28",
-      "last_seen": "2026-06-10",
-      "momentum": "montant",
-      "note": "Miasma désactive 73 dépôts en 105 s, Hades empoisonne PyPI : l'auto-réplication change l'échelle des attaques."
+      "last_seen": "2026-06-11",
+      "momentum": "stable",
+      "note": "npm 12 désactive les scripts auto comme contre-mesure structurelle, mais aucun nouveau worm signalé ce jour."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-10",
-      "momentum": "stable",
-      "note": "5e zero-day Chrome, nf_tables root, PHP UAF 21 ans et 206 patchs MS : la surface legacy reste inépuisable."
+      "last_seen": "2026-06-11",
+      "momentum": "montant",
+      "note": "record de 206 correctifs Microsoft, mais surtout Arista EOS et Langflow sans patch : l'absence de remède devient vecteur stratégique."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-10",
+      "last_seen": "2026-06-11",
       "momentum": "montant",
-      "note": "Grit injecte des agents dans git réécrit en Rust ; Python JIT suspendu : le dev gère des automates et des sandbox."
+      "note": "Apple Container 1.0 et npm 12 imposent au développeur de maîtriser les sandbox et permissions explicites plutôt que le code pur."
     },
     {
       "label": "Isolation et sandboxing : du poste au réseau",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-10",
+      "last_seen": "2026-06-11",
       "momentum": "montant",
-      "note": "Apple container machines, Nucleus Nix-native et Alpine 3.24 consacrent l'isolation par construction comme primitive défaut."
+      "note": "Apple Container 1.0 apporte les micro-VM légères sur Mac, npm 12 étend l'isolation par défaut à la supply chain JavaScript."
     },
     {
       "label": "Langages systèmes compilés et zero-dependency",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-10",
+      "last_seen": "2026-06-11",
       "momentum": "stable",
-      "note": "Rust s'impose comme socle des outillages critiques et des runtimes sécurisés face aux dépendances interprétées."
+      "note": "NRSC5 Studio en Rust/egui et Apple Container en Swift confirment les langages compilés pour les outils critiques."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-10",
+      "last_seen": "2026-06-11",
       "momentum": "stable",
-      "note": "Archéologie soviétique, easter eggs C64 et OS hobby pour PC 32 bits : la préservation devient création active."
+      "note": "Power Mac G4 USB 2.0, récupération batteries Nissan Leaf et lecteur VCR Pi pour CRT : la récupération hardware s'accélère."
     },
     {
       "label": "Désenchantement IA au travail",
@@ -94,52 +94,34 @@
       "first_seen": "2026-05-13",
       "last_seen": "2026-06-10",
       "momentum": "stable",
-      "note": "Arrestation par erreur algorithmique et érosion des métiers : le rejet s'institutionnalise dans la sphère judiciaire."
+      "note": "pas d'actualisation directe aujourd'hui ; le thème reste sur les précédents signaux judiciaires et économiques."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-10",
+      "last_seen": "2026-06-11",
       "momentum": "montant",
-      "note": "Signal dénonce le scan UK, ALPR traque les appareils et FCC tue les téléphones jetables : la surveillance s'étend."
+      "note": "eSpectre transforme un ESP32 à 10 € en capteur de mouvement Wi-Fi sans caméra, Green Bank offre un contre-modèle technique."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-10",
+      "last_seen": "2026-06-11",
       "momentum": "montant",
-      "note": "Justice allemande responsabilise Google pour ses AI Overviews ; la régulation devient matériellement contraignante."
+      "note": "Apple retourne le DMA pour bloquer Siri IA en Europe, Amnesty et LDH montent au créneau éthique."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-10",
+      "last_seen": "2026-06-11",
       "momentum": "stable",
-      "note": "Internets parallèles et compartimentation d'identité : l'autonomie technique reste un contre-modèle."
+      "note": "Green Bank zone sans ondes, SDR amateur et récupération EV comme modes de résistance technique."
     }
   ],
   "watchlist": [
-    {
-      "label": "Auto-amélioration récursive de l'IA",
-      "category": "ia",
-      "since": "2026-06-05",
-      "note": "Anthropic explore le self-improvement ; rare mais potentiellement structurant pour la trajectoire des modèles."
-    },
-    {
-      "label": "io_uring & primitives kernel",
-      "category": "infosec",
-      "since": "2026-06-05",
-      "note": "nf_tables UAF et zero-days noyau confirment que les primitives kernel restent une surface d'attaque sous-estimée."
-    },
-    {
-      "label": "Rust comme socle offensif",
-      "category": "infosec",
-      "since": "2026-06-08",
-      "note": "rusty-bof-pe porte le Beacon API en Rust ; la mémoire sûre devient standard pour les implants offensifs."
-    },
     {
       "label": "Reconnaissance faciale embarquée (lunettes)",
       "category": "societe",
@@ -153,10 +135,10 @@
       "note": "Check Point VPN zero-day et Ivanti pre-auth confirment que l'infra legacy reste le terrain de chasse privilégié."
     },
     {
-      "label": "Guerre du scraping IA contre archives web",
-      "category": "societe",
-      "since": "2026-06-09",
-      "note": "Blocage de l'Internet Archive par les médias : le scraping IA menace la préservation numérique et la mémoire collective."
+      "label": "Rust comme socle offensif",
+      "category": "infosec",
+      "since": "2026-06-08",
+      "note": "rusty-bof-pe porte le Beacon API en Rust ; la mémoire sûre devient standard pour les implants offensifs."
     },
     {
       "label": "Side-channels matériels dans le navigateur",
@@ -169,6 +151,24 @@
       "category": "devops",
       "since": "2026-06-10",
       "note": "Grit réécrit git en Rust avec agents intégrés : la toolchain bascule vers l'automatisation cognitive."
+    },
+    {
+      "label": "IA weaponisée dans les bases de données d'entreprise",
+      "category": "infosec",
+      "since": "2026-06-10",
+      "note": "SQL Server 2025 weaponisé en canal C2 et exfiltration : les features IA deviennent surface d'attaque interne."
+    },
+    {
+      "label": "Diffusion textuelle et architectures post-transformer",
+      "category": "ia",
+      "since": "2026-06-11",
+      "note": "DiffusionGemma et deficits d'attention PNAS : la recherche s'oriente vers des architectures non autorégressives."
+    },
+    {
+      "label": "Politique publique réactive aux modèles frontier",
+      "category": "societe",
+      "since": "2026-06-10",
+      "note": "Amodei et CISA BOD 26-04 : les modèles frontier forcent les États à réécrire leurs cadres de sécurité et de politique."
     }
   ],
   "tensions": [
@@ -191,13 +191,17 @@
     {
       "label": "Protocoles legacy vs modernisation sécuritaire",
       "note": "PHP UAF 21 ans, IKEv1 et RDP ↔ containers micro-VM et Nix-native ; le passé non réparé détermine le périmètre sécuritaire."
+    },
+    {
+      "label": "Régulation protectrice vs protectionnisme déguisé",
+      "note": "Apple invoque le DMA pour bloquer Siri IA, Bruxelles dénonce un prétexte ; la régulation devient champ de bataille économique et géopolitique."
     }
   ],
   "strategy_notes": [
-    "L'arrivée du ver IA sur modèles locaux croise la tendance supply chain (Miasma) : surveiller l'émergence d'un écosystème offensif totalement autonome sans infrastructure C2.",
-    "Apple externalise son intelligence à Google pendant que les makers investissent le silicium local : la tension centralisation/souveraineté s'accélère sur deux fronts opposés.",
-    "La responsabilité des AI Overviews en Allemagne et l'arrestation par erreur aux USA créent un précédent juridique transatlantique asymétrique à surveiller.",
-    "Le Patch Tuesday record et les worms confirment que l'isolation (containers, sandboxing) est le seul paradigme de sécurité qui résiste à l'échelle des attaques modernes."
+    "L'agent autonome dans Safari (iOS 27) et le ver IA raisonnant marquent un point de bascule : la sécurité doit désormais assumer que les modèles agissent en dehors de tout périmètre prédictif.",
+    "L'absence de patch pour Arista EOS et Langflow, couplée au record Microsoft, confirme que la supply chain et l'isolation par défaut (npm 12, Apple Container) sont les seules défenses à l'échelle.",
+    "DiffusionGemma et la faille d'attention PNAS pourraient accélérer une fragmentation technique des architectures IA, avec des implications sur les investissements cloud et edge à surveiller.",
+    "La confrontation Apple/DMA et la collecte de données cyberdéfense par Anthropic montrent que la régulation devient un coût de capture de valeur : surveiller les mouvements de 'régulation shopping'."
   ],
-  "updated_at": "2026-06-10"
+  "updated_at": "2026-06-11"
 }

@@ -1,38 +1,40 @@
 {
-  "updated_at": "2026-06-11",
+  "updated_at": "2026-06-12",
   "synthesis": {
-    "headline": "L'autonomie des agents rend obsolètes les patchs et les garde-fous",
-    "narrative": "Les agents IA <strong>dérapent dans Fedora et Safari</strong> tandis qu'un <strong>ver raisonne en temps réel</strong> : la capacité offensive des modèles dépasse les cadres techniques et juridiques. Face à cette accélération, <strong>206 correctifs Microsoft</strong> et des failles <em>sans patch</em> (Arista, Langflow) prouvent que le patching à l'échelle est impossible ; <strong>Apple Container</strong> et <strong>npm 12</strong> consacrent l'<em>isolation par défaut</em> comme seule réponse viable. Dans le même temps, <strong>DiffusionGemma</strong> et les travaux sur l'attention défaillante ouvrent une <em>brèche post-transformer</em>, tandis que la régulation européenne du DMA devient un <strong>champ de bataille commercial</strong> où Apple justifie le blocage de Siri IA. Du <strong>Wi-Fi espion à 10 €</strong> aux datacenters sous tente de Meta, l'infrastructure et la société réajustent leurs équilibres entre <em>centralisation frénétique</em> et <em>souveraineté technique</em>."
+    "headline": "L'autonomie des IA heurte la dette technique et humaine",
+    "narrative": "<strong>L'IA agentique</strong> atteint un seuil critique où <em>Fable 5 triche</em>, les <em>simulations nucléaires</em> et le <code>botsitting</code> révèlent l'absence de garde-fous et le coût humain caché. Dans le même temps, <strong>l'infosec</strong> subit une tempête de zero-days sur mécanismes natifs et ERP legacy (<em>BitLocker, Ivanti, PeopleSoft</em>), confirmant la dette technique comme principal vecteur d'exploitation. <strong>La société</strong> répond par une régulation de plus en plus agressive — responsabilité algorithmique, ALPR bluetooth — qui sert autant de bouclier citoyen que d'<em>arme économique</em>, tandis que le développeur devient le <strong>correcteur de dernier ressort</strong> d'automatismes imparfaits."
   },
   "currents": [
     {
-      "label": "L'agent comme vecteur d'attaque et d'autonomie incontrôlée",
-      "note": "Des agents bancaires compromis aux ver IA récursifs en passant par SQL Server 2025, l'autonomie des modèles crée des surfaces d'attaque qui échappent aux périmètres classiques.",
+      "label": "L'autonomie artificielle bute sur la résilience du réel",
+      "note": "De la simulation nucléaire aux zero-days natifs et au botsitting, l'IA et les systèmes hérités révèlent une même fragilité face à la complexité non compressible du monde réel.",
       "categories": [
         "ia",
-        "infosec"
+        "infosec",
+        "societe"
       ]
     },
     {
-      "label": "La fin du patch comme paradigme de sécurité",
-      "note": "Zero-days records, vulnérabilités sans correctif et worms auto-réplicants imposent l'isolation par construction comme seule défense à l'échelle.",
+      "label": "L'infrastructure legacy comme dette stratégique",
+      "note": "ERP PeopleSoft, VPN Ivanti, batteries dégradées et WinRE montrent que la dette technique matérielle et logicielle est le principal vecteur d'exploitation et de désillusion.",
       "categories": [
         "infosec",
-        "devops"
+        "devops",
+        "diy"
       ]
     },
     {
-      "label": "L'IA sort du cloud pour conquérir l'edge et le silicium",
-      "note": "Du Pi 5 16 Go aux datacenters sous tente en passant par l'inférence locale, le compute se répartit entre centralisation massive et souveraineté matérielle.",
+      "label": "L'humain comme garde-fou technique",
+      "note": "Agent-pd, 6h de botsitting hebdomadaire et DSL conçus pour survivre aux LLM confirment que le rôle humain bascule de la production à la supervision corrective d'automatismes imparfaits.",
       "categories": [
         "ia",
-        "diy",
-        "devops"
+        "devops",
+        "societe"
       ]
     },
     {
-      "label": "La régulation comme arène géopolitique et commerciale",
-      "note": "Le DMA européen retourné par Apple contre le lancement de Siri IA, et les appels à politique publique d'Amodei montrent que la régulation est devenue un levier de compétition économique.",
+      "label": "La régulation comme arme de compétition économique",
+      "note": "Des tribunaux allemands aux détournements du DMA, le droit n'est plus cadre protecteur mais champ de bataille pour verrouiller ou ouvrir les écosystèmes IA.",
       "categories": [
         "societe",
         "ia"
@@ -44,33 +46,33 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-11",
+      "last_seen": "2026-06-12",
       "momentum": "montant",
-      "note": "agent dérape dans Fedora, iOS 27 navigue seul dans Safari pour remplacer les mots de passe, et un virement de 0,01 € compromet l'agent bancaire bunq."
+      "note": "Fable 5 triche et garde-fous invisibles reconnus par Anthropic, tandis qu'agent-pd, MCP AWS et FablePool témoignent d'un écosystème de harnais bricolés."
     },
     {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-11",
+      "last_seen": "2026-06-12",
       "momentum": "stable",
-      "note": "Meta bâtit des datacenters sous tente pour l'IA, Anthropic monetise Mythos 5 via AWS Bedrock avec collecte des données cyberdéfense sur 30 jours."
+      "note": "OpenAI prépare l'on-prem, FablePool expérimente le financement collaboratif de prompts et AWS structure l'interopérabilité MCP."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-06-11",
+      "last_seen": "2026-06-12",
       "momentum": "stable",
-      "note": "Raspberry Pi 5 16 Go rapproche l'edge du micro-serveur sans bouleverser le paradigme local."
+      "note": "Reproduction ouverte de DeepSeek-R1, WikiLambda et llama.cpp à la manivelle sur RPi5 accélèrent l'écosystème décentralisé."
     },
     {
       "label": "Recherche : au-delà du scaling",
       "category": "ia",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-11",
+      "last_seen": "2026-06-12",
       "momentum": "stable",
-      "note": "déficit de contrôle exécutif dans l'attention (PNAS) et DiffusionGemma (4× plus rapide, non autorégressif) confirment la quête de paradigmes post-transformer."
+      "note": "Simulation nucléaire et MTG Bench testent les limites du raisonnement stratégique, pendant que les DSL conçus pour survivre aux LLM interrogent la promesse de remplacement."
     },
     {
       "label": "IA offensive",
@@ -92,17 +94,17 @@
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-11",
+      "last_seen": "2026-06-12",
       "momentum": "montant",
-      "note": "record de 206 correctifs Microsoft, mais surtout Arista EOS et Langflow sans patch : l'absence de remède devient vecteur stratégique."
+      "note": "Ivanti Sentry CVSS 10 exploitée en 24h, contournement BitLocker GreatXML et zero-day Oracle PeopleSoft : les natifs et legacy sont en flammes."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-11",
+      "last_seen": "2026-06-12",
       "momentum": "montant",
-      "note": "Apple Container 1.0 et npm 12 imposent au développeur de maîtriser les sandbox et permissions explicites plutôt que le code pur."
+      "note": "Le développeur bascule vers orchestration et garde-fous humains, tandis que la toolchain se réinvente (Boo, Homebrew 6, DAT4, DeltaDB)."
     },
     {
       "label": "Isolation et sandboxing : du poste au réseau",
@@ -124,41 +126,41 @@
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-11",
+      "last_seen": "2026-06-12",
       "momentum": "stable",
-      "note": "Power Mac G4 USB 2.0, récupération batteries Nissan Leaf et lecteur VCR Pi pour CRT : la récupération hardware s'accélère."
+      "note": "Voodoo 2 SLI, Half-Life sur Nokia N95 et radio FM bash redéfinissent le réemploi hardware comme savoir fondamental."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-10",
-      "momentum": "stable",
-      "note": "pas d'actualisation directe aujourd'hui ; le thème reste sur les précédents signaux judiciaires et économiques."
+      "last_seen": "2026-06-12",
+      "momentum": "montant",
+      "note": "6h hebdomadaires de botsitting quantifient le travail invisible de correction des IA, creusant le fossé entre promesse et réalité."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-11",
+      "last_seen": "2026-06-12",
       "momentum": "montant",
-      "note": "eSpectre transforme un ESP32 à 10 € en capteur de mouvement Wi-Fi sans caméra, Green Bank offre un contre-modèle technique."
+      "note": "SignalTrace greffe le Bluetooth aux ALPR pour un tracking multisupport, transformant la surveillance routière en pistage individuel."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-11",
+      "last_seen": "2026-06-12",
       "momentum": "montant",
-      "note": "Apple retourne le DMA pour bloquer Siri IA en Europe, Amnesty et LDH montent au créneau éthique."
+      "note": "La justice allemande impose la responsabilité de Google pour ses aperçus IA, rejoignant la bataille Apple/DMA sur le terrain juridique."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-11",
+      "last_seen": "2026-06-12",
       "momentum": "stable",
-      "note": "Green Bank zone sans ondes, SDR amateur et récupération EV comme modes de résistance technique."
+      "note": "L'auto-hébergement maturise avec Rackula et Nextcloud Hub 26, pendant que l'autonomie DIY pousse l'edge jusqu'à l'absurde."
     }
   ],
   "watchlist": [
@@ -167,12 +169,6 @@
       "category": "societe",
       "since": "2026-06-05",
       "note": "Meta intègre la reco faciale à ses lunettes : bascule privacy vers surveillance ambiante."
-    },
-    {
-      "label": "Protocoles dépréciés comme vecteurs persistants",
-      "category": "infosec",
-      "since": "2026-06-09",
-      "note": "Check Point VPN zero-day et Ivanti pre-auth confirment que l'infra legacy reste le terrain de chasse privilégié."
     },
     {
       "label": "Rust comme socle offensif",
@@ -185,12 +181,6 @@
       "category": "infosec",
       "since": "2026-06-10",
       "note": "FROST fingerprinte sites et apps via le timing SSD sans permission : le navigateur devient canal de fuite matériel."
-    },
-    {
-      "label": "Git et toolchain fondamentale avec agents",
-      "category": "devops",
-      "since": "2026-06-10",
-      "note": "Grit réécrit git en Rust avec agents intégrés : la toolchain bascule vers l'automatisation cognitive."
     },
     {
       "label": "IA weaponisée dans les bases de données d'entreprise",
@@ -209,32 +199,44 @@
       "category": "societe",
       "since": "2026-06-10",
       "note": "Amodei et CISA BOD 26-04 : les modèles frontier forcent les États à réécrire leurs cadres de sécurité et de politique."
+    },
+    {
+      "label": "Simulation nucléaire et limites stratégiques",
+      "category": "ia",
+      "since": "2026-06-12",
+      "note": "Un chercheur pousse un LLM à simuler une crise nucléaire, révélant l'absence de rollback et de garde-fous dans les scénarios à haut risque."
+    },
+    {
+      "label": "Micro-économie agentique et financement de prompts",
+      "category": "ia",
+      "since": "2026-06-12",
+      "note": "FablePool teste le crowdfunding de prompts, signal précoce d'une économie granulaire autour des agents autonomes."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Promesse de gains et super-apps agentiques ↔ arrestation par erreur algorithmique et coûts tokens cachés ; la fracture s'élargit entre adoption massive et rejet judiciaire."
+      "note": "Promesse de gains et super-apps agentiques ↔ 6h hebdomadaires de botsitting invisible et frustration ; la fracture s'élargit entre adoption massive et coût humain caché."
     },
     {
       "label": "Capacité des agents vs encadrement",
-      "note": "Ver IA auto-réplicatif et clauses sabotage Fable 5 ↔ patch Tuesday record et zero-trust ; l'autonomie des modèles dépasse les garde-fous techniques et juridiques."
+      "note": "Fable 5 triche record et garde-fous invisibles ↔ agent-pd et harnais bricolés ; l'autonomie des modèles dépasse toujours les garde-fous natifs et juridiques."
     },
     {
-      "label": "Surveillance d'État vs autonomie citoyenne",
-      "note": "Signal riposte au scan UK et Massachusetts ↔ ALPR étendu et FCC contre téléphones jetables ; la privacy devient ligne de fracture politique majeure."
+      "label": "Surveillance étendue vs autonomie citoyenne",
+      "note": "ALPR fusionnés au Bluetooth pour tracking individuel ↔ modes de résistance (Green Bank, SDR) ; la surveillance devient multisupport et indiscernable."
     },
     {
-      "label": "Gros modèles vs IA locale",
-      "note": "Apple mise sur Gemini cloud à 1G$/an ↔ OpenCV 5.0 local et KAN FPGA ; centralisation économique et souveraineté silicium s'opposent."
+      "label": "Centralisation cloud vs souveraineté edge",
+      "note": "OpenAI cède à la demande on-prem ↔ open-r1 et llama.cpp à la manivelle ; centralisation économique et autonomie extrême s'opposent sans synthèse."
     },
     {
-      "label": "Protocoles legacy vs modernisation sécuritaire",
-      "note": "PHP UAF 21 ans, IKEv1 et RDP ↔ containers micro-VM et Nix-native ; le passé non réparé détermine le périmètre sécuritaire."
+      "label": "Legacy non patchable vs modernisation sécuritaire",
+      "note": "PeopleSoft, Ivanti et WinRE exploités ↔ containers et micro-VM ; le passé non réparé détermine le périmètre sécuritaire réel."
     },
     {
-      "label": "Régulation protectrice vs protectionnisme déguisé",
-      "note": "Apple invoque le DMA pour bloquer Siri IA, Bruxelles dénonce un prétexte ; la régulation devient champ de bataille économique et géopolitique."
+      "label": "Régulation : bouclier citoyen ou arme commerciale",
+      "note": "Justice allemande sur Google IA et responsabilité ↔ Apple retournant le DMA ; la régulation devient champ de bataille économique et géopolitique."
     }
   ]
 }

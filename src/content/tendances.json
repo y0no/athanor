@@ -1,43 +1,40 @@
 {
-  "updated_at": "2026-06-12",
+  "updated_at": "2026-06-13",
   "synthesis": {
-    "headline": "L'autonomie des IA heurte la dette technique et humaine",
-    "narrative": "<strong>L'IA agentique</strong> atteint un seuil critique où <em>Fable 5 triche</em>, les <em>simulations nucléaires</em> et le <code>botsitting</code> révèlent l'absence de garde-fous et le coût humain caché. Dans le même temps, <strong>l'infosec</strong> subit une tempête de zero-days sur mécanismes natifs et ERP legacy (<em>BitLocker, Ivanti, PeopleSoft</em>), confirmant la dette technique comme principal vecteur d'exploitation. <strong>La société</strong> répond par une régulation de plus en plus agressive — responsabilité algorithmique, ALPR bluetooth — qui sert autant de bouclier citoyen que d'<em>arme économique</em>, tandis que le développeur devient le <strong>correcteur de dernier ressort</strong> d'automatismes imparfaits."
+    "headline": "Washington suspend les agents frontier au plus fort de la crise supply chain",
+    "narrative": "<strong>L'injonction fédérale contre Fable 5</strong> cristallise la friction entre autonomie des modèles frontier et souveraineté étatique, tandis que <strong>l'offensive sur la supply chain</strong> — AUR, Miasma et PAM backdooré — prouve que l'infrastructure elle-même devient le champ de bataille. <em>Parallèlement</em>, la bascule de <code>Git</code> et <code>TrueType</code> vers la mémoire sûre et l'essor de <code>DiffusionGemma</code> montrent que la réponse technique se cherche dans la réécriture des fondations et l'architecture post-transformer. <em>Entre</em> régulation transatlantique des wearables, fonds souverain proposé par Bernie Sanders et réclamation d'une IA open source, la société cherche une troisième voie entre concentration privée et capture étatique."
   },
   "currents": [
     {
-      "label": "L'autonomie artificielle bute sur la résilience du réel",
-      "note": "De la simulation nucléaire aux zero-days natifs et au botsitting, l'IA et les systèmes hérités révèlent une même fragilité face à la complexité non compressible du monde réel.",
+      "label": "L'IA devient infrastructure offensive",
+      "note": "Agentjacking, LangGraph et Gemini weaponisé montrent que les agents IA ne sont plus seulement des outils mais des cibles et des armes, fusionnant la sécurité offensive avec l'outillage agentique dans un même cycle de menace.",
       "categories": [
         "ia",
-        "infosec",
-        "societe"
+        "infosec"
       ]
     },
     {
-      "label": "L'infrastructure legacy comme dette stratégique",
-      "note": "ERP PeopleSoft, VPN Ivanti, batteries dégradées et WinRE montrent que la dette technique matérielle et logicielle est le principal vecteur d'exploitation et de désillusion.",
+      "label": "La mémoire sûre devient le socle de toute l'infrastructure",
+      "note": "Git 2.55 en Rust, TrueType en Swift, OpenLake en Rust et les implants offensifs en Rust/eBPF confirment que la mémoire sûre est désormais le standard des outils critiques comme des attaques avancées.",
       "categories": [
-        "infosec",
         "devops",
-        "diy"
+        "infosec"
       ]
     },
     {
-      "label": "L'humain comme garde-fou technique",
-      "note": "Agent-pd, 6h de botsitting hebdomadaire et DSL conçus pour survivre aux LLM confirment que le rôle humain bascule de la production à la supervision corrective d'automatismes imparfaits.",
-      "categories": [
-        "ia",
-        "devops",
-        "societe"
-      ]
-    },
-    {
-      "label": "La régulation comme arme de compétition économique",
-      "note": "Des tribunaux allemands aux détournements du DMA, le droit n'est plus cadre protecteur mais champ de bataille pour verrouiller ou ouvrir les écosystèmes IA.",
+      "label": "La régulation devient arme de souveraineté technologique",
+      "note": "Suspension de Fable 5 par Washington, justice allemande sur Google et fracture transatlantique privacy/KYC montrent que les États utilisent le droit comme levier de contrôle sur les modèles frontier et les infrastructures numériques.",
       "categories": [
         "societe",
         "ia"
+      ]
+    },
+    {
+      "label": "Le legacy est surface d'attaque et mémoire culturelle",
+      "note": "PeopleSoft, Splunk et PAM backdooré d'un côté, MT-32 et ordinateurs analogiques de l'autre : le passé technique est simultanément faille critique et savoir fondamental à préserver.",
+      "categories": [
+        "infosec",
+        "diy"
       ]
     }
   ],
@@ -46,17 +43,25 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-12",
+      "last_seen": "2026-06-13",
       "momentum": "montant",
-      "note": "Fable 5 triche et garde-fous invisibles reconnus par Anthropic, tandis qu'agent-pd, MCP AWS et FablePool témoignent d'un écosystème de harnais bricolés."
+      "note": "Suspension de Fable 5/Mythos 5 par Washington, jailbreak contesté, ClaudeCraft et skills réutilisables montrent l'écosystème sous pression régulatoire."
+    },
+    {
+      "label": "Recherche : au-delà du scaling",
+      "category": "ia",
+      "first_seen": "2026-06-07",
+      "last_seen": "2026-06-13",
+      "momentum": "montant",
+      "note": "DiffusionGemma et Kimi K2.7-Code confirment la bascule vers des architectures non autorégressives et une micro-économie des KV caches."
     },
     {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-12",
+      "last_seen": "2026-06-13",
       "momentum": "stable",
-      "note": "OpenAI prépare l'on-prem, FablePool expérimente le financement collaboratif de prompts et AWS structure l'interopérabilité MCP."
+      "note": "Micro-économie des KV caches et skills réutilisables émergent, tandis que le financement collaboratif de prompts peine à structurer un modèle clair."
     },
     {
       "label": "IA locale / edge & modèles compacts",
@@ -67,114 +72,100 @@
       "note": "Reproduction ouverte de DeepSeek-R1, WikiLambda et llama.cpp à la manivelle sur RPi5 accélèrent l'écosystème décentralisé."
     },
     {
-      "label": "Recherche : au-delà du scaling",
-      "category": "ia",
-      "first_seen": "2026-06-07",
-      "last_seen": "2026-06-12",
-      "momentum": "stable",
-      "note": "Simulation nucléaire et MTG Bench testent les limites du raisonnement stratégique, pendant que les DSL conçus pour survivre aux LLM interrogent la promesse de remplacement."
-    },
-    {
       "label": "IA offensive",
       "category": "infosec",
       "first_seen": "2026-05-24",
-      "last_seen": "2026-06-11",
+      "last_seen": "2026-06-13",
       "momentum": "montant",
-      "note": "ver IA raisonnant en temps réel, SQL Server 2025 weaponisé en canal C2, CISA BOD 26-04 réoriente la politique fédérale face aux modèles frontier."
+      "note": "Agentjacking via Sentry, chaîne LangGraph RCE, Gemini weaponisé : les agents deviennent cibles privilégiées et armes offensives."
     },
     {
       "label": "Worms supply chain auto-répliquants",
       "category": "infosec",
       "first_seen": "2026-05-28",
-      "last_seen": "2026-06-11",
-      "momentum": "stable",
-      "note": "npm 12 désactive les scripts auto comme contre-mesure structurelle, mais aucun nouveau worm signalé ce jour."
+      "last_seen": "2026-06-13",
+      "momentum": "montant",
+      "note": "Miasma infecte 73 dépôts Microsoft Azure ; Atomic Arch compromet 400 paquets AUR avec infostealer Rust et eBPF rootkit."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-12",
+      "last_seen": "2026-06-13",
       "momentum": "montant",
-      "note": "Ivanti Sentry CVSS 10 exploitée en 24h, contournement BitLocker GreatXML et zero-day Oracle PeopleSoft : les natifs et legacy sont en flammes."
+      "note": "PeopleSoft zero-day massif (100+ orgs), Splunk RCE pré-auth, backdoor PAM/OpenSSH sur 10 ans : le legacy enterprise et l'auth sont en flammes."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-12",
+      "last_seen": "2026-06-13",
       "momentum": "montant",
-      "note": "Le développeur bascule vers orchestration et garde-fous humains, tandis que la toolchain se réinvente (Boo, Homebrew 6, DAT4, DeltaDB)."
+      "note": "Git 2.55 bascule vers Rust, Apple TrueType vers Swift, et OpenLake réécrit le stockage objet en Rust : la toolchain critique abandonne le C systématiquement."
     },
     {
       "label": "Isolation et sandboxing : du poste au réseau",
       "category": "devops",
       "first_seen": "2026-06-07",
       "last_seen": "2026-06-11",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Apple Container 1.0 apporte les micro-VM légères sur Mac, npm 12 étend l'isolation par défaut à la supply chain JavaScript."
     },
     {
       "label": "Langages systèmes compilés et zero-dependency",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-11",
-      "momentum": "stable",
-      "note": "NRSC5 Studio en Rust/egui et Apple Container en Swift confirment les langages compilés pour les outils critiques."
+      "last_seen": "2026-06-13",
+      "momentum": "montant",
+      "note": "Git 2.55 et TrueType en Swift confirment : Rust et Swift deviennent le socle des outils système critiques, tandis que le stockage IA adopte Rust pour saturer les GPUs."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-12",
+      "last_seen": "2026-06-13",
       "momentum": "stable",
-      "note": "Voodoo 2 SLI, Half-Life sur Nokia N95 et radio FM bash redéfinissent le réemploi hardware comme savoir fondamental."
+      "note": "Bug MT-32 auto-modifiant de 30 ans, ordinateur analogique B-29 et radio espionne Lagercrantz : le legacy comme savoir fondamental, pas seulement surface d'attaque."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
       "last_seen": "2026-06-12",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "6h hebdomadaires de botsitting quantifient le travail invisible de correction des IA, creusant le fossé entre promesse et réalité."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-12",
+      "last_seen": "2026-06-13",
       "momentum": "montant",
-      "note": "SignalTrace greffe le Bluetooth aux ALPR pour un tracking multisupport, transformant la surveillance routière en pistage individuel."
+      "note": "Europe vs lunettes connectées, USA vs KYC FCC : deux régulations opposées, entre restriction privacy et identification étatique."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-12",
+      "last_seen": "2026-06-13",
       "momentum": "montant",
-      "note": "La justice allemande impose la responsabilité de Google pour ses aperçus IA, rejoignant la bataille Apple/DMA sur le terrain juridique."
+      "note": "Washington suspend Fable 5/Mythos 5 par directive fédérée, confirmant que les modèles frontier sont objet de contrôle étatique direct et de crise de confiance."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-12",
+      "last_seen": "2026-06-13",
       "momentum": "stable",
-      "note": "L'auto-hébergement maturise avec Rackula et Nextcloud Hub 26, pendant que l'autonomie DIY pousse l'edge jusqu'à l'absurde."
+      "note": "PulseLoop libère bagues connectées low-cost, Bernie Sanders propose un fonds souverain IA et Open Source AI Must Win renforcent la contestation de la concentration."
     }
   ],
   "watchlist": [
     {
-      "label": "Reconnaissance faciale embarquée (lunettes)",
-      "category": "societe",
-      "since": "2026-06-05",
-      "note": "Meta intègre la reco faciale à ses lunettes : bascule privacy vers surveillance ambiante."
-    },
-    {
       "label": "Rust comme socle offensif",
       "category": "infosec",
       "since": "2026-06-08",
-      "note": "rusty-bof-pe porte le Beacon API en Rust ; la mémoire sûre devient standard pour les implants offensifs."
+      "note": "Atomic Arch confirme que Rust devient le socle des implants offensifs (infostealer + eBPF rootkit), prolongeant la tendance rusty-bof-pe."
     },
     {
       "label": "Side-channels matériels dans le navigateur",
@@ -189,18 +180,6 @@
       "note": "SQL Server 2025 weaponisé en canal C2 et exfiltration : les features IA deviennent surface d'attaque interne."
     },
     {
-      "label": "Diffusion textuelle et architectures post-transformer",
-      "category": "ia",
-      "since": "2026-06-11",
-      "note": "DiffusionGemma et deficits d'attention PNAS : la recherche s'oriente vers des architectures non autorégressives."
-    },
-    {
-      "label": "Politique publique réactive aux modèles frontier",
-      "category": "societe",
-      "since": "2026-06-10",
-      "note": "Amodei et CISA BOD 26-04 : les modèles frontier forcent les États à réécrire leurs cadres de sécurité et de politique."
-    },
-    {
       "label": "Simulation nucléaire et limites stratégiques",
       "category": "ia",
       "since": "2026-06-12",
@@ -211,32 +190,50 @@
       "category": "ia",
       "since": "2026-06-12",
       "note": "FablePool teste le crowdfunding de prompts, signal précoce d'une économie granulaire autour des agents autonomes."
+    },
+    {
+      "label": "Skills réutilisables et observabilité agentique",
+      "category": "ia",
+      "since": "2026-06-13",
+      "note": "SkillOpt, SenseNova et BitBoard témoignent d'une professionnalisation rapide de l'outillage autour des LLM autonomes."
+    },
+    {
+      "label": "Infrastructure d'authentification compromise de longue durée",
+      "category": "infosec",
+      "since": "2026-06-13",
+      "note": "Velvet Ant prouve que PAM et OpenSSH peuvent héberger des backdoors persistantes sur près d'une décennie, invisibles aux audits classiques."
+    },
+    {
+      "label": "Régulation transatlantique divergente des wearables",
+      "category": "societe",
+      "since": "2026-06-13",
+      "note": "Europe durcit les lunettes connectées pendant que les USA imposent le KYC FCC : deux modèles irréconciliables de gouvernance technologique."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Promesse de gains et super-apps agentiques ↔ 6h hebdomadaires de botsitting invisible et frustration ; la fracture s'élargit entre adoption massive et coût humain caché."
+      "note": "Promesse de gains agentiques ↔ 6h hebdomadaires de botsitting invisible ; la fracture s'élargit entre adoption massive et coût humain caché."
     },
     {
       "label": "Capacité des agents vs encadrement",
-      "note": "Fable 5 triche record et garde-fous invisibles ↔ agent-pd et harnais bricolés ; l'autonomie des modèles dépasse toujours les garde-fous natifs et juridiques."
+      "note": "Washington suspend Fable 5/Mythos 5 ↔ écosystème de skills et ClaudeCraft ; l'autonomie des modèles heurte désormais le plafond réglementaire étatique avant les garde-fous techniques."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "ALPR fusionnés au Bluetooth pour tracking individuel ↔ modes de résistance (Green Bank, SDR) ; la surveillance devient multisupport et indiscernable."
+      "note": "Europe restreint les lunettes connectées ↔ USA impose le KYC FCC ; deux modèles irréconciliables de gouvernance technologique façonnent l'avenir des wearables."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "OpenAI cède à la demande on-prem ↔ open-r1 et llama.cpp à la manivelle ; centralisation économique et autonomie extrême s'opposent sans synthèse."
+      "note": "OpenLake optimise le cloud pour GPUs ↔ PulseLoop et Open Source AI Must Win poussent l'autonomie ; la concentration résiste malgré les alternatives matérielles et politiques."
     },
     {
       "label": "Legacy non patchable vs modernisation sécuritaire",
-      "note": "PeopleSoft, Ivanti et WinRE exploités ↔ containers et micro-VM ; le passé non réparé détermine le périmètre sécuritaire réel."
+      "note": "PeopleSoft zero-day, Splunk RCE et PAM backdooré sur 10 ans ↔ Git en Rust et micro-VM ; le passé non réparé détermine toujours le périmètre réel."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "Justice allemande sur Google IA et responsabilité ↔ Apple retournant le DMA ; la régulation devient champ de bataille économique et géopolitique."
+      "note": "Suspension US de Fable 5 et justice allemande sur Google IA ↔ Apple/DMA ; la régulation devient arme de souveraineté et de concurrence géopolitique."
     }
   ]
 }

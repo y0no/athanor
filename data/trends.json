@@ -4,9 +4,9 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-14",
+      "last_seen": "2026-06-15",
       "momentum": "montant",
-      "note": "Skills diversifiés (présentation, recherche, vidéo, gestion projet) et GLM 5.2 relancent la compétition ouverte et la professionnalisation agentique."
+      "note": "Agents de codage légers et vibe coding accélèrent, mais la fracture technique entre promesse et réalité s'accentue."
     },
     {
       "label": "Recherche : au-delà du scaling",
@@ -20,24 +20,32 @@
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-14",
+      "last_seen": "2026-06-15",
       "momentum": "stable",
-      "note": "L'archivage soudain de TensorZero après 7,3 M$ illustre la précarité OSS IA, tandis que le marché des skills peine à structurer un modèle clair."
+      "note": "La fin de la ruée cloud et le fiasco Rio3.5 confirment la consolidation et les mirages de la souveraineté affichée."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-06-14",
+      "last_seen": "2026-06-15",
       "momentum": "montant",
-      "note": "Configurations multi-GPU atteignant 80 tok/s et guides low-cost confirment l'accélération de l'inference locale face à la centralisation cloud."
+      "note": "CrankGPT et YOLOv8n sur NPU embarqué poussent l'edge jusqu'à l'autonomie énergétique totale et la vision temps réel sans cloud."
+    },
+    {
+      "label": "Fiabilité des LLMs et dérive de l'alignement",
+      "category": "ia",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "momentum": "nouveau",
+      "note": "Hallucinations KPMG, Claude désagréable et fenêtres de contexte trompeuses : l'alignement et la véracité se dégradent en production."
     },
     {
       "label": "IA offensive",
       "category": "infosec",
       "first_seen": "2026-05-24",
       "last_seen": "2026-06-14",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "PromptSnatcher cible 90 000 utilisateurs et les APT synthétiques émulent les TTPs étatiques : les modèles sont à la fois armes et cibles privilégiées."
     },
     {
@@ -45,48 +53,48 @@
       "category": "infosec",
       "first_seen": "2026-06-14",
       "last_seen": "2026-06-14",
-      "momentum": "nouveau",
+      "momentum": "stable",
       "note": "Les APT générées par IA reproduisent les comportements d'acteurs étatiques, rendant l'attribution classique obsolète et forçant la segmentation réseau."
     },
     {
       "label": "Worms supply chain auto-répliquants",
       "category": "infosec",
       "first_seen": "2026-05-28",
-      "last_seen": "2026-06-14",
+      "last_seen": "2026-06-15",
       "momentum": "stable",
-      "note": "L'incident AUR dépasse 1500 paquets ; npm v12 réagit par isolation par défaut, révélant une supply chain sous pression chronique."
+      "note": "Atomic Arch dépasse 1500 paquets AUR avec rootkit eBPF : la supply chain reste le canal offensif privilégié, la réponse npm v12 ne suffit pas."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-14",
+      "last_seen": "2026-06-15",
       "momentum": "montant",
-      "note": "RCE pré-auth sur Splunk, path traversal SharePoint et XSS->RCE MeshCentral : le legacy enterprise reste le périmètre d'attaque principal."
+      "note": "Zero-day PeopleSoft ciblant l'enseignement supérieur et fuite RATP : le legacy institutionnel reste le périmètre d'attaque le plus rentable."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-14",
+      "last_seen": "2026-06-15",
       "momentum": "stable",
-      "note": "De Git en Rust à Weave et awesome-architecture, la chaîne de développement gagne en mémoire sûre et en abstraction architecturale."
+      "note": "Vibe coding vs ingénierie et méthodes formelles en production : le métier de développeur se polarise entre abstraction rapide et rigueur prouvée."
     },
     {
       "label": "Isolation et sandboxing : du poste au réseau",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-14",
+      "last_seen": "2026-06-15",
       "momentum": "stable",
-      "note": "npm v12 durcit l'isolation supply chain JS par défaut, tandis que les réponses à Miasma et AUR montrent les limites des audits classiques."
+      "note": "Niubi Guard automatise la détection des abus GitHub et PentestCompanion structure l'offensif self-hosted : l'outillage de confiance se déploie."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-14",
+      "last_seen": "2026-06-15",
       "momentum": "stable",
-      "note": "Du BIOS x86 sur console de mixage au calcul low-carbon sur smartphones retirés, le legacy devient terrain d'innovation frugale."
+      "note": "Réécriture de X11 en Rust et instrumentation scientifique DIY (lithographie, imagerie X) : le legacy devient terrain de réinvention frugale et open source."
     },
     {
       "label": "Désenchantement IA au travail",
@@ -100,34 +108,36 @@
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-13",
+      "last_seen": "2026-06-15",
       "momentum": "stable",
-      "note": "La divergence Europe/USA sur wearables et KYC FCC structure des marchés régionaux distincts sans nouveau rebondissement cette semaine."
+      "note": "Lunettes connectées indétectables comme vecteur de surveillance quotidienne : le débat Europe/USA reste vif sans convergence."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-14",
+      "last_seen": "2026-06-15",
       "momentum": "montant",
-      "note": "Anthropic retire ses modèles pour export controls et OpenAI est visé par des enquêtes d'État, durcissant le contrôle étatique sur les frontier."
+      "note": "Trois juridictions durcissent simultanément : interdiction sociaux aux mineurs, saisie deepfakes, condamnation pour hallucinations."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-14",
+      "last_seen": "2026-06-15",
       "momentum": "montant",
-      "note": "Bambuddy, Grasp et OpenStrap Edge étendent l'auto-hébergement au hardware grand public, rendant le silo tiers de plus en plus optionnel."
+      "note": "Auto-hébergement hardware et logiciel (assistant manivelle, web offline) : le silo tiers devient une option de plus en plus viable."
+    },
+    {
+      "label": "Santé et climat : barrières de protection",
+      "category": "societe",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-15",
+      "momentum": "nouveau",
+      "note": "Rougeole, perturbateurs endocriniens et AMOC : les barrières sanitaires et écologiques jugées acquises cèdent sous la pression."
     }
   ],
   "watchlist": [
-    {
-      "label": "Rust comme socle offensif",
-      "category": "infosec",
-      "since": "2026-06-08",
-      "note": "Atomic Arch confirme que Rust devient le socle des implants offensifs, prolongeant la tendance des toolchains malveillantes en mémoire sûre."
-    },
     {
       "label": "Side-channels matériels dans le navigateur",
       "category": "infosec",
@@ -147,28 +157,28 @@
       "note": "Un chercheur pousse un LLM à simuler une crise nucléaire, révélant l'absence de rollback et de garde-fous dans les scénarios à haut risque."
     },
     {
-      "label": "Micro-économie agentique et financement de prompts",
-      "category": "ia",
-      "since": "2026-06-12",
-      "note": "FablePool teste le crowdfunding de prompts, signal précoce d'une économie granulaire autour des agents autonomes et de leurs outputs."
-    },
-    {
       "label": "Infrastructure d'authentification compromise de longue durée",
       "category": "infosec",
       "since": "2026-06-13",
       "note": "Velvet Ant prouve que PAM et OpenSSH peuvent héberger des backdoors persistantes sur près d'une décennie, invisibles aux audits classiques."
     },
     {
-      "label": "Régulation transatlantique divergente des wearables",
-      "category": "societe",
-      "since": "2026-06-13",
-      "note": "Europe durcit les lunettes connectées pendant que les USA imposent le KYC FCC : deux modèles irréconciliables de gouvernance technologique."
-    },
-    {
       "label": "Preuves et élections sous IA",
       "category": "societe",
       "since": "2026-06-14",
       "note": "Policier britannique et ingérence électorale signalent que l'IA devient vecteur de corruption procédurale directe et peu traçable."
+    },
+    {
+      "label": "Lunettes connectées indétectables",
+      "category": "societe",
+      "since": "2026-06-15",
+      "note": "Les smart glasses enregistrent sans visibilité extérieure, rendant la surveillance de proximité banale et impossible à détecter pour le grand public."
+    },
+    {
+      "label": "Méthodes formelles en production comme standard",
+      "category": "devops",
+      "since": "2026-06-15",
+      "note": "Jane Street rend les preuves mécanisées accessibles au développement quotidien, signal précoce d'un basculement industriel vers le code prouvé."
     }
   ],
   "tensions": [
@@ -177,39 +187,31 @@
       "note": "Promesse de gains agentiques ↔ 6h hebdomadaires de botsitting invisible ; la fracture s'élargit entre adoption massive et coût humain caché."
     },
     {
-      "label": "Capacité des agents vs encadrement",
-      "note": "Washington contrôle les modèles ↔ skills diversifiés ; l'autonomie heurte le plafond réglementaire avant les garde-fous techniques."
-    },
-    {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "Europe restreint les lunettes connectées ↔ USA impose le KYC FCC ; deux modèles irréconciliables de gouvernance technologique façonnent l'avenir des wearables."
+      "note": "Smart glasses indétectables et interdiction aux mineurs : la surveillance et la protection se confondent dans des restrictions d'usage sans consentement."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "OpenLake optimise le cloud ↔ décloudification grand public ; la concentration résiste malgré l'auto-hébergement hardware et politique."
+      "note": "CrankGPT et YOLOv8n fonctionnent sans cloud ↔ consolidation cloud ; la décloudification edge gagne en crédibilité technique contre la centralisation."
     },
     {
       "label": "Legacy non patchable vs modernisation sécuritaire",
-      "note": "Splunk et SharePoint RCE ↔ Git en Rust et micro-VM ; le passé non réparé détermine toujours le périmètre d'attaque réel."
+      "note": "Splunk, SharePoint et PeopleSoft RCE ↔ Git et X11 en Rust ; le passé non réparé détermine toujours le périmètre d'attaque réel."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "Suspension US de modèles et justice allemande ↔ Apple/DMA ; la régulation devient arme de souveraineté et concurrence géopolitique."
+      "note": "Suspensions de modèles, condamnation de Gemini et saisie deepfakes : la régulation devient arme de souveraineté autant que protection citoyenne."
     },
     {
-      "label": "Attribution classique vs APT synthétiques",
-      "note": "Les défenseurs s'appuient sur les TTPs pour identifier les acteurs étatiques, mais les APT générées par IA effondrent ce modèle à bas coût."
-    },
-    {
-      "label": "Investissement OSS IA vs viabilité",
-      "note": "TensorZero lève 7,3 M$ puis disparaît : l'open source IA reste structurellement précaire malgré les capitaux et l'engouement médiatique."
+      "label": "Fiabilité promise vs dégradation observée",
+      "note": "KPMG retire un rapport, Gemini est condamné et Claude devient désagréable : la confiance s'érode alors que l'adoption des LLM s'generalise."
     }
   ],
   "strategy_notes": [
-    "La suspension des modèles Anthropic et l'enquête sur OpenAI confirment que le risque géopolitique prime désormais sur la technique : anticiper une fragmentation réglementaire des APIs et des weights par blocs de juridictions.",
-    "L'effondrement de l'attribution TTP et la fabrication de preuves par IA signalent une crise de confiance dans les preuves numériques : la vérification matérielle et la segmentation réseau redeviennent critiques.",
-    "L'archivage de TensorZero montre que l'open source IA vit sous le régime du hype funding sans gouvernance : surveiller la durabilité des dépôts critiques pour l'edge avant d'y investir des infrastructures.",
-    "npm v12 et la réponse à l'AUR marquent un tournant : l'isolation par défaut devient la norme supply chain ; les outils de développement doivent intégrer la vérification de provenance comme standard, non comme option."
+    "La condamnation de Google pour hallucinations de Gemini en Allemagne et le retrait du rapport KPMG marquent un tournant : la responsabilité juridique des sorties LLM entre en vigueur. Anticiper des exigences de traçabilité et d'audit des réponses IA dans les juridictions européennes.",
+    "Atomic Arch prouve que l'offensive supply chain migre vers Rust et eBPF : la mémoire sûre n'est plus un privilège défensif. Évaluer la chaine de compilation interne face à des toolchains compromises de plus en plus sophistiquées.",
+    "La convergence des ruptures sanitaires (rougeole, perturbateurs endocriniens) et climatiques (AMOC) avec les crises numériques dessine un pattern systémique : les infrastructures de protection, physiques ou logiques, cèdent sous des pressions cumulées. Surveiller les narratifs de 'effondrement des barrières'.",
+    "La fin de la ruée cloud et les projets edge aboutis (CrankGPT, YOLOv8n) confirment que l'inference locale n'est plus un hobby. Les acteurs cloud doivent repositionner leur valeur ajoutée sur l'orchestration et le fine-tuning distribué."
   ],
-  "updated_at": "2026-06-14"
+  "updated_at": "2026-06-15"
 }

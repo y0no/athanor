@@ -5,7 +5,7 @@
       "category": "ia",
       "first_seen": "2026-05-13",
       "last_seen": "2026-06-15",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Agents de codage légers et vibe coding accélèrent, mais la fracture technique entre promesse et réalité s'accentue."
     },
     {
@@ -20,33 +20,33 @@
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-15",
+      "last_seen": "2026-06-16",
       "momentum": "stable",
-      "note": "La fin de la ruée cloud et le fiasco Rio3.5 confirment la consolidation et les mirages de la souveraineté affichée."
+      "note": "La ruée cloud se referme : Oracle réduit l'offre gratuite, Hetzner augmente ses tarifs et Microsoft loue AWS, confirmant la consolidation et la décloudification edge."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-06-15",
+      "last_seen": "2026-06-16",
       "momentum": "montant",
-      "note": "CrankGPT et YOLOv8n sur NPU embarqué poussent l'edge jusqu'à l'autonomie énergétique totale et la vision temps réel sans cloud."
+      "note": "L'inference locale devient crédible pour le coding quotidien face aux pénuries cloud, tandis que les plateformes homelab et outils comme dnsweaver gagnent en maturité."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-06-15",
-      "momentum": "nouveau",
-      "note": "Hallucinations KPMG, Claude désagréable et fenêtres de contexte trompeuses : l'alignement et la véracité se dégradent en production."
+      "last_seen": "2026-06-16",
+      "momentum": "montant",
+      "note": "Anthropic voit ses modèles suspendus pour jailbreak et Tesla présente des données FSD trompeuses : la promesse de fiabilité s'effrite sous pression régulatoire."
     },
     {
       "label": "IA offensive",
       "category": "infosec",
       "first_seen": "2026-05-24",
-      "last_seen": "2026-06-14",
+      "last_seen": "2026-06-16",
       "momentum": "stable",
-      "note": "PromptSnatcher cible 90 000 utilisateurs et les APT synthétiques émulent les TTPs étatiques : les modèles sont à la fois armes et cibles privilégiées."
+      "note": "Les intégrations IA en production — LiteLLM, Copilot — deviennent les surfaces d'attaque privilégiées au-delà des modèles eux-mêmes."
     },
     {
       "label": "APT synthétiques et effondrement de l'attribution",
@@ -60,25 +60,25 @@
       "label": "Worms supply chain auto-répliquants",
       "category": "infosec",
       "first_seen": "2026-05-28",
-      "last_seen": "2026-06-15",
+      "last_seen": "2026-06-16",
       "momentum": "stable",
-      "note": "Atomic Arch dépasse 1500 paquets AUR avec rootkit eBPF : la supply chain reste le canal offensif privilégié, la réponse npm v12 ne suffit pas."
+      "note": "La supply chain reste le canal offensif privilégié : compromission CDN de plugins WordPress majeurs et rootkits eBPF dans la foulée d'Atomic Arch."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-15",
+      "last_seen": "2026-06-16",
       "momentum": "montant",
-      "note": "Zero-day PeopleSoft ciblant l'enseignement supérieur et fuite RATP : le legacy institutionnel reste le périmètre d'attaque le plus rentable."
+      "note": "Les chaînes ciblent l'orchestration IA et les outils de collaboration légitimes, tandis que les compromissions longue durée persistent dans la recherche sensible."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-15",
+      "last_seen": "2026-06-16",
       "momentum": "stable",
-      "note": "Vibe coding vs ingénierie et méthodes formelles en production : le métier de développeur se polarise entre abstraction rapide et rigueur prouvée."
+      "note": "Vibe coding vs ingénierie et méthodes formelles en production : le métier se polarise entre abstraction rapide et rigueur prouvée."
     },
     {
       "label": "Isolation et sandboxing : du poste au réseau",
@@ -94,7 +94,7 @@
       "first_seen": "2026-05-13",
       "last_seen": "2026-06-15",
       "momentum": "stable",
-      "note": "Réécriture de X11 en Rust et instrumentation scientifique DIY (lithographie, imagerie X) : le legacy devient terrain de réinvention frugale et open source."
+      "note": "Réécriture de X11 en Rust et instrumentation scientifique DIY : le legacy devient terrain de réinvention frugale et open source."
     },
     {
       "label": "Désenchantement IA au travail",
@@ -108,32 +108,32 @@
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-15",
-      "momentum": "stable",
-      "note": "Lunettes connectées indétectables comme vecteur de surveillance quotidienne : le débat Europe/USA reste vif sans convergence."
+      "last_seen": "2026-06-16",
+      "momentum": "montant",
+      "note": "La surveillance s'étend des lunettes connectées aux téléphones jetables et aux réseaux sociaux pour mineurs, tandis que les frontières se resserrent."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-15",
+      "last_seen": "2026-06-16",
       "momentum": "montant",
-      "note": "Trois juridictions durcissent simultanément : interdiction sociaux aux mineurs, saisie deepfakes, condamnation pour hallucinations."
+      "note": "La régulation devient arme de souveraineté : suspension de modèles, interdictions d'accès, abolition de visas et alerte sur l'explosion d'intelligence."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-15",
+      "last_seen": "2026-06-16",
       "momentum": "montant",
-      "note": "Auto-hébergement hardware et logiciel (assistant manivelle, web offline) : le silo tiers devient une option de plus en plus viable."
+      "note": "L'auto-hébergement hardware et logiciel gagne en maturité, de Kubernetes domestique à la préservation de savoirs censurés dans des objets connectés."
     },
     {
       "label": "Santé et climat : barrières de protection",
       "category": "societe",
       "first_seen": "2026-06-15",
       "last_seen": "2026-06-15",
-      "momentum": "nouveau",
+      "momentum": "stable",
       "note": "Rougeole, perturbateurs endocriniens et AMOC : les barrières sanitaires et écologiques jugées acquises cèdent sous la pression."
     }
   ],
@@ -143,12 +143,6 @@
       "category": "infosec",
       "since": "2026-06-10",
       "note": "FROST fingerprinte sites et apps via le timing SSD sans permission : le navigateur devient canal de fuite matériel invisible."
-    },
-    {
-      "label": "IA weaponisée dans les bases de données d'entreprise",
-      "category": "infosec",
-      "since": "2026-06-10",
-      "note": "SQL Server 2025 weaponisé en canal C2 et exfiltration : les features IA deviennent surface d'attaque interne stratégique."
     },
     {
       "label": "Simulation nucléaire et limites stratégiques",
@@ -179,6 +173,18 @@
       "category": "devops",
       "since": "2026-06-15",
       "note": "Jane Street rend les preuves mécanisées accessibles au développement quotidien, signal précoce d'un basculement industriel vers le code prouvé."
+    },
+    {
+      "label": "Abus des services de collaboration pour exfiltration",
+      "category": "infosec",
+      "since": "2026-06-16",
+      "note": "UNC6508 réécrit les règles Workspace pour copier les mails sensibles sans malware : le SaaS devient canal furtif d'exfiltration longue durée."
+    },
+    {
+      "label": "Contraction des offres cloud accessibles",
+      "category": "devops",
+      "since": "2026-06-16",
+      "note": "Oracle et Hetzner resserrent leurs offres gratuites ou abordables, creusant la fracture entre cloud industriel et self-hosting viable."
     }
   ],
   "tensions": [
@@ -204,14 +210,14 @@
     },
     {
       "label": "Fiabilité promise vs dégradation observée",
-      "note": "KPMG retire un rapport, Gemini est condamné et Claude devient désagréable : la confiance s'érode alors que l'adoption des LLM s'generalise."
+      "note": "KPMG retire un rapport, Gemini est condamné et Claude devient désagréable : la confiance s'érode alors que l'adoption des LLM se généralise."
     }
   ],
   "strategy_notes": [
-    "La condamnation de Google pour hallucinations de Gemini en Allemagne et le retrait du rapport KPMG marquent un tournant : la responsabilité juridique des sorties LLM entre en vigueur. Anticiper des exigences de traçabilité et d'audit des réponses IA dans les juridictions européennes.",
-    "Atomic Arch prouve que l'offensive supply chain migre vers Rust et eBPF : la mémoire sûre n'est plus un privilège défensif. Évaluer la chaine de compilation interne face à des toolchains compromises de plus en plus sophistiquées.",
-    "La convergence des ruptures sanitaires (rougeole, perturbateurs endocriniens) et climatiques (AMOC) avec les crises numériques dessine un pattern systémique : les infrastructures de protection, physiques ou logiques, cèdent sous des pressions cumulées. Surveiller les narratifs de 'effondrement des barrières'.",
-    "La fin de la ruée cloud et les projets edge aboutis (CrankGPT, YOLOv8n) confirment que l'inference locale n'est plus un hobby. Les acteurs cloud doivent repositionner leur valeur ajoutée sur l'orchestration et le fine-tuning distribué."
+    "La weaponization de LiteLLM et Copilot confirme que la surface d'attaque a migré des modèles vers leurs intégrations. Anticiper des audits de sécurité spécifiques sur les passerelles API et les assistants intégrés dans les suites bureautiques.",
+    "Anthropic suspendu, Tesla FSD et KPMG hier forment un triptyque de crise de confiance : la fiabilité affirmée ne résiste pas à l'épreuve régulatoire ou publique. Les exigences de transparence et d'audit vont se durcir.",
+    "Euromesh et la condamnation de Gemini posent la question de la capacité européenne à produire ce qu'elle régule. Le double bind régulation/production va structurer le débat sur la souveraineté IA.",
+    "Le resserrement cloud (Oracle, Hetzner) et la panne de capacité (Microsoft/AWS) créent une fenêtre pour l'edge. Surveiller si les entreprises proposent désormais l'homelab comme politique IT explicite."
   ],
-  "updated_at": "2026-06-15"
+  "updated_at": "2026-06-16"
 }

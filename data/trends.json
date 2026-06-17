@@ -4,17 +4,9 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-15",
+      "last_seen": "2026-06-17",
       "momentum": "stable",
-      "note": "Agents de codage légers et vibe coding accélèrent, mais la fracture technique entre promesse et réalité s'accentue."
-    },
-    {
-      "label": "Recherche : au-delà du scaling",
-      "category": "ia",
-      "first_seen": "2026-06-07",
-      "last_seen": "2026-06-13",
-      "momentum": "stable",
-      "note": "Pas d'actualisation majeure ; la bascule vers architectures non autorégressives et micro-économie des KV caches reste active mais en plateau."
+      "note": "Octopus et Qwen Robot Suite étendent l'agent à la matière, mais l'atrophie des compétences creuse la fracture entre promesse et coût humain."
     },
     {
       "label": "Économie & PMF de l'IA générative",
@@ -28,33 +20,25 @@
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-06-16",
+      "last_seen": "2026-06-17",
       "momentum": "montant",
-      "note": "L'inference locale devient crédible pour le coding quotidien face aux pénuries cloud, tandis que les plateformes homelab et outils comme dnsweaver gagnent en maturité."
+      "note": "GateGPT à 56k tokens/s sur FPGA et GPT-NL confirment que l'edge matériel et souverain devient crédible, dopé par le resserrement cloud."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-06-16",
+      "last_seen": "2026-06-17",
       "momentum": "montant",
-      "note": "Anthropic voit ses modèles suspendus pour jailbreak et Tesla présente des données FSD trompeuses : la promesse de fiabilité s'effrite sous pression régulatoire."
+      "note": "Claude multiplie les incidents pendant que Wolfram encapsule l'IA dans un noyau symbolique éprouvé, creusant le fossé entre promesse et réalité opérationnelle."
     },
     {
       "label": "IA offensive",
       "category": "infosec",
       "first_seen": "2026-05-24",
-      "last_seen": "2026-06-16",
+      "last_seen": "2026-06-17",
       "momentum": "stable",
-      "note": "Les intégrations IA en production — LiteLLM, Copilot — deviennent les surfaces d'attaque privilégiées au-delà des modèles eux-mêmes."
-    },
-    {
-      "label": "APT synthétiques et effondrement de l'attribution",
-      "category": "infosec",
-      "first_seen": "2026-06-14",
-      "last_seen": "2026-06-14",
-      "momentum": "stable",
-      "note": "Les APT générées par IA reproduisent les comportements d'acteurs étatiques, rendant l'attribution classique obsolète et forçant la segmentation réseau."
+      "note": "Pickle in the Middle sur Vertex AI confirme que les SDK ML et passerelles de sérialisation deviennent les surfaces d'attaque privilégiées au-delà des modèles."
     },
     {
       "label": "Worms supply chain auto-répliquants",
@@ -68,33 +52,25 @@
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-16",
+      "last_seen": "2026-06-17",
       "momentum": "montant",
-      "note": "Les chaînes ciblent l'orchestration IA et les outils de collaboration légitimes, tandis que les compromissions longue durée persistent dans la recherche sensible."
+      "note": "FortiSandbox activement exploité et SprySOCKS Windows avec rootkit noyau/bootkit UEFI confirment que les outils de sécurité eux-mêmes deviennent cibles prioritaires."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-16",
+      "last_seen": "2026-06-17",
       "momentum": "stable",
-      "note": "Vibe coding vs ingénierie et méthodes formelles en production : le métier se polarise entre abstraction rapide et rigueur prouvée."
-    },
-    {
-      "label": "Isolation et sandboxing : du poste au réseau",
-      "category": "devops",
-      "first_seen": "2026-06-07",
-      "last_seen": "2026-06-15",
-      "momentum": "stable",
-      "note": "Niubi Guard automatise la détection des abus GitHub et PentestCompanion structure l'offensif self-hosted : l'outillage de confiance se déploie."
+      "note": "L'atrophie des compétences par agents de codage et l'émergence d'outils conversationnels polarisent le métier entre abstraction rapide et exigence de rigueur."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-15",
+      "last_seen": "2026-06-17",
       "momentum": "stable",
-      "note": "Réécriture de X11 en Rust et instrumentation scientifique DIY : le legacy devient terrain de réinvention frugale et open source."
+      "note": "De l'archéologie du 8087 à la résurrection de Commodore en téléphone anti-réseaux, le rétro devient vecteur de réappropriation technique et de déconnexion volontaire."
     },
     {
       "label": "Désenchantement IA au travail",
@@ -108,33 +84,25 @@
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-16",
+      "last_seen": "2026-06-17",
       "momentum": "montant",
-      "note": "La surveillance s'étend des lunettes connectées aux téléphones jetables et aux réseaux sociaux pour mineurs, tandis que les frontières se resserrent."
+      "note": "Caméras Flock détournées pour harceler et l'interdiction anglaise des réseaux aux mineurs montrent que la rhétorique sécuritaire cache une extension du contrôle."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-16",
+      "last_seen": "2026-06-17",
       "momentum": "montant",
-      "note": "La régulation devient arme de souveraineté : suspension de modèles, interdictions d'accès, abolition de visas et alerte sur l'explosion d'intelligence."
+      "note": "Washington durcit la cybersécurité des NSS tout en voulant desserrer les restrictions sur Anthropic, révélant une régulation techno-sécuritaire à deux vitesses."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-16",
+      "last_seen": "2026-06-17",
       "momentum": "montant",
-      "note": "L'auto-hébergement hardware et logiciel gagne en maturité, de Kubernetes domestique à la préservation de savoirs censurés dans des objets connectés."
-    },
-    {
-      "label": "Santé et climat : barrières de protection",
-      "category": "societe",
-      "first_seen": "2026-06-15",
-      "last_seen": "2026-06-15",
-      "momentum": "stable",
-      "note": "Rougeole, perturbateurs endocriniens et AMOC : les barrières sanitaires et écologiques jugées acquises cèdent sous la pression."
+      "note": "Du hardware reconverti à la fabrication open source, la souveraineté passe de l'infra logicielle à l'autonomie matérielle et productive."
     }
   ],
   "watchlist": [
@@ -143,12 +111,6 @@
       "category": "infosec",
       "since": "2026-06-10",
       "note": "FROST fingerprinte sites et apps via le timing SSD sans permission : le navigateur devient canal de fuite matériel invisible."
-    },
-    {
-      "label": "Simulation nucléaire et limites stratégiques",
-      "category": "ia",
-      "since": "2026-06-12",
-      "note": "Un chercheur pousse un LLM à simuler une crise nucléaire, révélant l'absence de rollback et de garde-fous dans les scénarios à haut risque."
     },
     {
       "label": "Infrastructure d'authentification compromise de longue durée",
@@ -161,12 +123,6 @@
       "category": "societe",
       "since": "2026-06-14",
       "note": "Policier britannique et ingérence électorale signalent que l'IA devient vecteur de corruption procédurale directe et peu traçable."
-    },
-    {
-      "label": "Lunettes connectées indétectables",
-      "category": "societe",
-      "since": "2026-06-15",
-      "note": "Les smart glasses enregistrent sans visibilité extérieure, rendant la surveillance de proximité banale et impossible à détecter pour le grand public."
     },
     {
       "label": "Méthodes formelles en production comme standard",
@@ -185,39 +141,51 @@
       "category": "devops",
       "since": "2026-06-16",
       "note": "Oracle et Hetzner resserrent leurs offres gratuites ou abordables, creusant la fracture entre cloud industriel et self-hosting viable."
+    },
+    {
+      "label": "Trojans mobiles à commandes massives",
+      "category": "infosec",
+      "since": "2026-06-17",
+      "note": "Rokarolla cible 217 apps financières avec 137 commandes distantes, signalant une industrie du malware mobile à haute granularité."
+    },
+    {
+      "label": "Lithographie calculée open source",
+      "category": "diy",
+      "since": "2026-06-17",
+      "note": "OpenCAL rend la lithographie axiale calculée reproductible chez soi, signal précoce d'une rupture dans la fabrication décentralisée."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Promesse de gains agentiques ↔ 6h hebdomadaires de botsitting invisible ; la fracture s'élargit entre adoption massive et coût humain caché."
+      "note": "Promesse de gains agentiques ↔ atrophie des compétences et 6h de botsitting ; la fracture s'élargit entre adoption massive et coût humain caché."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "Smart glasses indétectables et interdiction aux mineurs : la surveillance et la protection se confondent dans des restrictions d'usage sans consentement."
+      "note": "Caméras Flock détournées, interdiction UK aux mineurs et smart glasses : la surveillance et la protection se confondent dans des restrictions sans consentement."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "CrankGPT et YOLOv8n fonctionnent sans cloud ↔ consolidation cloud ; la décloudification edge gagne en crédibilité technique contre la centralisation."
+      "note": "GateGPT sur FPGA et outils self-hosted gagnent en crédibilité ↔ consolidation cloud ; la décloudification edge devient une architecture viable face aux pénuries."
     },
     {
       "label": "Legacy non patchable vs modernisation sécuritaire",
-      "note": "Splunk, SharePoint et PeopleSoft RCE ↔ Git et X11 en Rust ; le passé non réparé détermine toujours le périmètre d'attaque réel."
+      "note": "Fortinet, Honda et systèmes 13 ans ↔ OpenCAL et X11 en Rust ; le passé non réparé détermine toujours le périmètre d'attaque réel."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "Suspensions de modèles, condamnation de Gemini et saisie deepfakes : la régulation devient arme de souveraineté autant que protection citoyenne."
+      "note": "Washington sécurise ses NSS tout en voulant exporter Anthropic : la régulation devient arme de souveraineté autant que protection citoyenne."
     },
     {
       "label": "Fiabilité promise vs dégradation observée",
-      "note": "KPMG retire un rapport, Gemini est condamné et Claude devient désagréable : la confiance s'érode alors que l'adoption des LLM se généralise."
+      "note": "Claude en incident et Wolfram seul recours déterministe : la confiance s'érode alors que l'adoption des LLM se généralise."
     }
   ],
   "strategy_notes": [
-    "La weaponization de LiteLLM et Copilot confirme que la surface d'attaque a migré des modèles vers leurs intégrations. Anticiper des audits de sécurité spécifiques sur les passerelles API et les assistants intégrés dans les suites bureautiques.",
-    "Anthropic suspendu, Tesla FSD et KPMG hier forment un triptyque de crise de confiance : la fiabilité affirmée ne résiste pas à l'épreuve régulatoire ou publique. Les exigences de transparence et d'audit vont se durcir.",
-    "Euromesh et la condamnation de Gemini posent la question de la capacité européenne à produire ce qu'elle régule. Le double bind régulation/production va structurer le débat sur la souveraineté IA.",
-    "Le resserrement cloud (Oracle, Hetzner) et la panne de capacité (Microsoft/AWS) créent une fenêtre pour l'edge. Surveiller si les entreprises proposent désormais l'homelab comme politique IT explicite."
+    "Le compromis Vertex AI et la vulnérabilité FortiSandbox confirment que la surface d'attaque s'est déplacée vers les couches d'intégration et d'orchestration. Anticiper des audits de sécurité sur les SDK ML et appliances de sécurité elles-mêmes.",
+    "L'accumulation de signaux de fiabilité dégradée (Claude, Tesla, KPMG) et l'émergence de contre-modèles déterministes (Wolfram) suggèrent un marché bifurqué entre IA probabiliste et IA symbolique encapsulée. Surveiller les annonces de hybridation.",
+    "La convergence edge (GateGPT FPGA, Beszel, PeerWeb) et la fabrication DIY (OpenCAL) pourrait créer un écosystème de souveraineté matérielle indépendante du cloud d'ici 12 à 18 mois. Évaluer l'impact sur les politiques IT des ETI.",
+    "Washington utilise simultanément la régulation comme bouclier (NSPM-12) et porte-voix commercial (export Anthropic), révélant une stratégie techno-nationaliste où sécurité et compétitivité se confondent. Cela structurera les débats de souveraineté en Europe."
   ],
-  "updated_at": "2026-06-16"
+  "updated_at": "2026-06-17"
 }

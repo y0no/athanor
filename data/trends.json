@@ -4,105 +4,129 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-17",
+      "last_seen": "2026-06-18",
       "momentum": "stable",
-      "note": "Octopus et Qwen Robot Suite étendent l'agent à la matière, mais l'atrophie des compétences creuse la fracture entre promesse et coût humain."
+      "note": "Claude Skills modulaire et UX agentique native recomposent le dev, tandis que la robotique pose la question de la fiabilité entre Claude et Grok."
     },
     {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-16",
-      "momentum": "stable",
-      "note": "La ruée cloud se referme : Oracle réduit l'offre gratuite, Hetzner augmente ses tarifs et Microsoft loue AWS, confirmant la consolidation et la décloudification edge."
+      "last_seen": "2026-06-18",
+      "momentum": "montant",
+      "note": "OpenAI en perte record, 60% de rejet du label IA et 16% de confiance confirment la crise économique et sociétale du secteur."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-06-17",
+      "last_seen": "2026-06-18",
       "momentum": "montant",
-      "note": "GateGPT à 56k tokens/s sur FPGA et GPT-NL confirment que l'edge matériel et souverain devient crédible, dopé par le resserrement cloud."
+      "note": "GLM-5.2 et Qwen local affirment l'adéquation souveraine, tandis que le Pixel recyclé étend l'autonomie matérielle edge."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-06-17",
+      "last_seen": "2026-06-18",
       "momentum": "montant",
-      "note": "Claude multiplie les incidents pendant que Wolfram encapsule l'IA dans un noyau symbolique éprouvé, creusant le fossé entre promesse et réalité opérationnelle."
+      "note": "ChatGPT détourné vers contenus violents et la robotique Claude vs Grok creusent la crise de fiabilité et de gouvernance."
+    },
+    {
+      "label": "IA critique : santé et gouvernance",
+      "category": "ia",
+      "first_seen": "2026-06-18",
+      "last_seen": "2026-06-18",
+      "momentum": "nouveau",
+      "note": "Midjourney, OpenAI et Trellis ciblent la santé tandis que le Pentagone déploie l'IA massivement, posant la fiabilité à risque vital."
     },
     {
       "label": "IA offensive",
       "category": "infosec",
       "first_seen": "2026-05-24",
-      "last_seen": "2026-06-17",
+      "last_seen": "2026-06-18",
       "momentum": "stable",
-      "note": "Pickle in the Middle sur Vertex AI confirme que les SDK ML et passerelles de sérialisation deviennent les surfaces d'attaque privilégiées au-delà des modèles."
+      "note": "Plugins JetBrains usurpant assistants IA et packages Mastra trojanisés : les écosystèmes de confiance des développeurs restent la surface privilégiée."
     },
     {
       "label": "Worms supply chain auto-répliquants",
       "category": "infosec",
       "first_seen": "2026-05-28",
-      "last_seen": "2026-06-16",
+      "last_seen": "2026-06-18",
       "momentum": "stable",
-      "note": "La supply chain reste le canal offensif privilégié : compromission CDN de plugins WordPress majeurs et rootkits eBPF dans la foulée d'Atomic Arch."
+      "note": "144 packages Mastra trojanisés en 27 min et 15 plugins JetBrains malveillants confirment que registres et marketplaces sont le canal offensif privilégié."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-17",
+      "last_seen": "2026-06-18",
       "momentum": "montant",
-      "note": "FortiSandbox activement exploité et SprySOCKS Windows avec rootkit noyau/bootkit UEFI confirment que les outils de sécurité eux-mêmes deviennent cibles prioritaires."
+      "note": "Zero-day Defender, Joomla JCE au catalogue CISA et libheif confirment que sécurité, CMS et bibliothèques multimédia sont cibles."
+    },
+    {
+      "label": "Persistance furtive dans les outils collaboratifs",
+      "category": "infosec",
+      "first_seen": "2026-06-18",
+      "last_seen": "2026-06-18",
+      "momentum": "nouveau",
+      "note": "Tailscale et Microsoft Teams relay deviennent canaux de persistance, rendant les outils de collaboration indiscernables du malveillant."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-17",
-      "momentum": "stable",
-      "note": "L'atrophie des compétences par agents de codage et l'émergence d'outils conversationnels polarisent le métier entre abstraction rapide et exigence de rigueur."
+      "last_seen": "2026-06-18",
+      "momentum": "montant",
+      "note": "Claude Skills, TREX et polypore recomposent le métier en supervision agentique, tandis que l'exigence de discipline d'ingénierie s'accentue."
+    },
+    {
+      "label": "Contraction cloud et dépendance aux éditeurs",
+      "category": "devops",
+      "first_seen": "2026-06-18",
+      "last_seen": "2026-06-18",
+      "momentum": "nouveau",
+      "note": "Tesco fuit VMware face à Broadcom et les offres cloud se resserrent, révélant la fragilité de la dépendance aux éditeurs."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-17",
+      "last_seen": "2026-06-18",
       "momentum": "stable",
-      "note": "De l'archéologie du 8087 à la résurrection de Commodore en téléphone anti-réseaux, le rétro devient vecteur de réappropriation technique et de déconnexion volontaire."
+      "note": "ribbie.tv et le tube He-Ne prolongent la réappropriation technique par le minimalisme rétro et l'optique analogique."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-12",
-      "momentum": "stable",
-      "note": "Les 6 heures hebdomadaires de botsitting quantifient le travail invisible de correction, creusant le fossé entre promesse et réalité."
+      "last_seen": "2026-06-18",
+      "momentum": "montant",
+      "note": "Le rejet du label IA (60%) et la confiance effondrée (16%) généralisent le désenchantement au-delà du travail, vers une défiance de marque."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-17",
+      "last_seen": "2026-06-18",
       "momentum": "montant",
-      "note": "Caméras Flock détournées pour harceler et l'interdiction anglaise des réseaux aux mineurs montrent que la rhétorique sécuritaire cache une extension du contrôle."
+      "note": "ICE achète des identifiants fiscaux et Volkswagen bloque GrapheneOS : surveillance d'État et discrimination algorithmique corporative convergent."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-17",
+      "last_seen": "2026-06-18",
       "momentum": "montant",
-      "note": "Washington durcit la cybersécurité des NSS tout en voulant desserrer les restrictions sur Anthropic, révélant une régulation techno-sécuritaire à deux vitesses."
+      "note": "Anthropic cible de la Maison Blanche et Pentagone à 1,5M users : la régulation techno-sécuritaire se radicalise en deux vitesses."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-17",
+      "last_seen": "2026-06-18",
       "momentum": "montant",
-      "note": "Du hardware reconverti à la fabrication open source, la souveraineté passe de l'infra logicielle à l'autonomie matérielle et productive."
+      "note": "Du Pixel recyclé au serveur à la batterie organique et au monitoring open source, la souveraineté gagne en matérialité et autonomie productive."
     }
   ],
   "watchlist": [
@@ -119,28 +143,10 @@
       "note": "Velvet Ant prouve que PAM et OpenSSH peuvent héberger des backdoors persistantes sur près d'une décennie, invisibles aux audits classiques."
     },
     {
-      "label": "Preuves et élections sous IA",
-      "category": "societe",
-      "since": "2026-06-14",
-      "note": "Policier britannique et ingérence électorale signalent que l'IA devient vecteur de corruption procédurale directe et peu traçable."
-    },
-    {
       "label": "Méthodes formelles en production comme standard",
       "category": "devops",
       "since": "2026-06-15",
       "note": "Jane Street rend les preuves mécanisées accessibles au développement quotidien, signal précoce d'un basculement industriel vers le code prouvé."
-    },
-    {
-      "label": "Abus des services de collaboration pour exfiltration",
-      "category": "infosec",
-      "since": "2026-06-16",
-      "note": "UNC6508 réécrit les règles Workspace pour copier les mails sensibles sans malware : le SaaS devient canal furtif d'exfiltration longue durée."
-    },
-    {
-      "label": "Contraction des offres cloud accessibles",
-      "category": "devops",
-      "since": "2026-06-16",
-      "note": "Oracle et Hetzner resserrent leurs offres gratuites ou abordables, creusant la fracture entre cloud industriel et self-hosting viable."
     },
     {
       "label": "Trojans mobiles à commandes massives",
@@ -153,6 +159,24 @@
       "category": "diy",
       "since": "2026-06-17",
       "note": "OpenCAL rend la lithographie axiale calculée reproductible chez soi, signal précoce d'une rupture dans la fabrication décentralisée."
+    },
+    {
+      "label": "Redaction locale des données personnelles",
+      "category": "ia",
+      "since": "2026-06-18",
+      "note": "pii-gui assainit localement les prompts avant envoi : la souveraineté des données personnelles devient un prérequis technique."
+    },
+    {
+      "label": "CAD open source piloté par IA",
+      "category": "ia",
+      "since": "2026-06-18",
+      "note": "Un CAD open source piloté par IA pourrait bousculer la CAO industrielle et démocratiser la conception assistée par agents."
+    },
+    {
+      "label": "Batterie organique décentralisée",
+      "category": "diy",
+      "since": "2026-06-18",
+      "note": "Une batterie à flux organique alimentée au thé vert rend la chimie de stockage accessible et sûre pour la fabrication domestique."
     }
   ],
   "tensions": [
@@ -162,15 +186,11 @@
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "Caméras Flock détournées, interdiction UK aux mineurs et smart glasses : la surveillance et la protection se confondent dans des restrictions sans consentement."
+      "note": "ICE, Volkswagen et caméras Flock détournées : la surveillance se confond avec la protection dans des restrictions sans consentement."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "GateGPT sur FPGA et outils self-hosted gagnent en crédibilité ↔ consolidation cloud ; la décloudification edge devient une architecture viable face aux pénuries."
-    },
-    {
-      "label": "Legacy non patchable vs modernisation sécuritaire",
-      "note": "Fortinet, Honda et systèmes 13 ans ↔ OpenCAL et X11 en Rust ; le passé non réparé détermine toujours le périmètre d'attaque réel."
+      "note": "Tesco fuit VMware et GateGPT sur FPGA gagnent en crédibilité ↔ cloud resserré ; la décloudification edge devient une architecture viable."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
@@ -178,14 +198,18 @@
     },
     {
       "label": "Fiabilité promise vs dégradation observée",
-      "note": "Claude en incident et Wolfram seul recours déterministe : la confiance s'érode alors que l'adoption des LLM se généralise."
+      "note": "ChatGPT détourné, Claude en incident et Wolfram recours déterministe : la confiance s'érode alors que l'IA se déploie dans la santé et la robotique."
+    },
+    {
+      "label": "Déploiement IA critique vs défiance publique",
+      "note": "Pentagone et santé adoptent l'IA massivement tandis que 16% des Américains y croient : le fossé entre déploiement institutionnel et confiance publique s'élargit."
     }
   ],
   "strategy_notes": [
-    "Le compromis Vertex AI et la vulnérabilité FortiSandbox confirment que la surface d'attaque s'est déplacée vers les couches d'intégration et d'orchestration. Anticiper des audits de sécurité sur les SDK ML et appliances de sécurité elles-mêmes.",
-    "L'accumulation de signaux de fiabilité dégradée (Claude, Tesla, KPMG) et l'émergence de contre-modèles déterministes (Wolfram) suggèrent un marché bifurqué entre IA probabiliste et IA symbolique encapsulée. Surveiller les annonces de hybridation.",
-    "La convergence edge (GateGPT FPGA, Beszel, PeerWeb) et la fabrication DIY (OpenCAL) pourrait créer un écosystème de souveraineté matérielle indépendante du cloud d'ici 12 à 18 mois. Évaluer l'impact sur les politiques IT des ETI.",
-    "Washington utilise simultanément la régulation comme bouclier (NSPM-12) et porte-voix commercial (export Anthropic), révélant une stratégie techno-nationaliste où sécurité et compétitivité se confondent. Cela structurera les débats de souveraineté en Europe."
+    "La crise de confiance (16%, pertes OpenAI) risque de durcir la régulation et d'accélérer les solutions on-premise et open-weights.",
+    "Les attaques convergentes sur npm, JetBrains et Homebrew imposent un audit des supply chains logicielles internes au-delà des dépendances connues.",
+    "Le retrait de Tesco sur VMware et la contraction cloud créent une fenêtre pour l'edge et le self-hosting qu'il faut évaluer pour les ETI.",
+    "Tailscale et Teams comme canaux de persistance invisibles imposent de surveiller les connexions légitimes anormales dans les outils de collaboration."
   ],
-  "updated_at": "2026-06-17"
+  "updated_at": "2026-06-18"
 }

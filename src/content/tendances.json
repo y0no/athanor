@@ -1,44 +1,34 @@
 {
-  "updated_at": "2026-06-18",
+  "updated_at": "2026-06-19",
   "synthesis": {
-    "headline": "L'IA bascule en crise de légitimité à son déploiement massif.",
-    "narrative": "Les institutions déploient l'IA à grande échelle — Pentagone, santé, chimie médicamenteuse — tandis que la confiance publique s'effondre à 16 % aux États-Unis et que le label <strong>IA</strong> devient répulsif pour 60 % des consommateurs. <strong>OpenAI perd des milliards par an</strong>, confirmant que le modèle économique vacille alors que la décloudification edge et la fabrication DIY accélèrent une <em>fuite en avant technique</em> vers l'autonomie. Parallèlement, la supply chain des développeurs — npm, JetBrains, Homebrew — devient le théâtre d'attaques continues, tandis que la surveillance d'État et la discrimination algorithmique corporative érodent les libertés au nom de la sécurité."
+    "headline": "La méfiance technique réinvente l'infrastructure par la souveraineté",
+    "narrative": "<strong>L'érosion de la confiance</strong> — envers l'<strong>IA</strong> (16%), les <strong>GAFAM</strong> et la <strong>French Tech</strong> captive — pousse vers une <em>décentralisation matérielle et logicielle</em> où le NAS <code>ZFS</code>, la mémoire persistante et le DIY dépolymerisable remplacent les promesses abstraites. <strong>Parallèlement</strong>, la <strong>supply chain</strong> devient champ de bataille : dépôts <code>GitHub</code> trojanisés, agents orphelins et analyseurs IA aveuglés signalent que <em>la fiabilité est le nouveau périmètre de sécurité</em>. La loi <strong>RIPOST</strong> et le retrait du chiffrement <strong>AMD</strong> rappellent que cette défiance s'étend du matériel à l'État."
   },
   "currents": [
     {
-      "label": "L'autonomie technique comme réponse systémique",
-      "note": "Du modèle local à l'infra recyclée et au monitoring sans cloud, une fracture s'ouvre entre dépendance aux éditeurs et souveraineté matérielle.",
+      "label": "L'IA est désormais une surface d'attaque structurante",
+      "note": "Les agents orphelins, les paquets npm empoisonnés et les contenus interdits anti-analyse montrent que l'IA n'est plus seulement outil de productivité mais vecteur offensif et cible privilégiée.",
       "categories": [
         "ia",
-        "diy",
-        "devops",
-        "societe"
-      ]
-    },
-    {
-      "label": "La confiance comme variable d'ajustement politique et économique",
-      "note": "OpenAI en déficit, label IA rejeté, outils de sécurité eux-mêmes ciblés : la confiance devient la ressource la plus rare et la plus politisée du numérique.",
-      "categories": [
-        "ia",
-        "societe",
         "infosec"
       ]
     },
     {
-      "label": "La supply chain comme front unique",
-      "note": "Npm, JetBrains, Homebrew et les assistants IA : la chaîne de production logicielle est devenue le principal vecteur d'attaque et le lieu de reconstruction de la sécurité.",
+      "label": "La déconfiance alimente l'exode vers l'autonomie technique",
+      "note": "Face à la médiocrité GAFAM, la surveillance RIPOST et la dépendance américaine de la French Tech, le self-hosting et la fabrication décentralisée deviennent des réponses politiques autant que techniques.",
+      "categories": [
+        "societe",
+        "devops",
+        "diy"
+      ]
+    },
+    {
+      "label": "La supply chain est le champ de bataille principal",
+      "note": "Des dépôts GitHub trojanisés aux Bill of Materials et assistants IDE compromis, la confiance dans la filière logicielle s'érode et pousse à l'audit systématique.",
       "categories": [
         "infosec",
         "devops",
         "ia"
-      ]
-    },
-    {
-      "label": "Le développeur entre atrophie et discipline renforcée",
-      "note": "Claude Skills et TREX promettent une productivité décuplée, mais exigent en retour une discipline d'ingénierie accrue face à l'abstraction rapide.",
-      "categories": [
-        "ia",
-        "devops"
       ]
     }
   ],
@@ -47,17 +37,17 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-18",
+      "last_seen": "2026-06-19",
       "momentum": "stable",
-      "note": "Claude Skills modulaire et UX agentique native recomposent le dev, tandis que la robotique pose la question de la fiabilité entre Claude et Grok."
+      "note": "Git agentique, mémoire persistante Elasticsearch et agents orphelins signent une maturité infrastructurale confrontée à une gouvernance vacillante."
     },
     {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-18",
+      "last_seen": "2026-06-19",
       "momentum": "montant",
-      "note": "OpenAI en perte record, 60% de rejet du label IA et 16% de confiance confirment la crise économique et sociétale du secteur."
+      "note": "Octopuce dénonce le coût caché des bots sur l'infra web et la médiocrité GAFAM vendue comme innovation, creusant la crise économique et la défiance."
     },
     {
       "label": "IA locale / edge & modèles compacts",
@@ -71,105 +61,97 @@
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-06-18",
+      "last_seen": "2026-06-19",
       "momentum": "montant",
-      "note": "ChatGPT détourné vers contenus violents et la robotique Claude vs Grok creusent la crise de fiabilité et de gouvernance."
-    },
-    {
-      "label": "IA critique : santé et gouvernance",
-      "category": "ia",
-      "first_seen": "2026-06-18",
-      "last_seen": "2026-06-18",
-      "momentum": "nouveau",
-      "note": "Midjourney, OpenAI et Trellis ciblent la santé tandis que le Pentagone déploie l'IA massivement, posant la fiabilité à risque vital."
+      "note": "Agents orphelins, chats détournés en vecteurs malware et contenus interdits pour aveugler l'analyse IA creusent la crise de fiabilité."
     },
     {
       "label": "IA offensive",
       "category": "infosec",
       "first_seen": "2026-05-24",
-      "last_seen": "2026-06-18",
+      "last_seen": "2026-06-19",
       "momentum": "stable",
-      "note": "Plugins JetBrains usurpant assistants IA et packages Mastra trojanisés : les écosystèmes de confiance des développeurs restent la surface privilégiée."
+      "note": "Paquets npm empoisonnés, chats Claude détournés et contenus interdits anti-analyse : l'IA est désormais vecteur offensif structurant."
     },
     {
       "label": "Worms supply chain auto-répliquants",
       "category": "infosec",
       "first_seen": "2026-05-28",
-      "last_seen": "2026-06-18",
-      "momentum": "stable",
-      "note": "144 packages Mastra trojanisés en 27 min et 15 plugins JetBrains malveillants confirment que registres et marketplaces sont le canal offensif privilégié."
+      "last_seen": "2026-06-19",
+      "momentum": "montant",
+      "note": "10 000 dépôts GitHub trojanisés et failles nginx/Splunk confirment l'échelle industrielle de la compromission des filières logicielles."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-18",
+      "last_seen": "2026-06-19",
       "momentum": "montant",
-      "note": "Zero-day Defender, Joomla JCE au catalogue CISA et libheif confirment que sécurité, CMS et bibliothèques multimédia sont cibles."
+      "note": "F5 nginx, Splunk, Oracle CPU et ransomware INC multiplient les cibles critiques tandis que les fenêtres de patch restent étroites."
     },
     {
       "label": "Persistance furtive dans les outils collaboratifs",
       "category": "infosec",
       "first_seen": "2026-06-18",
-      "last_seen": "2026-06-18",
-      "momentum": "nouveau",
-      "note": "Tailscale et Microsoft Teams relay deviennent canaux de persistance, rendant les outils de collaboration indiscernables du malveillant."
+      "last_seen": "2026-06-19",
+      "momentum": "montant",
+      "note": "DragonForce confirme l'abus des relais Teams comme canal C2 invisible, rendant les outils de collaboration indiscernables du malveillant."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-18",
+      "last_seen": "2026-06-19",
       "momentum": "montant",
-      "note": "Claude Skills, TREX et polypore recomposent le métier en supervision agentique, tandis que l'exigence de discipline d'ingénierie s'accentue."
+      "note": "Git agentique, MCP auth zero-touch, BOMwiki et agents de test automatisés reconfigurent le métier en supervision et fiabilisation."
     },
     {
       "label": "Contraction cloud et dépendance aux éditeurs",
       "category": "devops",
       "first_seen": "2026-06-18",
-      "last_seen": "2026-06-18",
-      "momentum": "nouveau",
-      "note": "Tesco fuit VMware face à Broadcom et les offres cloud se resserrent, révélant la fragilité de la dépendance aux éditeurs."
+      "last_seen": "2026-06-19",
+      "momentum": "montant",
+      "note": "Le self-hosting progresse (Ubiquiti ZFS, Seafile, Datasette) mais la dépendance aux éditeurs américains reste structurelle."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-18",
+      "last_seen": "2026-06-19",
       "momentum": "stable",
-      "note": "ribbie.tv et le tube He-Ne prolongent la réappropriation technique par le minimalisme rétro et l'optique analogique."
+      "note": "La scène rétro s'étend du portage SM64 multijoueur sur DS au téléphone clapet Commodore sous Linux et à la rétro-ingénierie de matériel."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-18",
+      "last_seen": "2026-06-19",
       "momentum": "montant",
-      "note": "Le rejet du label IA (60%) et la confiance effondrée (16%) généralisent le désenchantement au-delà du travail, vers une défiance de marque."
+      "note": "La haine progressive de l'IA, la médiocrité GAFAM vendue comme innovation et les coûts externalisés généralisent la défiance au-delà du milieu pro."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-18",
+      "last_seen": "2026-06-19",
       "momentum": "montant",
-      "note": "ICE achète des identifiants fiscaux et Volkswagen bloque GrapheneOS : surveillance d'État et discrimination algorithmique corporative convergent."
+      "note": "La loi RIPOST entérine la surveillance LAPI des déplacements, prolongeant la convergence entre sécurité d'État et traçabilité de masse."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-18",
+      "last_seen": "2026-06-19",
       "momentum": "montant",
-      "note": "Anthropic cible de la Maison Blanche et Pentagone à 1,5M users : la régulation techno-sécuritaire se radicalise en deux vitesses."
+      "note": "La French Tech accusée de dépendance américaine et la souveraineté européenne qualifiée de théâtre révèlent un vide stratégique et politique."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-18",
+      "last_seen": "2026-06-19",
       "momentum": "montant",
-      "note": "Du Pixel recyclé au serveur à la batterie organique et au monitoring open source, la souveraineté gagne en matérialité et autonomie productive."
+      "note": "Le self-hosting s'infrastructurise (NAS ZFS, Datasette) mais la souveraineté reste rhétorique sans écosystème structurel réel."
     }
   ],
   "watchlist": [
@@ -189,13 +171,7 @@
       "label": "Méthodes formelles en production comme standard",
       "category": "devops",
       "since": "2026-06-15",
-      "note": "Jane Street rend les preuves mécanisées accessibles au développement quotidien, signal précoce d'un basculement industriel vers le code prouvé."
-    },
-    {
-      "label": "Trojans mobiles à commandes massives",
-      "category": "infosec",
-      "since": "2026-06-17",
-      "note": "Rokarolla cible 217 apps financières avec 137 commandes distantes, signalant une industrie du malware mobile à haute granularité."
+      "note": "Jane Street et Talos/Lean rendent les preuves mécanisées accessibles au développement quotidien, signal précoce d'un basculement industriel vers le code prouvé."
     },
     {
       "label": "Lithographie calculée open source",
@@ -210,30 +186,30 @@
       "note": "pii-gui assainit localement les prompts avant envoi : la souveraineté des données personnelles devient un prérequis technique."
     },
     {
-      "label": "CAD open source piloté par IA",
-      "category": "ia",
-      "since": "2026-06-18",
-      "note": "Un CAD open source piloté par IA pourrait bousculer la CAO industrielle et démocratiser la conception assistée par agents."
-    },
-    {
       "label": "Batterie organique décentralisée",
       "category": "diy",
       "since": "2026-06-18",
       "note": "Une batterie à flux organique alimentée au thé vert rend la chimie de stockage accessible et sûre pour la fabrication domestique."
+    },
+    {
+      "label": "Abandon du chiffrement mémoire grand public",
+      "category": "infosec",
+      "since": "2026-06-19",
+      "note": "AMD retire silencieusement le chiffrement mémoire de ses Ryzen grand public, érodant la confiance matérielle de base sans communication."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Promesse de gains agentiques ↔ atrophie des compétences et 6h de botsitting ; la fracture s'élargit entre adoption massive et coût humain caché."
+      "note": "Promesse de gains agentiques ↔ atrophie et botsitting ; la haine progressive et la médiocrité GAFAM vendue comme IA creusent la fracture entre adoption et coût humain."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "ICE, Volkswagen et caméras Flock détournées : la surveillance se confond avec la protection dans des restrictions sans consentement."
+      "note": "ICE, Volkswagen, LAPI et caméras Flock détournées : la surveillance se confond avec la protection dans des restrictions sans consentement ni proportionnalité."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "Tesco fuit VMware et GateGPT sur FPGA gagnent en crédibilité ↔ cloud resserré ; la décloudification edge devient une architecture viable."
+      "note": "Le self-hosting gagne (Ubiquiti ZFS, Datasette) mais la French Tech reste matrixée par les GAFAM ; la décloudification edge devient une architecture politique autant que technique."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
@@ -241,7 +217,7 @@
     },
     {
       "label": "Fiabilité promise vs dégradation observée",
-      "note": "ChatGPT détourné, Claude en incident et Wolfram recours déterministe : la confiance s'érode alors que l'IA se déploie dans la santé et la robotique."
+      "note": "Agents orphelins, chats détournés, analyseurs IA aveuglés et retrait du chiffrement AMD : la confiance s'érode alors que l'IA se déploie dans la santé et la robotique."
     },
     {
       "label": "Déploiement IA critique vs défiance publique",

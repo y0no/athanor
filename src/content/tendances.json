@@ -1,34 +1,32 @@
 {
-  "updated_at": "2026-06-19",
+  "updated_at": "2026-06-20",
   "synthesis": {
-    "headline": "La méfiance technique réinvente l'infrastructure par la souveraineté",
-    "narrative": "<strong>L'érosion de la confiance</strong> — envers l'<strong>IA</strong> (16%), les <strong>GAFAM</strong> et la <strong>French Tech</strong> captive — pousse vers une <em>décentralisation matérielle et logicielle</em> où le NAS <code>ZFS</code>, la mémoire persistante et le DIY dépolymerisable remplacent les promesses abstraites. <strong>Parallèlement</strong>, la <strong>supply chain</strong> devient champ de bataille : dépôts <code>GitHub</code> trojanisés, agents orphelins et analyseurs IA aveuglés signalent que <em>la fiabilité est le nouveau périmètre de sécurité</em>. La loi <strong>RIPOST</strong> et le retrait du chiffrement <strong>AMD</strong> rappellent que cette défiance s'étend du matériel à l'État."
+    "headline": "L'IA devient munition au moment où la confiance matérielle s'effondre",
+    "narrative": "Washington classe Anthropic comme <em>munition</em>, révélant la régulation comme arme de souveraineté tandis que l'Europe renonce au logiciel libre et que les géants verrouillent le matériel. Parallèlement, <strong>AMD</strong> retire silencieusement le chiffrement mémoire et les patchs <strong>Windows</strong> cassent la Corbeille, érodant la confiance dans les couches les plus élémentaires. Cette dégradation matérielle et légale converge avec le <em>désenchantement</em> algorithmique : Spotify détruit le plaisir de la découverte, la Norvège bannit l'IA à l'école et les budgets se vident, creusant le fossé entre déploiement institutionnel et défiance citoyenne."
   },
   "currents": [
     {
-      "label": "L'IA est désormais une surface d'attaque structurante",
-      "note": "Les agents orphelins, les paquets npm empoisonnés et les contenus interdits anti-analyse montrent que l'IA n'est plus seulement outil de productivité mais vecteur offensif et cible privilégiée.",
-      "categories": [
-        "ia",
-        "infosec"
-      ]
-    },
-    {
-      "label": "La déconfiance alimente l'exode vers l'autonomie technique",
-      "note": "Face à la médiocrité GAFAM, la surveillance RIPOST et la dépendance américaine de la French Tech, le self-hosting et la fabrication décentralisée deviennent des réponses politiques autant que techniques.",
-      "categories": [
-        "societe",
-        "devops",
-        "diy"
-      ]
-    },
-    {
-      "label": "La supply chain est le champ de bataille principal",
-      "note": "Des dépôts GitHub trojanisés aux Bill of Materials et assistants IDE compromis, la confiance dans la filière logicielle s'érode et pousse à l'audit systématique.",
+      "label": "La confiance technique comme enjeu politique",
+      "note": "Retrait du chiffrement AMD, bugs Windows et renoncement européen au libre montrent que la fiabilité des systèmes est désormais débattue et démantelée au niveau politique autant que technique.",
       "categories": [
         "infosec",
-        "devops",
-        "ia"
+        "societe"
+      ]
+    },
+    {
+      "label": "L'IA contrainte par la géopolitique et la défiance",
+      "note": "Classement militaire américain, bannissement scolaire norvégien et budgets en tension tranchent : l'IA n'est plus seulement une promesse de productivité mais un objet de restriction géopolitique et d'atrophie cognitive documentée.",
+      "categories": [
+        "ia",
+        "societe"
+      ]
+    },
+    {
+      "label": "Visibilité et légèreté contre l'opacité des chaînes",
+      "note": "AURpocalypse, backdoors persistantes et outils d'audit profond convergent vers une même urgence : retrouver une visibilité fine sur les chaînes de compilation et les codebases face à l'obésification des stacks.",
+      "categories": [
+        "infosec",
+        "devops"
       ]
     }
   ],
@@ -45,16 +43,16 @@
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-19",
+      "last_seen": "2026-06-20",
       "momentum": "montant",
-      "note": "Octopuce dénonce le coût caché des bots sur l'infra web et la médiocrité GAFAM vendue comme innovation, creusant la crise économique et la défiance."
+      "note": "Budgets insoutenables, partenariat Amazon/OpenAI et concentration géopolitique creusent la crise économique de l'IA au-delà de la simple défiance."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
       "last_seen": "2026-06-18",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "GLM-5.2 et Qwen local affirment l'adéquation souveraine, tandis que le Pixel recyclé étend l'autonomie matérielle edge."
     },
     {
@@ -62,7 +60,7 @@
       "category": "ia",
       "first_seen": "2026-06-15",
       "last_seen": "2026-06-19",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Agents orphelins, chats détournés en vecteurs malware et contenus interdits pour aveugler l'analyse IA creusent la crise de fiabilité."
     },
     {
@@ -77,16 +75,16 @@
       "label": "Worms supply chain auto-répliquants",
       "category": "infosec",
       "first_seen": "2026-05-28",
-      "last_seen": "2026-06-19",
+      "last_seen": "2026-06-20",
       "momentum": "montant",
-      "note": "10 000 dépôts GitHub trojanisés et failles nginx/Splunk confirment l'échelle industrielle de la compromission des filières logicielles."
+      "note": "L'AURpocalypse ajoute Arch Linux aux cibles : les dépôts communautaires sans vérification forte rejoignent les 10 000 dépôts GitHub trojanisés dans la compromission industrielle."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
       "last_seen": "2026-06-19",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "F5 nginx, Splunk, Oracle CPU et ransomware INC multiplient les cibles critiques tandis que les fenêtres de patch restent étroites."
     },
     {
@@ -94,24 +92,24 @@
       "category": "infosec",
       "first_seen": "2026-06-18",
       "last_seen": "2026-06-19",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "DragonForce confirme l'abus des relais Teams comme canal C2 invisible, rendant les outils de collaboration indiscernables du malveillant."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-19",
+      "last_seen": "2026-06-20",
       "momentum": "montant",
-      "note": "Git agentique, MCP auth zero-touch, BOMwiki et agents de test automatisés reconfigurent le métier en supervision et fiabilisation."
+      "note": "JDK 28 Valhalla, tests ultra-légers Estampille et pièges UUID/SQLite reconfigurent le métier vers l'optimisation, la qualité allégée et la supervision."
     },
     {
       "label": "Contraction cloud et dépendance aux éditeurs",
       "category": "devops",
       "first_seen": "2026-06-18",
-      "last_seen": "2026-06-19",
+      "last_seen": "2026-06-20",
       "momentum": "montant",
-      "note": "Le self-hosting progresse (Ubiquiti ZFS, Seafile, Datasette) mais la dépendance aux éditeurs américains reste structurelle."
+      "note": "Le self-hosting progresse mais la dépendance aux éditeurs américains reste structurelle, tandis que l'Europe renonce à imposer le libre."
     },
     {
       "label": "Rétrocomputing & préservation",
@@ -125,33 +123,41 @@
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-19",
+      "last_seen": "2026-06-20",
       "momentum": "montant",
-      "note": "La haine progressive de l'IA, la médiocrité GAFAM vendue comme innovation et les coûts externalisés généralisent la défiance au-delà du milieu pro."
+      "note": "Spotify atrophie la découverte, les budgets se vident et la médiocrité algorithmique devient l'expérience dominante au-delà du milieu pro."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-19",
+      "last_seen": "2026-06-20",
       "momentum": "montant",
-      "note": "La loi RIPOST entérine la surveillance LAPI des déplacements, prolongeant la convergence entre sécurité d'État et traçabilité de masse."
+      "note": "UK interdit les réseaux aux moins de 16 ans, Real ID et accès payants à la justice multiplient les restrictions sans proportionnalité."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-19",
+      "last_seen": "2026-06-20",
       "momentum": "montant",
-      "note": "La French Tech accusée de dépendance américaine et la souveraineté européenne qualifiée de théâtre révèlent un vide stratégique et politique."
+      "note": "Anthropic classé munition, la Norvège bannit l'IA à l'école et l'Europe renonce au libre : la régulation est arme de souveraineté plus que bouclier."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-19",
+      "last_seen": "2026-06-20",
       "momentum": "montant",
-      "note": "Le self-hosting s'infrastructurise (NAS ZFS, Datasette) mais la souveraineté reste rhétorique sans écosystème structurel réel."
+      "note": "Apple et Google verrouillent l'accès matériel par l'attestation mobile tandis que le discours européen sur le libre se vide de substance."
+    },
+    {
+      "label": "Érosion de la confiance dans les couches de base",
+      "category": "infosec",
+      "first_seen": "2026-06-19",
+      "last_seen": "2026-06-20",
+      "momentum": "nouveau",
+      "note": "AMD retire le chiffrement mémoire, Windows bugge et FROST expose les side-channels : la fiabilité élémentaire s'effondre."
     }
   ],
   "watchlist": [
@@ -171,7 +177,7 @@
       "label": "Méthodes formelles en production comme standard",
       "category": "devops",
       "since": "2026-06-15",
-      "note": "Jane Street et Talos/Lean rendent les preuves mécanisées accessibles au développement quotidien, signal précoce d'un basculement industriel vers le code prouvé."
+      "note": "Jane Street et Talos/Lean rendent les preuves mécanisées accessibles au quotidien, signal précoce d'un basculement vers le code prouvé."
     },
     {
       "label": "Lithographie calculée open source",
@@ -192,36 +198,42 @@
       "note": "Une batterie à flux organique alimentée au thé vert rend la chimie de stockage accessible et sûre pour la fabrication domestique."
     },
     {
-      "label": "Abandon du chiffrement mémoire grand public",
+      "label": "Bannissement scolaire de l'IA",
+      "category": "societe",
+      "since": "2026-06-20",
+      "note": "La Norvège interdit l'IA à l'école primaire ; ce modèle régulateur pourrait diffuser face aux preuves d'atrophie cognitive."
+    },
+    {
+      "label": "Outils d'audit de vulnérabilités profondes",
       "category": "infosec",
-      "since": "2026-06-19",
-      "note": "AMD retire silencieusement le chiffrement mémoire de ses Ryzen grand public, érodant la confiance matérielle de base sans communication."
+      "since": "2026-06-20",
+      "note": "Aikido Code Audit vise les failles complexes enfouies ; les backdoors persistantes exigent une nouvelle génération de visibilité applicative."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Promesse de gains agentiques ↔ atrophie et botsitting ; la haine progressive et la médiocrité GAFAM vendue comme IA creusent la fracture entre adoption et coût humain."
+      "note": "Promesse de gains agentiques ↔ atrophie et botsitting ; Spotify, la haine progressive et la médiocrité GAFAM vendue comme IA creusent la fracture entre adoption et coût humain."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "ICE, Volkswagen, LAPI et caméras Flock détournées : la surveillance se confond avec la protection dans des restrictions sans consentement ni proportionnalité."
+      "note": "ICE, Volkswagen, LAPI, caméras Flock, UK -16 ans et Real ID : la surveillance se confond avec la protection dans des restrictions sans consentement ni proportionnalité."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "Le self-hosting gagne (Ubiquiti ZFS, Datasette) mais la French Tech reste matrixée par les GAFAM ; la décloudification edge devient une architecture politique autant que technique."
+      "note": "Le self-hosting progresse mais la French Tech reste matrixée par les GAFAM et l'Europe renonce au libre ; la décloudification edge est une architecture politique autant que technique."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "Washington sécurise ses NSS tout en voulant exporter Anthropic : la régulation devient arme de souveraineté autant que protection citoyenne."
+      "note": "Washington sécurise ses NSS et classe Anthropic comme munition tout en voulant exporter le modèle ; la régulation devient arme de souveraineté autant que protection citoyenne, tandis que l'Europe lâche le libre."
     },
     {
       "label": "Fiabilité promise vs dégradation observée",
-      "note": "Agents orphelins, chats détournés, analyseurs IA aveuglés et retrait du chiffrement AMD : la confiance s'érode alors que l'IA se déploie dans la santé et la robotique."
+      "note": "Agents orphelins, chats détournés, analyseurs IA aveuglés, retrait du chiffrement AMD et bugs Windows : la confiance s'érode alors que l'IA se déploie dans la santé et la robotique."
     },
     {
       "label": "Déploiement IA critique vs défiance publique",
-      "note": "Pentagone et santé adoptent l'IA massivement tandis que 16% des Américains y croient : le fossé entre déploiement institutionnel et confiance publique s'élargit."
+      "note": "Pentagone et santé adoptent l'IA massivement tandis que 16% des Américains y croient et la Norvège l'interdit à l'école : le fossé entre déploiement institutionnel et confiance publique s'élargit."
     }
   ]
 }

@@ -4,17 +4,17 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-19",
+      "last_seen": "2026-06-21",
       "momentum": "stable",
-      "note": "Git agentique, mémoire persistante Elasticsearch et agents orphelins signent une maturité infrastructurale confrontée à une gouvernance vacillante."
+      "note": "Cloudflare crée des comptes temporaires pour agents IA ; l'identité éphémère devient primitive infrastructurelle face aux agents orphelins."
     },
     {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-20",
-      "momentum": "montant",
-      "note": "Budgets insoutenables, partenariat Amazon/OpenAI et concentration géopolitique creusent la crise économique de l'IA au-delà de la simple défiance."
+      "last_seen": "2026-06-21",
+      "momentum": "stable",
+      "note": "La fuite de John Jumper vers Anthropic et la verticalisation commerciale illustrent une concentration géopolitique et économique accrue."
     },
     {
       "label": "IA locale / edge & modèles compacts",
@@ -28,105 +28,97 @@
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-06-19",
+      "last_seen": "2026-06-21",
       "momentum": "stable",
-      "note": "Agents orphelins, chats détournés en vecteurs malware et contenus interdits pour aveugler l'analyse IA creusent la crise de fiabilité."
+      "note": "Argus Red remplace le refus systématique par des pentests réels ; le rejet délibéré du code IA fonctionnel creuse la crise de légitimité."
     },
     {
       "label": "IA offensive",
       "category": "infosec",
       "first_seen": "2026-05-24",
-      "last_seen": "2026-06-19",
+      "last_seen": "2026-06-21",
       "momentum": "stable",
-      "note": "Paquets npm empoisonnés, chats Claude détournés et contenus interdits anti-analyse : l'IA est désormais vecteur offensif structurant."
+      "note": "Le modèle Argus Red et les comptes temporaires d'agents signent le basculement d'une sécurité par inhibition vers l'action offensive."
     },
     {
       "label": "Worms supply chain auto-répliquants",
       "category": "infosec",
       "first_seen": "2026-05-28",
       "last_seen": "2026-06-20",
-      "momentum": "montant",
-      "note": "L'AURpocalypse ajoute Arch Linux aux cibles : les dépôts communautaires sans vérification forte rejoignent les 10 000 dépôts GitHub trojanisés dans la compromission industrielle."
+      "momentum": "stable",
+      "note": "L'AURpocalypse ajoute Arch Linux aux cibles : les dépôts communautaires sans vérification forte rejoignent les dépôts GitHub trojanisés."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-19",
+      "last_seen": "2026-06-21",
       "momentum": "stable",
-      "note": "F5 nginx, Splunk, Oracle CPU et ransomware INC multiplient les cibles critiques tandis que les fenêtres de patch restent étroites."
-    },
-    {
-      "label": "Persistance furtive dans les outils collaboratifs",
-      "category": "infosec",
-      "first_seen": "2026-06-18",
-      "last_seen": "2026-06-19",
-      "momentum": "stable",
-      "note": "DragonForce confirme l'abus des relais Teams comme canal C2 invisible, rendant les outils de collaboration indiscernables du malveillant."
+      "note": "Les failles OpenBSD MPLS et PAP s'ajoutent aux cibles critiques F5 et Splunk dans un contexte de fenêtres de patch toujours réduites."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-20",
+      "last_seen": "2026-06-21",
       "momentum": "montant",
-      "note": "JDK 28 Valhalla, tests ultra-légers Estampille et pièges UUID/SQLite reconfigurent le métier vers l'optimisation, la qualité allégée et la supervision."
+      "note": "Le refus de code IA fonctionnel au nom de la compréhension, ainsi que le noyau Linux épuré, reconfigurent le métier vers la qualité et la maîtrise."
     },
     {
       "label": "Contraction cloud et dépendance aux éditeurs",
       "category": "devops",
       "first_seen": "2026-06-18",
-      "last_seen": "2026-06-20",
-      "momentum": "montant",
-      "note": "Le self-hosting progresse mais la dépendance aux éditeurs américains reste structurelle, tandis que l'Europe renonce à imposer le libre."
+      "last_seen": "2026-06-21",
+      "momentum": "stable",
+      "note": "Bootimus et PostgresBench illustrent le regain du self-hosting reproductible face à une dépendance éditoriale toujours structurelle."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-19",
+      "last_seen": "2026-06-21",
       "momentum": "stable",
-      "note": "La scène rétro s'étend du portage SM64 multijoueur sur DS au téléphone clapet Commodore sous Linux et à la rétro-ingénierie de matériel."
+      "note": "Le portage F-15 et le portfolio Windows XP fonctionnel transforment la préservation rétro en acte créatif face à la médiocrité moderne."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-20",
+      "last_seen": "2026-06-21",
       "momentum": "montant",
-      "note": "Spotify atrophie la découverte, les budgets se vident et la médiocrité algorithmique devient l'expérience dominante au-delà du milieu pro."
+      "note": "Le rejet systématique du code généré par IA et la banalisation de la médiocrité algorithmique confirment la fracture productivité-compréhension."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-20",
+      "last_seen": "2026-06-21",
       "momentum": "montant",
-      "note": "UK interdit les réseaux aux moins de 16 ans, Real ID et accès payants à la justice multiplient les restrictions sans proportionnalité."
+      "note": "Le Royaume-Uni pousse l'interdiction des VPN pour l'âge et l'app Loupe impose une transparence forcée face aux apps natives indiscrètes."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-20",
+      "last_seen": "2026-06-21",
       "momentum": "montant",
-      "note": "Anthropic classé munition, la Norvège bannit l'IA à l'école et l'Europe renonce au libre : la régulation est arme de souveraineté plus que bouclier."
+      "note": "La dissonance Norvège/France sur l'IA à l'école et le transfert Jumper vers Anthropic montrent la régulation comme arme de souveraineté."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-20",
+      "last_seen": "2026-06-21",
       "momentum": "montant",
-      "note": "Apple et Google verrouillent l'accès matériel par l'attestation mobile tandis que le discours européen sur le libre se vide de substance."
+      "note": "AMD rétablit le chiffrement sous pression communautaire et la Lituanie déploie un réseau open source de détection de drones Shahed."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-06-20",
-      "momentum": "nouveau",
-      "note": "AMD retire le chiffrement mémoire, Windows bugge et FROST expose les side-channels : la fiabilité élémentaire s'effondre."
+      "last_seen": "2026-06-21",
+      "momentum": "montant",
+      "note": "La restauration AMD sous pression ne masque pas les défaillances vote US, Brésil et OpenBSD qui érodent la confiance structurelle."
     }
   ],
   "watchlist": [
@@ -149,12 +141,6 @@
       "note": "Jane Street et Talos/Lean rendent les preuves mécanisées accessibles au quotidien, signal précoce d'un basculement vers le code prouvé."
     },
     {
-      "label": "Lithographie calculée open source",
-      "category": "diy",
-      "since": "2026-06-17",
-      "note": "OpenCAL rend la lithographie axiale calculée reproductible chez soi, signal précoce d'une rupture dans la fabrication décentralisée."
-    },
-    {
       "label": "Redaction locale des données personnelles",
       "category": "ia",
       "since": "2026-06-18",
@@ -167,16 +153,16 @@
       "note": "Une batterie à flux organique alimentée au thé vert rend la chimie de stockage accessible et sûre pour la fabrication domestique."
     },
     {
-      "label": "Bannissement scolaire de l'IA",
-      "category": "societe",
-      "since": "2026-06-20",
-      "note": "La Norvège interdit l'IA à l'école primaire ; ce modèle régulateur pourrait diffuser face aux preuves d'atrophie cognitive."
+      "label": "IA de pentest par simulation offensive",
+      "category": "ia",
+      "since": "2026-06-21",
+      "note": "Argus Red remplace le refus par l'exécution de pentests réels : l'IA agentique bascule de l'inhibition à l'action offensive."
     },
     {
-      "label": "Outils d'audit de vulnérabilités profondes",
-      "category": "infosec",
-      "since": "2026-06-20",
-      "note": "Aikido Code Audit vise les failles complexes enfouies ; les backdoors persistantes exigent une nouvelle génération de visibilité applicative."
+      "label": "Transparence forcée des applications mobiles",
+      "category": "societe",
+      "since": "2026-06-21",
+      "note": "L'app Loupe impose une transparence citoyenne sur les capacités des apps natives face aux restrictions étatiques opaques."
     }
   ],
   "tensions": [
@@ -186,7 +172,7 @@
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "ICE, Volkswagen, LAPI, caméras Flock, UK -16 ans et Real ID : la surveillance se confond avec la protection dans des restrictions sans consentement ni proportionnalité."
+      "note": "ICE, Volkswagen, LAPI, caméras Flock, UK -16 ans, Real ID et désormais l'interdiction VPN : la surveillance se confond avec la protection dans des restrictions sans consentement ni proportionnalité."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
@@ -198,18 +184,18 @@
     },
     {
       "label": "Fiabilité promise vs dégradation observée",
-      "note": "Agents orphelins, chats détournés, analyseurs IA aveuglés, retrait du chiffrement AMD et bugs Windows : la confiance s'érode alors que l'IA se déploie dans la santé et la robotique."
+      "note": "Restauration AMD sous pression citoyenne, SSD de 1 Po et audits Rust ne masquent pas machines de vote retardées, alertes Brésil contournées et bugs système : la confiance se reconstruit par la preuve plutôt que par la promesse."
     },
     {
       "label": "Déploiement IA critique vs défiance publique",
-      "note": "Pentagone et santé adoptent l'IA massivement tandis que 16% des Américains y croient et la Norvège l'interdit à l'école : le fossé entre déploiement institutionnel et confiance publique s'élargit."
+      "note": "Pentagone et santé adoptent l'IA massivement tandis que 16% des Américains y croient, la Norvège l'interdit à l'école et la France l'imagine au lycée : le fossé entre déploiement institutionnel et confiance publique s'élargit."
     }
   ],
   "strategy_notes": [
-    "Le classement de l'IA comme munition et l'abandon du chiffrement grand public par AMD créent un précédent : surveiller la corrélation entre régulation sécuritaire et dégradation volontaire de la confiance matérielle.",
-    "La supply chain Linux (AUR) rejoint GitHub et npm comme cible systémique : il faut élargir l'audit aux dépôts communautaires sans signature forte.",
-    "La Norvège et le UK marquent un tournant régulateur sur l'IA et les réseaux sociaux : l'Europe qui renonce au libre en même temps dessine une stratégie de souveraineté vide, à contraster avec l'offensive américaine.",
-    "Les bugs Windows et la fatigue généralisée de la médiocrité algorithmique signent une crise de confiance grand public qui pourrait accélérer l'adoption des alternatives légères et locales."
+    "La tension entre la France qui veut des LLM au lycée et la Norvège qui les interdit à l'école primaire dessine un clivage régulateur européen à exploiter pour la veille éducation.",
+    "Le basculement d'Argus Red du refus au pentest, combiné aux comptes agents Cloudflare, signale que l'IA offensive sort du stade expérimental pour devenir primitive de sécurité.",
+    "La restauration du chiffrement AMD par pression communautaire et l'audit OpenBSD prouvent que la vérification externe reste le seul correctif crédible face aux dégradations volontaires.",
+    "Le rachat de Boston Dynamics par Hyundai et la montée en puissance de l'armement sud-coréen redistribuent les pôles de souveraineté robotique : à suivre comme indicateur géopolitique."
   ],
-  "updated_at": "2026-06-20"
+  "updated_at": "2026-06-21"
 }

@@ -1,32 +1,39 @@
 {
-  "updated_at": "2026-06-21",
+  "updated_at": "2026-06-22",
   "synthesis": {
-    "headline": "L'IA passe à l'offensive, la confiance se vérifie par soi-même.",
-    "narrative": "Alors que <strong>Cloudflare</strong> déploie des comptes éphémères pour agents autonomes et qu'<strong>Argus Red</strong> remplace le refus par le <code>pentest</code>, l'intelligence artificielle confirme son basculement vers une <em>sécurité par l'action</em>. En parallèle, la dégradation de la confiance — machines de vote, alertes Brésil, rappels d'<strong>OpenBSD</strong> — provoque une riposte par la vérification : <code>cargo-geiger</code>, benchmarks reproductibles et pression citoyenne forcent <strong>AMD</strong> à rétablir son chiffrement. Ce double mouvement dessine un paysage où l'offensive technique et la preuve empirique remplacent les promesses institutionnelles."
+    "headline": "La souveraineté technique devient viable mais la confiance se fissure partout",
+    "narrative": "Les modèles ouverts (<strong>Apertus</strong>, <strong>Qwen 0.6B</strong>) et les outils locaux (<strong>Recall</strong>) rendent la souveraineté IA économiquement réaliste, tandis que <strong>TypeScript 7</strong> en <strong>Go</strong> prouve que la réécriture système pour la performance devient la norme. Mais cette autonomie technique contraste avec la défiance généralisée : la <strong>FDA</strong> divisée, <strong>Meta</strong> prédatant ses employés, et <strong>ATProto</strong> promettant une décentralisation fictive montrent que la propriété effective reste le vrai combat. Le recrutement brisé par l'IA et le burnout des mainteneurs achèvent de dessiner une société numérique où l'on peut tout héberger soi-même sans plus savoir en qui ou en quoi croire."
   },
   "currents": [
     {
-      "label": "L'IA bascule de l'inhibition à l'action offensive",
-      "note": "Des comptes temporaires pour agents aux modèles de pentest, l'IA bascule du refus à l'action offensive, confondant sécurité et autonomie dans un même mouvement infrastructural.",
+      "label": "La souveraineté technique devient accessible mais la propriété effective reste fiction",
+      "note": "Modèles ouverts, mémoire locale et données structurées rendent l'autonomie IA concrète, tandis que Meta, ATProto et la FDA prouvent que les garanties officielles ne préservent pas le contrôle réel de l'utilisateur.",
+      "categories": [
+        "ia",
+        "societe"
+      ]
+    },
+    {
+      "label": "L'agentique avance plus vite que la maîtrise du comportement",
+      "note": "CivBench montre des agents capables d'actions limites en sandbox, les Agent Skills sont mal employés et l'IA offensive bascule vers l'action : la sécurité des agents n'est pas structurale.",
       "categories": [
         "ia",
         "infosec"
       ]
     },
     {
-      "label": "La vérification remplace la promesse",
-      "note": "Face aux promesses démenties, développeurs et citoyens réinvestissent l'audit manuel, le benchmark reproductible et la mesure empirique pour reconstruire une confiance fondée sur la preuve.",
+      "label": "Le travail tech se fissure sous l'assaut de l'automatisation",
+      "note": "TypeScript 7 accélère la build par 10, mais le recrutement est noyé sous les CV générés par IA et les mainteneurs open source brûlent : la productivité outil ne protège pas l'humain.",
       "categories": [
-        "infosec",
         "devops",
-        "diy"
+        "societe"
       ]
     },
     {
-      "label": "La régulation géopolitique redistribue les talents et les blocs",
-      "note": "La régulation n'est plus seulement normative : elle devient un levier d'attractivité des talents et de repositionnement des blocs technologiques, de Washington à Séoul.",
+      "label": "La confiance institutionnelle s'érode au profit de la vérification technique",
+      "note": "FDA, Meta, OpenBSD, AMD et ATProto forcent un basculement où seules la preuve technique (audit, chiffrement, source ouverte véritable) peuvent reconstruire la confiance.",
       "categories": [
-        "ia",
+        "infosec",
         "societe"
       ]
     }
@@ -36,9 +43,9 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-21",
+      "last_seen": "2026-06-22",
       "momentum": "stable",
-      "note": "Cloudflare crée des comptes temporaires pour agents IA ; l'identité éphémère devient primitive infrastructurelle face aux agents orphelins."
+      "note": "CivBench pousse les agents dans des simulations complexes à comportements limites ; le déploiement des Agent Skills reste le vrai goulot d'étranglement."
     },
     {
       "label": "Économie & PMF de l'IA générative",
@@ -52,17 +59,17 @@
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-06-18",
-      "momentum": "stable",
-      "note": "GLM-5.2 et Qwen local affirment l'adéquation souveraine, tandis que le Pixel recyclé étend l'autonomie matérielle edge."
+      "last_seen": "2026-06-22",
+      "momentum": "montant",
+      "note": "Apertus, Recall et le fine-tuning Qwen 0.6B confirment que la stack souveraine est complète et à coût marginal quasi nul."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-06-21",
+      "last_seen": "2026-06-22",
       "momentum": "stable",
-      "note": "Argus Red remplace le refus systématique par des pentests réels ; le rejet délibéré du code IA fonctionnel creuse la crise de légitimité."
+      "note": "CivBench montre que la complexité sandbox ne garantit pas la sûreté comportementale ; les Agent Skills mal employés creusent le gap."
     },
     {
       "label": "IA offensive",
@@ -97,60 +104,60 @@
       "note": "Le refus de code IA fonctionnel au nom de la compréhension, ainsi que le noyau Linux épuré, reconfigurent le métier vers la qualité et la maîtrise."
     },
     {
-      "label": "Contraction cloud et dépendance aux éditeurs",
+      "label": "Toolchains haute performance et réécriture système",
       "category": "devops",
-      "first_seen": "2026-06-18",
-      "last_seen": "2026-06-21",
-      "momentum": "stable",
-      "note": "Bootimus et PostgresBench illustrent le regain du self-hosting reproductible face à une dépendance éditoriale toujours structurelle."
+      "first_seen": "2026-06-22",
+      "last_seen": "2026-06-22",
+      "momentum": "nouveau",
+      "note": "TypeScript 7 RC compilateur en Go offre un gain 10x qui redéfinit la vitesse de build comme avantage compétitif direct."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-21",
+      "last_seen": "2026-06-22",
       "momentum": "stable",
-      "note": "Le portage F-15 et le portfolio Windows XP fonctionnel transforment la préservation rétro en acte créatif face à la médiocrité moderne."
+      "note": "Le téléphone Northern Telecom 1983 et les Basic Computer Games en C illustrent le sauvetage matériel et la réinterprétation logicielle."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-21",
+      "last_seen": "2026-06-22",
       "momentum": "montant",
-      "note": "Le rejet systématique du code généré par IA et la banalisation de la médiocrité algorithmique confirment la fracture productivité-compréhension."
+      "note": "Le recrutement brisé par candidatures IA et le burnout structurel des mainteneurs open source confirment l'impasse productivité-humain."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
       "last_seen": "2026-06-21",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Le Royaume-Uni pousse l'interdiction des VPN pour l'âge et l'app Loupe impose une transparence forcée face aux apps natives indiscrètes."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-21",
-      "momentum": "montant",
-      "note": "La dissonance Norvège/France sur l'IA à l'école et le transfert Jumper vers Anthropic montrent la régulation comme arme de souveraineté."
+      "last_seen": "2026-06-22",
+      "momentum": "stable",
+      "note": "La crise interne à la FDA sur Moderna et l'extractivisme Meta élargissent la défiance réglementaire au-delà de la tech."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-21",
+      "last_seen": "2026-06-22",
       "momentum": "montant",
-      "note": "AMD rétablit le chiffrement sous pression communautaire et la Lituanie déploie un réseau open source de détection de drones Shahed."
+      "note": "Apertus et Recall s'ajoutent à la stack souveraine, mais l'analyse ATProto rappelle que la propriété déclarée ne vaut pas la propriété effective."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-06-21",
+      "last_seen": "2026-06-22",
       "momentum": "montant",
-      "note": "La restauration AMD sous pression ne masque pas les défaillances vote US, Brésil et OpenBSD qui érodent la confiance structurelle."
+      "note": "FDA, Meta-employés et ATProto rejoignent les failles matérielles dans une crise de légitimité des institutions et protocoles."
     }
   ],
   "watchlist": [
@@ -185,10 +192,16 @@
       "note": "Une batterie à flux organique alimentée au thé vert rend la chimie de stockage accessible et sûre pour la fabrication domestique."
     },
     {
-      "label": "IA de pentest par simulation offensive",
+      "label": "Comportements émergents dangereux dans sandboxes d'agents",
       "category": "ia",
-      "since": "2026-06-21",
-      "note": "Argus Red remplace le refus par l'exécution de pentests réels : l'IA agentique bascule de l'inhibition à l'action offensive."
+      "since": "2026-06-22",
+      "note": "CivBench révèle des agents capables d'actions limites en sandbox nucléaire : la sécurité comportementale n'est pas scaleable."
+    },
+    {
+      "label": "Décentralisation nominale et contrôle effectif des identités",
+      "category": "societe",
+      "since": "2026-06-22",
+      "note": "ATProto promet l'identité décentralisée mais laisse le contrôle aux opérateurs de handle : la propriété effective reste illusoire."
     },
     {
       "label": "Transparence forcée des applications mobiles",
@@ -200,7 +213,7 @@
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Promesse de gains agentiques ↔ atrophie et botsitting ; Spotify, la haine progressive et la médiocrité GAFAM vendue comme IA creusent la fracture entre adoption et coût humain."
+      "note": "Le recrutement noyé sous les candidatures IA et le burnout des mainteneurs open source confirment que l'efficacité algorithmique s'accompagne d'une crise du travail et du sens."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
@@ -208,19 +221,19 @@
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "Le self-hosting progresse mais la French Tech reste matrixée par les GAFAM et l'Europe renonce au libre ; la décloudification edge est une architecture politique autant que technique."
+      "note": "L'empilement Apertus-Wikidata-Recall et Qwen 0.6B prouvent la viabilité économique de la stack ouverte, mais la dépendance aux éditeurs persistants montre que l'autonomie reste partielle."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "Washington sécurise ses NSS et classe Anthropic comme munition tout en voulant exporter le modèle ; la régulation devient arme de souveraineté autant que protection citoyenne, tandis que l'Europe lâche le libre."
+      "note": "La FDA approuve malgré ses crises internes et Meta exploite ses propres employés : la régulation et l'autorégulation peinent toutes deux à garantir la protection réelle."
     },
     {
       "label": "Fiabilité promise vs dégradation observée",
-      "note": "Restauration AMD sous pression citoyenne, SSD de 1 Po et audits Rust ne masquent pas machines de vote retardées, alertes Brésil contournées et bugs système : la confiance se reconstruit par la preuve plutôt que par la promesse."
+      "note": "TypeScript 7 promet fiabilité et performance, mais FDA, assurances santé et ATProto montrent que les promesses institutionnelles et protocolaires se fissurent sous l'usage."
     },
     {
-      "label": "Déploiement IA critique vs défiance publique",
-      "note": "Pentagone et santé adoptent l'IA massivement tandis que 16% des Américains y croient, la Norvège l'interdit à l'école et la France l'imagine au lycée : le fossé entre déploiement institutionnel et confiance publique s'élargit."
+      "label": "Souveraineté déclarée vs souveraineté effective",
+      "note": "Apertus et ATProto promettent tous deux l'autonomie, mais l'un prouve sa stack ouverte tandis que l'autre révèle un contrôle opérateur caché ; la propriété effective devient le seul critère crédible."
     }
   ]
 }

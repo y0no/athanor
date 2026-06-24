@@ -1,43 +1,44 @@
 {
-  "updated_at": "2026-06-23",
+  "updated_at": "2026-06-24",
   "synthesis": {
-    "headline": "Le edge s'impose comme norme et l'opacité systémique s'effondre.",
-    "narrative": "<strong>L'IA edge</strong> atteint aujourd'hui une inflexion où VibeThinker 3B et Moebius 0.2B surpassent des modèles dix fois plus lourds, rendant la souveraineté technique non plus un choix militant mais un avantage compétitif. Parallèlement, <strong>l'opacité systémique</strong> se fissure de toutes parts : VPN d'entreprise réduits à des constantes hardcodées, téléviseurs LG transformés en proxies résidentiels, et wearables sportifs capturant des biométriques sans consentement. <em>Le reverse engineering et l'audit deviennent les nouveaux régulateurs.</em> Dans ce paysage, <strong>le travail tech</strong> et la presse subissent le même choc : l'automatisation ne remplace plus seulement des tâches, elle dissout les conditions de production du sens et de la confiance."
+    "headline": "L'automatisation accélère alors même que la confiance technique s'effondre.",
+    "narrative": "Les modèles généraux peinent à tenir leurs promesses : le Reversal Curse et le jailbreak de Fable 5 montrent que la fiabilité recule, tandis que les licenciements massifs chez Oracle traduisent un désenchantement économique. <strong>Parallèlement</strong>, les couches basses trahissent une confiance aveugle : firmware Samsung laissé huit ans sans patch et UEFI GIGABYTE contourné rappellent que l'infrastructure repose sur du temps calendaire opaque. <strong>En réponse</strong>, un mouvement de fond pousse vers l'explicite — code typé sans ORM, documentation auto-vérifiée, radio décentralisée et euro numérique — mais la surveillance biométrique et l'age verification déguisée étendent l'opacité jusqu'au corps. <em>Le décloisonnement réside dans ce paradoxe : l'IA et la souveraineté prétendent réparer ce que l'opacité technique et commerciale continue de détruire.</em>"
   },
   "currents": [
     {
-      "label": "L'agentique redéfinit les primitives du développement et de la sécurité",
-      "note": "Oak, Ponytrail et Qualys montrent que l'agent devient le médiateur standard entre le code, l'audit et l'action.",
-      "categories": [
-        "ia",
-        "infosec",
-        "devops"
-      ]
-    },
-    {
-      "label": "La souveraineté effective remplace la souveraineté déclarée",
-      "note": "Le edge devient supérieur, les palliatifs grand public se multiplient, mais les wearables et ATProto rappellent que la propriété effective reste le seul critère.",
-      "categories": [
-        "ia",
-        "societe",
-        "diy"
-      ]
-    },
-    {
-      "label": "Le reverse engineering devient régulateur de l'opacité",
-      "note": "H3C, LG Smart TV et CAN Bus : l'audit par IA et outils ouverts remplace les garanties institutionnelles pour dévoiler les couches cachées.",
-      "categories": [
-        "infosec",
-        "societe",
-        "diy"
-      ]
-    },
-    {
-      "label": "Le temps calendaire comme dépendance critique oubliée",
-      "note": "Secure Boot expiré et Postgres tzdata : l'horloge institutionnelle et les règles de fuseau deviennent des vecteurs de panne aussi sûrs que les failles de sécurité.",
+      "label": "L'explicite comme réponse à l'opacité systémique",
+      "note": "Du code typé sans ORM aux audits de firmware en passant par les traces d'agents, la demande d'explicitation traverse toute la stack pour compenser une confiance en déclin.",
       "categories": [
         "devops",
-        "infosec"
+        "infosec",
+        "ia"
+      ]
+    },
+    {
+      "label": "La temporalité comme vecteur d'attaque",
+      "note": "Windows EOL, Secure Boot expiré, KNOX 8 ans et tzdata montrent que le temps calendaire est une dépendance critique invisible des infrastructures.",
+      "categories": [
+        "infosec",
+        "devops",
+        "societe"
+      ]
+    },
+    {
+      "label": "Souveraineté monétaire et technique européenne",
+      "note": "L'euro numérique, la cryptographie post-quantique et les radios décentralisées Rigflow dessinent un arc de souveraineté face aux infrastructures américaines.",
+      "categories": [
+        "societe",
+        "diy",
+        "ia"
+      ]
+    },
+    {
+      "label": "La surveillance légitimée par la sécurité",
+      "note": "L'age verification, les dossiers militants MSG et le fichage employés Meta illustrent la banalisation de la surveillance sous couvert de conformité.",
+      "categories": [
+        "societe",
+        "infosec",
+        "ia"
       ]
     }
   ],
@@ -46,9 +47,25 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-23",
+      "last_seen": "2026-06-24",
       "momentum": "stable",
-      "note": "Ponytrail pousse l'audit trail local des agents ; CivBench et les bugs d'agents rappellent que le déploiement reste le vrai goulot."
+      "note": "AgentWorld de Qwen, halo et Y élargissent l'observabilité mais le bannissement opaque de Claude Code rappelle que la production reste le vrai goulot."
+    },
+    {
+      "label": "Parsing documentaire et OCR stratégique",
+      "category": "ia",
+      "first_seen": "2026-06-24",
+      "last_seen": "2026-06-24",
+      "momentum": "nouveau",
+      "note": "Baidu Unlimited-OCR et Mistral OCR 4 signent le basculement de l'OCR utilitaire au terrain de compétition stratégique entre labs."
+    },
+    {
+      "label": "Fiabilité des LLMs et dérive de l'alignement",
+      "category": "ia",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-06-24",
+      "momentum": "stable",
+      "note": "Reversal Curse, jailbreak de Fable 5 en jours et fausse skill sur 26k agents confirment que les garde-fous cèdent sous la pression."
     },
     {
       "label": "Économie & PMF de l'IA générative",
@@ -56,7 +73,7 @@
       "first_seen": "2026-05-13",
       "last_seen": "2026-06-21",
       "momentum": "stable",
-      "note": "La fuite de John Jumper vers Anthropic et la verticalisation commerciale illustrent une concentration géopolitique et économique accrue."
+      "note": "La fuite de talents et la verticalisation commerciale illustrent une concentration géopolitique et économique accrue."
     },
     {
       "label": "IA locale / edge & modèles compacts",
@@ -64,39 +81,31 @@
       "first_seen": "2026-05-16",
       "last_seen": "2026-06-23",
       "momentum": "montant",
-      "note": "VibeThinker 3B, Moebius 0.2B, GLM-5.2 local et YOLO26 confirment que le rapport performance/poids s'effondre au profit du edge."
-    },
-    {
-      "label": "Fiabilité des LLMs et dérive de l'alignement",
-      "category": "ia",
-      "first_seen": "2026-06-15",
-      "last_seen": "2026-06-23",
-      "momentum": "stable",
-      "note": "Codex logue des téraoctets, Claude Code simule son thinking et les LLM polluent le biais : la fiabilité en production stagne."
-    },
-    {
-      "label": "IA offensive",
-      "category": "infosec",
-      "first_seen": "2026-05-24",
-      "last_seen": "2026-06-21",
-      "momentum": "stable",
-      "note": "Le modèle Argus Red et les comptes temporaires d'agents signent le basculement d'une sécurité par inhibition vers l'action offensive."
+      "note": "VibeThinker 3B, Moebius 0.2B et YOLO26 confirment que le rapport performance/poids s'effondre au profit du edge."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-23",
+      "last_seen": "2026-06-24",
       "momentum": "stable",
-      "note": "Auth0 defaults XSS, OpenClinic GA RCE et role confusion sur LLM s'ajoutent aux fenêtres de patch toujours réduites."
+      "note": "CVE Samsung KNOX 8 ans, GIGABYTE UEFI et Ubiquiti s'ajoutent aux fenêtres de patch toujours réduites."
+    },
+    {
+      "label": "Érosion de la confiance dans les couches de base",
+      "category": "infosec",
+      "first_seen": "2026-06-19",
+      "last_seen": "2026-06-24",
+      "momentum": "montant",
+      "note": "Samsung KNOX 8 ans, GIGABYTE UEFI et Windows 11 EOL confirment que la confiance implicite dans les couches basses est le talon d'Achille systémique."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-23",
+      "last_seen": "2026-06-24",
       "momentum": "montant",
-      "note": "Oak réinvente le VCS pour les agents, le refus de code non compris et le vibecoding de Bain confirment que la curatation remplace l'exécution."
+      "note": "Bun-sqlgen, Treedocs et le refus de l'implicite confirment que la curatation explicite remplace progressivement l'exécution brute."
     },
     {
       "label": "Toolchains haute performance et réécriture système",
@@ -107,52 +116,52 @@
       "note": "TypeScript 7 RC compilateur en Go offre un gain 10x qui redéfinit la vitesse de build comme avantage compétitif direct."
     },
     {
+      "label": "Radio open source et SDR distribués",
+      "category": "diy",
+      "first_seen": "2026-06-24",
+      "last_seen": "2026-06-24",
+      "momentum": "nouveau",
+      "note": "Rigflow et SwR basculent la radio amateur vers un service distribué ouvert, dans la continuité de la stack souveraine edge."
+    },
+    {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-23",
+      "last_seen": "2026-06-24",
       "momentum": "stable",
-      "note": "Analyse du die 8087 et appareil photo Pi Zero illustrent la vitalité transgénérationnelle du hardware hacking."
+      "note": "Teensy exécutables et archéologie du 80386 illustrent la vitalité transgénérationnelle du hardware hacking."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-23",
+      "last_seen": "2026-06-24",
       "momentum": "montant",
-      "note": "DNA et L'Alsace suppriment 10% de journalistes pour l'IA, les SAT scores dans le recrutement tech et le software is fucked confirment l'impasse productivité-humain."
+      "note": "Oracle 21k suppressions, l'affordability crisis et les biais de recrutement bouclent l'impasse productivité-humain."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-23",
+      "last_seen": "2026-06-24",
       "momentum": "stable",
-      "note": "Flock utilisé pour stalker, wearables sportifs biométriques et Never Give Them Your Face : la surveillance corporelle se banalise."
+      "note": "Meta, MSG et Anthropic normalisent la surveillance sous couvert de sécurité et de conformité."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-22",
+      "last_seen": "2026-06-24",
       "momentum": "stable",
-      "note": "La crise interne à la FDA sur Moderna et l'extractivisme Meta élargissent la défiance réglementaire au-delà de la tech."
+      "note": "L'euro numérique et le décret PQC américain redéfinissent la souveraineté en termes de robustesse temporelle des infrastructures."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-23",
+      "last_seen": "2026-06-24",
       "momentum": "montant",
-      "note": "DuckDuckGo noai, LinuxFr et SDR/mesh off-grid élargissent la stack souveraine, mais ATProto rappelle que la propriété effective reste le critère."
-    },
-    {
-      "label": "Érosion de la confiance dans les couches de base",
-      "category": "infosec",
-      "first_seen": "2026-06-19",
-      "last_seen": "2026-06-23",
-      "momentum": "montant",
-      "note": "Reverse engineering de VPN H3C, proxy SDK cachés dans les LG Smart TV et décodage CAN Bus : l'opacité logicielle et matérielle ne résiste plus à l'audit."
+      "note": "Euro numérique, cryptographie post-quantique et SDR/mesh élargissent la stack souveraine mais la propriété effective reste le critère."
     }
   ],
   "watchlist": [
@@ -184,51 +193,51 @@
       "label": "Décentralisation nominale et contrôle effectif des identités",
       "category": "societe",
       "since": "2026-06-22",
-      "note": "ATProto promet l'identité décentralisée mais laisse le contrôle aux opérateurs de handle : la propriété effective reste illusoire."
-    },
-    {
-      "label": "Transparence forcée des applications mobiles",
-      "category": "societe",
-      "since": "2026-06-21",
-      "note": "L'app Loupe impose une transparence citoyenne sur les capacités des apps natives face aux restrictions étatiques opaques."
+      "note": "ATProto Permissioned Data ne résout pas le contrôle des opérateurs de handle : la propriété effective reste illusoire."
     },
     {
       "label": "Vulnérabilités temporelles et expiration implicite",
       "category": "devops",
       "since": "2026-06-23",
-      "note": "Secure Boot Microsoft et changements tzdata Postgres montrent que le temps calendaire est une dépendance invisible et critique."
+      "note": "Windows 11 EOL et Samsung KNOX 8 ans confirment que le temps calendaire est une dépendance invisible et critique."
     },
     {
       "label": "Prompt injection as role confusion",
       "category": "infosec",
       "since": "2026-06-23",
-      "note": "La confusion de rôles signe que la frontière données/exécution reste le talon d'Achille commun au web et aux LLM."
+      "note": "Fake skill sur 26k agents et Dify cross-tenant confirment que la frontière données/exécution reste le talon d'Achille des systèmes agents."
+    },
+    {
+      "label": "Affordability crisis de l'IA",
+      "category": "ia",
+      "since": "2026-06-24",
+      "note": "Subventions massives et tarification insoutenable des tokens menacent la rentabilité commerciale de toute la filière IA générative."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "La presse supprime 10% de ses journalistes pour l'IA et le recrutement s'abrute : l'automatisation dissout le sens au lieu de le libérer."
+      "note": "Oracle supprime 21k postes et l'affordability crisis menace la rentabilité : l'automatisation dissout le sens au lieu de le libérer."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "Flock, wearables et Never Give Them Your Face : la surveillance des corps s'étend, tandis que les palliatifs souverains restent marginaux."
+      "note": "L'age verification devient surveillance de masse et les dossiers militants se multiplient : l'autonomie corporelle se rétracte face à la sécurité."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "Le edge devient compétitif mais la dépendance aux éditeurs persistants et l'opacité des SDK rappellent que l'autonomie reste partielle."
+      "note": "Le edge et les monnaies souveraines progressent mais la dépendance aux grands opérateurs et SDK cachés rappellent que l'autonomie reste partielle."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "La FDA approuve malgré ses crises internes et Meta exploite ses propres employés : la régulation et l'autorégulation peinent toutes deux à garantir la protection réelle."
+      "note": "L'euro numérique et la cryptographie post-quantique révèlent une régulation géopolitique où la protection se confond avec l'indépendance économique."
     },
     {
       "label": "Fiabilité promise vs dégradation observée",
-      "note": "TypeScript 7 promet la performance, mais Secure Boot expiré, Codex en panne de logs et Claude Code en thinking illusoire montrent que le neuf se fissure comme le vieux."
+      "note": "Fable 5 cède en jours et KNOX laisse un trou 8 ans : la promesse de sûreté s'effondre sur toute la stack technique."
     },
     {
       "label": "Souveraineté déclarée vs souveraineté effective",
-      "note": "Apertus prouve sa stack ouverte, mais ATProto et les SDK cachés des LG Smart TV rappellent que la propriété effective reste illusoire."
+      "note": "L'euro numérique promeut l'indépendance mais ATProto montre que le contrôle effectif des identités et des handles reste aux opérateurs."
     }
   ]
 }

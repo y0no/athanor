@@ -1,6 +1,15 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
+// Champs string optionnels émis par n8n : tolère null/undefined/clé absente
+// et les normalise vers une chaîne par défaut (le .default() de Zod ne couvre
+// que les clés absentes, pas un null explicite).
+const optionalString = (fallback = "") =>
+  z
+    .string()
+    .nullish()
+    .transform((value) => value ?? fallback);
+
 const sourceSchema = z.object({
   feed: z.string(),
   date: z.string(),
@@ -17,14 +26,14 @@ const topicSchema = z.object({
 const categorySchema = z.object({
   slug: z.string(),
   name: z.string(),
-  tagline: z.string().default(""),
+  tagline: optionalString(),
   topics: z.array(topicSchema),
 });
 
 const appendixItemSchema = z.object({
   url: z.string().url(),
   title: z.string(),
-  note: z.string().default(""),
+  note: optionalString(),
 });
 
 const windowSchema = z.object({
@@ -35,13 +44,13 @@ const windowSchema = z.object({
 
 const digestSchema = z.object({
   date: z.string(),
-  title_tag: z.string().default(""),
+  title_tag: optionalString(),
   headline: z.string(),
   window: windowSchema,
-  alert: z.string().default(""),
+  alert: optionalString(),
   categories: z.array(categorySchema),
   appendix: z.array(appendixItemSchema).default([]),
-  footer: z.string().default(""),
+  footer: optionalString(),
 });
 
 const digests = defineCollection({

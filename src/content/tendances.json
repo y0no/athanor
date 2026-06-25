@@ -1,44 +1,43 @@
 {
-  "updated_at": "2026-06-24",
+  "updated_at": "2026-06-25",
   "synthesis": {
-    "headline": "L'automatisation accélère alors même que la confiance technique s'effondre.",
-    "narrative": "Les modèles généraux peinent à tenir leurs promesses : le Reversal Curse et le jailbreak de Fable 5 montrent que la fiabilité recule, tandis que les licenciements massifs chez Oracle traduisent un désenchantement économique. <strong>Parallèlement</strong>, les couches basses trahissent une confiance aveugle : firmware Samsung laissé huit ans sans patch et UEFI GIGABYTE contourné rappellent que l'infrastructure repose sur du temps calendaire opaque. <strong>En réponse</strong>, un mouvement de fond pousse vers l'explicite — code typé sans ORM, documentation auto-vérifiée, radio décentralisée et euro numérique — mais la surveillance biométrique et l'age verification déguisée étendent l'opacité jusqu'au corps. <em>Le décloisonnement réside dans ce paradoxe : l'IA et la souveraineté prétendent réparer ce que l'opacité technique et commerciale continue de détruire.</em>"
+    "headline": "La confiance numérique s'effondre des pipelines aux modèles",
+    "narrative": "Les pipelines de livraison et les signatures de provenance deviennent des surfaces d'attaque, tandis que les noyaux mobiles et les modèles fondation révèlent leur revers offensif. <strong>Face à cette érosion systémique</strong>, la frugalité matérielle et l'open source s'imposent comme voies de souveraineté technique. <strong>Dans le même temps</strong>, les travailleurs du savoir syndicalisent leur doute et les labs recourent à la philosophie pour endiguer une crise de légitimité qui menace toute la filière."
   },
   "currents": [
     {
-      "label": "L'explicite comme réponse à l'opacité systémique",
-      "note": "Du code typé sans ORM aux audits de firmware en passant par les traces d'agents, la demande d'explicitation traverse toute la stack pour compenser une confiance en déclin.",
+      "label": "La frugalité comme impératif géopolitique",
+      "note": "NVIDIA 45°C, 2000 Pixel en datacenter, Trisquel 12 et les modèles edge confirment que la contrainte économique et énergétique redessine les compromis architecturaux en faveur de l'autonomie matérielle.",
       "categories": [
+        "ia",
         "devops",
+        "diy"
+      ]
+    },
+    {
+      "label": "La confiance technique en crise systémique",
+      "note": "Des pipelines CI/CD signés aux noyaux mobiles et aux modèles fondation, chaque couche de la stack révèle son revers offensif, transformant la confiance implicite en vulnérabilité structurelle.",
+      "categories": [
         "infosec",
+        "devops",
         "ia"
       ]
     },
     {
-      "label": "La temporalité comme vecteur d'attaque",
-      "note": "Windows EOL, Secure Boot expiré, KNOX 8 ans et tzdata montrent que le temps calendaire est une dépendance critique invisible des infrastructures.",
-      "categories": [
-        "infosec",
-        "devops",
-        "societe"
-      ]
-    },
-    {
-      "label": "Souveraineté monétaire et technique européenne",
-      "note": "L'euro numérique, la cryptographie post-quantique et les radios décentralisées Rigflow dessinent un arc de souveraineté face aux infrastructures américaines.",
+      "label": "Le travail du savoir face à l'automatisation cognitive",
+      "note": "Syndicalisation, philosophie organisationnelle et critique francophone du solutionnisme marquent un tournant où la résistance sociale confronte directement la promesse productiviste de l'IA.",
       "categories": [
         "societe",
-        "diy",
         "ia"
       ]
     },
     {
-      "label": "La surveillance légitimée par la sécurité",
-      "note": "L'age verification, les dossiers militants MSG et le fichage employés Meta illustrent la banalisation de la surveillance sous couvert de conformité.",
+      "label": "L'open source comme souveraineté effective",
+      "note": "Bunny DNS, Cloudflare OAuth, Trisquel et le reverse-engineering Orba convergent vers une réappropriation technique, mais les dépendances implicites et le vol de modèles rappellent les limites.",
       "categories": [
         "societe",
-        "infosec",
-        "ia"
+        "devops",
+        "diy"
       ]
     }
   ],
@@ -47,105 +46,97 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-24",
+      "last_seen": "2026-06-25",
       "momentum": "stable",
-      "note": "AgentWorld de Qwen, halo et Y élargissent l'observabilité mais le bannissement opaque de Claude Code rappelle que la production reste le vrai goulot."
-    },
-    {
-      "label": "Parsing documentaire et OCR stratégique",
-      "category": "ia",
-      "first_seen": "2026-06-24",
-      "last_seen": "2026-06-24",
-      "momentum": "nouveau",
-      "note": "Baidu Unlimited-OCR et Mistral OCR 4 signent le basculement de l'OCR utilitaire au terrain de compétition stratégique entre labs."
+      "note": "Haystack se positionne mais le goulot de la production agentique reste la sûreté, pas l'outillage."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-06-24",
+      "last_seen": "2026-06-25",
       "momentum": "stable",
-      "note": "Reversal Curse, jailbreak de Fable 5 en jours et fausse skill sur 26k agents confirment que les garde-fous cèdent sous la pression."
+      "note": "Le jailbreak de Fable 5 et la fake skill sur 26k agents cèdent, pendant que le malware injecte des textes interdits pour contrer l'analyse par IA."
     },
     {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-21",
-      "momentum": "stable",
-      "note": "La fuite de talents et la verticalisation commerciale illustrent une concentration géopolitique et économique accrue."
+      "last_seen": "2026-06-25",
+      "momentum": "montant",
+      "note": "Puce Broadcom/OpenAI, dette vénézuélienne et licenciements Elastic confirment une crise de viabilité systémique."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-06-23",
+      "last_seen": "2026-06-25",
       "momentum": "montant",
-      "note": "VibeThinker 3B, Moebius 0.2B et YOLO26 confirment que le rapport performance/poids s'effondre au profit du edge."
+      "note": "NVIDIA 45°C, 2000 Pixel en datacenter et Trisquel 12 confirment que la frugalité devient un impératif géopolitique."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-24",
+      "last_seen": "2026-06-25",
       "momentum": "stable",
-      "note": "CVE Samsung KNOX 8 ans, GIGABYTE UEFI et Ubiquiti s'ajoutent aux fenêtres de patch toujours réduites."
+      "note": "Endgame, FortiBleed et StrikeShark illustrent la résilience du malware malgré les saisies, avec une tactique inédite : contrer l'analyse par IA."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-06-24",
+      "last_seen": "2026-06-25",
       "momentum": "montant",
-      "note": "Samsung KNOX 8 ans, GIGABYTE UEFI et Windows 11 EOL confirment que la confiance implicite dans les couches basses est le talon d'Achille systémique."
+      "note": "Cordyceps et la provenance npm signée malveillante ajoutent les pipelines CI/CD aux noyaux Samsung et macOS comme surfaces d'attaque."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-24",
+      "last_seen": "2026-06-25",
       "momentum": "montant",
-      "note": "Bun-sqlgen, Treedocs et le refus de l'implicite confirment que la curatation explicite remplace progressivement l'exécution brute."
+      "note": "PostHog 70x, GitHub comme dépendance implicite de crates.io et le recours aux philosophes par les labs confirment que la curatation remplace l'exécution brute."
     },
     {
       "label": "Toolchains haute performance et réécriture système",
       "category": "devops",
       "first_seen": "2026-06-22",
-      "last_seen": "2026-06-22",
+      "last_seen": "2026-06-25",
       "momentum": "stable",
-      "note": "TypeScript 7 RC compilateur en Go offre un gain 10x qui redéfinit la vitesse de build comme avantage compétitif direct."
-    },
-    {
-      "label": "Radio open source et SDR distribués",
-      "category": "diy",
-      "first_seen": "2026-06-24",
-      "last_seen": "2026-06-24",
-      "momentum": "nouveau",
-      "note": "Rigflow et SwR basculent la radio amateur vers un service distribué ouvert, dans la continuité de la stack souveraine edge."
+      "note": "PostHog, Minimus et Nub confirment que chaque maillon de la chaîne de livraison est réécrit pour la performance et l'autonomie."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-24",
+      "last_seen": "2026-06-25",
       "momentum": "stable",
-      "note": "Teensy exécutables et archéologie du 80386 illustrent la vitalité transgénérationnelle du hardware hacking."
+      "note": "Aladdin DOS, iPod Touch 2G Linux et le protocole Orba ouvert illustrent la vitalité transgénérationnelle de la réappropriation matérielle."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-24",
+      "last_seen": "2026-06-25",
       "momentum": "montant",
-      "note": "Oracle 21k suppressions, l'affordability crisis et les biais de recrutement bouclent l'impasse productivité-humain."
+      "note": "Wikipédiens en syndicat, programmeurs en questionnement et recrutement de philosophes bouclent l'impasse productivité-humain."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-24",
-      "momentum": "stable",
-      "note": "Meta, MSG et Anthropic normalisent la surveillance sous couvert de sécurité et de conformité."
+      "last_seen": "2026-06-25",
+      "momentum": "montant",
+      "note": "Reconnaissance faciale permanente à Londres, NSA privée de Mythos et choc numérique Darmanin rappellent que la sécurité sert d'alibi à la surveillance généralisée."
+    },
+    {
+      "label": "Souveraineté numérique grand public",
+      "category": "societe",
+      "first_seen": "2026-06-07",
+      "last_seen": "2026-06-25",
+      "momentum": "montant",
+      "note": "Open source comme seule voie, Bunny DNS gratuit et Trisquel élargissent la stack souveraine, mais le vol de modèles par Alibaba rappelle que la propriété effective reste fragile."
     },
     {
       "label": "Régulation plateformes & IA",
@@ -154,14 +145,6 @@
       "last_seen": "2026-06-24",
       "momentum": "stable",
       "note": "L'euro numérique et le décret PQC américain redéfinissent la souveraineté en termes de robustesse temporelle des infrastructures."
-    },
-    {
-      "label": "Souveraineté numérique grand public",
-      "category": "societe",
-      "first_seen": "2026-06-07",
-      "last_seen": "2026-06-24",
-      "momentum": "montant",
-      "note": "Euro numérique, cryptographie post-quantique et SDR/mesh élargissent la stack souveraine mais la propriété effective reste le critère."
     }
   ],
   "watchlist": [
@@ -184,12 +167,6 @@
       "note": "Jane Street et Talos/Lean rendent les preuves mécanisées accessibles au quotidien, signal précoce d'un basculement vers le code prouvé."
     },
     {
-      "label": "Redaction locale des données personnelles",
-      "category": "ia",
-      "since": "2026-06-18",
-      "note": "pii-gui assainit localement les prompts avant envoi : la souveraineté des données personnelles devient un prérequis technique."
-    },
-    {
       "label": "Décentralisation nominale et contrôle effectif des identités",
       "category": "societe",
       "since": "2026-06-22",
@@ -208,24 +185,30 @@
       "note": "Fake skill sur 26k agents et Dify cross-tenant confirment que la frontière données/exécution reste le talon d'Achille des systèmes agents."
     },
     {
-      "label": "Affordability crisis de l'IA",
-      "category": "ia",
-      "since": "2026-06-24",
-      "note": "Subventions massives et tarification insoutenable des tokens menacent la rentabilité commerciale de toute la filière IA générative."
+      "label": "Contre-mesures anti-IA dans le malware",
+      "category": "infosec",
+      "since": "2026-06-25",
+      "note": "L'injection de texte interdit dans les payloads pour contrer l'analyse par IA retourne les garde-fous de contenu contre les défenseurs."
+    },
+    {
+      "label": "Syndicalisation des travailleurs du savoir numérique",
+      "category": "societe",
+      "since": "2026-06-25",
+      "note": "Wikipédiens et programmeurs remettent en cause l'automatisation par l'organisation collective, signe d'une résistance sociologique naissante."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Oracle supprime 21k postes et l'affordability crisis menace la rentabilité : l'automatisation dissout le sens au lieu de le libérer."
+      "note": "Oracle, Elastic et les zombie unicorns illustrent l'effondrement de la promesse productiviste, tandis que les wikipédiens syndicalisent leur doute et les labs recrutent des philosophes pour endiguer la crise."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "L'age verification devient surveillance de masse et les dossiers militants se multiplient : l'autonomie corporelle se rétracte face à la sécurité."
+      "note": "La reconnaissance faciale permanente à Londres, le choc numérique Darmanin et la peine de 30 ans au Texas pour des pamphlets montrent que l'autonomie se rétracte face au sécuritaire."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "Le edge et les monnaies souveraines progressent mais la dépendance aux grands opérateurs et SDK cachés rappellent que l'autonomie reste partielle."
+      "note": "Bunny DNS, Cloudflare OAuth et Trisquel avancent l'indépendance technique, mais la dépendance à GitHub pour crates.io et le vol de modèles par Alibaba rappellent que l'autonomie reste partielle."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
@@ -233,11 +216,11 @@
     },
     {
       "label": "Fiabilité promise vs dégradation observée",
-      "note": "Fable 5 cède en jours et KNOX laisse un trou 8 ans : la promesse de sûreté s'effondre sur toute la stack technique."
+      "note": "Cordyceps sur les pipelines signés, Samsung PROCA et macOS kernel trust cache confirment que la promesse de sûreté s'effondre sur toute la stack, du CI/CD au noyau."
     },
     {
       "label": "Souveraineté déclarée vs souveraineté effective",
-      "note": "L'euro numérique promeut l'indépendance mais ATProto montre que le contrôle effectif des identités et des handles reste aux opérateurs."
+      "note": "L'open source est proclamé seule voie pour la majorité du monde, mais l'extraction de Claude par Alibaba et les handles ATProto montrent que le contrôle effectif échappe encore aux utilisateurs."
     }
   ]
 }

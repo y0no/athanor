@@ -12,97 +12,105 @@
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-06-25",
+      "last_seen": "2026-06-26",
       "momentum": "stable",
-      "note": "Le jailbreak de Fable 5 et la fake skill sur 26k agents cèdent, pendant que le malware injecte des textes interdits pour contrer l'analyse par IA."
+      "note": "Le body horror des générations non supervisées, la responsabilité légale de Google en Allemagne et la confusion de rôle par prompt injection érodent la fiabilité."
     },
     {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-25",
-      "momentum": "montant",
-      "note": "Puce Broadcom/OpenAI, dette vénézuélienne et licenciements Elastic confirment une crise de viabilité systémique."
+      "last_seen": "2026-06-26",
+      "momentum": "stable",
+      "note": "Apple M7 confirme le silicium propriétaire, Ford réembauche 350 ingénieurs et la justice allemande impose la responsabilité légale des synthèses IA."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-06-25",
+      "last_seen": "2026-06-26",
       "momentum": "montant",
-      "note": "NVIDIA 45°C, 2000 Pixel en datacenter et Trisquel 12 confirment que la frugalité devient un impératif géopolitique."
+      "note": "Apple dédie sa gamme M7 à l'IA embarquée, confirmant que la souveraineté matérielle et le edge deviennent le levier stratégique face au cloud."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-25",
+      "last_seen": "2026-06-26",
       "momentum": "stable",
-      "note": "Endgame, FortiBleed et StrikeShark illustrent la résilience du malware malgré les saisies, avec une tactique inédite : contrer l'analyse par IA."
+      "note": "Cisco, PTC, curl (6 CVE dont la plus ancienne jamais signalée) et ffmpeg confirment que la dégradation touche du noyau aux bibliothèques multimédia."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-06-25",
+      "last_seen": "2026-06-26",
       "momentum": "montant",
-      "note": "Cordyceps et la provenance npm signée malveillante ajoutent les pipelines CI/CD aux noyaux Samsung et macOS comme surfaces d'attaque."
+      "note": "LastPass, fausses alertes d'urgence au Brésil et clés USB compromises au Japon ajoutent les canaux de confiance civique et matériel à la liste."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
       "last_seen": "2026-06-25",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "PostHog 70x, GitHub comme dépendance implicite de crates.io et le recours aux philosophes par les labs confirment que la curatation remplace l'exécution brute."
     },
     {
       "label": "Toolchains haute performance et réécriture système",
       "category": "devops",
       "first_seen": "2026-06-22",
-      "last_seen": "2026-06-25",
+      "last_seen": "2026-06-26",
       "momentum": "stable",
-      "note": "PostHog, Minimus et Nub confirment que chaque maillon de la chaîne de livraison est réécrit pour la performance et l'autonomie."
+      "note": "La migration Proxmox vers NixOS/Incus illustre l'extension de la réécriture à l'infrastructure hôte immuable et reproductible."
     },
     {
-      "label": "Rétrocomputing & préservation",
-      "category": "diy",
-      "first_seen": "2026-05-13",
-      "last_seen": "2026-06-25",
-      "momentum": "stable",
-      "note": "Aladdin DOS, iPod Touch 2G Linux et le protocole Orba ouvert illustrent la vitalité transgénérationnelle de la réappropriation matérielle."
+      "label": "Dette temporelle et cycles de vie imposés",
+      "category": "devops",
+      "first_seen": "2026-06-23",
+      "last_seen": "2026-06-26",
+      "momentum": "montant",
+      "note": "Le report silencieux d'un an du support Windows 10 aggrave la dette temporelle, transformant l'EOL en promesse négociable sans réduire l'exposition."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-25",
+      "last_seen": "2026-06-26",
       "momentum": "montant",
-      "note": "Wikipédiens en syndicat, programmeurs en questionnement et recrutement de philosophes bouclent l'impasse productivité-humain."
+      "note": "Ford réembauche 350 ingénieurs, un tribunal allemand juge Google responsable de ses résumés IA et les wikipédiens britanniques se syndicalisent."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-25",
+      "last_seen": "2026-06-26",
       "momentum": "montant",
-      "note": "Reconnaissance faciale permanente à Londres, NSA privée de Mythos et choc numérique Darmanin rappellent que la sécurité sert d'alibi à la surveillance généralisée."
+      "note": "L'échec de l'interdiction des réseaux sociaux en Australie (85%) et la compétition étatique de surveillance généralisée illustrent l'impuissance réglementaire."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-25",
-      "momentum": "montant",
-      "note": "Open source comme seule voie, Bunny DNS gratuit et Trisquel élargissent la stack souveraine, mais le vol de modèles par Alibaba rappelle que la propriété effective reste fragile."
+      "last_seen": "2026-06-26",
+      "momentum": "stable",
+      "note": "OpenKnowledge et LingoChunk montrent l'IA native open source irriguant les workflows personnels, mais la puce M7 rappelle la tentation propriétaire."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-24",
+      "last_seen": "2026-06-26",
       "momentum": "stable",
-      "note": "L'euro numérique et le décret PQC américain redéfinissent la souveraineté en termes de robustesse temporelle des infrastructures."
+      "note": "La justice allemande responsabilise les synthèses IA tandis que l'échec australien des interdictions révèle l'inefficacité de la coercition."
+    },
+    {
+      "label": "Rétrocomputing & préservation",
+      "category": "diy",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-06-26",
+      "momentum": "stable",
+      "note": "Le module 10G Framework expose les arcanes de l'USB-C et la complexité cachée derrière la promesse modulaire, au-delà de la seule préservation."
     }
   ],
   "watchlist": [
@@ -131,16 +139,10 @@
       "note": "ATProto Permissioned Data ne résout pas le contrôle des opérateurs de handle : la propriété effective reste illusoire."
     },
     {
-      "label": "Vulnérabilités temporelles et expiration implicite",
-      "category": "devops",
-      "since": "2026-06-23",
-      "note": "Windows 11 EOL et Samsung KNOX 8 ans confirment que le temps calendaire est une dépendance invisible et critique."
-    },
-    {
       "label": "Prompt injection as role confusion",
       "category": "infosec",
       "since": "2026-06-23",
-      "note": "Fake skill sur 26k agents et Dify cross-tenant confirment que la frontière données/exécution reste le talon d'Achille des systèmes agents."
+      "note": "L'étude de Schneier confirme que les balises de rôle sont un artifice de formatage structurellement exploitable, renforçant le risque cross-tenant."
     },
     {
       "label": "Contre-mesures anti-IA dans le malware",
@@ -149,43 +151,49 @@
       "note": "L'injection de texte interdit dans les payloads pour contrer l'analyse par IA retourne les garde-fous de contenu contre les défenseurs."
     },
     {
-      "label": "Syndicalisation des travailleurs du savoir numérique",
-      "category": "societe",
-      "since": "2026-06-25",
-      "note": "Wikipédiens et programmeurs remettent en cause l'automatisation par l'organisation collective, signe d'une résistance sociologique naissante."
+      "label": "Fausse alerte civique et canaux de confiance détournés",
+      "category": "infosec",
+      "since": "2026-06-26",
+      "note": "Le piratage du système d'alerte d'urgence du Brésil montre que les canaux de confiance civique deviennent des vecteurs de désinformation de masse."
+    },
+    {
+      "label": "Génération sans supervision et qualité irréelle",
+      "category": "ia",
+      "since": "2026-06-26",
+      "note": "Les livres pour enfants générés par IA révèlent un body horror anatomique systématique quand la supervision humaine disparaît du pipeline créatif."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Oracle, Elastic et les zombie unicorns illustrent l'effondrement de la promesse productiviste, tandis que les wikipédiens syndicalisent leur doute et les labs recrutent des philosophes pour endiguer la crise."
+      "note": "Ford réembauche 350 ingénieurs, la justice allemande condamne Google pour ses résumés IA et les wikipédiens se syndicalisent, tandis que le body horror des générations non supervisées érode la légitimité créative."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "La reconnaissance faciale permanente à Londres, le choc numérique Darmanin et la peine de 30 ans au Texas pour des pamphlets montrent que l'autonomie se rétracte face au sécuritaire."
+      "note": "L'échec australien (85% d'usage malgré l'interdiction) et la compétition de surveillance entre États montrent que l'autonomie se rétracte face au sécuritaire, entre identification obligatoire et fermeture de comptes bancaires d'immigrés."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "Bunny DNS, Cloudflare OAuth et Trisquel avancent l'indépendance technique, mais la dépendance à GitHub pour crates.io et le vol de modèles par Alibaba rappellent que l'autonomie reste partielle."
+      "note": "Apple M7, Bunny DNS et Trisquel avancent la souveraineté matérielle et logicielle, mais la dépendance à GitHub et le vol de modèles par Alibaba rappellent que l'autonomie reste partielle face aux silos propriétaires."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "L'euro numérique et la cryptographie post-quantique révèlent une régulation géopolitique où la protection se confond avec l'indépendance économique."
+      "note": "La justice allemande impose la responsabilité des synthèses IA, mais l'échec australien des interdictions révèle une régulation coercitive impuissante, tandis que l'euro numérique et le PQC redéfinissent la souveraineté économique."
     },
     {
       "label": "Fiabilité promise vs dégradation observée",
-      "note": "Cordyceps sur les pipelines signés, Samsung PROCA et macOS kernel trust cache confirment que la promesse de sûreté s'effondre sur toute la stack, du CI/CD au noyau."
+      "note": "Les six CVE de curl (dont la plus ancienne jamais signalée), ffmpeg, Cisco et PTC s'ajoutent à Cordyceps et LastPass pour confirmer que la promesse de sûreté s'effondre du CI/CD au noyau et jusqu'aux canaux de confiance civique."
     },
     {
       "label": "Souveraineté déclarée vs souveraineté effective",
-      "note": "L'open source est proclamé seule voie pour la majorité du monde, mais l'extraction de Claude par Alibaba et les handles ATProto montrent que le contrôle effectif échappe encore aux utilisateurs."
+      "note": "L'open source est proclamé seule voie, mais l'extraction de Claude par Alibaba, les handles ATProto et la complexité USB-C du Framework montrent que le contrôle effectif échappe encore aux utilisateurs finaux."
     }
   ],
   "strategy_notes": [
-    "La convergence des attaques sur les pipelines CI/CD et la provenance signée nécessite une remise en question urgente de la confiance implicite dans les artefacts de build ; surveiller les outils d'audit de chaîne.",
-    "Le recours des labs IA à la philosophie et la syndicalisation des travailleurs du savoir signalent une crise de légitimité qui pourrait déboucher sur une régulation externe imprévue ; anticiper les frameworks de conformité sociale.",
-    "La puce Broadcom/OpenAI et le datacenter Pixel confirment que la fracture économique pousse au silicium propriétaire et au matériel récupéré ; préparer les scénarios de double fragmentation.",
-    "L'injection de texte anti-IA dans le malware marque un point d'inflexion où les défenses basées sur l'IA deviennent des cibles ; évaluer la résilience des outils d'analyse face aux contre-mesures."
+    "La responsabilité légale des sorties IA (tribunal allemand) pourrait créer un précédent structurant pour toute l'industrie ; surveiller les mouvements de régulation européenne et les adaptations des terms of service.",
+    "L'accumulation de CVEs dans les bibliothèques fondamentales (curl, ffmpeg) et les canaux de confiance (alertes, USB) suggère une remise en question globale des chaînes d'approvisionnement logicielles et matérielles ; évaluer les outils de vérification d'artefacts.",
+    "La syndicalisation des wikipédiens et le réembauche de 350 ingénieurs chez Ford signalent une résistance sociologique qui pourrait inféchir la roadmap des outils IA vers l'augmentation plutôt que le remplacement ; anticiper les positions éditoriales.",
+    "L'extension silencieuse de Windows 10 et la complexité du module Framework 10G illustrent une tension entre obsolescence imposée et modularité réelle ; préparer des scénarios de double fragmentation matérielle et temporelle."
   ],
-  "updated_at": "2026-06-25"
+  "updated_at": "2026-06-26"
 }

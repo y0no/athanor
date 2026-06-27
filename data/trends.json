@@ -4,113 +4,113 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-25",
+      "last_seen": "2026-06-27",
       "momentum": "stable",
-      "note": "Haystack se positionne mais le goulot de la production agentique reste la sûreté, pas l'outillage."
+      "note": "Kimi Code, skills Claude et le routing modèles prolifèrent, mais Doberman et Amazon Q rappellent que la sûreté reste le goulot de l'agentique."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-06-26",
+      "last_seen": "2026-06-27",
       "momentum": "stable",
-      "note": "Le body horror des générations non supervisées, la responsabilité légale de Google en Allemagne et la confusion de rôle par prompt injection érodent la fiabilité."
+      "note": "GPT-5.6 et Mythos confirment l'écart open/closed ; le MIT tracker recense 1400 incidents réels érodant la fiabilité publique."
     },
     {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-26",
+      "last_seen": "2026-06-27",
       "momentum": "stable",
-      "note": "Apple M7 confirme le silicium propriétaire, Ford réembauche 350 ingénieurs et la justice allemande impose la responsabilité légale des synthèses IA."
+      "note": "Washington arbitre l'accès aux modèles, l'industrie IA injecte des millions dans les élections US et capture le cycle politique."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
       "last_seen": "2026-06-26",
-      "momentum": "montant",
-      "note": "Apple dédie sa gamme M7 à l'IA embarquée, confirmant que la souveraineté matérielle et le edge deviennent le levier stratégique face au cloud."
+      "momentum": "stable",
+      "note": "Apple M7 reste le jalon récent, mais le gap open/closed réduit l'attractivité stratégique du edge face aux modèles agréés."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-26",
+      "last_seen": "2026-06-27",
       "momentum": "stable",
-      "note": "Cisco, PTC, curl (6 CVE dont la plus ancienne jamais signalée) et ffmpeg confirment que la dégradation touche du noyau aux bibliothèques multimédia."
+      "note": "Miasma, Amazon Q, Millenium et Mistic confirment que l'exploitation touche le développeur, le cloud et l'endpoint Windows."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-06-26",
+      "last_seen": "2026-06-27",
       "momentum": "montant",
-      "note": "LastPass, fausses alertes d'urgence au Brésil et clés USB compromises au Japon ajoutent les canaux de confiance civique et matériel à la liste."
+      "note": "Miasma sur npm, Amazon Q via MCP configs et 1M de passeports par un système auxiliaire élargissent l'érosion du paquet à l'identité."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-25",
+      "last_seen": "2026-06-27",
       "momentum": "stable",
-      "note": "PostHog 70x, GitHub comme dépendance implicite de crates.io et le recours aux philosophes par les labs confirment que la curatation remplace l'exécution brute."
+      "note": "Assistants agentiques et supply chain convergent pour faire du développeur la cible privilégiée, simultanément assisté et attaqué."
     },
     {
       "label": "Toolchains haute performance et réécriture système",
       "category": "devops",
       "first_seen": "2026-06-22",
-      "last_seen": "2026-06-26",
+      "last_seen": "2026-06-27",
       "momentum": "stable",
-      "note": "La migration Proxmox vers NixOS/Incus illustre l'extension de la réécriture à l'infrastructure hôte immuable et reproductible."
+      "note": "Debian extrepos illustre l'ouverture contrôlée des écosystèmes historiquement fermés vers des modèles de dépôts tiers."
     },
     {
       "label": "Dette temporelle et cycles de vie imposés",
       "category": "devops",
       "first_seen": "2026-06-23",
-      "last_seen": "2026-06-26",
+      "last_seen": "2026-06-27",
       "momentum": "montant",
-      "note": "Le report silencieux d'un an du support Windows 10 aggrave la dette temporelle, transformant l'EOL en promesse négociable sans réduire l'exposition."
+      "note": "Nouveau report de Windows 10 qui allonge la fenêtre d'exposition sans résoudre la dette temporelle structurelle."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
       "last_seen": "2026-06-26",
-      "momentum": "montant",
-      "note": "Ford réembauche 350 ingénieurs, un tribunal allemand juge Google responsable de ses résumés IA et les wikipédiens britanniques se syndicalisent."
+      "momentum": "stable",
+      "note": "Ford, tribunal allemand et syndicat wikipédiens restent les jalons récents ; le veto US sur GPT-5.6 politise le désenchantement."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-26",
+      "last_seen": "2026-06-27",
       "momentum": "montant",
-      "note": "L'échec de l'interdiction des réseaux sociaux en Australie (85%) et la compétition étatique de surveillance généralisée illustrent l'impuissance réglementaire."
+      "note": "Meta intègre la reconnaissance faciale aux lunettes pour le Pentagone et la Californie trace les imprimantes 3D."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-26",
+      "last_seen": "2026-06-27",
       "momentum": "stable",
-      "note": "OpenKnowledge et LingoChunk montrent l'IA native open source irriguant les workflows personnels, mais la puce M7 rappelle la tentation propriétaire."
+      "note": "Jolla Phone, reverse Mi Band et IBM MCGA maintiennent le contre-fe DIY face aux silos fermés et à la surveillance."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-26",
-      "momentum": "stable",
-      "note": "La justice allemande responsabilise les synthèses IA tandis que l'échec australien des interdictions révèle l'inefficacité de la coercition."
+      "last_seen": "2026-06-27",
+      "momentum": "montant",
+      "note": "Le gouvernement US devient arbitre d'accès aux modèles, l'industrie capture les élections et le MIT tracker fournit des munitions."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-26",
+      "last_seen": "2026-06-27",
       "momentum": "stable",
-      "note": "Le module 10G Framework expose les arcanes de l'USB-C et la complexité cachée derrière la promesse modulaire, au-delà de la seule préservation."
+      "note": "Du MCGA à WordStar en passant par le Hacker News mécanique, l'archéologie logicielle et hardware nourrit la réappropriation."
     }
   ],
   "watchlist": [
@@ -124,7 +124,7 @@
       "label": "Infrastructure d'authentification compromise de longue durée",
       "category": "infosec",
       "since": "2026-06-13",
-      "note": "Velvet Ant prouve que PAM et OpenSSH peuvent héberger des backdoors persistantes sur près d'une décennie, invisibles aux audits classiques."
+      "note": "Velvet Ant et la fuite d'un million de passeports par un système auxiliaire confirment l'effondrement des canaux d'authentification."
     },
     {
       "label": "Méthodes formelles en production comme standard",
@@ -142,58 +142,58 @@
       "label": "Prompt injection as role confusion",
       "category": "infosec",
       "since": "2026-06-23",
-      "note": "L'étude de Schneier confirme que les balises de rôle sont un artifice de formatage structurellement exploitable, renforçant le risque cross-tenant."
+      "note": "Doberman et Amazon Q MCP confirment que l'injection structurelle et les protocoles agentiques restent structurellement vulnérables."
     },
     {
-      "label": "Contre-mesures anti-IA dans le malware",
+      "label": "MCP et protocoles d'interopérabilité comme surface d'attaque",
       "category": "infosec",
-      "since": "2026-06-25",
-      "note": "L'injection de texte interdit dans les payloads pour contrer l'analyse par IA retourne les garde-fous de contenu contre les défenseurs."
+      "since": "2026-06-27",
+      "note": "Les configs MCP d'Amazon Q et l'empoisonnement npm par Miasma font des protocoles de l'agentique des surfaces d'attaque."
     },
     {
-      "label": "Fausse alerte civique et canaux de confiance détournés",
+      "label": "Commodisation des RATs Windows en malware-as-a-service",
       "category": "infosec",
-      "since": "2026-06-26",
-      "note": "Le piratage du système d'alerte d'urgence du Brésil montre que les canaux de confiance civique deviennent des vecteurs de désinformation de masse."
+      "since": "2026-06-27",
+      "note": "Millenium et Mistic illustrent la location de l'accès distant : la RAT n'est plus un outil mais un service commercialisé par abonnement."
     },
     {
-      "label": "Génération sans supervision et qualité irréelle",
+      "label": "Tracker d'incidents IA comme levier réglementaire",
       "category": "ia",
-      "since": "2026-06-26",
-      "note": "Les livres pour enfants générés par IA révèlent un body horror anatomique systématique quand la supervision humaine disparaît du pipeline créatif."
+      "since": "2026-06-27",
+      "note": "Le MIT AI Incident Tracker recense 1400 incidents classés par LLM, signal précoce d'un instrument de preuve pour législateurs."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Ford réembauche 350 ingénieurs, la justice allemande condamne Google pour ses résumés IA et les wikipédiens se syndicalisent, tandis que le body horror des générations non supervisées érode la légitimité créative."
+      "note": "Ford, tribunal allemand et wikipédiens syndiqués résistent au remplacement, pendant que le veto US sur GPT-5.6 et le financement électoral par l'IA capturent le débat politique."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "L'échec australien (85% d'usage malgré l'interdiction) et la compétition de surveillance entre États montrent que l'autonomie se rétracte face au sécuritaire, entre identification obligatoire et fermeture de comptes bancaires d'immigrés."
+      "note": "Meta intègre la reconnaissance faciale aux lunettes pour le Pentagone et la Californie trace les imprimantes 3D, tandis que l'ATF recule sur Penlink, illustrant une avancée sécuritaire inégale."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "Apple M7, Bunny DNS et Trisquel avancent la souveraineté matérielle et logicielle, mais la dépendance à GitHub et le vol de modèles par Alibaba rappellent que l'autonomie reste partielle face aux silos propriétaires."
+      "note": "Jolla, le reverse de la Mi Band et les projets de décompilation AAA avancent la souveraineté matérielle, mais le gap open/closed des LLM et la dépendance GitHub rappellent que l'autonomie reste partielle."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "La justice allemande impose la responsabilité des synthèses IA, mais l'échec australien des interdictions révèle une régulation coercitive impuissante, tandis que l'euro numérique et le PQC redéfinissent la souveraineté économique."
+      "note": "Washington arbitre l'accès à GPT-5.6 comme condition d'usage, tandis que l'industrie IA injecte des millions dans les élections et que le MIT tracker offre des munitions législatives, brouillant bouclier et arme."
     },
     {
       "label": "Fiabilité promise vs dégradation observée",
-      "note": "Les six CVE de curl (dont la plus ancienne jamais signalée), ffmpeg, Cisco et PTC s'ajoutent à Cordyceps et LastPass pour confirmer que la promesse de sûreté s'effondre du CI/CD au noyau et jusqu'aux canaux de confiance civique."
+      "note": "Miasma sur npm, Amazon Q via MCP configs, un million de passeports exposés et les RATs Millenium/Mistic confirment que la promesse de sûreté s'effondre du paquet au credential et à l'endpoint."
     },
     {
       "label": "Souveraineté déclarée vs souveraineté effective",
-      "note": "L'open source est proclamé seule voie, mais l'extraction de Claude par Alibaba, les handles ATProto et la complexité USB-C du Framework montrent que le contrôle effectif échappe encore aux utilisateurs finaux."
+      "note": "Debian extrepos ouvre l'écosystème, mais les modèles fermés agréés par Washington, les handles ATProto et le verrou des jeux AAA montrent que le contrôle effectif échappe aux utilisateurs."
     }
   ],
   "strategy_notes": [
-    "La responsabilité légale des sorties IA (tribunal allemand) pourrait créer un précédent structurant pour toute l'industrie ; surveiller les mouvements de régulation européenne et les adaptations des terms of service.",
-    "L'accumulation de CVEs dans les bibliothèques fondamentales (curl, ffmpeg) et les canaux de confiance (alertes, USB) suggère une remise en question globale des chaînes d'approvisionnement logicielles et matérielles ; évaluer les outils de vérification d'artefacts.",
-    "La syndicalisation des wikipédiens et le réembauche de 350 ingénieurs chez Ford signalent une résistance sociologique qui pourrait inféchir la roadmap des outils IA vers l'augmentation plutôt que le remplacement ; anticiper les positions éditoriales.",
-    "L'extension silencieuse de Windows 10 et la complexité du module Framework 10G illustrent une tension entre obsolescence imposée et modularité réelle ; préparer des scénarios de double fragmentation matérielle et temporelle."
+    "Le veto etatique sur les modeles frontieres et le financement electoral par l'IA creen une capture politique structurelle ; surveiller les reponses europeennes et les clauses d'usage des terms of service.",
+    "La compromission par MCP configs et npm fait des agents et leurs protocoles d'interoperabilite des vecteurs supply chain ; anticiper des standards de securite agentique transversaux.",
+    "La reconnaissance faciale sur lunettes grand public et le tracage des imprimantes 3D banalisent le hardware de surveillance ; preparer des scenarios legislatifs sur wearables et geolocalisation.",
+    "Le reverse engineering de la Mi Band et le retour de Jolla indiquent une demande persistante de souverainete materielle tangible ; ne pas sous-estimer le DIY comme indicateur politique."
   ],
-  "updated_at": "2026-06-26"
+  "updated_at": "2026-06-27"
 }

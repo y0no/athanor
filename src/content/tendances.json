@@ -1,43 +1,41 @@
 {
-  "updated_at": "2026-06-27",
+  "updated_at": "2026-06-28",
   "synthesis": {
-    "headline": "L'État verrouille l'IA pendant que la supply chain s'effondre",
-    "narrative": "L'accès à <strong>GPT-5.6</strong> et <strong>Mythos</strong> devient un privilège agréé par Washington, transformant les modèles fermés en infrastructure de souveraineté étatique. Parallèlement, la chaîne de confiance technique s'effondre par le haut : <strong>Miasma</strong> empoisonne <code>npm</code>, <strong>Amazon Q</strong> détourne les configurations <code>MCP</code>, et un million de passeports fuitent par un canal auxiliaire. Entre <em>surveillance biométrique</em> intégrée aux lunettes et <em>réappropriation hardware</em> de la <strong>Mi Band</strong> aux jeux <strong>AAA</strong>, la tension entre contrôle étatique et autonomie technique redéfinit les lignes de front du numérique."
+    "headline": "L'IA quitte le cloud pendant que l'État verrouille les modèles.",
+    "narrative": "Les modèles asiatiques, le routing local et les LLM navigateur matérialisent une <em>bifurcation géopolitique</em> de l'inférence, mais <strong>Glasswing</strong> prouve que ces mêmes modèles deviennent des armes d'audit trop puissantes pour être laissées libres. Pendant que les ops rustifient l'infrastructure et que le DIY force les verrous matériels, <strong>Signal</strong>, <strong>WhatsApp</strong> et <strong>GitHub</strong> révèlent que la confiance s'effondre par les commodités mêmes. L'arbitraire américain sur <strong>Polestar</strong> et l'<strong>App Store Act</strong> texan achèvent de montrer que la régulation est devenue un instrument de capture politique autant qu'un bouclier."
   },
   "currents": [
     {
-      "label": "Le développeur, cible privilégiée et arbitre de la confiance technique",
-      "note": "Assistants agentiques, supply chain empoisonnée et protocoles MCP convergent pour faire du développeur le maillon simultanément le plus assisté et le plus attaqué.",
+      "label": "L'IA devient infrastructure offensive",
+      "note": "Glasswing transforme le LLM en outil d'audit offensif sur systèmes classifiés, forçant les États à verrouiller l'accès et brouillant la frontière cybersécurité/offensive.",
       "categories": [
         "ia",
-        "infosec",
-        "devops"
-      ]
-    },
-    {
-      "label": "Les modèles fermés comme infrastructure de pouvoir étatique",
-      "note": "Washington arbitre l'accès à GPT-5.6 et Mythos, l'industrie IA finance les campagnes et la surveillance biométrique s'appuie sur les mêmes silos propriétaires.",
-      "categories": [
-        "ia",
-        "societe",
         "infosec"
       ]
     },
     {
-      "label": "L'érosion de la confiance du paquet à l'identité civique",
-      "note": "Miasma sur npm, MCP configs compromises et passeports exposés par un dispensaire montrent que la chaîne de confiance s'effondre du code à l'identité civique.",
+      "label": "La confiance s'effondre par la commodité",
+      "note": "Signal recovery keys, WhatsCluster et les zero-days anonymes sur GitHub montrent que les fonctionnalités de commodité deviennent des vecteurs d'espionnage et de compromission à échelle industrielle.",
       "categories": [
         "infosec",
         "societe"
       ]
     },
     {
-      "label": "Obsolescence imposée contre réappropriation matérielle",
-      "note": "Windows 10 prolongé artificiellement, Jolla et reverse hardware Mi Band illustrent la lutte entre cycles de vie verrouillés et souveraineté matérielle effective.",
+      "label": "L'edge comme réponse à la capture étatique",
+      "note": "Du routing déterministe au LLM navigateur et au RDMA AMD, les acteurs techniques reconstruisent des piliers d'autonomie face à la centralisation cloud et aux restrictions géopolitiques sur les modèles.",
       "categories": [
-        "diy",
+        "ia",
         "devops",
-        "societe"
+        "diy"
+      ]
+    },
+    {
+      "label": "La régulation comme arme de discriminations commerciales",
+      "note": "L'arbitraire fédéral sur Polestar/Volvo et les bans d'export modélisent un monde où la souveraineté économique et les législations étatiques servent des intérêts politiques camouflés en protection.",
+      "categories": [
+        "societe",
+        "ia"
       ]
     }
   ],
@@ -70,25 +68,33 @@
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-06-26",
-      "momentum": "stable",
-      "note": "Apple M7 reste le jalon récent, mais le gap open/closed réduit l'attractivité stratégique du edge face aux modèles agréés."
+      "last_seen": "2026-06-28",
+      "momentum": "montant",
+      "note": "DSpark, Wayfinder et Terminal.com sortent l'inférence du datacenter vers le navigateur ; les modèles non-US creusent une bifurcation géopolitique."
+    },
+    {
+      "label": "IA offensive et audit de vulnérabilités",
+      "category": "ia",
+      "first_seen": "2026-06-28",
+      "last_seen": "2026-06-28",
+      "momentum": "nouveau",
+      "note": "Glasswing prouve que Mythos découvre des vulnérabilités invisibles aux humains, forçant Washington à verrouiller l'accès aux capacités offensives avancées."
     },
     {
       "label": "Exploitation active & fenêtres de patch réduites",
       "category": "infosec",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-27",
+      "last_seen": "2026-06-28",
       "momentum": "stable",
-      "note": "Miasma, Amazon Q, Millenium et Mistic confirment que l'exploitation touche le développeur, le cloud et l'endpoint Windows."
+      "note": "Les zero-days anonymes sur GitHub, le chaînage Wing FTP/tarfile et Uni-App confirment la commodisation de l'offensif au-delà des RATs as-a-service."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-06-27",
+      "last_seen": "2026-06-28",
       "momentum": "montant",
-      "note": "Miasma sur npm, Amazon Q via MCP configs et 1M de passeports par un système auxiliaire élargissent l'érosion du paquet à l'identité."
+      "note": "Signal, WhatsApp Web et GitHub illustrent une érosion accélérée allant du canal sécurisé à la plateforme de distribution."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
@@ -102,9 +108,9 @@
       "label": "Toolchains haute performance et réécriture système",
       "category": "devops",
       "first_seen": "2026-06-22",
-      "last_seen": "2026-06-27",
+      "last_seen": "2026-06-28",
       "momentum": "stable",
-      "note": "Debian extrepos illustre l'ouverture contrôlée des écosystèmes historiquement fermés vers des modèles de dépôts tiers."
+      "note": "WAL-RUS rustifie les sauvegardes PostgreSQL, Debian extrepos ouvre l'écosystème et le guide RDMA AMD pousse l'ops vers le metal."
     },
     {
       "label": "Dette temporelle et cycles de vie imposés",
@@ -118,17 +124,17 @@
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-26",
+      "last_seen": "2026-06-28",
       "momentum": "stable",
-      "note": "Ford, tribunal allemand et syndicat wikipédiens restent les jalons récents ; le veto US sur GPT-5.6 politise le désenchantement."
+      "note": "Ford confirme le backfire de l'automatisation brutale, dans la continuité des résistances allemandes et wikipédiennes."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-27",
+      "last_seen": "2026-06-28",
       "momentum": "montant",
-      "note": "Meta intègre la reconnaissance faciale aux lunettes pour le Pentagone et la Californie trace les imprimantes 3D."
+      "note": "Meta étend la surveillance ciblée aux lanceurs d'alerte pour faire respecter des gag orders, tandis que l'arbitraire fédéral sur Polestar/Volvo politise la conformité."
     },
     {
       "label": "Souveraineté numérique grand public",
@@ -136,23 +142,23 @@
       "first_seen": "2026-06-07",
       "last_seen": "2026-06-27",
       "momentum": "stable",
-      "note": "Jolla Phone, reverse Mi Band et IBM MCGA maintiennent le contre-fe DIY face aux silos fermés et à la surveillance."
+      "note": "Jolla Phone, reverse Mi Band et IBM MCGA maintiennent le contre-feu DIY face aux silos fermés et à la surveillance."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-27",
+      "last_seen": "2026-06-28",
       "momentum": "montant",
-      "note": "Le gouvernement US devient arbitre d'accès aux modèles, l'industrie capture les élections et le MIT tracker fournit des munitions."
+      "note": "La fragmentation législative US s'accélère entre Texas, Californie et l'arbitraire fédéral ; l'industrie poursuit sa capture politique."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-27",
+      "last_seen": "2026-06-28",
       "momentum": "stable",
-      "note": "Du MCGA à WordStar en passant par le Hacker News mécanique, l'archéologie logicielle et hardware nourrit la réappropriation."
+      "note": "Videx Apple II FPGA et le reverse d'une motherboard sans documentation illustrent l'archéologie logicielle et matérielle comme levier de réappropriation."
     }
   ],
   "watchlist": [
@@ -193,42 +199,42 @@
       "note": "Les configs MCP d'Amazon Q et l'empoisonnement npm par Miasma font des protocoles de l'agentique des surfaces d'attaque."
     },
     {
-      "label": "Commodisation des RATs Windows en malware-as-a-service",
+      "label": "Extensions Chrome comme infrastructure de surveillance de masse",
       "category": "infosec",
-      "since": "2026-06-27",
-      "note": "Millenium et Mistic illustrent la location de l'accès distant : la RAT n'est plus un outil mais un service commercialisé par abonnement."
+      "since": "2026-06-28",
+      "note": "WhatsCluster révèle un réseau de 50 extensions Chrome manipulant WhatsApp Web, industrialisant l'espionnage via les stores de navigateurs."
     },
     {
-      "label": "Tracker d'incidents IA comme levier réglementaire",
+      "label": "LLM navigateur comme runtime edge émergent",
       "category": "ia",
-      "since": "2026-06-27",
-      "note": "Le MIT AI Incident Tracker recense 1400 incidents classés par LLM, signal précoce d'un instrument de preuve pour législateurs."
+      "since": "2026-06-28",
+      "note": "Terminal.com exécute un LLM local dans le navigateur, transformant le browser en runtime inference et en potentielle surface d'attaque côté client."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Ford, tribunal allemand et wikipédiens syndiqués résistent au remplacement, pendant que le veto US sur GPT-5.6 et le financement électoral par l'IA capturent le débat politique."
+      "note": "Ford illustre le backfire de l'automatisation brutale, tandis que la bifurcation des modèles non-US et le ban Anthropic montrent que la productivité reste géopolitisée."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "Meta intègre la reconnaissance faciale aux lunettes pour le Pentagone et la Californie trace les imprimantes 3D, tandis que l'ATF recule sur Penlink, illustrant une avancée sécuritaire inégale."
+      "note": "Meta place les lanceurs d'alerte sous surveillance ciblée pendant douze mois, tandis que le DIY hardware et les outils open source comme Gini maintiennent un contre-feu technique."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "Jolla, le reverse de la Mi Band et les projets de décompilation AAA avancent la souveraineté matérielle, mais le gap open/closed des LLM et la dépendance GitHub rappellent que l'autonomie reste partielle."
+      "note": "Wayfinder, Terminal.com et les modèles non-US accélèrent l'émancipation du datacenter, mais les restrictions américaines sur les modèles frontières rappellent que l'autonomie reste partielle."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "Washington arbitre l'accès à GPT-5.6 comme condition d'usage, tandis que l'industrie IA injecte des millions dans les élections et que le MIT tracker offre des munitions législatives, brouillant bouclier et arme."
+      "note": "Le Texas verrouille les app stores, la Californie protège les consommateurs du bruit, mais Washington élimine Polestar tout en épargnant Volvo, révélant un arbitraire où la régulation sert la politique commerciale."
     },
     {
       "label": "Fiabilité promise vs dégradation observée",
-      "note": "Miasma sur npm, Amazon Q via MCP configs, un million de passeports exposés et les RATs Millenium/Mistic confirment que la promesse de sûreté s'effondre du paquet au credential et à l'endpoint."
+      "note": "Signal recovery keys, WhatsCluster et les zero-days anonymes sur GitHub confirment que les promesses de sécurité s'effondrent du credential à la chaîne de distribution."
     },
     {
       "label": "Souveraineté déclarée vs souveraineté effective",
-      "note": "Debian extrepos ouvre l'écosystème, mais les modèles fermés agréés par Washington, les handles ATProto et le verrou des jeux AAA montrent que le contrôle effectif échappe aux utilisateurs."
+      "note": "Debian extrepos et le routing local gagnent du terrain, mais les modèles fermés agréés, les gag orders de Meta et le verrou des handles ATProto maintiennent le contrôle effectif hors de portée."
     }
   ]
 }

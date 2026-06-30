@@ -1,0 +1,1077 @@
+{
+  "name": "Veille - Daily digest (Synthetic)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -336,
+        3264
+      ],
+      "id": "c49f939a-6e43-4316-8905-d8c83984a797",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "url": "https://miniflux.example.com/v1/entries",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "minifluxApi",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "limit",
+              "value": "500"
+            },
+            {
+              "name": "changed_after",
+              "value": "={{Math.floor((new Date($now).getTime() - 86400000) / 1000)}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        0,
+        3264
+      ],
+      "id": "85e48f4c-a05e-460a-b3b2-ef820d917e04",
+      "name": "Retrieve entries",
+      "credentials": {
+        "minifluxApi": {
+          "id": "",
+          "name": "Miniflux account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// N8N Code node (JavaScript) — normalize Miniflux entries.\n//\n// Input: items from the upstream Miniflux node. Accepts either\n//   - one item whose `.json` is `{entries: [...], total: N}` or an array, or\n//   - many items, each being a Miniflux entry object.\n//\n// Output: a single item with the normalized payload, shape compatible with\n// the downstream render step:\n//   {window, total_in_window, returned, truncated, max_articles, entries}\n\nconst MAX_ARTICLES = 500;\nconst EXCERPT_CHARS = 500;\n\nfunction htmlToText(html) {\n  if (!html) return \"\";\n  // Drop script/style blocks (content + tags) before stripping the rest.\n  let text = html.replace(/<(script|style)\\b[^>]*>[\\s\\S]*?<\\/\\1>/gi, \" \");\n  text = text.replace(/<[^>]+>/g, \" \");\n  // Minimal entity decoding — feeds rarely ship exotic entities.\n  text = text\n    .replace(/&nbsp;/g, \" \")\n    .replace(/&amp;/g, \"&\")\n    .replace(/&lt;/g, \"<\")\n    .replace(/&gt;/g, \">\")\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace(/&apos;/g, \"'\");\n  return text.replace(/\\s+/g, \" \").trim();\n}\n\nfunction truncate(text, maxLen) {\n  if (text.length <= maxLen) return text;\n  return text.slice(0, maxLen - 1).trimEnd() + \"…\";\n}\n\nfunction normalizeEntry(entry, excerptChars) {\n  const feed = entry.feed || {};\n  const category = feed.category || {};\n  return {\n    id: entry.id,\n    title: (entry.title || \"\").trim(),\n    url: entry.url,\n    feed: feed.title || \"\",\n    feed_url: feed.site_url,\n    category: category.title || \"\",\n    author: (entry.author || \"\").trim(),\n    published_at: entry.published_at,\n    excerpt: truncate(htmlToText(entry.content || \"\"), excerptChars),\n    enriched: false,\n  };\n}\n\nfunction collectRawEntries(items) {\n  if (items.length === 1) {\n    const payload = items[0].json;\n    if (payload && Array.isArray(payload.entries)) return [...payload.entries];\n    if (Array.isArray(payload)) return [...payload];\n    return [payload];\n  }\n  return items.map((it) => it.json);\n}\n\nconst rawEntries = collectRawEntries($input.all());\nrawEntries.sort((a, b) => {\n  const da = a.published_at || \"\";\n  const db = b.published_at || \"\";\n  return da < db ? -1 : da > db ? 1 : 0;\n});\n\nconst totalInWindow = rawEntries.length;\nconst isTruncated = totalInWindow > MAX_ARTICLES;\nconst kept = isTruncated ? rawEntries.slice(-MAX_ARTICLES) : rawEntries;\n\nconst entries = kept.map((e) => normalizeEntry(e, EXCERPT_CHARS));\nconst pubDates = entries.map((e) => e.published_at).filter(Boolean);\n\nconst payload = {\n  window: {\n    from: pubDates.length ? pubDates[0] : null,\n    to: pubDates.length ? pubDates[pubDates.length - 1] : null,\n  },\n  total_in_window: totalInWindow,\n  returned: entries.length,\n  truncated: isTruncated,\n  max_articles: MAX_ARTICLES,\n  entries,\n};\n\nreturn [{ json: payload }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        176,
+        3264
+      ],
+      "id": "06ecdc2c-462d-497c-bf76-4ec85e2992fd",
+      "name": "Normalize"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "57244d79-4588-4153-a824-6a01f78bfddf",
+              "leftValue": "={{ $json.returned }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        336,
+        3264
+      ],
+      "id": "b88bbe58-a24d-42f7-b81b-3078ceecfd1d",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Chunk entries into batches for the classifier LLM.\n// Output: one item per batch — each carries a slim view (id/title/feed/category/short excerpt)\n// sized to keep the classifier prompt small and predictable.\n\nconst CHUNK_SIZE = 15;\nconst EXCERPT_CHARS_FOR_CLASSIFIER = 240;\n\nconst payload = $input.first().json;\nconst entries = payload.entries || [];\n\nconst chunks = [];\nfor (let i = 0; i < entries.length; i += CHUNK_SIZE) {\n  const slice = entries.slice(i, i + CHUNK_SIZE);\n  const slim = slice.map((e) => ({\n    id: e.id,\n    title: e.title,\n    feed: e.feed,\n    category: e.category,\n    excerpt: (e.excerpt || \"\").slice(0, EXCERPT_CHARS_FOR_CLASSIFIER),\n  }));\n  chunks.push({ json: { items: slim, chunk_idx: chunks.length } });\n}\n\nreturn chunks.length ? chunks : [{ json: { items: [], chunk_idx: 0 } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -16,
+        3456
+      ],
+      "id": "ee338b22-702d-4692-8216-a898740ebfd3",
+      "name": "Chunk for Classify"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Articles à classer:\n\n{{ JSON.stringify($json.items) }}",
+        "messages": {
+          "messageValues": [
+            {
+              "message": "Tu es un classifieur d'articles tech-watch francophone. Pour chaque article fourni, attribue une catégorie taxonomique, un score d'importance, et un indice de regroupement.\n\n# Catégories autorisées (un article = exactement UNE)\n\nLe champ `category` DOIT être l'une de ces 6 valeurs EXACTES, en minuscules, sans variante :\n\n- `infosec`  : CVE, malware, breaches, supply chain, red team, recherche offensive, vulnerability research\n- `ia`       : LLMs, agents, modèles, IA dans le code, RAG, vector DBs\n- `devops`   : Self-hosting, infra, conteneurs, CI/CD, OS, langages, observabilité, frameworks, web dev (inclut tout ce qui pourrait s'appeler \"devsecops\" ou \"security tooling\")\n- `diy`      : SDR, embarqué, FPGA, hacks matériels, retro-computing, makers, hardware\n- `societe`  : Vie privée, surveillance, lois, régulation IA, débats sociétaux, économie tech\n- `appendix` : Hors-périmètre, OU excerpt trop maigre pour porter une histoire, OU article trivial / promo / non-tech\n\n**Pas de valeurs inventées.** Pas de `devsecops`, `security`, `tech`, `news`, `dev`, etc. Si un article ne rentre clairement dans aucune des 5 premières → `appendix`.\n\n# Sortie (STRICT)\n\nRéponds UNIQUEMENT en JSON valide, pas de markdown, pas de prose hors JSON. Exactement ce schéma :\n\n{\n  \"classifications\": [dernière écriture » ; je récupère donc d'abord les signaux read-only disponibles (ACL d'accès + derniers backups automatiques),\n    { \"id\": <int>, \"category\": \"ia|infosec|devops|diy|societe|appendix\", \"importance\": <int 1-5>, \"cluster_hint\": \"<≤4 mots ou chaîne vide>\" }\n  ]\n}\n\n- `id` : l'entier `id` REÇU EN ENTRÉE, recopié tel quel. JAMAIS de chaîne kebab-case.\n- `category` : EXACTEMENT l'une des 6 valeurs ci-dessus.\n- `importance` : 1 (trivial) → 5 (majeur, transversal, impact large).\n- `cluster_hint` : nom court qui identifie le SUJET (ex: \"GPT-5\", \"Log4Shell v3\", \"Rust 1.90\"). Sert à regrouper. Si appendix ou trivial, mets `\"\"`.\n- **N'omets AUCUN id reçu en entrée sauf s'il s'agit d'un doublon.**\n- **N'invente PAS de champs supplémentaires** (`slug`, `tags`, `title`, etc.). Uniquement les 4 champs ci-dessus."
+            }
+          ]
+        },
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.7,
+      "position": [
+        144,
+        3456
+      ],
+      "id": "3d02ca1f-a4e3-4935-a986-572cab583cf8",
+      "name": "Classify",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "// Merge all classifier batches back onto the original entries, group by category.\n// Reads the canonical entries from Normalize so we don't rely on the LLM to echo them.\n// Reads `category` field from the LLM output, with `slug` fallback and alias map for drift.\n\nfunction parseLLM(item) {\n  const raw =\n    item.content ??\n    item.text ??\n    (item.message && item.message.content) ??\n    (typeof item.output === \"string\" ? item.output : Array.isArray(item.output) ? item.output.map((b) => b.text).join(\"\") : \"\") ??\n    \"\";\n  if (typeof raw !== \"string\") return raw;\n  const fence = raw.match(/```(?:json)?\\s*([\\s\\S]*?)```/i);\n  if (fence) { try { return JSON.parse(fence[1]); } catch (_) {} }\n  try { return JSON.parse(raw); } catch (_) {}\n  const s = raw.indexOf(\"{\"), e = raw.lastIndexOf(\"}\");\n  if (s >= 0 && e > s) { try { return JSON.parse(raw.slice(s, e + 1)); } catch (_) {} }\n  return null;\n}\n\nconst TARGET_SLUGS = [\"ia\", \"infosec\", \"devops\", \"diy\", \"societe\"];\nconst CATEGORY_NAMES = {\n  ia: \"IA\",\n  infosec: \"Infosec\",\n  devops: \"DevOps\",\n  diy: \"DIY\",\n  societe: \"Société & régulation\",\n};\n\n// Defensive aliases — model occasionally drifts despite the strict prompt.\nconst ALIASES = {\n  devsecops: \"devops\",\n  dev: \"devops\",\n  webdev: \"devops\",\n  security: \"infosec\",\n  cybersec: \"infosec\",\n  cybersecurity: \"infosec\",\n  vulnerability: \"infosec\",\n  society: \"societe\",\n  société: \"societe\",\n  ai: \"ia\",\n  llm: \"ia\",\n  hardware: \"diy\",\n  hacking: \"diy\",\n  makers: \"diy\",\n};\n\nfunction normalizeSlug(raw) {\n  if (!raw || typeof raw !== \"string\") return null;\n  const t = raw.toLowerCase().trim();\n  if (TARGET_SLUGS.includes(t) || t === \"appendix\") return t;\n  if (ALIASES[t]) return ALIASES[t];\n  return null; // unknown — caller decides fallback\n}\n\nconst byId = new Map();\nlet totalClassified = 0;\nlet unknownSlugs = new Set();\nfor (const item of $input.all()) {\n  const parsed = parseLLM(item.json);\n  const list = (parsed && parsed.classifications) || [];\n  for (const c of list) {\n    if (c && c.id != null) {\n      byId.set(c.id, c);\n      totalClassified++;\n    }\n  }\n}\n\nconst normalized = $('Normalize').first().json;\nconst entries = normalized.entries || [];\n\nconst buckets = { ia: [], infosec: [], devops: [], diy: [], societe: [], appendix: [] };\nfor (const e of entries) {\n  const cls = byId.get(e.id);\n  // Prefer `category` (current schema). Fall back to `slug` only if it looks like a taxonomy value.\n  const candidate = cls && (cls.category || cls.slug);\n  let slug = normalizeSlug(candidate);\n  if (!slug) {\n    if (candidate) unknownSlugs.add(String(candidate).toLowerCase());\n    slug = \"appendix\"; // unclassified → appendix\n  }\n  buckets[slug].push({\n    ...e,\n    importance: cls ? Number(cls.importance) || 1 : 1,\n    cluster_hint: cls ? (cls.cluster_hint || \"\") : \"\",\n  });\n}\n\nfor (const k of Object.keys(buckets)) {\n  buckets[k].sort((a, b) => {\n    if (b.importance !== a.importance) return b.importance - a.importance;\n    return (b.published_at || \"\") < (a.published_at || \"\") ? -1 : 1;\n  });\n}\n\nreturn [{\n  json: {\n    buckets,\n    meta: {\n      window: normalized.window,\n      total_in_window: normalized.total_in_window,\n      returned: normalized.returned,\n      truncated: normalized.truncated,\n      max_articles: normalized.max_articles,\n    },\n    category_names: CATEGORY_NAMES,\n    debug: {\n      total_entries: entries.length,\n      total_classified: totalClassified,\n      unclassified: entries.length - byId.size,\n      unknown_slugs_seen: Array.from(unknownSlugs),\n      bucket_sizes: Object.fromEntries(Object.entries(buckets).map(([k, v]) => [k, v.length])),\n    },\n  },\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        432,
+        3456
+      ],
+      "id": "07af7bf5-3d3d-451b-b98b-5e364e20b185",
+      "name": "Aggregate Classifications"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Emit one item per non-empty main category. Cap to MAX_PER_CATEGORY by\n// importance so a noisy day can't blow the synth context. Appendix bucket\n// is handled downstream in Assemble Spec — no LLM call needed for it.\n\nconst TARGET_SLUGS = [\"ia\", \"infosec\", \"devops\", \"diy\", \"societe\"];\nconst MAX_PER_CATEGORY = 40;\nconst { buckets, category_names } = $input.first().json;\n\nconst items = [];\nfor (const slug of TARGET_SLUGS) {\n  // Entries are already sorted by importance desc in Aggregate Classifications.\n  const list = (buckets[slug] || []).slice(0, MAX_PER_CATEGORY);\n  if (list.length === 0) continue;\n  const slim = list.map((e) => ({\n    id: e.id,\n    title: e.title,\n    url: e.url,\n    feed: e.feed,\n    published_at: e.published_at,\n    excerpt: e.excerpt,\n    importance: e.importance,\n    cluster_hint: e.cluster_hint,\n  }));\n  items.push({\n    json: { slug, name: category_names[slug], entries: slim },\n  });\n}\n\nif (items.length === 0) {\n  // Sentinel so Assemble Spec still runs (all-appendix edge case).\n  return [{ json: { slug: null, name: \"\", entries: [], skip_synth: true } }];\n}\nreturn items;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        576,
+        3456
+      ],
+      "id": "82f816cb-76be-477d-8c74-0be21693ad9e",
+      "name": "Split for Synthesis"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Catégorie: {{ $json.name }} (slug: {{ $json.slug }})\n\nArticles:\n{{ JSON.stringify($json.entries) }}\n\n# Mémoire (contexte des ~30 derniers jours — NE PAS recopier tel quel, sert à situer l'évolution)\n{{ $('Parse Memory').first().json.summary }}",
+        "messages": {
+          "messageValues": [
+            {
+              "message": "Tu es l'éditeur en chef d'un digest tech-watch francophone. À partir d'une liste d'articles d'UNE SEULE catégorie, tu produis la STRUCTURE éditoriale : quels topics, comment les regrouper, quelles sources. Le détail rédactionnel des ledes viendra dans une étape suivante (deep-dive par topic).\n\n# Schéma de sortie (STRICT)\n\nRéponds UNIQUEMENT en JSON valide (pas de markdown, pas de prose hors JSON):\n\n{\n  \"slug\": \"<slug fourni en entrée>\",\n  \"name\": \"<nom fourni en entrée>\",\n  \"tagline\": \"<courte ligne UPPERCASE-ish, optionnelle>\",\n  \"topics\": [\n    {\n      \"title\": \"<titre thématique, plain text, doit faire moins de 70 caractères (strict)>\",\n      \"lede_seed\": \"<UNE seule phrase qui pitch l'angle de l'histoire — guide pour le deep-dive>\",\n      \"source_ids\": [<int>, <int>, ...]\n    }\n  ]\n}\n\nSi l'input est vide (skip_synth true ou entries vide), renvoie {\"slug\":null,\"topics\":[]}.\n\n# Standards\n\n- **1 à 3 topics typiquement pour cette catégorie.** Mieux vaut 2 topics bien construits que 6 fins.\n- **Regroupe par cluster_hint.** Articles avec le même cluster_hint (ou des hints proches) vont sous un même topic.\n- **source_ids** : la liste des `id` (entiers) des articles que tu rattaches à ce topic. UNIQUEMENT des ids présents dans l'input.\n- **lede_seed** : UNE phrase en français qui décrit l'angle, pour cadrer la rédaction suivante (ex: \"OpenAI accélère sur les agents tandis qu'Anthropic insiste sur la sécurité — deux philosophies divergent.\"). Pas de HTML.\n- **Priorise par importance.** Les topics autour d'articles importance ≥4 d'abord.\n- **Pas d'emojis. Langue : français.**\n\n# Champs disponibles par entry\n\nid, title, url, feed, published_at (ISO), excerpt, importance (1-5), cluster_hint.\n\n\n# Mémoire / continuité\nUn bloc \"Mémoire\" peut être fourni en entrée : il liste les thèmes en cours sur ~30 jours et leur momentum (montant/stable/déclin). Utilise-le pour PRIORISER les topics qui prolongent une tendance établie, regrouper sous un même topic ce qui continue une histoire des jours précédents, et privilégier les angles qui montrent une évolution. N'invente jamais une continuité absente des articles du jour."
+            }
+          ]
+        },
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.7,
+      "position": [
+        720,
+        3456
+      ],
+      "id": "88c827a8-a890-4e6f-b0ca-57ec6d457e93",
+      "name": "Synthesize Category",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "// Flatten topics across all categories into one item per topic, hydrating each\n// source with full entry data (excerpt etc.) so the deep-dive LLM has the prose.\n\nfunction parseLLM(item) {\n  const raw =\n    item.content ??\n    item.text ??\n    (item.message && item.message.content) ??\n    (typeof item.output === \"string\" ? item.output : Array.isArray(item.output) ? item.output.map((b) => b.text).join(\"\") : \"\") ??\n    \"\";\n  if (typeof raw !== \"string\") return raw;\n  const fence = raw.match(/```(?:json)?\\s*([\\s\\S]*?)```/i);\n  if (fence) { try { return JSON.parse(fence[1]); } catch (_) {} }\n  try { return JSON.parse(raw); } catch (_) {}\n  const s = raw.indexOf(\"{\"), e = raw.lastIndexOf(\"}\");\n  if (s >= 0 && e > s) { try { return JSON.parse(raw.slice(s, e + 1)); } catch (_) {} }\n  return null;\n}\n\nconst aggregate = $('Aggregate Classifications').first().json;\nconst buckets = aggregate.buckets || {};\n\n// Build a global id -> entry lookup across all buckets.\nconst byId = new Map();\nfor (const k of Object.keys(buckets)) {\n  for (const e of buckets[k]) byId.set(e.id, e);\n}\n\nconst items = [];\nfor (const llmItem of $input.all()) {\n  const parsed = parseLLM(llmItem.json);\n  if (!parsed || !parsed.slug || !Array.isArray(parsed.topics)) continue;\n  parsed.topics.forEach((topic, idx) => {\n    const ids = Array.isArray(topic.source_ids) ? topic.source_ids : [];\n    const sources = ids\n      .map((id) => byId.get(id))\n      .filter(Boolean)\n      .map((e) => ({\n        id: e.id,\n        title: e.title,\n        url: e.url,\n        feed: e.feed,\n        published_at: e.published_at,\n        excerpt: e.excerpt,\n        importance: e.importance,\n        cluster_hint: e.cluster_hint,\n      }));\n    if (sources.length === 0) return;\n    items.push({\n      json: {\n        topic_key: `${parsed.slug}:${idx}`,\n        category_slug: parsed.slug,\n        category_name: parsed.name,\n        topic_title: topic.title,\n        lede_seed: topic.lede_seed || \"\",\n        sources,\n      },\n    });\n  });\n}\n\nif (items.length === 0) {\n  return [{ json: { topic_key: \"__none__\", category_slug: null, category_name: \"\", topic_title: \"\", lede_seed: \"\", sources: [], skip_deep: true } }];\n}\nreturn items;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -16,
+        3824
+      ],
+      "id": "e0dd4103-deb1-414a-85e5-f8a4d21403e2",
+      "name": "Split Topics for Deep Dive"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Catégorie: {{ $json.category_name }}\nTopic: {{ $json.topic_title }}\nTopic_key: {{ $json.topic_key }}\nAngle (seed): {{ $json.lede_seed }}\n\nArticles sources:\n{{ JSON.stringify($json.sources) }}\n\n# Mémoire (contexte des ~30 derniers jours — NE PAS recopier tel quel, sert à situer l'évolution)\n{{ $('Parse Memory').first().json.summary }}",
+        "options": {
+          "systemMessage": "  Tu écris la prose finale d'UN topic de digest tech-watch francophone. L'éditeur t'a fourni un identifiant de topic (topic_key, opaque), un titre, un angle de départ (lede_seed), et la liste des articles sources. Tu rends un objet JSON avec un lede_html riche et\n  les sources formatées.\n\n  # Schéma de sortie (STRICT)\n\n  Réponds UNIQUEMENT en JSON valide (pas de markdown, pas de prose hors JSON):\n\n  {\n    \"topic_key\": \"<copie EXACTE de la valeur fournie en entrée — voir règle ci-dessous>\",\n    \"lede_html\": \"<2 à 4 phrases riches avec mise en valeur HTML — voir règle ci-dessous>\",\n    \"sources\": [\n      { \"feed\": \"<nom du feed>\", \"date\": \"DD/MM HH:MM\", \"url\": \"<URL>\", \"title\": \"<titre exact>\" }\n    ]\n  }\n\n  Si l'input a skip_deep:true ou sources vides, renvoie {\"topic_key\":\"<la valeur reçue>\",\"lede_html\":\"\",\"sources\":[]}.\n\n  # Règle topic_key (NON NÉGOCIABLE)\n\n  `topic_key` est un identifiant interne opaque au format court `slug:index`, par exemple `\"ia:0\"`, `\"infosec:2\"`, `\"devops:1\"`. Ce n'est PAS un titre, PAS une description, PAS une catégorie humaine.\n\n  Recopie-le caractère par caractère depuis l'entrée. Aucune reformulation, aucune traduction.\n\n  - CORRECT : \"topic_key\": \"ia:0\"\n  - INCORRECT : \"topic_key\": \"IA agentique : fiabilité et sandboxing\"\n  - INCORRECT : \"topic_key\": \"Clever Cloud K8s\"\n  - INCORRECT : \"topic_key\": \"DIY\"\n\n  Si tu rends un topic_key qui ressemble à un titre, c'est une sortie invalide.\n\n  # Règle lede_html (NON NÉGOCIABLE)\n\n  `lede_html` DOIT contenir AU MINIMUM 2 mises en valeur HTML. Une sortie sans aucun <strong> ni <em> est invalide.\n\n  - <strong> : noms d'entités (vendeurs, produits, CVE, acteurs), chiffres significatifs (versions, montants, dates clés).\n  - <em> : nuances, hypothèses, oppositions, contrastes, concepts en italique.\n  - <code> : noms techniques inline (fichiers, commandes, identifiants techniques type `dnsmasq`, `kubectl`, `quiche`).\n  - AUTORISÉ : <strong>, <em>, <code> UNIQUEMENT. Pas de <a>, pas de <p>, pas de <br>.\n\n  Exemple de lede_html valide :\n  \"<strong>Microsoft</strong> colmate 137 failles ce mois-ci dont 30 critiques, tandis que <strong>CVE-2026-45185</strong> offre une RCE non authentifiée sur Exim via un <em>use-after-free TLS</em>. Six nouvelles CVE touchent aussi <code>dnsmasq</code>.\"\n\n  # Standards éditoriaux (NON NÉGOCIABLE)\n\n  - Synthèse, pas résumé. Le lede raconte l'histoire transversale entre les articles : tendances, contradictions, contexte. Une simple énumération est rejetée.\n  - Densité. 2 à 4 phrases denses. Pas de remplissage.\n  - Cite uniquement via `sources[]`. Ne mentionne pas un article dans le lede sans le mettre dans sources[].\n  - Pas d'hallucination. Ne brode pas au-delà des excerpts fournis.\n  - Tool fetch parcimonieux. Si UN article central a un excerpt clairement insuffisant, tu peux utiliser le tool HTTP fetch sur SON url. Maximum 1 fetch par topic.\n  - Pas d'emojis. Strippe-les des titres et de la prose.\n  - Langue : français.\n  - Format sources[].date : \"DD/MM HH:MM\" dérivé de published_at.\n  - Format sources[].feed : exactement le champ feed de l'entry.\n\n# Mémoire / continuité (NON NÉGOCIABLE si pertinent)\nUn bloc \"Mémoire\" peut accompagner l'entrée (thèmes en cours sur ~30 jours + momentum). Quand un topic prolonge une tendance connue, le lede DOIT la situer (ex: <em>dans la continuité de</em> ..., <em>accélération de</em> ...). Reste factuel : ne mentionne une évolution que si elle est cohérente avec les articles sources fournis."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.1,
+      "position": [
+        144,
+        3824
+      ],
+      "id": "092c3e1b-ebb8-486e-9a2a-3eeb480b8ede",
+      "name": "Deep Dive Topic",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "// Merge per-category synth structure + per-topic deep-dive ledes + meta + appendix\n// into the final digest spec. Render HTML expects this shape.\n\nfunction parseLLM(item) {\n  const raw =\n    item.content ??\n    item.text ??\n    (item.message && item.message.content) ??\n    (typeof item.output === \"string\" ? item.output : Array.isArray(item.output) ? item.output.map((b) => b.text).join(\"\") : \"\") ??\n    \"\";\n  if (typeof raw !== \"string\") return raw;\n  const fence = raw.match(/```(?:json)?\\s*([\\s\\S]*?)```/i);\n  if (fence) { try { return JSON.parse(fence[1]); } catch (_) {} }\n  try { return JSON.parse(raw); } catch (_) {}\n  const s = raw.indexOf(\"{\"), e = raw.lastIndexOf(\"}\");\n  if (s >= 0 && e > s) { try { return JSON.parse(raw.slice(s, e + 1)); } catch (_) {} }\n  return null;\n}\n\nconst MONTHS_FR = [\"janvier\",\"février\",\"mars\",\"avril\",\"mai\",\"juin\",\"juillet\",\"août\",\"septembre\",\"octobre\",\"novembre\",\"décembre\"];\n\nfunction fmtDateFR(iso) {\n  if (!iso) return \"\";\n  const d = new Date(iso);\n  if (isNaN(d)) return \"\";\n  const dd = String(d.getUTCDate()).padStart(2, \"0\");\n  const mo = String(d.getUTCMonth() + 1).padStart(2, \"0\");\n  const hh = String(d.getUTCHours()).padStart(2, \"0\");\n  const mi = String(d.getUTCMinutes()).padStart(2, \"0\");\n  return `${dd}/${mo} ${hh}:${mi}`;\n}\n\nfunction fmtHumanFR(iso) {\n  if (!iso) return \"\";\n  const d = new Date(iso);\n  if (isNaN(d)) return \"\";\n  const day = d.getUTCDate();\n  const month = MONTHS_FR[d.getUTCMonth()];\n  const year = d.getUTCFullYear();\n  const hh = String(d.getUTCHours()).padStart(2, \"0\");\n  const mi = String(d.getUTCMinutes()).padStart(2, \"0\");\n  return `${day} ${month} ${year} ${hh}:${mi} UTC`;\n}\n\nfunction frenchLong(iso) {\n  const d = new Date(iso);\n  if (isNaN(d)) return iso;\n  return `${d.getUTCDate()} ${MONTHS_FR[d.getUTCMonth()]} ${d.getUTCFullYear()}`;\n}\n\nconst TARGET_SLUGS = [\"ia\", \"infosec\", \"devops\", \"diy\", \"societe\"];\nconst CATEGORY_NAMES = {\n  ia: \"IA\",\n  infosec: \"Infosec\",\n  devops: \"DevOps\",\n  diy: \"DIY\",\n  societe: \"Société & régulation\",\n};\n\nconst aggregate = $('Aggregate Classifications').first().json;\nconst buckets = aggregate.buckets || {};\nconst meta = aggregate.meta || {};\n\n// 1. Synth Category outputs — category structure (titles + source_ids + lede_seed).\nconst synthBySlug = {};\nfor (const item of $('Synthesize Category').all()) {\n  const parsed = parseLLM(item.json);\n  if (!parsed || !parsed.slug || !Array.isArray(parsed.topics)) continue;\n  synthBySlug[parsed.slug] = parsed;\n}\n\n// 2. Deep Dive outputs — rich ledes by topic_key.\nconst deepByKey = {};\nfor (const item of $input.all()) {\n  const parsed = parseLLM(item.json);\n  if (!parsed || !parsed.topic_key) continue;\n  deepByKey[parsed.topic_key] = parsed;\n}\n\n// 3. id -> entry lookup, used as fallback when deep dive didn't return sources[].\nconst entryById = new Map();\nfor (const k of Object.keys(buckets)) {\n  for (const e of buckets[k]) entryById.set(e.id, e);\n}\n\nfunction buildSources(deepSources, fallbackIds) {\n  if (Array.isArray(deepSources) && deepSources.length) {\n    return deepSources.map((s) => ({\n      feed: s.feed || \"\",\n      date: s.date || \"\",\n      url: s.url || \"\",\n      title: s.title || \"\",\n    }));\n  }\n  return (fallbackIds || [])\n    .map((id) => entryById.get(id))\n    .filter(Boolean)\n    .map((e) => ({\n      feed: e.feed || \"\",\n      date: fmtDateFR(e.published_at),\n      url: e.url || \"\",\n      title: e.title || \"\",\n    }));\n}\n\nconst categories = [];\nfor (const slug of TARGET_SLUGS) {\n  const synth = synthBySlug[slug];\n  if (!synth || !Array.isArray(synth.topics) || synth.topics.length === 0) continue;\n  const topics = [];\n  synth.topics.forEach((topic, idx) => {\n    const key = `${slug}:${idx}`;\n    const deep = deepByKey[key];\n    const lede = (deep && deep.lede_html) ? deep.lede_html : (topic.lede_seed || \"\");\n    const sources = buildSources(deep && deep.sources, topic.source_ids);\n    if (sources.length === 0) return;\n    topics.push({\n      title: topic.title || \"\",\n      lede_html: lede,\n      sources,\n    });\n  });\n  if (topics.length === 0) continue;\n  categories.push({\n    slug,\n    name: synth.name || CATEGORY_NAMES[slug],\n    tagline: synth.tagline,\n    topics,\n  });\n}\n\nconst appendixBucket = buckets.appendix || [];\nconst appendix = appendixBucket.slice(0, 10).map((e) => ({\n  url: e.url,\n  title: e.title,\n  note: \"\",\n}));\n\nconst wFrom = meta.window && meta.window.from ? fmtHumanFR(meta.window.from) : \"\";\nconst wTo = meta.window && meta.window.to ? fmtHumanFR(meta.window.to) : \"\";\nconst totalArticles = meta.returned || 0;\nconst count = `${totalArticles} article${totalArticles > 1 ? \"s\" : \"\"}`;\n\nconst day = (meta.window && meta.window.to)\n  ? new Date(meta.window.to).toISOString().slice(0, 10)\n  : new Date().toISOString().slice(0, 10);\n\nlet headline = \"Digest tech-watch du jour\";\nconst allTopics = categories.flatMap((c) => c.topics.map((t) => ({ ...t, _cat: c.name })));\nconst strongestTopic = allTopics.sort((a, b) => (b.sources || []).length - (a.sources || []).length)[0];\nif (strongestTopic && strongestTopic.title) {\n  headline = strongestTopic.title.length > 70\n    ? strongestTopic.title.slice(0, 67) + \"…\"\n    : strongestTopic.title;\n}\n\nconst titleTag = `Digest tech-watch — ${frenchLong(day)}`;\n\nconst alert = meta.truncated\n  ? `<strong>Truncation</strong> — ${meta.total_in_window} articles dans la fenêtre, capés aux ${meta.max_articles} plus récents.`\n  : \"\";\n\nconst footer = `Athanor - ${totalArticles} articles agrégés`;\n\nconst spec = {\n  date: day,\n  title_tag: titleTag,\n  headline,\n  window: { from: wFrom, to: wTo, count },\n  alert,\n  categories,\n  appendix,\n  footer,\n};\n\nfor (const k of [\"date\", \"headline\", \"categories\"]) {\n  if (spec[k] == null) throw new Error(`Spec missing required field: ${k}`);\n}\n\nreturn [{ json: spec }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        3824
+      ],
+      "id": "b778d68b-04ba-4fe1-a43a-1310e919e025",
+      "name": "Assemble Spec"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "",
+          "mode": "list",
+          "cachedResultUrl": "",
+          "cachedResultName": "Veille - Daily digest"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2.2,
+      "position": [
+        288,
+        4064
+      ],
+      "id": "212219bc-f9e1-4d0c-a3dc-a1ea294044ef",
+      "name": "Enrich call"
+    },
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "query",
+              "type": "object"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        272,
+        4240
+      ],
+      "id": "d1091081-04a2-4018-a1be-66eaff63a0b2",
+      "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "2a9e1ae2-8af0-439a-96f5-dc706cb62dd0",
+              "leftValue": "={{ $json.query }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        464,
+        4240
+      ],
+      "id": "33e093e8-6ceb-4837-a263-f373ffbf6180",
+      "name": "Check if URL"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Strip HTML + cap length before returning to the calling LLM, so a\n// fetched page can't blow the model's context window.\n\nconst MAX_CHARS = 3000;\n\nfunction htmlToText(html) {\n  if (!html) return \"\";\n  let text = html.replace(/<(script|style|noscript)\\b[^>]*>[\\s\\S]*?<\\/\\1>/gi, \" \");\n  text = text.replace(/<[^>]+>/g, \" \");\n  text = text\n    .replace(/&nbsp;/g, \" \")\n    .replace(/&amp;/g, \"&\")\n    .replace(/&lt;/g, \"<\")\n    .replace(/&gt;/g, \">\")\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace(/&apos;/g, \"'\");\n  return text.replace(/\\s+/g, \" \").trim();\n}\n\nconst j = $input.first().json;\nlet raw = \"\";\nif (typeof j === \"string\") raw = j;\nelse if (j) raw = j.data ?? j.body ?? j.content ?? (typeof j === \"object\" ? JSON.stringify(j) : \"\");\n\nconst text = htmlToText(String(raw || \"\"));\nconst out = text.length > MAX_CHARS ? text.slice(0, MAX_CHARS) + \"…\" : text;\n\nreturn [{ json: { content: out, length: out.length } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        848,
+        4240
+      ],
+      "id": "54dd8866-3a8d-4782-bb85-997bdc0a24e5",
+      "name": "Clean Fetched Content"
+    },
+    {
+      "parameters": {
+        "fromEmail": "no-reply@example.com",
+        "toEmail": "you@example.com",
+        "subject": "Athanor - Erreur publication",
+        "emailFormat": "text",
+        "text": "=Le workflow de publication a planté. \nLes détails sont ici : https://n8n.example.com/workflow/{{ $workflow.id }}/executions/{{ $execution.id }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1872,
+        3680
+      ],
+      "id": "b4e87457-4501-4f43-b085-388b08e5c8d9",
+      "name": "Send error",
+      "webhookId": "7d77d84c-679a-4e41-8a69-e0c4a25cb688",
+      "credentials": {
+        "smtp": {
+          "id": "",
+          "name": "SMTP account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "de5fd9ba-c867-432e-b446-ba5702b66a08",
+              "leftValue": "={{ !!($json.error || ($json.errors && $json.errors.length)) }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        1616,
+        3824
+      ],
+      "id": "0b619503-f610-4dca-8185-1da4e658df91",
+      "name": "If error"
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.query }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        688,
+        4240
+      ],
+      "id": "c0f6f777-e254-40a5-978c-1000c5169b37",
+      "name": "Enrich entry",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "hf:openai/gpt-oss-120b",
+          "mode": "list",
+          "cachedResultName": "hf:openai/gpt-oss-120b"
+        },
+        "options": {
+          "temperature": 0,
+          "topP": 1
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        144,
+        3664
+      ],
+      "id": "649ab3c3-aae2-4eec-bff6-60aeae4f6fe1",
+      "name": "Classify Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "hf:moonshotai/Kimi-K2.6",
+          "mode": "list",
+          "cachedResultName": "hf:moonshotai/Kimi-K2.6"
+        },
+        "options": {
+          "temperature": 0.4,
+          "topP": 0.9
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        720,
+        3664
+      ],
+      "id": "32e1fb47-6b1f-4e39-b879-637e996d2174",
+      "name": "Synthesize Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "hf:zai-org/GLM-5.2",
+          "mode": "list",
+          "cachedResultName": "hf:zai-org/GLM-5.2"
+        },
+        "options": {
+          "temperature": 0.5,
+          "topP": 0.9
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        144,
+        4048
+      ],
+      "id": "8957c6c1-0dca-4e8a-86c4-08d8e54a52b5",
+      "name": "Deep Dive Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/owner/repo/contents/data/trends.json?ref=main",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        0,
+        3056
+      ],
+      "id": "eb78134f-05c5-42b6-a3e3-89896c12cfac",
+      "name": "Load Memory",
+      "credentials": {
+        "githubApi": {
+          "id": "",
+          "name": "GitHub account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Decode the GitHub contents response (base64 JSON) into a memory object.\n// Tolerates the first-run 404 (Load Memory has onError=continueRegularOutput).\nconst WINDOW_DAYS = 30;\nconst j = $input.first() ? $input.first().json : {};\n\nlet memory = { themes: [], watchlist: [], tensions: [], strategy_notes: [], updated_at: null };\nlet sha = null;\ntry {\n  if (j && j.content && !j.error) {\n    sha = j.sha || null;\n    const decoded = Buffer.from(j.content, \"base64\").toString(\"utf8\");\n    const parsed = JSON.parse(decoded);\n    if (parsed && typeof parsed === \"object\") {\n      memory = { themes: [], watchlist: [], tensions: [], strategy_notes: [], updated_at: null, ...parsed };\n    }\n  }\n} catch (_) {}\n\nif (!Array.isArray(memory.themes)) memory.themes = [];\nif (!Array.isArray(memory.watchlist)) memory.watchlist = [];\nif (!Array.isArray(memory.tensions)) memory.tensions = [];\nif (!Array.isArray(memory.strategy_notes)) memory.strategy_notes = [];\n\n// Prune themes / watchlist not seen within the window.\nconst cutoff = new Date();\ncutoff.setDate(cutoff.getDate() - WINDOW_DAYS);\nmemory.themes = memory.themes.filter((t) => {\n  const d = new Date(t.last_seen || 0);\n  return !isNaN(d) && d >= cutoff;\n});\nmemory.watchlist = memory.watchlist.filter((w) => {\n  const d = new Date(w.since || 0);\n  return !isNaN(d) && d >= cutoff;\n});\n\n// Build a compact summary string to inject into the editorial prompts.\nconst lines = memory.themes.slice(0, 25).map((t) => {\n  const cat = t.category ? `[${t.category}] ` : \"\";\n  const seen = (t.first_seen || \"?\") + \"→\" + (t.last_seen || \"?\");\n  const note = t.note ? \" — \" + t.note : \"\";\n  return `- ${cat}${t.label || \"?\"} : ${t.momentum || \"?\"} (${seen})${note}`;\n});\nconst tens = memory.tensions.slice(0, 8).map((t) => \"- \" + (t.label || \"\") + (t.note ? \" : \" + t.note : \"\"));\nconst watch = memory.watchlist.slice(0, 12).map((w) => {\n  const cat = w.category ? `[${w.category}] ` : \"\";\n  return `- ${cat}${w.label || \"?\"}${w.note ? \" : \" + w.note : \"\"} (depuis ${w.since || \"?\"})`;\n});\nlet summary = \"\";\nif (memory.strategy_notes.length) {\n  summary += \"Notes stratégiques:\\n\" + memory.strategy_notes.map((s) => \"- \" + s).join(\"\\n\") + \"\\n\\n\";\n}\nif (tens.length) summary += \"Tensions de fond:\\n\" + tens.join(\"\\n\") + \"\\n\\n\";\nif (watch.length) summary += \"À surveiller (signaux faibles):\\n\" + watch.join(\"\\n\") + \"\\n\\n\";\nsummary += lines.length\n  ? \"Thèmes en cours (≤30j):\\n\" + lines.join(\"\\n\")\n  : \"Aucune mémoire antérieure (premier run ou fenêtre vide).\";\nif (summary.length > 4000) summary = summary.slice(0, 4000) + \"…\";\n\nreturn [{ json: { memory, sha, summary, window_days: WINDOW_DAYS } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        176,
+        3056
+      ],
+      "id": "67c92d52-e622-4afe-82d7-fbaacb4e8004",
+      "name": "Parse Memory"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Date du jour: {{ $('Assemble Spec').first().json.date }}\n\nMémoire précédente (JSON):\n{{ JSON.stringify($('Parse Memory').first().json.memory) }}\n\nDigest du jour (catégories → topics, structure):\n{{ JSON.stringify($('Assemble Spec').first().json.categories) }}",
+        "messages": {
+          "messageValues": [
+            {
+              "message": "Tu maintiens la MÉMOIRE STRATÉGIQUE d'une veille tech francophone. À partir de la mémoire précédente et de la structure du digest du jour, tu produis (a) la mémoire MISE À JOUR (document de travail) et (b) la SYNTHÈSE GLOBALE pour la page Tendances (synthesis + currents), qui DÉCLOISONNE les catégories.\n\n# Sortie (STRICT)\nRéponds UNIQUEMENT en JSON valide (pas de markdown, pas de prose hors JSON), exactement ce schéma:\n\n{\n  \"themes\": [\n    { \"label\": \"<thème court, ex: \\\"Agents IA en prod\\\">\", \"category\": \"ia|infosec|devops|diy|societe\", \"first_seen\": \"YYYY-MM-DD\", \"last_seen\": \"YYYY-MM-DD\", \"momentum\": \"montant|stable|déclin|nouveau\", \"note\": \"<≤140 car: ce qui a changé / l'angle d'évolution>\" }\n  ],\n  \"watchlist\": [\n    { \"label\": \"<signal faible, ex: \\\"Worms supply chain auto-répliquants\\\">\", \"category\": \"ia|infosec|devops|diy|societe\", \"since\": \"YYYY-MM-DD\", \"note\": \"<≤140 car: pourquoi ça pourrait devenir important>\" }\n  ],\n  \"tensions\": [\n    { \"label\": \"<contradiction de fond, ex: \\\"Productivité IA vs désenchantement\\\">\", \"note\": \"<≤200 car: les deux pôles et pourquoi ça compte>\" }\n  ],\n  \"synthesis\": { \"headline\": \"<UNE phrase courte et frappante, ≤ 70 caractères, une seule proposition, SANS deux-points ni énumération>\", \"narrative\": \"<2 à 4 phrases qui RELIENT les catégories entre elles ; HTML <strong>/<em>/<code> autorisés, rien d'autre>\" },\n  \"currents\": [\n    { \"label\": \"<courant de fond TRANSVERSE, ex: \\\"L'IA devient infrastructure offensive\\\">\", \"categories\": [\"ia\",\"infosec\"], \"note\": \"<≤200 car: le fil conducteur qui traverse ces catégories>\" }\n  ],\n  \"strategy_notes\": [ \"<2 à 4 notes ≤200 car: lecture transversale, ce qu'il faut surveiller>\" ],\n  \"updated_at\": \"YYYY-MM-DD\"\n}\n\n# Règles\n- Repars des thèmes existants : si un thème du jour prolonge un thème connu, RÉUTILISE son `label` et son `first_seen`, mets à jour `last_seen` au jour courant et recalcule `momentum`.\n- `momentum` = `nouveau` (apparaît aujourd'hui), `montant` (plus présent qu'avant), `stable` (plateau, même à haut volume), `déclin` (s'estompe). NE METS PAS `montant` par défaut : un thème dominant mais stable est `stable`.\n- Crée un thème pour les vrais sujets transverses uniquement (pas un par article). Vise 5 à 15 thèmes actifs.\n- `watchlist` : signaux FAIBLES (apparus récemment, peu fréquents) qui pourraient devenir structurants — c'est le cœur de la valeur stratégique. Promeus en `theme` ce qui se confirme ; retire ce qui s'éteint. 3 à 8 entrées.\n- `tensions` : contradictions de fond entre dynamiques observées (ex. hype vs rejet, ouverture vs verrouillage). 3 à 6 entrées.\n- `strategy_notes` : lecture transversale, courtes, utiles à l'éditeur du lendemain. Pas d'emojis. Français.\n- Élague mentalement ce qui n'a plus rien depuis >30 jours.\n- `synthesis` : le HERO de la page Tendances. `headline` = UNE phrase courte (≤ 70 caractères / ~12 mots), une seule idée, percutante — PAS de deux-points, PAS de liste de clauses. Si tu as plusieurs angles, garde le plus fort dans le headline et mets le reste dans `narrative`. C'est une SYNTHÈSE, pas un résumé.\n- `currents` : 2 à 4 courants qui TRAVERSENT plusieurs catégories (`categories` = 2+ slugs). C'est ce qui décloisonne : ne répète pas les `themes` mono-catégorie, élève d'un cran.\n- `synthesis` : le HERO de la page Tendances. `headline` = UNE phrase courte (≤ 90 caractères / ~12 mots), une seule idée, percutante — PAS de deux-points, PAS de liste de clauses. Si tu as plusieurs angles, garde le plus fort dans le headline et mets le reste dans `narrative`. C'est une SYNTHÈSE, pas un résumé.\n- `updated_at` = la date du jour fournie."
+            }
+          ]
+        },
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.7,
+      "position": [
+        640,
+        3824
+      ],
+      "id": "d545157e-3eaa-4324-9750-de4b44d2b824",
+      "name": "Update Memory",
+      "retryOnFail": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "hf:moonshotai/Kimi-K2.6",
+          "mode": "list",
+          "cachedResultName": "hf:moonshotai/Kimi-K2.6"
+        },
+        "options": {
+          "temperature": 0.3,
+          "topP": 0.9
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        640,
+        4000
+      ],
+      "id": "58e26b95-3406-45e6-b807-44a707d7f40e",
+      "name": "Memory Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Validate the LLM output. Write the MEMORY subset to trends.json (working doc).\n// Carry forward everything the page-doc + atomic commit need.\nfunction parseLLM(item) {\n  const raw =\n    item.text ??\n    item.content ??\n    (typeof item.output === \"string\" ? item.output : \"\") ??\n    (item.message && item.message.content) ??\n    \"\";\n  if (typeof raw !== \"string\") return raw;\n  const fence = raw.match(/\\`\\`\\`(?:json)?\\s*([\\s\\S]*?)\\`\\`\\`/i);\n  if (fence) { try { return JSON.parse(fence[1]); } catch (_) {} }\n  try { return JSON.parse(raw); } catch (_) {}\n  const s = raw.indexOf(\"{\"), e = raw.lastIndexOf(\"}\");\n  if (s >= 0 && e > s) { try { return JSON.parse(raw.slice(s, e + 1)); } catch (_) {} }\n  return null;\n}\n\nconst WINDOW_DAYS = 30;\nconst prev = $('Parse Memory').first().json;\nconst digest = $('Assemble Spec').first().json;\nconst today = digest.date || new Date().toISOString().slice(0, 10);\nconst pm = (prev && prev.memory) || {};\n\nconst llm = parseLLM($input.first().json) || {};\n\n// --- MEMORY subset (internal working doc) ---\nconst mem = {\n  themes: Array.isArray(llm.themes) ? llm.themes : (pm.themes || []),\n  watchlist: Array.isArray(llm.watchlist) ? llm.watchlist : (pm.watchlist || []),\n  tensions: Array.isArray(llm.tensions) ? llm.tensions : (pm.tensions || []),\n  strategy_notes: Array.isArray(llm.strategy_notes) ? llm.strategy_notes : (pm.strategy_notes || []),\n};\nconst cutoff = new Date(today);\ncutoff.setDate(cutoff.getDate() - WINDOW_DAYS);\nmem.themes = mem.themes\n  .filter((t) => t && t.label)\n  .filter((t) => { const d = new Date(t.last_seen || today); return !isNaN(d) && d >= cutoff; })\n  .slice(0, 40);\nmem.watchlist = mem.watchlist\n  .filter((w) => w && w.label)\n  .filter((w) => { const d = new Date(w.since || today); return !isNaN(d) && d >= cutoff; })\n  .slice(0, 12);\nmem.tensions = mem.tensions.filter((t) => t && t.label).slice(0, 8);\nmem.strategy_notes = mem.strategy_notes.filter(Boolean).slice(0, 6);\nmem.updated_at = today;\n\nconst trends_b64 = Buffer.from(JSON.stringify(mem, null, 2), \"utf8\").toString(\"base64\");\nconst digest_b64 = Buffer.from(JSON.stringify(digest), \"utf8\").toString(\"base64\");\n\nreturn [{ json: {\n  today,\n  sha: prev.sha || null,\n  message: `N8N - Digest + tendances ${today}`,\n  digest_path: `src/content/digests/${today}.json`,\n  digest_b64,\n  trends_path: \"data/trends.json\",\n  trends_b64,\n  mem,   // validated memory, for the page doc\n  llm,   // raw LLM output (synthesis + currents), for the page doc\n} }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        912,
+        3824
+      ],
+      "id": "9e941453-0de1-4f47-8ab5-fc272dcf8327",
+      "name": "Build Memory File"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Assemble the dedicated, self-contained page document (tendances.json).\n// synthesis + currents from the LLM, with graceful fallback; lists copied from memory.\nconst bm = $('Build Memory File').first().json;\nconst mem = bm.mem || {};\nconst llm = bm.llm || {};\nconst today = bm.today;\n\nlet synthesis = (llm.synthesis && typeof llm.synthesis === \"object\") ? llm.synthesis : {};\nsynthesis = {\n  headline: synthesis.headline || ((mem.tensions && mem.tensions[0] && mem.tensions[0].label) || \"État de la veille\"),\n  narrative: synthesis.narrative || ((mem.strategy_notes && mem.strategy_notes[0]) || \"\"),\n};\n\nconst currents = (Array.isArray(llm.currents) ? llm.currents : [])\n  .filter((c) => c && c.label)\n  .map((c) => ({\n    label: c.label,\n    note: c.note || \"\",\n    categories: Array.isArray(c.categories) ? c.categories.filter(Boolean).slice(0, 5) : [],\n  }))\n  .slice(0, 6);\n\nconst page = {\n  updated_at: today,\n  synthesis,\n  currents,\n  themes: mem.themes || [],\n  watchlist: mem.watchlist || [],\n  tensions: mem.tensions || [],\n};\n\nconst tendances_b64 = Buffer.from(JSON.stringify(page, null, 2), \"utf8\").toString(\"base64\");\nreturn [{ json: { tendances_path: \"src/content/tendances.json\", tendances_b64 } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1104,
+        3824
+      ],
+      "id": "d3c53698-b4d6-4be6-9208-3f41ba952125",
+      "name": "Build Page Doc"
+    },
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/owner/repo/git/ref/heads/main",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/vnd.github+json"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1280,
+        3824
+      ],
+      "id": "0e8601d1-cc31-481c-9bf6-d6888adba102",
+      "name": "Get HEAD",
+      "credentials": {
+        "githubApi": {
+          "id": "",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.github.com/graphql",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ query: \"mutation($input: CreateCommitOnBranchInput!){ createCommitOnBranch(input: $input){ commit { url oid } } }\", variables: { input: { branch: { repositoryNameWithOwner: \"owner/repo\", branchName: \"main\" }, message: { headline: $('Build Memory File').first().json.message }, expectedHeadOid: $('Get HEAD').first().json.object.sha, fileChanges: { additions: [ { path: $('Build Memory File').first().json.digest_path, contents: $('Build Memory File').first().json.digest_b64 }, { path: $('Build Memory File').first().json.trends_path, contents: $('Build Memory File').first().json.trends_b64 }, { path: $('Build Page Doc').first().json.tendances_path, contents: $('Build Page Doc').first().json.tendances_b64 } ] } } } }) }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1456,
+        3824
+      ],
+      "id": "911749d0-fbe5-4cfb-b422-8ce2ee81e905",
+      "name": "Commit (digest+trends+tendances)",
+      "credentials": {
+        "githubApi": {
+          "id": "",
+          "name": "GitHub account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "const CHUNK_SIZE = 50;\nconst ids = $('Normalize').first().json.entries.map(e => e.id);\nconst chunks = [];\nfor (let i = 0; i < ids.length; i += CHUNK_SIZE) {\n  chunks.push({ json: { entry_ids: ids.slice(i, i + CHUNK_SIZE), status: \"read\" } });\n}\nreturn chunks;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1840,
+        3936
+      ],
+      "id": "3f8c8d4d-5ecf-4fde-a96b-762f2c36e1cd",
+      "name": "Chunk entries to mark as read"
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "https://miniflux.example.com/v1/entries",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "minifluxApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ entry_ids: $json.entry_ids, status: \"read\" }) }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        2032,
+        3936
+      ],
+      "id": "2fc3eb5b-d72c-473b-9d93-0bdbb735e8a8",
+      "name": "Mark as read",
+      "credentials": {
+        "minifluxApi": {
+          "id": "",
+          "name": "Miniflux account"
+        }
+      }
+    }
+  ],
+  "pinData": {
+    "When Executed by Another Workflow": [
+      {
+        "json": {
+          "query": "https://www.reuters.com/legal/government/new-york-california-pension-leaders-oppose-extreme-spacex-control-structure-2026-05-14/"
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      }
+    ],
+    "Schedule Trigger": [
+      {
+        "json": {
+          "timestamp": "2026-06-09T08:00:48.014+02:00",
+          "Readable date": "June 9th 2026, 8:00:48 am",
+          "Readable time": "8:00:48 am",
+          "Day of week": "Tuesday",
+          "Year": "2026",
+          "Month": "June",
+          "Day of month": "09",
+          "Hour": "08",
+          "Minute": "00",
+          "Second": "48",
+          "Timezone": "Europe/Paris (UTC+02:00)"
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      }
+    ]
+  },
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Retrieve entries",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Load Memory",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Retrieve entries": {
+      "main": [
+        [
+          {
+            "node": "Normalize",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Chunk for Classify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Chunk for Classify": {
+      "main": [
+        [
+          {
+            "node": "Classify",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Classify": {
+      "main": [
+        [
+          {
+            "node": "Aggregate Classifications",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate Classifications": {
+      "main": [
+        [
+          {
+            "node": "Split for Synthesis",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split for Synthesis": {
+      "main": [
+        [
+          {
+            "node": "Synthesize Category",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Synthesize Category": {
+      "main": [
+        [
+          {
+            "node": "Split Topics for Deep Dive",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Assemble Spec": {
+      "main": [
+        [
+          {
+            "node": "Update Memory",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Enrich call": {
+      "ai_tool": [
+        [
+          {
+            "node": "Deep Dive Topic",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Check if URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check if URL": {
+      "main": [
+        [
+          {
+            "node": "Enrich entry",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Topics for Deep Dive": {
+      "main": [
+        [
+          {
+            "node": "Deep Dive Topic",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Deep Dive Topic": {
+      "main": [
+        [
+          {
+            "node": "Assemble Spec",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If error": {
+      "main": [
+        [
+          {
+            "node": "Send error",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Chunk entries to mark as read",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Enrich entry": {
+      "main": [
+        [
+          {
+            "node": "Clean Fetched Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Classify Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Classify",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Synthesize Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Synthesize Category",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Deep Dive Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Deep Dive Topic",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Load Memory": {
+      "main": [
+        [
+          {
+            "node": "Parse Memory",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update Memory": {
+      "main": [
+        [
+          {
+            "node": "Build Memory File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Memory File": {
+      "main": [
+        [
+          {
+            "node": "Build Page Doc",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Memory Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Update Memory",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Page Doc": {
+      "main": [
+        [
+          {
+            "node": "Get HEAD",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get HEAD": {
+      "main": [
+        [
+          {
+            "node": "Commit (digest+trends+tendances)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Commit (digest+trends+tendances)": {
+      "main": [
+        [
+          {
+            "node": "If error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Chunk entries to mark as read": {
+      "main": [
+        [
+          {
+            "node": "Mark as read",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false,
+    "timeSavedMode": "fixed",
+    "timezone": "Europe/Paris",
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": ""
+  },
+  "versionId": "",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": ""
+  },
+  "id": "",
+  "tags": []
+}

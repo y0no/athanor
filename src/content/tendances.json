@@ -1,39 +1,39 @@
 {
-  "updated_at": "2026-06-29",
+  "updated_at": "2026-06-30",
   "synthesis": {
-    "headline": "La souveraineté technique s'affirme tandis que la confiance s'effondre",
-    "narrative": "Les modèles asiatiques (<strong>GLM 5.2</strong>) et les runtimes légers (<strong>NanoEuler</strong>, <strong>Bash4LLM</strong>) confirment que <em>l'IA s'installe hors du cloud</em>, transformant le terminal en cockpit souverain. Parallèlement, les outils de confiance — <em>runners CI</em>, <em>system prompts</em> et <em>extensions Chrome</em> — deviennent les vecteurs privilégiés d'attaque et de surveillance, érodant la fiabilité des couches de base. Cette tension entre <strong>émancipation technique</strong> et <strong>dégradation de la confiance</strong> s'inscrit dans une <em>fragmentation géopolitique accélérée</em>, où la régulation elle-même devient un instrument de contrôle social."
+    "headline": "L'IA devient autonome pendant que ses fondations de confiance s'effondrent",
+    "narrative": "L'agentic coding structuré et la mémoire unifiée poussent l'IA hors du simple prompt, mais <strong>les chaînes d'authentification</strong> (OIDC, RSA) et les outils de développement se transforment en canaux d'attaque. Le hardware 3D et le calcul probabiliste dessinent une <em>échappée physique</em> face au cloud, tandis que la régulation de la parole et la bulle financière rappellent que la croissance heurte des plafonds éthiques et énergétiques. <strong>L'infrastructure de confiance tout entière est en rénovation forcée.</strong>"
   },
   "currents": [
     {
-      "label": "L'IA devient infrastructure offensive",
-      "note": "Glasswing et les modèles locaux de pentest confirment que l'IA offensive est opérationnelle, forçant Washington à verrouiller les capacités avancées et les canaux d'export.",
+      "label": "L'agentique s'installe mais ses fondations sont pourries",
+      "note": "Les agents multi-agent et la mémoire unifiée émergent pendant que les authentifications OIDC, les clés RSA et les system prompts s'effondrent : l'orchestration avance sur un sol de confiance qui s'effrite.",
       "categories": [
         "ia",
-        "infosec"
-      ]
-    },
-    {
-      "label": "Le terminal comme cockpit souverain",
-      "note": "Herdr, Bash4LLM et NanoEuler transforment le terminal en runtime d'agents et d'inférence locale, émancipant le poste de travail du cloud centralisé.",
-      "categories": [
-        "ia",
-        "devops",
-        "diy"
-      ]
-    },
-    {
-      "label": "Les outils de confiance comme vecteurs d'attaque",
-      "note": "Runners CI, system prompts et extensions Chrome illustrent la nouvelle phase où l'offensif s'attaque aux infrastructures de développement et de confiance elles-mêmes.",
-      "categories": [
         "infosec",
-        "devops",
+        "devops"
+      ]
+    },
+    {
+      "label": "Le hardware redevient un terrain de souveraineté",
+      "note": "Sophon PFG-1, p-bits probabilistes, Librepods et Lemote Yeeloong signalent que la maîtrise du silicium — 3D, probabiliste ou rétro — devient le dernier rempart face à la centralisation cloud et aux verrous propriétaires.",
+      "categories": [
+        "ia",
+        "diy",
         "societe"
       ]
     },
     {
-      "label": "Bifurcation géopolitique des modèles et des régulations",
-      "note": "GLM 5.2, la distillation noire et les restrictions Google-Meta creusent une fracture Est/Ouest des capacités, tandis que l'UE et les États fragmentent le droit numérique.",
+      "label": "La régulation d'urgence masque une capture de l'infrastructure d'attribution",
+      "note": "KIDS Act, Chat Control, bases de permis et geofence warrants convergent vers un même objectif : transformer l'incertitude numérique en obligation d'identification et d'attribution permanente.",
+      "categories": [
+        "societe",
+        "infosec"
+      ]
+    },
+    {
+      "label": "Désenchantement et bulle : l'IA heurte la réalité physique et éthique",
+      "note": "Krach financier anticipé, fraude académique, drones autonomes meurtriers et réembauche de seniors ingénieurs : le récit de productivité illimitée bute sur des plafonds énergétiques, financiers et moraux.",
       "categories": [
         "ia",
         "societe"
@@ -45,121 +45,121 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-29",
+      "last_seen": "2026-06-30",
       "momentum": "stable",
-      "note": "Herdr et vibecode-pro-max-kit transforment le terminal en cockpit agentique, tandis que la confiance s'étend au diagnostic médical personnel."
+      "note": "Ornith-1.0 et Micro-Agent structurent l'agentic coding open-source, Herdr, Lore et vibecode-pro-max-kit transforment le terminal en cockpit d'orchestration multi-agent."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-06-29",
+      "last_seen": "2026-06-30",
       "momentum": "stable",
-      "note": "GLM 5.2 surpasse Claude sur la cybersécurité, le test du miroir interroge la conscience réflexive, et les restrictions d'accès entre géants érodent la confiance publique."
+      "note": "GLM 5.2 surpasse Claude sur la cybersécurité, les restrictions d'accès entre géants érodent la confiance et le test du miroir interroge la conscience réflexive."
     },
     {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-29",
+      "last_seen": "2026-06-30",
       "momentum": "stable",
-      "note": "Google verrouille l'accès de Meta à Gemini, confirmant que les modèles frontières sont des leviers géopolitiques et que l'industrie capture le cycle politique."
+      "note": "Moondream.ai prédit l'éclatement de la bulle GPU, les banquiers centraux alertent sur un krach et Ford réembauche ses seniors : la PMF bute sur des externalités systémiques."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-06-29",
+      "last_seen": "2026-06-30",
       "momentum": "stable",
-      "note": "GLM 5.2, NanoEuler en C/CUDA et la distillation formalisée confirment l'échappée des modèles hors clouds US, creusant une bifurcation géopolitique."
+      "note": "LongCat-2.0 MoE 1.6T/48B active, NanoEuler en C/CUDA pur, Qwen 3.6 27B sweet spot local et GLM 5.2 supérieur à Claude confirment l'échappée hors clouds US."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-06-29",
+      "last_seen": "2026-06-30",
       "momentum": "montant",
-      "note": "Les modèles locaux de pentest surpassent désormais le cloud, tandis que la restriction de l'IA offensive avancée par Washington se poursuit."
-    },
-    {
-      "label": "Exploitation active & fenêtres de patch réduites",
-      "category": "infosec",
-      "first_seen": "2026-05-13",
-      "last_seen": "2026-06-29",
-      "momentum": "stable",
-      "note": "Les runners CI et les outils VPN deviennent des canaux d'attaque légitimes, confirmant la commoditisation de l'offensif au-delà des RATs."
+      "note": "Les modèles locaux de pentest surpassent le cloud, les restrictions américaines se poursuivent et des drones 100% autonomes tuent sans intervention humaine."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-06-29",
+      "last_seen": "2026-06-30",
       "momentum": "montant",
-      "note": "Les runners CI, les system prompts et les exclusions Codex illustrent l'érosion des outils de confiance en surfaces d'attaque."
+      "note": "CVE-2026-48558 forge des tokens OIDC, badkeys expose des clés RSA, les runners CI deviennent C2 et les system prompts fuient : la chaîne de confiance s'effondre."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-29",
+      "last_seen": "2026-06-30",
       "momentum": "stable",
-      "note": "Le terminal devient cockpit agentique et wrapper LLM, dans un contexte où le développeur reste simultanément assisté et attaqué."
+      "note": "Le terminal devient cockpit agentique et wrapper LLM, Python 3.15 JIT et NixOS 26.05 réécrivent les fondations, et le développeur reste simultanément assisté et attaqué."
     },
     {
       "label": "Toolchains haute performance et réécriture système",
       "category": "devops",
       "first_seen": "2026-06-22",
-      "last_seen": "2026-06-29",
+      "last_seen": "2026-06-30",
       "momentum": "stable",
-      "note": "Du microkernel QNX au TOP500 et à l'open source des réseaux énergétiques UE, la maîtrise de la pile basse redevient stratégique."
-    },
-    {
-      "label": "Dette temporelle et cycles de vie imposés",
-      "category": "devops",
-      "first_seen": "2026-06-23",
-      "last_seen": "2026-06-27",
-      "momentum": "stable",
-      "note": "Nouveau report de Windows 10 qui allonge la fenêtre d'exposition sans résoudre la dette temporelle structurelle."
+      "note": "Linkerd fédère Kubernetes zero-downtime, Netflix réécrit ses batchs avec kueue, la topologie NUMA réapparaît et le TOP500 heurte les 40 GW du réseau électrique."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-29",
-      "momentum": "stable",
-      "note": "Ford rappelle ses seniors, la Californie track les pertes d'emploi et Brown dénonce la fraude académique : le désenchantement s'étend aux risques systémiques."
+      "last_seen": "2026-06-30",
+      "momentum": "montant",
+      "note": "Ford rappelle ses seniors, la Californie track les pertes d'emploi, Brown dénonce la fraude académique et des drones autonomes tuent : le désenchantement devient risque systémique."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-29",
+      "last_seen": "2026-06-30",
       "momentum": "montant",
-      "note": "Flock et l'upload des permis californiens illustrent la convergence des infrastructures de surveillance étatique et commerciale."
+      "note": "Flock étend la capture au-delà des plaques, SDSU installe 1300 caméras IA dans les dortoirs et la Californie upload les permis : la surveillance s'institutionnalise."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-29",
+      "last_seen": "2026-06-30",
       "momentum": "stable",
-      "note": "Librepods, Lemote Yeeloong et l'open source des outils UE maintiennent le contre-feu face aux silos fermés."
+      "note": "Librepods déverrouille les AirPods, Lemote Yeeloong ressuscite sous OpenBSD et LinuxMD porte un noyau sur MegaDrive : le hardware ouvert résiste."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-29",
+      "last_seen": "2026-06-30",
       "momentum": "montant",
-      "note": "Le KIDS Act, le Chat Control et l'upload des permis californiens accélèrent la fragmentation législative et l'authentification intrusive."
+      "note": "Chat Control relancé en backroom deals, le KIDS Act impose la vérification d'âge, la Californie centralise les permis et la Cour suprême encadre les geofence warrants."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-29",
+      "last_seen": "2026-06-30",
       "momentum": "stable",
-      "note": "De l'ASIF d'Apple au Space Shuttle et aux raccourcis clavier, l'archéologie technique préserve l'autonomie face à l'obsolescence programmée."
+      "note": "Cartes Space Shuttle I/O, Lisp sur PDP-1 (1960), SA3000 Sandia et Old Computer Challenge : l'archéologie préserve l'autonomie face à l'obsolescence."
+    },
+    {
+      "label": "Hardware IA : mémoire 3D et unification agentique",
+      "category": "ia",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "momentum": "nouveau",
+      "note": "Sophon PFG-1 empile 330 Go DRAM on-die, l'Apple Neural Engine documente l'accélération on-device et l'Open Memory Protocol unifie la mémoire entre agents."
+    },
+    {
+      "label": "Calcul probabiliste comme primitive architecturale",
+      "category": "diy",
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30",
+      "momentum": "nouveau",
+      "note": "Un million de p-bits programmables transforme l'incertitude en ressource de calcul, ouvrant une voie native pour l'optimisation au-delà du silicium conventionnel."
     }
   ],
   "watchlist": [
@@ -168,12 +168,6 @@
       "category": "infosec",
       "since": "2026-06-10",
       "note": "FROST fingerprinte sites et apps via le timing SSD sans permission : le navigateur devient canal de fuite matériel invisible."
-    },
-    {
-      "label": "Infrastructure d'authentification compromise de longue durée",
-      "category": "infosec",
-      "since": "2026-06-13",
-      "note": "Velvet Ant et la fuite d'un million de passeports par un système auxiliaire confirment l'effondrement des canaux d'authentification."
     },
     {
       "label": "Méthodes formelles en production comme standard",
@@ -206,42 +200,42 @@
       "note": "WhatsCluster révèle un réseau de 50 extensions Chrome manipulant WhatsApp Web, industrialisant l'espionnage via les stores de navigateurs."
     },
     {
-      "label": "Calcul probabiliste et architectures mémoire 3D",
-      "category": "diy",
-      "since": "2026-06-29",
-      "note": "La mémoire 3D sur die et le calcul probabiliste programmable pointent vers des architectures alternatives au silicium conventionnel."
-    },
-    {
       "label": "Formats propriétaires et cycles de vie mémoire comme zones grises offensives",
       "category": "infosec",
       "since": "2026-06-29",
       "note": "Les mécanismes implicites des OS et formats propriétaires révèlent des surfaces d'attaque insoupçonnées."
+    },
+    {
+      "label": "Open Memory Protocol : surface d'attaque de la mémoire agentique unifiée",
+      "category": "ia",
+      "since": "2026-06-30",
+      "note": "Un magasin mémoire partagé entre agents crée des canaux de fuite et de synchronisation nouveaux dans l'orchestration agentique."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Ford illustre le backfire de l'automatisation brutale, tandis que les banquiers centraux alertent sur un krach financier et Brown dénonce la fraude académique : la productivité promise bute sur des externalités systémiques."
+      "note": "Ford réembauche ses seniors, les banquiers centraux alertent sur un krach, moondream.ai prédit une bulle GPU et des drones autonomes tuent : la productivité promise bute sur des externalités systémiques et éthiques."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "Flock, le KIDS Act et le Chat Control étendent la surveillance ciblée et l'attribution de la parole, tandis que Librepods, Lemote et l'open source UE maintiennent un contre-feu technique."
+      "note": "Flock, SDSU, le KIDS Act et Chat Control étendent la surveillance et l'attribution de la parole, tandis que Librepods, Lemote, LinuxMD et l'open source UE maintiennent un contre-feu technique et matériel."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "NanoEuler, Bash4LLM et les modèles non-US accélèrent l'émancipation du datacenter, mais les restrictions américaines sur les modèles frontières rappellent que l'autonomie reste partielle."
+      "note": "LongCat-2.0, NanoEuler, Bash4LLM et les modèles non-US accélèrent l'émancipation du datacenter, mais les restrictions américaines et les modèles fermés rappellent que l'autonomie reste partielle."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "Le Texas verrouille les app stores, la Californie upload les permis et l'UE négocie le Chat Control : la régulation sert autant la politique commerciale que la protection citoyenne."
+      "note": "Le Texas verrouille les app stores, la Californie upload les permis, l'UE négocie Chat Control en backroom et les fournisseurs d'accès réclament des comptes sur l'overblocking : la régulation sert la politique autant que la protection."
     },
     {
       "label": "Fiabilité promise vs dégradation observée",
-      "note": "System prompts, runners CI et Codex confirment que les promesses de sécurité s'effondrent par les interstices des outils de développement."
+      "note": "SimpleHelp OIDC, clés RSA clairsemées, runners CI, system prompts et exclusions Codex confirment que les promesses de sécurité s'effondrent par les interstices des outils de développement."
     },
     {
       "label": "Souveraineté déclarée vs souveraineté effective",
-      "note": "Debian extrepos et le routing local gagnent du terrain, mais les modèles fermés agréés, les gag orders de Meta et le verrou des handles ATProto maintiennent le contrôle effectif hors de portée."
+      "note": "Debian OpenRC et le hardware ouvert gagnent du terrain, mais les modèles fermés agréés, les gag orders de Meta et le verrou des handles ATProto maintiennent le contrôle effectif hors de portée."
     }
   ]
 }

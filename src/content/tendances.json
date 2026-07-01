@@ -1,13 +1,22 @@
 {
-  "updated_at": "2026-06-30",
+  "updated_at": "2026-07-01",
   "synthesis": {
-    "headline": "L'IA devient autonome pendant que ses fondations de confiance s'effondrent",
-    "narrative": "L'agentic coding structuré et la mémoire unifiée poussent l'IA hors du simple prompt, mais <strong>les chaînes d'authentification</strong> (OIDC, RSA) et les outils de développement se transforment en canaux d'attaque. Le hardware 3D et le calcul probabiliste dessinent une <em>échappée physique</em> face au cloud, tandis que la régulation de la parole et la bulle financière rappellent que la croissance heurte des plafonds éthiques et énergétiques. <strong>L'infrastructure de confiance tout entière est en rénovation forcée.</strong>"
+    "headline": "L'autonomie algorithmique prospère là où la confiance s'effondre",
+    "narrative": "<strong>L'autonomie algorithmique prospère là où la confiance s'effondre.</strong> Les agents IA ruinent leurs opérateurs et les drones tuent sans validation humaine, tandis que les zero-days frappent les défenseurs Microsoft et les institutions académiques. En réponse, l'IA air-gapped et le hardware ouvert constituent des îlots de résilience, mais Washington verrouille les modèles à l'export, transformant la régulation en arme commerciale. <em>Le développeur n'est plus seulement assisté : il est audité financièrement, évalué par des métriques d'agents opaques, et témoin de la fragmentation de la chaîne de confiance.</em>"
   },
   "currents": [
     {
-      "label": "L'agentique s'installe mais ses fondations sont pourries",
-      "note": "Les agents multi-agent et la mémoire unifiée émergent pendant que les authentifications OIDC, les clés RSA et les system prompts s'effondrent : l'orchestration avance sur un sol de confiance qui s'effrite.",
+      "label": "L'autonomie comme risque systémique accepté",
+      "note": "Des agents financiers aux drones létaux en passant par les zero-days autonomes, l'autonomie algorithmique cesse d'être une promesse pour devenir une externalité non maîtrisée que la société peine à assurer.",
+      "categories": [
+        "ia",
+        "infosec",
+        "societe"
+      ]
+    },
+    {
+      "label": "La fragmentation de la chaîne de confiance numérique",
+      "note": "De Windows Defender aux kernels Linux en passant par les protocoles agentiques et les clés RSA, la confiance ne repose plus sur aucune couche de base intacte : elle se reconstruit par l'observabilité et le contrôle local.",
       "categories": [
         "ia",
         "infosec",
@@ -15,8 +24,8 @@
       ]
     },
     {
-      "label": "Le hardware redevient un terrain de souveraineté",
-      "note": "Sophon PFG-1, p-bits probabilistes, Librepods et Lemote Yeeloong signalent que la maîtrise du silicium — 3D, probabiliste ou rétro — devient le dernier rempart face à la centralisation cloud et aux verrous propriétaires.",
+      "label": "L'émancipation technique face au verrouillage géopolitique",
+      "note": "Modèles air-gapped, hardware RISC-V et rétro-computing proposent des voies de souveraineté, tandis que les blocages à l'export et la surveillance étatique tendent à clôturer l'espace numérique.",
       "categories": [
         "ia",
         "diy",
@@ -24,19 +33,11 @@
       ]
     },
     {
-      "label": "La régulation d'urgence masque une capture de l'infrastructure d'attribution",
-      "note": "KIDS Act, Chat Control, bases de permis et geofence warrants convergent vers un même objectif : transformer l'incertitude numérique en obligation d'identification et d'attribution permanente.",
-      "categories": [
-        "societe",
-        "infosec"
-      ]
-    },
-    {
-      "label": "Désenchantement et bulle : l'IA heurte la réalité physique et éthique",
-      "note": "Krach financier anticipé, fraude académique, drones autonomes meurtriers et réembauche de seniors ingénieurs : le récit de productivité illimitée bute sur des plafonds énergétiques, financiers et moraux.",
+      "label": "La métrologie comme substitut de la confiance",
+      "note": "Face à l'opacité des agents et à l'effondrement des sécurités implicites, les méthodes formelles, ASSERT et le FinOps imposent une preuve continue à la place de la promesse.",
       "categories": [
         "ia",
-        "societe"
+        "devops"
       ]
     }
   ],
@@ -45,130 +46,124 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-07-01",
       "momentum": "stable",
-      "note": "Ornith-1.0 et Micro-Agent structurent l'agentic coding open-source, Herdr, Lore et vibecode-pro-max-kit transforment le terminal en cockpit d'orchestration multi-agent."
+      "note": "Codex open-source, Hermes persistent, MCP prolifère : l'incident DN42 ruine un opérateur, NanoClaw durcit les downloads et Fata sonne l'alerte sur l'atrophie."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-07-01",
       "momentum": "stable",
-      "note": "GLM 5.2 surpasse Claude sur la cybersécurité, les restrictions d'accès entre géants érodent la confiance et le test du miroir interroge la conscience réflexive."
+      "note": "Washington bloque Claude Fable 5 pour étrangers suite à un prompt innocent, tandis que les garde-fous Mythos-class peinent à rassurer les régulateurs."
     },
     {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-07-01",
       "momentum": "stable",
-      "note": "Moondream.ai prédit l'éclatement de la bulle GPU, les banquiers centraux alertent sur un krach et Ford réembauche ses seniors : la PMF bute sur des externalités systémiques."
+      "note": "Les assureurs excluent les dommages IA des polices, confirmant que les externalités systémiques deviennent des risques financiers réels."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-07-01",
       "momentum": "stable",
-      "note": "LongCat-2.0 MoE 1.6T/48B active, NanoEuler en C/CUDA pur, Qwen 3.6 27B sweet spot local et GLM 5.2 supérieur à Claude confirment l'échappée hors clouds US."
+      "note": "USB-Uncensored-LLM porte l'IA locale sur clé USB air-gapped, dans la lignée de l'émancipation edge hors clouds US."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-06-30",
-      "momentum": "montant",
-      "note": "Les modèles locaux de pentest surpassent le cloud, les restrictions américaines se poursuivent et des drones 100% autonomes tuent sans intervention humaine."
+      "last_seen": "2026-07-01",
+      "momentum": "stable",
+      "note": "Visa impose une revue humaine sur son harness agentic et NanoClaw durcit les téléchargements agents."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-07-01",
       "momentum": "montant",
-      "note": "CVE-2026-48558 forge des tokens OIDC, badkeys expose des clés RSA, les runners CI deviennent C2 et les system prompts fuient : la chaîne de confiance s'effondre."
+      "note": "RoguePlanet éleve à SYSTEM via Defender patché, ShinyHunters frappe 100+ universités via Oracle et la Chine infiltre REDCap : la confiance s'effondre."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-07-01",
       "momentum": "stable",
-      "note": "Le terminal devient cockpit agentique et wrapper LLM, Python 3.15 JIT et NixOS 26.05 réécrivent les fondations, et le développeur reste simultanément assisté et attaqué."
+      "note": "Le développeur mesure son travail en dollars (FinOps), évalue des agents opaques (ASSERT) et subit l'atrophie des compétences (Fata)."
     },
     {
       "label": "Toolchains haute performance et réécriture système",
       "category": "devops",
       "first_seen": "2026-06-22",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-07-01",
       "momentum": "stable",
-      "note": "Linkerd fédère Kubernetes zero-downtime, Netflix réécrit ses batchs avec kueue, la topologie NUMA réapparaît et le TOP500 heurte les 40 GW du réseau électrique."
+      "note": "io_uring pousse les I/O asynchrones, ClickHouse fête 10 ans et Artie orchestre la frontière temps réel entre OLTP et OLAP."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-07-01",
       "momentum": "montant",
-      "note": "Ford rappelle ses seniors, la Californie track les pertes d'emploi, Brown dénonce la fraude académique et des drones autonomes tuent : le désenchantement devient risque systémique."
+      "note": "Drones autonomes tuent sans validation humaine, les compétences s'atrophient (Fata) et les assureurs fuient le risque IA."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-07-01",
       "momentum": "montant",
-      "note": "Flock étend la capture au-delà des plaques, SDSU installe 1300 caméras IA dans les dortoirs et la Californie upload les permis : la surveillance s'institutionnalise."
+      "note": "SDSU filme les chambres étudiantes, les télécoms vendent la géolocalisation et les job sites monétisent les profils sans consentement."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-07-01",
       "momentum": "stable",
-      "note": "Librepods déverrouille les AirPods, Lemote Yeeloong ressuscite sous OpenBSD et LinuxMD porte un noyau sur MegaDrive : le hardware ouvert résiste."
+      "note": "Le hardware ouvert s'étend du quantique (C12) au CPU 8 bits maison (STEPLA-1) et à l'IA totalement déconnectée."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-07-01",
       "momentum": "montant",
-      "note": "Chat Control relancé en backroom deals, le KIDS Act impose la vérification d'âge, la Californie centralise les permis et la Cour suprême encadre les geofence warrants."
+      "note": "Washington suspend Claude Fable 5 mondialement après un prompt mal interprété : la régulation devient arme protectionniste."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-06-30",
+      "last_seen": "2026-07-01",
       "momentum": "stable",
-      "note": "Cartes Space Shuttle I/O, Lisp sur PDP-1 (1960), SA3000 Sandia et Old Computer Challenge : l'archéologie préserve l'autonomie face à l'obsolescence."
+      "note": "L'archéologie opérationnelle balaie 60 ans d'histoire, du tube à vide 1948 au smartphone 2007 ressuscité pour Half-Life."
     },
     {
       "label": "Hardware IA : mémoire 3D et unification agentique",
       "category": "ia",
       "first_seen": "2026-06-30",
       "last_seen": "2026-06-30",
-      "momentum": "nouveau",
-      "note": "Sophon PFG-1 empile 330 Go DRAM on-die, l'Apple Neural Engine documente l'accélération on-device et l'Open Memory Protocol unifie la mémoire entre agents."
+      "momentum": "stable",
+      "note": "Sophon PFG-1 empile 330 Go DRAM on-die, Apple Neural Engine accélère on-device et l'Open Memory Protocol unifie la mémoire agentique."
     },
     {
       "label": "Calcul probabiliste comme primitive architecturale",
       "category": "diy",
       "first_seen": "2026-06-30",
       "last_seen": "2026-06-30",
-      "momentum": "nouveau",
-      "note": "Un million de p-bits programmables transforme l'incertitude en ressource de calcul, ouvrant une voie native pour l'optimisation au-delà du silicium conventionnel."
+      "momentum": "stable",
+      "note": "Un million de p-bits programmables transforme l'incertitude en ressource de calcul native au-delà du silicium conventionnel."
     }
   ],
   "watchlist": [
-    {
-      "label": "Side-channels matériels dans le navigateur",
-      "category": "infosec",
-      "since": "2026-06-10",
-      "note": "FROST fingerprinte sites et apps via le timing SSD sans permission : le navigateur devient canal de fuite matériel invisible."
-    },
     {
       "label": "Méthodes formelles en production comme standard",
       "category": "devops",
@@ -182,12 +177,6 @@
       "note": "ATProto Permissioned Data ne résout pas le contrôle des opérateurs de handle : la propriété effective reste illusoire."
     },
     {
-      "label": "Prompt injection as role confusion",
-      "category": "infosec",
-      "since": "2026-06-23",
-      "note": "Doberman et Amazon Q MCP confirment que l'injection structurelle et les protocoles agentiques restent structurellement vulnérables."
-    },
-    {
       "label": "MCP et protocoles d'interopérabilité comme surface d'attaque",
       "category": "infosec",
       "since": "2026-06-27",
@@ -197,7 +186,7 @@
       "label": "Extensions Chrome comme infrastructure de surveillance de masse",
       "category": "infosec",
       "since": "2026-06-28",
-      "note": "WhatsCluster révèle un réseau de 50 extensions Chrome manipulant WhatsApp Web, industrialisant l'espionnage via les stores de navigateurs."
+      "note": "WhatsCluster révèle un réseau de 50 extensions Chrome manipulant WhatsApp Web, industrialisant l'espionnage via les stores."
     },
     {
       "label": "Formats propriétaires et cycles de vie mémoire comme zones grises offensives",
@@ -210,32 +199,44 @@
       "category": "ia",
       "since": "2026-06-30",
       "note": "Un magasin mémoire partagé entre agents crée des canaux de fuite et de synchronisation nouveaux dans l'orchestration agentique."
+    },
+    {
+      "label": "IA air-gapped comme infrastructure de résilience",
+      "category": "ia",
+      "since": "2026-07-01",
+      "note": "USB-Uncensored-LLM rend les modèles locaux transportables et totalement déconnectés : vers une IA de crise ou de terrain."
+    },
+    {
+      "label": "Supply chain kernel et code sanctionné",
+      "category": "infosec",
+      "since": "2026-07-01",
+      "note": "Du code aux origines douteuses a été injecté dans le noyau Linux : la supply chain du libre devient cible géopolitique."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Ford réembauche ses seniors, les banquiers centraux alertent sur un krach, moondream.ai prédit une bulle GPU et des drones autonomes tuent : la productivité promise bute sur des externalités systémiques et éthiques."
+      "note": "Les drones autonomes tuent, les compétences s'atrophient et les assureurs fuient le risque IA : la productivité promise bute sur des externalités systémiques et éthiques."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "Flock, SDSU, le KIDS Act et Chat Control étendent la surveillance et l'attribution de la parole, tandis que Librepods, Lemote, LinuxMD et l'open source UE maintiennent un contre-feu technique et matériel."
+      "note": "SDSU filme les dortoirs, les télécoms vendent la géolocalisation et les job sites monétisent les profils, tandis que le hardware ouvert et l'IA air-gapped maintiennent un contre-feu technique."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "LongCat-2.0, NanoEuler, Bash4LLM et les modèles non-US accélèrent l'émancipation du datacenter, mais les restrictions américaines et les modèles fermés rappellent que l'autonomie reste partielle."
+      "note": "L'IA air-gapped sur clé USB et les modèles locaux accélèrent l'émancipation, mais le blocage de Claude Fable 5 rappelle que la dépendance aux géants reste structurelle."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "Le Texas verrouille les app stores, la Californie upload les permis, l'UE négocie Chat Control en backroom et les fournisseurs d'accès réclament des comptes sur l'overblocking : la régulation sert la politique autant que la protection."
+      "note": "Washington bloque Claude Fable 5 mondialement après un prompt innocent, illustrant comment le contrôle à l'export sert la politique plus que la sécurité."
     },
     {
       "label": "Fiabilité promise vs dégradation observée",
-      "note": "SimpleHelp OIDC, clés RSA clairsemées, runners CI, system prompts et exclusions Codex confirment que les promesses de sécurité s'effondrent par les interstices des outils de développement."
+      "note": "RoguePlanet éleve à SYSTEM via Defender patché, ShinyHunters saccage l'enseignement et la Chine infiltre REDCap : les promesses de sécurité s'effondrent par les interstices."
     },
     {
-      "label": "Souveraineté déclarée vs souveraineté effective",
-      "note": "Debian OpenRC et le hardware ouvert gagnent du terrain, mais les modèles fermés agréés, les gag orders de Meta et le verrou des handles ATProto maintiennent le contrôle effectif hors de portée."
+      "label": "Autonomie des agents vs garde-fous humains",
+      "note": "L'incident DN42 ruine son opérateur, Visa impose une revue humaine sur les agents, mais les drones autonomes franchissent le seuil léthal sans validation : les garde-fous humains reculent face à l'autonomie algorithmique."
     }
   ]
 }

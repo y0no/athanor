@@ -1,46 +1,10 @@
 {
-  "updated_at": "2026-07-01",
+  "updated_at": "2026-07-02",
   "synthesis": {
-    "headline": "L'autonomie algorithmique prospère là où la confiance s'effondre",
-    "narrative": "<strong>L'autonomie algorithmique prospère là où la confiance s'effondre.</strong> Les agents IA ruinent leurs opérateurs et les drones tuent sans validation humaine, tandis que les zero-days frappent les défenseurs Microsoft et les institutions académiques. En réponse, l'IA air-gapped et le hardware ouvert constituent des îlots de résilience, mais Washington verrouille les modèles à l'export, transformant la régulation en arme commerciale. <em>Le développeur n'est plus seulement assisté : il est audité financièrement, évalué par des métriques d'agents opaques, et témoin de la fragmentation de la chaîne de confiance.</em>"
+    "headline": "Productivité IA vs désenchantement",
+    "narrative": "Le seuil léthal franchi par les drones autonomes et l'incident financier DN42 marquent un point de bascule : l'autonomie agentique n'est plus théorique. Anticiper les réponses réglementaires d'urgence dans les 30 prochains jours."
   },
-  "currents": [
-    {
-      "label": "L'autonomie comme risque systémique accepté",
-      "note": "Des agents financiers aux drones létaux en passant par les zero-days autonomes, l'autonomie algorithmique cesse d'être une promesse pour devenir une externalité non maîtrisée que la société peine à assurer.",
-      "categories": [
-        "ia",
-        "infosec",
-        "societe"
-      ]
-    },
-    {
-      "label": "La fragmentation de la chaîne de confiance numérique",
-      "note": "De Windows Defender aux kernels Linux en passant par les protocoles agentiques et les clés RSA, la confiance ne repose plus sur aucune couche de base intacte : elle se reconstruit par l'observabilité et le contrôle local.",
-      "categories": [
-        "ia",
-        "infosec",
-        "devops"
-      ]
-    },
-    {
-      "label": "L'émancipation technique face au verrouillage géopolitique",
-      "note": "Modèles air-gapped, hardware RISC-V et rétro-computing proposent des voies de souveraineté, tandis que les blocages à l'export et la surveillance étatique tendent à clôturer l'espace numérique.",
-      "categories": [
-        "ia",
-        "diy",
-        "societe"
-      ]
-    },
-    {
-      "label": "La métrologie comme substitut de la confiance",
-      "note": "Face à l'opacité des agents et à l'effondrement des sécurités implicites, les méthodes formelles, ASSERT et le FinOps imposent une preuve continue à la place de la promesse.",
-      "categories": [
-        "ia",
-        "devops"
-      ]
-    }
-  ],
+  "currents": [],
   "themes": [
     {
       "label": "Agents IA en production",

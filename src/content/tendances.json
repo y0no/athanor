@@ -1,162 +1,181 @@
 {
   "updated_at": "2026-07-02",
   "synthesis": {
-    "headline": "Productivité IA vs désenchantement",
-    "narrative": "Le seuil léthal franchi par les drones autonomes et l'incident financier DN42 marquent un point de bascule : l'autonomie agentique n'est plus théorique. Anticiper les réponses réglementaires d'urgence dans les 30 prochains jours."
+    "headline": "L'IA offensive accélère plus vite que ses propres garde-fous",
+    "narrative": "Claude Mythos comprime les N-days en N-heures pendant que <strong>SearchLeak</strong> fait de <strong>Copilot</strong> un vecteur d'exfiltration par prompt injection : l'IA offensive et l'IA comme surface d'attaque convergent. La supply chain developer s'effondre — DuckDuckGo, VS Code, AUR, LiteLLM — tandis que <em>méthodes formelles</em> et <em>architecture cellulaire</em> émergent comme contre-feu. La suspension mondiale de Fable 5 sur un prompt innocent confirme que la souveraineté numérique reste une dépendance structurelle aux infrastructures US."
   },
-  "currents": [],
+  "currents": [
+    {
+      "label": "L'IA comme double tranchant infrastructurel",
+      "note": "L'IA découvre 206 CVE chez Microsoft tout en comprimant l'exploitation (Mythos N-days→N-hours) et en devenant surface d'attaque (SearchLeak via Copilot). L'arsenal défensif est sa propre faille : la défense doit pivoter vers la résilience architecturale.",
+      "categories": [
+        "ia",
+        "infosec",
+        "devops"
+      ]
+    },
+    {
+      "label": "Supply chain developer comme nouveau front géopolitique",
+      "note": "Des extensions VS Code aux AUR compromis, du code sanctionné dans le noyau Linux aux outils MCP contournés, la supply chain developer devient le maillon faible où cybercriminalité (Corée du Nord) et géopolitique (Chine) convergent.",
+      "categories": [
+        "infosec",
+        "devops",
+        "societe"
+      ]
+    },
+    {
+      "label": "Résilience architecturale face à l'effondrement de la confiance",
+      "note": "Architecture cellulaire (AmEx), méthodes formelles (Jane Street), audit RBAC automatisé (kubesplaining) et IA air-gapped émergent comme réponses systémiques à l'effondrement de la confiance dans les couches de base.",
+      "categories": [
+        "devops",
+        "infosec",
+        "ia"
+      ]
+    },
+    {
+      "label": "Souveraineté numérique sous tension export",
+      "note": "Fable 5 suspendu mondialement, Let's Encrypt bannit les territoires sanctionnés, Washington lit les emails néerlandais : la souveraineté numérique se heurte à un contrôle à l'export réactif et imprévisible qui transforme la dépendance en risque.",
+      "categories": [
+        "societe",
+        "ia",
+        "infosec"
+      ]
+    }
+  ],
   "themes": [
     {
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-01",
+      "last_seen": "2026-07-02",
       "momentum": "stable",
-      "note": "Codex open-source, Hermes persistent, MCP prolifère : l'incident DN42 ruine un opérateur, NanoClaw durcit les downloads et Fata sonne l'alerte sur l'atrophie."
+      "note": "DN42 ruine un opérateur, ASSERT formalise les évals, Hermes persiste et MCP multi-recherche prolifère ; Fata alerte sur l'atrophie des compétences."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-01",
+      "last_seen": "2026-07-02",
       "momentum": "stable",
-      "note": "Washington bloque Claude Fable 5 pour étrangers suite à un prompt innocent, tandis que les garde-fous Mythos-class peinent à rassurer les régulateurs."
+      "note": "Fable 5 suspendu mondialement après un prompt 'fix this code' mal interprété ; les garde-fous Mythos-class peinent à rassurer régulateurs et chercheurs."
     },
     {
       "label": "Économie & PMF de l'IA générative",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-01",
+      "last_seen": "2026-07-02",
       "momentum": "stable",
-      "note": "Les assureurs excluent les dommages IA des polices, confirmant que les externalités systémiques deviennent des risques financiers réels."
+      "note": "Assureurs excluent l'IA des polices, Cohere lance North Mini Code, Codex s'ouvre : l'écosystème cherche son PMF sous pression financière."
     },
     {
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-07-01",
+      "last_seen": "2026-07-02",
       "momentum": "stable",
-      "note": "USB-Uncensored-LLM porte l'IA locale sur clé USB air-gapped, dans la lignée de l'émancipation edge hors clouds US."
+      "note": "USB-Uncensored-LLM confirme l'IA air-gapped sur clé, Apple expose ses Foundation Models on-device, OpenCV 5 signe le plus grand bond en années."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-01",
-      "momentum": "stable",
-      "note": "Visa impose une revue humaine sur son harness agentic et NanoClaw durcit les téléchargements agents."
+      "last_seen": "2026-07-02",
+      "momentum": "montant",
+      "note": "Claude Mythos comprime N-days en N-heures, SMBaloo étend les exploits via agents IA, Microsoft colmate 206 CVE dont une part croissante découverte par IA."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-01",
+      "last_seen": "2026-07-02",
       "momentum": "montant",
-      "note": "RoguePlanet éleve à SYSTEM via Defender patché, ShinyHunters frappe 100+ universités via Oracle et la Chine infiltre REDCap : la confiance s'effondre."
+      "note": "RoguePlanet fait s'effondrer Defender patché, Chrome encaisse son 5e zero-day, FreeBSD cède, SearchLeak exfiltre via Copilot, Velvet Ant reste 9 ans dans Linux."
+    },
+    {
+      "label": "Supply chain developer comme maillon faible",
+      "category": "infosec",
+      "first_seen": "2026-07-02",
+      "last_seen": "2026-07-02",
+      "momentum": "nouveau",
+      "note": "DuckDuckGo RCE via pull_request_target, VS Code livre des malware NK, AUR compromise, LiteLLM escalade de privilèges, Burp Suite MCP contourné."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-01",
+      "last_seen": "2026-07-02",
       "momentum": "stable",
-      "note": "Le développeur mesure son travail en dollars (FinOps), évalue des agents opaques (ASSERT) et subit l'atrophie des compétences (Fata)."
+      "note": "Fata combat l'atrophie, ASSERT évalue les agents, agents.md et book-to-skill cherchent à guider le coding assistant sans restaurer la compétence."
     },
     {
       "label": "Toolchains haute performance et réécriture système",
       "category": "devops",
       "first_seen": "2026-06-22",
-      "last_seen": "2026-07-01",
+      "last_seen": "2026-07-02",
       "momentum": "stable",
-      "note": "io_uring pousse les I/O asynchrones, ClickHouse fête 10 ans et Artie orchestre la frontière temps réel entre OLTP et OLAP."
+      "note": "io_uring pousse les I/O asynchrones, WASM Component Model 1.0 officialise le multi-langage, Pyodide publie des wheels WASM sur PyPI, le memory wall reste."
+    },
+    {
+      "label": "Méthodes formelles et architecture résiliente",
+      "category": "devops",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-07-02",
+      "momentum": "nouveau",
+      "note": "Jane Street démocratise les preuves mécanisées, AmEx déploie l'architecture cellulaire, kubesplaining automatise l'audit RBAC K8s : le code prouvé entre en prod."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-01",
+      "last_seen": "2026-07-02",
       "momentum": "montant",
-      "note": "Drones autonomes tuent sans validation humaine, les compétences s'atrophient (Fata) et les assureurs fuient le risque IA."
+      "note": "Drones autonomes tuent sans validation, compétences s'atrophient (Fata), assureurs fuient le risque IA, Canada publie une stratégie IA qualifiée de vision board."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-01",
+      "last_seen": "2026-07-02",
       "momentum": "montant",
-      "note": "SDSU filme les chambres étudiantes, les télécoms vendent la géolocalisation et les job sites monétisent les profils sans consentement."
+      "note": "Citizen Lab dévoile la géolocalisation télécom commerciale, SDSU installe 1300 caméras IA en dortoirs, job sites monétisent les profils sans consentement."
     },
     {
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-01",
+      "last_seen": "2026-07-02",
       "momentum": "stable",
-      "note": "Le hardware ouvert s'étend du quantique (C12) au CPU 8 bits maison (STEPLA-1) et à l'IA totalement déconnectée."
+      "note": "Let's Encrypt bannit les territoires sanctionnés, Washington lit les emails néerlandais, l'IA air-gapped maintient un contre-feu technique."
     },
     {
       "label": "Régulation plateformes & IA",
       "category": "societe",
       "first_seen": "2026-05-15",
-      "last_seen": "2026-07-01",
+      "last_seen": "2026-07-02",
       "momentum": "montant",
-      "note": "Washington suspend Claude Fable 5 mondialement après un prompt mal interprété : la régulation devient arme protectionniste."
+      "note": "Fable 5 coupé mondialement après un prompt innocent, FDCEA expire sans replacement, Texas flanche sous les data centers, H.R. 6028 bouscule le copyright."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-01",
+      "last_seen": "2026-07-02",
       "momentum": "stable",
-      "note": "L'archéologie opérationnelle balaie 60 ans d'histoire, du tube à vide 1948 au smartphone 2007 ressuscité pour Half-Life."
-    },
-    {
-      "label": "Hardware IA : mémoire 3D et unification agentique",
-      "category": "ia",
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "momentum": "stable",
-      "note": "Sophon PFG-1 empile 330 Go DRAM on-die, Apple Neural Engine accélère on-device et l'Open Memory Protocol unifie la mémoire agentique."
-    },
-    {
-      "label": "Calcul probabiliste comme primitive architecturale",
-      "category": "diy",
-      "first_seen": "2026-06-30",
-      "last_seen": "2026-06-30",
-      "momentum": "stable",
-      "note": "Un million de p-bits programmables transforme l'incertitude en ressource de calcul native au-delà du silicium conventionnel."
+      "note": "De l'IBM 604 de 1948 au PowerBook 150 racheté un dollar, en passant par les ordinateurs du bloc de l'Est exhumés d'un hangar allemand."
     }
   ],
   "watchlist": [
     {
-      "label": "Méthodes formelles en production comme standard",
-      "category": "devops",
-      "since": "2026-06-15",
-      "note": "Jane Street et Talos/Lean rendent les preuves mécanisées accessibles au quotidien, signal précoce d'un basculement vers le code prouvé."
-    },
-    {
-      "label": "Décentralisation nominale et contrôle effectif des identités",
-      "category": "societe",
-      "since": "2026-06-22",
-      "note": "ATProto Permissioned Data ne résout pas le contrôle des opérateurs de handle : la propriété effective reste illusoire."
-    },
-    {
       "label": "MCP et protocoles d'interopérabilité comme surface d'attaque",
       "category": "infosec",
       "since": "2026-06-27",
-      "note": "Les configs MCP d'Amazon Q et l'empoisonnement npm par Miasma font des protocoles de l'agentique des surfaces d'attaque."
+      "note": "Burp Suite MCP contourné par consent bypass, LiteLLM offre une chaîne d'escalade : les protocoles agentiques deviennent des surfaces d'attaque structurantes."
     },
     {
       "label": "Extensions Chrome comme infrastructure de surveillance de masse",
       "category": "infosec",
       "since": "2026-06-28",
-      "note": "WhatsCluster révèle un réseau de 50 extensions Chrome manipulant WhatsApp Web, industrialisant l'espionnage via les stores."
-    },
-    {
-      "label": "Formats propriétaires et cycles de vie mémoire comme zones grises offensives",
-      "category": "infosec",
-      "since": "2026-06-29",
-      "note": "Les mécanismes implicites des OS et formats propriétaires révèlent des surfaces d'attaque insoupçonnées."
+      "note": "WhatsCluster a révélé 50 extensions manipulant WhatsApp Web : l'industrialisation de l'espionnage via les stores reste sous-surveillée."
     },
     {
       "label": "Open Memory Protocol : surface d'attaque de la mémoire agentique unifiée",
@@ -165,42 +184,54 @@
       "note": "Un magasin mémoire partagé entre agents crée des canaux de fuite et de synchronisation nouveaux dans l'orchestration agentique."
     },
     {
-      "label": "IA air-gapped comme infrastructure de résilience",
-      "category": "ia",
-      "since": "2026-07-01",
-      "note": "USB-Uncensored-LLM rend les modèles locaux transportables et totalement déconnectés : vers une IA de crise ou de terrain."
-    },
-    {
       "label": "Supply chain kernel et code sanctionné",
       "category": "infosec",
       "since": "2026-07-01",
-      "note": "Du code aux origines douteuses a été injecté dans le noyau Linux : la supply chain du libre devient cible géopolitique."
+      "note": "Du code aux origines douteuses injecté dans le noyau Linux : la supply chain du libre devient cible géopolitique plutôt que problème de revue."
+    },
+    {
+      "label": "IA comprimant le cycle d'exploitation N-days vers N-hours",
+      "category": "ia",
+      "since": "2026-07-02",
+      "note": "Claude Mythos et SMBaloo montrent que l'IA étend les exploits existants en capitalisant sur les primitives architecturales : la fenêtre SOC de 72 min est déjà obsolète."
+    },
+    {
+      "label": "Copilot et assistants IA comme vecteur d'exfiltration",
+      "category": "infosec",
+      "since": "2026-07-02",
+      "note": "SearchLeak permet l'exfiltration de données Microsoft 365 par prompt injection 1-click : les assistants IA intégrés sont des surfaces d'exfiltration natives."
+    },
+    {
+      "label": "Pression organisationnelle sur les CISO pour enterrer les mauvaises nouvelles",
+      "category": "infosec",
+      "since": "2026-07-02",
+      "note": "95% des CISO déclarent subir une pression pour enterrer les mauvaises nouvelles : la dysfonction organisationnelle devient un facteur de risque systémique."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Les drones autonomes tuent, les compétences s'atrophient et les assureurs fuient le risque IA : la productivité promise bute sur des externalités systémiques et éthiques."
+      "note": "Les drones autonomes tuent, les compétences s'atrophient (Fata), les assureurs fuient le risque IA et le Canada publie une stratégie IA sans garde-fous : la productivité promise bute sur des externalités systémiques."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "SDSU filme les dortoirs, les télécoms vendent la géolocalisation et les job sites monétisent les profils, tandis que le hardware ouvert et l'IA air-gapped maintiennent un contre-feu technique."
+      "note": "Citizen Lab dévoile la géolocalisation télécom commerciale, SDSU installe 1300 caméras IA en dortoirs, les job sites monétisent les profils, tandis que le hardware ouvert et l'IA air-gapped maintiennent un contre-feu technique."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "L'IA air-gapped sur clé USB et les modèles locaux accélèrent l'émancipation, mais le blocage de Claude Fable 5 rappelle que la dépendance aux géants reste structurelle."
+      "note": "L'IA air-gapped sur clé USB et les modèles locaux accélèrent l'émancipation, mais le blocage mondial de Fable 5 et la lecture des emails néerlandais rappellent que la dépendance aux infrastructures US reste structurelle."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "Washington bloque Claude Fable 5 mondialement après un prompt innocent, illustrant comment le contrôle à l'export sert la politique plus que la sécurité."
+      "note": "Washington suspend Fable 5 mondialement après un prompt 'fix this code' innocent, Let's Encrypt bannit les territoires sanctionnés : le contrôle à l'export sert la politique plus que la sécurité."
     },
     {
-      "label": "Fiabilité promise vs dégradation observée",
-      "note": "RoguePlanet éleve à SYSTEM via Defender patché, ShinyHunters saccage l'enseignement et la Chine infiltre REDCap : les promesses de sécurité s'effondrent par les interstices."
+      "label": "IA comme outil de défense vs IA comme surface d'attaque",
+      "note": "L'IA découvre 206 CVE chez Microsoft mais Claude Mythos comprime les exploits en N-heures et SearchLeak fait de Copilot un vecteur d'exfiltration : l'arsenal défensif devient sa propre faille."
     },
     {
       "label": "Autonomie des agents vs garde-fous humains",
-      "note": "L'incident DN42 ruine son opérateur, Visa impose une revue humaine sur les agents, mais les drones autonomes franchissent le seuil léthal sans validation : les garde-fous humains reculent face à l'autonomie algorithmique."
+      "note": "L'incident DN42 ruine son opérateur, Visa impose une revue humaine, mais les drones autonomes franchissent le seuil létal sans validation : les garde-fous humains reculent face à une fenêtre de réaction de 72 minutes déjà obsolète."
     }
   ]
 }

@@ -1,22 +1,21 @@
 {
-  "updated_at": "2026-07-06",
+  "updated_at": "2026-07-07",
   "synthesis": {
-    "headline": "L'IA devient infrastructure, ses brèches deviennent frontières",
-    "narrative": "<strong>WASM Component Model 1.0</strong> mature le runtime portable pendant qu'<strong>Apple</strong> déploie ses modèles on-device : l'IA s'installe en production. Mais <strong>SearchLeak</strong> et <strong>LiteLLM</strong> prouvent que chaque couche agentique est une surface d'attaque, et la supply chain devient front géopolitique — <strong>NPM 12</strong> durcit, <strong>Velvet Ant</strong> persiste une décennie, Pyongyang détourne VS Code. Face à l'<em>interrupteur global</em> de <strong>Fable 5</strong>, l'open hardware et l'edge air-gapped reconstruisent une souveraineté couche par couche."
+    "headline": "L'IA offensive devance ses propres garde-fous",
+    "narrative": "Pendant que <strong>Mythos</strong> comprime les exploits en heures, <strong>SearchLeak</strong> exfiltre via Copilot et <strong>ShinyHunters</strong> industrialise un zero-day Oracle sur 100+ organisations, l'IA offensive devance ses garde-fous. La réponse se fragmente : <strong>Apple</strong> verrouille l'edge pendant que <strong>USB-Uncensored-LLM</strong> revendique l'enclave souveraine, et le <strong>Component Model WASM 1.0</strong> mature côté déploiement. Face à cette asymétrie, la résilience se reconstruit par soustraction — FinOps chez OCTO, architecture cellulaire chez <strong>AmEx</strong> — pendant que le DIY exhume du silicium au spectre les couches de souveraineté que les industriels croyaient réservées."
   },
   "currents": [
     {
       "label": "L'IA devient infrastructure offensive",
-      "note": "Mythos comprime N-jours en N-heures, SearchLeak exfiltre via Copilot, LiteLLM expose les passerelles agentiques, WASM mature le runtime : l'IA n'est plus un outil mais une couche d'infrastructure dont chaque composant est vulnérable.",
+      "note": "Mythos comprime les exploits, SearchLeak exfiltre via Copilot, LiteLLM RCE, phishing IA million d'URLs : l'IA n'est plus un outil mais une infrastructure d'attaque qui démocratise et accélère l'offensive.",
       "categories": [
         "ia",
-        "infosec",
-        "devops"
+        "infosec"
       ]
     },
     {
-      "label": "Souveraineté par soustraction",
-      "note": "Apple on-device, USB air-gapped, Coreboot, RISC-V, ROM Finder : la souveraineté se reconquiert en retirant des couches plutôt qu'en ajoutant des contrôles. Mais Fable 5 prouve que l'interrupteur reste centralisé.",
+      "label": "Souveraineté : du silicium au spectre",
+      "note": "C12 nanotubes, QuadRF SDR, USB-Uncensored-LLM, Fable 5 export control : la souveraineté se reconquiert à chaque couche mais bute sur le verrouillage politique et matériel.",
       "categories": [
         "diy",
         "societe",
@@ -24,12 +23,19 @@
       ]
     },
     {
-      "label": "Supply chain : le développeur comme champ de bataille",
-      "note": "NPM 12 bloque les scripts, AUR Atomic Arch compromet, VS Code détourné par Pyongyang, DuckDuckGo PAT exposé : le développeur est simultanément la cible, le vecteur et le dernier rempart de l'intégrité logicielle.",
+      "label": "Reprendre la main : discipline par soustraction",
+      "note": "FinOps OCTO, architecture cellulaire AmEx, Beszel/Atlasphere simplicité, NPM 12 consentement explicite : la résilience se reconstruit par soustraction plutôt que par ajout d'outils.",
       "categories": [
-        "infosec",
         "devops",
-        "societe"
+        "infosec"
+      ]
+    },
+    {
+      "label": "Archéologie technique : exhumer pour comprendre",
+      "note": "JEPA/CCA 90 ans, ordinateurs bloc de l'Est, BC-250 PS5 APU déverrouillé : la communauté exhume les fondations mathématiques et matérielles pour reprendre le contrôle.",
+      "categories": [
+        "ia",
+        "diy"
       ]
     }
   ],
@@ -38,15 +44,15 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "DN42 faillite, Hermes mémoire persistante, ASSERT évals, Tech Ready 2026 : l'agent autonome passe du prototype au risque opérationnel réel."
+      "note": "DN42 faillite, Hermes mémoire persistante, ASSERT évals, Inverse Rubric Optimization : l'agent autonome bute sur ses garde-fous, l'écosystème bâtit les rails d'évaluation."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-07",
       "momentum": "stable",
       "note": "Fable 5 suspendu mondialement après un prompt 'fix this code' innocent ; garde-fous Mythos introduits mais l'export control prime sur la sécurité."
     },
@@ -54,71 +60,63 @@
       "label": "IA locale / edge & modèles compacts",
       "category": "ia",
       "first_seen": "2026-05-16",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-07",
       "momentum": "montant",
-      "note": "Apple Foundation Models on-device, USB-Uncensored-LLM air-gapped, CUDA minimaliste : l'edge s'émancipe mais Apple verrouille, NVIDIA reste aveugle."
+      "note": "Apple Foundation Models on-device, USB-Uncensored-LLM air-gapped, CUDA minimaliste, Tech Ready 2026 : l'edge s'émancipe mais Apple verrouille, NVIDIA reste aveugle."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "Mythos N-days→N-heures, SearchLeak exfiltre via Copilot, LiteLLM RCE, SOC 72 minutes : l'IA démocratise l'attaque industrielle."
-    },
-    {
-      "label": "IA comme instrument de preuve scientifique",
-      "category": "ia",
-      "first_seen": "2026-07-04",
-      "last_seen": "2026-07-06",
-      "momentum": "stable",
-      "note": "Terry Tao évangéliste, Claude chimiste, Euler sums : l'IA passe d'assistant à validateur. Légitimation confirmée mais sans cadre épistémique."
+      "note": "Mythos N-days→N-heures, SearchLeak exfiltre via Copilot, LiteLLM RCE, FBI démantèle Outsider Enterprise : l'IA démocratise l'attaque industrielle."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "Velvet Ant backdoor Linux 10 ans, SearchLeak Copilot, LiteLLM RCE : l'edge et l'auth deviennent brèches persistantes."
+      "note": "Velvet Ant 10 ans dans PAM/OpenSSH, ShinyHunters 100+ orgs via Oracle PeopleSoft, Handala water utility, UNC6508 REDCap : persistance et enterprise deviennent brèches systémiques."
     },
     {
       "label": "Supply chain developer comme maillon faible",
       "category": "infosec",
       "first_seen": "2026-07-02",
-      "last_seen": "2026-07-06",
-      "momentum": "montant",
+      "last_seen": "2026-07-07",
+      "momentum": "stable",
       "note": "NPM 12 bloque les scripts, DuckDuckGo PAT exposé, AUR Atomic Arch, Corée du Nord VS Code : le libre devient front géopolitique, NPM durcit."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "ASSERT évalue les agents, NPM 12 impose approve-scripts : le dev pivote vers l'évaluation et l'orchestration plutôt que le code."
+      "note": "ASSERT évalue les agents, Inverse Rubric Optimization banc de test, NPM 12 impose approve-scripts : le dev pivote vers l'évaluation et l'orchestration."
     },
     {
       "label": "Toolchains haute performance et réécriture système",
       "category": "devops",
       "first_seen": "2026-06-22",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "Rust async/io_uring zero-copy, memory wall, Polar Signals CUDA PC sampling : comprendre chaque couche du kernel au GPU."
+      "note": "io_uring registered buffers zero-copy, async Rust orchestration, memory wall, CUDA minimaliste : comprendre chaque couche du kernel au GPU."
     },
     {
       "label": "Méthodes formelles et architecture résiliente",
       "category": "devops",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "Beszel/Atlasphere misent sur la simplicité, AmEx déploie l'architecture cellulaire, PlanetScale DROP TABLE : résilience par soustraction."
+      "note": "Beszel/Atlasphere misent sur la simplicité, AmEx déploie l'architecture cellulaire, OCTO FinOps 100k$ économisés : résilience par soustraction."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-07",
       "momentum": "stable",
       "note": "Drones autonomes tuent sans validation, assureurs excluent le risque IA, Canada publie une stratégie sans garde-fous : vide normatif persistant."
     },
@@ -126,7 +124,7 @@
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-07",
       "momentum": "stable",
       "note": "NSO ignore ordonnance judiciaire, SDSU 1300 caméras, US lisent emails néerlandais : l'injonction légale ne contient plus l'espionnage commercial."
     },
@@ -134,7 +132,7 @@
       "label": "Souveraineté numérique grand public",
       "category": "societe",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-07",
       "momentum": "stable",
       "note": "Fable 5 coupé mondialement sur un prompt innocent + rétention 30 jours : l'export control US est un interrupteur global sans recours."
     },
@@ -142,34 +140,28 @@
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "IBM 604, Commodore SX-64, PowerBook 150, ordinateurs du bloc de l'Est : la communauté sauve ce que les institutions laissent pourrir."
+      "note": "Ordinateurs bloc de l'Est, Amiga PiStorm 32, BC-250 PS5 APU déverrouillé, Half-Life sur Nokia N95 : la communauté repousse les limites du hardware d'hier."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-07-06",
+      "last_seen": "2026-07-07",
       "momentum": "montant",
-      "note": "C12 nanotubes, QuadRF SDR beamforming, Coreboot X61, MilkV RISC-V vectoriel, ROM Finder : la souveraineté se reconquiert à chaque couche."
+      "note": "C12 nanotubes, QuadRF SDR beamforming, Chameleon Ultra NFC, antennes magnétoélectriques : la souveraineté se reconquiert du silicium au spectre."
     },
     {
       "label": "WASM Component Model : runtime portable mature",
       "category": "devops",
       "first_seen": "2026-07-06",
-      "last_seen": "2026-07-06",
-      "momentum": "nouveau",
-      "note": "Component Model 1.0, Pyodide wheels sur PyPI, wasi-gfx/webgpu : WASM cible le déploiement de production au-delà du navigateur."
+      "last_seen": "2026-07-07",
+      "momentum": "montant",
+      "note": "Component Model 1.0, Pyodide wheels sur PyPI, wasi-gfx/webgpu, portage C game : WASM cible le déploiement de production mais la toolchain reste frictionnée."
     }
   ],
   "watchlist": [
-    {
-      "label": "MCP et protocoles d'interopérabilité comme surface d'attaque",
-      "category": "infosec",
-      "since": "2026-06-27",
-      "note": "LiteLLM escalade vers RCE sur les passerelles agentiques : les protocoles agentiques deviennent des vecteurs structurants."
-    },
     {
       "label": "Open Memory Protocol : mémoire agentique unifiée",
       "category": "ia",
@@ -177,22 +169,10 @@
       "note": "Hermes Agent démontre une mémoire persistante native : un magasin partagé crée des canaux de fuite et de synchronisation nouveaux."
     },
     {
-      "label": "Copilot et assistants IA comme vecteur d'exfiltration",
-      "category": "infosec",
-      "since": "2026-07-02",
-      "note": "SearchLeak prouve l'exfiltration M365 par prompt injection 1-click : les assistants IA intégrés sont des surfaces d'exfiltration natives."
-    },
-    {
-      "label": "Phishing IA industrialisé comme service",
-      "category": "infosec",
-      "since": "2026-07-03",
-      "note": "FBI démantèle Outsider Enterprise, phishing IA à million d'URLs : l'IA démocratise l'attaque industrielle."
-    },
-    {
       "label": "SDR et spectre radio comme infrastructure souveraine",
       "category": "diy",
       "since": "2026-06-08",
-      "note": "QuadRF beamforming open source, MilkV RISC-V vectoriel : le spectre et le silicium deviennent des enjeux de souveraineté matérielle."
+      "note": "QuadRF beamforming open source vers Crowd Supply, Chameleon Ultra NFC : le spectre et le silicium deviennent des enjeux de souveraineté matérielle."
     },
     {
       "label": "GPU profiling continu en production",
@@ -205,6 +185,18 @@
       "category": "infosec",
       "since": "2026-07-06",
       "note": "NPM 12 bloque les scripts par défaut, impose approve-scripts : bascule de la confiance implicite vers le consentement explicite."
+    },
+    {
+      "label": "JEPA et archéologie mathématique de l'apprentissage",
+      "category": "ia",
+      "since": "2026-07-07",
+      "note": "JEPA révèle ses racines dans l'analyse canonique des corrélations (90 ans) : la communauté exhume les fondations statistiques des modèles modernes."
+    },
+    {
+      "label": "Exploitation de masse des logiciels enterprise",
+      "category": "infosec",
+      "since": "2026-07-07",
+      "note": "ShinyHunters frappe 100+ orgs via zero-day Oracle PeopleSoft, Infinite Campus via Salesforce : les vulnérabilités enterprise deviennent campagnes industrielles."
     }
   ],
   "tensions": [
@@ -226,11 +218,11 @@
     },
     {
       "label": "IA comme outil de défense vs IA comme surface d'attaque",
-      "note": "L'IA découvre des CVE mais Mythos comprime les exploits en N-heures, SearchLeak exfiltre via Copilot, LiteLLM expose les passerelles agentiques : l'arsenal défensif devient sa propre faille face à une automatisation offensive quasi-instantanée."
+      "note": "L'IA découvre des CVE mais Mythos comprime les exploits en N-heures, SearchLeak exfiltre via Copilot, LiteLLM expose les passerelles agentiques, ShinyHunters industrialise le zero-day : l'arsenal défensif devient sa propre faille."
     },
     {
       "label": "Développeur : dernier rempart ou maillon faible",
-      "note": "ASSERT et NPM 12 arment le développeur pour évaluer et sécuriser, mais Miasma, AUR Atomic Arch, VS Code nord-coréennes et DuckDuckGo PAT exposé font du développeur le vecteur privilégié : le même acteur est défenseur et brèche."
+      "note": "ASSERT et Inverse Rubric Optimization arment le développeur pour évaluer les agents, mais les backdoors PAM/OpenSSH et les outils GPS open source détournés font du supply chain le vecteur privilégié."
     }
   ]
 }

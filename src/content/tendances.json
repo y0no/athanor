@@ -1,41 +1,43 @@
 {
   "updated_at": "2026-07-07",
   "synthesis": {
-    "headline": "L'IA offensive devance ses propres garde-fous",
-    "narrative": "Pendant que <strong>Mythos</strong> comprime les exploits en heures, <strong>SearchLeak</strong> exfiltre via Copilot et <strong>ShinyHunters</strong> industrialise un zero-day Oracle sur 100+ organisations, l'IA offensive devance ses garde-fous. La réponse se fragmente : <strong>Apple</strong> verrouille l'edge pendant que <strong>USB-Uncensored-LLM</strong> revendique l'enclave souveraine, et le <strong>Component Model WASM 1.0</strong> mature côté déploiement. Face à cette asymétrie, la résilience se reconstruit par soustraction — FinOps chez OCTO, architecture cellulaire chez <strong>AmEx</strong> — pendant que le DIY exhume du silicium au spectre les couches de souveraineté que les industriels croyaient réservées."
+    "headline": "L'IA devient infrastructure et découvre ses propres failles",
+    "narrative": "L'IA locale franchit un seuil avec <strong>Ternlight</strong> (7 Mo en WASM) et Chrome (4 Go silencieux), mais les agents autonomes deviennent surface d'attaque de plein droit : <strong>SkillCloak</strong>, <em>agentjacking</em> et prompt injection confirment que les défenses statiques sont dépassées. Simultanément, <strong>GLM 5.2</strong> accélère la commodification des LLMs et l'effondrement des marges, <strong>Big Tech</strong> admet les suppressions de postes, et l'<strong>ANSSI</strong> force la migration post-quantique dès 2027. La supply chain se durcit avec <strong>OpenSSH 10.4</strong> et <strong>Kani</strong>, tandis que la frugalité infrastructurelle (<em>EROOM</em>, <em>Postgres is Enough</em>) répond à la complexité par la soustraction."
   },
   "currents": [
     {
-      "label": "L'IA devient infrastructure offensive",
-      "note": "Mythos comprime les exploits, SearchLeak exfiltre via Copilot, LiteLLM RCE, phishing IA million d'URLs : l'IA n'est plus un outil mais une infrastructure d'attaque qui démocratise et accélère l'offensive.",
+      "label": "L'IA devient infrastructure offensive ET défensive",
+      "note": "L'IA locale s'installe (Ternlight, Chrome), les agents deviennent surface d'attaque (SkillCloak, agentjacking), la supply chain se durcit (OpenSSH, Kani) : l'IA est couche infrastructurelle avec ses propres vecteurs.",
       "categories": [
         "ia",
-        "infosec"
+        "infosec",
+        "devops"
       ]
     },
     {
-      "label": "Souveraineté : du silicium au spectre",
-      "note": "C12 nanotubes, QuadRF SDR, USB-Uncensored-LLM, Fable 5 export control : la souveraineté se reconquiert à chaque couche mais bute sur le verrouillage politique et matériel.",
+      "label": "Frugalité vs complexité : la soustraction comme stratégie",
+      "note": "EROOM, Postgres is Enough, OpenWrt One, RTL-SDR : face à l'effondrement des marges IA et à la complexité cloud, la réutilisation de l'existant et le hardware ouvert émergent comme contre-stratégie structurelle.",
+      "categories": [
+        "devops",
+        "diy",
+        "societe"
+      ]
+    },
+    {
+      "label": "Commodification et désenchantement : l'IA face au réel",
+      "note": "GLM 5.2 accélère la guerre des prix, Big Tech admet les suppressions de postes, AI-first devient repoussoir : le récit promotionnel de l'IA collisionne avec la réalité économique et sociale.",
+      "categories": [
+        "ia",
+        "societe"
+      ]
+    },
+    {
+      "label": "Souveraineté : du silicium au spectre et à la crypto",
+      "note": "OpenWrt One, RTL-SDR, AMD dev kit, ANSSI post-quantique : la souveraineté se reconquiert sur tous les fronts matériels et cryptographiques, en réaction à la centralisation cloud et au verrouillage propriétaire.",
       "categories": [
         "diy",
         "societe",
-        "ia"
-      ]
-    },
-    {
-      "label": "Reprendre la main : discipline par soustraction",
-      "note": "FinOps OCTO, architecture cellulaire AmEx, Beszel/Atlasphere simplicité, NPM 12 consentement explicite : la résilience se reconstruit par soustraction plutôt que par ajout d'outils.",
-      "categories": [
-        "devops",
         "infosec"
-      ]
-    },
-    {
-      "label": "Archéologie technique : exhumer pour comprendre",
-      "note": "JEPA/CCA 90 ans, ordinateurs bloc de l'Est, BC-250 PS5 APU déverrouillé : la communauté exhume les fondations mathématiques et matérielles pour reprendre le contrôle.",
-      "categories": [
-        "ia",
-        "diy"
       ]
     }
   ],
@@ -46,7 +48,7 @@
       "first_seen": "2026-05-13",
       "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "DN42 faillite, Hermes mémoire persistante, ASSERT évals, Inverse Rubric Optimization : l'agent autonome bute sur ses garde-fous, l'écosystème bâtit les rails d'évaluation."
+      "note": "SkillCloak, agentjacking, prompt injection indirecte : l'agent autonome est surface d'attaque de plein droit, les défenses statiques dépassées."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
@@ -54,7 +56,7 @@
       "first_seen": "2026-06-15",
       "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "Fable 5 suspendu mondialement après un prompt 'fix this code' innocent ; garde-fous Mythos introduits mais l'export control prime sur la sécurité."
+      "note": "Anthropic workspace global (Baars), Fable modélise Aristote 3D, mais regression to the mean rappelle que les LLMs étouffent le nouveau."
     },
     {
       "label": "IA locale / edge & modèles compacts",
@@ -62,7 +64,7 @@
       "first_seen": "2026-05-16",
       "last_seen": "2026-07-07",
       "momentum": "montant",
-      "note": "Apple Foundation Models on-device, USB-Uncensored-LLM air-gapped, CUDA minimaliste, Tech Ready 2026 : l'edge s'émancipe mais Apple verrouille, NVIDIA reste aveugle."
+      "note": "Ternlight 7 Mo WASM, Chrome 4 Go silencieux : l'edge franchit un seuil de crédibilité, mais Opus 4.6 reste la référence pour le raisonnement noyau."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
@@ -78,7 +80,7 @@
       "first_seen": "2026-06-19",
       "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "Velvet Ant 10 ans dans PAM/OpenSSH, ShinyHunters 100+ orgs via Oracle PeopleSoft, Handala water utility, UNC6508 REDCap : persistance et enterprise deviennent brèches systémiques."
+      "note": "PHP PDO NUL byte SQLi, Veeam RCE, Gitea sondé en 13 jours, AWS CDK cmd injection : la fenêtre divulgation→exploitation se resserre drastiquement."
     },
     {
       "label": "Supply chain developer comme maillon faible",
@@ -86,7 +88,7 @@
       "first_seen": "2026-07-02",
       "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "NPM 12 bloque les scripts, DuckDuckGo PAT exposé, AUR Atomic Arch, Corée du Nord VS Code : le libre devient front géopolitique, NPM durcit."
+      "note": "Corée du Nord 100+ packages OSS, OpenSSH 10.4 durcit, Kani prouve Rust : le libre reste front géopolitique mais la vérification formelle émerge."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
@@ -102,7 +104,7 @@
       "first_seen": "2026-06-22",
       "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "io_uring registered buffers zero-copy, async Rust orchestration, memory wall, CUDA minimaliste : comprendre chaque couche du kernel au GPU."
+      "note": "Python 3.14 binaire natif (pon), Elm 1.0 builds accélérés : les runtimes troquent l'interprétation contre des artefacts natifs auto-suffisants."
     },
     {
       "label": "Méthodes formelles et architecture résiliente",
@@ -110,15 +112,15 @@
       "first_seen": "2026-06-15",
       "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "Beszel/Atlasphere misent sur la simplicité, AmEx déploie l'architecture cellulaire, OCTO FinOps 100k$ économisés : résilience par soustraction."
+      "note": "Kani (Rust), EROOM zéro matériel neuf, Postgres is Enough : frugalité et résilience par soustraction, preuve formelle côté supply chain."
     },
     {
       "label": "Désenchantement IA au travail",
       "category": "societe",
       "first_seen": "2026-05-13",
       "last_seen": "2026-07-07",
-      "momentum": "stable",
-      "note": "Drones autonomes tuent sans validation, assureurs excluent le risque IA, Canada publie une stratégie sans garde-fous : vide normatif persistant."
+      "momentum": "montant",
+      "note": "Big Tech admet les suppressions de postes, AI-first devient repoussoir, stochastic parrots résonnent : le récit IA collisionne avec le réel."
     },
     {
       "label": "Surveillance & biométrie",
@@ -126,15 +128,7 @@
       "first_seen": "2026-05-13",
       "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "NSO ignore ordonnance judiciaire, SDSU 1300 caméras, US lisent emails néerlandais : l'injonction légale ne contient plus l'espionnage commercial."
-    },
-    {
-      "label": "Souveraineté numérique grand public",
-      "category": "societe",
-      "first_seen": "2026-06-07",
-      "last_seen": "2026-07-07",
-      "momentum": "stable",
-      "note": "Fable 5 coupé mondialement sur un prompt innocent + rétention 30 jours : l'export control US est un interrupteur global sans recours."
+      "note": "Police française flagrant délit, Sainsbury's 200 magasins, Pegasus réactivé, Cour suprême ébranle Flock : reconnaissance faciale hors cadre légal."
     },
     {
       "label": "Rétrocomputing & préservation",
@@ -142,7 +136,7 @@
       "first_seen": "2026-05-13",
       "last_seen": "2026-07-07",
       "momentum": "stable",
-      "note": "Ordinateurs bloc de l'Est, Amiga PiStorm 32, BC-250 PS5 APU déverrouillé, Half-Life sur Nokia N95 : la communauté repousse les limites du hardware d'hier."
+      "note": "Linux sur Atari Jaguar (1993), reMarkable en journal de Tom Jedusor, séquençage ADN à domicile : le bidouillable s'étend du rétro au bio."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
@@ -150,7 +144,7 @@
       "first_seen": "2026-06-08",
       "last_seen": "2026-07-07",
       "momentum": "montant",
-      "note": "C12 nanotubes, QuadRF SDR beamforming, Chameleon Ultra NFC, antennes magnétoélectriques : la souveraineté se reconquiert du silicium au spectre."
+      "note": "RTL-SDR HD Radio, OpenWrt One routeur open hardware, AMD Ryzen AI Halo 4k$ : spectre, réseau et silicium rouvrent à l'expérimentation souveraine."
     },
     {
       "label": "WASM Component Model : runtime portable mature",
@@ -158,7 +152,15 @@
       "first_seen": "2026-07-06",
       "last_seen": "2026-07-07",
       "momentum": "montant",
-      "note": "Component Model 1.0, Pyodide wheels sur PyPI, wasi-gfx/webgpu, portage C game : WASM cible le déploiement de production mais la toolchain reste frictionnée."
+      "note": "Ternlight 7 Mo WASM, Python 3.14 natif (pon), Elm 1.0 builds accélérés : WASM et compilation native convergent vers des artefacts auto-suffisants."
+    },
+    {
+      "label": "Commodification des LLMs et effondrement des marges",
+      "category": "ia",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-07",
+      "momentum": "nouveau",
+      "note": "GLM 5.2 relance la guerre des prix, price-per-1M-tokens trompeur : l'IA se commodifie plus vite que les business models ne s'adaptent."
     }
   ],
   "watchlist": [
@@ -172,7 +174,7 @@
       "label": "SDR et spectre radio comme infrastructure souveraine",
       "category": "diy",
       "since": "2026-06-08",
-      "note": "QuadRF beamforming open source vers Crowd Supply, Chameleon Ultra NFC : le spectre et le silicium deviennent des enjeux de souveraineté matérielle."
+      "note": "QuadRF beamforming, RTL-SDR HD Radio, Chameleon Ultra NFC : le spectre et le silicium deviennent des enjeux de souveraineté matérielle."
     },
     {
       "label": "GPU profiling continu en production",
@@ -187,42 +189,48 @@
       "note": "NPM 12 bloque les scripts par défaut, impose approve-scripts : bascule de la confiance implicite vers le consentement explicite."
     },
     {
-      "label": "JEPA et archéologie mathématique de l'apprentissage",
-      "category": "ia",
+      "label": "Post-quantique : ANSSI force la migration dès 2027",
+      "category": "societe",
       "since": "2026-07-07",
-      "note": "JEPA révèle ses racines dans l'analyse canonique des corrélations (90 ans) : la communauté exhume les fondations statistiques des modèles modernes."
+      "note": "ANSSI subordonne sa certification au post-quantique dès 2027 : première agence à imposer unilatéralement la migration, créant un précédent souverain."
     },
     {
-      "label": "Exploitation de masse des logiciels enterprise",
+      "label": "Bio-DIY et génétique personnelle",
+      "category": "diy",
+      "since": "2026-07-07",
+      "note": "Séquençage ADN à domicile avec matériel abordable : le bio-DIY franchit un seuil, extension de la vague hardware ouvert au vivant."
+    },
+    {
+      "label": "SkillCloak et evasion de scanners statiques",
       "category": "infosec",
       "since": "2026-07-07",
-      "note": "ShinyHunters frappe 100+ orgs via zero-day Oracle PeopleSoft, Infinite Campus via Salesforce : les vulnérabilités enterprise deviennent campagnes industrielles."
+      "note": "SkillCloak : skills malveillantes échappent aux scanners par auto-extraction, seules les approches comportementales à l'exécution émergent."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Drones autonomes tuent sans validation, assureurs excluent le risque IA, Canada publie une stratégie sans garde-fous : la productivité bute sur des externalités systémiques sans cadre normatif cohérent."
+      "note": "Big Tech admet les suppressions de postes, AI-first devient repoussoir commercial, stochastic parrots résonnent : la productivité bute sur des externalités systémiques sans cadre normatif cohérent."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "NSO ignore les ordonnances judiciaires, SDSU installe 1300 caméras IA, US lisent les emails néerlandais, tandis que hardware ouvert et IA air-gapped maintiennent un contre-feu technique qui recule."
+      "note": "Police française en flagrant délit, Sainsbury's 200 magasins, Pegasus réactivé, tandis que hardware ouvert et IA air-gapped maintiennent un contre-feu technique qui recule."
     },
     {
       "label": "Centralisation cloud vs souveraineté edge",
-      "note": "Apple déploie ses Foundation Models on-device mais verrouille l'écosystème, USB-Uncensored-LLM revendique l'air-gapped multiplateforme : l'edge s'émancipe mais la dépendance hardware NVIDIA reste structurelle."
+      "note": "Ternlight 7 Mo en WASM et Chrome 4 Go silencieux étendent l'edge, mais Apple verrouille et NVIDIA reste structurel : l'émancipation locale bute sur la dépendance hardware."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "Washington suspend Fable 5 mondialement après un prompt innocent, impose 30 jours de rétention : le contrôle à l'export sert la politique plus que la sécurité, et transforme l'acte réglementaire en dispositif de surveillance."
+      "note": "Washington suspend Fable 5 mondialement, ANSSI force le post-quantique : la régulation sert tantôt la souveraineté citoyenne, tantôt l'interrupteur global sans recours."
     },
     {
       "label": "IA comme outil de défense vs IA comme surface d'attaque",
-      "note": "L'IA découvre des CVE mais Mythos comprime les exploits en N-heures, SearchLeak exfiltre via Copilot, LiteLLM expose les passerelles agentiques, ShinyHunters industrialise le zero-day : l'arsenal défensif devient sa propre faille."
+      "note": "SkillCloak, agentjacking et prompt injection indirecte confirment que l'agent autonome est surface d'attaque de plein droit : l'arsenal défensif devient sa propre faille."
     },
     {
-      "label": "Développeur : dernier rempart ou maillon faible",
-      "note": "ASSERT et Inverse Rubric Optimization arment le développeur pour évaluer les agents, mais les backdoors PAM/OpenSSH et les outils GPS open source détournés font du supply chain le vecteur privilégié."
+      "label": "Commodification des LLMs vs viabilité économique",
+      "note": "GLM 5.2 accélère la guerre des prix, le price-per-1M-tokens masque les coûts réels : l'IA se commodifie plus vite que les business models ne s'adaptent, l'effondrement des marges frappe tous les acteurs."
     }
   ]
 }

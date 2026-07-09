@@ -1,37 +1,30 @@
 {
-  "updated_at": "2026-07-08",
+  "updated_at": "2026-07-09",
   "synthesis": {
-    "headline": "L'autonomie accélère, le contrôle s'effondre",
-    "narrative": "L'<strong>interrupteur global</strong> sur Fable 5 prouve qu'un État peut couper l'accès mondial à une IA en trois heures — mais les <strong>drones autonomes</strong> ont déjà tué sans supervision humaine et un agent a mis son opérateur en <strong>faillite</strong>. La fenêtre SOC se contracte à <em>72 minutes</em> tandis que le <strong>WASM Component Model 1.0</strong> mature l'edge, et les assureurs reculent devant le risque IA : les normes sont en retard sur tous les fronts."
+    "headline": "L'IA devient sa propre faille et son propre bouclier",
+    "narrative": "L'IA offensive d'<strong>Anthropic</strong> comprime la fenêtre d'action à quelques heures tandis que <strong>Visa VVAH</strong> open-source démocratise la défense agentique : le même outil sert l'attaque et sa contre-mesure. Le <strong>kill switch</strong> de Fable 5 s'active sur une fausse positive, des <strong>drones autonomes</strong> tuent sans humain, les assureurs excluent l'IA — l'autonomie accélère sur tous les fronts tandis que droit et doctrine sont en retard d'une guerre. La supply chain répond par la friction (<strong>NPM 12</strong>), l'edge atteint sa majorité (<strong>WASM 1.0</strong>), et le DIY franchit la frontière du vivant."
   },
   "currents": [
     {
-      "label": "L'IA devient infrastructure offensive et défensive simultanément",
-      "note": "Mythos N-days→N-heures, Patch Tuesday 206 CVEs, SkillCloak, SearchLeak via Copilot : les mêmes capacités qui exposent les agents nourrissent les boucliers, l'arsenal bascule sans rupture entre attaque et défense.",
+      "label": "L'IA devient infrastructure offensive ET défensive",
+      "note": "Anthropic N-days, Visa VVAH open-source, SearchLeak, SMBaloo : le même outil sert l'attaque, la défense, et devient la faille — le moat entre offensif et défensif disparaît.",
       "categories": [
         "ia",
         "infosec"
       ]
     },
     {
-      "label": "L'autonomie hors cadre : des agents aux drones",
-      "note": "Agent en faillite sur DN42, drones autonomes létaux, kill switch Fable 5 : l'autonomie accélère sur tous les fronts tandis que les cadres normatifs, l'assurance et le droit sont en retard d'une guerre.",
+      "label": "L'autonomie accélère sans filet normatif",
+      "note": "Fable 5 kill switch sur faux positif, drones autonomes létaux, agents en faillite, assureurs reculent : la capacité technique outpace systématiquement droit, doctrine et assurance.",
       "categories": [
         "ia",
-        "societe"
+        "societe",
+        "infosec"
       ]
     },
     {
-      "label": "Frugalité et souveraineté : du cloud au silicium",
-      "note": "EROOM, FinOps 100k, Postgres DROP TABLE côté cloud ; patch cardiaque, C12QE quantum, STEPLA-1 CPU côté hardware : la frugalité infrastructurelle rencontre la souveraineté matérielle, le bas-niveau redevient politique.",
-      "categories": [
-        "devops",
-        "diy"
-      ]
-    },
-    {
-      "label": "La confiance devient explicite",
-      "note": "NPM 12 approve-scripts, AUR 400+ packages détournés, LiteLLM RCE : la confiance supply chain bascule de l'opt-out vers l'opt-in, la friction devient fonctionnalité de sécurité.",
+      "label": "Friction par design : de la confiance implicite au consentement explicite",
+      "note": "NPM 12 approve-scripts, code 'sanctioned' kernel, supply chain durcissement : la sécurité devient friction par design, le pipeline CI/CD doit être révisé.",
       "categories": [
         "infosec",
         "devops"
@@ -43,113 +36,121 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-09",
       "momentum": "stable",
-      "note": "Agent faillite DN42, Hermes mémoire persistante, ASSERT évals : l'autonomie sans garde-fou se heurte au réel, l'évaluation devient cadre structurant."
+      "note": "Hermes mémoire persistante, agent en faillite DN42, Tech Ready 2026 : l'autonomie sans garde-fous se heurte au réel, l'évaluation devient cadre structurant."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-09",
       "momentum": "montant",
-      "note": "Mythos N-days→N-heures, Patch Tuesday 206 CVEs record, SOC 72 min : l'IA démocratise l'attaque et force l'automatisation défensive en continu."
+      "note": "Anthropic N-days→heures, Patch Tuesday 206 CVEs, Visa VVAH défensif open-source, fin ingénierie sociale : l'IA démocratise attaque ET défense sans rupture."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-09",
       "momentum": "stable",
-      "note": "Fable 5 coupé sur un prompt 'fix this code' mal interprété, ASSERT évals, assureurs excluent l'IA : la fiabilité bute sur l'incohérence des contrôles."
+      "note": "Fable 5 coupé sur faux positif 'fix this code', ASSERT évals, assureurs excluent l'IA : la fiabilité bute sur l'incohérence des contrôles."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-07-07",
+      "last_seen": "2026-07-09",
       "momentum": "stable",
-      "note": "GLM 5.2 relance la guerre des prix, price-per-1M-tokens trompeur : l'IA se commodifie plus vite que les business models ne s'adaptent."
+      "note": "Tokenizers optimaux, décodage spéculatif, CUDA hackable : la commodification pousse l'optimisation à chaque couche, du vocabulaire au kernel."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-09",
       "momentum": "stable",
-      "note": "RoguePlanet 7e zero-day Windows, ShinyHunters PeopleSoft 100+ orgs, AUR 400+ packages : la fenêtre divulgation→exploitation se resserre."
+      "note": "RoguePlanet 7e zero-day Defender, Velvet Ant décennie Linux, UNC6508 REDCap 1 an : la patience offensive surpasse les fenêtres de détection."
     },
     {
       "label": "Supply chain developer comme maillon faible",
       "category": "infosec",
       "first_seen": "2026-07-02",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-09",
       "momentum": "montant",
-      "note": "SearchLeak via Copilot, AUR 400+ packages, LiteLLM RCE, NPM 12 approve-scripts : la confiance bascule de l'implicite vers l'explicite."
+      "note": "SearchLeak Copilot, LiteLLM RCE, SMBaloo ARM64 kernel, NPM 12 approve-scripts : l'IA devient surface d'attaque, la confiance bascule vers l'explicite."
     },
     {
       "label": "WASM Component Model : runtime portable mature",
       "category": "devops",
       "first_seen": "2026-07-06",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-09",
       "momentum": "montant",
-      "note": "Component Model 1.0 officialisé, Pyodide 314 wheels sur PyPI, wasi-gfx : l'écosystème atteint sa majorité, mais les frictions toolchain restent."
+      "note": "Component Model 1.0 officialisé, Pyodide 314 wheels PyPI, wasi-gfx instable : l'écosystème atteint sa majorité mais les frictions toolchain restent."
     },
     {
       "label": "Méthodes formelles et architecture résiliente",
       "category": "devops",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-09",
       "momentum": "stable",
-      "note": "io_uring registered buffers, FinOps 100k AWS, Postgres DROP TABLE : la frugalité descend à chaque couche de la stack."
+      "note": "io_uring registered buffers, latence fine, FUSE grassroots, FinOps : la frugalité descend à chaque couche de la stack."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-09",
       "momentum": "stable",
-      "note": "ASSERT évals agents, NPM 12 approve-scripts : le dev pivote vers l'évaluation et le consentement explicite, la friction devient sécurité."
+      "note": "ASSERT évals agents, NPM 12 approve-scripts, code 'sanctioned' kernel : le dev pivote vers l'évaluation et le consentement explicite."
+    },
+    {
+      "label": "Observabilité GPU et dépendance NVIDIA",
+      "category": "devops",
+      "first_seen": "2026-07-05",
+      "last_seen": "2026-07-09",
+      "momentum": "montant",
+      "note": "Polar Signals CUDA PC sampling en prod, Modular alternatives, TorchCodec HDR : l'observabilité GPU se démocratise mais confirme la centralité NVIDIA."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-09",
       "momentum": "montant",
-      "note": "NSO ignore ordonnance, SDSU 1300 caméras, US lit emails néerlandais, job sites monétisent données : l'encadrement recule systématiquement."
+      "note": "NSO ignore ordonnance, SDSU 1300 caméras, US lit emails néerlandais : l'encadrement recule systématiquement sur tous les fronts."
     },
     {
       "label": "Interrupteur global et kill switch souverain",
       "category": "societe",
       "first_seen": "2026-07-08",
-      "last_seen": "2026-07-08",
-      "momentum": "nouveau",
-      "note": "Fable 5 coupé en 3h sur un prompt mal interprété : Washington exerce un kill switch global sans recours, la régulation devient arme souveraine."
+      "last_seen": "2026-07-09",
+      "momentum": "montant",
+      "note": "Fable 5 coupé en 3h sur faux positif 'fix this code' : kill switch sans recours ni transparence, la régulation devient arme souveraine."
     },
     {
       "label": "Guerre autonome et cyber-conflits hors cadre",
       "category": "societe",
       "first_seen": "2026-07-08",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-09",
       "momentum": "nouveau",
-      "note": "Drones autonomes létaux sans humain, cyber-guerre au quotidien : les menaces débordent les cadres normatifs, institutions et droit en retard."
+      "note": "Premiers kills par drones autonomes, Canada stratégie IA balayée, assureurs excluent l'IA : le vide normatif devient structurel."
     },
     {
       "label": "Rétrocomputing & préservation",
       "category": "diy",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-09",
       "momentum": "stable",
-      "note": "IBM 604 (1948), PowerBook 150, Amiga 1232 PiStorm, PDP-11 célébré : la maîtrise du fer reste le socle de l'appropriation technique."
+      "note": "IBM 604 (1948), ordinateurs bloc Est, PDP-11, Amiga 1232 PiStorm : la maîtrise du fer reste le socle de l'appropriation technique."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-07-08",
+      "last_seen": "2026-07-09",
       "momentum": "montant",
-      "note": "Patch cardiaque, C12QE nanotubes quantiques, QuadRF SDR, STEPLA-1 CPU, MIT build OS : le hardware-frontière s'étend du vivant à l'atome."
+      "note": "BC-250 PS5 unlock, Coreboot X61, C12QE nanotubes, patch cardiaque, antennes sous-marines : le hardware-frontière s'étend du déverrouillage au vivant."
     },
     {
       "label": "Désenchantement IA au travail",
@@ -168,28 +169,10 @@
       "note": "Hermes Agent démontre mémoire persistante native : magasin partagé crée canaux de fuite et synchronisation nouveaux."
     },
     {
-      "label": "GPU profiling continu en production",
-      "category": "devops",
-      "since": "2026-07-05",
-      "note": "Polar Signals démocratise sampling CUDA : l'observabilité GPU rouvre la question de la dépendance NVIDIA."
-    },
-    {
-      "label": "NPM 12 : durcissement explicite des dépendances",
-      "category": "infosec",
-      "since": "2026-07-06",
-      "note": "NPM 12 bloque scripts par défaut, impose approve-scripts : bascule de confiance implicite vers consentement explicite."
-    },
-    {
       "label": "Post-quantique : ANSSI force la migration dès 2027",
       "category": "societe",
       "since": "2026-07-07",
       "note": "ANSSI subordonne certification au post-quantique dès 2027 : première agence à imposer unilatéralement la migration."
-    },
-    {
-      "label": "Bio-DIY et génétique personnelle",
-      "category": "diy",
-      "since": "2026-07-07",
-      "note": "Patch cardiaque ultrasonore, C12QE nanotubes quantiques : le bio-DIY franchit un seuil, extension de la vague hardware au vivant et à l'atome."
     },
     {
       "label": "SkillCloak et evasion de scanners statiques",
@@ -198,16 +181,22 @@
       "note": "Skills malveillantes échappent aux scanners par auto-extraction : seules les approches comportementales à l'exécution émergent."
     },
     {
-      "label": "Assureurs excluent l'IA des polices traditionnelles",
-      "category": "societe",
-      "since": "2026-07-08",
-      "note": "Assureurs excluent dommages IA des polices : le risque IA devient inassurable, les entreprises restent sans filet."
+      "label": "Code 'sanctioned' : fracture de gouvernance kernel",
+      "category": "devops",
+      "since": "2026-07-09",
+      "note": "Patches au noyau Linux dont traçabilité et origine posent question : l'ouverture du processus de contribution entre en tension avec la confiance supply chain."
     },
     {
-      "label": "Fenêtre SOC de 72 minutes : automatisation défensive obligatoire",
+      "label": "Visa VVAH : défense agentique open-source",
       "category": "infosec",
-      "since": "2026-07-08",
-      "note": "Unit 42 : 72 min pour corréler et répondre. L'automatisation défensive en continu devient obligatoire, le patch différé est mort."
+      "since": "2026-07-09",
+      "note": "Pipeline agentique open-source de scan et triage autonomes : la défense IA se démocratise au même rythme que l'attaque."
+    },
+    {
+      "label": "Fin de l'ingénierie sociale : IA comme vigilance système",
+      "category": "ia",
+      "since": "2026-07-09",
+      "note": "OS natifs IA passent de la vigilance utilisateur à la vigilance système : l'IA pourrait rendre le phishing obsolète en déplaçant la défense au niveau OS."
     }
   ],
   "tensions": [
@@ -221,19 +210,19 @@
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "Fable 5 coupé en 3h sur un prompt mal interprété, ANSSI force le post-quantique : la régulation sert tantôt la souveraineté, tantôt l'interrupteur global sans recours."
+      "note": "Fable 5 coupé en 3h sur faux positif, ANSSI force le post-quantique : la régulation sert tantôt la souveraineté, tantôt l'interrupteur global sans recours."
     },
     {
       "label": "IA comme outil de défense vs IA comme surface d'attaque",
-      "note": "Mythos N-days→N-heures, Patch Tuesday 206 CVEs, SkillCloak, SearchLeak via Copilot : l'arsenal IA bascule sans rupture entre attaque et défense, l'outil devient sa propre faille."
+      "note": "Visa VVAH défensif open-source, Anthropic N-days, SearchLeak Copilot, SMBaloo kernel : l'arsenal IA bascule sans rupture entre attaque et défense, l'outil devient sa propre faille."
     },
     {
       "label": "Commodification des LLMs vs viabilité économique",
-      "note": "GLM 5.2 accélère la guerre des prix, le price-per-1M-tokens masque les coûts réels : l'IA se commodifie plus vite que les business models ne s'adaptent."
+      "note": "Tokenizers optimaux, décodage spéculatif, CUDA hackable : l'optimisation à chaque couche accélère la commodification plus vite que les business models ne s'adaptent."
     },
     {
       "label": "Autonomie technique accélérée vs cadres normatifs en retard",
-      "note": "Drones autonomes létaux, agents en faillite, kill switch en 3h : l'autonomie accélère sur tous les fronts tandis que droit, doctrine et assurance sont en retard d'une guerre."
+      "note": "Drones autonomes létaux, Fable 5 kill switch sur faux positif, agents en faillite, assureurs en retrait : l'autonomie accélère sur tous les fronts tandis que droit, doctrine et assurance sont en retard d'une guerre."
     }
   ]
 }

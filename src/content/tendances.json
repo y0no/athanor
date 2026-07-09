@@ -1,33 +1,33 @@
 {
   "updated_at": "2026-07-09",
   "synthesis": {
-    "headline": "L'IA devient sa propre faille et son propre bouclier",
-    "narrative": "L'IA offensive d'<strong>Anthropic</strong> comprime la fenêtre d'action à quelques heures tandis que <strong>Visa VVAH</strong> open-source démocratise la défense agentique : le même outil sert l'attaque et sa contre-mesure. Le <strong>kill switch</strong> de Fable 5 s'active sur une fausse positive, des <strong>drones autonomes</strong> tuent sans humain, les assureurs excluent l'IA — l'autonomie accélère sur tous les fronts tandis que droit et doctrine sont en retard d'une guerre. La supply chain répond par la friction (<strong>NPM 12</strong>), l'edge atteint sa majorité (<strong>WASM 1.0</strong>), et le DIY franchit la frontière du vivant."
+    "headline": "Le code arbitre les modèles et devient la faille",
+    "narrative": "Les agents de codage convergent vers une indiscernabilité qui vide les benchmarks de sens, tandis qu'<strong>HalluSquatting</strong> et <strong>GhostApproval</strong> transforment ces mêmes agents en surface d'attaque — l'outil d'évaluation devient sa propre faille. Pendant ce temps, <strong>Cloudflare</strong> élève l'edge de cache à coordination globale et l'UE s'apprête à réautoriser le scanning des messages privés : la confiance recule à chaque couche. Le désenchantement s'accélère — <strong>Brown University</strong> voit ses notes chuter de 50% sans l'IA — tandis que <strong>JEPA</strong> et les <em>world models</em> explorent une voie au-delà du transformer."
   },
   "currents": [
     {
-      "label": "L'IA devient infrastructure offensive ET défensive",
-      "note": "Anthropic N-days, Visa VVAH open-source, SearchLeak, SMBaloo : le même outil sert l'attaque, la défense, et devient la faille — le moat entre offensif et défensif disparaît.",
+      "label": "L'IA devient sa propre infrastructure d'attaque",
+      "note": "Les agents de codage qui évaluent les LLMs (benchmarks, codebases) sont les mêmes outils qui deviennent vecteurs d'attaque (HalluSquatting, GhostApproval). L'évaluateur et la faille convergent.",
       "categories": [
         "ia",
         "infosec"
       ]
     },
     {
-      "label": "L'autonomie accélère sans filet normatif",
-      "note": "Fable 5 kill switch sur faux positif, drones autonomes létaux, agents en faillite, assureurs reculent : la capacité technique outpace systématiquement droit, doctrine et assurance.",
+      "label": "Convergence des modèles, divergence des effets",
+      "note": "Les modèles convergent (SWE-1.7 ≈ GPT-5.5) mais leurs effets divergent : désenchantement (Brown University), surveillance (Chat Control), propriété révocable (PlayStation). L'indiscernabilité technique produit une fragmentation sociale.",
       "categories": [
         "ia",
-        "societe",
-        "infosec"
+        "societe"
       ]
     },
     {
-      "label": "Friction par design : de la confiance implicite au consentement explicite",
-      "note": "NPM 12 approve-scripts, code 'sanctioned' kernel, supply chain durcissement : la sécurité devient friction par design, le pipeline CI/CD doit être révisé.",
+      "label": "La confiance descend dans la stack",
+      "note": "Des benchmarks LLM (ia) à la supply chain (infosec) au consensus edge (devops), la confiance est renégociée à chaque couche : preuve d'exploitabilité, approve-scripts, code sanctioned.",
       "categories": [
+        "devops",
         "infosec",
-        "devops"
+        "ia"
       ]
     }
   ],
@@ -38,7 +38,7 @@
       "first_seen": "2026-05-13",
       "last_seen": "2026-07-09",
       "momentum": "stable",
-      "note": "Hermes mémoire persistante, agent en faillite DN42, Tech Ready 2026 : l'autonomie sans garde-fous se heurte au réel, l'évaluation devient cadre structurant."
+      "note": "SWE-1.7 rattrape GPT-5.5, benchmarks indiscernables, Dan Luu alerte sur variance : l'évaluation devient le goulot d'étranglement de l'autonomie."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
@@ -46,7 +46,7 @@
       "first_seen": "2026-06-28",
       "last_seen": "2026-07-09",
       "momentum": "montant",
-      "note": "Anthropic N-days→heures, Patch Tuesday 206 CVEs, Visa VVAH défensif open-source, fin ingénierie sociale : l'IA démocratise attaque ET défense sans rupture."
+      "note": "HalluSquatting, GhostApproval, Copilot jailbreak, AWS breach 72h, CISA ColdFusion 48h : l'IA accélère attaque ET défense, l'agent devient surface."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
@@ -54,7 +54,7 @@
       "first_seen": "2026-06-15",
       "last_seen": "2026-07-09",
       "momentum": "stable",
-      "note": "Fable 5 coupé sur faux positif 'fix this code', ASSERT évals, assureurs excluent l'IA : la fiabilité bute sur l'incohérence des contrôles."
+      "note": "Dan Luu variance non négligeable, benchmarks synthétiques obsolètes, convergence SWE-1.7/GPT-5.5 : la fiabilité bute sur l'indiscernabilité."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
@@ -62,7 +62,15 @@
       "first_seen": "2026-07-07",
       "last_seen": "2026-07-09",
       "momentum": "stable",
-      "note": "Tokenizers optimaux, décodage spéculatif, CUDA hackable : la commodification pousse l'optimisation à chaque couche, du vocabulaire au kernel."
+      "note": "SWE-1.7 ≈ GPT-5.5, convergence des écarts, JEPA comme alternative : la commodification pousse vers de nouvelles architectures."
+    },
+    {
+      "label": "Architectures post-transformer et world models",
+      "category": "ia",
+      "first_seen": "2026-07-09",
+      "last_seen": "2026-07-09",
+      "momentum": "nouveau",
+      "note": "JEPA prédiction en espace latent, MIRA world model multi-agents : contourner le transformer en changeant ce que le modèle prédit."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
@@ -70,7 +78,7 @@
       "first_seen": "2026-06-19",
       "last_seen": "2026-07-09",
       "momentum": "stable",
-      "note": "RoguePlanet 7e zero-day Defender, Velvet Ant décennie Linux, UNC6508 REDCap 1 an : la patience offensive surpasse les fenêtres de détection."
+      "note": "GhostLock 15 ans Linux, FortiBleed patch insuffisant, Athena preuve d'exploitabilité : la patience offensive redéfinit la priorisation."
     },
     {
       "label": "Supply chain developer comme maillon faible",
@@ -78,15 +86,15 @@
       "first_seen": "2026-07-02",
       "last_seen": "2026-07-09",
       "momentum": "montant",
-      "note": "SearchLeak Copilot, LiteLLM RCE, SMBaloo ARM64 kernel, NPM 12 approve-scripts : l'IA devient surface d'attaque, la confiance bascule vers l'explicite."
+      "note": "HalluSquatting packages hallucinés, GhostApproval symlinks, Copilot jailbreak, AWS breach 72h : l'assistant IA devient vecteur multi-couches."
     },
     {
-      "label": "WASM Component Model : runtime portable mature",
+      "label": "Edge computing : du cache à la coordination globale",
       "category": "devops",
-      "first_seen": "2026-07-06",
+      "first_seen": "2026-07-09",
       "last_seen": "2026-07-09",
-      "momentum": "montant",
-      "note": "Component Model 1.0 officialisé, Pyodide 314 wheels PyPI, wasi-gfx instable : l'écosystème atteint sa majorité mais les frictions toolchain restent."
+      "momentum": "nouveau",
+      "note": "Cloudflare Drop + Meerkat consensus distribué mondial : l'edge passe de cache stateless à couche de coordination d'état planétaire."
     },
     {
       "label": "Méthodes formelles et architecture résiliente",
@@ -94,7 +102,7 @@
       "first_seen": "2026-06-15",
       "last_seen": "2026-07-09",
       "momentum": "stable",
-      "note": "io_uring registered buffers, latence fine, FUSE grassroots, FinOps : la frugalité descend à chaque couche de la stack."
+      "note": "Data centre chauffe piscine publique, récupération thermique municipale : la frugalité énergétique transforme l'opex en service public."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
@@ -102,15 +110,7 @@
       "first_seen": "2026-06-07",
       "last_seen": "2026-07-09",
       "momentum": "stable",
-      "note": "ASSERT évals agents, NPM 12 approve-scripts, code 'sanctioned' kernel : le dev pivote vers l'évaluation et le consentement explicite."
-    },
-    {
-      "label": "Observabilité GPU et dépendance NVIDIA",
-      "category": "devops",
-      "first_seen": "2026-07-05",
-      "last_seen": "2026-07-09",
-      "momentum": "montant",
-      "note": "Polar Signals CUDA PC sampling en prod, Modular alternatives, TorchCodec HDR : l'observabilité GPU se démocratise mais confirme la centralité NVIDIA."
+      "note": "Bun migre vers Rust, TypeScript 7 saut majeur : les toolchains JS cherchent dans le métal compilé la vitesse que le runtime ne fournit plus."
     },
     {
       "label": "Surveillance & biométrie",
@@ -118,31 +118,23 @@
       "first_seen": "2026-05-13",
       "last_seen": "2026-07-09",
       "momentum": "montant",
-      "note": "NSO ignore ordonnance, SDSU 1300 caméras, US lit emails néerlandais : l'encadrement recule systématiquement sur tous les fronts."
+      "note": "UE Chat Control revival, Transsion 1 téléphone sur 2 en Afrique, messageries perso bannies : l'encadrement recule sur tous les fronts."
     },
     {
       "label": "Interrupteur global et kill switch souverain",
       "category": "societe",
       "first_seen": "2026-07-08",
       "last_seen": "2026-07-09",
-      "momentum": "montant",
-      "note": "Fable 5 coupé en 3h sur faux positif 'fix this code' : kill switch sans recours ni transparence, la régulation devient arme souveraine."
+      "momentum": "stable",
+      "note": "PlayStation efface jeux après 3 ans, John Deere concède réparation : la propriété numérique se bifurque entre concession et révocation."
     },
     {
-      "label": "Guerre autonome et cyber-conflits hors cadre",
+      "label": "Désenchantement IA au travail",
       "category": "societe",
-      "first_seen": "2026-07-08",
-      "last_seen": "2026-07-09",
-      "momentum": "nouveau",
-      "note": "Premiers kills par drones autonomes, Canada stratégie IA balayée, assureurs excluent l'IA : le vide normatif devient structurel."
-    },
-    {
-      "label": "Rétrocomputing & préservation",
-      "category": "diy",
       "first_seen": "2026-05-13",
       "last_seen": "2026-07-09",
-      "momentum": "stable",
-      "note": "IBM 604 (1948), ordinateurs bloc Est, PDP-11, Amiga 1232 PiStorm : la maîtrise du fer reste le socle de l'appropriation technique."
+      "momentum": "montant",
+      "note": "Brown University notes -50% en présentiel, LLM burnout, IA bouleverse réécritures : la promesse productiviste bute sur évaluation et fatigue."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
@@ -150,15 +142,15 @@
       "first_seen": "2026-06-08",
       "last_seen": "2026-07-09",
       "momentum": "montant",
-      "note": "BC-250 PS5 unlock, Coreboot X61, C12QE nanotubes, patch cardiaque, antennes sous-marines : le hardware-frontière s'étend du déverrouillage au vivant."
+      "note": "John Deere right to repair accord FTC : la souveraineté matérielle gagne un précédent réglementaire majeur après des années de blocage."
     },
     {
-      "label": "Désenchantement IA au travail",
+      "label": "Guerre autonome et cyber-conflits hors cadre",
       "category": "societe",
-      "first_seen": "2026-05-13",
-      "last_seen": "2026-07-07",
+      "first_seen": "2026-07-08",
+      "last_seen": "2026-07-09",
       "momentum": "stable",
-      "note": "Big Tech admet suppressions, AI-first devient repoussoir, stochastic parrots résonnent : le récit IA collisionne avec le réel."
+      "note": "Premiers kills par drones autonomes, Canada stratégie IA balayée, assureurs excluent l'IA : le vide normatif devient structurel."
     }
   ],
   "watchlist": [
@@ -184,7 +176,7 @@
       "label": "Code 'sanctioned' : fracture de gouvernance kernel",
       "category": "devops",
       "since": "2026-07-09",
-      "note": "Patches au noyau Linux dont traçabilité et origine posent question : l'ouverture du processus de contribution entre en tension avec la confiance supply chain."
+      "note": "Patches au noyau Linux dont traçabilité et origine posent question : l'ouverture du processus entre en tension avec la confiance supply chain."
     },
     {
       "label": "Visa VVAH : défense agentique open-source",
@@ -196,33 +188,45 @@
       "label": "Fin de l'ingénierie sociale : IA comme vigilance système",
       "category": "ia",
       "since": "2026-07-09",
-      "note": "OS natifs IA passent de la vigilance utilisateur à la vigilance système : l'IA pourrait rendre le phishing obsolète en déplaçant la défense au niveau OS."
+      "note": "OS natifs IA passent de la vigilance utilisateur à la vigilance système : l'IA pourrait rendre le phishing obsolète au niveau OS."
+    },
+    {
+      "label": "Athena coalition : preuve d'exploitabilité vs énumération CVE",
+      "category": "infosec",
+      "since": "2026-07-09",
+      "note": "Chainguard-Qualys substituent la preuve d'exploitabilité à l'énumération de CVE : la priorisation défensive change de paradigme."
+    },
+    {
+      "label": "Transsion : télémétrie commerciale massale dans le Sud global",
+      "category": "societe",
+      "since": "2026-07-09",
+      "note": "1 téléphone sur 2 vendu en Afrique exfiltre vers la Chine : la surveillance commerciale massale cible le Sud global."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Big Tech admet suppressions, AI-first devient repoussoir, assureurs excluent l'IA : la productivité bute sur des externalités systémiques sans cadre normatif cohérent."
+      "note": "Brown University -50% en présentiel, LLM burnout, assureurs excluent l'IA : la productivité bute sur des externalités systémiques sans cadre normatif cohérent."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "NSO ignore ordonnances, SDSU 1300 caméras, US lit emails néerlandais, tandis que hardware ouvert et IA air-gapped maintiennent un contre-feu technique qui recule."
+      "note": "Chat Control revival, Transsion 1 téléphone sur 2 en Afrique, messageries perso bannies, tandis que hardware ouvert et IA air-gapped maintiennent un contre-feu technique qui recule."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "Fable 5 coupé en 3h sur faux positif, ANSSI force le post-quantique : la régulation sert tantôt la souveraineté, tantôt l'interrupteur global sans recours."
+      "note": "John Deere concède la réparation via FTC, PlayStation efface les jeux après 3 ans : la régulation sert tantôt la souveraineté, tantôt l'interrupteur commercial sans recours."
     },
     {
       "label": "IA comme outil de défense vs IA comme surface d'attaque",
-      "note": "Visa VVAH défensif open-source, Anthropic N-days, SearchLeak Copilot, SMBaloo kernel : l'arsenal IA bascule sans rupture entre attaque et défense, l'outil devient sa propre faille."
+      "note": "HalluSquatting, GhostApproval, Copilot jailbreak, AWS breach 72h d'un côté ; Visa VVAH défensif open-source de l'autre : l'arsenal IA bascule sans rupture, l'outil devient sa propre faille."
     },
     {
       "label": "Commodification des LLMs vs viabilité économique",
-      "note": "Tokenizers optimaux, décodage spéculatif, CUDA hackable : l'optimisation à chaque couche accélère la commodification plus vite que les business models ne s'adaptent."
+      "note": "SWE-1.7 ≈ GPT-5.5, convergence des écarts, JEPA comme alternative : l'optimisation à chaque couche accélère la commodification plus vite que les business models ne s'adaptent."
     },
     {
       "label": "Autonomie technique accélérée vs cadres normatifs en retard",
-      "note": "Drones autonomes létaux, Fable 5 kill switch sur faux positif, agents en faillite, assureurs en retrait : l'autonomie accélère sur tous les fronts tandis que droit, doctrine et assurance sont en retard d'une guerre."
+      "note": "Drones autonomes létaux, Fable 5 kill switch sur faux positif, agents en faillite, assureurs en retrait : l'autonomie accélère sur tous les fronts tandis que droit et doctrine sont en retard."
     }
   ]
 }

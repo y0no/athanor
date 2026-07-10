@@ -1,33 +1,42 @@
 {
-  "updated_at": "2026-07-09",
+  "updated_at": "2026-07-10",
   "synthesis": {
-    "headline": "Le code arbitre les modèles et devient la faille",
-    "narrative": "Les agents de codage convergent vers une indiscernabilité qui vide les benchmarks de sens, tandis qu'<strong>HalluSquatting</strong> et <strong>GhostApproval</strong> transforment ces mêmes agents en surface d'attaque — l'outil d'évaluation devient sa propre faille. Pendant ce temps, <strong>Cloudflare</strong> élève l'edge de cache à coordination globale et l'UE s'apprête à réautoriser le scanning des messages privés : la confiance recule à chaque couche. Le désenchantement s'accélère — <strong>Brown University</strong> voit ses notes chuter de 50% sans l'IA — tandis que <strong>JEPA</strong> et les <em>world models</em> explorent une voie au-delà du transformer."
+    "headline": "Modèles indiscernables, le contrôle devient le champ de bataille",
+    "narrative": "La convergence de GPT-5.6, GLM 5.2 et Muse Spark confirme que la puissance brute n'est plus le différentiateur — <strong>Mozilla AI</strong> formalise le basculement vers une <em>couche de contrôle</em> du raisonnement agentique. Cette couche est aussi celle où le DevOps se reconfigure (filesystems virtuels, frameworks agent-first) et où l'infosec découvre sa surface la plus dangereuse : <strong>GitLost</strong> démontre le premier ransomware piloté par IA. Pendant ce temps, la surveillance se normalise — Chat Control adopté, Doctolib et Meta récoltent les données par défaut — étendant le contrôle des modèles aux citoyens eux-mêmes."
   },
   "currents": [
     {
-      "label": "L'IA devient sa propre infrastructure d'attaque",
-      "note": "Les agents de codage qui évaluent les LLMs (benchmarks, codebases) sont les mêmes outils qui deviennent vecteurs d'attaque (HalluSquatting, GhostApproval). L'évaluateur et la faille convergent.",
+      "label": "L'infrastructure agentique devient le terrain de différenciation",
+      "note": "Mozilla AI formalise la couche de contrôle, Knock reconstruit l'interface agent-infrastructure, GitLost exploite cette même couche : le contrôle est simultanément empowerment et surface d'attaque.",
       "categories": [
         "ia",
+        "devops",
         "infosec"
       ]
     },
     {
-      "label": "Convergence des modèles, divergence des effets",
-      "note": "Les modèles convergent (SWE-1.7 ≈ GPT-5.5) mais leurs effets divergent : désenchantement (Brown University), surveillance (Chat Control), propriété révocable (PlayStation). L'indiscernabilité technique produit une fragmentation sociale.",
+      "label": "L'IA bascule : outil défensif et surface d'attaque simultanément",
+      "note": "GitLost ransomware IA, UK Cyber Shield défense agentique, Microsoft Patch Tuesdays : l'asymétrie attaque-défense se rétrécit, les deux côtés utilisent les mêmes primitives agentiques.",
+      "categories": [
+        "ia",
+        "infosec",
+        "societe"
+      ]
+    },
+    {
+      "label": "Commodification par défaut : des modèles aux données personnelles",
+      "note": "Les modèles convergent et se commodifient, les données personnelles deviennent le carburant rare récolté par défaut : Doctolib, Meta, Transsion prolongent la même logique d'exploitation sans consentement.",
       "categories": [
         "ia",
         "societe"
       ]
     },
     {
-      "label": "La confiance descend dans la stack",
-      "note": "Des benchmarks LLM (ia) à la supply chain (infosec) au consensus edge (devops), la confiance est renégociée à chaque couche : preuve d'exploitabilité, approve-scripts, code sanctioned.",
+      "label": "Rust comme memory safety systématique de l'infrastructure",
+      "note": "pgrust 100% tests PostgreSQL, BBOT 3.0, npm 12 durcit : Rust cesse d'être greenfield, devient la cible des réécritures où memory safety rejoint performance et durcissement supply chain.",
       "categories": [
         "devops",
-        "infosec",
-        "ia"
+        "infosec"
       ]
     }
   ],
@@ -36,89 +45,89 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-09",
+      "last_seen": "2026-07-10",
       "momentum": "stable",
-      "note": "SWE-1.7 rattrape GPT-5.5, benchmarks indiscernables, Dan Luu alerte sur variance : l'évaluation devient le goulot d'étranglement de l'autonomie."
+      "note": "GPT-5.6 + ChatGPT Work, GLM 5.2 TVA, Muse Spark : convergence confirmée, l'intégration produit remplace le score brut comme différentiateur."
+    },
+    {
+      "label": "Couche de contrôle agentique",
+      "category": "ia",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "momentum": "nouveau",
+      "note": "Mozilla AI formalise le basculement vers contrôle/inspection du raisonnement. Knock filesystem, entire.io VCS, FableCut : la supervision devient la différenciation."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-09",
+      "last_seen": "2026-07-10",
       "momentum": "montant",
-      "note": "HalluSquatting, GhostApproval, Copilot jailbreak, AWS breach 72h, CISA ColdFusion 48h : l'IA accélère attaque ET défense, l'agent devient surface."
+      "note": "GitLost premier ransomware IA par prompt injection, AI gateway cryptomining, Microsoft Patch Tuesdays : l'agent devient vecteur, la défense s'industrialise (UK Cyber Shield)."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-09",
+      "last_seen": "2026-07-10",
       "momentum": "stable",
-      "note": "Dan Luu variance non négligeable, benchmarks synthétiques obsolètes, convergence SWE-1.7/GPT-5.5 : la fiabilité bute sur l'indiscernabilité."
+      "note": "GPT-5.6, GLM 5.2, Muse Spark : benchmarks indiscernables, la différenciation se déplace vers l'intégration produit et le ciblage vertical."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-07-09",
+      "last_seen": "2026-07-10",
       "momentum": "stable",
-      "note": "SWE-1.7 ≈ GPT-5.5, convergence des écarts, JEPA comme alternative : la commodification pousse vers de nouvelles architectures."
-    },
-    {
-      "label": "Architectures post-transformer et world models",
-      "category": "ia",
-      "first_seen": "2026-07-09",
-      "last_seen": "2026-07-09",
-      "momentum": "nouveau",
-      "note": "JEPA prédiction en espace latent, MIRA world model multi-agents : contourner le transformer en changeant ce que le modèle prédit."
+      "note": "Mozilla AI confirme : le prochain saut se joue dans la couche de contrôle, pas dans les poids. La commodification pousse vers l'infrastructure."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-09",
+      "last_seen": "2026-07-10",
       "momentum": "stable",
-      "note": "GhostLock 15 ans Linux, FortiBleed patch insuffisant, Athena preuve d'exploitabilité : la patience offensive redéfinit la priorisation."
+      "note": "GhostLock $250K Google, npm 12 scripts désactivés, Cloudflare ML-DSA post-quantique : noyau, supply chain et crypto durcissent simultanément."
     },
     {
       "label": "Supply chain developer comme maillon faible",
       "category": "infosec",
       "first_seen": "2026-07-02",
-      "last_seen": "2026-07-09",
+      "last_seen": "2026-07-10",
       "momentum": "montant",
-      "note": "HalluSquatting packages hallucinés, GhostApproval symlinks, Copilot jailbreak, AWS breach 72h : l'assistant IA devient vecteur multi-couches."
-    },
-    {
-      "label": "Edge computing : du cache à la coordination globale",
-      "category": "devops",
-      "first_seen": "2026-07-09",
-      "last_seen": "2026-07-09",
-      "momentum": "nouveau",
-      "note": "Cloudflare Drop + Meerkat consensus distribué mondial : l'edge passe de cache stateless à couche de coordination d'état planétaire."
+      "note": "GitLost exfiltration dépôts par prompt injection, npm 12 désactive scripts par défaut, GhostApproval symlinks : l'assistant IA reste vecteur, npm durcit."
     },
     {
       "label": "Méthodes formelles et architecture résiliente",
       "category": "devops",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-09",
+      "last_seen": "2026-07-10",
       "momentum": "stable",
-      "note": "Data centre chauffe piscine publique, récupération thermique municipale : la frugalité énergétique transforme l'opex en service public."
+      "note": "EDA robustesse production, Wire quitte Cloudflare Durable Objects, TLS interne : la robustesse se gagne dans l'ingénierie invisible."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-09",
+      "last_seen": "2026-07-10",
       "momentum": "stable",
-      "note": "Bun migre vers Rust, TypeScript 7 saut majeur : les toolchains JS cherchent dans le métal compilé la vitesse que le runtime ne fournit plus."
+      "note": "pgrust 100% tests PostgreSQL, Bun vers Rust, BBOT 3.0 : Rust cesse d'être greenfield, devient cible systématique des réécritures d'infrastructure."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-09",
+      "last_seen": "2026-07-10",
       "momentum": "montant",
-      "note": "UE Chat Control revival, Transsion 1 téléphone sur 2 en Afrique, messageries perso bannies : l'encadrement recule sur tous les fronts."
+      "note": "Chat Control adopté par Parlement UE prolongé 2028, Doctolib/Meta données par défaut, INTERPOL 5811 arrestations : l'opt-out discret se substitue à l'opt-in."
+    },
+    {
+      "label": "Données personnelles comme carburant IA",
+      "category": "societe",
+      "first_seen": "2026-07-10",
+      "last_seen": "2026-07-10",
+      "momentum": "nouveau",
+      "note": "Doctolib santé, Meta Instagram, Transsion télémétrie : exploitation par défaut des données comme carburant IA, opt-out relégué dans les paramètres."
     },
     {
       "label": "Interrupteur global et kill switch souverain",
@@ -133,24 +142,24 @@
       "category": "societe",
       "first_seen": "2026-05-13",
       "last_seen": "2026-07-09",
-      "momentum": "montant",
-      "note": "Brown University notes -50% en présentiel, LLM burnout, IA bouleverse réécritures : la promesse productiviste bute sur évaluation et fatigue."
+      "momentum": "stable",
+      "note": "Brown University -50% en présentiel, LLM burnout, Helix vishing prouve que l'ingénierie sociale reste efficace malgré les promesses de vigilance IA."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
       "last_seen": "2026-07-09",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "John Deere right to repair accord FTC : la souveraineté matérielle gagne un précédent réglementaire majeur après des années de blocage."
     },
     {
       "label": "Guerre autonome et cyber-conflits hors cadre",
       "category": "societe",
       "first_seen": "2026-07-08",
-      "last_seen": "2026-07-09",
+      "last_seen": "2026-07-10",
       "momentum": "stable",
-      "note": "Premiers kills par drones autonomes, Canada stratégie IA balayée, assureurs excluent l'IA : le vide normatif devient structurel."
+      "note": "UK déploie plan défense IA agentique Cyber Shield, INTERPOL First Light 5811 arrestations : les États adoptent l'IA défensive, le vide normatif persiste."
     }
   ],
   "watchlist": [
@@ -164,7 +173,7 @@
       "label": "Post-quantique : ANSSI force la migration dès 2027",
       "category": "societe",
       "since": "2026-07-07",
-      "note": "ANSSI subordonne certification au post-quantique dès 2027 : première agence à imposer unilatéralement la migration."
+      "note": "Cloudflare presse ML-DSA, confirmant le signal ANSSI : la migration post-quantique passe de l'agenda réglementaire à l'urgence opérateur."
     },
     {
       "label": "SkillCloak et evasion de scanners statiques",
@@ -188,29 +197,29 @@
       "label": "Fin de l'ingénierie sociale : IA comme vigilance système",
       "category": "ia",
       "since": "2026-07-09",
-      "note": "OS natifs IA passent de la vigilance utilisateur à la vigilance système : l'IA pourrait rendre le phishing obsolète au niveau OS."
+      "note": "Helix vishing SharePoint démontre que l'ingénierie sociale reste efficace : la promesse de vigilance système par IA n'est pas encore tenue."
     },
     {
-      "label": "Athena coalition : preuve d'exploitabilité vs énumération CVE",
+      "label": "GitLost : premier ransomware piloté par IA",
       "category": "infosec",
-      "since": "2026-07-09",
-      "note": "Chainguard-Qualys substituent la preuve d'exploitabilité à l'énumération de CVE : la priorisation défensive change de paradigme."
+      "since": "2026-07-10",
+      "note": "Agent GitHub détourné par prompt injection pour exfiltrer dépôts privés : première attaque ransomware end-to-end pilotée par IA, précédent structurel."
     },
     {
-      "label": "Transsion : télémétrie commerciale massale dans le Sud global",
-      "category": "societe",
-      "since": "2026-07-09",
-      "note": "1 téléphone sur 2 vendu en Afrique exfiltre vers la Chine : la surveillance commerciale massale cible le Sud global."
+      "label": "pgrust : réécriture Rust validée à 100% de tests",
+      "category": "devops",
+      "since": "2026-07-10",
+      "note": "PostgreSQL réécrit en Rust passe 100% des tests de régression : preuve que la memory safety peut égaler la correction fonctionnelle d'un projet historique."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Brown University -50% en présentiel, LLM burnout, assureurs excluent l'IA : la productivité bute sur des externalités systémiques sans cadre normatif cohérent."
+      "note": "Brown University -50% en présentiel, LLM burnout, Helix vishing prouve la persistance de l'ingénierie sociale : la productivité bute sur des externalités systémiques sans cadre normatif cohérent."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "Chat Control revival, Transsion 1 téléphone sur 2 en Afrique, messageries perso bannies, tandis que hardware ouvert et IA air-gapped maintiennent un contre-feu technique qui recule."
+      "note": "Chat Control adopté par le Parlement UE, Doctolib et Meta récoltent les données par défaut, Transsion 1 téléphone sur 2 en Afrique : l'opt-out discret devient la norme, les contre-feux techniques reculent."
     },
     {
       "label": "Régulation : bouclier citoyen ou arme commerciale",
@@ -218,15 +227,15 @@
     },
     {
       "label": "IA comme outil de défense vs IA comme surface d'attaque",
-      "note": "HalluSquatting, GhostApproval, Copilot jailbreak, AWS breach 72h d'un côté ; Visa VVAH défensif open-source de l'autre : l'arsenal IA bascule sans rupture, l'outil devient sa propre faille."
+      "note": "GitLost ransomware IA, AI gateway cryptomining, GhostApproval d'un côté ; UK Cyber Shield défense agentique de l'autre : l'arsenal IA bascule sans rupture, l'outil devient sa propre faille."
     },
     {
       "label": "Commodification des LLMs vs viabilité économique",
-      "note": "SWE-1.7 ≈ GPT-5.5, convergence des écarts, JEPA comme alternative : l'optimisation à chaque couche accélère la commodification plus vite que les business models ne s'adaptent."
+      "note": "GPT-5.6, GLM 5.2, Muse Spark convergent, Mozilla confirme le basculement vers la couche de contrôle : l'optimisation accélère la commodification plus vite que les business models ne s'adaptent."
     },
     {
       "label": "Autonomie technique accélérée vs cadres normatifs en retard",
-      "note": "Drones autonomes létaux, Fable 5 kill switch sur faux positif, agents en faillite, assureurs en retrait : l'autonomie accélère sur tous les fronts tandis que droit et doctrine sont en retard."
+      "note": "GitLost ransomware IA, UK déploie défense agentique, agents en faillite, assureurs en retrait : l'autonomie accélère sur tous les fronts tandis que droit et doctrine sont en retard."
     }
   ]
 }

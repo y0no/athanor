@@ -4,121 +4,121 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-12",
+      "last_seen": "2026-07-13",
       "momentum": "stable",
-      "note": "JudePuffer pilote seul un ransomware de bout en bout : l'agent devient opérateur, l'humain ne fait que viser la cible."
+      "note": "GPT-5.6 2,2x plus rapide et 27% moins cher en prod, mais Claude Code 33k tokens overhead vs 7k OpenCode : l'optimisation passe par le rationnement."
     },
     {
       "label": "Couche de contrôle agentique",
       "category": "ia",
       "first_seen": "2026-07-10",
-      "last_seen": "2026-07-12",
+      "last_seen": "2026-07-13",
       "momentum": "montant",
-      "note": "Sqlsure confine le SQL généré, audit Grok CLI révèle l'exfiltration réseau, gouvernance sans responsable désigné."
+      "note": "Skillscript formalise l'orchestration d'outils en langage sandboxé : la gouvernance agentique cherche ses standards de confinement."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
       "last_seen": "2026-07-12",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "JudePuffer 600 variantes auto-corrigées en secondes : l'agent IA mène une campagne ransomware complète sans intervention humaine."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-12",
+      "last_seen": "2026-07-13",
       "momentum": "stable",
-      "note": "Claude dégradation perçue, Ghost Font illisible pour l'IA, reverse centaurs théorisent l'humain comme correcteur de l'IA."
+      "note": "One-Step Trap formalise le piège : l'IA rétrécit l'éventail des idées, la mémoire persistante risque d'ancrer les agents."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-07-12",
+      "last_seen": "2026-07-13",
       "momentum": "stable",
-      "note": "Financement circulaire GPU Nvidia/CoreWeave/Nebius + Hotz cult of intelligence : la bulle spéculative se structure."
+      "note": "Flash-MSA entraîne sur 1M tokens, datacenters 1/3 émissions France : l'efficacité bute sur le coût physique non confirmé."
     },
     {
       "label": "Inférence locale et distribuée",
       "category": "ia",
       "first_seen": "2026-07-12",
       "last_seen": "2026-07-12",
-      "momentum": "nouveau",
+      "momentum": "stable",
       "note": "Mesh LLM P2P sur iroh, Reame CPU auto-optimise, Qwen3.5-122B daily driver : l'inférence hors-cloud devient quotidienne."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-12",
+      "last_seen": "2026-07-13",
       "momentum": "stable",
-      "note": "Vidar Stealer 2.0 anti-forensique, CMS vulnérables exploités par IA : la dette technique persiste à toutes les couches."
+      "note": "Motorola MR2600 RCE, http.sys overflow kernel, supply chain exploitée : l'infrastructure de base reste la surface la plus rentable."
     },
     {
-      "label": "Supply chain developer comme maillon faible",
+      "label": "Identité comme champ de bataille",
       "category": "infosec",
-      "first_seen": "2026-07-02",
-      "last_seen": "2026-07-12",
-      "momentum": "montant",
-      "note": "CaddySmith automatise les redirectors C2, Vidar injecte Copilot : l'infrastructure de confiance reste exploitée."
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "momentum": "nouveau",
+      "note": "AWS Cognito : l'attaquant fait frapper une identité neuve. eSIM adopte ML-DSA post-quantique en miroir défensif."
     },
     {
       "label": "Méthodes formelles et architecture résiliente",
       "category": "devops",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-12",
+      "last_seen": "2026-07-13",
       "momentum": "stable",
-      "note": "SLA Credit Watch dénonce l'opacité cloud, ZeroFS défie S3, ClickHouse 4x PgBouncer : l'open-source comble le flou."
+      "note": "eSIM attestation ML-DSA avec preuves formelles, Croc transfert chiffré E2E : l'open-source comble le flou cloud par la preuve."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-12",
+      "last_seen": "2026-07-13",
       "momentum": "stable",
-      "note": "Tailscale cassé par NAT d'hôtel, auth tokens re-questionnés : les fondamentaux réseau restent un terrain de débogage permanent."
+      "note": "RJ45 fondamentaux, Croc élimine SSH, Automation Without Understanding interroge les limites : les fondamentaux restent non résolus."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-12",
+      "last_seen": "2026-07-13",
       "momentum": "montant",
-      "note": "Google arrête via alertes auto, caméra faciale obligatoire en UE, voix humaine doit prouver son humanité face à la machine."
-    },
-    {
-      "label": "Données personnelles comme carburant IA",
-      "category": "societe",
-      "first_seen": "2026-07-10",
-      "last_seen": "2026-07-12",
-      "momentum": "stable",
-      "note": "Glendale 794K enregistrements par ShinyHunters : les acteurs classiques se superposent à l'automatisation IA."
-    },
-    {
-      "label": "Interrupteur global et kill switch souverain",
-      "category": "societe",
-      "first_seen": "2026-07-08",
-      "last_seen": "2026-07-12",
-      "momentum": "stable",
-      "note": "Non-compete prolifèrent, colleges must prove outcomes : la régulation oscille entre protection et contrainte sans restaurer la confiance."
+      "note": "Math.tanh fingerprinting OS, GRU sur télémétrie souris, données massives : la surveillance s'industrialise par les détails techniques."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-07-12",
+      "last_seen": "2026-07-13",
       "momentum": "montant",
-      "note": "RISCBoy console RISC-V de zéro, dock Thunderbolt déterministe : la souveraineté matérielle s'étend du compute au périphérique."
+      "note": "Premier PCB démystifié, Kode Dot pocket device, Kurvengeahr CAD/CAM navigateur : la chaîne open-source s'étend au prototypage."
     },
     {
       "label": "Guerre autonome et cyber-conflits hors cadre",
       "category": "societe",
       "first_seen": "2026-07-08",
       "last_seen": "2026-07-12",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "JudePuffer agent ransomware autonome : le cyber-conflit bascule vers l'autonomie complète sans cadre normatif."
+    },
+    {
+      "label": "Coût environnemental des datacenters IA",
+      "category": "societe",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "momentum": "nouveau",
+      "note": "GAFAM = 1/3 émissions France, Irlande 23% électricité : le boom IA bascule d'enjeu climatique à souveraineté énergétique."
+    },
+    {
+      "label": "SDR et radio logicielle open-source",
+      "category": "diy",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-13",
+      "momentum": "nouveau",
+      "note": "Horloge cohérente RTL-SDR, WebSpy Airspy, spectral painting : le SDR passe du bricolage pionnier à la maturité pluridisciplinaire."
     }
   ],
   "watchlist": [
@@ -126,37 +126,25 @@
       "label": "Open Memory Protocol : mémoire agentique unifiée",
       "category": "ia",
       "since": "2026-06-30",
-      "note": "Ryzen AI Halo 70B local + Mesh LLM P2P confirment : l'infrastructure IA locale devient crédible, le magasin partagé crée des canaux de fuite."
+      "note": "Adaptive Recall implémente la mémoire persistante sur MCP : l'infrastructure agentique se concrétise, le magasin partagé crée des canaux de fuite."
     },
     {
       "label": "Post-quantique : ANSSI force la migration dès 2027",
       "category": "societe",
       "since": "2026-07-07",
-      "note": "Cloudflare ML-DSA confirmait le signal ANSSI : la migration post-quantique passe de l'agenda réglementaire à l'urgence opérateur."
+      "note": "eSIM attestation ML-DSA avec preuves formelles : la migration post-quantique passe de l'agenda réglementaire à l'implémentation défensive."
     },
     {
       "label": "SkillCloak et evasion de scanners statiques",
       "category": "infosec",
       "since": "2026-07-07",
-      "note": "Vidar Stealer 2.0 confirme : falsification d'horodatages, process hollowing, injection Copilot. L'évasion statique prime sur l'exploit."
-    },
-    {
-      "label": "Code 'sanctioned' : fracture de gouvernance kernel",
-      "category": "devops",
-      "since": "2026-07-09",
-      "note": "ltm eBPF instrumente le noyau pour l'historique machine : la visibilité kernel devient un enjeu de gouvernance supply chain."
+      "note": "AntiVE-BehaviorWatch GRU + Math.tanh fingerprinting : l'évasion quitte le statique pour le comportemental, chaque camp raffine sa lecture du signal."
     },
     {
       "label": "Neuro-ciblage IA : vidéos générées pour manipuler le cerveau",
       "category": "ia",
       "since": "2026-07-11",
       "note": "EPFL Nevo démontre des vidéos IA activant sélectivement des régions cérébrales : l'offensive cognitive devient concevable."
-    },
-    {
-      "label": "HalluSquatting : hallucinations comme vecteur de botnet",
-      "category": "infosec",
-      "since": "2026-07-11",
-      "note": "JudePuffer confirme la bascule : les agents IA deviennent vecteurs d'attaques à grande échelle par leur propre autonomie."
     },
     {
       "label": "Ghost Font : typographie comme résistance à l'IA",
@@ -168,21 +156,29 @@
       "label": "Financement circulaire GPU : bulle spéculative",
       "category": "societe",
       "since": "2026-07-12",
-      "note": "Nvidia/CoreWeave/Nebius s'entretiennent mutuellement : la bulle GPU dépend d'une demande d'inference jamais confirmée."
+      "note": "Datacenters 1/3 émissions France, Irlande 23% électricité : le coût physique s'ajoute à la bulle, la demande d'inference reste non confirmée."
+    },
+    {
+      "label": "One-Step Trap : l'optimisation immédiate étouffe l'exploration",
+      "category": "ia",
+      "since": "2026-07-13",
+      "note": "IEEE Spectrum + Sutton formalisent le piège : l'IA rétrécit l'éventail des idées, la mémoire persistante pourrait l'amplifier."
+    },
+    {
+      "label": "Langages sandboxés pour orchestration d'agents",
+      "category": "devops",
+      "since": "2026-07-13",
+      "note": "Skillscript : langage déclaratif sandboxé pour orchestration d'outils, première tentative de standard formel pour confiner les agents autonomes."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "Claude dégradation perçue, Ghost Font résiste à l'IA, reverse centaurs théorisent le basculement : la productivité bute sur un désenchantement qui s'arme techniquement."
+      "note": "GPT-5.6 plus rapide en prod, mais One-Step Trap révèle que l'IA rétrécit l'éventail des idées : la productivité bute sur un appauvrissement cognitif qui s'arme théoriquement."
     },
     {
       "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "Google arrête via alertes auto, caméra faciale obligatoire en UE, voix humaine doit prouver son humanité : la surveillance s'auto-légitime sans débat démocratique."
-    },
-    {
-      "label": "Régulation : bouclier citoyen ou arme commerciale",
-      "note": "Non-compete prolifèrent, colleges must prove outcomes, consumer rage : la régulation économique oscille entre protection et contrainte sans restaurer la confiance systémique."
+      "note": "Math.tanh fingerprinting OS, GRU sur télémétrie souris : la surveillance s'industrialise par les détails techniques les plus fins, sans débat démocratique."
     },
     {
       "label": "IA comme outil de défense vs IA comme surface d'attaque",
@@ -190,18 +186,22 @@
     },
     {
       "label": "Commodification des LLMs vs viabilité économique",
-      "note": "Financement circulaire GPU Nvidia/CoreWeave/Nebius, Hotz dénonce le culte de l'intelligence : l'idéologie masque une architecture financière dont la pérennité n'est pas prouvée."
+      "note": "Datacenters 1/3 émissions France, Irlande 23% électricité, financement circulaire GPU : le coût physique s'ajoute à la bulle, la demande d'inference reste non confirmée."
     },
     {
       "label": "Dette technique vs course en avant",
-      "note": "Vidar Stealer 2.0 anti-forensique, CMS vulnérables exploités par IA, Tailscale cassé par NAT : les fondamentaux restent non résolus pendant que l'agentique s'accélère."
+      "note": "Motorola RCE, http.sys overflow, RJ45 fondamentaux : l'infrastructure de base reste non résolue pendant que l'agentique et l'attention à 1M tokens s'accélèrent."
+    },
+    {
+      "label": "Ouverture open-source vs verrouillage infrastructurel",
+      "note": "Karpenter multi-cloud OVH, Croc E2E, PCB open-source vs datacenters 23% réseau irlandais : l'ouverture technique coexiste avec un verrouillage infrastructurel."
     }
   ],
   "strategy_notes": [
-    "JudePuffer + Grok CLI + Vidar Copilot : l'agent IA devient son propre vecteur d'attaque. Surveiller l'émergence de standards de confinement et d'audit réseau des agents autonomes.",
-    "Mesh LLM P2P + Reame + Qwen3.5-122B + RISCBoy : la souveraineté matérielle s'étend du compute au silicium. Surveiller l'écosystème d'outils d'inférence distribuée et de hardware open-source.",
-    "Claude dégradation + Ghost Font + reverse centaurs : le désenchantement s'arme techniquement. Surveiller l'émergence d'outils de résistance à l'IA et le discours sur le contrôle humain.",
-    "Financement circulaire GPU + Hotz cult of intelligence : la bulle spéculative se structure. Surveiller les signaux de correction de marché et la demande réelle d'inference."
+    "GPT-5.6 + Claude Code overhead + One-Step Trap : l'optimisation IA passe par le rationnement. Surveiller les standards de profiling de tokens et les métriques de qualité exploratoire.",
+    "Datacenters 1/3 France + Irlande 23% + bulle GPU : le coût physique du boom IA s'impose. Surveiller le rationnement énergétique et la régulation souveraine de l'infrastructure cloud.",
+    "AWS Cognito minting + eSIM ML-DSA + Math.tanh fingerprinting : l'identité devient un champ de bataille post-quantique. Surveiller les standards d'attestation et de vérification.",
+    "Skillscript + PCB + Kode Dot + SDR cohérent : la souveraineté matérielle s'étend du silicium au spectre radio. Surveiller l'écosystème d'outils open-source de prototypage."
   ],
-  "updated_at": "2026-07-12"
+  "updated_at": "2026-07-13"
 }

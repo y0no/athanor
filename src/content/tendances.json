@@ -1,39 +1,41 @@
 {
-  "updated_at": "2026-07-13",
+  "updated_at": "2026-07-14",
   "synthesis": {
-    "headline": "L'IA rationne ses tokens quand ses datacenters vident les réseaux",
-    "narrative": "GPT-5.6 accélère l'agentique en production mais <strong>Claude Code</strong> gaspille 33k tokens avant de lire le prompt : la rentabilité passe par le rationnement. Pendant ce temps, les datacenters des GAFAM atteignent un tiers des émissions de la France et l'Irlande cède 23% de son électricité au cloud. Le <em>One-Step Trap</em> théorise un appauvrissement cognitif pendant que l'<code>eSIM</code> adopte le post-quantique et que la souveraineté matérielle s'étend du PCB au spectre radio."
+    "headline": "L'agent IA s'autonomise plus vite qu'il ne se confine",
+    "narrative": "Les outils de gouvernance agentique (<strong>Jacquard</strong>, <strong>PlanWright</strong>, <strong>Clawk</strong>) prolifèrent au moment exact où <strong>MemGhost</strong> et <strong>Ghostcommit</strong> démontrent que la mémoire persistante des agents est devenue une surface d'attaque sans défense partagée — les <em>context bombs</em> émergent comme première riposte. Pendant que le vrai coût des modèles frontier et la concentration du pouvoir dénoncée par Schneier déplacent le débat de l'efficacité vers la viabilité politique, la fragmentation du périmètre de confiance — du prestataire Lidl à l'IDE Visual Studio — révèle qu'aucune organisation ne maîtrisait réellement ses fournisseurs. La surveillance recule côté État (LAPD abandonne Flock) mais s'accélère côté plateformes (Meta, Microsoft, Samsung) sans débat démocratique équivalent."
   },
   "currents": [
     {
-      "label": "L'optimisation contrainte remplace la puissance brute",
-      "note": "GPT-5.6 rationne les tokens, Claude Code 33k overhead dénoncé, Flash-MSA clairsemée, Skillscript sandboxé : la rentabilité passe par le rationnement et le confinement, non par la puissance brute.",
+      "label": "L'agent IA devient son propre écosystème de sécurité",
+      "note": "Gouvernance (Jacquard, PlanWright), attaques (MemGhost, Ghostcommit) et défense (context bombs, Clawk VMs) convergent vers un même objet : l'agent autonome, sans standard de confinement partagé.",
       "categories": [
         "ia",
+        "infosec",
         "devops"
       ]
     },
     {
-      "label": "L'identité devient un champ de bataille post-quantique",
-      "note": "AWS Cognito minting, eSIM ML-DSA, Math.tanh fingerprinting : l'identité n'est plus seulement volée mais fabriquée, sa vérification devient un enjeu cryptographique de souveraineté.",
+      "label": "Fragmentation du périmètre de confiance tiers",
+      "note": "Centers Lab, Lidl via prestataire, Canvas via XSS, Siggen via VS : la supply chain n'est plus une ligne mais un maquis où chaque fournisseur est une brèche potentielle non maîtrisée.",
       "categories": [
         "infosec",
+        "devops",
         "societe"
       ]
     },
     {
-      "label": "La souveraineté matérielle s'étend du silicium au spectre",
-      "note": "PCB open-source, Kode Dot, SDR cohérent, datacenters 23% réseau irlandais : la souveraineté matérielle s'étend du prototypage à l'infrastructure énergétique nationale.",
+      "label": "La souveraineté matérielle s'institutionnalise",
+      "note": "MorphoHDL, ESBMC-Arduino, eBPF/XDP, Linux sur 32X : la chaîne open-source s'étend du langage de circuit à la preuve formelle, du kernel au silicium.",
       "categories": [
         "diy",
-        "societe"
+        "devops"
       ]
     },
     {
-      "label": "Le comportement devient le nouveau vecteur de détection",
-      "note": "AntiVE-BehaviorWatch GRU sur télémétrie souris, Math.tanh fingerprinting OS, causalité en interprétabilité : la détection quitte le statique pour le comportemental, chaque camp raffine sa lecture du signal.",
+      "label": "La surveillance migre de l'État vers les plateformes",
+      "note": "LAPD laisse expirer Flock par scrupule civique pendant que Meta, Microsoft et Samsung intensifient la surveillance : le débat démocratique ne suit pas la surveillance privée.",
       "categories": [
-        "infosec",
+        "societe",
         "ia"
       ]
     }
@@ -43,41 +45,41 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-14",
       "momentum": "stable",
-      "note": "GPT-5.6 2,2x plus rapide et 27% moins cher en prod, mais Claude Code 33k tokens overhead vs 7k OpenCode : l'optimisation passe par le rationnement."
+      "note": "Étude Microsoft : Claude Code et Copilot CLI en prod début 2026, coût réel excède tokens × prix : l'agentique se documente mais reste coûteux."
     },
     {
       "label": "Couche de contrôle agentique",
       "category": "ia",
       "first_seen": "2026-07-10",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-14",
       "momentum": "montant",
-      "note": "Skillscript formalise l'orchestration d'outils en langage sandboxé : la gouvernance agentique cherche ses standards de confinement."
+      "note": "Jacquard langage code IA-humain, PlanWright control plane, agents.md standard informel, Clawk VMs jetables : la gouvernance se multiplie."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-12",
-      "momentum": "stable",
-      "note": "JudePuffer 600 variantes auto-corrigées en secondes : l'agent IA mène une campagne ransomware complète sans intervention humaine."
+      "last_seen": "2026-07-14",
+      "momentum": "montant",
+      "note": "MemGhost implante faux souvenirs par email, Ghostcommit cache des instructions en images : la mémoire agentique devient surface d'attaque."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-14",
       "momentum": "stable",
-      "note": "One-Step Trap formalise le piège : l'IA rétrécit l'éventail des idées, la mémoire persistante risque d'ancrer les agents."
+      "note": "Economics of RSI formalise l'optimisation récursive : l'One-Step Trap s'arme théoriquement, la mémoire persistante pourrait l'amplifier."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-14",
       "momentum": "stable",
-      "note": "Flash-MSA entraîne sur 1M tokens, datacenters 1/3 émissions France : l'efficacité bute sur le coût physique non confirmé."
+      "note": "Coût réel des frontier models au-delà de tokens × prix, MemStitch 25x TTFT sur vLLM : l'efficacité bute sur des coûts cachés non reconnus."
     },
     {
       "label": "Inférence locale et distribuée",
@@ -91,82 +93,76 @@
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-14",
       "momentum": "stable",
-      "note": "Motorola MR2600 RCE, http.sys overflow kernel, supply chain exploitée : l'infrastructure de base reste la surface la plus rentable."
+      "note": "Routeurs SNMP exploités par FSB, Siggen backdoor VS, Lidl via prestataire : le périmètre de confiance tiers se fragmente."
     },
     {
       "label": "Identité comme champ de bataille",
       "category": "infosec",
       "first_seen": "2026-07-13",
       "last_seen": "2026-07-13",
-      "momentum": "nouveau",
+      "momentum": "stable",
       "note": "AWS Cognito : l'attaquant fait frapper une identité neuve. eSIM adopte ML-DSA post-quantique en miroir défensif."
     },
     {
       "label": "Méthodes formelles et architecture résiliente",
       "category": "devops",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-14",
       "momentum": "stable",
-      "note": "eSIM attestation ML-DSA avec preuves formelles, Croc transfert chiffré E2E : l'open-source comble le flou cloud par la preuve."
+      "note": "ESBMC-Arduino vérification formelle AVR, eBPF/XDP load balancer, IPv4 fantôme sur IPv6 : l'open-source comble le flou par la preuve."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-14",
       "momentum": "stable",
-      "note": "RJ45 fondamentaux, Croc élimine SSH, Automation Without Understanding interroge les limites : les fondamentaux restent non résolus."
+      "note": "Jacquard code IA revu par humain, Clawk VMs jetables, Grok CLI upload Git complet : le confinement agentique devient prérequis DevOps."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-14",
       "momentum": "montant",
-      "note": "Math.tanh fingerprinting OS, GRU sur télémétrie souris, données massives : la surveillance s'industrialise par les détails techniques."
+      "note": "Meta brevète IA émotionnelle continue, Microsoft GDID sans off switch, Samsung menace suppression : la surveillance migre aux plateformes."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-07-13",
+      "last_seen": "2026-07-14",
       "momentum": "montant",
-      "note": "Premier PCB démystifié, Kode Dot pocket device, Kurvengeahr CAD/CAM navigateur : la chaîne open-source s'étend au prototypage."
+      "note": "MorphoHDL langage circuit, ESBMC-Arduino preuve formelle AVR, Linux sur 32X : la chaîne open-source s'étend du silicium à la preuve."
     },
     {
       "label": "Guerre autonome et cyber-conflits hors cadre",
       "category": "societe",
       "first_seen": "2026-07-08",
-      "last_seen": "2026-07-12",
+      "last_seen": "2026-07-14",
       "momentum": "stable",
-      "note": "JudePuffer agent ransomware autonome : le cyber-conflit bascule vers l'autonomie complète sans cadre normatif."
+      "note": "UE/UK sanctions FSB/GRU, Ukraine manipule cartes essence russes, fusion militaire US-Israël : la conflictualité s'industrialise au quotidien."
     },
     {
       "label": "Coût environnemental des datacenters IA",
       "category": "societe",
       "first_seen": "2026-07-13",
-      "last_seen": "2026-07-13",
-      "momentum": "nouveau",
-      "note": "GAFAM = 1/3 émissions France, Irlande 23% électricité : le boom IA bascule d'enjeu climatique à souveraineté énergétique."
+      "last_seen": "2026-07-14",
+      "momentum": "montant",
+      "note": "Schneier déplace le débat du coût énergétique vers la concentration du pouvoir corporatif : le boom IA devient enjeu politique transpartisan."
     },
     {
       "label": "SDR et radio logicielle open-source",
       "category": "diy",
       "first_seen": "2026-07-13",
       "last_seen": "2026-07-13",
-      "momentum": "nouveau",
+      "momentum": "stable",
       "note": "Horloge cohérente RTL-SDR, WebSpy Airspy, spectral painting : le SDR passe du bricolage pionnier à la maturité pluridisciplinaire."
     }
   ],
   "watchlist": [
-    {
-      "label": "Open Memory Protocol : mémoire agentique unifiée",
-      "category": "ia",
-      "since": "2026-06-30",
-      "note": "Adaptive Recall implémente la mémoire persistante sur MCP : l'infrastructure agentique se concrétise, le magasin partagé crée des canaux de fuite."
-    },
     {
       "label": "Post-quantique : ANSSI force la migration dès 2027",
       "category": "societe",
@@ -195,45 +191,51 @@
       "label": "Financement circulaire GPU : bulle spéculative",
       "category": "societe",
       "since": "2026-07-12",
-      "note": "Datacenters 1/3 émissions France, Irlande 23% électricité : le coût physique s'ajoute à la bulle, la demande d'inference reste non confirmée."
+      "note": "Coût réel des frontier models au-delà de tokens × prix, Schneier alerte sur la concentration du pouvoir : la bulle s'arme théoriquement."
     },
     {
-      "label": "One-Step Trap : l'optimisation immédiate étouffe l'exploration",
-      "category": "ia",
-      "since": "2026-07-13",
-      "note": "IEEE Spectrum + Sutton formalisent le piège : l'IA rétrécit l'éventail des idées, la mémoire persistante pourrait l'amplifier."
+      "label": "Context bombs : première défense active contre l'IA offensive",
+      "category": "infosec",
+      "since": "2026-07-14",
+      "note": "Canary secrets qui dégradent le taux de succès des IA offensives et alertent les défenseurs : première riposte concrète à l'agent attaquant."
     },
     {
-      "label": "Langages sandboxés pour orchestration d'agents",
-      "category": "devops",
-      "since": "2026-07-13",
-      "note": "Skillscript : langage déclaratif sandboxé pour orchestration d'outils, première tentative de standard formel pour confiner les agents autonomes."
+      "label": "Consentement sous contrainte : surveillance par coercition",
+      "category": "societe",
+      "since": "2026-07-14",
+      "note": "Samsung menace suppression données santé, Meta écoute continue, Microsoft GDID sans off switch : le consentement devient une fiction technique."
+    },
+    {
+      "label": "Guerre de l'information par les données triviales",
+      "category": "societe",
+      "since": "2026-07-14",
+      "note": "Ukraine manipule cartes essence russes sur plateformes collaboratives : la guerre de l'info descend aux couches les plus triviales du quotidien."
     }
   ],
   "tensions": [
     {
       "label": "Productivité IA vs désenchantement",
-      "note": "GPT-5.6 plus rapide en prod, mais One-Step Trap révèle que l'IA rétrécit l'éventail des idées : la productivité bute sur un appauvrissement cognitif qui s'arme théoriquement."
+      "note": "GPT-5.6 plus rapide en prod, mais One-Step Trap et Economics of RSI révèlent que l'optimisation immédiate étouffe l'exploration : la productivité bute sur un appauvrissement cognitif qui s'arme théoriquement."
     },
     {
-      "label": "Surveillance étendue vs autonomie citoyenne",
-      "note": "Math.tanh fingerprinting OS, GRU sur télémétrie souris : la surveillance s'industrialise par les détails techniques les plus fins, sans débat démocratique."
+      "label": "Surveillance étatique en recul vs surveillance plateformes en accélération",
+      "note": "L'État recule (LAPD/Flock) tandis que les plateformes accélèrent (Meta, Microsoft, Samsung) : la surveillance migre vers le privé sans débat équivalent, le consentement sous contrainte remplaçant l'opposition."
     },
     {
       "label": "IA comme outil de défense vs IA comme surface d'attaque",
-      "note": "JudePuffer pilote seul un ransomware, Vidar injecte Copilot, Grok CLI exfiltre : l'agent IA devient son propre vecteur d'attaque sans standard de confinement."
+      "note": "MemGhost implante des faux souvenirs par email, Ghostcommit cache des instructions en images, context bombs émergent comme riposte : l'agent IA devient son propre champ de bataille sans standard de confinement."
     },
     {
       "label": "Commodification des LLMs vs viabilité économique",
-      "note": "Datacenters 1/3 émissions France, Irlande 23% électricité, financement circulaire GPU : le coût physique s'ajoute à la bulle, la demande d'inference reste non confirmée."
+      "note": "Le vrai coût des frontier models excède tokens × prix, MemStitch 25x TTFT mais Schneier déplace le débat vers la concentration du pouvoir : l'efficacité bute sur la viabilité politique."
     },
     {
       "label": "Dette technique vs course en avant",
-      "note": "Motorola RCE, http.sys overflow, RJ45 fondamentaux : l'infrastructure de base reste non résolue pendant que l'agentique et l'attention à 1M tokens s'accélèrent."
+      "note": "Routeurs SNMP exploités par groupes étatiques, Siggen backdoor via VS, Lidl via prestataire : l'infrastructure de base reste non résolue pendant que l'agentique s'accélère."
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
-      "note": "Karpenter multi-cloud OVH, Croc E2E, PCB open-source vs datacenters 23% réseau irlandais : l'ouverture technique coexiste avec un verrouillage infrastructurel."
+      "note": "MorphoHDL, ESBMC-Arduino, eBPF/XDP vs concentration du pouvoir des datacenters : l'ouverture technique coexiste avec un verrouillage infrastructurel que Schneier identifie comme le véritable enjeu."
     }
   ]
 }

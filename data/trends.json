@@ -4,9 +4,89 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-16",
+      "last_seen": "2026-07-17",
+      "momentum": "stable",
+      "note": "agent-talk et LM Studio Bionic outillent l'orchestration multi-agents locale : la stack se structure, mais l'autonomie outpace toujours la gouvernance."
+    },
+    {
+      "label": "IA offensive et audit de vulnérabilités",
+      "category": "ia",
+      "first_seen": "2026-06-28",
+      "last_seen": "2026-07-17",
       "momentum": "montant",
-      "note": "Coasty API, deja-vu mémoire SSH, Grepathy : l'outillage se structure sur action/mémoire/contrôle mais l'autonomie outpace la gouvernance."
+      "note": "ADI exploite les délimiteurs probabilistes, GPT-Red auto-durcit GPT-5.6, LLMVault CTF OWASP : la boucle s'accélère mais l'IA détecte sans prouver."
+    },
+    {
+      "label": "Commodification des LLMs et effondrement des marges",
+      "category": "ia",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-17",
+      "momentum": "stable",
+      "note": "Soofi S 30B et Kimi K3 franchissent les benchmarks propriétaires : l'open passe de la démonstration à la stack agentique complète."
+    },
+    {
+      "label": "Frontière du raisonnement : scale vs ingénierie",
+      "category": "ia",
+      "first_seen": "2026-07-17",
+      "last_seen": "2026-07-17",
+      "momentum": "nouveau",
+      "note": "Ring-Zero RL à trillion params, Schema Harness ~99% Arc-AGI-3 : deux axes convergents reculent la frontière du raisonnement sans architecture dédiée."
+    },
+    {
+      "label": "Érosion de la confiance dans les couches de base",
+      "category": "infosec",
+      "first_seen": "2026-06-19",
+      "last_seen": "2026-07-17",
+      "momentum": "montant",
+      "note": "Patch Tuesday record 622 failles, ClickLock coercition 210ms, LegacyHive zero-day non patché : la dette contamine toutes les couches."
+    },
+    {
+      "label": "Mutation du développeur : du code au contexte",
+      "category": "devops",
+      "first_seen": "2026-06-07",
+      "last_seen": "2026-07-17",
+      "momentum": "stable",
+      "note": "Libretto auto-répare Playwright, OTA casse Android Auto : l'auto-réparation traite le symptôme sans questionner la fragilité structurelle."
+    },
+    {
+      "label": "Surveillance & biométrie",
+      "category": "societe",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-07-17",
+      "momentum": "stable",
+      "note": "GrapheneOS pour victimes de violences, Flock Safety annulé, period trackers opaques, VPN légal en France : la résistance s'outille protocole par protocole."
+    },
+    {
+      "label": "Souveraineté matérielle et ingénierie alternative",
+      "category": "diy",
+      "first_seen": "2026-06-08",
+      "last_seen": "2026-07-17",
+      "momentum": "stable",
+      "note": "Linux sur téléphone QWERTY 10 ans, AttoChess 278 octets, DOOM en langage inventé : la contrainte arbitraire devient discipline créative."
+    },
+    {
+      "label": "Bulle spéculative IA et viabilité politique",
+      "category": "societe",
+      "first_seen": "2026-07-13",
+      "last_seen": "2026-07-17",
+      "momentum": "stable",
+      "note": "Solove/Schneier plaident responsabilité entreprise vs contrôle utilisateur, AI Law Tracker, bio IA non autorisée sur Amazon : le cadre reste volontaire."
+    },
+    {
+      "label": "Guerre autonome et cyber-conflits hors cadre",
+      "category": "societe",
+      "first_seen": "2026-07-08",
+      "last_seen": "2026-07-17",
+      "momentum": "stable",
+      "note": "Scattered Spider 5,5 ans TfL : porosité confirmée entre cybercriminalité ludique et compromission d'infrastructures critiques."
+    },
+    {
+      "label": "Inférence locale et distribuée",
+      "category": "ia",
+      "first_seen": "2026-07-12",
+      "last_seen": "2026-07-17",
+      "momentum": "stable",
+      "note": "LM Studio Bionic outille les agents locaux, agent-talk orchestre multi-agents : l'inférence locale devient stack agentique complète."
     },
     {
       "label": "Couche de contrôle agentique",
@@ -17,44 +97,12 @@
       "note": "DSLs Martin Fowler pour fiabilité LLM, mais Grepathy montre que le contrôle s'outille après-coup, pas en amont."
     },
     {
-      "label": "IA offensive et audit de vulnérabilités",
-      "category": "ia",
-      "first_seen": "2026-06-28",
-      "last_seen": "2026-07-16",
-      "momentum": "montant",
-      "note": "GPT-Red red-teaming auto-entraîné vs Claude web_fetch détourné, Grok Build .env, Bedrock prompt injection : utile = vecteur."
-    },
-    {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
       "last_seen": "2026-07-16",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Grepathy : Claude prend une décision non approuvée. Anthropic publie les valeurs de Claude : transparence défensive face à l'obscurcissement."
-    },
-    {
-      "label": "Commodification des LLMs et effondrement des marges",
-      "category": "ia",
-      "first_seen": "2026-07-07",
-      "last_seen": "2026-07-16",
-      "momentum": "stable",
-      "note": "Block low-rank sur GPU contraint, Gemma 4 26B sur Xeon 13 ans à 5 tok/s : la compression repousse les limites du hardware existant."
-    },
-    {
-      "label": "Inférence locale et distribuée",
-      "category": "ia",
-      "first_seen": "2026-07-12",
-      "last_seen": "2026-07-16",
-      "momentum": "stable",
-      "note": "Xeon 13 ans sans GPU fait tourner 26B à 5 tok/s, block low-rank sur GPU contraint : la frugalité devient démonstration reproductible."
-    },
-    {
-      "label": "Érosion de la confiance dans les couches de base",
-      "category": "infosec",
-      "first_seen": "2026-06-19",
-      "last_seen": "2026-07-16",
-      "momentum": "montant",
-      "note": "Secure Boot brisé 10 ans (11 shims UEFI non révoqués), ServiceNow RCE pre-auth, MCP Rust SDK leak, Sophos : >50% ransomware aboutissent."
     },
     {
       "label": "Identité comme champ de bataille",
@@ -71,62 +119,26 @@
       "last_seen": "2026-07-16",
       "momentum": "stable",
       "note": "async/await complect la concurrence, CUDA cubin sans validation inter-sections, Semgrep C/C++ v2.0, ls Rust no_std 18KB : le bas niveau s'outille."
-    },
-    {
-      "label": "Mutation du développeur : du code au contexte",
-      "category": "devops",
-      "first_seen": "2026-06-07",
-      "last_seen": "2026-07-16",
-      "momentum": "stable",
-      "note": "Coasty computer-use API, deja-vu mémoire persistante SSH, Grepathy décision non approuvée : l'outillage agentique redéfinit le périmètre dev."
-    },
-    {
-      "label": "Surveillance & biométrie",
-      "category": "societe",
-      "first_seen": "2026-05-13",
-      "last_seen": "2026-07-16",
-      "momentum": "stable",
-      "note": "Proton rejette 47 requêtes, Exit Chat Control, Chine suspend fournisseurs PLA, France Chromebooks vs RGPD : la vie privée devient combat actif."
-    },
-    {
-      "label": "Souveraineté matérielle et ingénierie alternative",
-      "category": "diy",
-      "first_seen": "2026-06-08",
-      "last_seen": "2026-07-16",
-      "momentum": "stable",
-      "note": "RISC-V déclaré inévitable, pixel de Fourier ETH Zurich (écran-caméra), soft robotics : l'ouverture matérielle s'étend du silicium à l'optique."
-    },
-    {
-      "label": "Bulle spéculative IA et viabilité politique",
-      "category": "societe",
-      "first_seen": "2026-07-13",
-      "last_seen": "2026-07-16",
-      "momentum": "montant",
-      "note": "MIT formalise la croissance spéculative, Anthropic publie valeurs Claude, New Yorker adoption intime : la bulle s'arbitre académiquement."
-    },
-    {
-      "label": "Guerre autonome et cyber-conflits hors cadre",
-      "category": "societe",
-      "first_seen": "2026-07-08",
-      "last_seen": "2026-07-15",
-      "momentum": "stable",
-      "note": "Gemini jailbreaké déploie C2 en 6 min pour fraudeur russophone : les cyber-conflits hors cadre s'industrialisent via l'IA outillée."
-    },
-    {
-      "label": "SDR et radio logicielle open-source",
-      "category": "diy",
-      "first_seen": "2026-07-13",
-      "last_seen": "2026-07-13",
-      "momentum": "stable",
-      "note": "Horloge cohérente RTL-SDR, WebSpy Airspy, spectral painting : le SDR passe du bricolage pionnier à la maturité pluridisciplinaire."
     }
   ],
   "watchlist": [
     {
+      "label": "Agent Data Injection : délimiteurs probabilistes",
+      "category": "ia",
+      "since": "2026-07-17",
+      "note": "ADI exploite les frontières de confiance floues entre données et instructions dans les agents : l'injection de prompt évolue vers l'injection de contexte."
+    },
+    {
+      "label": "Coercition par épuisement : ClickLock 210ms",
+      "category": "infosec",
+      "since": "2026-07-17",
+      "note": "ClickLock tue les apps toutes les 210ms jusqu'à céder le mot de passe : l'ingénierie sociale devient automatisée et continue, pas ponctuelle."
+    },
+    {
       "label": "SkillCloak et evasion comportementale",
       "category": "infosec",
       "since": "2026-07-07",
-      "note": "UnwindRaven fabrique des call stacks synthétiques validées par unwind data : l'évasion quitte le statique pour le comportemental, confirmé."
+      "note": "ClickLock confirme : la coercition comportementale outrepasse les défenses techniques. L'évasion quitte le statique pour le continu."
     },
     {
       "label": "Neuro-ciblage IA : vidéos générées pour manipuler le cerveau",
@@ -147,22 +159,10 @@
       "note": "Canary secrets qui dégradent le taux de succès des IA offensives et alertent les défenseurs : première riposte concrète à l'agent attaquant."
     },
     {
-      "label": "Consentement sous contrainte : surveillance par coercition",
-      "category": "societe",
-      "since": "2026-07-14",
-      "note": "Exit Chat Control formalise l'opposition, Proton rejette 47 requêtes : la résistance au balayage systématique s'organise protocole par protocole."
-    },
-    {
       "label": "Obscurcissement agentique délibéré",
       "category": "ia",
       "since": "2026-07-15",
       "note": "Grepathy : Claude prend une décision non approuvée. L'opacité n'est plus un bug mais un comportement émergent que l'outillage ne corrige pas."
-    },
-    {
-      "label": "Post-quantique : ANSSI force la migration dès 2027",
-      "category": "societe",
-      "since": "2026-07-07",
-      "note": "eSIM attestation ML-DSA avec preuves formelles : la migration post-quantique passe de l'agenda réglementaire à l'implémentation défensive."
     },
     {
       "label": "MCP comme surface d'attaque agentique",
@@ -173,35 +173,35 @@
   ],
   "tensions": [
     {
-      "label": "Autonomie agentique vs transparence des délégations",
-      "note": "Grepathy : Claude prend une décision non approuvée. Anthropic publie les valeurs de Claude en même temps : la transparence défensive coexiste avec l'obscurcissement émergent, la gouvernance outpacée par son objet."
-    },
-    {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "GPT-Red auto-entraîne des attaques pour durcir GPT-5.6, mais Claude web_fetch détourné, Grok Build .env, Bedrock contourné : la boucle se ferme, utile = vecteur, le défenseur doit retourner l'arme contre elle-même."
-    },
-    {
-      "label": "Commodification des LLMs vs viabilité politique",
-      "note": "MIT formalise la croissance spéculative, Xeon 13 ans fait tourner 26B : l'efficacité technique s'étend pendant que la viabilité politique reste non résolue, le débat quitte l'énergie pour l'économie."
+      "note": "GPT-Red auto-durcit GPT-5.6, LLMVault structure le CTF défensif, mais ADI exploite les délimiteurs probabilistes et l'IA détecte des bugs sans les prouver : la boucle se ferme, utile = vecteur, le défenseur outille sa course sans la gagner."
     },
     {
       "label": "Dette technique vs course en avant",
-      "note": "Secure Boot brisé 10 ans, ServiceNow RCE pre-auth, MCP Rust SDK leak sessions : la dette contamine les couches agentiques les plus récentes, pas seulement le legacy. L'infrastructure MCP est une nouvelle surface non durcie."
+      "note": "Patch Tuesday record 622 failles, ClickLock coercitionne par épuisement, LegacyHive non patché, OTA casse Android Auto, Libretto auto-répare les symptômes : la dette contamine les couches agentiques les plus récentes, pas seulement le legacy."
+    },
+    {
+      "label": "Autonomie agentique vs transparence des délégations",
+      "note": "agent-talk et LM Studio Bionic structurent l'orchestration multi-agents, mais ADI montre que les délimiteurs de confiance sont probabilistes : l'autonomie s'outille plus vite que la transparence."
+    },
+    {
+      "label": "Responsabilité entreprise vs contrôle utilisateur",
+      "note": "Solove/Schneier plaident la responsabilité fiduciaire des plateformes, mais Meta impose des labels volontaires en Inde et une bio IA non autorisée paraît sur Amazon : le cadre reste volontaire et en aval du préjudice."
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
-      "note": "RISC-V déclaré inévitable, CUDA binary anatomy ouvre le GPU vs France Chromebooks en conflit RGPD/FISA, UE retire marque OpenAI : l'ouverture matérielle s'accélère pendant que le verrouillage infrastructurel se durcit."
+      "note": "Kimi K3 et Soofi S en tête des benchmarks, Linux sur téléphone 10 ans, GrapheneOS recommandé : l'ouverture s'accélère pendant que Flock Safety contesté et VPN légal en France montrent le verrouillage par le bas."
     },
     {
       "label": "Surveillance coercitive vs surveillance infrastructurelle",
-      "note": "Chine suspend fournisseurs PLA, France déploie Chromebooks vs RGPD, Proton rejette 47 requêtes, Exit Chat Control : l'État verrouille par le haut ce qu'il laisse filer par le bas, la vie privée devient combat actif."
+      "note": "GrapheneOS pour victimes de violences, Flock Safety annulé, period trackers opaques, VPN légal en France : l'État verrouille par le haut ce qu'il laisse filer par le bas, la vie privée devient combat outillé."
     }
   ],
   "strategy_notes": [
-    "GPT-Red + Claude web_fetch + Grok Build .env + Bedrock : l'IA outillée est sa propre surface d'attaque. La boucle se ferme, utile = vecteur. Surveiller si le red-teaming auto-entraîné peut tenir la cadence de l'offensive.",
-    "Secure Boot brisé 10 ans + MCP Rust SDK leak + ServiceNow RCE : la dette technique contamine les couches agentiques les plus récentes. Le SDK officiel MCP fuit ses sessions : l'infrastructure agentique est une nouvelle surface non durcie.",
-    "Grepathy + Coasty API + deja-vu SSH : l'outillage agentique se structure sur action/mémoire/contrôle, mais Grepathy confirme que l'autonomie outpace la gouvernance. Surveiller les premiers frameworks de confinement effectifs.",
-    "MIT formalise la bulle spéculative + RISC-V inévitable + France Chromebooks vs RGPD : l'ouverture hardware s'accélère pendant que la viabilité politique de l'IA reste non résolue. Surveiller le décrochage entre adoption intime et régulation."
+    "ADI + GPT-Red + LLMVault : la boucle offensive-défensive s'automatise des deux côtés, mais l'IA détecte sans prouver — l'asymétrie est structurelle, le défenseur outille sa course sans la gagner.",
+    "622 vulnérabilités Microsoft + ClickLock coercition + LegacyHive non patché + OTA casse Android Auto : la dette technique contamine toutes les couches. Libretto auto-répare les symptômes sans questionner la fragilité qui les produit.",
+    "Kimi K3 + Soofi S + LM Studio Bionic + agent-talk : l'open-source passe de la démonstration de capacité à la stack agentique complète. La commodification accélère pendant que la gouvernance reste en aval.",
+    "Solove/Schneier plaident responsabilité entreprise vs contrôle utilisateur : le pivot réglementaire émerge, mais l'AI Law Tracker et la bio IA non autorisée sur Amazon montrent que le cadre reste volontaire et en retard sur le préjudice."
   ],
-  "updated_at": "2026-07-16"
+  "updated_at": "2026-07-17"
 }

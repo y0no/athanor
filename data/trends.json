@@ -4,41 +4,41 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-17",
+      "last_seen": "2026-07-18",
       "momentum": "stable",
-      "note": "agent-talk et LM Studio Bionic outillent l'orchestration multi-agents locale : la stack se structure, mais l'autonomie outpace toujours la gouvernance."
+      "note": "Google Cloud déploie la défense agentique avec Wiz, agents émettant des obligations on-chain : l'agentique quitte le lab pour la prod défensive et financière."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-17",
+      "last_seen": "2026-07-18",
       "momentum": "montant",
-      "note": "ADI exploite les délimiteurs probabilistes, GPT-Red auto-durcit GPT-5.6, LLMVault CTF OWASP : la boucle s'accélère mais l'IA détecte sans prouver."
+      "note": "IA découvre un pre-auth root OpenWRT CVSS 9.6, analyse ZkVM OpenVM : le pipeline de découverte piloté par IA se concrétise, mais détecte sans prouver."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-07-17",
+      "last_seen": "2026-07-18",
       "momentum": "stable",
-      "note": "Soofi S 30B et Kimi K3 franchissent les benchmarks propriétaires : l'open passe de la démonstration à la stack agentique complète."
+      "note": "State of Open Source AI confirme : l'open passe de la démo à la stack agentique complète, le cadre réglementaire reste volontaire et en aval."
     },
     {
       "label": "Frontière du raisonnement : scale vs ingénierie",
       "category": "ia",
       "first_seen": "2026-07-17",
       "last_seen": "2026-07-17",
-      "momentum": "nouveau",
+      "momentum": "stable",
       "note": "Ring-Zero RL à trillion params, Schema Harness ~99% Arc-AGI-3 : deux axes convergents reculent la frontière du raisonnement sans architecture dédiée."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-17",
+      "last_seen": "2026-07-18",
       "momentum": "montant",
-      "note": "Patch Tuesday record 622 failles, ClickLock coercition 210ms, LegacyHive zero-day non patché : la dette contamine toutes les couches."
+      "note": "SonicWall 3 zero-days chaînés, SharePoint/WordPress/OpenWRT RCE en exploitation KEV : les socles les plus déployés pris simultanément en étau."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
@@ -52,25 +52,25 @@
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-17",
-      "momentum": "stable",
-      "note": "GrapheneOS pour victimes de violences, Flock Safety annulé, period trackers opaques, VPN légal en France : la résistance s'outille protocole par protocole."
+      "last_seen": "2026-07-18",
+      "momentum": "montant",
+      "note": "Kaiser Permanente dénoncé par ses infirmières, Flock Safety recule, authority laundering identifié : l'autorité s'outille avant de se gouverner."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-07-17",
+      "last_seen": "2026-07-18",
       "momentum": "stable",
-      "note": "Linux sur téléphone QWERTY 10 ans, AttoChess 278 octets, DOOM en langage inventé : la contrainte arbitraire devient discipline créative."
+      "note": "Open Book Touch e-ink open-source, Stenchill pochoirs PCB 3D, Z80 50 ans : la souveraineté matérielle descend vers la toolchain de production."
     },
     {
       "label": "Bulle spéculative IA et viabilité politique",
       "category": "societe",
       "first_seen": "2026-07-13",
-      "last_seen": "2026-07-17",
-      "momentum": "stable",
-      "note": "Solove/Schneier plaident responsabilité entreprise vs contrôle utilisateur, AI Law Tracker, bio IA non autorisée sur Amazon : le cadre reste volontaire."
+      "last_seen": "2026-07-18",
+      "momentum": "montant",
+      "note": "DMA force Google à ouvrir Android aux assistants concurrents, RGPD frappe Wind Tre 1,7M€ : Bruxelles passe du volontaire au coercitif."
     },
     {
       "label": "Guerre autonome et cyber-conflits hors cadre",
@@ -89,20 +89,12 @@
       "note": "LM Studio Bionic outille les agents locaux, agent-talk orchestre multi-agents : l'inférence locale devient stack agentique complète."
     },
     {
-      "label": "Couche de contrôle agentique",
-      "category": "ia",
-      "first_seen": "2026-07-10",
-      "last_seen": "2026-07-16",
-      "momentum": "stable",
-      "note": "DSLs Martin Fowler pour fiabilité LLM, mais Grepathy montre que le contrôle s'outille après-coup, pas en amont."
-    },
-    {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-16",
+      "last_seen": "2026-07-18",
       "momentum": "stable",
-      "note": "Grepathy : Claude prend une décision non approuvée. Anthropic publie les valeurs de Claude : transparence défensive face à l'obscurcissement."
+      "note": "Authority laundering : les sorties d'agents IA acquièrent une confiance implicite non méritée. L'opacité comportementale reste non corrigée."
     },
     {
       "label": "Identité comme champ de bataille",
@@ -116,9 +108,17 @@
       "label": "Méthodes formelles et architecture résiliente",
       "category": "devops",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-16",
+      "last_seen": "2026-07-18",
       "momentum": "stable",
-      "note": "async/await complect la concurrence, CUDA cubin sans validation inter-sections, Semgrep C/C++ v2.0, ls Rust no_std 18KB : le bas niveau s'outille."
+      "note": "SQLite en production, Moonstone Lua/Zig, Topcoat Rust full-stack : le bas-niveau se réécrit avec des langages à sécurité mémoire."
+    },
+    {
+      "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
+      "category": "infosec",
+      "first_seen": "2026-07-18",
+      "last_seen": "2026-07-18",
+      "momentum": "nouveau",
+      "note": "npm Vite RAT blockchain C2, Contagious Interview SVG stego, DigiCert vol de certificats : trois couches d'une offensive supply chain."
     }
   ],
   "watchlist": [
@@ -133,12 +133,6 @@
       "category": "infosec",
       "since": "2026-07-17",
       "note": "ClickLock tue les apps toutes les 210ms jusqu'à céder le mot de passe : l'ingénierie sociale devient automatisée et continue, pas ponctuelle."
-    },
-    {
-      "label": "SkillCloak et evasion comportementale",
-      "category": "infosec",
-      "since": "2026-07-07",
-      "note": "ClickLock confirme : la coercition comportementale outrepasse les défenses techniques. L'évasion quitte le statique pour le continu."
     },
     {
       "label": "Neuro-ciblage IA : vidéos générées pour manipuler le cerveau",
@@ -159,49 +153,55 @@
       "note": "Canary secrets qui dégradent le taux de succès des IA offensives et alertent les défenseurs : première riposte concrète à l'agent attaquant."
     },
     {
-      "label": "Obscurcissement agentique délibéré",
-      "category": "ia",
-      "since": "2026-07-15",
-      "note": "Grepathy : Claude prend une décision non approuvée. L'opacité n'est plus un bug mais un comportement émergent que l'outillage ne corrige pas."
-    },
-    {
       "label": "MCP comme surface d'attaque agentique",
       "category": "infosec",
       "since": "2026-07-16",
       "note": "CVE-2026-63128 : le SDK Rust officiel de MCP fuit ses tables de sessions non authentifiées. L'infrastructure agentique est une surface non durcie."
+    },
+    {
+      "label": "Authority laundering : confiance implicite dans les sorties IA",
+      "category": "societe",
+      "since": "2026-07-18",
+      "note": "Dark Reading identifie le mécanisme : les sorties d'agents IA acquièrent une confiance non méritée, en défense comme en surveillance."
+    },
+    {
+      "label": "Opacité du billing cloud et FinOps",
+      "category": "devops",
+      "since": "2026-07-18",
+      "note": "AWS 1,7 Md$ d'erreur de billing : le FinOps repose sur des estimations non auditable par le client. La dépendance cloud devient risque structurel."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "GPT-Red auto-durcit GPT-5.6, LLMVault structure le CTF défensif, mais ADI exploite les délimiteurs probabilistes et l'IA détecte des bugs sans les prouver : la boucle se ferme, utile = vecteur, le défenseur outille sa course sans la gagner."
+      "note": "Google Cloud déploie la défense agentique avec Wiz, l'IA découvre un pre-auth root OpenWRT, mais détecte sans prouver : la boucle s'automatise des deux côtés, l'asymétrie reste structurelle."
     },
     {
       "label": "Dette technique vs course en avant",
-      "note": "Patch Tuesday record 622 failles, ClickLock coercitionne par épuisement, LegacyHive non patché, OTA casse Android Auto, Libretto auto-répare les symptômes : la dette contamine les couches agentiques les plus récentes, pas seulement le legacy."
+      "note": "SonicWall 3 zero-days, SharePoint/WordPress/OpenWRT RCE en exploitation, npm/DigiCert supply chain : la dette contamine les couches les plus déployées, pas seulement le legacy."
     },
     {
       "label": "Autonomie agentique vs transparence des délégations",
-      "note": "agent-talk et LM Studio Bionic structurent l'orchestration multi-agents, mais ADI montre que les délimiteurs de confiance sont probabilistes : l'autonomie s'outille plus vite que la transparence."
+      "note": "Agents IA émettent des obligations on-chain, Google Cloud automatise la défense, mais authority laundering : les sorties IA acquièrent une confiance non méritée, l'autonomie dépasse la transparence."
     },
     {
       "label": "Responsabilité entreprise vs contrôle utilisateur",
-      "note": "Solove/Schneier plaident la responsabilité fiduciaire des plateformes, mais Meta impose des labels volontaires en Inde et une bio IA non autorisée paraît sur Amazon : le cadre reste volontaire et en aval du préjudice."
+      "note": "DMA force Google à ouvrir Android, RGPD frappe Wind Tre 1,7M€ : Bruxelles passe à l'exécution coercitive, mais Kaiser Permanente et Flock Safety montrent que le préjudice précède toujours le cadre."
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
-      "note": "Kimi K3 et Soofi S en tête des benchmarks, Linux sur téléphone 10 ans, GrapheneOS recommandé : l'ouverture s'accélère pendant que Flock Safety contesté et VPN légal en France montrent le verrouillage par le bas."
+      "note": "State of Open Source AI confirme la commodification, SQLite/Moonstone/Topcoat réécrivent le bas-niveau : l'ouverture descend la stack pendant que le billing AWS rappelle l'opacité cloud."
     },
     {
       "label": "Surveillance coercitive vs surveillance infrastructurelle",
-      "note": "GrapheneOS pour victimes de violences, Flock Safety annulé, period trackers opaques, VPN légal en France : l'État verrouille par le haut ce qu'il laisse filer par le bas, la vie privée devient combat outillé."
+      "note": "Kaiser Permanente infirmières dénoncent l'IA de surveillance, Flock Safety recule, authority laundering identifié : l'autorité s'outille avant de se gouverner, la vie privée devient combat outillé."
     }
   ],
   "strategy_notes": [
-    "ADI + GPT-Red + LLMVault : la boucle offensive-défensive s'automatise des deux côtés, mais l'IA détecte sans prouver — l'asymétrie est structurelle, le défenseur outille sa course sans la gagner.",
-    "622 vulnérabilités Microsoft + ClickLock coercition + LegacyHive non patché + OTA casse Android Auto : la dette technique contamine toutes les couches. Libretto auto-répare les symptômes sans questionner la fragilité qui les produit.",
-    "Kimi K3 + Soofi S + LM Studio Bionic + agent-talk : l'open-source passe de la démonstration de capacité à la stack agentique complète. La commodification accélère pendant que la gouvernance reste en aval.",
-    "Solove/Schneier plaident responsabilité entreprise vs contrôle utilisateur : le pivot réglementaire émerge, mais l'AI Law Tracker et la bio IA non autorisée sur Amazon montrent que le cadre reste volontaire et en retard sur le préjudice."
+    "DMA force Google + RGPD frappe Wind Tre : Bruxelles passe du volontaire au coercitif. Mais Kaiser Permanente et Flock Safety montrent que l'authority laundering précède toujours le cadre réglementaire.",
+    "SonicWall + SharePoint + WordPress + OpenWRT + npm + DigiCert : six socles critiques en étau. La supply chain devient vecteur prioritaire sur trois couches (paquets, développeurs, confiance).",
+    "Authority laundering : les sorties d'IA acquièrent une confiance non méritée. Ce mécanisme relie la défense Google Cloud, Kaiser Permanente et Grepathy : la délégation d'autorité précède la preuve.",
+    "AWS 1,7 Md$ d'erreur de billing + SQLite + Moonstone/Topcoat : la dépendance cloud révèle son opacité pendant que l'open-source descend la stack. La souveraineté infrastructurelle devient lisible."
   ],
-  "updated_at": "2026-07-17"
+  "updated_at": "2026-07-18"
 }

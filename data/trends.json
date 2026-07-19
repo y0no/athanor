@@ -4,41 +4,41 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "momentum": "stable",
-      "note": "Google Cloud déploie la défense agentique avec Wiz, agents émettant des obligations on-chain : l'agentique quitte le lab pour la prod défensive et financière."
+      "note": "Quotas Codex resets paralysent la prod, délégation Mac à Claude Code : l'agentique révèle ses limites fournisseurs et sa tension autonomie/contrôle."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
       "last_seen": "2026-07-18",
-      "momentum": "montant",
-      "note": "IA découvre un pre-auth root OpenWRT CVSS 9.6, analyse ZkVM OpenVM : le pipeline de découverte piloté par IA se concrétise, mais détecte sans prouver."
+      "momentum": "stable",
+      "note": "IA découvre pre-auth root OpenWRT CVSS 9.6, analyse ZkVM OpenVM : le pipeline piloté par IA se concrétise, mais détecte sans prouver."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "momentum": "stable",
-      "note": "State of Open Source AI confirme : l'open passe de la démo à la stack agentique complète, le cadre réglementaire reste volontaire et en aval."
+      "note": "Stack Overflow s'érode, DeepMind pivote vers la bio-résilience : le savoir se recompose, l'open passe à la stack agentique."
     },
     {
       "label": "Frontière du raisonnement : scale vs ingénierie",
       "category": "ia",
       "first_seen": "2026-07-17",
-      "last_seen": "2026-07-17",
+      "last_seen": "2026-07-19",
       "momentum": "stable",
-      "note": "Ring-Zero RL à trillion params, Schema Harness ~99% Arc-AGI-3 : deux axes convergents reculent la frontière du raisonnement sans architecture dédiée."
+      "note": "GPT-5.6 clôt 30 ans d'optimisation convexe via prompt, mais /goal reste discriminant face à Fable 5 : l'ingénierie prime sur le scale."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "momentum": "montant",
-      "note": "SonicWall 3 zero-days chaînés, SharePoint/WordPress/OpenWRT RCE en exploitation KEV : les socles les plus déployés pris simultanément en étau."
+      "note": "WordPress Core pre-auth RCE, SS7 Iran sans zero-day, civic apps forgeables : les socles ubiquitaires sont structurellement cassés."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
@@ -46,63 +46,55 @@
       "first_seen": "2026-06-07",
       "last_seen": "2026-07-17",
       "momentum": "stable",
-      "note": "Libretto auto-répare Playwright, OTA casse Android Auto : l'auto-réparation traite le symptôme sans questionner la fragilité structurelle."
+      "note": "Libretto auto-répare Playwright, OTA casse Android Auto : l'auto-réparation traite le symptôme sans questionner la fragilité."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "momentum": "montant",
-      "note": "Kaiser Permanente dénoncé par ses infirmières, Flock Safety recule, authority laundering identifié : l'autorité s'outille avant de se gouverner."
+      "note": "Flock Safety ALPR exposées en accès libre, LG installe sans consentement via Windows Update : le contrôle s'impose avant le consentement."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-07-18",
-      "momentum": "stable",
-      "note": "Open Book Touch e-ink open-source, Stenchill pochoirs PCB 3D, Z80 50 ans : la souveraineté matérielle descend vers la toolchain de production."
+      "last_seen": "2026-07-19",
+      "momentum": "montant",
+      "note": "IndieWeb 0,01$/jour, Gleam quitte GitHub pour Tangled, Transcribe.cpp : la souveraineté descend vers l'hébergement et la forge."
     },
     {
       "label": "Bulle spéculative IA et viabilité politique",
       "category": "societe",
       "first_seen": "2026-07-13",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
       "momentum": "montant",
-      "note": "DMA force Google à ouvrir Android aux assistants concurrents, RGPD frappe Wind Tre 1,7M€ : Bruxelles passe du volontaire au coercitif."
+      "note": "UE interdit destruction invendus textiles, Mamdani encadre IA immobilière : la coercition s'étend du numérique au physique."
     },
     {
       "label": "Guerre autonome et cyber-conflits hors cadre",
       "category": "societe",
       "first_seen": "2026-07-08",
-      "last_seen": "2026-07-17",
+      "last_seen": "2026-07-19",
       "momentum": "stable",
-      "note": "Scattered Spider 5,5 ans TfL : porosité confirmée entre cybercriminalité ludique et compromission d'infrastructures critiques."
+      "note": "Iran localise militaires via SS7 + infra pub sans zero-day : les États exploitent la confiance cassée plutôt que des failles ponctuelles."
     },
     {
       "label": "Inférence locale et distribuée",
       "category": "ia",
       "first_seen": "2026-07-12",
-      "last_seen": "2026-07-17",
+      "last_seen": "2026-07-19",
       "momentum": "stable",
-      "note": "LM Studio Bionic outille les agents locaux, agent-talk orchestre multi-agents : l'inférence locale devient stack agentique complète."
+      "note": "Transcribe.cpp transcription locale, LuaTeX 1ms recompilation : les outils performants n'ont plus besoin d'infrastructure distante."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-18",
-      "momentum": "stable",
-      "note": "Authority laundering : les sorties d'agents IA acquièrent une confiance implicite non méritée. L'opacité comportementale reste non corrigée."
-    },
-    {
-      "label": "Identité comme champ de bataille",
-      "category": "infosec",
-      "first_seen": "2026-07-13",
-      "last_seen": "2026-07-15",
-      "momentum": "stable",
-      "note": "SharePoint JWT bypass sans credentials, UE vérification âge verrouille Android/iOS : l'identité devient canal de contrôle infrastructurel."
+      "last_seen": "2026-07-19",
+      "momentum": "montant",
+      "note": "GPT-5.6 démonstrations sans preuve formelle, cours de calcul délègue au LLM : la fiabilité démonstrative reste non établie."
     },
     {
       "label": "Méthodes formelles et architecture résiliente",
@@ -116,9 +108,17 @@
       "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
       "category": "infosec",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-07-18",
-      "momentum": "nouveau",
-      "note": "npm Vite RAT blockchain C2, Contagious Interview SVG stego, DigiCert vol de certificats : trois couches d'une offensive supply chain."
+      "last_seen": "2026-07-19",
+      "momentum": "montant",
+      "note": "WordPress Core pre-auth RCE, AsyncRAT stégo bitmap, ACR Stealer blockchain C2 : l'offensive industrialise discrétion et décentralisation."
+    },
+    {
+      "label": "Authority laundering : délégation d'autorité sans preuve",
+      "category": "societe",
+      "first_seen": "2026-07-18",
+      "last_seen": "2026-07-19",
+      "momentum": "montant",
+      "note": "Transversal confirmé : GPT-5.6 maths, Stack Overflow, Mac/Claude, SS7 Iran, Flock Safety, LG. L'autorité s'outille avant de se gouverner."
     }
   ],
   "watchlist": [
@@ -159,49 +159,49 @@
       "note": "CVE-2026-63128 : le SDK Rust officiel de MCP fuit ses tables de sessions non authentifiées. L'infrastructure agentique est une surface non durcie."
     },
     {
-      "label": "Authority laundering : confiance implicite dans les sorties IA",
-      "category": "societe",
-      "since": "2026-07-18",
-      "note": "Dark Reading identifie le mécanisme : les sorties d'agents IA acquièrent une confiance non méritée, en défense comme en surveillance."
-    },
-    {
       "label": "Opacité du billing cloud et FinOps",
       "category": "devops",
       "since": "2026-07-18",
       "note": "AWS 1,7 Md$ d'erreur de billing : le FinOps repose sur des estimations non auditable par le client. La dépendance cloud devient risque structurel."
+    },
+    {
+      "label": "Quotas agentiques : contrôle fournisseur sur l'autonomie",
+      "category": "ia",
+      "since": "2026-07-19",
+      "note": "Codex resets hebdomadaires imprévisibles paralysent la prod : les limites opaques des fournisseurs deviennent risque opérationnel pour l'agentique."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "Google Cloud déploie la défense agentique avec Wiz, l'IA découvre un pre-auth root OpenWRT, mais détecte sans prouver : la boucle s'automatise des deux côtés, l'asymétrie reste structurelle."
+      "note": "Google Cloud déploie la défense agentique, l'IA découvre des vulnérabilités, mais WordPress RCE et SS7 montrent que l'offensive exploite la confiance cassée : la boucle s'automatise, l'asymétrie reste."
     },
     {
       "label": "Dette technique vs course en avant",
-      "note": "SonicWall 3 zero-days, SharePoint/WordPress/OpenWRT RCE en exploitation, npm/DigiCert supply chain : la dette contamine les couches les plus déployées, pas seulement le legacy."
+      "note": "WordPress Core pre-auth RCE, SS7 non réparable, civic apps forgeables : la dette contamine les socles les plus ubiquitaires, pas seulement le legacy."
     },
     {
       "label": "Autonomie agentique vs transparence des délégations",
-      "note": "Agents IA émettent des obligations on-chain, Google Cloud automatise la défense, mais authority laundering : les sorties IA acquièrent une confiance non méritée, l'autonomie dépasse la transparence."
+      "note": "Quotas Codex paralysent la prod, délégation Mac à Claude Code, authority laundering : l'autonomie des agents dépasse systématiquement la transparence des délégations."
     },
     {
       "label": "Responsabilité entreprise vs contrôle utilisateur",
-      "note": "DMA force Google à ouvrir Android, RGPD frappe Wind Tre 1,7M€ : Bruxelles passe à l'exécution coercitive, mais Kaiser Permanente et Flock Safety montrent que le préjudice précède toujours le cadre."
+      "note": "UE interdit destruction invendus, Mamdani encadre IA immobilière, Flock Safety expose ses bases : la coercition s'étend mais le préjudice précède toujours le cadre."
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
-      "note": "State of Open Source AI confirme la commodification, SQLite/Moonstone/Topcoat réécrivent le bas-niveau : l'ouverture descend la stack pendant que le billing AWS rappelle l'opacité cloud."
+      "note": "IndieWeb 0,01$/jour, Gleam quitte GitHub, Transcribe.cpp : l'ouverture descend la stack pendant que le billing AWS rappelle l'opacité cloud."
     },
     {
       "label": "Surveillance coercitive vs surveillance infrastructurelle",
-      "note": "Kaiser Permanente infirmières dénoncent l'IA de surveillance, Flock Safety recule, authority laundering identifié : l'autorité s'outille avant de se gouverner, la vie privée devient combat outillé."
+      "note": "Flock Safety ALPR exposées, LG installe sans consentement : le contrôle s'impose avant le consentement, la fuite précède la gouvernance."
     }
   ],
   "strategy_notes": [
-    "DMA force Google + RGPD frappe Wind Tre : Bruxelles passe du volontaire au coercitif. Mais Kaiser Permanente et Flock Safety montrent que l'authority laundering précède toujours le cadre réglementaire.",
-    "SonicWall + SharePoint + WordPress + OpenWRT + npm + DigiCert : six socles critiques en étau. La supply chain devient vecteur prioritaire sur trois couches (paquets, développeurs, confiance).",
-    "Authority laundering : les sorties d'IA acquièrent une confiance non méritée. Ce mécanisme relie la défense Google Cloud, Kaiser Permanente et Grepathy : la délégation d'autorité précède la preuve.",
-    "AWS 1,7 Md$ d'erreur de billing + SQLite + Moonstone/Topcoat : la dépendance cloud révèle son opacité pendant que l'open-source descend la stack. La souveraineté infrastructurelle devient lisible."
+    "Authority laundering confirmé transversal : GPT-5.6 en maths, Stack Overflow en érosion, SS7 en géoloc, Flock Safety en fuite. La délégation d'autorité précède la preuve dans tous les domaines.",
+    "WordPress Core pre-auth RCE + SS7 + civic apps : les socles ubiquitaires sont structurellement cassés. Les États n'ont plus besoin de zero-days, ils exploitent la confiance héritée.",
+    "IndieWeb 0,01$/jour + Gleam/Tangled + Transcribe.cpp : la souveraineté infrastructurelle descend la stack. L'auto-hébergement n'est plus marginal, il devient manifeste.",
+    "UE textile + Mamdani IA images : la coercition réglementaire s'étend du numérique au physique et du fédéral au municipal. La gouvernance accélère mais reste en aval."
   ],
-  "updated_at": "2026-07-18"
+  "updated_at": "2026-07-19"
 }

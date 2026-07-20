@@ -4,121 +4,121 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-07-20",
       "momentum": "stable",
-      "note": "Quotas Codex resets paralysent la prod, délégation Mac à Claude Code : l'agentique révèle ses limites fournisseurs et sa tension autonomie/contrôle."
+      "note": "Codex context coupé 27% sans annonce, Claude Code migre Bun/Rust, Save GPT-5.5 : l'agentique plie sous contraintes opaques."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-20",
       "momentum": "stable",
-      "note": "IA découvre pre-auth root OpenWRT CVSS 9.6, analyse ZkVM OpenVM : le pipeline piloté par IA se concrétise, mais détecte sans prouver."
+      "note": "Workflow IA rapporte 17 CVEs en 6 mois, wp2shell RCE WordPress core : l'automatisation offensive rejoint la défensive."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-07-19",
-      "momentum": "stable",
-      "note": "Stack Overflow s'érode, DeepMind pivote vers la bio-résilience : le savoir se recompose, l'open passe à la stack agentique."
+      "last_seen": "2026-07-20",
+      "momentum": "montant",
+      "note": "Qwen 3.8 Max + Kimi K3 saturé : les labs chinois inondent l'open-weights plus vite que leur infra. Ollama industrialise le local."
     },
     {
       "label": "Frontière du raisonnement : scale vs ingénierie",
       "category": "ia",
       "first_seen": "2026-07-17",
-      "last_seen": "2026-07-19",
-      "momentum": "stable",
-      "note": "GPT-5.6 clôt 30 ans d'optimisation convexe via prompt, mais /goal reste discriminant face à Fable 5 : l'ingénierie prime sur le scale."
+      "last_seen": "2026-07-20",
+      "momentum": "montant",
+      "note": "Claude/Fable bat la conjecture de Jacobian (1939) : contribution math potentiellement inédite. Le calcul probabiliste émerge."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-19",
-      "momentum": "montant",
-      "note": "WordPress Core pre-auth RCE, SS7 Iran sans zero-day, civic apps forgeables : les socles ubiquitaires sont structurellement cassés."
+      "last_seen": "2026-07-20",
+      "momentum": "stable",
+      "note": "wp2shell RCE WordPress core non auth, exploit kernel Windows public, 7-Zip RCE .xz : les socles ubiquitaires cèdent."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-17",
+      "last_seen": "2026-07-20",
       "momentum": "stable",
-      "note": "Libretto auto-répare Playwright, OTA casse Android Auto : l'auto-réparation traite le symptôme sans questionner la fragilité."
+      "note": "DRIVE cadre l'excellence ops IA, tokens brûlés pour apprendre à économiser : l'ops ne peut plus rester artisanale."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-07-20",
       "momentum": "montant",
-      "note": "Flock Safety ALPR exposées en accès libre, LG installe sans consentement via Windows Update : le contrôle s'impose avant le consentement."
+      "note": "Manifeste anti-Palantir, vague anti-IA physique vs dirigeants, EFF/Texans avortement : la résistance franchit un seuil."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-07-20",
       "momentum": "montant",
-      "note": "IndieWeb 0,01$/jour, Gleam quitte GitHub pour Tangled, Transcribe.cpp : la souveraineté descend vers l'hébergement et la forge."
+      "note": "ESP32 5$ bloque 537k domaines, remplace système 120k$, MikroTik, Akashic : la disintermédiation matérielle s'industrialise."
     },
     {
       "label": "Bulle spéculative IA et viabilité politique",
       "category": "societe",
       "first_seen": "2026-07-13",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-07-20",
       "momentum": "montant",
-      "note": "UE interdit destruction invendus textiles, Mamdani encadre IA immobilière : la coercition s'étend du numérique au physique."
+      "note": "Vague anti-IA se durit physiquement, datacenters privent populations d'eau : la coercition matérielle de l'IA devient visible."
     },
     {
       "label": "Guerre autonome et cyber-conflits hors cadre",
       "category": "societe",
       "first_seen": "2026-07-08",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-07-20",
       "momentum": "stable",
-      "note": "Iran localise militaires via SS7 + infra pub sans zero-day : les États exploitent la confiance cassée plutôt que des failles ponctuelles."
+      "note": "UAC-0145 ClickFix vs Ukrainiens, HelloNet empoisonne ViPNet gov russe : la confiance héritée remplace les zero-days."
     },
     {
       "label": "Inférence locale et distribuée",
       "category": "ia",
       "first_seen": "2026-07-12",
-      "last_seen": "2026-07-19",
-      "momentum": "stable",
-      "note": "Transcribe.cpp transcription locale, LuaTeX 1ms recompilation : les outils performants n'ont plus besoin d'infrastructure distante."
+      "last_seen": "2026-07-20",
+      "momentum": "montant",
+      "note": "Ollama 'All Aboard' industrialise la distribution locale, calculateur probabiliste émerge : le cloud devient optionnel."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-07-20",
       "momentum": "montant",
-      "note": "GPT-5.6 démonstrations sans preuve formelle, cours de calcul délègue au LLM : la fiabilité démonstrative reste non établie."
+      "note": "Étude confirme IA rend moins précis mais plus confiant, Claude bat conjecture 1939 : l'overconfidence est mesurée."
     },
     {
       "label": "Méthodes formelles et architecture résiliente",
       "category": "devops",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-18",
+      "last_seen": "2026-07-20",
       "momentum": "stable",
-      "note": "SQLite en production, Moonstone Lua/Zig, Topcoat Rust full-stack : le bas-niveau se réécrit avec des langages à sécurité mémoire."
+      "note": "GCC/Clang non conformes C++ moderne, vuln-scanner orchestre 86 outils : la conformité reste un objectif, l'orchestration s'industrialise."
     },
     {
       "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
       "category": "infosec",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-07-19",
-      "momentum": "montant",
-      "note": "WordPress Core pre-auth RCE, AsyncRAT stégo bitmap, ACR Stealer blockchain C2 : l'offensive industrialise discrétion et décentralisation."
+      "last_seen": "2026-07-20",
+      "momentum": "stable",
+      "note": "wp2shell WordPress core, 7-Zip RCE .xz, HelloNet ViPNet update : l'offensive exploite les canaux de confiance héritée."
     },
     {
       "label": "Authority laundering : délégation d'autorité sans preuve",
       "category": "societe",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-07-19",
+      "last_seen": "2026-07-20",
       "momentum": "montant",
-      "note": "Transversal confirmé : GPT-5.6 maths, Stack Overflow, Mac/Claude, SS7 Iran, Flock Safety, LG. L'autorité s'outille avant de se gouverner."
+      "note": "Empiriquement confirmé : IA rend moins précis mais plus confiant, Claude bat Jacobian 1939, entreprises abandonnent engagements climatiques."
     }
   ],
   "watchlist": [
@@ -126,13 +126,13 @@
       "label": "Agent Data Injection : délimiteurs probabilistes",
       "category": "ia",
       "since": "2026-07-17",
-      "note": "ADI exploite les frontières de confiance floues entre données et instructions dans les agents : l'injection de prompt évolue vers l'injection de contexte."
+      "note": "Les frontières de confiance floues entre données et instructions dans les agents : l'injection de prompt devient injection de contexte."
     },
     {
       "label": "Coercition par épuisement : ClickLock 210ms",
       "category": "infosec",
       "since": "2026-07-17",
-      "note": "ClickLock tue les apps toutes les 210ms jusqu'à céder le mot de passe : l'ingénierie sociale devient automatisée et continue, pas ponctuelle."
+      "note": "ClickLock tue les apps toutes les 210ms jusqu'à céder le mot de passe : l'ingénierie sociale devient automatisée et continue."
     },
     {
       "label": "Neuro-ciblage IA : vidéos générées pour manipuler le cerveau",
@@ -141,67 +141,61 @@
       "note": "EPFL Nevo démontre des vidéos IA activant sélectivement des régions cérébrales : l'offensive cognitive devient concevable."
     },
     {
-      "label": "Ghost Font : typographie comme résistance à l'IA",
+      "label": "Calcul probabiliste : le bruit thermique comme ressource",
       "category": "ia",
-      "since": "2026-07-12",
-      "note": "Police lisible par l'humain mais illisible pour l'IA : première instance de résistance technique au scanning IA par le design typographique."
+      "since": "2026-07-20",
+      "note": "Calculateur probabiliste transforme le bruit thermique en réponses computationnelles : l'aléa cesse d'être un défaut pour devenir un moteur."
     },
     {
-      "label": "Context bombs : première défense active contre l'IA offensive",
-      "category": "infosec",
-      "since": "2026-07-14",
-      "note": "Canary secrets qui dégradent le taux de succès des IA offensives et alertent les défenseurs : première riposte concrète à l'agent attaquant."
+      "label": "Backlash physique anti-IA : de la critique à la violence",
+      "category": "societe",
+      "since": "2026-07-20",
+      "note": "La vague anti-IA se durit au point de viser physiquement les dirigeants tech, qui réclament protection : la résistance devient violence."
     },
     {
       "label": "MCP comme surface d'attaque agentique",
       "category": "infosec",
       "since": "2026-07-16",
-      "note": "CVE-2026-63128 : le SDK Rust officiel de MCP fuit ses tables de sessions non authentifiées. L'infrastructure agentique est une surface non durcie."
+      "note": "CVE-2026-63128 : le SDK Rust officiel de MCP fuit ses sessions non authentifiées. L'infrastructure agentique est une surface non durcie."
     },
     {
-      "label": "Opacité du billing cloud et FinOps",
-      "category": "devops",
-      "since": "2026-07-18",
-      "note": "AWS 1,7 Md$ d'erreur de billing : le FinOps repose sur des estimations non auditable par le client. La dépendance cloud devient risque structurel."
-    },
-    {
-      "label": "Quotas agentiques : contrôle fournisseur sur l'autonomie",
-      "category": "ia",
-      "since": "2026-07-19",
-      "note": "Codex resets hebdomadaires imprévisibles paralysent la prod : les limites opaques des fournisseurs deviennent risque opérationnel pour l'agentique."
+      "label": "GhostHound : réanimation de tombstones AD comme chemin d'attaque",
+      "category": "infosec",
+      "since": "2026-07-20",
+      "note": "GhostHound cartographie les chemins de réanimation de tombstones AD : une identité effacée récupère silencieusement ses privilèges."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "Google Cloud déploie la défense agentique, l'IA découvre des vulnérabilités, mais WordPress RCE et SS7 montrent que l'offensive exploite la confiance cassée : la boucle s'automatise, l'asymétrie reste."
-    },
-    {
-      "label": "Dette technique vs course en avant",
-      "note": "WordPress Core pre-auth RCE, SS7 non réparable, civic apps forgeables : la dette contamine les socles les plus ubiquitaires, pas seulement le legacy."
+      "note": "Un workflow IA rapporte 17 CVEs en 6 mois, mais wp2shell et l'exploit kernel Windows montrent que l'offensive exploite la confiance cassée : la boucle s'automatise, l'asymétrie reste."
     },
     {
       "label": "Autonomie agentique vs transparence des délégations",
-      "note": "Quotas Codex paralysent la prod, délégation Mac à Claude Code, authority laundering : l'autonomie des agents dépasse systématiquement la transparence des délégations."
+      "note": "Codex context coupé 27% sans annonce, Save GPT-5.5, Claude bat une conjecture de 1939 : l'autonomie est rognée par le contrôle tarifaire pendant que l'autorité mathématique se délègue sans preuve formelle."
     },
     {
       "label": "Responsabilité entreprise vs contrôle utilisateur",
-      "note": "UE interdit destruction invendus, Mamdani encadre IA immobilière, Flock Safety expose ses bases : la coercition s'étend mais le préjudice précède toujours le cadre."
+      "note": "Les entreprises abandonnent leurs engagements climatiques sans conséquence, les datacenters privent les populations d'eau, l'EFF accompagne les Texanes : le préjudice précède toujours le cadre."
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
-      "note": "IndieWeb 0,01$/jour, Gleam quitte GitHub, Transcribe.cpp : l'ouverture descend la stack pendant que le billing AWS rappelle l'opacité cloud."
+      "note": "Ollama industrialise la distribution locale, ESP32 à 5 dollars désintermédie le hardware, IndieWeb s'apprend en pratique : l'ouverture descend la stack pendant que le verrouillage cloud se maintient par l'opacité."
     },
     {
-      "label": "Surveillance coercitive vs surveillance infrastructurelle",
-      "note": "Flock Safety ALPR exposées, LG installe sans consentement : le contrôle s'impose avant le consentement, la fuite précède la gouvernance."
+      "label": "Surveillance coercitive vs résistance organisée",
+      "note": "Le manifeste anti-Palantir circule, la vague anti-IA vise physiquement les dirigeants tech, l'EFF accompagne les Texanes : la résistance franchit un seuil qualitatif, mais le préjudice précède toujours le cadre."
+    },
+    {
+      "label": "Confiance algorithmique vs compétence cognitive",
+      "note": "L'IA rend ses utilisateurs moins précis mais plus confiants au moment même où Claude bat une conjecture mathématique : la délégation cognitive se paie d'une dégradation mesurable du jugement, validant l'authority laundering."
     }
   ],
   "strategy_notes": [
-    "Authority laundering confirmé transversal : GPT-5.6 en maths, Stack Overflow en érosion, SS7 en géoloc, Flock Safety en fuite. La délégation d'autorité précède la preuve dans tous les domaines.",
-    "WordPress Core pre-auth RCE + SS7 + civic apps : les socles ubiquitaires sont structurellement cassés. Les États n'ont plus besoin de zero-days, ils exploitent la confiance héritée.",
-    "IndieWeb 0,01$/jour + Gleam/Tangled + Transcribe.cpp : la souveraineté infrastructurelle descend la stack. L'auto-hébergement n'est plus marginal, il devient manifeste.",
-    "UE textile + Mamdani IA images : la coercition réglementaire s'étend du numérique au physique et du fédéral au municipal. La gouvernance accélère mais reste en aval."
+    "Authority laundering empiriquement confirmé : l'IA rend moins précis mais plus confiant, Claude bat une conjecture de 1939, les entreprises abandonnent leurs engagements climatiques. La délégation sans preuve est maintenant mesurée, plus seulement observée.",
+    "ESP32 à 5 dollars remplace un système à 120k$, Ollama industrialise la distribution locale, l'auto-hébergement devient manifeste : la souveraineté matérielle cesse d'être marginale, elle devient l'alternative par défaut à la dépendance cloud.",
+    "Codex context coupé 27% sans annonce, Save GPT-5.5, vague anti-IA physique : le contrôle fournisseur sur l'agentique et la résistance sociale convergent. L'ère agentique génère sa propre contre-dynamique.",
+    "WordPress core RCE non authentifiée, exploit kernel Windows public, ViPNet empoisonné : la confiance héritée remplace les zero-days comme vecteur principal. La défense doit s'orchestrer à la cadence de l'offensive."
   ],
-  "updated_at": "2026-07-19"
+  "updated_at": "2026-07-20"
 }

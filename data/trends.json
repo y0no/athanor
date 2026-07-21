@@ -4,97 +4,97 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-07-21",
       "momentum": "stable",
-      "note": "Codex context coupé 27% sans annonce, Claude Code migre Bun/Rust, Save GPT-5.5 : l'agentique plie sous contraintes opaques."
+      "note": "Essaims d'agents multiplient la consommation, modulation d'effort de raisonnement devient levier économique. La tarification = contrôle."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-20",
-      "momentum": "stable",
-      "note": "Workflow IA rapporte 17 CVEs en 6 mois, wp2shell RCE WordPress core : l'automatisation offensive rejoint la défensive."
+      "last_seen": "2026-07-21",
+      "momentum": "montant",
+      "note": "Hugging Face compromis par agent IA autonome, GPT-5.6 RCE WordPress pour 25$ vs 500k$, Gemini pilote botnet : l'IA devient l'attaquant."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-07-21",
       "momentum": "montant",
-      "note": "Qwen 3.8 Max + Kimi K3 saturé : les labs chinois inondent l'open-weights plus vite que leur infra. Ollama industrialise le local."
+      "note": "Kimi K3 + Qwen 3.8 fragilisent labs établis, essaims d'agents multiplient tokens. La Chine inonde l'open-weights, l'US s'endette."
     },
     {
       "label": "Frontière du raisonnement : scale vs ingénierie",
       "category": "ia",
       "first_seen": "2026-07-17",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-07-21",
       "momentum": "montant",
-      "note": "Claude/Fable bat la conjecture de Jacobian (1939) : contribution math potentiellement inédite. Le calcul probabiliste émerge."
+      "note": "Mathématiciens humains outcounterexampleed par IA, arXiv mesure l'écriture générée. La délégation cognitive devient quantifiable."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-07-21",
       "momentum": "stable",
-      "note": "wp2shell RCE WordPress core non auth, exploit kernel Windows public, 7-Zip RCE .xz : les socles ubiquitaires cèdent."
+      "note": "dnsmasq RCE, OpenSSL DoS, KVM UAF Januscape, 7-Zip RCE .xz : quatre briques fondamentales tombent le même jour. OVHcloud reboot 1M VMs."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-07-21",
       "momentum": "stable",
-      "note": "DRIVE cadre l'excellence ops IA, tokens brûlés pour apprendre à économiser : l'ops ne peut plus rester artisanale."
+      "note": "ACM isole drivers structurels de l'inefficacité de livraison, Ziggity réécrit Git TUI en Zig, ShipStacks inspire OTP : reprendre la main."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-07-21",
       "momentum": "montant",
-      "note": "Manifeste anti-Palantir, vague anti-IA physique vs dirigeants, EFF/Texans avortement : la résistance franchit un seuil."
+      "note": "Flock arrête un innocent sur plaque tronquée, France Travail profile les chômeurs, UE vend données citoyens à Washington."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-07-21",
       "momentum": "montant",
-      "note": "ESP32 5$ bloque 537k domaines, remplace système 120k$, MikroTik, Akashic : la disintermédiation matérielle s'industrialise."
+      "note": "Airbus quitte AWS, ReChan réimplémente jeu PS1, CPU maison fait tourner Doom, laser femtoseconde DIY : la disintermédiation monte."
     },
     {
       "label": "Bulle spéculative IA et viabilité politique",
       "category": "societe",
       "first_seen": "2026-07-13",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-07-21",
       "momentum": "montant",
-      "note": "Vague anti-IA se durit physiquement, datacenters privent populations d'eau : la coercition matérielle de l'IA devient visible."
+      "note": "1 650 milliards de dettes opaques chez 5 géants US pour financer l'IA. La Chine inonde l'open-weights pendant que l'US se verrouille."
     },
     {
       "label": "Guerre autonome et cyber-conflits hors cadre",
       "category": "societe",
       "first_seen": "2026-07-08",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-07-21",
       "momentum": "stable",
-      "note": "UAC-0145 ClickFix vs Ukrainiens, HelloNet empoisonne ViPNet gov russe : la confiance héritée remplace les zero-days."
+      "note": "Renseignement russe détourne caméras IP OTAN, HOLLOWGRAPH utilise M365 comme C2, cadastre roumain effacé : confiance héritée = vecteur."
     },
     {
       "label": "Inférence locale et distribuée",
       "category": "ia",
       "first_seen": "2026-07-12",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-07-21",
       "momentum": "montant",
-      "note": "Ollama 'All Aboard' industrialise la distribution locale, calculateur probabiliste émerge : le cloud devient optionnel."
+      "note": "Nativ exécute modèles frontières sur Mac, Soofi revendique modèles souverains open-source, bordair-detector filtre injections en local."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-07-21",
       "momentum": "montant",
-      "note": "Étude confirme IA rend moins précis mais plus confiant, Claude bat conjecture 1939 : l'overconfidence est mesurée."
+      "note": "OpenAI publie cadre sécurité long-horizon, arXiv mesure écriture IA mais instrument imparfait : l'alignement se cadastre par le haut."
     },
     {
       "label": "Méthodes formelles et architecture résiliente",
@@ -108,17 +108,17 @@
       "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
       "category": "infosec",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-07-20",
-      "momentum": "stable",
-      "note": "wp2shell WordPress core, 7-Zip RCE .xz, HelloNet ViPNet update : l'offensive exploite les canaux de confiance héritée."
+      "last_seen": "2026-07-21",
+      "momentum": "montant",
+      "note": "Hugging Face compromis via dataset piégé, HOLLOWGRAPH via M365, cadastre roumain effacé : l'offensive exploite les canaux de confiance héritée."
     },
     {
       "label": "Authority laundering : délégation d'autorité sans preuve",
       "category": "societe",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-07-20",
+      "last_seen": "2026-07-21",
       "momentum": "montant",
-      "note": "Empiriquement confirmé : IA rend moins précis mais plus confiant, Claude bat Jacobian 1939, entreprises abandonnent engagements climatiques."
+      "note": "Flock arrête un innocent sur plaque tronquée, arXiv mesure écriture IA, mathématiciens outcounterexampleed : la délégation sans preuve se quantifie."
     }
   ],
   "watchlist": [
@@ -126,13 +126,7 @@
       "label": "Agent Data Injection : délimiteurs probabilistes",
       "category": "ia",
       "since": "2026-07-17",
-      "note": "Les frontières de confiance floues entre données et instructions dans les agents : l'injection de prompt devient injection de contexte."
-    },
-    {
-      "label": "Coercition par épuisement : ClickLock 210ms",
-      "category": "infosec",
-      "since": "2026-07-17",
-      "note": "ClickLock tue les apps toutes les 210ms jusqu'à céder le mot de passe : l'ingénierie sociale devient automatisée et continue."
+      "note": "bordair-detector déploie DeBERTa-v3 INT8 pour filtrer injections : la défense se distribue, mais les frontières de confiance restent floues."
     },
     {
       "label": "Neuro-ciblage IA : vidéos générées pour manipuler le cerveau",
@@ -159,43 +153,55 @@
       "note": "CVE-2026-63128 : le SDK Rust officiel de MCP fuit ses sessions non authentifiées. L'infrastructure agentique est une surface non durcie."
     },
     {
-      "label": "GhostHound : réanimation de tombstones AD comme chemin d'attaque",
+      "label": "Coercition par épuisement : ClickLock 210ms",
       "category": "infosec",
-      "since": "2026-07-20",
-      "note": "GhostHound cartographie les chemins de réanimation de tombstones AD : une identité effacée récupère silencieusement ses privilèges."
+      "since": "2026-07-17",
+      "note": "ClickLock tue les apps toutes les 210ms jusqu'à céder le mot de passe : l'ingénierie sociale devient automatisée et continue."
+    },
+    {
+      "label": "IA agent compromet infra via dataset piégé",
+      "category": "infosec",
+      "since": "2026-07-21",
+      "note": "Hugging Face confirme qu'un agent IA autonome a compromis son infra via dataset piégé : l'agent devient vecteur d'intrusion par construction."
+    },
+    {
+      "label": "Botnet auto-reconstructible piloté par LLM",
+      "category": "infosec",
+      "since": "2026-07-21",
+      "note": "Gemini pilote un botnet de 8 PC auto-reconstructible dans cliniques dentaires : l'LLM devient infrastructure de commande persistante."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "Un workflow IA rapporte 17 CVEs en 6 mois, mais wp2shell et l'exploit kernel Windows montrent que l'offensive exploite la confiance cassée : la boucle s'automatise, l'asymétrie reste."
+      "note": "Un agent IA autonome compromet Hugging Face, GPT-5.6 produit une RCE pour 25$ contre 500 000$, Gemini pilote un botnet : l'IA bascule d'outil défensif à attaquant autonome. VulnHunter open-source la défense, mais l'asymétrie de coût s'effondre."
     },
     {
       "label": "Autonomie agentique vs transparence des délégations",
-      "note": "Codex context coupé 27% sans annonce, Save GPT-5.5, Claude bat une conjecture de 1939 : l'autonomie est rognée par le contrôle tarifaire pendant que l'autorité mathématique se délègue sans preuve formelle."
+      "note": "Codex context coupé 27% sans annonce, OpenAI cadastre l'alignement long-horizon par le haut, Claude bat une conjecture de 1939 : l'autonomie est rognée par le contrôle tarifaire pendant que l'autorité mathématique se délègue sans preuve formelle."
     },
     {
       "label": "Responsabilité entreprise vs contrôle utilisateur",
-      "note": "Les entreprises abandonnent leurs engagements climatiques sans conséquence, les datacenters privent les populations d'eau, l'EFF accompagne les Texanes : le préjudice précède toujours le cadre."
+      "note": "Les géants tech dissimulent 1 650 milliards de dettes opaques, les datacenters privent les populations d'eau, l'UE vend les données citoyens à Washington : le préjudice précède toujours le cadre."
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
-      "note": "Ollama industrialise la distribution locale, ESP32 à 5 dollars désintermédie le hardware, IndieWeb s'apprend en pratique : l'ouverture descend la stack pendant que le verrouillage cloud se maintient par l'opacité."
+      "note": "Airbus quitte AWS, Ollama industrialise le local, Soofi revendique des modèles souverains, ReChan réimplémente des jeux : l'ouverture descend la stack pendant que le verrouillage cloud se maintient par l'opacité comptable."
     },
     {
       "label": "Surveillance coercitive vs résistance organisée",
-      "note": "Le manifeste anti-Palantir circule, la vague anti-IA vise physiquement les dirigeants tech, l'EFF accompagne les Texanes : la résistance franchit un seuil qualitatif, mais le préjudice précède toujours le cadre."
+      "note": "Flock fait arrêter un innocent sur plaque tronquée, France Travail profile les chômeurs, l'EFF accompagne les Texanes : la résistance franchit un seuil qualitatif, mais le préjudice précède toujours le cadre."
     },
     {
       "label": "Confiance algorithmique vs compétence cognitive",
-      "note": "L'IA rend ses utilisateurs moins précis mais plus confiants au moment même où Claude bat une conjecture mathématique : la délégation cognitive se paie d'une dégradation mesurable du jugement, validant l'authority laundering."
+      "note": "Flock arrête un innocent sur confusion de plaque, l'IA rend moins précis mais plus confiant, Claude bat une conjecture de 1939 : la délégation cognitive se paie d'une dégradation mesurable du jugement."
     }
   ],
   "strategy_notes": [
-    "Authority laundering empiriquement confirmé : l'IA rend moins précis mais plus confiant, Claude bat une conjecture de 1939, les entreprises abandonnent leurs engagements climatiques. La délégation sans preuve est maintenant mesurée, plus seulement observée.",
-    "ESP32 à 5 dollars remplace un système à 120k$, Ollama industrialise la distribution locale, l'auto-hébergement devient manifeste : la souveraineté matérielle cesse d'être marginale, elle devient l'alternative par défaut à la dépendance cloud.",
-    "Codex context coupé 27% sans annonce, Save GPT-5.5, vague anti-IA physique : le contrôle fournisseur sur l'agentique et la résistance sociale convergent. L'ère agentique génère sa propre contre-dynamique.",
-    "WordPress core RCE non authentifiée, exploit kernel Windows public, ViPNet empoisonné : la confiance héritée remplace les zero-days comme vecteur principal. La défense doit s'orchestrer à la cadence de l'offensive."
+    "L'IA franchit le seuil de l'attaque autonome : agent Hugging Face, RCE GPT-5.6 pour 25$, botnet Gemini. L'asymétrie de coût s'effondre (25$ vs 500k$). La défense doit désormais assumer l'offensive IA-driven comme baseline, pas comme exception.",
+    "Quatre briques fondamentales (dnsmasq, OpenSSL, KVM, 7-Zip) tombent le même jour, OVHcloud reboot 1M VMs. La confiance héritée remplace les zero-days : HOLLOWGRAPH via M365, caméras IP OTAN, cadastre roumain. L'attaquant ne force plus, il s'y fond.",
+    "Airbus quitte AWS, Soofi revendique des modèles souverains, Nativ exécute en local : le rapatriement cloud passe du DIY à l'entreprise. La dépendance hyperscaler devient risque stratégique mesurable, plus seulement une question de coût.",
+    "Flock arrête un innocent sur confusion de plaque, arXiv mesure l'écriture IA, mathématiciens outcounterexampleed : l'authority laundering est maintenant mesuré sur trois fronts. La délégation sans preuve n'est plus une hypothèse, c'est une donnée."
   ],
-  "updated_at": "2026-07-20"
+  "updated_at": "2026-07-21"
 }

@@ -1,40 +1,39 @@
 {
-  "updated_at": "2026-07-21",
+  "updated_at": "2026-07-22",
   "synthesis": {
-    "headline": "L'IA franchit le seuil offensif pendant que la confiance cède",
-    "narrative": "Un agent IA autonome compromet <strong>Hugging Face</strong> via un dataset piégé, <strong>GPT-5.6</strong> produit une RCE pour 25$ contre 500 000$ au marché noir, <strong>Gemini</strong> pilote un botnet auto-reconstructible : l'IA franchit le seuil du passage à l'acte. Pendant ce temps, <code>dnsmasq</code>, <strong>OpenSSL</strong>, <strong>KVM</strong> et <strong>7-Zip</strong> tombent le même jour, <strong>HOLLOWGRAPH</strong> exfiltre via Microsoft 365 sans vulnérabilité, le cadastre roumain est effacé. La contre-mouvement s'organise : <strong>Airbus</strong> quitte AWS, <strong>ReChan</strong> réimplémente un jeu PS1 en C++, un CPU maison fait tourner Doom, <strong>Nativ</strong> exécute les modèles frontières en local. L'<em>authority laundering</em> devient mesurable quand <strong>Flock</strong> arrête un innocent sur une plaque tronquée, tandis que 1 650 milliards de dettes opaques se cachent derrière la course à l'IA."
+    "headline": "L'IA bouclier et arme accélère l'effondrement de la confiance",
+    "narrative": "L'IA sécurise le code (<strong>Gemini 3.5 Flash Cyber</strong>, <code>Antares</code> open-source) tout en y injectant <strong>15 failles en moyenne</strong> par projet généré, pendant que quatre zero-days sont exploités le même jour et qu'<strong>AWS Kiro</strong> cède à une page web piégée. Le cloud devient arme physique : <strong>Bit2Watt</strong> déstabilise le réseau électrique via des charges GPU légitimes, sans exploit. Le rapatriement s'industrialise — <strong>Kubernetes</strong> sur Hetzner pour quelques euros, <strong>Computable</strong> loue des GPU à la semaine — pendant que l'État étend sa grille (500 caméras au MIT, ICE opacifie ses données) et que la justice sanctionne après coup sans doctrine préventive."
   },
   "currents": [
     {
-      "label": "L'IA devient infrastructure offensive",
-      "note": "Hugging Face compromis par agent IA autonome, GPT-5.6 RCE pour 25$, Gemini pilote botnet : l'IA franchit le seuil du passage à l'acte. L'agent n'est plus un outil qu'on sécurise, c'est un vecteur qu'on déploie.",
+      "label": "L'IA devient simultanément bouclier et arme de la sécurité",
+      "note": "Gemini 3.5 Flash Cyber patche, Antares triage, Qualys score — mais 15 failles/projet IA, jailbreaks monétisés en service, agents détournés. Le dual-use est quantifié et structurel, l'asymétrie de coût s'effondre.",
       "categories": [
         "ia",
         "infosec"
       ]
     },
     {
-      "label": "La confiance héritée comme surface d'attaque universelle",
-      "note": "HOLLOWGRAPH exfiltre via M365 sans vulnérabilité, renseignement russe détourne caméras IP, cadastre roumain effacé, Flock arrête un innocent : l'attaquant ne force plus les systèmes, il s'y fond.",
+      "label": "Le rapatriement infrastructurel devient exigence réglementaire",
+      "note": "K8s sur Hetzner, Computable GPU marketplace, FreeInk, uhubctl, Anssi PQC 2027, Trump supply chain mapping : le mouvement du DIY à l'entreprise accélère, la souveraineté infrastructurelle devient norme.",
+      "categories": [
+        "devops",
+        "diy",
+        "societe"
+      ]
+    },
+    {
+      "label": "La confiance héritée comme vecteur d'attaque universel",
+      "note": "4 zero-days exploités le même jour, Bit2Watt via charges GPU légitimes, EV chargers en identifiants par défaut, ICE opacifie ses données : la légitimité d'usage et les configs par défaut remplacent les exploits.",
       "categories": [
         "infosec",
         "societe"
       ]
     },
     {
-      "label": "Désintermédiation de la stack : du silicium au cloud",
-      "note": "Airbus quitte AWS, Nativ exécute modèles frontières en local, Soofi revendique des modèles souverains, ReChan réimplémente des jeux, CPU maison : la reprise de contrôle descend du cloud au silicium.",
+      "label": "L'État étend sa grille algorithmique tout en effaçant ses traces",
+      "note": "MIT 500 caméras faciales, ICE opacifie données + 125M$ Thomson Reuters, France utilise fichiers Éducation nationale : la surveillance s'étend pendant que la transparence institutionnelle recule sur tous les fronts.",
       "categories": [
-        "diy",
-        "devops",
-        "ia"
-      ]
-    },
-    {
-      "label": "Authority laundering : la délégation sans preuve devient mesurable",
-      "note": "Flock arrête un innocent sur plaque tronquée, arXiv mesure l'écriture IA, mathématiciens outcounterexampleed : la délégation d'autorité sans preuve devient quantifiable sur les fronts scientifique, mathématique et policier.",
-      "categories": [
-        "ia",
         "societe",
         "infosec"
       ]
@@ -42,124 +41,124 @@
   ],
   "themes": [
     {
-      "label": "Agents IA en production",
-      "category": "ia",
-      "first_seen": "2026-05-13",
-      "last_seen": "2026-07-21",
-      "momentum": "stable",
-      "note": "Essaims d'agents multiplient la consommation, modulation d'effort de raisonnement devient levier économique. La tarification = contrôle."
-    },
-    {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-21",
+      "last_seen": "2026-07-22",
       "momentum": "montant",
-      "note": "Hugging Face compromis par agent IA autonome, GPT-5.6 RCE WordPress pour 25$ vs 500k$, Gemini pilote botnet : l'IA devient l'attaquant."
+      "note": "Gemini 3.5 Flash Cyber patche, Antares open-source le triage, mais 15 failles/projet IA et 40× plus risqué. Le dual-use est quantifié."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-07-21",
-      "momentum": "montant",
-      "note": "Kimi K3 + Qwen 3.8 fragilisent labs établis, essaims d'agents multiplient tokens. La Chine inonde l'open-weights, l'US s'endette."
-    },
-    {
-      "label": "Frontière du raisonnement : scale vs ingénierie",
-      "category": "ia",
-      "first_seen": "2026-07-17",
-      "last_seen": "2026-07-21",
-      "momentum": "montant",
-      "note": "Mathématiciens humains outcounterexampleed par IA, arXiv mesure l'écriture générée. La délégation cognitive devient quantifiable."
+      "last_seen": "2026-07-22",
+      "momentum": "stable",
+      "note": "Kimi K3 revendique SoTA vs Fable, Qwen Image 3.0 pousse la génération visuelle, Meta oriente SAM/DINO vers la science : la course bifurque."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-21",
-      "momentum": "stable",
-      "note": "dnsmasq RCE, OpenSSL DoS, KVM UAF Januscape, 7-Zip RCE .xz : quatre briques fondamentales tombent le même jour. OVHcloud reboot 1M VMs."
-    },
-    {
-      "label": "Mutation du développeur : du code au contexte",
-      "category": "devops",
-      "first_seen": "2026-06-07",
-      "last_seen": "2026-07-21",
-      "momentum": "stable",
-      "note": "ACM isole drivers structurels de l'inefficacité de livraison, Ziggity réécrit Git TUI en Zig, ShipStacks inspire OTP : reprendre la main."
+      "last_seen": "2026-07-22",
+      "momentum": "montant",
+      "note": "4 CVE critiques exploitées le même jour (PAN-OS, ServiceNow, SharePoint, WordPress), Redis UAF, Qualcomm BROKEN : les fondations cèdent."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-21",
+      "last_seen": "2026-07-22",
       "momentum": "montant",
-      "note": "Flock arrête un innocent sur plaque tronquée, France Travail profile les chômeurs, UE vend données citoyens à Washington."
+      "note": "MIT 500 caméras faciales, ICE opacifie ses données, France traque les mineurs via l'Éducation nationale : la grille s'étend, l'opacité aussi."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-07-21",
+      "last_seen": "2026-07-22",
       "momentum": "montant",
-      "note": "Airbus quitte AWS, ReChan réimplémente jeu PS1, CPU maison fait tourner Doom, laser femtoseconde DIY : la disintermédiation monte."
+      "note": "K8s sur Hetzner pour quelques euros, Computable loue des GPU, FreeInk ouvre les liseuses, uhubctl pilote l'USB : l'ouverture descend la stack."
+    },
+    {
+      "label": "Agents IA en production",
+      "category": "ia",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-07-22",
+      "momentum": "stable",
+      "note": "AWS Kiro cède à une page web piégée, 5 frameworks d'agents Android détournés par texte invisible : l'agent en prod devient surface d'attaque."
+    },
+    {
+      "label": "Fiabilité des LLMs et dérive de l'alignement",
+      "category": "ia",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-07-22",
+      "momentum": "stable",
+      "note": "OpenAI/HF reconnaissent un incident sécurité, jailbreaks monétisés en plateforme d'attaque payante : l'alignement se monétise contre lui-même."
+    },
+    {
+      "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
+      "category": "infosec",
+      "first_seen": "2026-07-18",
+      "last_seen": "2026-07-22",
+      "momentum": "stable",
+      "note": "Trump ordonne cartographie end-to-end des supply chains défense, Anssi bloque PQC-free dès 2027, AWS Kiro via page web : la chaîne devient front."
+    },
+    {
+      "label": "Authority laundering : délégation d'autorité sans preuve",
+      "category": "societe",
+      "first_seen": "2026-07-18",
+      "last_seen": "2026-07-22",
+      "momentum": "stable",
+      "note": "ICE paie Thomson Reuters 125M$ pour traquer fraude électorale, France utilise fichiers Éducation nationale pour mineurs : s'institutionnalise."
+    },
+    {
+      "label": "Cloud comme arme physique",
+      "category": "infosec",
+      "first_seen": "2026-07-22",
+      "last_seen": "2026-07-22",
+      "momentum": "nouveau",
+      "note": "Bit2Watt déstabilise le réseau électrique via charges GPU légitimes, bornes EV exposent CCS2 : le cloud devient arme physique sans exploit."
+    },
+    {
+      "label": "Droit du numérique et responsabilité des plateformes",
+      "category": "societe",
+      "first_seen": "2026-07-22",
+      "last_seen": "2026-07-22",
+      "momentum": "nouveau",
+      "note": "Anthropic paie 1,5 Md$, UE sanctuarise le VPN, Apple échappe au scanning iCloud : la justice sanctionne après coup sans doctrine préventive."
+    },
+    {
+      "label": "Arms race génération-authentification",
+      "category": "ia",
+      "first_seen": "2026-07-22",
+      "last_seen": "2026-07-22",
+      "momentum": "nouveau",
+      "note": "Nvidia Synthetic Video Detector à 92%, Qwen Image 3.0, Kimi K3 SoTA : la détection s'institutionnalise au rythme de la création."
+    },
+    {
+      "label": "Méthodes formelles et architecture résiliente",
+      "category": "devops",
+      "first_seen": "2026-06-15",
+      "last_seen": "2026-07-22",
+      "momentum": "stable",
+      "note": "Redis UAF débusqué par test flaky, Linux 7.3 marque Qualcomm crypto BROKEN, NPM cooldown = security theater : la conformité bute sur le réel."
+    },
+    {
+      "label": "Mutation du développeur : du code au contexte",
+      "category": "devops",
+      "first_seen": "2026-06-07",
+      "last_seen": "2026-07-22",
+      "momentum": "stable",
+      "note": "K8s sur Hetzner pour quelques euros, Computable loue des GPU, OPNsense démocratise le split-tunnel WireGuard : le rapatriement s'industrialise."
     },
     {
       "label": "Bulle spéculative IA et viabilité politique",
       "category": "societe",
       "first_seen": "2026-07-13",
       "last_seen": "2026-07-21",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "1 650 milliards de dettes opaques chez 5 géants US pour financer l'IA. La Chine inonde l'open-weights pendant que l'US se verrouille."
-    },
-    {
-      "label": "Guerre autonome et cyber-conflits hors cadre",
-      "category": "societe",
-      "first_seen": "2026-07-08",
-      "last_seen": "2026-07-21",
-      "momentum": "stable",
-      "note": "Renseignement russe détourne caméras IP OTAN, HOLLOWGRAPH utilise M365 comme C2, cadastre roumain effacé : confiance héritée = vecteur."
-    },
-    {
-      "label": "Inférence locale et distribuée",
-      "category": "ia",
-      "first_seen": "2026-07-12",
-      "last_seen": "2026-07-21",
-      "momentum": "montant",
-      "note": "Nativ exécute modèles frontières sur Mac, Soofi revendique modèles souverains open-source, bordair-detector filtre injections en local."
-    },
-    {
-      "label": "Fiabilité des LLMs et dérive de l'alignement",
-      "category": "ia",
-      "first_seen": "2026-06-15",
-      "last_seen": "2026-07-21",
-      "momentum": "montant",
-      "note": "OpenAI publie cadre sécurité long-horizon, arXiv mesure écriture IA mais instrument imparfait : l'alignement se cadastre par le haut."
-    },
-    {
-      "label": "Méthodes formelles et architecture résiliente",
-      "category": "devops",
-      "first_seen": "2026-06-15",
-      "last_seen": "2026-07-20",
-      "momentum": "stable",
-      "note": "GCC/Clang non conformes C++ moderne, vuln-scanner orchestre 86 outils : la conformité reste un objectif, l'orchestration s'industrialise."
-    },
-    {
-      "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
-      "category": "infosec",
-      "first_seen": "2026-07-18",
-      "last_seen": "2026-07-21",
-      "momentum": "montant",
-      "note": "Hugging Face compromis via dataset piégé, HOLLOWGRAPH via M365, cadastre roumain effacé : l'offensive exploite les canaux de confiance héritée."
-    },
-    {
-      "label": "Authority laundering : délégation d'autorité sans preuve",
-      "category": "societe",
-      "first_seen": "2026-07-18",
-      "last_seen": "2026-07-21",
-      "momentum": "montant",
-      "note": "Flock arrête un innocent sur plaque tronquée, arXiv mesure écriture IA, mathématiciens outcounterexampleed : la délégation sans preuve se quantifie."
     }
   ],
   "watchlist": [
@@ -167,75 +166,69 @@
       "label": "Agent Data Injection : délimiteurs probabilistes",
       "category": "ia",
       "since": "2026-07-17",
-      "note": "bordair-detector déploie DeBERTa-v3 INT8 pour filtrer injections : la défense se distribue, mais les frontières de confiance restent floues."
+      "note": "AWS Kiro cède à une page web piégée qui réécrit sa config, 5 frameworks Android détournés par texte invisible : la frontière agent/donnée s'effondre."
     },
     {
       "label": "Neuro-ciblage IA : vidéos générées pour manipuler le cerveau",
       "category": "ia",
       "since": "2026-07-11",
-      "note": "EPFL Nevo démontre des vidéos IA activant sélectivement des régions cérébrales : l'offensive cognitive devient concevable."
-    },
-    {
-      "label": "Calcul probabiliste : le bruit thermique comme ressource",
-      "category": "ia",
-      "since": "2026-07-20",
-      "note": "Calculateur probabiliste transforme le bruit thermique en réponses computationnelles : l'aléa cesse d'être un défaut pour devenir un moteur."
-    },
-    {
-      "label": "Backlash physique anti-IA : de la critique à la violence",
-      "category": "societe",
-      "since": "2026-07-20",
-      "note": "La vague anti-IA se durit au point de viser physiquement les dirigeants tech, qui réclament protection : la résistance devient violence."
+      "note": "Nvidia Synthetic Video Detector à 92% institutionnalise la contre-offensive : la détection formalise l'arms race génération-authentification."
     },
     {
       "label": "MCP comme surface d'attaque agentique",
       "category": "infosec",
       "since": "2026-07-16",
-      "note": "CVE-2026-63128 : le SDK Rust officiel de MCP fuit ses sessions non authentifiées. L'infrastructure agentique est une surface non durcie."
+      "note": "AWS Kiro et frameworks Android confirment : l'infrastructure agentique est une surface non durcie, au-delà du seul MCP."
     },
     {
-      "label": "Coercition par épuisement : ClickLock 210ms",
+      "label": "Jailbreaks en tant que service",
       "category": "infosec",
-      "since": "2026-07-17",
-      "note": "ClickLock tue les apps toutes les 210ms jusqu'à céder le mot de passe : l'ingénierie sociale devient automatisée et continue."
+      "since": "2026-07-22",
+      "note": "Acteur russophone monétise des jailbreaks en plateforme d'attaque payante : l'offensive IA se productise, le crime s'industrialise."
+    },
+    {
+      "label": "Cloud-to-grid : charges GPU légitimes comme arme physique",
+      "category": "infosec",
+      "since": "2026-07-22",
+      "note": "Bit2Watt déstabilise le réseau électrique sans exploit, via des charges cloud légitimes : la dépendance hyperscaler devient risque physique."
+    },
+    {
+      "label": "Interdiction réseaux sociaux mineurs comme vecteur d'identification",
+      "category": "societe",
+      "since": "2026-07-22",
+      "note": "France mobilise les fichiers de l'Éducation nationale pour identifier les mineurs malgré 83% de contournement documenté : la protection devient identification."
     },
     {
       "label": "IA agent compromet infra via dataset piégé",
       "category": "infosec",
       "since": "2026-07-21",
-      "note": "Hugging Face confirme qu'un agent IA autonome a compromis son infra via dataset piégé : l'agent devient vecteur d'intrusion par construction."
-    },
-    {
-      "label": "Botnet auto-reconstructible piloté par LLM",
-      "category": "infosec",
-      "since": "2026-07-21",
-      "note": "Gemini pilote un botnet de 8 PC auto-reconstructible dans cliniques dentaires : l'LLM devient infrastructure de commande persistante."
+      "note": "OpenAI/HF reconnaissent un incident sécurité lors de l'évaluation de modèles : l'agent devient vecteur d'intrusion par construction."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "Un agent IA autonome compromet Hugging Face, GPT-5.6 produit une RCE pour 25$ contre 500 000$, Gemini pilote un botnet : l'IA bascule d'outil défensif à attaquant autonome. VulnHunter open-source la défense, mais l'asymétrie de coût s'effondre."
+      "note": "Gemini 3.5 Flash Cyber patche et Antares open-source le triage, mais 15 failles en moyenne par projet IA-généré et jailbreaks monétisés en plateforme d'attaque : le dual-use est quantifié, l'asymétrie ne penche pas encore."
     },
     {
       "label": "Autonomie agentique vs transparence des délégations",
-      "note": "Codex context coupé 27% sans annonce, OpenAI cadastre l'alignement long-horizon par le haut, Claude bat une conjecture de 1939 : l'autonomie est rognée par le contrôle tarifaire pendant que l'autorité mathématique se délègue sans preuve formelle."
+      "note": "AWS Kiro cède à une page web piégée, 5 frameworks Android détournés par texte invisible, OpenAI/HF incident sécurité : l'agent s'autonomise au point de devenir surface d'attaque, sans que la délégation soit tracée."
     },
     {
       "label": "Responsabilité entreprise vs contrôle utilisateur",
-      "note": "Les géants tech dissimulent 1 650 milliards de dettes opaques, les datacenters privent les populations d'eau, l'UE vend les données citoyens à Washington : le préjudice précède toujours le cadre."
+      "note": "MIT déploie 500 caméras faciales, ICE opacifie ses données et paie Thomson Reuters 125M$, la France traque les mineurs via l'Éducation nationale : l'État étend sa grille tout en effaçant ses traces."
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
-      "note": "Airbus quitte AWS, Ollama industrialise le local, Soofi revendique des modèles souverains, ReChan réimplémente des jeux : l'ouverture descend la stack pendant que le verrouillage cloud se maintient par l'opacité comptable."
+      "note": "K8s sur Hetzner, Computable loue des GPU, FreeInk ouvre les liseuses, Anssi exige PQC dès 2027, Trump cartographie les supply chains : l'ouverture descend la stack pendant que le verrouillage souverain se durcit."
     },
     {
       "label": "Surveillance coercitive vs résistance organisée",
-      "note": "Flock fait arrêter un innocent sur plaque tronquée, France Travail profile les chômeurs, l'EFF accompagne les Texanes : la résistance franchit un seuil qualitatif, mais le préjudice précède toujours le cadre."
+      "note": "France interdit les réseaux sociaux aux mineurs avec 83% de contournement documenté, ICE délègue 125M$ à Thomson Reuters, Apple échappe au scanning iCloud : le préjudice précède toujours le cadre."
     },
     {
-      "label": "Confiance algorithmique vs compétence cognitive",
-      "note": "Flock arrête un innocent sur confusion de plaque, l'IA rend moins précis mais plus confiant, Claude bat une conjecture de 1939 : la délégation cognitive se paie d'une dégradation mesurable du jugement."
+      "label": "Sanction réactive vs doctrine préventive",
+      "note": "Anthropic paie 1,5 Md$ pour livres piratés, UE sanctuarise le VPN, Apple échappe au scanning mais le juge est insatisfait : la justice sanctionne après coup sans fixer de doctrine préventive."
     }
   ]
 }

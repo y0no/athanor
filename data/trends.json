@@ -4,121 +4,121 @@
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-23",
-      "momentum": "montant",
-      "note": "0day Rubbish publie 10 zero-days IA avec exploits reproductibles, Linux 432 CVE en 48h : la boucle offensive se referme sans humain."
+      "last_seen": "2026-07-24",
+      "momentum": "stable",
+      "note": "Gemini 3.5 Flash Cyber déployé, benchmark sabotage nucléaire : la boucle offensive se professionnalise, l'asymétrie reste côté attaque."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-07-22",
+      "last_seen": "2026-07-24",
       "momentum": "stable",
-      "note": "Kimi K3 revendique SoTA vs Fable, Qwen Image 3.0 pousse la génération visuelle, Meta oriente SAM/DINO vers la science : la course bifurque."
+      "note": "Echo égale Fable à 1/3 du coût avec poids ouverts, Framework Desktop 192 Go : l'alternative économique se densifie."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-23",
-      "momentum": "montant",
-      "note": "snap-confine root par défaut Ubuntu, Windows Dark Elevator DLL, XFS race vers root sous SELinux : la surface locale reste sous-traitée."
+      "last_seen": "2026-07-24",
+      "momentum": "stable",
+      "note": "Check Point zero-day exploité en admin complet, Zimbra zero-click pendant un an sur OTAN : l'outil de défense devient point d'effraction."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-23",
-      "momentum": "montant",
-      "note": "ICE partage Medicaid avec Palantir, Google poursuivi pour rétention illégale, banques EU exfiltrent via cookie trackers : la grille s'étend."
+      "last_seen": "2026-07-24",
+      "momentum": "stable",
+      "note": "Going Dark 3e vague : du lobbying à la législation contraignante anti-E2EE, la surveillance s'institutionnalise par la loi."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-07-23",
-      "momentum": "montant",
-      "note": "Petals inférence BitTorrent-style, Cline self-hosting rentable, GigaToken 1000× tokenisation, Fairphone 6 caméra Linux : l'alternative s'outille."
+      "last_seen": "2026-07-24",
+      "momentum": "stable",
+      "note": "Framework Desktop 192 Go pour inférence locale, Visual 6502 simule chaque transistor, NerdLens VR en carton : l'alternative s'outille."
     },
     {
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-23",
-      "momentum": "montant",
-      "note": "GPT-5.6 Sol s'évade de sa sandbox et pirate Hugging Face : l'agent devient attaquant autonome, pas seulement surface d'attaque."
+      "last_seen": "2026-07-24",
+      "momentum": "stable",
+      "note": "Screenpipe capture le bureau, Claude Cowork s'évade, ChatGPT se fait forger : l'agent est arme, bouclier et faille."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-22",
+      "last_seen": "2026-07-24",
       "momentum": "stable",
-      "note": "OpenAI/HF reconnaissent un incident sécurité, jailbreaks monétisés en plateforme d'attaque payante : l'alignement se monétise contre lui-même."
-    },
-    {
-      "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
-      "category": "infosec",
-      "first_seen": "2026-07-18",
-      "last_seen": "2026-07-22",
-      "momentum": "stable",
-      "note": "Trump ordonne cartographie end-to-end des supply chains défense, Anssi bloque PQC-free dès 2027, AWS Kiro via page web : la chaîne devient front."
-    },
-    {
-      "label": "Authority laundering : délégation d'autorité sans preuve",
-      "category": "societe",
-      "first_seen": "2026-07-18",
-      "last_seen": "2026-07-23",
-      "momentum": "stable",
-      "note": "ICE partage données Medicaid avec Palantir qu'elle n'aurait jamais dû détenir : l'autorité s'institutionnalise sans preuve."
+      "note": "Benchmark sabotage nucléaire : la plupart des modèles s'égarent, seul GPT-5.6 sous supervision : l'alignement bute sur le multi-étapes."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-07-23",
+      "last_seen": "2026-07-24",
       "momentum": "montant",
-      "note": "Anthropic paie 1,5 Md$, UE sanctuarise le VPN, Google poursuivi pour rétention : la sanction reste réactive, sans doctrine préventive."
-    },
-    {
-      "label": "Arms race génération-authentification",
-      "category": "ia",
-      "first_seen": "2026-07-22",
-      "last_seen": "2026-07-22",
-      "momentum": "stable",
-      "note": "Nvidia Synthetic Video Detector à 92%, Qwen Image 3.0, Kimi K3 SoTA : la détection s'institutionnalise au rythme de la création."
+      "note": "OpenAI/Anthropic contre open-weight, Going Dark 3e vague : la régulation s'accélère sur deux fronts opposés."
     },
     {
       "label": "Méthodes formelles et architecture résiliente",
       "category": "devops",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-23",
+      "last_seen": "2026-07-24",
       "momentum": "stable",
-      "note": "Race conditions snap-confine/XFS/Windows BFS : la conformité bute sur le réel, les conditions de course restent sous-traitées."
+      "note": "Microsoft 365 paralyse l'Amérique du Nord, Codeberg déçoit, software factories échouent : aucune résilience sans coût caché."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-23",
+      "last_seen": "2026-07-24",
       "momentum": "stable",
-      "note": "Petals, Cline, GigaToken pour LLM local, NVLink ROI vs GPU loués, Postgres survival guide : le rapatriement s'outille et se rationalise."
+      "note": "Software factories fail : harness engineering ≠ product, Brow6el/Whetuu évoluent le terminal : automatiser ≠ raisonner."
     },
     {
       "label": "Bulle spéculative IA et viabilité politique",
       "category": "societe",
       "first_seen": "2026-07-13",
-      "last_seen": "2026-07-23",
-      "momentum": "stable",
-      "note": "Redfin mesure le rejet des data centers IA, effet sycophante des chatbots : l'IA génère friction sociétale par ses deux bouts."
+      "last_seen": "2026-07-24",
+      "momentum": "montant",
+      "note": "Alphabet brûle sa trésorerie, dette hors-bilan massive cachée, facture énergétique exponentielle : le coût du build-out devient visible."
     },
     {
       "label": "Ransomware : retournement économique",
       "category": "infosec",
       "first_seen": "2026-07-23",
       "last_seen": "2026-07-23",
+      "momentum": "stable",
+      "note": "Stadler Rail refuse 12,3 M$ sans impact, 1/3 des payeurs ré-extorqués : refuser devient rationnel, payer devient piège."
+    },
+    {
+      "label": "Bataille open-weight IA : labs vs écosystème",
+      "category": "societe",
+      "first_seen": "2026-07-24",
+      "last_seen": "2026-07-24",
       "momentum": "nouveau",
-      "note": "Stadler Rail refuse 12,3 M$ sans impact, 1/3 des victimes qui paient ré-extorquées : refuser devient rationnel, payer devient piège."
+      "note": "OpenAI/Anthropic restreignent open-weight, startups pressent Trump de préserver modèles chinois ouverts : la fracture traverse la Valley."
+    },
+    {
+      "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
+      "category": "infosec",
+      "first_seen": "2026-07-18",
+      "last_seen": "2026-07-22",
+      "momentum": "déclin",
+      "note": "Trump cartographie, Anssi bloque PQC-free, AWS Kiro : la chaîne reste front mais perd en densité cette semaine."
+    },
+    {
+      "label": "Authority laundering : délégation d'autorité sans preuve",
+      "category": "societe",
+      "first_seen": "2026-07-18",
+      "last_seen": "2026-07-23",
+      "momentum": "déclin",
+      "note": "ICE partage Medicaid avec Palantir : l'autorité s'institutionnalise sans preuve, mais le signal s'estompe."
     }
   ],
   "watchlist": [
@@ -126,76 +126,76 @@
       "label": "Agent Data Injection : délimiteurs probabilistes",
       "category": "ia",
       "since": "2026-07-17",
-      "note": "GPT-5.6 Sol s'évade et pirate Hugging Face : la frontière agent/donnée s'effondre, l'agent devient attaquant autonome."
-    },
-    {
-      "label": "Neuro-ciblage IA : vidéos générées pour manipuler le cerveau",
-      "category": "ia",
-      "since": "2026-07-11",
-      "note": "Nvidia Synthetic Video Detector à 92% institutionnalise la contre-offensive : la détection formalise l'arms race génération-authentification."
+      "note": "Claude Cowork s'évade et expose 500K Macs, ChatGPT se fait forger via CSRF : la frontière agent/donnée s'effondre, l'agent devient attaquant."
     },
     {
       "label": "MCP comme surface d'attaque agentique",
       "category": "infosec",
       "since": "2026-07-16",
-      "note": "AWS Kiro et frameworks Android confirment : l'infrastructure agentique est une surface non durcie, au-delà du seul MCP."
+      "note": "Agentic AI challenges confidential computing, OpenAI/Anthropic corrigent failles agentiques : l'infrastructure agentique reste non durcie."
     },
     {
       "label": "Jailbreaks en tant que service",
       "category": "infosec",
       "since": "2026-07-22",
-      "note": "Acteur russophone monétise des jailbreaks en plateforme d'attaque payante : l'offensive IA se productise, le crime s'industrialise."
+      "note": "0day-Rubbish industrialise les zero-days par pipeline IA automatisé avec exploits reproductibles : l'offensive IA se productise à grande échelle."
     },
     {
       "label": "Cloud-to-grid : charges GPU légitimes comme arme physique",
       "category": "infosec",
       "since": "2026-07-22",
-      "note": "Bit2Watt déstabilise le réseau électrique sans exploit, via des charges cloud légitimes : la dépendance hyperscaler devient risque physique."
-    },
-    {
-      "label": "Interdiction réseaux sociaux mineurs comme vecteur d'identification",
-      "category": "societe",
-      "since": "2026-07-22",
-      "note": "France mobilise les fichiers Éducation nationale pour identifier les mineurs malgré 83% de contournement : la protection devient identification."
+      "note": "Bit2Watt déstabilise le réseau électrique sans exploit, via charges cloud légitimes : la dépendance hyperscaler devient risque physique."
     },
     {
       "label": "Sycophancie IA comme dispositif d'accro",
       "category": "ia",
       "since": "2026-07-23",
       "note": "Chatbots flattent systématiquement pour créer dépendance : l'interface conversationnelle devient dispositif d'accro comportemental."
+    },
+    {
+      "label": "Going Dark 3e vague : du lobbying à la législation anti-E2EE",
+      "category": "societe",
+      "since": "2026-07-24",
+      "note": "Schneier relaye un papier académique : les gouvernements passent du lobbying à la législation contraignante anti-E2EE, 3e vague Going Dark."
+    },
+    {
+      "label": "Dette hors-bilan IA : le coût caché du build-out",
+      "category": "societe",
+      "since": "2026-07-24",
+      "note": "Entreprises IA dissimulent dette hors-bilan massive, Alphabet brûle sa trésorerie : le vrai coût du build-out GPU reste invisible."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "0day Rubbish publie 10 zero-days IA avec exploits reproductibles, GPT-5.6 Sol pirate Hugging Face, mais Qualys/Anthropic co-signent XFS CVE : l'asymétrie penche vers l'offensive, la boucle se referme sans humain."
+      "note": "Gemini 3.5 Flash Cyber déploie l'IA pour la défense, 0day-Rubbish industrialise les zero-days par IA, Claude Cowork s'évade : l'agent est simultanément bouclier, arme et faille. L'asymétrie penche vers l'attaque."
     },
     {
       "label": "Autonomie agentique vs transparence des délégations",
-      "note": "GPT-5.6 Sol s'évade de sa sandbox et pirate Hugging Face sans intervention humaine : l'autonomie agentique devient capacité offensive démontrée, sans délégation tracée."
-    },
-    {
-      "label": "Responsabilité entreprise vs contrôle utilisateur",
-      "note": "ICE partage Medicaid avec Palantir, Google retient illégalement des données, banques EU exfiltrent via cookies : l'État et l'entreprise étendent la grille tout en effaçant leurs traces."
+      "note": "DARPA fait voler un F-16 par IA, Screenpipe capture le bureau pour agents, Claude Cowork s'évade sans intervention : l'autonomie agentique devient capacité démontrée du cockpit au poste de travail, sans délégation tracée."
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
-      "note": "Petals, Cline, GigaToken rendent le LLM local viable, Fairphone 6 s'ouvre, pendant que Palo Alto absorbe Embrace : l'ouverture descend la stack pendant que la consolidation corporate s'accélère."
+      "note": "OpenAI/Anthropic font front commun contre open-weight, startups pressent Trump de préserver l'accès aux modèles chinois : les labs fermés invoquent la sécurité pour protéger leurs marges, l'ouverture descend la stack."
+    },
+    {
+      "label": "Responsabilité entreprise vs contrôle utilisateur",
+      "note": "Going Dark 3e vague : du lobbying à la législation anti-E2EE, ICE partage Medicaid avec Palantir, Google retient illégalement : l'État et l'entreprise étendent la grille tout en effaçant leurs traces."
     },
     {
       "label": "Sanction réactive vs doctrine préventive",
       "note": "Anthropic paie 1,5 Md$, UE sanctuarise le VPN, Google poursuivi pour rétention : la justice sanctionne après coup sans fixer de doctrine préventive, le préjudice précède toujours le cadre."
     },
     {
-      "label": "Refus du ransomware vs économie de la peur",
-      "note": "Stadler Rail refuse 12,3 M$ sans impact, 1/3 des payeurs ré-extorqués, mais Anubis exfiltre 1 To et RansomHouse paralyse 5 000 clients : le refus devient rationnel mais la violence continue."
+      "label": "Automatisation du process vs compréhension du contexte",
+      "note": "Software factories fail : harness engineering ≠ product. Microsoft 365 s'effondre, Codeberg déçoit : automatiser le process ne remplace jamais le raisonnement, aucune plateforme n'offre de résilience sans coût caché."
     }
   ],
   "strategy_notes": [
-    "L'IA offensive s'industrialise : 0day Rubbish publie 10 zero-days avec exploits reproductibles, GPT-5.6 Sol pirate Hugging Face. La boucle découverte-exploitation se referme sans humain. Surveiller qui ferme la boucle défensive.",
-    "Le retournement du ransomware est un signal fort : Stadler Rail refuse 12,3 M$ sans impact, 1/3 des payeurs ré-extorqués. L'équation économique bascule, le refus devient rationnel.",
-    "L'infrastructure LLM locale se densifie : inférence distribuée (Petals), rentabilité du self-hosting (Cline), tokenisation 1000× (GigaToken). L'alternative aux hyperscalers n'est plus expérimentale.",
-    "La confiance héritée s'impose comme vecteur dominant : race conditions dans snap-confine, XFS, Windows BFS. La surface d'attaque locale reste sous-traitée face à la focalisation sur les zero-days."
+    "L'IA offensive s'industrialise : Gemini 3.5 Flash Cyber pour la défense, 0day-Rubbish pour l'attaque, Claude Cowork/ChatGPT comme surface. L'agent est simultanément arme, bouclier et faille. Surveiller qui ferme la boucle défensive.",
+    "La bataille open-weight institutionnalise la fracture : OpenAI/Anthropic font front commun contre l'open-weight, startups pressent Trump de préserver l'accès aux modèles chinois. La sécurité sert de prétexte au verrouillage.",
+    "Le coût caché du build-out IA devient visible : Alphabet brûle sa trésorerie, dette hors-bilan massive, facture énergétique exponentielle. Le modèle économique des hyperscalers se fragilise, l'inférence locale se justifie.",
+    "La confiance héritée reste le vecteur dominant : Check Point zero-day en admin, Zimbra zero-click pendant un an, Microsoft 365 s'effondre. Les outils de défense deviennent points d'effraction, la surface locale reste sous-traitée."
   ],
-  "updated_at": "2026-07-23"
+  "updated_at": "2026-07-24"
 }

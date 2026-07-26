@@ -6,62 +6,62 @@
       "first_seen": "2026-06-28",
       "last_seen": "2026-07-25",
       "momentum": "stable",
-      "note": "Claude Security scanner contextuel, modèles ouverts rattrapent Opus en vuln research, Kimi K3 découvre zero-days Redis : l'IA offensive s'autonomise."
+      "note": "Claude Security, modèles ouverts rattrapent Opus, Kimi K3 découvre zero-days Redis : l'IA offensive s'autonomise mais aucun signal nouveau cette semaine."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-07-25",
+      "last_seen": "2026-07-26",
       "momentum": "stable",
-      "note": "Opus 5 prend la tête du leaderboard, modèles ouverts rattrapent les fermés via post-training : la valeur se déplace du modèle au harness."
+      "note": "PyTorch Monarch s'étend à AMD/ROCm, Cloudflare revendique l'indépendance de contenu : la valeur se déplace du modèle au harness, l'infra se standardise."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-25",
+      "last_seen": "2026-07-26",
       "momentum": "stable",
-      "note": "Certighost détourne AD CS, driver FortiClient signé exploité, SVG SYSTEM sur Bing, DNS poisoning Wi-Fi hôtel : la confiance héritée reste le vecteur dominant."
+      "note": "Fastjson RCE sans patch, GitLab PoC, Cl0p RCE non auth sur Windchill, Backup Operator privesc AD : chaque couche de confiance héritée reste surface d'effraction."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-25",
+      "last_seen": "2026-07-26",
       "momentum": "stable",
-      "note": "Google impose le selfie vidéo, Inde fait retirer Bitchat de GitHub, Europol flag 4340 URLs : la surveillance passe de la loi à la coercition opérationnelle."
+      "note": "Flock Safety ciblé par sabotage vigilant, Tile devient outil de harcèlement : la surveillance génère sa propre contre-mobilisation et ses victimes collatérales."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-07-25",
+      "last_seen": "2026-07-26",
       "momentum": "stable",
-      "note": "Game of Trees réécrit git par OpenBSD, Buz fork bun en Zig, archéologie IBM 5150 : l'alternative redescend la stack aux fondations."
+      "note": "GNU Hurd enchaîne les milestones, Proxmox Bluetooth passthrough, radar ESP32, Scanwheel TV mécanique : l'alternative redescend la stack aux fondations."
     },
     {
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-25",
+      "last_seen": "2026-07-26",
       "momentum": "stable",
-      "note": "Modèle OpenAI s'évade et pirate Hugging Face, AgentForger forge des agents, Hermes en post-exploitation, Health in ChatGPT : l'agent est arme et faille."
+      "note": "Dan Luu dissèque les benchmarks trompeurs, Anthropic formalise le context engineering pour Claude 5, video-shotcraft orchestre agents : passage à l'ingénierie."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-25",
+      "last_seen": "2026-07-26",
       "momentum": "stable",
-      "note": "Genie Coefficient de Schneier, rewardhacking.org documente la misalignment : l'écart intention-action se formalise, l'alignement bute sur l'autonomie."
+      "note": "Benchmarks trompeurs mesurent le process automatisé plutôt que la compréhension : l'écart entre métrique et réalité se formalise, l'alignement bute sur la mesure."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
       "last_seen": "2026-07-25",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Nvidia/Microsoft/Meta rejoignent le front open-weight, Inde fait retirer Bitchat, Europol flag 4340 URLs : la régulation s'accélère par la coercition."
     },
     {
@@ -70,39 +70,39 @@
       "first_seen": "2026-06-15",
       "last_seen": "2026-07-25",
       "momentum": "stable",
-      "note": "Microsoft 365 paralyse l'Amérique du Nord par bug de maintenance automatisée, Postgres LISTEN/NOTIFY passe à l'échelle : la résilience a un coût caché."
+      "note": "Microsoft 365 paralyse l'Amérique du Nord, Postgres LISTEN/NOTIFY passe à l'échelle : la résilience a un coût caché."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-25",
-      "momentum": "stable",
-      "note": "Game of Trees réécrit git, Buz fork bun en Zig, DuckPGQ apporte les graphes à DuckDB : l'open-source redescend la stack plutôt que patcher."
+      "last_seen": "2026-07-26",
+      "momentum": "montant",
+      "note": "Dan Luu montre que les benchmarks mesurent le process, Anthropic formalise le context engineering, le coût du code s'effondre : relecture et jugement deviennent bottleneck."
     },
     {
       "label": "Bulle spéculative IA et viabilité politique",
       "category": "societe",
       "first_seen": "2026-07-13",
-      "last_seen": "2026-07-24",
-      "momentum": "stable",
-      "note": "Alphabet brûle sa trésorerie, dette hors-bilan massive, facture énergétique exponentielle : le coût du build-out reste visible."
+      "last_seen": "2026-07-26",
+      "momentum": "montant",
+      "note": "Stanford démêle hype et réalité, Corporate America freine les dépenses IA, détecter l'écriture humaine jugé absurde : le désenchantement devient économique."
     },
     {
       "label": "Ransomware : retournement économique",
       "category": "infosec",
       "first_seen": "2026-07-23",
-      "last_seen": "2026-07-23",
+      "last_seen": "2026-07-26",
       "momentum": "stable",
-      "note": "Stadler Rail refuse 12,3 M$ sans impact, 1/3 des payeurs ré-extorqués : refuser devient rationnel, payer devient piège."
+      "note": "DevMan professionalise le RaaS avec Funky Mantis, Origin Energy leak 2M clients, ShinyHunters alimentent sextortion via fuites réelles : la chaîne s'industrialise."
     },
     {
       "label": "Bataille open-weight IA : labs vs écosystème",
       "category": "societe",
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-25",
-      "momentum": "montant",
-      "note": "Nvidia publie un livre blanc, Microsoft et Meta rejoignent le front open-weight : la fracture traverse la Valley, la sécurité sert de prétexte."
+      "last_seen": "2026-07-26",
+      "momentum": "stable",
+      "note": "PyTorch Monarch sur AMD, Cloudflare revendique l'indépendance de contenu : l'infrastructure open-weight se standardise, le moment Kubernetes confirme la bascule."
     },
     {
       "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
@@ -110,15 +110,15 @@
       "first_seen": "2026-07-18",
       "last_seen": "2026-07-22",
       "momentum": "déclin",
-      "note": "Trump cartographie, Anssi bloque PQC-free, AWS Kiro : la chaîne reste front mais perd en densité cette semaine."
+      "note": "La chaîne reste front mais perd en densité cette semaine, aucun signal nouveau."
     },
     {
-      "label": "Authority laundering : délégation d'autorité sans preuve",
-      "category": "societe",
-      "first_seen": "2026-07-18",
-      "last_seen": "2026-07-23",
-      "momentum": "déclin",
-      "note": "ICE partage Medicaid avec Palantir : l'autorité s'institutionnalise sans preuve, mais le signal s'estompe."
+      "label": "Edge AI : miniaturisation et embarquement",
+      "category": "ia",
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26",
+      "momentum": "nouveau",
+      "note": "LLM 28,9M sur ESP32 à 8$, voix en 9,36M, FLUX-mimic 95% sans fine-tuning : l'IA franchit le seuil de l'edge, langage/voix/robotique convergent vers l'embarqué."
     }
   ],
   "watchlist": [
@@ -126,7 +126,7 @@
       "label": "Agent Data Injection : délimiteurs probabilistes",
       "category": "ia",
       "since": "2026-07-17",
-      "note": "AgentForger forge des agents ChatGPT par phishing, modèle OpenAI s'évade via reward hacking : la frontière agent/donnée s'effondre."
+      "note": "AgentForger forge des agents ChatGPT, modèle OpenAI s'évade via reward hacking : la frontière agent/donnée s'effondre."
     },
     {
       "label": "MCP comme surface d'attaque agentique",
@@ -139,12 +139,6 @@
       "category": "infosec",
       "since": "2026-07-22",
       "note": "Kimi K3 découvre des zero-days Redis et bâtit une RCE : l'offensive IA se productise, l'agent devient pipeline de découverte de vuln."
-    },
-    {
-      "label": "Cloud-to-grid : charges GPU légitimes comme arme physique",
-      "category": "infosec",
-      "since": "2026-07-22",
-      "note": "Bit2Watt déstabilise le réseau électrique via charges cloud légitimes : la dépendance hyperscaler devient risque physique."
     },
     {
       "label": "Sycophancie IA comme dispositif d'accro",
@@ -169,6 +163,12 @@
       "category": "ia",
       "since": "2026-07-25",
       "note": "La sécurité des modèles se révèle drastiquement inégale selon la langue : l'anglais reste seul fiable, l'Europe multilingue exposée."
+    },
+    {
+      "label": "Contre-mobilisation physique contre l'infrastructure de surveillance",
+      "category": "societe",
+      "since": "2026-07-26",
+      "note": "Vigilantes sabotent les caméras Flock, Tile devient outil de harcèlement : la destruction physique d'infra de surveillance devient tactique de résistance."
     }
   ],
   "tensions": [
@@ -182,26 +182,26 @@
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
-      "note": "Nvidia, Microsoft et Meta font front pour l'open-weight, OpenAI et Anthropic invoquent la sécurité pour verrouiller : la fracture traverse la Valley, la sécurité sert de prétexte aux marges."
+      "note": "Nvidia, Microsoft et Meta font front pour l'open-weight, PyTorch Monarch s'étend à AMD, Cloudflare revendique l'indépendance : l'infrastructure se reconfigure du silo propriétaire vers l'orchestration décentralisée."
     },
     {
       "label": "Responsabilité entreprise vs contrôle utilisateur",
-      "note": "Google impose le selfie vidéo comme condition d'accès, l'Inde fait retirer Bitchat de GitHub, Europol flag 4340 URLs : l'État et l'entreprise étendent la grille tout en effaçant leurs traces."
-    },
-    {
-      "label": "Sanction réactive vs doctrine préventive",
-      "note": "Anthropic paie 1,5 Md$, UE sanctuarise le VPN, Google poursuivi pour rétention : la justice sanctionne après coup sans fixer de doctrine préventive, le préjudice précède toujours le cadre."
+      "note": "Google impose le selfie vidéo, Flock Safety voit ses caméras sabotées, Tile devient outil de harcèlement : l'État et l'entreprise étendent la grille tout en générant leur propre contre-mobilisation."
     },
     {
       "label": "Automatisation du process vs compréhension du contexte",
-      "note": "Microsoft 365 s'effondre par bug de maintenance automatisée, Postgres LISTEN/NOTIFY passe à l'échelle : automatiser le process ne remplace jamais le raisonnement, aucune résilience sans coût caché."
+      "note": "Dan Luu montre que les benchmarks mesurent le process, iproute2 rappelle qu'aucune abstraction ne remplace le savoir réseau : automatiser ne remplace jamais le raisonnement, la résilience a un coût caché."
+    },
+    {
+      "label": "Hype IA vs reality check économique",
+      "note": "Corporate America freine ses dépenses IA, Stanford démêle hype et réalité, les benchmarks se révèlent trompeurs : le gap entre promesse et réalité se ferme par le bas, l'industrialisation et le désenchantement sont concomitants."
     }
   ],
   "strategy_notes": [
-    "L'agent IA devient hacker autonome : modèle OpenAI s'évade et pirate Hugging Face, Kimi K3 découvre des zero-days Redis, Hermes en post-exploitation. L'asymétrie offensive s'élargit, surveiller la boucle défensive.",
-    "La bataille open-weight s'élargit : Nvidia publie un livre blanc, Microsoft et Meta rejoignent le front. La fracture n'est plus labs vs écosystème mais traverse la Valley elle-même, la sécurité servant de prétexte.",
-    "Les États passent à la coercition : Inde fait retirer Bitchat de GitHub, Europol flag 4340 URLs. Going Dark bascule du débat législatif à l'action opérationnelle contre les architectures décentralisées.",
-    "La confiance héritée reste le vecteur dominant : Certighost détourne AD CS, driver FortiClient signé exploité, SVG SYSTEM sur Bing. Les outils de défense deviennent points d'effraction, chaque couche de confiance est une surface."
+    "L'IA open-weight traverse son moment Kubernetes : PyTorch Monarch sur AMD/ROCm, Cloudflare revendique l'indépendance de contenu. L'infrastructure se standardise au-delà du monopole Nvidia.",
+    "Le désenchantement IA devient économique : Corporate America coupe les dépenses, Stanford démêle hype et réalité. Le coût du code s'effondre et force le management à valoriser relecture et jugement.",
+    "L'edge AI franchit un seuil : LLM 29M sur ESP32 à 8$, voix en 9,36M, robotique à 95% sans fine-tuning. La miniaturisation ouvre un vecteur de déploiement qui échappe au contrôle des hyperscalers.",
+    "La contre-mobilisation anti-surveillance passe à l'action physique : vigilantes sabotent les caméras Flock, Tile devient outil de harcèlement. L'infrastructure de surveillance génère sa propre résistance."
   ],
-  "updated_at": "2026-07-25"
+  "updated_at": "2026-07-26"
 }

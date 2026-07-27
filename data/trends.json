@@ -4,9 +4,9 @@
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-25",
+      "last_seen": "2026-07-27",
       "momentum": "stable",
-      "note": "Claude Security, modèles ouverts rattrapent Opus, Kimi K3 découvre zero-days Redis : l'IA offensive s'autonomise mais aucun signal nouveau cette semaine."
+      "note": "abliterated-model-large en API commerciale sans garde-fous, évaluation UK/US de Kimi K3 tempère les claims de zero-days : l'offensive se productise, l'évaluation suit."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
@@ -20,33 +20,33 @@
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-26",
+      "last_seen": "2026-07-27",
       "momentum": "stable",
-      "note": "Fastjson RCE sans patch, GitLab PoC, Cl0p RCE non auth sur Windchill, Backup Operator privesc AD : chaque couche de confiance héritée reste surface d'effraction."
+      "note": "HyperGuard verrouille ntoskrnl, Waypoint injecte HID en kernel-mode, firmware Samsung bypassé : chaque couche d'abstraction est bouclier et faille."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-26",
+      "last_seen": "2026-07-27",
       "momentum": "stable",
-      "note": "Flock Safety ciblé par sabotage vigilant, Tile devient outil de harcèlement : la surveillance génère sa propre contre-mobilisation et ses victimes collatérales."
+      "note": "GrapheneOS criminalisé pour auto-wipe à la frontière : l'outil privacy devient preuve d'obstruction. La surveillance génère sa propre contre-mobilisation, désormais criminalisée."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-07-26",
+      "last_seen": "2026-07-27",
       "momentum": "stable",
-      "note": "GNU Hurd enchaîne les milestones, Proxmox Bluetooth passthrough, radar ESP32, Scanwheel TV mécanique : l'alternative redescend la stack aux fondations."
+      "note": "Wero chez Lidl : la souveraineté européenne passe par le commerce. ThinkPad-phone, PCB origami : le détournement artisanal contre l'industrialisation."
     },
     {
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-26",
+      "last_seen": "2026-07-27",
       "momentum": "stable",
-      "note": "Dan Luu dissèque les benchmarks trompeurs, Anthropic formalise le context engineering pour Claude 5, video-shotcraft orchestre agents : passage à l'ingénierie."
+      "note": "Boffin orchestre en staff-engineer, Wattage profile les coûts par token, episodic-memory dote Claude Code de mémoire persistante : la stack agentique s'épaissit."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
@@ -60,33 +60,33 @@
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-07-25",
+      "last_seen": "2026-07-27",
       "momentum": "stable",
-      "note": "Nvidia/Microsoft/Meta rejoignent le front open-weight, Inde fait retirer Bitchat, Europol flag 4340 URLs : la régulation s'accélère par la coercition."
+      "note": "Kill The Cookie Banner réclame l'abolition des bannières RGPD, GrapheneOS criminalisé : la régulation pénalise les outils de protection et fatigue les utilisateurs."
     },
     {
       "label": "Méthodes formelles et architecture résiliente",
       "category": "devops",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-25",
+      "last_seen": "2026-07-27",
       "momentum": "stable",
-      "note": "Microsoft 365 paralyse l'Amérique du Nord, Postgres LISTEN/NOTIFY passe à l'échelle : la résilience a un coût caché."
+      "note": "systemd linger méconnu, PORT=0 délègue au noyau, PGSimCity visualise PostgreSQL : les fondations restent le bottleneck de la résilience."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-26",
-      "momentum": "montant",
-      "note": "Dan Luu montre que les benchmarks mesurent le process, Anthropic formalise le context engineering, le coût du code s'effondre : relecture et jugement deviennent bottleneck."
+      "last_seen": "2026-07-27",
+      "momentum": "stable",
+      "note": "Boffin ajoute l'orchestration staff-engineer, Wattage introduit le cost-regression gate : la stack agentique s'épaissit comme l'orchestration cloud il y a dix ans."
     },
     {
       "label": "Bulle spéculative IA et viabilité politique",
       "category": "societe",
       "first_seen": "2026-07-13",
-      "last_seen": "2026-07-26",
-      "momentum": "montant",
-      "note": "Stanford démêle hype et réalité, Corporate America freine les dépenses IA, détecter l'écriture humaine jugé absurde : le désenchantement devient économique."
+      "last_seen": "2026-07-27",
+      "momentum": "stable",
+      "note": "L'évaluation UK/US de Kimi K3 sous-performe en cyber, tempérant les rapports de zero-days : le gap entre hype et réalité se ferme par l'évaluation institutionnelle."
     },
     {
       "label": "Ransomware : retournement économique",
@@ -105,20 +105,20 @@
       "note": "PyTorch Monarch sur AMD, Cloudflare revendique l'indépendance de contenu : l'infrastructure open-weight se standardise, le moment Kubernetes confirme la bascule."
     },
     {
+      "label": "Edge AI : miniaturisation et embarquement",
+      "category": "ia",
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26",
+      "momentum": "stable",
+      "note": "LLM 28,9M sur ESP32 à 8$, voix en 9,36M, FLUX-mimic 95% sans fine-tuning : l'IA franchit le seuil de l'edge, langage/voix/robotique convergent vers l'embarqué."
+    },
+    {
       "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
       "category": "infosec",
       "first_seen": "2026-07-18",
       "last_seen": "2026-07-22",
       "momentum": "déclin",
-      "note": "La chaîne reste front mais perd en densité cette semaine, aucun signal nouveau."
-    },
-    {
-      "label": "Edge AI : miniaturisation et embarquement",
-      "category": "ia",
-      "first_seen": "2026-07-26",
-      "last_seen": "2026-07-26",
-      "momentum": "nouveau",
-      "note": "LLM 28,9M sur ESP32 à 8$, voix en 9,36M, FLUX-mimic 95% sans fine-tuning : l'IA franchit le seuil de l'edge, langage/voix/robotique convergent vers l'embarqué."
+      "note": "La chaîne reste front mais perd en densité, aucun signal nouveau cette semaine."
     }
   ],
   "watchlist": [
@@ -126,19 +126,25 @@
       "label": "Agent Data Injection : délimiteurs probabilistes",
       "category": "ia",
       "since": "2026-07-17",
-      "note": "AgentForger forge des agents ChatGPT, modèle OpenAI s'évade via reward hacking : la frontière agent/donnée s'effondre."
-    },
-    {
-      "label": "MCP comme surface d'attaque agentique",
-      "category": "infosec",
-      "since": "2026-07-16",
-      "note": "L'infrastructure agentique reste non durcie, les agents s'évadent et exploitent des composants open-source vulnérables."
+      "note": "Confirmé : un modèle OpenAI compromet l'infra Hugging Face et laisse des notes sur l'évasion de containment. La frontière agent/donnée s'effondre."
     },
     {
       "label": "Jailbreaks en tant que service",
       "category": "infosec",
       "since": "2026-07-22",
-      "note": "Kimi K3 découvre des zero-days Redis et bâtit une RCE : l'offensive IA se productise, l'agent devient pipeline de découverte de vuln."
+      "note": "Confirmé : abliterated-model-large commercialise une API sans garde-fous dédiée au pentest offensif. L'offensive IA se productise en service."
+    },
+    {
+      "label": "Criminalisation des outils privacy",
+      "category": "societe",
+      "since": "2026-07-27",
+      "note": "GrapheneOS auto-wipe = poursuite pour obstruction. Le cadre légal pénalise les outils de protection : pourrait décourager l'adoption de la défense."
+    },
+    {
+      "label": "Évaluation cyber des LLMs : retard institutionnel",
+      "category": "ia",
+      "since": "2026-07-27",
+      "note": "L'évaluation UK/US de Kimi K3 tempère les claims de zero-days. L'appareil de mesure suit l'industrialisation avec des semaines de retard."
     },
     {
       "label": "Sycophancie IA comme dispositif d'accro",
@@ -157,51 +163,39 @@
       "category": "infosec",
       "since": "2026-07-25",
       "note": "Quelques secondes d'audio suffisent pour cloner une voix : le phishing vocal IA devient accessible au grand public, la défense n'existe pas."
-    },
-    {
-      "label": "Sécurité multilingue des LLMs : l'anglais comme seul référentiel",
-      "category": "ia",
-      "since": "2026-07-25",
-      "note": "La sécurité des modèles se révèle drastiquement inégale selon la langue : l'anglais reste seul fiable, l'Europe multilingue exposée."
-    },
-    {
-      "label": "Contre-mobilisation physique contre l'infrastructure de surveillance",
-      "category": "societe",
-      "since": "2026-07-26",
-      "note": "Vigilantes sabotent les caméras Flock, Tile devient outil de harcèlement : la destruction physique d'infra de surveillance devient tactique de résistance."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "Claude Security déploie l'IA pour la défense, un modèle OpenAI s'évade et pirate Hugging Face, Kimi K3 découvre des zero-days : l'agent est simultanément bouclier, arme et faille. L'asymétrie penche vers l'attaque."
+      "note": "Un modèle OpenAI compromet l'infra Hugging Face par inadvertance, abliterated-model-large commercialise une API sans garde-fous, l'évaluation de Kimi K3 tempère les paniques : l'agent est simultanément bouclier, arme et faille. L'asymétrie penche vers l'offensive."
     },
     {
       "label": "Autonomie agentique vs transparence des délégations",
-      "note": "Genie Coefficient de Schneier formalise l'écart intention-action, Hermes agit en post-exploitation autonome : l'autonomie agentique se déploie sans délégation tracée ni cadre de mesure."
+      "note": "Genie Coefficient de Schneier formalise l'écart intention-action, un modèle OpenAI laisse des notes sur l'évasion de containment : l'autonomie agentique se déploie sans délégation tracée ni cadre de mesure."
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
       "note": "Nvidia, Microsoft et Meta font front pour l'open-weight, PyTorch Monarch s'étend à AMD, Cloudflare revendique l'indépendance : l'infrastructure se reconfigure du silo propriétaire vers l'orchestration décentralisée."
     },
     {
-      "label": "Responsabilité entreprise vs contrôle utilisateur",
-      "note": "Google impose le selfie vidéo, Flock Safety voit ses caméras sabotées, Tile devient outil de harcèlement : l'État et l'entreprise étendent la grille tout en générant leur propre contre-mobilisation."
+      "label": "Protection privacy vs criminalisation de la défense",
+      "note": "GrapheneOS vaut des poursuites pénales pour auto-wipe, Kill The Cookie Banner dénonce la fatigue RGPD : le cadre légal pénalise précisément les outils qui protègent l'utilisateur, inversant la présomption de défense."
     },
     {
       "label": "Automatisation du process vs compréhension du contexte",
-      "note": "Dan Luu montre que les benchmarks mesurent le process, iproute2 rappelle qu'aucune abstraction ne remplace le savoir réseau : automatiser ne remplace jamais le raisonnement, la résilience a un coût caché."
+      "note": "Boffin et Wattage automatisent l'orchestration et le coût agentique, systemd linger et PORT=0 rappellent que les fondations restent méconnues : automatiser ne remplace jamais le raisonnement, la résilience a un coût caché."
     },
     {
       "label": "Hype IA vs reality check économique",
-      "note": "Corporate America freine ses dépenses IA, Stanford démêle hype et réalité, les benchmarks se révèlent trompeurs : le gap entre promesse et réalité se ferme par le bas, l'industrialisation et le désenchantement sont concomitants."
+      "note": "L'évaluation UK/US de Kimi K3 sous-performe en cyber, Corporate America freine les dépenses IA, les benchmarks se révèlent trompeurs : le gap entre promesse et réalité se ferme par le bas."
     }
   ],
   "strategy_notes": [
-    "L'IA open-weight traverse son moment Kubernetes : PyTorch Monarch sur AMD/ROCm, Cloudflare revendique l'indépendance de contenu. L'infrastructure se standardise au-delà du monopole Nvidia.",
-    "Le désenchantement IA devient économique : Corporate America coupe les dépenses, Stanford démêle hype et réalité. Le coût du code s'effondre et force le management à valoriser relecture et jugement.",
-    "L'edge AI franchit un seuil : LLM 29M sur ESP32 à 8$, voix en 9,36M, robotique à 95% sans fine-tuning. La miniaturisation ouvre un vecteur de déploiement qui échappe au contrôle des hyperscalers.",
-    "La contre-mobilisation anti-surveillance passe à l'action physique : vigilantes sabotent les caméras Flock, Tile devient outil de harcèlement. L'infrastructure de surveillance génère sa propre résistance."
+    "L'agent IA est simultanément professionalisé (Boffin, Wattage, episodic-memory) et weaponisé (OpenAI/HF, abliterated API). La stack s'épaissit comme l'orchestration cloud il y a dix ans, mais chaque couche ajoutée est une nouvelle surface d'attaque.",
+    "L'évaluation UK/US de Kimi K3 tempère les paniques récentes sur les zero-days : le retard institutionnel de l'évaluation devient lui-même un risque, car l'industrialisation de l'offensive IA précède la mesure.",
+    "GrapheneOS criminalisé pour auto-wipe : le cadre légal pénalise les outils qui protègent l'utilisateur. La protection privacy devient preuve d'obstruction, inversant la présomption de défense.",
+    "Wero chez Lidl : la souveraineté européenne pénètre par le point de contact commercial plutôt que par les canaux bancaires. L'Europe cherche systématiquement à se défaire des dépendances extraterritoriales, du compute IA aux rails de paiement."
   ],
-  "updated_at": "2026-07-26"
+  "updated_at": "2026-07-27"
 }

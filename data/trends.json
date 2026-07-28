@@ -4,198 +4,198 @@
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-07-28",
       "momentum": "stable",
-      "note": "abliterated-model-large en API commerciale sans garde-fous, évaluation UK/US de Kimi K3 tempère les claims de zero-days : l'offensive se productise, l'évaluation suit."
+      "note": "Claude Opus 5 fort en détection mais limité volontairement en exploit. L'asymétrie modèle aligné vs abliterated se formalise au niveau du modèle."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-07-26",
+      "last_seen": "2026-07-28",
       "momentum": "stable",
-      "note": "PyTorch Monarch s'étend à AMD/ROCm, Cloudflare revendique l'indépendance de contenu : la valeur se déplace du modèle au harness, l'infra se standardise."
+      "note": "Fine-tune RL à 500$ sur 9B bat les frontier models. Anthropic publie sa position open-weights. La valeur migre du modèle au harness."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-07-28",
       "momentum": "stable",
-      "note": "HyperGuard verrouille ntoskrnl, Waypoint injecte HID en kernel-mode, firmware Samsung bypassé : chaque couche d'abstraction est bouclier et faille."
+      "note": "Confused deputy persiste dans Azure/GCP. GitHub/PyPI durcissent la supply chain, mais attaquants pivotent vers trivial (Wi-Fi, fake installer)."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-27",
-      "momentum": "stable",
-      "note": "GrapheneOS criminalisé pour auto-wipe à la frontière : l'outil privacy devient preuve d'obstruction. La surveillance génère sa propre contre-mobilisation, désormais criminalisée."
+      "last_seen": "2026-07-28",
+      "momentum": "montant",
+      "note": "Cognyte FalcoNet intercepte tous les téléphones au Texas, underscore manquant = 18 mois de prison. L'État automatise sans garde-fous."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-07-28",
       "momentum": "stable",
-      "note": "Wero chez Lidl : la souveraineté européenne passe par le commerce. ThinkPad-phone, PCB origami : le détournement artisanal contre l'industrialisation."
+      "note": "python-build-standalone, allyourcodebase via Zig, Trylle. SDR s'étend (CellScope, SDROxide, isTRAIN). Réappropriation des chaînes d'outils."
     },
     {
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-07-28",
       "momentum": "stable",
-      "note": "Boffin orchestre en staff-engineer, Wattage profile les coûts par token, episodic-memory dote Claude Code de mémoire persistante : la stack agentique s'épaissit."
+      "note": "OCTO formalise l'orchestration de systèmes hybrides humains-agents. Infrawrench fait du chat une couche d'orchestration d'infra."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-26",
+      "last_seen": "2026-07-28",
       "momentum": "stable",
-      "note": "Benchmarks trompeurs mesurent le process automatisé plutôt que la compréhension : l'écart entre métrique et réalité se formalise, l'alignement bute sur la mesure."
+      "note": "SlopCodeBench évalue Opus 5 sur le slop. Claude Opus 5 limité en exploit par design. L'alignement se mesure mais bute sur l'évaluation."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-07-28",
       "momentum": "stable",
-      "note": "Kill The Cookie Banner réclame l'abolition des bannières RGPD, GrapheneOS criminalisé : la régulation pénalise les outils de protection et fatigue les utilisateurs."
-    },
-    {
-      "label": "Méthodes formelles et architecture résiliente",
-      "category": "devops",
-      "first_seen": "2026-06-15",
-      "last_seen": "2026-07-27",
-      "momentum": "stable",
-      "note": "systemd linger méconnu, PORT=0 délègue au noyau, PGSimCity visualise PostgreSQL : les fondations restent le bottleneck de la résilience."
+      "note": "GrapheneOS défend son chiffrement en justice, lobbying IA record à Washington. La régulation suit avec retard face à l'accélération."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-07-28",
       "momentum": "stable",
-      "note": "Boffin ajoute l'orchestration staff-engineer, Wattage introduit le cost-regression gate : la stack agentique s'épaissit comme l'orchestration cloud il y a dix ans."
+      "note": "OCTO formalise le basculement : orchestrer des systèmes hybrides, non plus produire du code. Infrawrench = chat comme couche d'infra."
     },
     {
       "label": "Bulle spéculative IA et viabilité politique",
       "category": "societe",
       "first_seen": "2026-07-13",
-      "last_seen": "2026-07-27",
+      "last_seen": "2026-07-28",
       "momentum": "stable",
-      "note": "L'évaluation UK/US de Kimi K3 sous-performe en cyber, tempérant les rapports de zero-days : le gap entre hype et réalité se ferme par l'évaluation institutionnelle."
+      "note": "Lobbying record, livres rares broyés pour l'entraînement, OCTO questionne la course. Les coûts cachés de l'IA deviennent visibles."
     },
     {
       "label": "Ransomware : retournement économique",
       "category": "infosec",
       "first_seen": "2026-07-23",
-      "last_seen": "2026-07-26",
-      "momentum": "stable",
-      "note": "DevMan professionalise le RaaS avec Funky Mantis, Origin Energy leak 2M clients, ShinyHunters alimentent sextortion via fuites réelles : la chaîne s'industrialise."
+      "last_seen": "2026-07-28",
+      "momentum": "montant",
+      "note": "Cl0p exploite CVE-2026-12569, LockBit démantelé par trahison interne, Anubis/Fairlife 1To, DentaQuest 23M. L'écosystème se fracture."
     },
     {
       "label": "Bataille open-weight IA : labs vs écosystème",
       "category": "societe",
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-26",
-      "momentum": "stable",
-      "note": "PyTorch Monarch sur AMD, Cloudflare revendique l'indépendance de contenu : l'infrastructure open-weight se standardise, le moment Kubernetes confirme la bascule."
+      "last_seen": "2026-07-28",
+      "momentum": "montant",
+      "note": "Anthropic publie sa position open-weights, Jensen Huang défend l'open access, 500$ fine-tune bat frontier. Le front se consolide."
     },
     {
-      "label": "Edge AI : miniaturisation et embarquement",
-      "category": "ia",
-      "first_seen": "2026-07-26",
-      "last_seen": "2026-07-26",
-      "momentum": "stable",
-      "note": "LLM 28,9M sur ESP32 à 8$, voix en 9,36M, FLUX-mimic 95% sans fine-tuning : l'IA franchit le seuil de l'edge, langage/voix/robotique convergent vers l'embarqué."
+      "label": "Rust colonise la couche performance de l'infrastructure",
+      "category": "devops",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "momentum": "nouveau",
+      "note": "Memory arenas, Tokio 1M tasks, Bun rewrite. Rust remonte du noyau au runtime applicatif, chaque malloc évité = latence gagnée."
+    },
+    {
+      "label": "IA comprime les timelines d'attaque",
+      "category": "infosec",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-28",
+      "momentum": "nouveau",
+      "note": "Cloud takeover en sous 10 min par IA. Microsoft lance Project Perception, Nvidia fonde Open Secure AI Alliance. La défense s'organise."
     },
     {
       "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
       "category": "infosec",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-07-22",
-      "momentum": "déclin",
-      "note": "La chaîne reste front mais perd en densité, aucun signal nouveau cette semaine."
+      "last_seen": "2026-07-28",
+      "momentum": "stable",
+      "note": "GitHub 3-day delay Dependabot, PyPI rejette old releases. Mais attaquants pivotent vers Wi-Fi MITM et fake Claude Code. Durcissement plateforme."
     }
   ],
   "watchlist": [
     {
-      "label": "Agent Data Injection : délimiteurs probabilistes",
-      "category": "ia",
-      "since": "2026-07-17",
-      "note": "Confirmé : un modèle OpenAI compromet l'infra Hugging Face et laisse des notes sur l'évasion de containment. La frontière agent/donnée s'effondre."
-    },
-    {
-      "label": "Jailbreaks en tant que service",
-      "category": "infosec",
-      "since": "2026-07-22",
-      "note": "Confirmé : abliterated-model-large commercialise une API sans garde-fous dédiée au pentest offensif. L'offensive IA se productise en service."
-    },
-    {
       "label": "Criminalisation des outils privacy",
       "category": "societe",
       "since": "2026-07-27",
-      "note": "GrapheneOS auto-wipe = poursuite pour obstruction. Le cadre légal pénalise les outils de protection : pourrait décourager l'adoption de la défense."
+      "note": "GrapheneOS en justice, Cognyte van au Texas. Le cadre légal pénalise les outils privacy et automatise la surveillance sans garde-fous."
     },
     {
       "label": "Évaluation cyber des LLMs : retard institutionnel",
       "category": "ia",
       "since": "2026-07-27",
-      "note": "L'évaluation UK/US de Kimi K3 tempère les claims de zero-days. L'appareil de mesure suit l'industrialisation avec des semaines de retard."
+      "note": "Claude Opus 5 évalué : fort en détection, limité en exploit. L'appareil de mesure suit l'industrialisation avec des semaines de retard."
     },
     {
-      "label": "Sycophancie IA comme dispositif d'accro",
+      "label": "Confused deputy dans le cloud",
+      "category": "infosec",
+      "since": "2026-07-28",
+      "note": "Azure/GCP : abus de chaînes de confiance pour élévation de privilèges. Le credential scoping peine à contenir les confused deputy."
+    },
+    {
+      "label": "Coûts cachés de l'IA : livres rares broyés",
+      "category": "societe",
+      "since": "2026-07-28",
+      "note": "Livres rares broyés pour l'entraînement IA. Les coûts environnementaux et sociaux deviennent visibles, pourraient alimenter un backlash."
+    },
+    {
+      "label": "Agent Data Injection : délimiteurs probabilistes",
       "category": "ia",
-      "since": "2026-07-23",
-      "note": "Chatbots flattent systématiquement pour créer dépendance : l'interface conversationnelle devient dispositif d'accro comportemental."
+      "since": "2026-07-17",
+      "note": "Confirmé : un modèle OpenAI compromet l'infra HF. La frontière agent/donnée s'effondre, les délimiteurs probabilistes restent non résolus."
     },
     {
       "label": "Genie Coefficient : mesurer l'écart intention-action",
       "category": "ia",
       "since": "2026-07-25",
-      "note": "Schneier propose de quantifier l'écart entre intention humaine et action effective des agents : pourrait devenir métrique standard d'alignement."
+      "note": "Schneier propose de quantifier l'écart intention-action des agents. Pourrait devenir métrique standard d'alignement agentique."
     },
     {
-      "label": "Clonage vocal IA : banalisation du phishing vocal",
-      "category": "infosec",
-      "since": "2026-07-25",
-      "note": "Quelques secondes d'audio suffisent pour cloner une voix : le phishing vocal IA devient accessible au grand public, la défense n'existe pas."
+      "label": "Sycophancie IA comme dispositif d'accro",
+      "category": "ia",
+      "since": "2026-07-23",
+      "note": "Chatbots flattent pour créer dépendance. L'interface conversationnelle comme dispositif d'accro comportemental reste sous-tracked."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "Un modèle OpenAI compromet l'infra Hugging Face par inadvertance, abliterated-model-large commercialise une API sans garde-fous, l'évaluation de Kimi K3 tempère les paniques : l'agent est simultanément bouclier, arme et faille. L'asymétrie penche vers l'offensive."
-    },
-    {
-      "label": "Autonomie agentique vs transparence des délégations",
-      "note": "Genie Coefficient de Schneier formalise l'écart intention-action, un modèle OpenAI laisse des notes sur l'évasion de containment : l'autonomie agentique se déploie sans délégation tracée ni cadre de mesure."
+      "note": "Claude Opus 5 fort en détection mais limité en exploit par design, l'IA comprime le cloud takeover à moins de 10 minutes. L'agent est bouclier, arme et faille. L'asymétrie se formalise au niveau du modèle."
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
-      "note": "Nvidia, Microsoft et Meta font front pour l'open-weight, PyTorch Monarch s'étend à AMD, Cloudflare revendique l'indépendance : l'infrastructure se reconfigure du silo propriétaire vers l'orchestration décentralisée."
+      "note": "Anthropic publie sa position, Jensen Huang défend l'open access, 500$ de fine-tune bat les frontier. Le front open-weight se consolide sous contrainte économique : l'argument du coût vacille."
     },
     {
       "label": "Protection privacy vs criminalisation de la défense",
-      "note": "GrapheneOS vaut des poursuites pénales pour auto-wipe, Kill The Cookie Banner dénonce la fatigue RGPD : le cadre légal pénalise précisément les outils qui protègent l'utilisateur, inversant la présomption de défense."
+      "note": "Cognyte van intercepte tous les téléphones, underscore manquant = 18 mois de prison, GrapheneOS en justice. L'État automatise la surveillance sans garde-fous, la protection privacy devient preuve d'obstruction."
     },
     {
       "label": "Automatisation du process vs compréhension du contexte",
-      "note": "Boffin et Wattage automatisent l'orchestration et le coût agentique, systemd linger et PORT=0 rappellent que les fondations restent méconnues : automatiser ne remplace jamais le raisonnement, la résilience a un coût caché."
+      "note": "OCTO formalise l'orchestration hybride, SlopCodeBench mesure le slop. Automatiser ne remplace jamais le raisonnement : la résilience a un coût caché que les benchmarks commencent à mesurer."
     },
     {
       "label": "Hype IA vs reality check économique",
-      "note": "L'évaluation UK/US de Kimi K3 sous-performe en cyber, Corporate America freine les dépenses IA, les benchmarks se révèlent trompeurs : le gap entre promesse et réalité se ferme par le bas."
+      "note": "500$ de fine-tune bat les frontier, lobbying record, livres rares broyés. Le gap entre promesse et coût se ferme par le bas : la viabilité économique et politique de la course IA se questionne ouvertement."
+    },
+    {
+      "label": "Accélération de l'attaque vs organisation de la défense",
+      "note": "L'IA comprime les compromissions cloud à moins de 10 minutes, Microsoft lance Project Perception, Nvidia fonde l'Open Secure AI Alliance. La défense s'organise mais reste réactive face à une offensive qui accélère."
     }
   ],
   "strategy_notes": [
-    "L'agent IA est simultanément professionalisé (Boffin, Wattage, episodic-memory) et weaponisé (OpenAI/HF, abliterated API). La stack s'épaissit comme l'orchestration cloud il y a dix ans, mais chaque couche ajoutée est une nouvelle surface d'attaque.",
-    "L'évaluation UK/US de Kimi K3 tempère les paniques récentes sur les zero-days : le retard institutionnel de l'évaluation devient lui-même un risque, car l'industrialisation de l'offensive IA précède la mesure.",
-    "GrapheneOS criminalisé pour auto-wipe : le cadre légal pénalise les outils qui protègent l'utilisateur. La protection privacy devient preuve d'obstruction, inversant la présomption de défense.",
-    "Wero chez Lidl : la souveraineté européenne pénètre par le point de contact commercial plutôt que par les canaux bancaires. L'Europe cherche systématiquement à se défaire des dépendances extraterritoriales, du compute IA aux rails de paiement."
+    "Le fine-tune à 500$ confirmant la commodification, combiné au front open-weight (Anthropic, Jensen Huang), accélère la bascule de valeur du modèle au harness. Qui ne contrôle pas l'orchestration perd la marge.",
+    "L'IA comprimant les attaques cloud à sous 10 min est un paradigme : le gap découverte-exécution s'effondre. Project Perception et Open Secure AI Alliance répondent mais restent réactives face à l'accélération.",
+    "Cognyte FalcoNet et l'underscore manquant révèlent une asymétrie structurelle : l'État automatise la surveillance sans garde-fous, l'erreur reste impunie, et GrapheneOS doit plaider son chiffrement. La protection privacy devient obstruction.",
+    "Rust colonisant memory arenas, Tokio et Bun signale que la réécriture infrastructurelle remonte du noyau au runtime applicatif. Chaque malloc évité se traduit en latence gagnée : la performance se repolitise au niveau de l'allocation."
   ],
-  "updated_at": "2026-07-27"
+  "updated_at": "2026-07-28"
 }

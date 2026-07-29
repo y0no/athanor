@@ -1,34 +1,34 @@
 {
-  "updated_at": "2026-07-28",
+  "updated_at": "2026-07-29",
   "synthesis": {
-    "headline": "L'IA comprime tous les délais, la défense tente de suivre",
-    "narrative": "Un fine-tune RL à <strong>500 $</strong> sur un modèle ouvert de 9B paramètres surpasse les frontier models sur une tâche ciblée, confirmant que la valeur migre du modèle au harness. Symétriquement, l'IA comprime les compromissions cloud à <strong>moins de dix minutes</strong>, tandis que <strong>Claude Opus 5</strong> se révèle fort en détection mais volontairement limité en exploit — l'asymétrie offensive se formalise au niveau du modèle. Pendant ce temps, <strong>Cognyte</strong> équipe la police texane d'un van interceptant indistinctement tous les téléphones, et l'omission d'un <code>_</code> envoie un innocent en prison 18 mois : l'État automatise la surveillance sans garde-fous, tandis que <strong>GrapheneOS</strong> plaide son chiffrement en justice."
+    "headline": "L'IA offensive franchit le Rubicon cryptographique",
+    "narrative": "Les LLMs ne se contentent plus de détecter les vulnérabilités : <strong>Claude</strong> découvre de nouvelles attaques cryptanalytiques contre le post-quantique <code>HAWK-256</code>, franchissant un seuil où l'IA devient chercheuse d'attaques. La <em>stack agentic</em> se révèle simultanément comme surface d'attaque — <strong>AgentHound</strong> cartographie les chemins de compromission tandis que des modèles <strong>OpenAI</strong> ont exploité un zéro-jour <strong>JFrog</strong> en production. La défense s'outille avec <strong>MAI-Cyber-1-Flash</strong> et <strong>Hush Security</strong>, mais reste réactive face à une offensive qui accélère sur tous les fronts, pendant que la <em>privacy</em> se criminalise et que l'infrastructure runtime se recompose."
   },
   "currents": [
     {
-      "label": "L'IA comprime le temps sur tous les fronts",
-      "note": "Attaque cloud en sous 10 min, fine-tune 500$ battant les frontier, orchestration hybride chez OCTO. L'accélération est transverse et redéfinit le rapport coût-temps.",
+      "label": "L'IA devient infrastructure offensive transverse",
+      "note": "Claude découvre des attaques crypto, aide à chaîner des exploits Linux root, Microsoft lance MAI-Cyber-1-Flash. L'IA n'est plus un outil mais une infrastructure qui comprime le gap découverte-exécution sur tous les fronts simultanément.",
       "categories": [
         "ia",
-        "infosec",
+        "infosec"
+      ]
+    },
+    {
+      "label": "La souveraineté se politise au niveau du silicium",
+      "note": "SDR à 50$, hardware hack au niveau EC, eBPF comme infrastructure de confidentialité (Hulios/Tor). La réappropriation matérielle répond à la criminalisation de la privacy et à l'extension de la surveillance automatisée.",
+      "categories": [
+        "diy",
+        "societe",
         "devops"
       ]
     },
     {
-      "label": "Réappropriation des chaînes d'outils contre les incumbents",
-      "note": "python-build-standalone, Zig comme build system C/C++, Trylle next-gen Git, SDR open-source, open-weight advocacy. De l'outillage au modèle, la réappropriation est le fil conducteur.",
+      "label": "L'orchestration agentique devient le nouveau verrou compétitif",
+      "note": "MCP stateless, Autoharness auto-apprend les skills, AgentHound cartographie les attaques, Hush lève 30M$. La valeur migre du modèle au harness, et le harness devient simultanément verrou compétitif et surface d'attaque.",
       "categories": [
+        "ia",
         "devops",
-        "diy",
-        "societe"
-      ]
-    },
-    {
-      "label": "Asymétrie étatique : surveillance automatisée vs défense pénalisée",
-      "note": "Cognyte van, underscore manquant, GrapheneOS criminalisé. L'État accélère l'automatisation de la surveillance sans filet, l'erreur reste impunie, la protection privacy se pénalise. L'asymétrie est structurelle.",
-      "categories": [
-        "infosec",
-        "societe"
+        "infosec"
       ]
     }
   ],
@@ -37,88 +37,112 @@
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-07-28",
-      "momentum": "stable",
-      "note": "Claude Opus 5 fort en détection mais limité volontairement en exploit. L'asymétrie modèle aligné vs abliterated se formalise au niveau du modèle."
+      "last_seen": "2026-07-29",
+      "momentum": "montant",
+      "note": "Claude découvre attaques crypto sur HAWK-256 et AES-128 7 tours. LLM passe de détecteur à chercheur d'attaques. Microsoft lance MAI-Cyber-1-Flash."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-07-28",
+      "last_seen": "2026-07-29",
       "momentum": "stable",
-      "note": "Fine-tune RL à 500$ sur 9B bat les frontier models. Anthropic publie sa position open-weights. La valeur migre du modèle au harness."
+      "note": "Attention linéaire (Kimi K3, DeltaNet) industrialisée. Efficacité mémoire comme axe de différenciation. Valeur migre du modèle au harness."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-07-28",
+      "last_seen": "2026-07-29",
       "momentum": "stable",
-      "note": "Confused deputy persiste dans Azure/GCP. GitHub/PyPI durcissent la supply chain, mais attaquants pivotent vers trivial (Wi-Fi, fake installer)."
+      "note": "4 zéros-jours en exploitation active (TeamCity, Fastjson, Arista, Check Point). L'outil de défense SmartConsole devient vecteur de compromission."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-28",
+      "last_seen": "2026-07-29",
       "momentum": "montant",
-      "note": "Cognyte FalcoNet intercepte tous les téléphones au Texas, underscore manquant = 18 mois de prison. L'État automatise sans garde-fous."
+      "note": "Italie bloque sites santé reproductive, Lusha sanctionné 2M€, Flock→Axon. Drones poivre en écoles. GrapheneOS duress password = inculpation fédérale."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-07-28",
+      "last_seen": "2026-07-29",
       "momentum": "stable",
-      "note": "python-build-standalone, allyourcodebase via Zig, Trylle. SDR s'étend (CellScope, SDROxide, isTRAIN). Réappropriation des chaînes d'outils."
+      "note": "SDR à 50$ BOM, DeepSDR+Whisper+LLM, hardware hack au niveau silicium (ASUS EC, Una Watch, ReFrame). Au-delà du logiciel."
     },
     {
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-28",
+      "last_seen": "2026-07-29",
       "momentum": "stable",
-      "note": "OCTO formalise l'orchestration de systèmes hybrides humains-agents. Infrawrench fait du chat une couche d'orchestration d'infra."
+      "note": "OpenAI projette agents en calcul scientifique, Autoharness auto-apprend les skills Claude Code, MCP stateless, Hubble pour agents."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-28",
+      "last_seen": "2026-07-29",
       "momentum": "stable",
-      "note": "SlopCodeBench évalue Opus 5 sur le slop. Claude Opus 5 limité en exploit par design. L'alignement se mesure mais bute sur l'évaluation."
+      "note": "CryptanalysisBench = premier benchmark de cryptanalyse par IA. L'alignement se mesure mais l'évaluation suit avec retard face à l'industrialisation."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-07-28",
+      "last_seen": "2026-07-29",
       "momentum": "stable",
-      "note": "GrapheneOS défend son chiffrement en justice, lobbying IA record à Washington. La régulation suit avec retard face à l'accélération."
+      "note": "CEO Shopify plaide suffrage censitaire, initiative EU anti digital ID, DEF CON bannit Meta glasses. Cadre légal en retard structurel."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-28",
+      "last_seen": "2026-07-29",
       "momentum": "stable",
-      "note": "OCTO formalise le basculement : orchestrer des systèmes hybrides, non plus produire du code. Infrawrench = chat comme couche d'infra."
+      "note": "Autoharness = auto-apprentissage des skills, MCP stateless, Hubble. L'agent curate ses compétences et sources de connaissance."
     },
     {
       "label": "Bulle spéculative IA et viabilité politique",
       "category": "societe",
       "first_seen": "2026-07-13",
-      "last_seen": "2026-07-28",
+      "last_seen": "2026-07-29",
       "momentum": "stable",
-      "note": "Lobbying record, livres rares broyés pour l'entraînement, OCTO questionne la course. Les coûts cachés de l'IA deviennent visibles."
+      "note": "CEO 154Mds$ plaide suffrage censitaire, drones poivre en écoles, OCTO questionne la gouvernance IA. Solutionnisme tech vs délibération."
+    },
+    {
+      "label": "IA comprime les timelines d'attaque",
+      "category": "infosec",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-29",
+      "momentum": "montant",
+      "note": "Claude découvre attaques crypto, IA aide à chaîner exploit Linux root. Le gap découverte-exécution s'effondre en cryptanalyse aussi."
+    },
+    {
+      "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
+      "category": "infosec",
+      "first_seen": "2026-07-18",
+      "last_seen": "2026-07-29",
+      "momentum": "stable",
+      "note": "Fastjson non patché exploité, TeamCity RCE, JFrog Artifactory zero-day exploité par modèles OpenAI. Durcissement plateforme insuffisant."
+    },
+    {
+      "label": "Recomposition de l'infrastructure runtime",
+      "category": "devops",
+      "first_seen": "2026-07-28",
+      "last_seen": "2026-07-29",
+      "momentum": "montant",
+      "note": "Élargi au-delà de Rust : eBPF devient infrastructure polyvalente (Hulios/Tor), observabilité questionne le dogme Prometheus. La stack se recompose."
     },
     {
       "label": "Ransomware : retournement économique",
       "category": "infosec",
       "first_seen": "2026-07-23",
       "last_seen": "2026-07-28",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Cl0p exploite CVE-2026-12569, LockBit démantelé par trahison interne, Anubis/Fairlife 1To, DentaQuest 23M. L'écosystème se fracture."
     },
     {
@@ -126,32 +150,8 @@
       "category": "societe",
       "first_seen": "2026-07-24",
       "last_seen": "2026-07-28",
-      "momentum": "montant",
-      "note": "Anthropic publie sa position open-weights, Jensen Huang défend l'open access, 500$ fine-tune bat frontier. Le front se consolide."
-    },
-    {
-      "label": "Rust colonise la couche performance de l'infrastructure",
-      "category": "devops",
-      "first_seen": "2026-07-28",
-      "last_seen": "2026-07-28",
-      "momentum": "nouveau",
-      "note": "Memory arenas, Tokio 1M tasks, Bun rewrite. Rust remonte du noyau au runtime applicatif, chaque malloc évité = latence gagnée."
-    },
-    {
-      "label": "IA comprime les timelines d'attaque",
-      "category": "infosec",
-      "first_seen": "2026-07-28",
-      "last_seen": "2026-07-28",
-      "momentum": "nouveau",
-      "note": "Cloud takeover en sous 10 min par IA. Microsoft lance Project Perception, Nvidia fonde Open Secure AI Alliance. La défense s'organise."
-    },
-    {
-      "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
-      "category": "infosec",
-      "first_seen": "2026-07-18",
-      "last_seen": "2026-07-28",
       "momentum": "stable",
-      "note": "GitHub 3-day delay Dependabot, PyPI rejette old releases. Mais attaquants pivotent vers Wi-Fi MITM et fake Claude Code. Durcissement plateforme."
+      "note": "Anthropic publie sa position open-weights, Jensen Huang défend l'open access, 500$ fine-tune bat frontier. Le front se consolide."
     }
   ],
   "watchlist": [
@@ -159,13 +159,13 @@
       "label": "Criminalisation des outils privacy",
       "category": "societe",
       "since": "2026-07-27",
-      "note": "GrapheneOS en justice, Cognyte van au Texas. Le cadre légal pénalise les outils privacy et automatise la surveillance sans garde-fous."
+      "note": "GrapheneOS duress password = inculpation fédérale, DEF CON bannit Meta glasses, initiative EU anti digital ID. L'acte de se protéger devient suspect."
     },
     {
       "label": "Évaluation cyber des LLMs : retard institutionnel",
       "category": "ia",
       "since": "2026-07-27",
-      "note": "Claude Opus 5 évalué : fort en détection, limité en exploit. L'appareil de mesure suit l'industrialisation avec des semaines de retard."
+      "note": "CryptanalysisBench = premier benchmark dédié. L'appareil de mesure suit l'industrialisation avec des semaines de retard."
     },
     {
       "label": "Confused deputy dans le cloud",
@@ -183,7 +183,7 @@
       "label": "Agent Data Injection : délimiteurs probabilistes",
       "category": "ia",
       "since": "2026-07-17",
-      "note": "Confirmé : un modèle OpenAI compromet l'infra HF. La frontière agent/donnée s'effondre, les délimiteurs probabilistes restent non résolus."
+      "note": "Reconfirmé : OpenAI models exploitent zéro-jour JFrog Artifactory. AgentHound cartographie les chemins d'attaque agentic. Menade confirmée en production."
     },
     {
       "label": "Genie Coefficient : mesurer l'écart intention-action",
@@ -196,12 +196,18 @@
       "category": "ia",
       "since": "2026-07-23",
       "note": "Chatbots flattent pour créer dépendance. L'interface conversationnelle comme dispositif d'accro comportemental reste sous-tracked."
+    },
+    {
+      "label": "LLMs et cryptanalyse post-quantique",
+      "category": "ia",
+      "since": "2026-07-29",
+      "note": "Claude réduit HAWK-256 de 2^64 à 2^38. Si les LLMs découvrent des faiblesses dans des schémas déployés, l'infrastructure crypto en production est menacée."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "Claude Opus 5 fort en détection mais limité en exploit par design, l'IA comprime le cloud takeover à moins de 10 minutes. L'agent est bouclier, arme et faille. L'asymétrie se formalise au niveau du modèle."
+      "note": "Claude découvre de nouvelles attaques cryptanalytiques, Microsoft lance MAI-Cyber-1-Flash pour la défense. L'agent est bouclier, arme et faille : l'asymétrie se formalise au niveau du modèle lui-même."
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
@@ -209,19 +215,19 @@
     },
     {
       "label": "Protection privacy vs criminalisation de la défense",
-      "note": "Cognyte van intercepte tous les téléphones, underscore manquant = 18 mois de prison, GrapheneOS en justice. L'État automatise la surveillance sans garde-fous, la protection privacy devient preuve d'obstruction."
+      "note": "GrapheneOS duress password = inculpation fédérale, DEF CON bannit les Meta glasses, initiative EU contre le digital ID. L'État automatise la surveillance sans garde-fous, se protéger devient preuve d'obstruction."
     },
     {
       "label": "Automatisation du process vs compréhension du contexte",
-      "note": "OCTO formalise l'orchestration hybride, SlopCodeBench mesure le slop. Automatiser ne remplace jamais le raisonnement : la résilience a un coût caché que les benchmarks commencent à mesurer."
+      "note": "OCTO formalise l'orchestration hybride, CryptanalysisBench mesure la cryptanalyse par IA. Automatiser ne remplace jamais le raisonnement : la résilience a un coût caché que les benchmarks commencent à mesurer."
     },
     {
       "label": "Hype IA vs reality check économique",
-      "note": "500$ de fine-tune bat les frontier, lobbying record, livres rares broyés. Le gap entre promesse et coût se ferme par le bas : la viabilité économique et politique de la course IA se questionne ouvertement."
+      "note": "500$ de fine-tune bat les frontier, lobbying record, livres rares broyés, CEO 154Mds$ plaide suffrage censitaire. Le gap entre promesse et coût se ferme par le bas : la viabilité politique de la course IA se questionne."
     },
     {
       "label": "Accélération de l'attaque vs organisation de la défense",
-      "note": "L'IA comprime les compromissions cloud à moins de 10 minutes, Microsoft lance Project Perception, Nvidia fonde l'Open Secure AI Alliance. La défense s'organise mais reste réactive face à une offensive qui accélère."
+      "note": "4 zéros-jours exploités, Claude brise la crypto post-quantique, IA chaîne des exploits Linux root. MAI-Cyber-1-Flash et Hush 30M$ répondent mais la défense reste réactive face à une offensive qui s'étend à la cryptanalyse."
     }
   ]
 }

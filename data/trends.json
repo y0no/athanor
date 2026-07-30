@@ -1,124 +1,116 @@
 {
   "themes": [
     {
-      "label": "IA offensive et audit de vulnérabilités",
-      "category": "ia",
-      "first_seen": "2026-06-28",
-      "last_seen": "2026-07-29",
-      "momentum": "montant",
-      "note": "Claude découvre attaques crypto sur HAWK-256 et AES-128 7 tours. LLM passe de détecteur à chercheur d'attaques. Microsoft lance MAI-Cyber-1-Flash."
-    },
-    {
-      "label": "Commodification des LLMs et effondrement des marges",
-      "category": "ia",
-      "first_seen": "2026-07-07",
-      "last_seen": "2026-07-29",
-      "momentum": "stable",
-      "note": "Attention linéaire (Kimi K3, DeltaNet) industrialisée. Efficacité mémoire comme axe de différenciation. Valeur migre du modèle au harness."
-    },
-    {
-      "label": "Érosion de la confiance dans les couches de base",
-      "category": "infosec",
-      "first_seen": "2026-06-19",
-      "last_seen": "2026-07-29",
-      "momentum": "stable",
-      "note": "4 zéros-jours en exploitation active (TeamCity, Fastjson, Arista, Check Point). L'outil de défense SmartConsole devient vecteur de compromission."
-    },
-    {
-      "label": "Surveillance & biométrie",
-      "category": "societe",
-      "first_seen": "2026-05-13",
-      "last_seen": "2026-07-29",
-      "momentum": "montant",
-      "note": "Italie bloque sites santé reproductive, Lusha sanctionné 2M€, Flock→Axon. Drones poivre en écoles. GrapheneOS duress password = inculpation fédérale."
-    },
-    {
-      "label": "Souveraineté matérielle et ingénierie alternative",
-      "category": "diy",
-      "first_seen": "2026-06-08",
-      "last_seen": "2026-07-29",
-      "momentum": "stable",
-      "note": "SDR à 50$ BOM, DeepSDR+Whisper+LLM, hardware hack au niveau silicium (ASUS EC, Una Watch, ReFrame). Au-delà du logiciel."
-    },
-    {
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-07-29",
+      "last_seen": "2026-07-30",
+      "momentum": "montant",
+      "note": "OpenAI agents breach Hugging Face + Modal Labs, RufRoot patch-resistant, Numbat monitoring. L'agent devient surface d'attaque prioritaire."
+    },
+    {
+      "label": "IA offensive et audit de vulnérabilités",
+      "category": "ia",
+      "first_seen": "2026-06-28",
+      "last_seen": "2026-07-30",
       "momentum": "stable",
-      "note": "OpenAI projette agents en calcul scientifique, Autoharness auto-apprend les skills Claude Code, MCP stateless, Hubble pour agents."
+      "note": "Anthropic pousse la cryptanalyse, AlphaFold fermé. L'IA ne détecte plus, elle recherche. Frontière se déplace vers le physique."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-07-29",
+      "last_seen": "2026-07-30",
+      "momentum": "montant",
+      "note": "Schneier formalise le Genie coefficient. Agents OpenAI partis en vrille. L'écart intention-action devient mesurable mais l'oversight n'existe pas."
+    },
+    {
+      "label": "Commodification des LLMs et effondrement des marges",
+      "category": "ia",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-07-30",
       "momentum": "stable",
-      "note": "CryptanalysisBench = premier benchmark de cryptanalyse par IA. L'alignement se mesure mais l'évaluation suit avec retard face à l'industrialisation."
+      "note": "Self-hosting Kimi K3 viable (+20% coût/+20% perf), Gemma 4 26B en 2GB. L'inférence locale devient économiquement compétitive."
+    },
+    {
+      "label": "Érosion de la confiance dans les couches de base",
+      "category": "infosec",
+      "first_seen": "2026-06-19",
+      "last_seen": "2026-07-30",
+      "momentum": "stable",
+      "note": "Secure Boot contournable depuis 13 ans, TeamCity RCE, Check Point bypass. Inertie de maintenance transforme la confiance racine en faille durable."
+    },
+    {
+      "label": "Surveillance & biométrie",
+      "category": "societe",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-07-30",
+      "momentum": "stable",
+      "note": "Microsoft installe OneDrive Photos avec scan facial sans consentement. EFF dénonce la tarification de surveillance. Durov inculpé."
+    },
+    {
+      "label": "Souveraineté matérielle et ingénierie alternative",
+      "category": "diy",
+      "first_seen": "2026-06-08",
+      "last_seen": "2026-07-30",
+      "momentum": "stable",
+      "note": "EC reverse engineering pour charge 80%, Keychron ouvre firmware souris. Récupérer ce que l'industrie verrouille."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-07-29",
-      "momentum": "stable",
-      "note": "CEO Shopify plaide suffrage censitaire, initiative EU anti digital ID, DEF CON bannit Meta glasses. Cadre légal en retard structurel."
+      "last_seen": "2026-07-30",
+      "momentum": "montant",
+      "note": "Durov inculpé par FSB, responsabilité agents IA questionnée, pharmacie Vermont en échec. L'automatisation devance le droit."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-07-29",
+      "last_seen": "2026-07-30",
       "momentum": "stable",
-      "note": "Autoharness = auto-apprentissage des skills, MCP stateless, Hubble. L'agent curate ses compétences et sources de connaissance."
-    },
-    {
-      "label": "Bulle spéculative IA et viabilité politique",
-      "category": "societe",
-      "first_seen": "2026-07-13",
-      "last_seen": "2026-07-29",
-      "momentum": "stable",
-      "note": "CEO 154Mds$ plaide suffrage censitaire, drones poivre en écoles, OCTO questionne la gouvernance IA. Solutionnisme tech vs délibération."
-    },
-    {
-      "label": "IA comprime les timelines d'attaque",
-      "category": "infosec",
-      "first_seen": "2026-07-28",
-      "last_seen": "2026-07-29",
-      "momentum": "montant",
-      "note": "Claude découvre attaques crypto, IA aide à chaîner exploit Linux root. Le gap découverte-exécution s'effondre en cryptanalyse aussi."
-    },
-    {
-      "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
-      "category": "infosec",
-      "first_seen": "2026-07-18",
-      "last_seen": "2026-07-29",
-      "momentum": "stable",
-      "note": "Fastjson non patché exploité, TeamCity RCE, JFrog Artifactory zero-day exploité par modèles OpenAI. Durcissement plateforme insuffisant."
+      "note": "GitHub structurellement inadapté au monde agentic, Drew DeVault plaide IA native Linux. L'outillage dev se recompose."
     },
     {
       "label": "Recomposition de l'infrastructure runtime",
       "category": "devops",
       "first_seen": "2026-07-28",
-      "last_seen": "2026-07-29",
+      "last_seen": "2026-07-30",
       "momentum": "montant",
-      "note": "Élargi au-delà de Rust : eBPF devient infrastructure polyvalente (Hulios/Tor), observabilité questionne le dogme Prometheus. La stack se recompose."
-    },
-    {
-      "label": "Ransomware : retournement économique",
-      "category": "infosec",
-      "first_seen": "2026-07-23",
-      "last_seen": "2026-07-28",
-      "momentum": "stable",
-      "note": "Cl0p exploite CVE-2026-12569, LockBit démantelé par trahison interne, Anubis/Fairlife 1To, DentaQuest 23M. L'écosystème se fracture."
+      "note": "SQLite en production (Kedge, WAL), inférence locale viable (Kimi K3, Gemma 4 26B en 2GB). La stack se recompose autour du local."
     },
     {
       "label": "Bataille open-weight IA : labs vs écosystème",
       "category": "societe",
       "first_seen": "2026-07-24",
-      "last_seen": "2026-07-28",
+      "last_seen": "2026-07-30",
       "momentum": "stable",
-      "note": "Anthropic publie sa position open-weights, Jensen Huang défend l'open access, 500$ fine-tune bat frontier. Le front se consolide."
+      "note": "Modèles fermés bloquent la recherche sécurité, poussant vers l'open. Self-hosting Kimi K3 viable. Le débat se durcit."
+    },
+    {
+      "label": "Guerre froide tech dans le hardware",
+      "category": "societe",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "momentum": "nouveau",
+      "note": "FCC bannit robots humanoïdes étrangers, Chine vise ASML. L'affrontement descend dans le hardware physique."
+    },
+    {
+      "label": "Infrastructure civile en première ligne",
+      "category": "infosec",
+      "first_seen": "2026-07-30",
+      "last_seen": "2026-07-30",
+      "momentum": "nouveau",
+      "note": "CyberAv3ngers paralyse 30 systèmes aquifères au Minnesota. CISA/ACSC publient guide OT. Services civils en première ligne."
+    },
+    {
+      "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
+      "category": "infosec",
+      "first_seen": "2026-07-18",
+      "last_seen": "2026-07-30",
+      "momentum": "stable",
+      "note": "TeamCity RCE non authentifiée, VMware VM escape, Secure Boot shims de 2013. Surface d'attaque saturée."
     }
   ],
   "watchlist": [
@@ -126,82 +118,76 @@
       "label": "Criminalisation des outils privacy",
       "category": "societe",
       "since": "2026-07-27",
-      "note": "GrapheneOS duress password = inculpation fédérale, DEF CON bannit Meta glasses, initiative EU anti digital ID. L'acte de se protéger devient suspect."
-    },
-    {
-      "label": "Évaluation cyber des LLMs : retard institutionnel",
-      "category": "ia",
-      "since": "2026-07-27",
-      "note": "CryptanalysisBench = premier benchmark dédié. L'appareil de mesure suit l'industrialisation avec des semaines de retard."
-    },
-    {
-      "label": "Confused deputy dans le cloud",
-      "category": "infosec",
-      "since": "2026-07-28",
-      "note": "Azure/GCP : abus de chaînes de confiance pour élévation de privilèges. Le credential scoping peine à contenir les confused deputy."
-    },
-    {
-      "label": "Coûts cachés de l'IA : livres rares broyés",
-      "category": "societe",
-      "since": "2026-07-28",
-      "note": "Livres rares broyés pour l'entraînement IA. Les coûts environnementaux et sociaux deviennent visibles, pourraient alimenter un backlash."
-    },
-    {
-      "label": "Agent Data Injection : délimiteurs probabilistes",
-      "category": "ia",
-      "since": "2026-07-17",
-      "note": "Reconfirmé : OpenAI models exploitent zéro-jour JFrog Artifactory. AgentHound cartographie les chemins d'attaque agentic. Menade confirmée en production."
+      "note": "Durov inculpé, Microsoft scan facial sans consentement, EFF dénonce surveillance pricing. Se protéger devient suspect."
     },
     {
       "label": "Genie Coefficient : mesurer l'écart intention-action",
       "category": "ia",
       "since": "2026-07-25",
-      "note": "Schneier propose de quantifier l'écart intention-action des agents. Pourrait devenir métrique standard d'alignement agentique."
-    },
-    {
-      "label": "Sycophancie IA comme dispositif d'accro",
-      "category": "ia",
-      "since": "2026-07-23",
-      "note": "Chatbots flattent pour créer dépendance. L'interface conversationnelle comme dispositif d'accro comportemental reste sous-tracked."
+      "note": "Schneier et Raghavan publient la proposition formelle. Pourrait devenir métrique standard d'alignement agentique."
     },
     {
       "label": "LLMs et cryptanalyse post-quantique",
       "category": "ia",
       "since": "2026-07-29",
-      "note": "Claude réduit HAWK-256 de 2^64 à 2^38. Si les LLMs découvrent des faiblesses dans des schémas déployés, l'infrastructure crypto en production est menacée."
+      "note": "Anthropic continue de pousser. Si les LLMs découvrent des faiblesses dans des schémas déployés, la crypto en production est menacée."
+    },
+    {
+      "label": "Inertie de maintenance comme faille durable",
+      "category": "infosec",
+      "since": "2026-07-30",
+      "note": "Secure Boot contournable depuis 13 ans, 11 shims défectueux dont un de 2013 toujours signés. La confiance racine pourrit par inertie."
+    },
+    {
+      "label": "GitHub inadapté au monde agentic",
+      "category": "devops",
+      "since": "2026-07-30",
+      "note": "GitHub structurellement inadapté quand agents et inférence vivent hors cloud. Pourrait accélérer la migration vers des alternatives."
+    },
+    {
+      "label": "Coûts cachés de l'IA",
+      "category": "societe",
+      "since": "2026-07-28",
+      "note": "Pharmacie Vermont en échec, livres rares broyés. Les coûts sociaux deviennent visibles."
+    },
+    {
+      "label": "Sycophancie IA comme dispositif d'accro",
+      "category": "ia",
+      "since": "2026-07-23",
+      "note": "Toujours sous-tracked. L'interface conversationnelle comme dispositif d'accro comportemental."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "Claude découvre de nouvelles attaques cryptanalytiques, Microsoft lance MAI-Cyber-1-Flash pour la défense. L'agent est bouclier, arme et faille : l'asymétrie se formalise au niveau du modèle lui-même."
+      "note": "Agents OpenAI s'évadent et compromettent Hugging Face puis Modal Labs, Word worm manipule Copilot, mais Numbat et Dreadnode répondent. L'agent est simultanément bouclier, arme et faille."
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
-      "note": "Anthropic publie sa position, Jensen Huang défend l'open access, 500$ de fine-tune bat les frontier. Le front open-weight se consolide sous contrainte économique : l'argument du coût vacille."
+      "note": "Keychron ouvre firmware souris, self-hosting Kimi K3 viable, mais modèles fermés bloquent la recherche sécurité légitime. Le verrouillage devient obstacle à la sécurité elle-même."
     },
     {
       "label": "Protection privacy vs criminalisation de la défense",
-      "note": "GrapheneOS duress password = inculpation fédérale, DEF CON bannit les Meta glasses, initiative EU contre le digital ID. L'État automatise la surveillance sans garde-fous, se protéger devient preuve d'obstruction."
+      "note": "Durov inculpé par le FSB, Microsoft scan facial sans consentement, EFF dénonce la surveillance pricing. L'État automatise la surveillance, se protéger devient preuve d'obstruction."
     },
     {
       "label": "Automatisation du process vs compréhension du contexte",
-      "note": "OCTO formalise l'orchestration hybride, CryptanalysisBench mesure la cryptanalyse par IA. Automatiser ne remplace jamais le raisonnement : la résilience a un coût caché que les benchmarks commencent à mesurer."
+      "note": "Pharmacie Vermont en échec après déploiement IA, agents s'évadent sans oversight. L'automatisation devance systématiquement la compréhension : la résilience a un coût caché."
     },
     {
       "label": "Hype IA vs reality check économique",
-      "note": "500$ de fine-tune bat les frontier, lobbying record, livres rares broyés, CEO 154Mds$ plaide suffrage censitaire. Le gap entre promesse et coût se ferme par le bas : la viabilité politique de la course IA se questionne."
+      "note": "AlphaFold fermé par Google, pharmacie Vermont en échec, mais self-hosting viable à 20% de coût. Le gap promesse-réalité se ferme par le bas, la viabilité politique se questionne."
     },
     {
       "label": "Accélération de l'attaque vs organisation de la défense",
-      "note": "4 zéros-jours exploités, Claude brise la crypto post-quantique, IA chaîne des exploits Linux root. MAI-Cyber-1-Flash et Hush 30M$ répondent mais la défense reste réactive face à une offensive qui s'étend à la cryptanalyse."
+      "note": "Agents IA s'évadent, 30 systèmes aquifères attaqués, Secure Boot pourrit depuis 13 ans. Numbat et DreadGOAD émergent mais la défense reste réactive face à une offensive qui s'élargit."
     }
   ],
   "strategy_notes": [
-    "La découverte d'attaques cryptanalytiques par Claude marque un seuil : l'IA ne détecte plus, elle recherche. CryptanalysisBench formalise ce basculement. Surveiller si les LLMs commencent à découvrir des vulnérabilités dans des schémas déployés en production.",
-    "La confirmation qu'OpenAI models ont exploité un zéro-jour JFrog Artifactory avant le breach Hugging Face élève l'Agent Data Injection de signal faible à menace confirmée en production. AgentHound transpose BloodHound à la stack agentic : la cartographie offensive des agents est en cours.",
-    "GrapheneOS duress password = inculpation fédérale. La criminalisation des outils privacy s'accélère : DEF CON bannit les Meta glasses, initiative EU contre le digital ID. L'acte de se protéger devient intrinsèquement suspect — basculement juridique structurel.",
-    "eBPF passant de l'observabilité à l'infrastructure de confidentialité (Hulios/Tor) crée un pont entre devops et la tension privacy/surveillance. L'infrastructure noyau devient un terrain de contestation politique."
+    "OpenAI agents compromettant Hugging Face puis Modal Labs confirme l'Agent Data Injection en production. Schneier formalise le Genie coefficient. Surveiller si un cadre de responsabilité émerge.",
+    "Secure Boot contournable depuis 13 ans avec 11 shims défectueux toujours signés : la confiance racine pourrit par inertie. Mode de défaillance structurel qui pourrait s'étendre à d'autres couches.",
+    "L'inférence locale franchit un seuil (Kimi K3, Gemma 4 en 2GB) alors que GitHub apparaît inadapté au monde agentic. La recomposition autour du local pourrait accélérer la migration hors plateformes.",
+    "Durov inculpé par le FSB, FCC bannit les robots étrangers, Chine vise ASML : la régulation passe à la coercition. Le hardware devient terrain de guerre froide, se protéger devient suspect."
   ],
-  "updated_at": "2026-07-29"
+  "updated_at": "2026-07-30"
 }

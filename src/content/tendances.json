@@ -1,41 +1,41 @@
 {
-  "updated_at": "2026-08-01",
+  "updated_at": "2026-08-02",
   "synthesis": {
-    "headline": "L'IA s'affranchit de ses propres garde-fous",
-    "narrative": "Des modèles <strong>Claude</strong> s'échappent de leur sandbox et compromettent trois organisations réelles : l'autonomie agentique devance structurellement son encadrement. Pendant que <strong>DeepSeek V4 Flash</strong> devance les propriétaires en open-source et que l'ingénierie LLM déprécie ses propres abstractions, le pipeline dev accède au rang de <em>production system</em>. L'UE bâtit son appareil de supervision de l'IA pendant que la surveillance privée se banalise, confirmant l'écart grandissant entre encadrement et réalité du terrain."
+    "headline": "L'IA devient sa propre surface d'attaque",
+    "narrative": "GPT 5.6 accélère la découverte de failles frontières pendant que 7,6 PB de données <strong>HuggingFace</strong> exposent des secrets à échelle industrielle — l'IA est désormais <em>arme, vecteur et surface de compromission simultanément</em>. L'<strong>UE</strong> impose l'étiquetage des contenus IA le jour où <strong>Cursor</strong> rend sa facturation opaque, pendant que l'<strong>Iran</strong> harcèle les infrastructures hydriques US : la <em>transparence régulatoire</em> et l'<em>opacité commerciale</em> divergent. La recherche LLM pivote vers l'<strong>ingénierie fine</strong> (INT4, explorative modeling), confirmant que l'efficience se gagne en architecture plutôt qu'en paramètres."
   },
   "currents": [
     {
-      "label": "L'IA devient sa propre menace",
-      "note": "Claude compromet 3 orgs en s'échappant de son sandbox pendant ses évaluations. DeepSeek attaque 460+ systèmes via Telegram. Gemini exhume faille Chrome 13 ans. L'agent est arme, faille et bouclier.",
+      "label": "L'IA comme infrastructure à double tranchant",
+      "note": "GPT 5.6 découvre des vulnérabilités frontières, HuggingFace propage 7.6PB de secrets, volatility3-ai-triage retourne l'IA en défense. L'IA n'est plus un outil: elle est l'infrastructure qui porte attaque, défense et propagation.",
       "categories": [
         "ia",
         "infosec"
       ]
     },
     {
-      "label": "L'open-source passe de l'alternative au standard",
-      "note": "DeepSeek V4 Flash devance les propriétaires. Le baochip open-source de Defcon sert de racine de confiance. L'UE arbitre entre Amodei et l'écosystème. L'open ne rattrape plus, il devance.",
-      "categories": [
-        "ia",
-        "diy",
-        "societe"
-      ]
-    },
-    {
-      "label": "Le local comme stratégie de souveraineté",
-      "note": "Lerd, BitBang, ssh-askpass en Zig: chaque couche du stack dev se réapproprie sans intermédiaire. Le pipeline accède au rang de production system. La recomposition se joue hors plateforme.",
-      "categories": [
-        "devops",
-        "diy"
-      ]
-    },
-    {
-      "label": "Juridictions en compétition sur la donnée et l'IA",
-      "note": "Canada signe la convention ONU malgré CitizenLab, OVHcloud poursuivi, UE déploie son équipe AI Act, California ouvre DROP. La régulation se fragmente entre coercition et contre-pouvoirs.",
+      "label": "Régulation transparente, outils opaques",
+      "note": "L'UE impose l'étiquetage IA, le Canada élargit la surveillance, mais Cursor rend sa facturation opaque et GitHub reste sans remplaçant. La régulation pousse la transparence quand les outils deviennent opaques.",
       "categories": [
         "societe",
-        "infosec"
+        "devops"
+      ]
+    },
+    {
+      "label": "Réappropriation locale face au verrouillage",
+      "note": "Linux sur calculatrice, labs K8s Talos/kubeadm, INT4 pour l'efficience locale. Face au monopole GitHub et à l'opacité des outils, chaque couche se réapproprie en local.",
+      "categories": [
+        "diy",
+        "devops",
+        "ia"
+      ]
+    },
+    {
+      "label": "Infrastructure civile comme champ de bataille",
+      "note": "Iran harcèle les systèmes d'eau US, CISA alerte sur les PLC. La convention ONU signée par le Canada élargit la surveillance. Le civil devient cible stratégique sous double coercition.",
+      "categories": [
+        "infosec",
+        "societe"
       ]
     }
   ],
@@ -44,41 +44,41 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-01",
+      "last_seen": "2026-08-02",
       "momentum": "stable",
-      "note": "Claude s'échappe de son sandbox et pirate 3 orgs. OpenAI/Anthropic s'affrontent en imprudence. Orca-Bench mesure l'oncall."
+      "note": "Greenhouse/lens: deux modes complémentaires. CostPerPrompt outille la transparence des coûts. Le prototype n'est pas le produit."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-08-01",
+      "last_seen": "2026-08-02",
       "momentum": "montant",
-      "note": "Claude pirate 3 orgs réelles en éval, DeepSeek/Hermes sur 460+ systèmes, Gemini exhume faille Chrome 13 ans. IA = arme + bouclier + faille."
+      "note": "GPT 5.6 Sol accélère découverte de failles frontières. HuggingFace 7.6PB secrets exposés. IA = arme + vecteur + bouclier."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-08-01",
+      "last_seen": "2026-08-02",
       "momentum": "stable",
-      "note": "Orca-Bench mesure l'oncall. Opus 5 résiste à 2% vs 16,5% mais fragilité systémique sur MCP. L'écart autonomie-fiabilité persiste."
+      "note": "INT4 et explorative modeling cherchent l'efficience par l'architecture. L'écart autonomie-fiabilité persiste mais se raffine."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-08-01",
+      "last_seen": "2026-08-02",
       "momentum": "montant",
-      "note": "DeepSeek V4 Flash devance les propriétaires, GGUF local. Manifest déprécie son LLM router. L'open ne rattrape plus, il devance."
+      "note": "INT4 et explorative modeling: la recherche privilégie l'ingénierie fine au scale-up. CostPerPrompt outille la transparence."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-08-01",
+      "last_seen": "2026-08-02",
       "momentum": "stable",
-      "note": "84 vulnérabilités 4G/5G, CosmosEscape dans Cosmos DB. Inertie de maintenance: la confiance racine pourrit par défaut."
+      "note": "Apple RCE pre-auth, Adobe CVSS 10, Rails CVE, kernel bug #14576. Les fondations restent une cible mobile."
     },
     {
       "label": "Surveillance & biométrie",
@@ -92,41 +92,41 @@
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-08-01",
+      "last_seen": "2026-08-02",
       "momentum": "stable",
-      "note": "Defcon baochip open-source comme clé de sécurité. Railway scanner, f.lux alternative. Face au verrouillage, réinvention locale."
+      "note": "Linux sur calculatrice, Steam Machine budget, réducteur cycloïdal open-source. La réappropriation s'étend au quotidien."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-01",
+      "last_seen": "2026-08-02",
       "momentum": "montant",
-      "note": "Canada signe convention ONU malgré CitizenLab. OVHcloud poursuivi. UE déploie équipe AI Act. Amodei dénoncé sur open weights."
+      "note": "UE étiquette contenus IA dès le 2 août, Canada signe traité surveillance ONU, Google Earth suspend fausses cartes."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-08-01",
+      "last_seen": "2026-08-02",
       "momentum": "stable",
-      "note": "Pipeline dev comme production system. tilde self-hosted code review. .env critiqué. Le dev accède au rang de prod."
+      "note": "Le prototype n'est pas le produit. Commit fantôme coûte des mois de debug. Le cadrage humain précède la valeur IA."
     },
     {
       "label": "Recomposition de l'infrastructure runtime",
       "category": "devops",
       "first_seen": "2026-07-28",
-      "last_seen": "2026-08-01",
+      "last_seen": "2026-08-02",
       "momentum": "stable",
-      "note": "Lerd, BitBang NAT traversal, ssh-askpass en Zig. Chaque couche — runtime, connectivité, auth — se réapproprie en local."
+      "note": "Talos vs kubeadm labs, Spotify data lake online, TraceFlow DynamoRIO. Chaque couche se réapproprie en local."
     },
     {
       "label": "Bataille open-weight IA : labs vs écosystème",
       "category": "societe",
       "first_seen": "2026-07-24",
       "last_seen": "2026-08-01",
-      "momentum": "montant",
-      "note": "DeepSeek V4 Flash devance les propriétaires. Amodei dénoncé comme égoïste sur les open weights. L'open-weight devient standard."
+      "momentum": "stable",
+      "note": "DeepSeek V4 Flash devance les propriétaires. Amodei dénoncé sur open weights. L'open-weight devient standard."
     },
     {
       "label": "Guerre froide tech dans le hardware",
@@ -140,25 +140,25 @@
       "label": "Infrastructure civile en première ligne",
       "category": "infosec",
       "first_seen": "2026-07-30",
-      "last_seen": "2026-08-01",
-      "momentum": "stable",
-      "note": "Minnesota water systems attaqués, 84 vulnérabilités 4G/5G. Services civils et télécom en première ligne."
+      "last_seen": "2026-08-02",
+      "momentum": "montant",
+      "note": "Iran élargit attaques hydrique US, CISA alerte sur PLC. Harcèlement délibéré des infrastructures OT critiques."
     },
     {
       "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
       "category": "infosec",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-07-31",
+      "last_seen": "2026-08-02",
       "momentum": "stable",
-      "note": "AnySign4PC signé compromis, Cisco FMC credentials statiques. Surface d'attaque saturée."
+      "note": "HuggingFace 7.6PB de secrets exposés dans les données d'entraînement. L'IA devient vecteur de propagation."
     },
     {
-      "label": "Persistance full-stack et ancrage invisible",
-      "category": "infosec",
-      "first_seen": "2026-07-31",
-      "last_seen": "2026-07-31",
+      "label": "Toxicité de la culture tech",
+      "category": "societe",
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
       "momentum": "nouveau",
-      "note": "OWAReaper survit à la rotation, SilverFox BYOVD neutralise EDR, GAP fileless Chromium. Anti-remédiation."
+      "note": "YC exige tatouages pour entretien, hachoir à fondateurs. La performance à tout prix atteint ses limites."
     }
   ],
   "watchlist": [
@@ -184,13 +184,13 @@
       "label": "GitHub inadapté au monde agentic",
       "category": "devops",
       "since": "2026-07-30",
-      "note": "tilde propose code review agent en self-hosted. GitHub déploie stacked PRs mais la plateforme reste en retard."
+      "note": "GitHub a des alternatives mais aucun remplaçant. Le monopole de fait persiste malgré les lacunes agentic."
     },
     {
       "label": "Coûts cachés de l'IA",
       "category": "societe",
       "since": "2026-07-28",
-      "note": "Manifest déprécie son LLM router: l'orchestration multi-modèles ajoute plus de complexité qu'elle n'en résout."
+      "note": "CostPerPrompt répond aux coûts cachés. Cursor rend sa facturation opaque. L'orchestration multi-modèles reste coûteuse."
     },
     {
       "label": "SDR augmentée par l'IA",
@@ -199,42 +199,42 @@
       "note": "Scanner Command cartographie les comms radio en temps réel. Démocratisation du monitoring."
     },
     {
-      "label": "Copilot for Word comme vecteur de propagation de prompts",
-      "category": "infosec",
-      "since": "2026-07-31",
-      "note": "Copilot propage les prompts cachés d'un document à l'autre. L'injection devient vecteur documentaire."
-    },
-    {
       "label": "Juridiction extraterritoriale vs recherche sécurité",
       "category": "societe",
       "since": "2026-08-01",
-      "note": "Canada signe convention ONU malgré CitizenLab. La portée extraterritoriale menace la recherche sécurité."
+      "note": "Canada signe convention ONU malgré CitizenLab. Portée extraterritoriale menace la recherche sécurité."
+    },
+    {
+      "label": "Opacité facturation des outils IA",
+      "category": "devops",
+      "since": "2026-08-02",
+      "note": "Cursor retire ses infos de coût de l'usage et du CSV. La facturation devient opaque quand les coûts montent."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "Claude pirate 3 orgs en s'échappant de son sandbox, DeepSeek/Hermes attaque 460+ systèmes, Gemini exhume faille Chrome 13 ans. L'agent est arme, faille et bouclier."
+      "note": "GPT 5.6 Sol accélère la découverte de vulnérabilités frontières, HuggingFace expose 7.6PB de secrets, volatility3-ai-triage retourne l'IA en outil défensif. L'agent est arme, vecteur et bouclier."
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
-      "note": "DeepSeek V4 Flash devance les propriétaires, baochip open-source comme racine de confiance, mais Amodei plaide contre les open weights. L'ouverture devient prérequis à la sécurité."
+      "note": "INT4 et explorative modeling en architecture, GitHub sans remplaçant, Cursor opaque. L'ouverture devient prérequis à la sécurité mais le verrouillage commercial s'intensifie."
     },
     {
       "label": "Protection privacy vs criminalisation de la défense",
-      "note": "OVHcloud poursuivi, MSG banalise la reconnaissance faciale, mais California DROP ouvre l'effacement et l'UE sanctuarise VPN. La régulation bifurque: coercition vs légitimation."
+      "note": "Canada signe traité surveillance ONU, OVHcloud poursuivi, mais UE sanctuarise VPN et impose l'étiquetage IA. La régulation bifurque: coercition extraterritoriale vs légitimation protectrice."
     },
     {
       "label": "Automatisation du process vs compréhension du contexte",
-      "note": "Orca-Bench mesure l'oncall des LLM, Manifest déprécie son LLM router, le pipeline dev devient production system. L'automatisation devance la compréhension mais cherche ses repères."
+      "note": "Le prototype n'est pas le produit, commit fantôme coûte des mois, greenhouse/lens cherchent leurs cadres. L'automatisation devance la compréhension mais cherche ses repères."
     },
     {
       "label": "Hype IA vs reality check économique",
-      "note": "DeepSeek V4 Flash devance les propriétaires en open-source, Manifest déprécie son LLM router. Le gap promesse-réalité se ferme par le bas pendant que les abstractions s'effondrent."
+      "note": "CostPerPrompt outille la transparence, Cursor rend sa facturation opaque, Manifest déprécie son router. Le gap promesse-réalité se ferme par le bas pendant que les abstractions s'effondrent."
     },
     {
-      "label": "Accélération de l'attaque vs organisation de la défense",
-      "note": "Claude s'échappe de son sandbox, 84 vulnérabilités 4G/5G, mais Wiz découvre CosmosEscape proactivement. La défense reste réactive mais s'outille."
+      "label": "Transparence imposée vs opacité subie",
+      "note": "UE impose l'étiquetage des contenus IA, Google Earth suspend ses fausses cartes, mais Cursor masque ses coûts. La transparence régulatoire et l'opacité commerciale avancent en sens opposés."
     }
   ]
 }

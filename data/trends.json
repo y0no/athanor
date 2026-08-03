@@ -4,121 +4,121 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-02",
+      "last_seen": "2026-08-03",
       "momentum": "stable",
-      "note": "Greenhouse/lens: deux modes complémentaires. CostPerPrompt outille la transparence des coûts. Le prototype n'est pas le produit."
+      "note": "MicroCodex <1Mo en C++, Mu outille l'agentique, MCP standard de facto. Local-first et empreinte minimale priment sur le scale-up."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-08-02",
+      "last_seen": "2026-08-03",
       "momentum": "montant",
-      "note": "GPT 5.6 Sol accélère découverte de failles frontières. HuggingFace 7.6PB secrets exposés. IA = arme + vecteur + bouclier."
+      "note": "Astra résout 10 problèmes ouverts. Black-cat et NetExec-mcp intègrent l'agent à l'offensive. Open-weight piégés par backdoors contextuelles."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-08-02",
+      "last_seen": "2026-08-03",
       "momentum": "stable",
-      "note": "INT4 et explorative modeling cherchent l'efficience par l'architecture. L'écart autonomie-fiabilité persiste mais se raffine."
+      "note": "Qwen3.8-Max repousse le code. Backdoors contextuelles des open-weight. L'écart autonomie-fiabilité persiste mais se raffine."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-08-02",
-      "momentum": "montant",
-      "note": "INT4 et explorative modeling: la recherche privilégie l'ingénierie fine au scale-up. CostPerPrompt outille la transparence."
+      "last_seen": "2026-08-03",
+      "momentum": "stable",
+      "note": "Qwen3.8-Max confirme architecture > scale-up. MicroCodex <1Mo. L'efficience se gagne en ingénierie fine, pas en paramètres."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-08-02",
+      "last_seen": "2026-08-03",
       "momentum": "stable",
-      "note": "Apple RCE pre-auth, Adobe CVSS 10, Rails CVE, kernel bug #14576. Les fondations restent une cible mobile."
+      "note": "Jellyfin et Langflow RCE non authentifiées. KYC = security theater. Validation des entrées reste le maillon faible."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-01",
+      "last_seen": "2026-08-03",
       "momentum": "stable",
-      "note": "MSG scanne chaque visiteur, double standard Taylor Swift. California DROP ouvre l'effacement. Surveillance banalisée vs contre-pouvoirs."
+      "note": "UE impose attestation matérielle pour l'âge. California DROP opposable. Surveillance banalisée vs contre-pouvoirs juridiques."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-08-02",
-      "momentum": "stable",
-      "note": "Linux sur calculatrice, Steam Machine budget, réducteur cycloïdal open-source. La réappropriation s'étend au quotidien."
+      "last_seen": "2026-08-03",
+      "momentum": "montant",
+      "note": "Linux desktop >10% NA, Bor, NixOS sur DGX, Kakehashi. La réappropriation s'étend du quotidien au HPC."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-02",
+      "last_seen": "2026-08-03",
       "momentum": "montant",
-      "note": "UE étiquette contenus IA dès le 2 août, Canada signe traité surveillance ONU, Google Earth suspend fausses cartes."
+      "note": "UE bascule 3 régimes en mode sanctionnable: IA, étiquetage, âge. California DROP opposable. La régulation cesse d'être déclarative."
     },
     {
       "label": "Mutation du développeur : du code au contexte",
       "category": "devops",
       "first_seen": "2026-06-07",
-      "last_seen": "2026-08-02",
+      "last_seen": "2026-08-03",
       "momentum": "stable",
-      "note": "Le prototype n'est pas le produit. Commit fantôme coûte des mois de debug. Le cadrage humain précède la valeur IA."
+      "note": "MicroCodex et Mu outillent l'agentique. MCP standardise. Le cadrage humain précède la valeur IA."
     },
     {
       "label": "Recomposition de l'infrastructure runtime",
       "category": "devops",
       "first_seen": "2026-07-28",
-      "last_seen": "2026-08-02",
+      "last_seen": "2026-08-03",
       "momentum": "stable",
-      "note": "Talos vs kubeadm labs, Spotify data lake online, TraceFlow DynamoRIO. Chaque couche se réapproprie en local."
+      "note": "ssh.place, Shitty, FamilyWild. NixOS-DGX, Kakehashi macOS sur Linux. La couche basse se réinvente par le bas."
     },
     {
       "label": "Bataille open-weight IA : labs vs écosystème",
       "category": "societe",
       "first_seen": "2026-07-24",
-      "last_seen": "2026-08-01",
+      "last_seen": "2026-08-03",
       "momentum": "stable",
-      "note": "DeepSeek V4 Flash devance les propriétaires. Amodei dénoncé sur open weights. L'open-weight devient standard."
-    },
-    {
-      "label": "Guerre froide tech dans le hardware",
-      "category": "societe",
-      "first_seen": "2026-07-30",
-      "last_seen": "2026-07-30",
-      "momentum": "stable",
-      "note": "FCC bannit robots humanoïdes étrangers, Chine vise ASML. Affrontement dans le hardware physique."
+      "note": "Qwen3.8-Max devance. Backdoors contextuelles dans les open-weight. L'open-weight devient standard mais reste piégé."
     },
     {
       "label": "Infrastructure civile en première ligne",
       "category": "infosec",
       "first_seen": "2026-07-30",
       "last_seen": "2026-08-02",
-      "momentum": "montant",
-      "note": "Iran élargit attaques hydrique US, CISA alerte sur PLC. Harcèlement délibéré des infrastructures OT critiques."
+      "momentum": "stable",
+      "note": "Iran élargit attaques hydrique US, CISA alerte sur PLC. Harcèlement délibéré des infrastructures OT."
     },
     {
       "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
       "category": "infosec",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-08-02",
+      "last_seen": "2026-08-03",
       "momentum": "stable",
-      "note": "HuggingFace 7.6PB de secrets exposés dans les données d'entraînement. L'IA devient vecteur de propagation."
+      "note": "Backdoors contextuelles dans les open-weight via fine-tuning. L'IA devient vecteur de compromission amont."
     },
     {
-      "label": "Toxicité de la culture tech",
-      "category": "societe",
-      "first_seen": "2026-08-02",
-      "last_seen": "2026-08-02",
+      "label": "LLMs comme instruments de recherche fondamentale",
+      "category": "ia",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
       "momentum": "nouveau",
-      "note": "YC exige tatouages pour entretien, hachoir à fondateurs. La performance à tout prix atteint ses limites."
+      "note": "Astra résout 10 problèmes ouverts en math/CS. Les LLMs ne sont plus seulement productifs mais scientifiques."
+    },
+    {
+      "label": "Saturation culturelle et réquisitoire anti-IA",
+      "category": "societe",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-03",
+      "momentum": "nouveau",
+      "note": "IA génie inonde le marché du livre. Framablog: 'la grande escroquerie'. Dilution culturelle comme front politique."
     }
   ],
   "watchlist": [
@@ -153,55 +153,55 @@
       "note": "CostPerPrompt répond aux coûts cachés. Cursor rend sa facturation opaque. L'orchestration multi-modèles reste coûteuse."
     },
     {
-      "label": "SDR augmentée par l'IA",
-      "category": "diy",
-      "since": "2026-07-31",
-      "note": "Scanner Command cartographie les comms radio en temps réel. Démocratisation du monitoring."
+      "label": "Backdoors contextuelles dans les modèles open-weight",
+      "category": "infosec",
+      "since": "2026-08-03",
+      "note": "Fine-tuning sur sources non fiables crée des portes dérobées quasi indétectables. Menace structurelle pour l'écosystème."
     },
     {
-      "label": "Juridiction extraterritoriale vs recherche sécurité",
-      "category": "societe",
-      "since": "2026-08-01",
-      "note": "Canada signe convention ONU malgré CitizenLab. Portée extraterritoriale menace la recherche sécurité."
+      "label": "KYC comme security theater",
+      "category": "infosec",
+      "since": "2026-08-03",
+      "note": "Reverse-engineering de 7 fournisseurs montre contournement par construction. La confiance au terminal client est défaillante."
     },
     {
-      "label": "Opacité facturation des outils IA",
+      "label": "MCP comme standard de facto pour l'agentique",
       "category": "devops",
-      "since": "2026-08-02",
-      "note": "Cursor retire ses infos de coût de l'usage et du CSV. La facturation devient opaque quand les coûts montent."
+      "since": "2026-08-03",
+      "note": "Adopté par MicroCodex, Mu, OpenChatCut, PocketStrike, NetExec-mcp. Devient le protocole unifiant des agents IA."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "GPT 5.6 Sol accélère la découverte de vulnérabilités frontières, HuggingFace expose 7.6PB de secrets, volatility3-ai-triage retourne l'IA en outil défensif. L'agent est arme, vecteur et bouclier."
+      "note": "Astra résout des problèmes ouverts, Black-cat et NetExec-mcp automatisent l'offensive, les open-weight exposent des backdoors contextuelles. L'agent est simultanément instrument de recherche, arme et vecteur."
     },
     {
       "label": "Ouverture open-source vs verrouillage infrastructurel",
-      "note": "INT4 et explorative modeling en architecture, GitHub sans remplaçant, Cursor opaque. L'ouverture devient prérequis à la sécurité mais le verrouillage commercial s'intensifie."
+      "note": "MCP devient standard de facto, MicroCodex réimplémente codex en <1Mo, mais AUR suspend ses pushes et les open-weight restent piégés. L'ouverture s'outille mais reste fragile."
     },
     {
       "label": "Protection privacy vs criminalisation de la défense",
-      "note": "Canada signe traité surveillance ONU, OVHcloud poursuivi, mais UE sanctuarise VPN et impose l'étiquetage IA. La régulation bifurque: coercition extraterritoriale vs légitimation protectrice."
+      "note": "UE impose l'attestation matérielle pour l'âge, California rend DROP opposable, mais KYC est security theater. La régulation protège et surveille simultanément."
     },
     {
       "label": "Automatisation du process vs compréhension du contexte",
-      "note": "Le prototype n'est pas le produit, commit fantôme coûte des mois, greenhouse/lens cherchent leurs cadres. L'automatisation devance la compréhension mais cherche ses repères."
+      "note": "MicroCodex et Mu densifient l'agentique, MCP standardise, mais la validation des entrées reste le maillon faible. L'automatisation devance la compréhension."
     },
     {
       "label": "Hype IA vs reality check économique",
-      "note": "CostPerPrompt outille la transparence, Cursor rend sa facturation opaque, Manifest déprécie son router. Le gap promesse-réalité se ferme par le bas pendant que les abstractions s'effondrent."
+      "note": "Framablog titre 'la grande escroquerie', l'IA inonde le marché du livre, mais Astra résout des problèmes ouverts. Le gap promesse-réalité se polarise entre réquisitoire et avancée."
     },
     {
-      "label": "Transparence imposée vs opacité subie",
-      "note": "UE impose l'étiquetage des contenus IA, Google Earth suspend ses fausses cartes, mais Cursor masque ses coûts. La transparence régulatoire et l'opacité commerciale avancent en sens opposés."
+      "label": "Transparence imposée vs opacité structurelle",
+      "note": "UE rend l'étiquetage IA sanctionnable, California rend DROP opposable, mais KYC reste security theater. La transparence régulatoire bute sur l'opacité structurelle des systèmes."
     }
   ],
   "strategy_notes": [
-    "GPT 5.6 Sol accélère la découverte de vulnérabilités frontières pendant que HuggingFace expose 7,6 PB de secrets: l'IA devient arme, vecteur et infrastructure compromise. Le seuil de responsabilité se rapproche.",
-    "L'UE impose l'étiquetage IA le jour même où Cursor rend sa facturation opaque: transparence régulatoire et opacité commerciale divergent. GitHub confirme son monopole sans alternative — double verrou.",
-    "INT4 et explorative modeling confirment le pivot: la recherche LLM privilégie l'ingénierie fine au scale-up. L'efficience se gagne en architecture, pas en paramètres. Le coût d'inférence devient structurel.",
-    "Iran harcèle les infrastructures hydriques US avec alerte CISA sur les PLC: le civil devient champ de bataille délibéré. La convention ONU signée par le Canada élargit la surveillance en parallèle."
+    "Astra résout 10 problèmes ouverts pendant que les open-weight exposent des backdoors contextuelles: l'IA devient instrument de recherche ET vecteur de compromission. Le seuil de confiance se rapproche.",
+    "L'UE bascule 3 régimes en mode sanctionnable le jour où le KYC est démontré comme security theater: la régulation s'exécute mais la chaîne d'authentification n'a aucun maillon fiable.",
+    "MicroCodex <1Mo, Mu, MCP comme standard: l'agentique open-source privilégie l'empreinte minimale. Linux desktop franchit 10%, NixOS sur DGX. La souveraineté numérique s'outille par le bas.",
+    "Framablog titre 'la grande escroquerie' pendant que l'IA inonde le marché du livre: la dilution culturelle devient front politique. Surveiller si ce réquisitoire structure le débat réglementaire."
   ],
-  "updated_at": "2026-08-02"
+  "updated_at": "2026-08-03"
 }

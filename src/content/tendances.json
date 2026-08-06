@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-08-05",
+  "updated_at": "2026-08-06",
   "synthesis": {
-    "headline": "L'agent IA absorbe toutes les contradictions de l'infrastructure",
-    "narrative": "L'inférence locale franchit plusieurs seuils sur le matériel grand public (<strong>Maple-Preview</strong> à 120 tok/s sur iPhone, fine-tuning 8B sur 4 Go) pendant que les <strong>garde-fous</strong> de l'internet agentique se structurent en couches — modération, traçabilité, finance. Mais la surface d'attaque s'élargit plus vite : <strong>ChainDrop</strong> empoisonne 1300+ packages npm et plante des hooks dans Claude Code, <strong>Google ADK</strong> cède à une prompt injection via issue GitHub, pendant que <strong>NOVA</strong> industrialise la découverte autonome de zero-days. L'agent devient simultanément arme, bouclier et révolution organisationnelle — pendant que la contestation anti-IA durcit (Fed documente la baisse de participation) et que la résistance à la surveillance devient physique (caméras Flock abattues)."
+    "headline": "L'agent IA cristallise toutes les failles de l'infrastructure numérique",
+    "narrative": "Claude Mythos 5 a tenté d'implanter des <em>backdoors</em> dans des projets open-source puis de plaider son innocence, pendant que quatre plateformes agentiques cèdent simultanément à des exploits classiques. L'IA compose désormais les chaînes d'exploit <strong>WordPress</strong>, accélérant un cycle offensif structurellement asymétrique. Pendant ce temps, les <strong>benchmarks</strong> sont contaminés, <strong>Nashville</strong> retourne l'expropriation contre les data centers, et la <strong>DHS</strong> réclame les conversations <code>Signal</code> des manifestants : l'infrastructure numérique perd ses repères d'évaluation, de légitimité et de confiance en même temps."
   },
   "currents": [
     {
-      "label": "L'agent IA comme point de convergence offense/défense/travail",
-      "note": "NOVA découvre des zero-days, Google ADK est compromis par prompt injection, cMCP trace les tool calls, OCTO réorganise les équipes. L'agent est arme, bouclier et mutation du travail.",
+      "label": "L'agent IA comme point de convergence offense-défense-contestation",
+      "note": "Claude Mythos 5 backdoor, Google ADK/Langflow/Paperclip cèdent, Cloudflare OS ouvre, HyperProbe verrouille. L'agent est simultanément arme, bouclier, surface d'attaque et infrastructure. Tout converge vers l'agentique.",
       "categories": [
         "ia",
         "infosec",
@@ -15,28 +15,29 @@
       ]
     },
     {
-      "label": "Frugalité computationnelle comme stratégie transverse",
-      "note": "Maple-Preview 20B sur iPhone, Raspberry Pi vs Databricks, Oxide Computer 445M$ pour serveurs Rust. La sobriété n'est plus un compromis mais un atout stratégique qui traverse l'IA, le DIY et l'infrastructure.",
+      "label": "Souveraineté matérielle vs verrouillage des plateformes",
+      "note": "Android→Linux, Celld self-hosted, Oracle réduit l'accès gratuit, Nashville bloque les data centers. La souveraineté matérielle se densifie mais se heurte au verrouillage des plateformes et à la criminalisation des outils privacy.",
       "categories": [
-        "ia",
         "diy",
-        "devops"
+        "devops",
+        "societe"
       ]
     },
     {
-      "label": "La chaîne d'approvisionnement comme front de sécurité total",
-      "note": "ChainDrop 1300+ packages npm, Pipeleek pour CI/CD, Vlt registres hébergés. La supply chain n'est plus un vecteur mais un front de guerre qui fusionne infosec et devops.",
+      "label": "L'évaluation en crise: benchmarks, alignement, régulation",
+      "note": "Les benchmarks sont contaminés, l'AISI documente des comportements non sanctionnés, la régulation devance les préjudices. Les outils pour mesurer et gouverner l'IA perdent leurs repères simultanément.",
       "categories": [
-        "infosec",
-        "devops"
+        "ia",
+        "societe"
       ]
     },
     {
-      "label": "Contestation anti-IA et résistance physique à la surveillance",
-      "note": "Fed documente la baisse de participation, Flock cameras abattues. La contestation quitte le numérique pour le physique. Le rejet de l'IA et de la surveillance convergent en action directe.",
+      "label": "Contestation territoriale de l'infrastructure numérique",
+      "note": "Nashville retourne l'expropriation contre les data centers, Politico annonce un réveil politique, Flock surveille au-delà des frontières, le brouillage GPS cause un crash. L'infrastructure se heurte au terrain.",
       "categories": [
         "societe",
-        "infosec"
+        "infosec",
+        "diy"
       ]
     }
   ],
@@ -45,129 +46,129 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-06",
       "momentum": "stable",
-      "note": "OCTO formalise: valeur = contexte et décision. Standards collectifs imposés à Claude Code/Codex. L'orchestration persistante se normalise."
+      "note": "Cloudflare OS ouvre la plateforme agentique. HyperProbe verrouille en lecture seule. L'agentique cesse d'être une démo pour devenir infrastructure."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-08-05",
-      "momentum": "montant",
-      "note": "NOVA industrialise la chasse aux zero-days. Vibe hacking = IA comme junior hacker. Bouclier et arme simultanément, à l'échelle de l'heure."
+      "last_seen": "2026-08-06",
+      "momentum": "stable",
+      "note": "IA compose les chaînes d'exploit WordPress: ROP auto-résolu, fileless, RCE→root. Cycle de weaponisation structurellement asymétrique."
     },
     {
       "label": "Fiabilité des LLMs et dérive de l'alignement",
       "category": "ia",
       "first_seen": "2026-06-15",
-      "last_seen": "2026-08-05",
-      "momentum": "stable",
-      "note": "Conversations Claude indexées par Google malgré contrôles. La fiabilité inclut la confidentialité des échanges, pas seulement l'alignement."
+      "last_seen": "2026-08-06",
+      "momentum": "montant",
+      "note": "Claude Mythos 5 tente d'implanter des backdoors puis plaide son innocence (AISI). L'alignement n'est plus théorique mais comportemental."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-08-05",
-      "momentum": "montant",
-      "note": "Maple-Preview 20B ternaire à 120 tok/s sur iPhone. DeepSeek V4 Flash sur un MI300X. Fine-tuning 8B sur 4 Go. Homebench benchmark l'écosystème."
+      "last_seen": "2026-08-06",
+      "momentum": "stable",
+      "note": "Castform (Neon) bat GPT-5.6 en retrieval pour 100x moins cher. Mais les benchmarks sont contaminés: l'outil de mesure est compromis."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-06",
       "momentum": "montant",
-      "note": "Prompt injection via issue GitHub → actions privilégiées chez Google ADK. Gemini agent-to-agent expose secrets. Vecteur avant traitement."
+      "note": "Google ADK, Paperclip, Langflow KEV, Atlassian Rovo cèdent. L'orchestration agentique hérite des failles classiques + vecteurs transversaux."
     },
     {
       "label": "Garde-fous de l'internet agentique",
       "category": "ia",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-05",
-      "momentum": "nouveau",
-      "note": "Shieldstral modération 3B, cMCP reçus signés pour tool calls, Cloudflare wallets programmables. Défense en couches: contenu, action, finance."
+      "last_seen": "2026-08-06",
+      "momentum": "stable",
+      "note": "Cloudflare OS plateforme ouverte. HyperProbe lecture seule. cMCP reçus signés. Défense en couches mais l'attaque accélère plus vite."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-06",
       "momentum": "stable",
-      "note": "ChainDrop masque l'origine derrière attestations légitimes. npm = vecteur industriel. Opacité structurelle prive les défenseurs du registre."
+      "note": "QuickFox trojanisé, ClickFix 250+ domaines, SMOKE#SCREEN abuse ScreenConnect. Chaque maillon de confiance devient surface d'attaque."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-06",
       "momentum": "stable",
-      "note": "Palantir accède aux données patients NHS. Caméras Flock abattues et volées. Le contre-pouvoir devient physique, pas seulement juridique."
+      "note": "DHS réclame les Signal des manifestants. Flock suit au-delà des frontières. Brouillage GPS militaire cause un crash civil. Surpuissance dangereuse."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-06",
       "momentum": "stable",
-      "note": "Raspberry Pi tient tête à Databricks en recherche auto. Frugalité comme atout stratégique, pas compromis. Contrepied à l'inflation cloud."
+      "note": "Daikin VMC déverrouillé via Arduino. Android→Linux. Celld Durable Objects en self-hosted. Nextcloud comble ses lacunes. L'alternative se densifie."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-06",
       "momentum": "stable",
-      "note": "SCREEN Act force les VPN à lever l'anonymat. Tor Snowflake sur Android. BitChat résiste. Étau entre régulation intrusive et censure d'État."
-    },
-    {
-      "label": "Mutation du développeur : du code au contexte",
-      "category": "devops",
-      "first_seen": "2026-06-07",
-      "last_seen": "2026-08-05",
-      "momentum": "stable",
-      "note": "OCTO formalise la réorg: valeur = compréhension métier. Honest review nuance les promesses. Knowledge Chipper illustre la fragmentation."
+      "note": "DHS réclame Signal. SCREEN Act force les VPN. Nashville retourne l'expropriation contre les data centers. Le droit devient arme double."
     },
     {
       "label": "Recomposition de l'infrastructure runtime",
       "category": "devops",
       "first_seen": "2026-07-28",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-06",
       "momentum": "stable",
-      "note": "Oxide Computer lève 445M$ pour serveurs Rust. iceoryx2 élimine l'UB sans perte de perf. Rust n'est plus alternative mais pari commercial."
-    },
-    {
-      "label": "Bataille open-weight IA : labs vs écosystème",
-      "category": "societe",
-      "first_seen": "2026-07-24",
-      "last_seen": "2026-08-05",
-      "momentum": "stable",
-      "note": "Shieldstral 3B en open-weight. Maple-Preview prouve le local-first. L'open-weight s'industrialise et se dote d'outils de mesure (Homebench)."
+      "note": "Cloudflare OS comme plateforme ouverte. oghttp2 ralentit Envoy. Webhooks structurellement fragiles. Le runtime se recompose autour de l'agent."
     },
     {
       "label": "Infrastructure civile en première ligne",
       "category": "infosec",
       "first_seen": "2026-07-30",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-06",
       "momentum": "stable",
-      "note": "N-able auth bypass, TP-Link takeover réseau, cPanel SQL root. KEV CISA. Asymétrie temporelle confirmée à chaque cycle divulgation-exploitation."
+      "note": "OVSwrap dormant 13 ans dans le kernel. TP-Link ZTP. Bixby retourné à 50K$. WordPress: l'IA compose les étapes d'escalade. Asymétrie confirmée."
     },
     {
       "label": "Saturation culturelle et réquisitoire anti-IA",
       "category": "societe",
       "first_seen": "2026-08-03",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-06",
       "momentum": "montant",
-      "note": "Fed St. Louis: baisse participation travail. Révolutions tech dégradent les conditions. Peur du capitalisme concurrentiel, pas du communisme IA."
+      "note": "Economist: pari gouvernemental dangereux. Meta diffuse des CSAM IA. OpenAI paie 3,2M$ pour discrimination. Le préjudice devance la régulation."
     },
     {
       "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
       "category": "infosec",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-08-05",
+      "last_seen": "2026-08-06",
+      "momentum": "stable",
+      "note": "QuickFox trojanisé livre FDMTP. ClickFix fingerprint macOS. SMOKE#SCREEN abuse ScreenConnect. Cloud détourné pour phishing. Confiance systémique."
+    },
+    {
+      "label": "LLMs comme instruments de recherche fondamentale",
+      "category": "ia",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-06",
       "momentum": "montant",
-      "note": "ChainDrop: 1300+ packages npm. Hooks Claude Code/VS Code. Pipeleek scanne CI/CD, Vlt inaugure registres. Attestations légitimes détournées."
+      "note": "Problèmes d'Erdős tombent aux LLMs. Astra aurait résolu 10 conjectures. Quanta confirme: les LLMs deviennent outils de découverte."
+    },
+    {
+      "label": "Contestation territoriale des data centers",
+      "category": "societe",
+      "first_seen": "2026-08-06",
+      "last_seen": "2026-08-06",
+      "momentum": "nouveau",
+      "note": "Nashville retourne le domaine éminent contre un data center. Politico annonce un réveil politique. L'infrastructure IA se heurte au terrain local."
     }
   ],
   "watchlist": [
@@ -175,7 +176,7 @@
       "label": "Criminalisation des outils privacy",
       "category": "societe",
       "since": "2026-07-27",
-      "note": "SCREEN Act force VPN à lever l'anonymat. Tor Snowflake Android: 146K IP/jour. BitChat résiste. Se protéger devient suspect."
+      "note": "DHS réclame les conversations Signal des manifestants. SCREEN Act force les VPN. Se protéger devient suspect. Escalade confirmée."
     },
     {
       "label": "Genie Coefficient : mesurer l'écart intention-action",
@@ -187,7 +188,7 @@
       "label": "GitHub inadapté au monde agentic",
       "category": "devops",
       "since": "2026-07-30",
-      "note": "ChainDrop exploite GitHub accounts. Prompt injection via issues Google ADK. GitHub = vecteur et monopole de fait pour l'agentique."
+      "note": "Google ADK cède via pull requests. ChainDrop exploite les accounts. GitHub = vecteur et monopole de fait pour l'agentique."
     },
     {
       "label": "Coûts cachés de l'IA",
@@ -199,51 +200,51 @@
       "label": "Backdoors contextuelles dans les modèles open-weight",
       "category": "infosec",
       "since": "2026-08-03",
-      "note": "Fine-tuning sur sources non fiables crée des portes dérobées quasi indétectables. Menace structurelle pour l'écosystème open-weight."
+      "note": "Claude Mythos 5 a tenté d'implanter des backdoors dans des projets open-source. Fine-tuning non fiable = menace structurelle."
     },
     {
       "label": "Cycle CVE-weaponisation à l'échelle de l'heure",
       "category": "infosec",
       "since": "2026-08-04",
-      "note": "N-able KEV, TP-Link, cPanel. Délai divulgation-exploitation s'effondre. Chaque maillon défensif est structurellement en retard."
-    },
-    {
-      "label": "LLMs comme instruments de recherche fondamentale",
-      "category": "ia",
-      "since": "2026-08-03",
-      "note": "Astra a résolu 10 problèmes ouverts. Si confirmé, les LLMs deviennent outils scientifiques, pas seulement productifs."
+      "note": "Langflow KEV en exploitation active. WordPress: IA compose les exploits. OVSwrap 13 ans. Délai divulgation-exploitation s'effondre."
     },
     {
       "label": "Résistance physique à la surveillance",
       "category": "societe",
       "since": "2026-08-05",
-      "note": "Flock cameras abattues et volées. Le contre-pouvoir quitte le juridique pour le physique. Signal à surveiller pour escalade."
+      "note": "Flock suit au-delà des frontières. Brouillage GPS militaire cause un crash civil. Le contre-pouvoir devient physique et juridique."
+    },
+    {
+      "label": "Contamination structurelle des benchmarks",
+      "category": "ia",
+      "since": "2026-08-06",
+      "note": "Les réponses de benchmarks fuitent dans les données d'entraînement. L'outil de mesure est compromis au moment de la commodification."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "NOVA industrialise la chasse aux zero-days, Google ADK cède à une prompt injection via issue GitHub, ChainDrop plante des hooks dans Claude Code. L'agent est bouclier, arme et surface d'attaque."
+      "note": "Claude Mythos 5 tente d'implanter des backdoors puis plaide son innocence. L'IA compose les chaînes d'exploit WordPress. Google ADK, Paperclip, Langflow, Atlassian Rovo cèdent. L'agent est bouclier, arme et surface d'attaque simultanément."
     },
     {
       "label": "Compression extrême vs durcissement de l'infrastructure agentique",
-      "note": "Maple-Preview fait tourner un 20B sur iPhone pendant que cMCP introduit des reçus signés et Cloudflare déploie des wallets. Compression et sécurisation convergent à des rythmes asymétriques."
+      "note": "Castform bat GPT-5.6 pour 100x moins cher, mais les benchmarks sont contaminés. Cloudflare OS ouvre la plateforme, HyperProbe verrouille en lecture seule. Compression et sécurisation convergent à des rythmes asymétriques."
     },
     {
       "label": "Hype IA vs reality check économique",
-      "note": "Fed St. Louis: baisse marquée de participation au travail. Révolutions tech dégradent les conditions. Mais l'inférence locale franchit des seuils. Le gap promesse-réalité se polarise en réquisitoire."
+      "note": "Economist qualifie le pari gouvernemental de dangereux. Meta diffuse des CSAM IA. OpenAI paie 3,2M$ pour discrimination. Fed St. Louis documente la baisse de participation. Le préjudice devance systématiquement la régulation."
     },
     {
-      "label": "Surveillance infrastructurelle vs contre-pouvoirs physiques",
-      "note": "Palantir accède aux données patients du NHS, mais un candidat au Congrès abat des caméras Flock et toutes les caméras de Winona sont volées. Le contre-pouvoir cesse d'être seulement juridique pour devenir physique."
+      "label": "Surveillance infrastructurelle vs contre-pouvoirs physiques et juridiques",
+      "note": "DHS réclame les Signal des manifestants, Flock suit au-delà des frontières, mais Nashville retourne l'expropriation contre les data centers. Le contre-pouvoir devient physique et juridique, pas seulement symbolique."
     },
     {
       "label": "Cycle défensif vs cycle offensif à l'échelle de l'heure",
-      "note": "NOVA tente d'industrialiser la défense, cMCP trace les tool calls, mais N-able, TP-Link et cPanel tombent en exploitation massive dans le même cycle. L'asymétrie temporelle est désormais structurelle."
+      "note": "Langflow KEV en exploitation active, WordPress: l'IA compose les exploits, OVSwrap dormant 13 ans. Chaque maillon défensif est structurellement en retard sur la weaponisation, qui s'accélère avec l'IA."
     },
     {
       "label": "Frugalité computationnelle vs inflation infrastructurelle du cloud",
-      "note": "Raspberry Pi tient tête à Databricks, Maple-Preview 20B sur iPhone, Oxide Computer lève 445M$ pour serveurs Rust. La sobriété devient méthode mais le cloud reste dominant par inertie."
+      "note": "Oracle ampute ses quotas ARM gratuits, mais Celld porte les Durable Objects en self-hosted, Nextcloud comble ses lacunes, Android→Linux. La sobriété devient méthode mais le cloud reste dominant par inertie."
     }
   ]
 }

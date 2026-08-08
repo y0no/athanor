@@ -4,121 +4,121 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-07",
+      "last_seen": "2026-08-08",
       "momentum": "stable",
-      "note": "Qwen3.8 coiffe GPT-5.6 au classement agentique. Docker sbx isole Claude Code. GitHub en dégradé. L'agentique devient runtime mais l'outillage suit."
+      "note": "Graft accélère Claude Code, Databricks maîtrise les coûts, Oracle bannit le code IA d'OpenJDK. Industrialisation rencontre gouvernance."
     },
     {
       "label": "IA offensive et audit de vulnérabilités",
       "category": "ia",
       "first_seen": "2026-06-28",
-      "last_seen": "2026-08-07",
+      "last_seen": "2026-08-08",
       "momentum": "stable",
-      "note": "4 RCE pré-auth avec PoC publics: Struts 2, SonicWall, Cisco CUCM CVSS 10.0, SCADA. La fenêtre de patching s'effondre à quelques heures."
-    },
-    {
-      "label": "Fiabilité des LLMs et dérive de l'alignement",
-      "category": "ia",
-      "first_seen": "2026-06-15",
-      "last_seen": "2026-08-07",
-      "momentum": "stable",
-      "note": "Whisper transcrit mieux les 70 ans que les 20 ans. Les biais de données façonnent les usages les plus banals. L'alignement est aussi culturel."
-    },
-    {
-      "label": "Commodification des LLMs et effondrement des marges",
-      "category": "ia",
-      "first_seen": "2026-07-07",
-      "last_seen": "2026-08-07",
-      "momentum": "stable",
-      "note": "Qwen3.8 Max devance GPT-5.6 au classement agentique. Les open-weight chinois progressent plus vite que les propriétaires sur l'action."
+      "note": "HTTP Terminator trouve un zero-day Apache. OpenAI publie sa doctrine cyber. L'IA devient outil d'audit et objet de doctrine."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-07",
+      "last_seen": "2026-08-08",
       "momentum": "montant",
-      "note": "AWS, Google, Vercel: outils déclenchables sans modèle. Claude Code RCE via PR. Zenity: zero-click sur navigateurs IA. La pile entière cède."
+      "note": "Claude Code et Gemini CLI: un ticket GitHub atteint les secrets CI. Elastic documente tunnels et persistance macOS."
     },
     {
       "label": "Garde-fous de l'internet agentique",
       "category": "ia",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-07",
-      "momentum": "stable",
-      "note": "Docker sbx isole Claude Code en conteneur. L'isolation remplace la confiance comme paradigme défensif. Mais l'attaque accélère plus vite."
+      "last_seen": "2026-08-08",
+      "momentum": "montant",
+      "note": "Inglis invoque Asimov au niveau étatique. Cloudflare Kitesurf isole dans V8. La gouvernance dépasse le technique."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-08-07",
-      "momentum": "montant",
-      "note": "Spectre v2 contourné sur AMD Zen. Zapscape: évasion KVM depuis le kernel 5.9. Hardware et hyperviseur ne sont plus des remparts définitifs."
+      "last_seen": "2026-08-08",
+      "momentum": "stable",
+      "note": "SCTP 18 ans, OP-TEE underwrite, N-able god mode, NatJack. Chaque couche révèle des failles historiques profondes."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-06",
-      "momentum": "stable",
-      "note": "DHS réclame les Signal des manifestants. Flock suit au-delà des frontières. Brouillage GPS militaire cause un crash civil. Surpuissance dangereuse."
+      "last_seen": "2026-08-08",
+      "momentum": "montant",
+      "note": "ICE achète les données bancaires. Palantir dans les rédactions. La surveillance s'achète comme commodité commerciale."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-08-07",
+      "last_seen": "2026-08-08",
       "momentum": "stable",
-      "note": "Radar météo DIY avec HackRF. DualSense et Joy-Con déverrouillés. Netscape 3 recompilé, Pokémon sur Pico. Le DIY supplée et refuse l'obsolescence."
+      "note": "DRAM 2027 déjà écoulée. Le DIY absorbe le coût de la ruée IA sur la mémoire. Postgres 300x: optimiser bat le scale-out."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-07",
+      "last_seen": "2026-08-08",
       "momentum": "stable",
-      "note": "Meta condamné à 942M$ pour dommages aux enfants. FCC supprime le plafond de propriété TV. Sanctions et dérégulation divergent."
+      "note": "Meta 942M$ au total. Sanctions record mais rétrospectives. L'injonction de changer vient après des années de dommages."
     },
     {
       "label": "Infrastructure civile en première ligne",
       "category": "infosec",
       "first_seen": "2026-07-30",
-      "last_seen": "2026-08-07",
-      "momentum": "montant",
-      "note": "4 RCE pré-auth simultanées avec PoC publics: Struts 2 CVSS 9.8, SonicWall, Cisco CUCM CVSS 10.0, SCADA atvise. Fenêtre de patching effondrée."
+      "last_seen": "2026-08-08",
+      "momentum": "stable",
+      "note": "Ex-NSA: contrôleurs d'eau n'ont rien à faire sur Internet. OT connecté par commodité. L'alerte vient du plus haut niveau."
     },
     {
-      "label": "Saturation culturelle et réquisitoire anti-IA",
-      "category": "societe",
-      "first_seen": "2026-08-03",
-      "last_seen": "2026-08-07",
+      "label": "Commodification des LLMs et effondrement des marges",
+      "category": "ia",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-08-08",
       "momentum": "stable",
-      "note": "Meta condamné à 942M$ pour les dommages aux enfants. Les condamnations atteignent des sommets mais restent rétrospectives, pas préventives."
+      "note": "DoE lance Genesis Open Models. DeepSeek V4 Flash sur ARC Prize. L'open-weight devient instrument de souveraineté scientifique."
     },
     {
       "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
       "category": "infosec",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-08-07",
-      "momentum": "stable",
-      "note": "Ban des transceivers optiques chinois préparé par Washington. La supply chain devient front géopolitique en plus de vecteur d'attaque."
-    },
-    {
-      "label": "Contestation territoriale des data centers",
-      "category": "societe",
-      "first_seen": "2026-08-06",
-      "last_seen": "2026-08-07",
+      "last_seen": "2026-08-08",
       "momentum": "montant",
-      "note": "CNN: étonnamment peu de data centers aboutissent. Ban des transceivers chinois. La contestation quitte le symbolique pour le juridique et géopolitique."
+      "note": "Nixpkgs core team se dissout. Vide de gouvernance sur un socle critique. La supply chain perd ses mainteneurs bénévoles."
     },
     {
       "label": "Inférence comme front décisif",
       "category": "ia",
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-07",
+      "last_seen": "2026-08-08",
+      "momentum": "stable",
+      "note": "Postgres 300x plus rapide en analytique. L'optimisation locale bat le scale-out. Le front de l'exécution se densifie."
+    },
+    {
+      "label": "Saturation culturelle et réquisitoire anti-IA",
+      "category": "societe",
+      "first_seen": "2026-08-03",
+      "last_seen": "2026-08-08",
+      "momentum": "stable",
+      "note": "Oracle bannit le code IA d'OpenJDK. Meta 942M$ au total. La méfiance gagne les gardiens de projets critiques."
+    },
+    {
+      "label": "Contestation territoriale des data centers",
+      "category": "societe",
+      "first_seen": "2026-08-06",
+      "last_seen": "2026-08-08",
+      "momentum": "stable",
+      "note": "DRAM 2027 écoulée: les data centers absorbent la mémoire. La pression territoriale et matérielle s'intensifie."
+    },
+    {
+      "label": "Vishing et phishing dopés à l'IA",
+      "category": "infosec",
+      "first_seen": "2026-08-08",
+      "last_seen": "2026-08-08",
       "momentum": "nouveau",
-      "note": "AMD rachète Taalas: modèles gravés dans le silicium. Stacks locales ROCm/Ollama. vLLM: le haut débit est logiciel. Le front se déplace vers l'exécution."
+      "note": "UNC6671: 200 entreprises, 10M$ extorqués. Spoofing vocal IA. AitM sur Microsoft 365. L'ingénierie sociale passe à l'échelle."
     }
   ],
   "watchlist": [
@@ -126,82 +126,82 @@
       "label": "Criminalisation des outils privacy",
       "category": "societe",
       "since": "2026-07-27",
-      "note": "DHS réclame Signal. SCREEN Act force les VPN. Se protéger devient suspect. Escalade confirmée."
-    },
-    {
-      "label": "Genie Coefficient : mesurer l'écart intention-action",
-      "category": "ia",
-      "since": "2026-07-25",
-      "note": "Validé par l'évasion GPT-5.6. Qwen3.8 coiffe le classement agentique. Se confirme comme métrique prédictif d'alignement."
+      "note": "ICE achète les données bancaires. DHS réclame Signal. Se protéger devient suspect. La surveillance contourne la loi par le marché."
     },
     {
       "label": "GitHub inadapté au monde agentic",
       "category": "devops",
       "since": "2026-07-30",
-      "note": "Actions et Pages en dégradé. Claude Code RCE via PR. GitHub cumule vecteur d'attaque et monopole de fait. Confirme l'inadaptation."
-    },
-    {
-      "label": "Backdoors contextuelles dans les modèles open-weight",
-      "category": "infosec",
-      "since": "2026-08-03",
-      "note": "Claude Code exécute auto les dossiers de confiance: une PR modifiant .mcp.json suffit. Le modèle de confiance agentique est structurellement fragile."
+      "note": "Claude Code et Gemini CLI: un ticket GitHub atteint les secrets CI. Confirme l'inadaptation structurelle de GitHub aux agents."
     },
     {
       "label": "Cycle CVE-weaponisation à l'échelle de l'heure",
       "category": "infosec",
       "since": "2026-08-04",
-      "note": "4 RCE pré-auth avec PoC publics simultanés. Cisco CUCM CVSS 10.0. Struts 2. SCADA. Le délai divulgation-exploitation s'effondre."
+      "note": "SCTP 18 ans avec évasion de conteneurs. N-able god mode exploité activement. NatJack détourne les sessions TCP."
     },
     {
-      "label": "Résistance physique à la surveillance",
+      "label": "Gouvernance open source en crise",
+      "category": "devops",
+      "since": "2026-08-08",
+      "note": "Nixpkgs core team dissoute. Socle de build reproductible sans pilote. Le modèle bénévole montre ses limites sous pression."
+    },
+    {
+      "label": "Surveillance comme commodité commerciale",
       "category": "societe",
-      "since": "2026-08-05",
-      "note": "Flock au-delà des frontières. Brouillage GPS militaire. Le contre-pouvoir devient physique et juridique."
+      "since": "2026-08-08",
+      "note": "ICE achète les données bancaires via courtiers. Palantir analyse les audiences de USA Today. Frontière marché/État effacée."
+    },
+    {
+      "label": "Code IA banni des projets critiques",
+      "category": "devops",
+      "since": "2026-08-08",
+      "note": "Oracle bannit le code IA d'OpenJDK. Si d'autres suivent, la valeur du code généré se heurte à un plafond de confiance."
     },
     {
       "label": "Contamination structurelle des benchmarks",
       "category": "ia",
       "since": "2026-08-06",
-      "note": "Qwen3.8 Max en tête du classement agentique. Les réponses de benchmarks fuitent dans l'entraînement. L'outil de mesure est compromis."
+      "note": "DeepSeek V4 Flash sur ARC Prize. Les scores sont à lire avec prudence. L'outil de mesure reste compromis."
     },
     {
       "label": "Navigateurs IA comme surface zero-click",
       "category": "infosec",
       "since": "2026-08-07",
-      "note": "Zenity: injections zero-click non corrigées sur ChatGPT Atlas et extension Claude. Un email ou post X suffit pour détourner des comptes."
+      "note": "Cloudflare Kitesurf répond avec V8 isolates. L'isolation par design émerge mais les navigateurs IA restent une surface."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "Claude Code exécute des commandes via PR malveillante. Zenity détourne les navigateurs IA par email. L'agent est bouclier, arme et surface d'attaque simultanément."
+      "note": "Claude Code/Gemini CLI exposent les secrets CI. HTTP Terminator trouve un zero-day Apache. OpenAI publie sa doctrine. L'agent est bouclier, arme et surface — l'État reconnaît cette triple nature."
     },
     {
-      "label": "Compression extrême vs durcissement de l'infrastructure agentique",
-      "note": "Qwen3.8 Max coiffe GPT-5.6 au classement agentique, Docker sbx isole Claude Code. Compression et sécurisation convergent à des rythmes asymétriques."
+      "label": "Gouvernance réclamée d'en haut vs effondrement des mainteneurs",
+      "note": "Inglis invoque Asimov pour l'autonomie des IA. OpenAI publie sa doctrine cyber. Mais Nixpkgs perd son équipe core. L'État réclame des garde-fous pendant que les gardiens de l'infrastructure s'effacent."
     },
     {
-      "label": "Hype IA vs reality check économique",
-      "note": "Meta condamné à 942M$ pour dommages aux enfants. Les condamnations financières atteignent des sommets mais restent rétrospectives, pas préventives."
-    },
-    {
-      "label": "Surveillance infrastructurelle vs contre-pouvoirs physiques et juridiques",
-      "note": "FCC dérégule la concentration TV, mais les data centers se heurtent à la contestation territoriale. La régulation avance à contresens selon l'infrastructure."
+      "label": "Surveillance étatique vs protections légales",
+      "note": "ICE achète les données bancaires via des courtiers, contournant les protections légales. Palantir s'installe dans les rédactions. La surveillance ne s'impose plus par la contrainte mais s'achète comme commodité."
     },
     {
       "label": "Cycle défensif vs cycle offensif à l'échelle de l'heure",
-      "note": "4 RCE pré-auth avec PoC publics: Struts 2, SonicWall, Cisco CUCM CVSS 10.0, SCADA. Chaque maillon défensif est structurellement en retard sur la weaponisation."
+      "note": "SCTP 18 ans avec évasion de conteneurs. N-able god mode exploité activement. NatJack détourne les sessions TCP. Chaque couche révèle des failles historiques que la weaponisation exploite instantanément."
     },
     {
-      "label": "Frugalité computationnelle vs inflation infrastructurelle du cloud",
-      "note": "AMD grave les modèles dans le silicium, les stacks locales s'étoffent. Mais GitHub vacille et les data centers se heurtent au terrain. La sobriété devient méthode par nécessité."
+      "label": "Frugalité computationnelle vs inflation infrastructurelle",
+      "note": "Postgres 300x plus rapide en analytique. DRAM 2027 déjà écoulée. Le déploiement hobby casse. L'optimisation locale devient méthode par nécessité, pas par choix, face à l'inflation dopée par les data centers."
+    },
+    {
+      "label": "Ouverture des modèles vs contrôle étatique de l'IA",
+      "note": "Le DoE lance Genesis Open Models, institutionnalisant l'open-weight. Simultanément, Inglis réclame des règles contraignantes sur l'autonomie. L'État veut l'ouverture comme instrument et le contrôle comme garde-fou."
     }
   ],
   "strategy_notes": [
-    "La surface d'attaque s'étend verticalement: framework agentique, navigateur IA, hyperviseur. Docker sbx émerge comme défense par isolation mais l'attaque accélère plus vite.",
-    "AMD grave les modèles dans le silicium: l'inférence devient le nouveau front. Les stacks locales (ROCm, Ollama, OpenCode) se densifient. La bataille quitte l'entraînement pour l'exécution.",
-    "4 RCE pré-auth avec PoC publics sur infrastructure critique (Cisco CUCM CVSS 10.0, SCADA, Struts 2). La fenêtre de patching s'effondre à quelques heures pour des systèmes rarement patchés vite.",
-    "Meta condamné à 942M$ pour dommages aux enfants. Les sanctions atteignent des sommets mais restent rétrospectives. La FCC dérégule la concentration TV à contre-courant de la contestation des data centers."
+    "La gouvernance IA monte d'étage: Inglis invoque Asimov, OpenAI publie sa doctrine, Oracle bannit le code IA. Le débat quitte les ingénieurs pour les régulateurs, mais l'infrastructure (Nixpkgs, Claude Code) cède en parallèle.",
+    "Nixpkgs perd son équipe core: vide de gouvernance sur un socle critique de la build reproductible. La supply chain open source perd ses mainteneurs bénévoles au moment où la pression sur la fiabilité augmente.",
+    "La surveillance s'institutionnalise comme marché: ICE achète les données bancaires, Palantir analyse les audiences de USA Today. La frontière entre appareil répressif et commerce de données s'efface.",
+    "L'agent IA est triple: bouclier (HTTP Terminator trouve un zero-day Apache), arme (vishing UNC6671 dopé à l'IA), surface (Claude Code/Gemini CLI). OpenAI reconnaît cette nature dans sa doctrine cyber."
   ],
-  "updated_at": "2026-08-07"
+  "updated_at": "2026-08-08"
 }

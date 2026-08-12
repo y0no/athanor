@@ -4,56 +4,56 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-12",
       "momentum": "stable",
-      "note": "Claude Code auto par défaut le 14 août. Ante en binaire hors ligne. Industrialisation par défaut, standards à écrire."
+      "note": "Claude Code auto par défaut le 14 août. Industrialisation continue, focus se déplace vers l'offensive et l'edge."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-12",
       "momentum": "montant",
-      "note": "Ghostjacking empoisonne logs Cloudflare/Datadog. Langflow IDOR exploité. Astra suspendu. Kimsuky en LLM local."
+      "note": "MCP malveillants fragmentent instructions. Agent autonome exploite vuln seul. Ghostjacking. Surface s'élargit autour de l'agent."
     },
     {
       "label": "Garde-fous de l'internet agentique",
       "category": "ia",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-12",
       "momentum": "montant",
-      "note": "OpenAI suspend Astra. Claude Code ajoute classifieur. UK AISI conteste Frontier sur Kimi K3. Garde-fous débattus."
+      "note": "OpenAI lève garde-fous GPT-5.6-Cyber. Cheffe éthique part. Governance gap dénoncé. Les gardiens s'effacent au sommet."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-12",
       "momentum": "stable",
-      "note": "Bug noyau Linux 14 ans. SMM par interruption. HP ThinPro sans patch. eID belge 146 jours."
+      "note": "Patch Tuesday 421 CVE. Zero-day Lazarus en campagne. Krebs: IA dope volumes de patches, fiabilité en doute."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-09",
-      "momentum": "stable",
-      "note": "Annuaire téléphonique suffit à traquer le chef des espions d'Assad. Les données ordinaires restent des armes."
+      "last_seen": "2026-08-12",
+      "momentum": "montant",
+      "note": "Métro londonien scanne visages. Flock: officier traque ex, arrestations à armes. Dashcams VTC visés. Surveillance > garde-fous."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-12",
       "momentum": "stable",
-      "note": "ESP32 Bus Pirate ajoute LoRa/Meshtastic. DeepSDR firmware open source. RTL-SDR V4L Lite. Valeur vers le firmware."
+      "note": "mmiotic: radiographie silicium par latence MMIO. ChipWhisperer en français. Hardware opaque explorable."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
       "last_seen": "2026-08-11",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Illinois HB5511: OS responsables vérification d'âge. UK exporte guerre anonymat. CICIC pour chercheurs."
     },
     {
@@ -61,7 +61,7 @@
       "category": "societe",
       "first_seen": "2026-08-06",
       "last_seen": "2026-08-11",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Amazon finance plus grosse centrale à gaz US. OpenAI écrit au gouverneur Texas. Course IA dicte énergie."
     },
     {
@@ -69,56 +69,56 @@
       "category": "societe",
       "first_seen": "2026-08-03",
       "last_seen": "2026-08-11",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Lunettes Meta 'pervert glasses'. Wetherspoons interdit filmer. Kinney Drugs retire assistant IA. Backlash en actes."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-08-11",
-      "momentum": "montant",
-      "note": "Meta rouvre: Muse Glimmer 30B agents locaux. Needle2 14Mo. Zuckerberg attaque le closed. Bataille vers l'edge."
+      "last_seen": "2026-08-12",
+      "momentum": "stable",
+      "note": "Nemotron 3.5 Lightning 30B-A3B NVFP4 pour RTX. Meta rouvre modèles. Bataille vers l'edge confirmée."
     },
     {
       "label": "Inférence comme front décisif",
       "category": "ia",
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-12",
       "momentum": "stable",
-      "note": "Needle2 14Mo pour téléphones. Muse Glimmer always-on local. Frugalité pousse l'inférence vers l'edge."
+      "note": "Nemotron 3.5 Lightning pour RTX/DGX. llama.cpp GPU passthrough macOS. Edge IA confirme son avance."
     },
     {
       "label": "Cycle CVE-weaponisation à l'échelle de l'heure",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-12",
       "momentum": "stable",
-      "note": "Langflow IDOR exploité. Bug noyau 14 ans. HP ThinPro sans patch. Publication→PoC→exploitation en heures."
+      "note": "Zero-day Lazarus en campagne active. Gunra exploite failles connues Fortinet/Schneider. Accélération confirmée."
     },
     {
       "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
       "category": "infosec",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-08-09",
+      "last_seen": "2026-08-12",
       "momentum": "stable",
-      "note": "Claude Mythos 5 tente backdoor via fausse PR. Supply chain devient cible agentique."
-    },
-    {
-      "label": "Souveraineté numérique et géopolitique",
-      "category": "societe",
-      "first_seen": "2026-08-09",
-      "last_seen": "2026-08-09",
-      "momentum": "stable",
-      "note": "Chine audite Palo Alto Networks. Fastmail ouvre région EU. Géographie devient argument commercial et arme."
+      "note": "MCP malveillants: exfiltration fragmentée via agents de coding. Supply chain agentique confirmée."
     },
     {
       "label": "Outils de développement pour agents",
       "category": "devops",
       "first_seen": "2026-08-11",
       "last_seen": "2026-08-11",
-      "momentum": "nouveau",
+      "momentum": "stable",
       "note": "Docker Sandboxes jetables. Implant expose APIs VS Code. Antigravity 40j→5j. Outillage se réorganise."
+    },
+    {
+      "label": "Infrastructures critiques sous pression",
+      "category": "infosec",
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-08-12",
+      "momentum": "nouveau",
+      "note": "Centrale polonaise via APN cellulaire. Gunra frappe Fortinet/Schneider. Water Cyber Shield Act 300M$. IT/OT poreux."
     }
   ],
   "watchlist": [
@@ -127,12 +127,6 @@
       "category": "societe",
       "since": "2026-07-27",
       "note": "Illinois HB5511 rend Linux responsable de la vérification d'âge. UK exporte sa guerre à l'anonymat. Se protéger devient suspect."
-    },
-    {
-      "label": "GitHub inadapté au monde agentic",
-      "category": "devops",
-      "since": "2026-07-30",
-      "note": "Docker Sandboxes et Implant VS Code contournent GitHub. L'outillage se réorganise autour de l'agent, pas du repo."
     },
     {
       "label": "Gouvernance open source en crise",
@@ -156,52 +150,58 @@
       "label": "Crypto post-quantique en pratique",
       "category": "infosec",
       "since": "2026-08-11",
-      "note": "McEliece ébranlé par cryptanalyse quasi-polynomiale. pyca/cryptography intègre ML-KEM/ML-DSA. La crypto-agilité devient pip install."
+      "note": "McEliece ébranlé. pyca/cryptography intègre ML-KEM/ML-DSA. La crypto-agilité devient pip install."
     },
     {
-      "label": "Empoisonnement des logs comme vecteur agentique",
+      "label": "Empoisonnement des logs et MCP comme vecteur agentique",
       "category": "infosec",
       "since": "2026-08-11",
-      "note": "Ghostjacking détourne les agents via logs Cloudflare/Datadog/Sentry. Nouveau vecteur: l'observabilité devient surface d'attaque."
+      "note": "Ghostjacking + MCP malveillants: l'observabilité et l'outillage tiers deviennent surface d'attaque agentique prioritaire."
     },
     {
       "label": "Edge IA et autonomie non supervisée",
       "category": "ia",
       "since": "2026-08-11",
-      "note": "Needle2 14Mo et Muse Glimmer always-on local. Les agents tournent hors supervision centrale. Qui audite l'edge?"
+      "note": "Nemotron 30B sur RTX, llama.cpp sur Apple Silicon. Les agents tournent hors supervision centrale. Qui audite l'edge?"
+    },
+    {
+      "label": "Vol de traces de raisonnement via API",
+      "category": "ia",
+      "since": "2026-08-12",
+      "note": "Chercheurs volent les traces de raisonnement des LLM via API. Si reproductible, le confinement des modèles propriétaires vole en éclats."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "Astra suspendu par OpenAI. Ghostjacking empoisonne les logs. Kimsuky industrialise le phishing hors ligne. L'agent est bouclier, arme et surface — les labos le savent et freinent."
+      "note": "GPT-5.6-Cyber à garde-fous réduits. Agent autonome exploite vuln seul. MCP malveillants exfiltrent secrets. Corma lève 60M$ pour la défense. L'agent est bouclier, arme et surface — les labos lâchent les freins."
     },
     {
-      "label": "Gouvernance réclamée d'en haut vs effondrement des mainteneurs",
-      "note": "Django démontre qu'une gouvernance structurée peut piloter un virage (cycle annuel). Mais Nixpkgs a perdu sa core team. L'État réclame des garde-fous pendant que les gardiens s'effacent."
+      "label": "Gouvernance réclamée d'en haut vs effondrement des gardiens",
+      "note": "Cheffe éthique OpenAI partie. Governance gap dénoncé comme problème de leadership. Nixpkgs sans core team. L'État réclame des garde-fous pendant que les gardiens s'effacent à tous les niveaux."
     },
     {
-      "label": "Surveillance étatique vs protections légales",
-      "note": "Illinois rend Linux responsable de la vérification d'âge. UK exporte sa guerre à l'anonymat. ICE achète les données bancaires. La surveillance s'impose par la loi ou par le marché."
+      "label": "Surveillance déployée vs garde-fous absents",
+      "note": "Métro londonien scanne les visages. Flock Safety: officier traque ex-compagne, arrestations à armes sur erreur de plaque. La surveillance s'impose par la loi ou par le marché, plus vite que les garde-fous."
     },
     {
       "label": "Frugalité computationnelle vs inflation infrastructurelle",
-      "note": "Needle2 14Mo et Muse Glimmer pour agents locaux. Amazon finance la plus grosse centrale à gaz US. OpenAI écrit au gouverneur du Texas. L'optimisation edge face à l'inflation cloud."
+      "note": "Nemotron 30B sur RTX, llama.cpp sur Apple Silicon. Amazon finance la plus grosse centrale à gaz US. L'optimisation edge face à l'inflation cloud: deux trajectoires contradictoires qui s'accélèrent simultanément."
+    },
+    {
+      "label": "Vulnérabilités connues vs exploitation immédiate",
+      "note": "Gunra exploite des failles connues Fortinet/Schneider. Lazarus utilise un zero-day en campagne. Le Water Cyber Shield Act doté de 300M$ répond à des petites utilités démunies. Le gap disclosure→patch est weaponisé."
     },
     {
       "label": "Ouverture des modèles vs contrôle étatique de l'IA",
-      "note": "Meta rouvre ses modèles et vise l'edge. OpenAI suspend Astra. L'État veut l'ouverture comme instrument et le contrôle comme garde-fou. L'edge échappe à la supervision centrale."
-    },
-    {
-      "label": "Déploiement imposé de l'IA vs backlash social organisé",
-      "note": "Lunettes Meta surnommées 'pervert glasses'. Wetherspoons interdit de filmer. Kinney Drugs retire son assistant IA. La présence de l'IA se subit, elle ne s'impose plus."
+      "note": "OpenAI lève les garde-fous de GPT-5.6-Cyber. Meta rouvre ses modèles vers l'edge. L'État veut l'ouverture comme instrument et le contrôle comme garde-fou. L'edge échappe à la supervision centrale."
     }
   ],
   "strategy_notes": [
-    "L'autonomie agentique accélère: Claude Code auto par défaut, Astra suspendu, Muse Glimmer pour agents locaux. Les labos freinent mais l'industrialisation est lancée. Surveiller qui contrôle les classificateurs de garde-fous.",
-    "Le Ghostjacking introduit un vecteur: empoisonner les logs pour détourner les agents. Docker Sandboxes et Implant VS Code montrent que l'outillage se réorganise, mais les surfaces d'attaque grandissent plus vite que les protections.",
-    "Le droit se trompe de cible: Illinois rend Linux responsable de la vérification d'âge, les lois cybercriminelles menacent les chercheurs. La régulation vise les couches les plus exposées plutôt que les plus responsables.",
-    "Django démontre qu'une gouvernance structurée peut piloter un virage de fond. Contrepoint au déclin des mainteneurs bénévoles (Nixpkgs). La gouvernance open source n'est pas condamnée mais nécessite des institutions."
+    "GPT-5.6-Cyber marque un tournant: OpenAI commercialise délibérément un modèle offensif à garde-fous réduits. Le départ simultané de la cheffe éthique confirme le vide. Surveiller qui suit ce précédent.",
+    "MCP malveillants et agent autonome de Schneier: la menace agentique passe de la PoC au terrain. L'outillage tiers (MCP, logs, observabilité) devient la surface d'attaque prioritaire, pas l'IA elle-même.",
+    "L'APN cellulaire comme vecteur OT est une première documentée. Si reproductible, l'isolation air-gap des infrastructures critiques vole en éclats. Le Water Cyber Shield Act montre que Washington s'éveille.",
+    "Nemotron 3.5 Lightning et llama.cpp confirment l'edge IA comme trajectoire structurelle. Les modèles tournent hors supervision centrale. La question n'est plus 'quand' mais 'qui audite ce qui s'exécute localement'."
   ],
-  "updated_at": "2026-08-11"
+  "updated_at": "2026-08-12"
 }

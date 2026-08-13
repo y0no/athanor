@@ -1,41 +1,42 @@
 {
-  "updated_at": "2026-08-12",
+  "updated_at": "2026-08-13",
   "synthesis": {
-    "headline": "L'IA offensive s'industrialise dans un vide de gouvernance",
-    "narrative": "OpenAI commercialise <strong>GPT-5.6-Cyber</strong> à garde-fous réduits tandis que sa cheffe éthique démissionne — les gardiens s'effacent au moment où l'IA devient <em>arme offensive</em>. Sur le terrain, un agent autonome exploite seul des vulnérabilités et des serveurs <code>MCP</code> malveillants exfiltrent des secrets : la surface d'attaque se déplace <em>autour</em> de l'IA. L'inférence locale (Nemotron, llama.cpp) déplace l'exécution hors supervision, pendant que les infrastructures critiques — centrale polonaise, réseaux d'eau — passent sous le feu croisé."
+    "headline": "L'outillage IA devient la surface d'attaque prioritaire",
+    "narrative": "L'attaque <strong>supply chain LiteLLM</strong> — 2500 organisations, 430 000 pipelines CI/CD exposés — confirme que la cible n'est plus le modèle mais la chaîne d'outils qui l'entoure. Pendant ce temps, la recherche de <strong>James Kettle</strong> démontre qu'un système autonome peut <em>inventer</em> de nouvelles techniques d'attaque, et les <strong>API d'OpenAI, Anthropic et Google</strong> laissent fuiter les raisonnements internes. Face à cette triple érosion, l'<em>agentic engineering</em> émerge comme discipline de garde-fous, tandis que <strong>Qwen 3.8</strong> et <strong>DeepSeek V4</strong> accélèrent l'open-weight hors supervision centrale — et qu'un bug <strong>SQLite</strong> latent depuis seize ans rappelle que les couches les plus éprouvées ne sont pas immunes."
   },
   "currents": [
     {
-      "label": "L'IA devient infrastructure offensive et défensive",
-      "note": "GPT-5.6-Cyber offensive, Corma défensive 60M$, agents exploitant seuls des vulnérabilités, MCP malveillants. La même technologie est arme, bouclier et champ de bataille — les labos lâchent les freins.",
-      "categories": [
-        "ia",
-        "infosec"
-      ]
-    },
-    {
-      "label": "Les gardiens s'effacent à tous les niveaux",
-      "note": "Cheffe éthique OpenAI partie, governance gap dénoncé, mainteneurs bénévoles en déclin, petites utilités sous-financées. Les structures de supervision se vident pendant que les risques s'accélèrent.",
+      "label": "L'outillage IA comme surface d'attaque prioritaire",
+      "note": "LiteLLM via Trivy (2500 orgs), API reasoning leaks, MCP malveillants: ce n'est plus le modèle qui est visé mais la chaîne d'outils qui l'entoure — gateways, scanners, observabilité.",
       "categories": [
         "ia",
         "infosec",
+        "devops"
+      ]
+    },
+    {
+      "label": "L'IA comme outil offensif transverse",
+      "note": "Kettle montre l'IA inventant des attaques. L'IA assiste le reverse engineering de firmware hobbyiste. L'IA devient outil offensif du pentest au bricolage, démocratisant l'attaque.",
+      "categories": [
+        "ia",
+        "infosec",
+        "diy"
+      ]
+    },
+    {
+      "label": "Poids ouverts vs opacité des labos occidentaux",
+      "note": "Qwen 3.8 et DeepSeek V4 accélèrent l'open-weight. Grok cache des réglages Elon-Only. uBlock abandonne Facebook. L'ouverture des uns répond au verrouillage des autres.",
+      "categories": [
+        "ia",
         "societe"
       ]
     },
     {
-      "label": "L'infrastructure critique comme nouveau front",
-      "note": "Centrale polonaise via APN cellulaire, Gunra sur Fortinet/Schneider, Water Cyber Shield Act 300M$. La convergence IT/OT crée des surfaces d'attaque que les défenseurs sous-financés ne maîtrisent pas.",
+      "label": "Dette technique des couches de base les plus déployées",
+      "note": "SQLite 16 ans de bug latent. SharePoint/vCenter exploités sitôt divulgation. Les fondations les plus éprouvées recèlent des angles morts, du stockage au patch.",
       "categories": [
         "infosec",
-        "societe"
-      ]
-    },
-    {
-      "label": "L'edge échappe à toute supervision",
-      "note": "Nemotron sur RTX, llama.cpp sur Apple Silicon, agents always-on locaux. Les modèles tournent hors du cloud, hors des garde-fous, hors de l'audit. La gouvernance centralisée devient structurellement impuissante.",
-      "categories": [
-        "ia",
-        "infosec"
+        "devops"
       ]
     }
   ],
@@ -44,57 +45,57 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-12",
+      "last_seen": "2026-08-13",
       "momentum": "stable",
-      "note": "Claude Code auto par défaut le 14 août. Industrialisation continue, focus se déplace vers l'offensive et l'edge."
+      "note": "Agentic engineering devient discipline. Discovered Materials (YC) déploie agents pour matériaux. Professionnalisation des pratiques."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-12",
+      "last_seen": "2026-08-13",
       "momentum": "montant",
-      "note": "MCP malveillants fragmentent instructions. Agent autonome exploite vuln seul. Ghostjacking. Surface s'élargit autour de l'agent."
+      "note": "API reasoning leak OpenAI/Anthropic/Google. LiteLLM: 2500 orgs via Trivy. Kettle: IA invente attaques. Triple érosion."
     },
     {
       "label": "Garde-fous de l'internet agentique",
       "category": "ia",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-12",
-      "momentum": "montant",
-      "note": "OpenAI lève garde-fous GPT-5.6-Cyber. Cheffe éthique part. Governance gap dénoncé. Les gardiens s'effacent au sommet."
+      "last_seen": "2026-08-13",
+      "momentum": "stable",
+      "note": "Grok 4.6: panneau caché Elon-Only, 33 modèles. Benchmarks suspects. Transparence à géométrie variable chez xAI."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-08-12",
+      "last_seen": "2026-08-13",
       "momentum": "stable",
-      "note": "Patch Tuesday 421 CVE. Zero-day Lazarus en campagne. Krebs: IA dope volumes de patches, fiabilité en doute."
+      "note": "SQLite WAL bug 16 ans touché en prod. SharePoint/vCenter exploités sitôt PoC. ShieldBreak casse le patch Defender."
     },
     {
       "label": "Surveillance & biométrie",
       "category": "societe",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-12",
+      "last_seen": "2026-08-13",
       "momentum": "montant",
-      "note": "Métro londonien scanne visages. Flock: officier traque ex, arrestations à armes. Dashcams VTC visés. Surveillance > garde-fous."
+      "note": "Métro Londres étend facial recognition. Plainte pénale lunettes Meta DE. Mandat judiciaire réclamé pour lecteurs de plaques."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-08-12",
+      "last_seen": "2026-08-13",
       "momentum": "stable",
-      "note": "mmiotic: radiographie silicium par latence MMIO. ChipWhisperer en français. Hardware opaque explorable."
+      "note": "IA assiste reverse engineering firmware AVerMedia. Droit à réparer étendu par l'IA locale hors supervision."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-13",
       "momentum": "stable",
-      "note": "Illinois HB5511: OS responsables vérification d'âge. UK exporte guerre anonymat. CICIC pour chercheurs."
+      "note": "uBlock jette l'éponge sur Facebook. Meta paie ragebait. Plateforme verrouille pub et contenu simultanément."
     },
     {
       "label": "Contestation territoriale des data centers",
@@ -108,56 +109,56 @@
       "label": "Saturation culturelle et réquisitoire anti-IA",
       "category": "societe",
       "first_seen": "2026-08-03",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-13",
       "momentum": "stable",
-      "note": "Lunettes Meta 'pervert glasses'. Wetherspoons interdit filmer. Kinney Drugs retire assistant IA. Backlash en actes."
+      "note": "Plainte pénale contre lunettes Meta en Allemagne. Backlash juridique complète le rejet social."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-08-12",
+      "last_seen": "2026-08-13",
       "momentum": "stable",
-      "note": "Nemotron 3.5 Lightning 30B-A3B NVFP4 pour RTX. Meta rouvre modèles. Bataille vers l'edge confirmée."
+      "note": "Qwen 3.8 2.4T MoE + 27B open-weight. DeepSeek V4 Pro sur OpenRouter. Vague chinoise multi-fronts accélère."
     },
     {
       "label": "Inférence comme front décisif",
       "category": "ia",
       "first_seen": "2026-08-07",
-      "last_seen": "2026-08-12",
+      "last_seen": "2026-08-13",
       "momentum": "stable",
-      "note": "Nemotron 3.5 Lightning pour RTX/DGX. llama.cpp GPU passthrough macOS. Edge IA confirme son avance."
+      "note": "Qwen 27B open-weight promise. DeepSeek V4 Pro cloud. Labos chinois multiplient fronts cloud + edge."
     },
     {
       "label": "Cycle CVE-weaponisation à l'échelle de l'heure",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-12",
-      "momentum": "stable",
-      "note": "Zero-day Lazarus en campagne active. Gunra exploite failles connues Fortinet/Schneider. Accélération confirmée."
+      "last_seen": "2026-08-13",
+      "momentum": "montant",
+      "note": "SharePoint exploité sitôt PoC. vCenter persistant via cron. Lazarus zero-day Windows. ShieldBreak casse patch."
     },
     {
       "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
       "category": "infosec",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-08-12",
-      "momentum": "stable",
-      "note": "MCP malveillants: exfiltration fragmentée via agents de coding. Supply chain agentique confirmée."
+      "last_seen": "2026-08-13",
+      "momentum": "montant",
+      "note": "LiteLLM via Trivy: 2500 orgs, 430K pipelines CI/CD. Scanners et gateways LLM visés. Confirmation à grande échelle."
     },
     {
       "label": "Outils de développement pour agents",
       "category": "devops",
       "first_seen": "2026-08-11",
-      "last_seen": "2026-08-11",
+      "last_seen": "2026-08-13",
       "momentum": "stable",
-      "note": "Docker Sandboxes jetables. Implant expose APIs VS Code. Antigravity 40j→5j. Outillage se réorganise."
+      "note": "Ballet génère intégrations API. Flutter 3.47. Packaging Linux reste friction. Build s'automatise, distribution coince."
     },
     {
       "label": "Infrastructures critiques sous pression",
       "category": "infosec",
       "first_seen": "2026-08-12",
       "last_seen": "2026-08-12",
-      "momentum": "nouveau",
+      "momentum": "stable",
       "note": "Centrale polonaise via APN cellulaire. Gunra frappe Fortinet/Schneider. Water Cyber Shield Act 300M$. IT/OT poreux."
     }
   ],
@@ -172,13 +173,13 @@
       "label": "Gouvernance open source en crise",
       "category": "devops",
       "since": "2026-08-08",
-      "note": "Django démontre le contre-exemple: cycle annuel piloté. Mais Nixpkgs sans core team. Le modèle bénévole vacille."
+      "note": "Django fait contre-exemple: office hours hebdo depuis oct 2024. Mais Nixpkgs sans core team. Modèle bénévole vacille."
     },
     {
       "label": "Contamination structurelle des benchmarks",
       "category": "ia",
       "since": "2026-08-06",
-      "note": "Frontier accuse Kimi K3 de tricher en lisant le disque. UK AISI conteste. La mesure des dérives reste un champ de bataille."
+      "note": "Grok 4.6 score 61, benchmarks suspects. Frontier accuse Kimi K3. La mesure des dérives reste un champ de bataille."
     },
     {
       "label": "Code IA banni des projets critiques",
@@ -193,48 +194,48 @@
       "note": "McEliece ébranlé. pyca/cryptography intègre ML-KEM/ML-DSA. La crypto-agilité devient pip install."
     },
     {
-      "label": "Empoisonnement des logs et MCP comme vecteur agentique",
-      "category": "infosec",
-      "since": "2026-08-11",
-      "note": "Ghostjacking + MCP malveillants: l'observabilité et l'outillage tiers deviennent surface d'attaque agentique prioritaire."
-    },
-    {
       "label": "Edge IA et autonomie non supervisée",
       "category": "ia",
       "since": "2026-08-11",
-      "note": "Nemotron 30B sur RTX, llama.cpp sur Apple Silicon. Les agents tournent hors supervision centrale. Qui audite l'edge?"
+      "note": "Qwen 27B open-weight, DeepSeek V4 Pro. Les agents tournent hors supervision centrale. Qui audite l'edge?"
     },
     {
-      "label": "Vol de traces de raisonnement via API",
-      "category": "ia",
-      "since": "2026-08-12",
-      "note": "Chercheurs volent les traces de raisonnement des LLM via API. Si reproductible, le confinement des modèles propriétaires vole en éclats."
+      "label": "IA comme outil de découverte d'attaques",
+      "category": "infosec",
+      "since": "2026-08-13",
+      "note": "Kettle/PortSwigger: système autonome invente et teste de nouvelles attaques. Si reproductible, le pentest traditionnel est dépassé."
+    },
+    {
+      "label": "Bugs latents dans les couches les plus déployées",
+      "category": "devops",
+      "since": "2026-08-13",
+      "note": "SQLite WAL bug 16 ans touché en prod. Si les fondations les plus éprouvées cachent des défauts, la dette technique est systémique."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "GPT-5.6-Cyber à garde-fous réduits. Agent autonome exploite vuln seul. MCP malveillants exfiltrent secrets. Corma lève 60M$ pour la défense. L'agent est bouclier, arme et surface — les labos lâchent les freins."
+      "note": "Kettle montre l'IA inventant des attaques autonomes. API reasoning leak: les modèles propriétaires ne confinent plus. LiteLLM: 2500 orgs touchées. L'agent est bouclier, arme et surface — simultanément."
     },
     {
       "label": "Gouvernance réclamée d'en haut vs effondrement des gardiens",
-      "note": "Cheffe éthique OpenAI partie. Governance gap dénoncé comme problème de leadership. Nixpkgs sans core team. L'État réclame des garde-fous pendant que les gardiens s'effacent à tous les niveaux."
+      "note": "Agentic engineering émerge comme discipline. Django fait contre-exemple. Mais Grok cache des réglages Elon-Only, Nixpkgs sans core team. Les gardiens s'effacent pendant que la discipline se construit."
     },
     {
       "label": "Surveillance déployée vs garde-fous absents",
-      "note": "Métro londonien scanne les visages. Flock Safety: officier traque ex-compagne, arrestations à armes sur erreur de plaque. La surveillance s'impose par la loi ou par le marché, plus vite que les garde-fous."
+      "note": "Métro Londres étend facial recognition. Plainte pénale lunettes Meta. Mandat judiciaire réclamé pour plaques. La technologie s'impose par déploiement, le droit tente après coup."
     },
     {
       "label": "Frugalité computationnelle vs inflation infrastructurelle",
-      "note": "Nemotron 30B sur RTX, llama.cpp sur Apple Silicon. Amazon finance la plus grosse centrale à gaz US. L'optimisation edge face à l'inflation cloud: deux trajectoires contradictoires qui s'accélèrent simultanément."
+      "note": "Qwen 27B open-weight pour l'edge. DeepSeek V4 Pro 2.4T pour le cloud. Amazon finance centrale à gaz. Deux trajectoires contradictoires s'accélèrent."
     },
     {
       "label": "Vulnérabilités connues vs exploitation immédiate",
-      "note": "Gunra exploite des failles connues Fortinet/Schneider. Lazarus utilise un zero-day en campagne. Le Water Cyber Shield Act doté de 300M$ répond à des petites utilités démunies. Le gap disclosure→patch est weaponisé."
+      "note": "SharePoint exploité sitôt PoC publié. vCenter persistant. ShieldBreak casse le patch Defender. Le gap disclosure→patch est pleinement weaponisé, y compris contre les correctifs."
     },
     {
-      "label": "Ouverture des modèles vs contrôle étatique de l'IA",
-      "note": "OpenAI lève les garde-fous de GPT-5.6-Cyber. Meta rouvre ses modèles vers l'edge. L'État veut l'ouverture comme instrument et le contrôle comme garde-fou. L'edge échappe à la supervision centrale."
+      "label": "Ouverture des modèles vs opacité des labos occidentaux",
+      "note": "Qwen/DeepSeek accélèrent l'open-weight multi-fronts. Grok cache 33 modèles en Elon-Only. uBlock abandonne Facebook. L'ouverture des uns répond au verrouillage des autres."
     }
   ]
 }

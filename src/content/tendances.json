@@ -1,45 +1,10 @@
 {
-  "updated_at": "2026-08-13",
+  "updated_at": "2026-08-14",
   "synthesis": {
-    "headline": "L'outillage IA devient la surface d'attaque prioritaire",
-    "narrative": "L'attaque <strong>supply chain LiteLLM</strong> — 2500 organisations, 430 000 pipelines CI/CD exposés — confirme que la cible n'est plus le modèle mais la chaîne d'outils qui l'entoure. Pendant ce temps, la recherche de <strong>James Kettle</strong> démontre qu'un système autonome peut <em>inventer</em> de nouvelles techniques d'attaque, et les <strong>API d'OpenAI, Anthropic et Google</strong> laissent fuiter les raisonnements internes. Face à cette triple érosion, l'<em>agentic engineering</em> émerge comme discipline de garde-fous, tandis que <strong>Qwen 3.8</strong> et <strong>DeepSeek V4</strong> accélèrent l'open-weight hors supervision centrale — et qu'un bug <strong>SQLite</strong> latent depuis seize ans rappelle que les couches les plus éprouvées ne sont pas immunes."
+    "headline": "IA comme outil de défense vs IA comme infrastructure de compromission",
+    "narrative": "LiteLLM confirme à grande échelle: 2500 orgs, 430K pipelines. L'outillage IA tiers est la cible prioritaire. Surveiller les rotations de secrets et les prochaines supply chains visant gateways et scanners."
   },
-  "currents": [
-    {
-      "label": "L'outillage IA comme surface d'attaque prioritaire",
-      "note": "LiteLLM via Trivy (2500 orgs), API reasoning leaks, MCP malveillants: ce n'est plus le modèle qui est visé mais la chaîne d'outils qui l'entoure — gateways, scanners, observabilité.",
-      "categories": [
-        "ia",
-        "infosec",
-        "devops"
-      ]
-    },
-    {
-      "label": "L'IA comme outil offensif transverse",
-      "note": "Kettle montre l'IA inventant des attaques. L'IA assiste le reverse engineering de firmware hobbyiste. L'IA devient outil offensif du pentest au bricolage, démocratisant l'attaque.",
-      "categories": [
-        "ia",
-        "infosec",
-        "diy"
-      ]
-    },
-    {
-      "label": "Poids ouverts vs opacité des labos occidentaux",
-      "note": "Qwen 3.8 et DeepSeek V4 accélèrent l'open-weight. Grok cache des réglages Elon-Only. uBlock abandonne Facebook. L'ouverture des uns répond au verrouillage des autres.",
-      "categories": [
-        "ia",
-        "societe"
-      ]
-    },
-    {
-      "label": "Dette technique des couches de base les plus déployées",
-      "note": "SQLite 16 ans de bug latent. SharePoint/vCenter exploités sitôt divulgation. Les fondations les plus éprouvées recèlent des angles morts, du stockage au patch.",
-      "categories": [
-        "infosec",
-        "devops"
-      ]
-    }
-  ],
+  "currents": [],
   "themes": [
     {
       "label": "Agents IA en production",

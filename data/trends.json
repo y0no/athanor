@@ -203,5 +203,5 @@
     "Qwen 3.8 2.4T + DeepSeek V4 Pro: l'open-weight chinois accélère sur cloud et edge. Grok cache des réglages. La transparence des labos occidentaux se dégrade pendant que l'ouverture chinoise progresse.",
     "Bug SQLite 16 ans touché en prod par Tailscale: les couches de base les plus éprouvées ne sont pas immunes. Combiné au cycle CVE-weaponisation accéléré, la fiabilité des fondations est en doute structurel."
   ],
-  "updated_at": "2026-08-13"
+  "updated_at": "2026-08-14"
 }

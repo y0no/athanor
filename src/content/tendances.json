@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14",
+  "updated_at": "2026-08-15",
   "synthesis": {
     "headline": "IA comme outil de défense vs IA comme infrastructure de compromission",
     "narrative": "LiteLLM confirme à grande échelle: 2500 orgs, 430K pipelines. L'outillage IA tiers est la cible prioritaire. Surveiller les rotations de secrets et les prochaines supply chains visant gateways et scanners."

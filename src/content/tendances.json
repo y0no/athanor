@@ -1,41 +1,43 @@
 {
-  "updated_at": "2026-08-16",
+  "updated_at": "2026-08-17",
   "synthesis": {
-    "headline": "L'IA franchit la frontière du vivant sous gouvernance absente",
-    "narrative": "L'IA conçoit désormais des <strong>virus biologiques fonctionnels</strong>, prolongeant sa trajectoire offensive du code au génome, tandis que la <strong>Maison-Blanche</strong> privatise le hack-back. Les institutions découvrent l'IA par la brèche : <strong>Debian</strong> vote sur le code généré, un justiciable injecte des <em>prompts</em> au tribunal, <strong>X</strong> cache un filtre électoral dans son code ouvert. Pendant ce temps, les <strong>couches de base</strong> continuent de trahir — bug <code>zsh</code>, refonte I/O de <strong>Zig</strong> — et l'<strong>IA scientifique</strong> quitte le <em>hype</em> pour la production, des médicaments au portage GPU de 250 000 lignes de code."
+    "headline": "L'agent devient sa propre surface d'attaque",
+    "narrative": "Les agents de coding qui devaient traquer les vulnérabilités <em>deviennent eux-mêmes</em> la cible — Black Hat cible Claude Code, Gemini CLI et Codex, inversant le signal observé depuis des semaines. Pendant ce temps, <strong>Cloudflare</strong> injecte silencieusement ses analytics et <strong>Anthropic</strong> publie ses system prompts tout en watermarkant invisiblement le texte : la transparence revendiquée masque une <em>modification non consentie</em>. La mémoire émerge comme nouveau champ de bataille, où <strong>Lorekit</strong> défend la souveraineté individuelle face à <strong>Wildstatic</strong> et son intelligence mutualisée. L'économie de l'IA envoie des signaux contradictoires — 11,5 milliards de revenus trimestriels chez Anthropic pendant que Nvidia réduit de 250 milliards ses garanties à OpenAI."
   },
   "currents": [
     {
-      "label": "L'IA offensive s'étend du numérique au biologique",
-      "note": "Les mêmes techniques génératrices qui explorent des surfaces d'attaque logicielles (Kettle) se déplacent sur les séquences génétiques (virus fonctionnels). La frontière entre capacités offensales numériques et biologiques s'amincit, sans garde-fous institutionnels.",
+      "label": "L'agent retourné: du découvreur à la cible",
+      "note": "Les agents de coding devaient traquer les vulnérabilités. Black Hat montre qu'ils sont devenus la vulnérabilité. La mémoire émerge comme nouvelle surface. L'IA est simultanément outil, arme et cible.",
       "categories": [
         "ia",
         "infosec"
       ]
     },
     {
-      "label": "Institutions face à l'IA par la marge",
-      "note": "Debian vote sur le code LLM, un justiciable injecte des prompts au tribunal, X cache un filtre électoral. Les institutions découvrent l'IA par leurs angles morts, pendant que la gouvernance reste réactive et les manifestos de patrons fixent le récit plus vite que les règles.",
+      "label": "Transparence sélective des infrastructures",
+      "note": "Anthropic publie ses prompts mais watermark le texte. Cloudflare injecte analytics silencieusement. Trump crypto obtient un feu vert bancaire. La transparence affichée masque la modification non consentie.",
       "categories": [
-        "societe",
+        "ia",
+        "devops",
+        "societe"
+      ]
+    },
+    {
+      "label": "Souveraineté réseau: du mesh au modèle",
+      "note": "Reticulum mesh sans Internet, ATProto et identités portables, Lorekit mémoire locale, RISC-V du Sud global. La souveraineté se réinvente à chaque couche, du transport au modèle.",
+      "categories": [
+        "diy",
         "devops",
         "ia"
       ]
     },
     {
-      "label": "Fiabilité des fondations: forensic vs preuve formelle",
-      "note": "Bug zsh, SQLite 16 ans, Zig refond ses I/O: les couches les plus déployées cachent des défauts latents. Deux réponses émergent: le forensic artisanal (Stapelberg) et la preuve formelle (Keeta consensus). La fiabilité devient un choix méthodologique.",
+      "label": "Frugalité vs inflation: deux trajectoires qui s'accélèrent",
+      "note": "BBS sur Casio et Sierra sur C64 face à Anthropic à 11,5Mds et Nvidia réduisant 250Mds. Le rétro-computing comme laboratoire de frugalité face à l'inflation infrastructurelle de l'IA.",
       "categories": [
-        "devops",
-        "infosec"
-      ]
-    },
-    {
-      "label": "Privatisation de l'offensive cybernétique",
-      "note": "La Maison-Blanche délègue le hack-back à des entreprises privées sous contrat fédéral. Combiné au cycle CVE-weaponisation accéléré et à la recon automatisée (CT logs, RPC-Triage), l'État sous-traité l'offensive cyber à des prestataires privés encadrés.",
-      "categories": [
-        "infosec",
-        "societe"
+        "diy",
+        "societe",
+        "ia"
       ]
     }
   ],
@@ -44,197 +46,197 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-16",
+      "last_seen": "2026-08-17",
       "momentum": "stable",
-      "note": "Anthropic publie patterns multi-agents. Codex: kernel 232x plus rapide. IA scientifique en prod (médicaments, portage GPU 250k lignes). Discipline mature."
+      "note": "Mémoire devient frontière (Lorekit/Wildstatic). Patterns multi-agents matures. Discipline se formalise mais agents deviennent surface d'attaque."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-16",
+      "last_seen": "2026-08-17",
       "momentum": "montant",
-      "note": "IA conçoit virus biologiques fonctionnels. CT logs trahissent hôtes internes. RPC-Triage: analyse statique zero-symbol. Frontière numérique/biologique s'amincit."
+      "note": "Black Hat cible Claude Code, Gemini CLI, Codex. Signal s'inverse: l'agent n'est plus l'outil qui trouve les vulns, il EST la vulnérabilité."
     },
     {
       "label": "Garde-fous de l'internet agentique",
       "category": "ia",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-16",
+      "last_seen": "2026-08-17",
       "momentum": "stable",
-      "note": "Filtre électoral brésilien découvert dans code ouvert de X. Transparence affichée révèle modulation éditoriale. Qui contrôle ce qu'un filtre amplifie?"
+      "note": "Watermark invisible Anthropic + Qwen sur-réfléchit par design. Le labo choisit combien le modèle pense. Transparence sélective."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-08-16",
+      "last_seen": "2026-08-17",
       "momentum": "stable",
-      "note": "Bug zsh historique perdu. Zig Writergate refond I/O. Rust réexamine concurrence. Keeta: preuve formelle vs forensic artisanal."
-    },
-    {
-      "label": "Surveillance & biométrie",
-      "category": "societe",
-      "first_seen": "2026-05-13",
-      "last_seen": "2026-08-13",
-      "momentum": "stable",
-      "note": "Métro Londres étend facial recognition. Plainte pénale lunettes Meta DE. Mandat judiciaire réclamé pour lecteurs de plaques."
+      "note": "Cloudflare injecte analytics sans consentement. Intermédiaires deviennent acteurs éditoriaux de fait. Confiance dans la couche transport érodée."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-08-16",
+      "last_seen": "2026-08-17",
       "momentum": "stable",
-      "note": "Moiré guide navires sans électronique. Radio FM TEA5767. Modding rétro PS2. Fiabilité par la physique, alternative aux infrastructures vulnérables."
+      "note": "Reticulum mesh sans Internet. RISC-V débattu depuis le Sud global. BBS sur Casio. La frugalité comme laboratoire, pas nostalgie."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-16",
+      "last_seen": "2026-08-17",
       "momentum": "montant",
-      "note": "Filtre électoral brésilien dans code X. Debian vote sur contributions LLM. Justiciable injecte prompts au tribunal. Institutions découvre l'IA par la marge."
+      "note": "Cloudflare injecte analytics. Trump crypto approche statut bancaire. Les intermédiaires deviennent acteurs éditoriaux et financiers de fait."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-08-16",
+      "last_seen": "2026-08-17",
       "momentum": "stable",
-      "note": "Audit 30 model cards: transparence à géométrie variable. Qwen/DeepSeek progressent. Labos occidentaux opaques. Mesure reste champ de bataille."
+      "note": "Qwen 3.8 open-weight. Anthropic publie prompts mais watermark. Stripe rachète OpenRouter 7Mds: la distribution value plus que le modèle."
     },
     {
       "label": "Cycle CVE-weaponisation à l'échelle de l'heure",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-16",
+      "last_seen": "2026-08-17",
       "momentum": "stable",
-      "note": "Hack-back privatisé par Maison-Blanche. CT logs énumèrent surfaces sans toucher cible. RPC-Triage automatise triage. Recon s'industrialise."
-    },
-    {
-      "label": "Chaîne d'approvisionnement comme vecteur prioritaire",
-      "category": "infosec",
-      "first_seen": "2026-07-18",
-      "last_seen": "2026-08-13",
-      "momentum": "stable",
-      "note": "LiteLLM via Trivy: 2500 orgs, 430K pipelines CI/CD. Scanners et gateways LLM visés. Confirmation à grande échelle."
+      "note": "Zyxel CVE-2026-6837 + n8n CVE-2026-33696: writeups détaillés = mode d'emploi. Du nom de schéma au shell. Le gap disclosure→patch reste weaponisé."
     },
     {
       "label": "Outils de développement pour agents",
       "category": "devops",
       "first_seen": "2026-08-11",
-      "last_seen": "2026-08-16",
+      "last_seen": "2026-08-17",
       "momentum": "stable",
-      "note": "App native Rust/GPUI pour coding agents. Anthropic cartographie patterns multi-agents. L'outillage suit la production, la discipline se formalise."
-    },
-    {
-      "label": "Contamination structurelle des benchmarks",
-      "category": "ia",
-      "first_seen": "2026-08-06",
-      "last_seen": "2026-08-16",
-      "momentum": "montant",
-      "note": "Audit 30 model cards: transparence à géométrie variable. Biais genré: le prompt suffit à basculer les réponses. Mesure = champ de bataille."
+      "note": "Rhombus 1.1 mature. Prolly trees pour maps versionnées. LSP Protobuf. Les fondations dev se raffinent loin des gros titres."
     },
     {
       "label": "Hack-back privé légitimé",
       "category": "infosec",
       "first_seen": "2026-08-16",
       "last_seen": "2026-08-16",
-      "momentum": "nouveau",
-      "note": "Maison-Blanche autorise cyber offensif privé sous contrat fédéral. Précédent doctrinal. Hack-back sort du tabou, devient prestation sous-traitée."
+      "momentum": "stable",
+      "note": "Maison-Blanche autorise cyber offensif privé. Précédent doctral non confirmé depuis. Surveiller quels acteurs obtiennent ces contrats."
     },
     {
       "label": "Gouvernance du code généré par IA",
       "category": "societe",
       "first_seen": "2026-08-16",
-      "last_seen": "2026-08-16",
-      "momentum": "nouveau",
-      "note": "Debian vote sur contributions LLM après ban OpenJDK. Plafond de confiance du code généré devient débat institutionnel, plus principe."
+      "last_seen": "2026-08-17",
+      "momentum": "stable",
+      "note": "Black Hat: coding agents comme surface d'attaque. Debian vote sur LLM. Plafond de confiance du code IA devient débat institutionnel."
     },
     {
-      "label": "Climat: accélération des extrêmes",
-      "category": "societe",
-      "first_seen": "2026-08-16",
-      "last_seen": "2026-08-16",
+      "label": "Contamination structurelle des benchmarks",
+      "category": "ia",
+      "first_seen": "2026-08-06",
+      "last_seen": "2026-08-17",
+      "momentum": "stable",
+      "note": "Qwen 3.8 sur-réfléchit par design. Labos rendent modèles délibérément moins performants. La gouvernance passe par la boucle reasoning."
+    },
+    {
+      "label": "Mémoire des agents: souveraineté vs mutualisation",
+      "category": "ia",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
       "momentum": "nouveau",
-      "note": "Super El Niño record annoncé. Europe calcinée vue depuis l'espace. Hiver 2026-2027 en territoire inédit."
+      "note": "Lorekit: mémoire locale/personnelle. Wildstatic: mémoire mutualisée. La question: à qui appartient ce que l'agent retient?"
+    },
+    {
+      "label": "Politicisation de la recherche scientifique",
+      "category": "societe",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "momentum": "nouveau",
+      "note": "Listes fédérales de mots-clés annulent milliards de financements. NIH coupe bourse jeunes chercheurs. Restriction idéologique de la recherche."
+    },
+    {
+      "label": "Économie de l'IA: exubérance et déduction de risque",
+      "category": "societe",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "momentum": "nouveau",
+      "note": "Anthropic 11,5Mds Q2. Nvidia réduit 250Mds garanties OpenAI. Stripe rachète OpenRouter 7Mds. Exubérance et prudence cohabitent."
     }
   ],
   "watchlist": [
     {
-      "label": "Criminalisation des outils privacy",
-      "category": "societe",
-      "since": "2026-07-27",
-      "note": "Illinois HB5511 rend Linux responsable de la vérification d'âge. UK exporte sa guerre à l'anonymat. Se protéger devient suspect."
-    },
-    {
-      "label": "Gouvernance open source en crise",
-      "category": "devops",
-      "since": "2026-08-08",
-      "note": "Debian vote sur IA: la gouvernance OS devient politique. Django fait contre-exemple. Nixpkgs sans core team. Modèle bénévole vacille."
-    },
-    {
-      "label": "Crypto post-quantique en pratique",
-      "category": "infosec",
-      "since": "2026-08-11",
-      "note": "McEliece ébranlé. pyca/cryptography intègre ML-KEM/ML-DSA. La crypto-agilité devient pip install."
-    },
-    {
       "label": "Edge IA et autonomie non supervisée",
       "category": "ia",
       "since": "2026-08-11",
-      "note": "Qwen 27B open-weight, DeepSeek V4 Pro. Les agents tournent hors supervision centrale. Qui audite l'edge?"
+      "note": "Lorekit/Wildstatic confirment: agents tournent hors supervision. Mémoire locale vs mutualisée. Qui audite l'edge?"
     },
     {
       "label": "IA comme outil de découverte d'attaques",
       "category": "infosec",
       "since": "2026-08-13",
-      "note": "S'étend au biologique: IA conçoit virus fonctionnels. Kettle invente attaques logicielles. Si reproductible, le pentest traditionnel est dépassé."
+      "note": "Signal s'inverse: Black Hat cible les agents eux-mêmes. L'IA n'est plus seulement l'outil, elle est la surface."
     },
     {
-      "label": "Bugs latents dans les couches les plus déployées",
+      "label": "Intermédiaires d'infrastructure comme acteurs éditoriaux",
       "category": "devops",
-      "since": "2026-08-13",
-      "note": "Zsh history bug data loss. SQLite 16 ans. Zig refond I/O. Les fondations les plus éprouvées cachent des défauts systémiques."
+      "since": "2026-08-17",
+      "note": "Cloudflare injecte analytics sans consentement. Les CDN deviennent éditeurs de fait. Le web des intermédiaires opaques."
     },
     {
-      "label": "Prompt injection contre institutions",
-      "category": "infosec",
-      "since": "2026-08-16",
-      "note": "Justiciable glisse des prompts dans ses écritures judiciaires. L'offensive contre les institutions automatisées commence par l'intérieur."
+      "label": "Watermarking invisible du texte généré",
+      "category": "ia",
+      "since": "2026-08-17",
+      "note": "Anthropic watermark Claude: modification non consentie du texte. Le watermarking pourrait devenir enjeu réglementaire."
     },
     {
-      "label": "Filtres électoraux algorithmiques",
+      "label": "Modèles délibérément bridés",
+      "category": "ia",
+      "since": "2026-08-17",
+      "note": "Qwen 3.8 sur-réfléchit par design. Labos choisissent combien le modèle pense. Gouvernance par la boucle reasoning."
+    },
+    {
+      "label": "Crypto-politique: pouvoir exécutif et actifs numériques",
       "category": "societe",
-      "since": "2026-08-16",
-      "note": "Filtre brazil_2026_election dans code ouvert de X. La transparence affichée révèle la modulation éditoriale des scrutins nationaux."
+      "since": "2026-08-17",
+      "note": "Trump crypto approche statut bancaire. Pouvoir exécutif et actifs numériques convergent. Conflits d'intérêts institutionnels."
+    },
+    {
+      "label": "Gouvernance open source en crise",
+      "category": "devops",
+      "since": "2026-08-08",
+      "note": "Debian vote sur IA. Nixpkgs sans core team. Le modèle bénévole vacille pendant que l'IA accélère."
+    },
+    {
+      "label": "Criminalisation des outils privacy",
+      "category": "societe",
+      "since": "2026-07-27",
+      "note": "Illinois rend Linux responsable de vérification d'âge. UK exporte sa guerre à l'anonymat. Se protéger devient suspect."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "Kettle invente des attaques logicielles, l'IA conçoit des virus biologiques fonctionnels. API reasoning leak. L'agent est bouclier, arme et surface — du code au génome, simultanément."
+      "note": "Kettle invente des attaques, l'IA conçoit des virus. Mais Black Hat montre l'inversion: les agents de coding SONT la surface d'attaque. L'agent est bouclier, arme et cible simultanément."
     },
     {
-      "label": "Gouvernance réclamée d'en haut vs effondrement des gardiens",
-      "note": "Debian vote sur le code IA, Anthropic publie des patterns multi-agents. Mais X cache un filtre électoral, Nixpkgs sans core team. Les gardiens s'effacent pendant que la discipline se construit."
+      "label": "Transparence revendiquée vs modification invisible",
+      "note": "Anthropic publie ses system prompts mais watermark invisiblement le texte. Cloudflare injecte analytics sans consentement. On révèle ce qui gouverne, on cache ce qui modifie."
+    },
+    {
+      "label": "Souveraineté individuelle vs intelligence collective partagée",
+      "note": "Lorekit défend la mémoire personnelle de l'agent. Wildstatic mutualise l'intelligence entre tous les utilisateurs. Deux visions irréductibles: l'agent comme prolongement du soi vs bien commun."
     },
     {
       "label": "Frugalité computationnelle vs inflation infrastructurelle",
-      "note": "Qwen 27B open-weight pour l'edge. DeepSeek V4 Pro 2.4T pour le cloud. Amazon finance centrale à gaz. Super El Niño record. Deux trajectoires contradictoires s'accélèrent."
+      "note": "BBS sur Casio, Sierra sur C64, Reticulum sans Internet. En face: Anthropic 11,5Mds de revenus, Nvidia 250Mds pour OpenAI. Deux trajectoires s'accélèrent en parallèle."
     },
     {
       "label": "Vulnérabilités connues vs exploitation immédiate",
-      "note": "SharePoint exploité sitôt PoC. Hack-back privatisé par Maison-Blanche. CT logs énumèrent surfaces sans toucher la cible. Le gap disclosure→patch est weaponisé, y compris par délégation privée."
+      "note": "Zyxel et n8n: chaque CVE documentée devient mode d'emploi. Le gap disclosure→patch reste weaponisé. Les writeups sont des tutoriels d'exploitation."
     },
     {
-      "label": "Ouverture des modèles vs opacité des labos occidentaux",
-      "note": "Qwen/DeepSeek accélèrent l'open-weight. Audit 30 model cards: transparence à géométrie variable. X publie son code mais y cache un filtre électoral. L'ouverture des uns répond au verrouillage des autres."
-    },
-    {
-      "label": "Privatisation de la riposte vs monopole régalien",
-      "note": "La Maison-Blanche autorise des entreprises privées à mener des opérations cyber offensives contre des groupes criminels étrangers. Le hack-back sort du tabou doctrinal pour devenir prestation sous-traitée. La frontière entre défense privée et prérogative régalienne se redessine durablement."
+      "label": "Gouvernance réclamée d'en haut vs effondrement des gardiens",
+      "note": "Debian vote sur code IA, Anthropic publie patterns. Mais Cloudflare injecte sans consentement, Nixpkgs sans core team, recherche purgée par mots-clés. Les gardiens s'effacent."
     }
   ]
 }

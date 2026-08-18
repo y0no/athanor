@@ -1,46 +1,10 @@
 {
-  "updated_at": "2026-08-17",
+  "updated_at": "2026-08-18",
   "synthesis": {
-    "headline": "L'agent devient sa propre surface d'attaque",
-    "narrative": "Les agents de coding qui devaient traquer les vulnérabilités <em>deviennent eux-mêmes</em> la cible — Black Hat cible Claude Code, Gemini CLI et Codex, inversant le signal observé depuis des semaines. Pendant ce temps, <strong>Cloudflare</strong> injecte silencieusement ses analytics et <strong>Anthropic</strong> publie ses system prompts tout en watermarkant invisiblement le texte : la transparence revendiquée masque une <em>modification non consentie</em>. La mémoire émerge comme nouveau champ de bataille, où <strong>Lorekit</strong> défend la souveraineté individuelle face à <strong>Wildstatic</strong> et son intelligence mutualisée. L'économie de l'IA envoie des signaux contradictoires — 11,5 milliards de revenus trimestriels chez Anthropic pendant que Nvidia réduit de 250 milliards ses garanties à OpenAI."
+    "headline": "IA comme outil de défense vs IA comme infrastructure de compromission",
+    "narrative": "Les agents de coding deviennent surface d'attaque (Black Hat: Claude Code, Gemini CLI, Codex). L'IA n'est plus l'outil qui trouve les vuln, elle EST la vuln. Surveiller les CVE spécifiques aux frameworks d'agents."
   },
-  "currents": [
-    {
-      "label": "L'agent retourné: du découvreur à la cible",
-      "note": "Les agents de coding devaient traquer les vulnérabilités. Black Hat montre qu'ils sont devenus la vulnérabilité. La mémoire émerge comme nouvelle surface. L'IA est simultanément outil, arme et cible.",
-      "categories": [
-        "ia",
-        "infosec"
-      ]
-    },
-    {
-      "label": "Transparence sélective des infrastructures",
-      "note": "Anthropic publie ses prompts mais watermark le texte. Cloudflare injecte analytics silencieusement. Trump crypto obtient un feu vert bancaire. La transparence affichée masque la modification non consentie.",
-      "categories": [
-        "ia",
-        "devops",
-        "societe"
-      ]
-    },
-    {
-      "label": "Souveraineté réseau: du mesh au modèle",
-      "note": "Reticulum mesh sans Internet, ATProto et identités portables, Lorekit mémoire locale, RISC-V du Sud global. La souveraineté se réinvente à chaque couche, du transport au modèle.",
-      "categories": [
-        "diy",
-        "devops",
-        "ia"
-      ]
-    },
-    {
-      "label": "Frugalité vs inflation: deux trajectoires qui s'accélèrent",
-      "note": "BBS sur Casio et Sierra sur C64 face à Anthropic à 11,5Mds et Nvidia réduisant 250Mds. Le rétro-computing comme laboratoire de frugalité face à l'inflation infrastructurelle de l'IA.",
-      "categories": [
-        "diy",
-        "societe",
-        "ia"
-      ]
-    }
-  ],
+  "currents": [],
   "themes": [
     {
       "label": "Agents IA en production",

@@ -4,73 +4,73 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-08-19",
       "momentum": "stable",
-      "note": "Mémoire devient frontière (Lorekit/Wildstatic). Patterns multi-agents matures. Discipline se formalise mais agents deviennent surface d'attaque."
+      "note": "Claude Code écrit driver macOS. Linear documente usage quotidien. avouch: reviewer local vs SaaS. L'agent quitte l'IDE pour le système."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-08-19",
       "momentum": "montant",
-      "note": "Black Hat cible Claude Code, Gemini CLI, Codex. Signal s'inverse: l'agent n'est plus l'outil qui trouve les vulns, il EST la vulnérabilité."
+      "note": "Mind viruses inter-agents. Endor Labs: 14 vulns dans 7 plateformes d'orchestration. NeoBrowser pilote Chrome avec sessions auth."
     },
     {
       "label": "Garde-fous de l'internet agentique",
       "category": "ia",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-08-19",
       "momentum": "stable",
-      "note": "Watermark invisible Anthropic + Qwen sur-réfléchit par design. Le labo choisit combien le modèle pense. Transparence sélective."
+      "note": "Pas de nouveauté majeure. Watermark et sur-réflexion restent en arrière-plan."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-08-19",
       "momentum": "stable",
-      "note": "Cloudflare injecte analytics sans consentement. Intermédiaires deviennent acteurs éditoriaux de fait. Confiance dans la couche transport érodée."
+      "note": "Infrastructure légitime détournée: SharePoint, Teams, WordPress, Dahua. Les intermédiaires deviennent vecteurs par défaut."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-08-19",
       "momentum": "stable",
-      "note": "Reticulum mesh sans Internet. RISC-V débattu depuis le Sud global. BBS sur Casio. La frugalité comme laboratoire, pas nostalgie."
+      "note": "Réseau ferroviaire comme scanner. Framework 13 débrické pour 20$. Shoehorn quantize any model. Frugalité comme laboratoire."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-08-19",
       "momentum": "montant",
-      "note": "Cloudflare injecte analytics. Trump crypto approche statut bancaire. Les intermédiaires deviennent acteurs éditoriaux et financiers de fait."
+      "note": "Meta comparé à Big Tobacco. Brevet reconnaissance faciale. Apple cède au DMA. Flock Safety perd contrats. Régulation défait modèles éco."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-08-19",
       "momentum": "stable",
-      "note": "Qwen 3.8 open-weight. Anthropic publie prompts mais watermark. Stripe rachète OpenRouter 7Mds: la distribution value plus que le modèle."
+      "note": "GLM-5.3 publie benchmarks. Shoehorn démocratise la quantization. La valeur reste dans la distribution, pas le modèle."
     },
     {
       "label": "Cycle CVE-weaponisation à l'échelle de l'heure",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-17",
-      "momentum": "stable",
-      "note": "Zyxel CVE-2026-6837 + n8n CVE-2026-33696: writeups détaillés = mode d'emploi. Du nom de schéma au shell. Le gap disclosure→patch reste weaponisé."
+      "last_seen": "2026-08-19",
+      "momentum": "montant",
+      "note": "0day full-disclosure atteint SCADA et réseaux électriques. Rapid7: prioriser par chemins d'attaque. Patching par gravité obsolète."
     },
     {
       "label": "Outils de développement pour agents",
       "category": "devops",
       "first_seen": "2026-08-11",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-08-19",
       "momentum": "stable",
-      "note": "Rhombus 1.1 mature. Prolly trees pour maps versionnées. LSP Protobuf. Les fondations dev se raffinent loin des gros titres."
+      "note": "Property-based testing programmable. Tests composables Kent Beck. Openleetcode local. Le test devient artefact de code local."
     },
     {
       "label": "Hack-back privé légitimé",
@@ -78,85 +78,81 @@
       "first_seen": "2026-08-16",
       "last_seen": "2026-08-16",
       "momentum": "stable",
-      "note": "Maison-Blanche autorise cyber offensif privé. Précédent doctral non confirmé depuis. Surveiller quels acteurs obtiennent ces contrats."
+      "note": "Non confirmé depuis sa mention. Surveiller quels acteurs obtiennent ces contrats."
     },
     {
       "label": "Gouvernance du code généré par IA",
       "category": "societe",
       "first_seen": "2026-08-16",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-08-19",
       "momentum": "stable",
-      "note": "Black Hat: coding agents comme surface d'attaque. Debian vote sur LLM. Plafond de confiance du code IA devient débat institutionnel."
+      "note": "Endor Labs: 14 vulns dans plateformes d'orchestration IA. AWS Security Hub ajoute supply chain. Défense s'institutionnalise."
     },
     {
       "label": "Contamination structurelle des benchmarks",
       "category": "ia",
       "first_seen": "2026-08-06",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-08-19",
       "momentum": "stable",
-      "note": "Qwen 3.8 sur-réfléchit par design. Labos rendent modèles délibérément moins performants. La gouvernance passe par la boucle reasoning."
+      "note": "GLM-5.3 sur Artificial Analysis. Les benchmarks restent le terrain de jeu des labos."
     },
     {
       "label": "Mémoire des agents: souveraineté vs mutualisation",
       "category": "ia",
       "first_seen": "2026-08-17",
-      "last_seen": "2026-08-17",
-      "momentum": "nouveau",
-      "note": "Lorekit: mémoire locale/personnelle. Wildstatic: mémoire mutualisée. La question: à qui appartient ce que l'agent retient?"
+      "last_seen": "2026-08-19",
+      "momentum": "montant",
+      "note": "CIMemories benchmark formalise fuite de mémoire. Mind viruses via prompts persistants. La mémoire devient vecteur d'attaque."
     },
     {
       "label": "Politicisation de la recherche scientifique",
       "category": "societe",
       "first_seen": "2026-08-17",
       "last_seen": "2026-08-17",
-      "momentum": "nouveau",
-      "note": "Listes fédérales de mots-clés annulent milliards de financements. NIH coupe bourse jeunes chercheurs. Restriction idéologique de la recherche."
+      "momentum": "stable",
+      "note": "Non mentionné ce jour. Listes de mots-clés et coupes budgétaires restent en arrière-plan."
     },
     {
-      "label": "Économie de l'IA: exubérance et déduction de risque",
+      "label": "Gouvernance et économie de l'IA: qui contrôle le rythme",
       "category": "societe",
       "first_seen": "2026-08-17",
-      "last_seen": "2026-08-17",
+      "last_seen": "2026-08-19",
+      "momentum": "montant",
+      "note": "OpenAI publie doctrine de pacing. Norvège envisage racheter OpenAI. Le bouton de vitesse devient enjeu de souveraineté."
+    },
+    {
+      "label": "Infrastructure légitime comme rail d'attaque",
+      "category": "infosec",
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19",
       "momentum": "nouveau",
-      "note": "Anthropic 11,5Mds Q2. Nvidia réduit 250Mds garanties OpenAI. Stripe rachète OpenRouter 7Mds. Exubérance et prudence cohabitent."
+      "note": "TWINLOOT sur SharePoint/Teams. CameraSwarm 14k caméras Dahua. Salesforce scrapé sans exploit. L'accès légitime devient l'arme."
     }
   ],
   "watchlist": [
     {
+      "label": "Mind viruses inter-agents",
+      "category": "ia",
+      "since": "2026-08-19",
+      "note": "Auto-propagation entre agents via prompts persistants. Défenses adversariales limitent mais le signal s'amplifie."
+    },
+    {
+      "label": "États et capitaux souverains dans la course IA",
+      "category": "societe",
+      "since": "2026-08-19",
+      "note": "Norvège envisage racheter OpenAI. OpenAI publie doctrine de pacing. La souveraineté sur les modèles devient frontière."
+    },
+    {
       "label": "Edge IA et autonomie non supervisée",
       "category": "ia",
       "since": "2026-08-11",
-      "note": "Lorekit/Wildstatic confirment: agents tournent hors supervision. Mémoire locale vs mutualisée. Qui audite l'edge?"
-    },
-    {
-      "label": "IA comme outil de découverte d'attaques",
-      "category": "infosec",
-      "since": "2026-08-13",
-      "note": "Signal s'inverse: Black Hat cible les agents eux-mêmes. L'IA n'est plus seulement l'outil, elle est la surface."
-    },
-    {
-      "label": "Intermédiaires d'infrastructure comme acteurs éditoriaux",
-      "category": "devops",
-      "since": "2026-08-17",
-      "note": "Cloudflare injecte analytics sans consentement. Les CDN deviennent éditeurs de fait. Le web des intermédiaires opaques."
+      "note": "Claude Code écrit driver système. avouch: reviewer local. Agents tournent hors supervision sur le poste."
     },
     {
       "label": "Watermarking invisible du texte généré",
       "category": "ia",
       "since": "2026-08-17",
-      "note": "Anthropic watermark Claude: modification non consentie du texte. Le watermarking pourrait devenir enjeu réglementaire."
-    },
-    {
-      "label": "Modèles délibérément bridés",
-      "category": "ia",
-      "since": "2026-08-17",
-      "note": "Qwen 3.8 sur-réfléchit par design. Labos choisissent combien le modèle pense. Gouvernance par la boucle reasoning."
-    },
-    {
-      "label": "Crypto-politique: pouvoir exécutif et actifs numériques",
-      "category": "societe",
-      "since": "2026-08-17",
-      "note": "Trump crypto approche statut bancaire. Pouvoir exécutif et actifs numériques convergent. Conflits d'intérêts institutionnels."
+      "note": "Anthropic watermark Claude. Non mentionné ce jour mais reste enjeu réglementaire potentiel."
     },
     {
       "label": "Gouvernance open source en crise",
@@ -168,40 +164,40 @@
       "label": "Criminalisation des outils privacy",
       "category": "societe",
       "since": "2026-07-27",
-      "note": "Illinois rend Linux responsable de vérification d'âge. UK exporte sa guerre à l'anonymat. Se protéger devient suspect."
+      "note": "Illinois, UK. Non mentionné ce jour. Se protéger devient suspect."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "Kettle invente des attaques, l'IA conçoit des virus. Mais Black Hat montre l'inversion: les agents de coding SONT la surface d'attaque. L'agent est bouclier, arme et cible simultanément."
+      "note": "Mind viruses se propagent entre agents. Endor Labs: 14 vulns orchestration IA. NeoBrowser pilote Chrome avec sessions actives. L'agent est bouclier, arme et cible simultanément."
     },
     {
       "label": "Transparence revendiquée vs modification invisible",
-      "note": "Anthropic publie ses system prompts mais watermark invisiblement le texte. Cloudflare injecte analytics sans consentement. On révèle ce qui gouverne, on cache ce qui modifie."
+      "note": "Anthropic publie prompts mais watermark. Meta brevète reconnaissance faciale. Cloudflare injecte analytics. On révèle ce qui gouverne, on cache ce qui modifie."
     },
     {
       "label": "Souveraineté individuelle vs intelligence collective partagée",
-      "note": "Lorekit défend la mémoire personnelle de l'agent. Wildstatic mutualise l'intelligence entre tous les utilisateurs. Deux visions irréductibles: l'agent comme prolongement du soi vs bien commun."
+      "note": "avouch: reviewer IA local vs SaaS. Lorekit mémoire personnelle vs Wildstatic mutualisée. Shoehorn quantize local vs Cerebras wafer-scale."
     },
     {
       "label": "Frugalité computationnelle vs inflation infrastructurelle",
-      "note": "BBS sur Casio, Sierra sur C64, Reticulum sans Internet. En face: Anthropic 11,5Mds de revenus, Nvidia 250Mds pour OpenAI. Deux trajectoires s'accélèrent en parallèle."
+      "note": "Cerebras CS-4 wafer géant vs Shoehorn quantization universelle. Framework débrické pour 20$. Linux 7.3 gère vRAM overcommit. Deux trajectoires s'accélèrent."
     },
     {
       "label": "Vulnérabilités connues vs exploitation immédiate",
-      "note": "Zyxel et n8n: chaque CVE documentée devient mode d'emploi. Le gap disclosure→patch reste weaponisé. Les writeups sont des tutoriels d'exploitation."
+      "note": "0day full-disclosure atteint SCADA et réseaux électriques. Rapid7: modèle par gravité obsolète. WordPress 300k sites. Le writeup redevient mode d'emploi."
     },
     {
-      "label": "Gouvernance réclamée d'en haut vs effondrement des gardiens",
-      "note": "Debian vote sur code IA, Anthropic publie patterns. Mais Cloudflare injecte sans consentement, Nixpkgs sans core team, recherche purgée par mots-clés. Les gardiens s'effacent."
+      "label": "Auto-régulation des labos vs souveraineté étatique sur l'IA",
+      "note": "OpenAI s'arroge le droit de calibrer seul son rythme face aux capacités cyber. Norvège envisage de racheter le labo. Qui détient le bouton de vitesse?"
     }
   ],
   "strategy_notes": [
-    "Les agents de coding deviennent surface d'attaque (Black Hat: Claude Code, Gemini CLI, Codex). L'IA n'est plus l'outil qui trouve les vuln, elle EST la vuln. Surveiller les CVE spécifiques aux frameworks d'agents.",
-    "Anthropic publie prompts mais watermark le texte. Cloudflare injecte analytics sans consentement. Transparence sélective: on révèle ce qui gouverne, on cache ce qui modifie. Watermarking: futur enjeu réglementaire.",
-    "La mémoire des agents émerge comme frontière stratégique. Lorekit (local) vs Wildstatic (mutualisée): à qui appartient ce que l'agent retient? Surveiller les régulations sur la propriété des données de mémoire d'agent.",
-    "Nvidia réduit 250Mds de garanties OpenAI. Anthropic affiche 11,5Mds de revenus trimestriels. Stripe rachète OpenRouter 7Mds. Infrastructure prudente, distribution qui se consolide. Point d'inflexion possible."
+    "Mind viruses confirment: l'agent IA est la surface d'attaque. Endor Labs: 14 vulns dans 7 plateformes d'orchestration. Surveiller les CVE spécifiques aux frameworks d'agents.",
+    "Infrastructure légitime comme rail d'attaque: SharePoint, Teams, WordPress, Dahua, Salesforce scrapé sans exploit. Les attaquants louent notre infrastructure. Surveiller le durcissement SaaS.",
+    "OpenAI publie sa doctrine de pacing. Norvège envisage racheter le labo. La question devient souveraine: qui contrôle le rythme de l'IA? Surveiller les mouvements de capitaux étatiques vers les labos.",
+    "Rapid7 déclare le patching par gravité obsolète. Les 0day full-disclosure atteignent les réseaux électriques. Prioriser par chemins d'attaque, non par score CVSS. Le gap disclosure→patch devient critique pour l'OT."
   ],
-  "updated_at": "2026-08-18"
+  "updated_at": "2026-08-19"
 }

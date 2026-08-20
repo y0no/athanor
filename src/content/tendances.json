@@ -1,45 +1,10 @@
 {
-  "updated_at": "2026-08-19",
+  "updated_at": "2026-08-20",
   "synthesis": {
-    "headline": "L'agent IA devient sa propre vulnérabilité",
-    "narrative": "Les <em>mind viruses</em> qui se propagent d'agent à agent via des prompts persistants confirment l'inversion observée depuis Black Hat : l'agent n'est plus l'outil qui trouve les vulnérabilités, il <strong>est</strong> la vulnérabilité. Pendant ce temps, les attaquants n'ont plus besoin d'infrastructures dédiées — ils louent les nôtres via <strong>SharePoint</strong>, <strong>Teams</strong> ou des milliers de sites <strong>WordPress</strong> compromis, pendant que les 0day en full-disclosure atteignent les réseaux électriques. Face à cette double exposition, <strong>Cerebras</strong> pousse le wafer-scale pendant que <code>Shoehorn</code> promet la quantization universelle : deux trajectoires qui s'accélèrent en parallèle. Et pendant qu'<strong>OpenAI</strong> s'arroge le droit de calibrer seul son rythme face aux capacités cyber critiques, la <strong>Norvège</strong> envisage de racheter le labo — la question n'est plus technique, c'est <em>qui détient le bouton de vitesse</em> de l'IA."
+    "headline": "IA comme outil de défense vs IA comme infrastructure de compromission",
+    "narrative": "Mind viruses confirment: l'agent IA est la surface d'attaque. Endor Labs: 14 vulns dans 7 plateformes d'orchestration. Surveiller les CVE spécifiques aux frameworks d'agents."
   },
-  "currents": [
-    {
-      "label": "L'agent IA devient la surface d'attaque universelle",
-      "note": "Mind viruses inter-agents, Endor Labs 14 vulns, NeoBrowser sur sessions authentifiées. L'inversion Black Hat se confirme: l'agent est outil, arme et cible à la fois.",
-      "categories": [
-        "ia",
-        "infosec",
-        "devops"
-      ]
-    },
-    {
-      "label": "L'infrastructure légitime devient l'arme",
-      "note": "TWINLOOT sur SharePoint/Teams, CameraSwarm sur Dahua, scraping Salesforce sans exploit. Les attaquants louent notre infrastructure au lieu de bâtir la leur.",
-      "categories": [
-        "infosec",
-        "societe"
-      ]
-    },
-    {
-      "label": "Frugalité vs inflation: deux trajectoires qui s'accélèrent",
-      "note": "Cerebras CS-4 wafer-scale vs Shoehorn quantization. Framework débrické pour 20$. Linux gère vRAM overcommit. L'écosystème tire le maximum de silicon trop cher.",
-      "categories": [
-        "ia",
-        "diy",
-        "devops"
-      ]
-    },
-    {
-      "label": "Qui détient le bouton de vitesse de l'IA",
-      "note": "OpenAI publie sa doctrine de pacing. Norvège envisage racheter le labo. Meta au tribunal. La gouvernance de l'IA devient question de souveraineté nationale.",
-      "categories": [
-        "ia",
-        "societe"
-      ]
-    }
-  ],
+  "currents": [],
   "themes": [
     {
       "label": "Agents IA en production",

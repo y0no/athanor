@@ -1,98 +1,117 @@
 {
-  "updated_at": "2026-08-20",
+  "updated_at": "2026-08-21",
   "synthesis": {
-    "headline": "IA comme outil de défense vs IA comme infrastructure de compromission",
-    "narrative": "Mind viruses confirment: l'agent IA est la surface d'attaque. Endor Labs: 14 vulns dans 7 plateformes d'orchestration. Surveiller les CVE spécifiques aux frameworks d'agents."
+    "headline": "L'agent IA s'arme, se monétise et échappe à toute gouvernance",
+    "narrative": "Les <strong>agents IA</strong> entrent dans une phase <em>artisanale</em> — Seed s'auto-modifie, Vomit emploie un second LLM pour nettoyer Claude 5 — pendant qu'<strong>Argentic</strong> installe un péage Lightning pour monétiser le crawl agentique. Simultanément, l'IA devient <strong>outil offensif</strong> contre les infrastructures critiques (exploits générés pour PLC Siemens), <strong>cible</strong> (injection contextuelle contre Grok) et <strong>champ de bataille</strong> (OpenAI démontre une cyberattaque autonome contre Hugging Face). Le framework <code>CUSTODY</code> émerge comme première tentative structurelle de contenir l'agent, tandis que le <em>Shady AI</em> de Meta prouve que la fuite vient désormais de l'outil homologué, pas de l'outil interdit. Pendant ce temps, la <strong>chaîne d'approvisionnement</strong> s'effrite : 245 millions de téléchargements Rust contaminés au build, le driver Defender détourné en primitive Ring 0 — la signature devient le vecteur, pas le bouclier."
   },
-  "currents": [],
+  "currents": [
+    {
+      "label": "L'agent IA comme nexus offensif et économique",
+      "note": "L'agent est construit artisanalement (Seed, Vomit), armé (exploits PLC, cyberattaque OpenAI), monétisé (péage Argentic) et ingouverné (Shady AI Meta). CUSTODY: 1er containment structurel.",
+      "categories": [
+        "ia",
+        "infosec",
+        "societe"
+      ]
+    },
+    {
+      "label": "Érosion systémique de la confiance dans les composants de base",
+      "note": "Rust crates 245M dl contaminés au build, Defender weaponisé en Ring 0, isolated-vm évasion. AWS x10 et panne GitHub: la fiabilité devient risque de premier ordre quand l'IA entre dans la boucle.",
+      "categories": [
+        "infosec",
+        "devops"
+      ]
+    },
+    {
+      "label": "Souveraineté: la tech cesse d'être un marché pour devenir territoire",
+      "note": "Micron $10B à Boise, TRON étouffé par Washington. Auto-hébergement Kiwix/Mastodon, retro-computing 68K PCI. États et individus reprennent la main sur le matériel et l'infrastructure.",
+      "categories": [
+        "societe",
+        "diy",
+        "devops"
+      ]
+    }
+  ],
   "themes": [
     {
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-19",
-      "momentum": "stable",
-      "note": "Claude Code écrit driver macOS. Linear documente usage quotidien. avouch: reviewer local vs SaaS. L'agent quitte l'IDE pour le système."
+      "last_seen": "2026-08-21",
+      "momentum": "montant",
+      "note": "L'agent n'est plus un produit mais un objet qu'on construit. Seed auto-modifiable, Vomit corrige Claude 5 par un autre LLM. Artisanat agentique."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-19",
+      "last_seen": "2026-08-21",
       "momentum": "montant",
-      "note": "Mind viruses inter-agents. Endor Labs: 14 vulns dans 7 plateformes d'orchestration. NeoBrowser pilote Chrome avec sessions auth."
+      "note": "Exploits IA pour PLC Siemens. Injection contextuelle vs Grok. OpenAI cyberattaque autonome vs Hugging Face. CUSTODY: 1er framework de containment."
     },
     {
       "label": "Garde-fous de l'internet agentique",
       "category": "ia",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-19",
-      "momentum": "stable",
-      "note": "Pas de nouveauté majeure. Watermark et sur-réflexion restent en arrière-plan."
+      "last_seen": "2026-08-21",
+      "momentum": "déclin",
+      "note": "Watermark et sur-réflexion stagnent. L'angle économique (Argentic) émerge ailleurs. Les garde-fous safety restent en arrière-plan."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-08-19",
+      "last_seen": "2026-08-21",
       "momentum": "stable",
-      "note": "Infrastructure légitime détournée: SharePoint, Teams, WordPress, Dahua. Les intermédiaires deviennent vecteurs par défaut."
+      "note": "Rust crates 245M dl contaminés au build. Defender détourné en primitive Ring 0. isolated-vm escape. La signature devient le vecteur."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-08-19",
+      "last_seen": "2026-08-21",
       "momentum": "stable",
-      "note": "Réseau ferroviaire comme scanner. Framework 13 débrické pour 20$. Shoehorn quantize any model. Frugalité comme laboratoire."
+      "note": "Zork sur Steam Controller en Rust. 68K homebrew avec bus PCI. OLED pliants vs poussière. PLA fragile >65°C. Frugalité comme laboratoire."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-19",
-      "momentum": "montant",
-      "note": "Meta comparé à Big Tobacco. Brevet reconnaissance faciale. Apple cède au DMA. Flock Safety perd contrats. Régulation défait modèles éco."
+      "last_seen": "2026-08-21",
+      "momentum": "stable",
+      "note": "Surveillance amplifiée par IA. Cyber-police bridée par financement et culture. AliExpress fingerprinting WebAudio. Capacité > régulation."
     },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-08-19",
+      "last_seen": "2026-08-21",
       "momentum": "stable",
-      "note": "GLM-5.3 publie benchmarks. Shoehorn démocratise la quantization. La valeur reste dans la distribution, pas le modèle."
+      "note": "Vomit: second LLM dédié au nettoyage de Claude 5. La valeur reste dans la correction et la distribution, pas le modèle."
     },
     {
       "label": "Cycle CVE-weaponisation à l'échelle de l'heure",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-19",
+      "last_seen": "2026-08-21",
       "momentum": "montant",
-      "note": "0day full-disclosure atteint SCADA et réseaux électriques. Rapid7: prioriser par chemins d'attaque. Patching par gravité obsolète."
+      "note": "GitLab CVE exploitée en jours. Entra ID CVSS 10.0 exploitée. ShieldBreak: zero-day Defender sans patch, CISA BOD 14 jours. CVSS ne suffit plus."
     },
     {
       "label": "Outils de développement pour agents",
       "category": "devops",
       "first_seen": "2026-08-11",
-      "last_seen": "2026-08-19",
-      "momentum": "stable",
-      "note": "Property-based testing programmable. Tests composables Kent Beck. Openleetcode local. Le test devient artefact de code local."
-    },
-    {
-      "label": "Hack-back privé légitimé",
-      "category": "infosec",
-      "first_seen": "2026-08-16",
-      "last_seen": "2026-08-16",
-      "momentum": "stable",
-      "note": "Non confirmé depuis sa mention. Surveiller quels acteurs obtiennent ces contrats."
+      "last_seen": "2026-08-21",
+      "momentum": "montant",
+      "note": "Seed: harness auto-modifiable minimal. Huzzah: paradigme inédit. Vomit: LLM corrige LLM. L'outillage devient artisanal et auto-réflexif."
     },
     {
       "label": "Gouvernance du code généré par IA",
       "category": "societe",
       "first_seen": "2026-08-16",
-      "last_seen": "2026-08-19",
+      "last_seen": "2026-08-21",
       "momentum": "stable",
-      "note": "Endor Labs: 14 vulns dans plateformes d'orchestration IA. AWS Security Hub ajoute supply chain. Défense s'institutionnalise."
+      "note": "Shady AI Meta: agent homologué cause Sev 1. CUSTODY: réseau + access control par intention. Défense en retard."
     },
     {
       "label": "Contamination structurelle des benchmarks",
@@ -100,39 +119,31 @@
       "first_seen": "2026-08-06",
       "last_seen": "2026-08-19",
       "momentum": "stable",
-      "note": "GLM-5.3 sur Artificial Analysis. Les benchmarks restent le terrain de jeu des labos."
+      "note": "Non mentionné ce jour. Les benchmarks restent le terrain de jeu des labos."
     },
     {
       "label": "Mémoire des agents: souveraineté vs mutualisation",
       "category": "ia",
       "first_seen": "2026-08-17",
       "last_seen": "2026-08-19",
-      "momentum": "montant",
-      "note": "CIMemories benchmark formalise fuite de mémoire. Mind viruses via prompts persistants. La mémoire devient vecteur d'attaque."
-    },
-    {
-      "label": "Politicisation de la recherche scientifique",
-      "category": "societe",
-      "first_seen": "2026-08-17",
-      "last_seen": "2026-08-17",
       "momentum": "stable",
-      "note": "Non mentionné ce jour. Listes de mots-clés et coupes budgétaires restent en arrière-plan."
+      "note": "Non mentionné ce jour. CIMemories et mind viruses restent en arrière-plan."
     },
     {
       "label": "Gouvernance et économie de l'IA: qui contrôle le rythme",
       "category": "societe",
       "first_seen": "2026-08-17",
-      "last_seen": "2026-08-19",
+      "last_seen": "2026-08-21",
       "momentum": "montant",
-      "note": "OpenAI publie doctrine de pacing. Norvège envisage racheter OpenAI. Le bouton de vitesse devient enjeu de souveraineté."
+      "note": "Micron $10B hub Boise. TRON: Japan étouffé par Washington. La tech cesse d'être un marché pour devenir territoire."
     },
     {
-      "label": "Infrastructure légitime comme rail d'attaque",
-      "category": "infosec",
-      "first_seen": "2026-08-19",
-      "last_seen": "2026-08-19",
+      "label": "Économie de l'internet agentique",
+      "category": "ia",
+      "first_seen": "2026-08-21",
+      "last_seen": "2026-08-21",
       "momentum": "nouveau",
-      "note": "TWINLOOT sur SharePoint/Teams. CameraSwarm 14k caméras Dahua. Salesforce scrapé sans exploit. L'accès légitime devient l'arme."
+      "note": "Argentic: péage Lightning L402 pour facturer les agents de scraping. Monétisation programmable remplace blocage binaire."
     }
   ],
   "watchlist": [
@@ -140,63 +151,69 @@
       "label": "Mind viruses inter-agents",
       "category": "ia",
       "since": "2026-08-19",
-      "note": "Auto-propagation entre agents via prompts persistants. Défenses adversariales limitent mais le signal s'amplifie."
+      "note": "CUSTODY framework répond aux mind viruses. La propagation reste un signal faible mais le containment se structure."
     },
     {
       "label": "États et capitaux souverains dans la course IA",
       "category": "societe",
       "since": "2026-08-19",
-      "note": "Norvège envisage racheter OpenAI. OpenAI publie doctrine de pacing. La souveraineté sur les modèles devient frontière."
+      "note": "Micron $10B à Boise. TRON rappelé. La souveraineté industrielle sur les semiconducteurs s'affiche sans complexe."
     },
     {
       "label": "Edge IA et autonomie non supervisée",
       "category": "ia",
       "since": "2026-08-11",
-      "note": "Claude Code écrit driver système. avouch: reviewer local. Agents tournent hors supervision sur le poste."
+      "note": "Seed: agent auto-modifiable. L'agent se réécrit lui-même sur le poste. Confirme la trajectoire hors supervision."
     },
     {
       "label": "Watermarking invisible du texte généré",
       "category": "ia",
       "since": "2026-08-17",
-      "note": "Anthropic watermark Claude. Non mentionné ce jour mais reste enjeu réglementaire potentiel."
+      "note": "Non mentionné ce jour. Reste enjeu réglementaire potentiel mais stagnant."
     },
     {
       "label": "Gouvernance open source en crise",
       "category": "devops",
       "since": "2026-08-08",
-      "note": "Debian vote sur IA. Nixpkgs sans core team. Le modèle bénévole vacille pendant que l'IA accélère."
+      "note": "Rust crates compromis via compte mainteneur. Le modèle bénévole vacille pendant que l'IA accélère."
     },
     {
-      "label": "Criminalisation des outils privacy",
+      "label": "CUSTODY: access control fondé sur intention",
+      "category": "infosec",
+      "since": "2026-08-21",
+      "note": "Premier framework structurel pour contenir agents en réseau. Combine restrictions réseau et intention. Surveiller l'adoption."
+    },
+    {
+      "label": "Shady AI: agents homologués comme vecteur d'incident",
       "category": "societe",
-      "since": "2026-07-27",
-      "note": "Illinois, UK. Non mentionné ce jour. Se protéger devient suspect."
+      "since": "2026-08-21",
+      "note": "Meta Sev 1 causé par agent interne approuvé. La gouvernance ne porte plus sur l'ombre mais sur l'homologué mal encadré."
     }
   ],
   "tensions": [
     {
       "label": "IA comme outil de défense vs IA comme infrastructure de compromission",
-      "note": "Mind viruses se propagent entre agents. Endor Labs: 14 vulns orchestration IA. NeoBrowser pilote Chrome avec sessions actives. L'agent est bouclier, arme et cible simultanément."
+      "note": "Exploits IA générés pour PLC Siemens. OpenAI démontre cyberattaque autonome vs Hugging Face. CUSTODY tente de contenir. L'agent est bouclier, arme et cible simultanément."
     },
     {
       "label": "Transparence revendiquée vs modification invisible",
-      "note": "Anthropic publie prompts mais watermark. Meta brevète reconnaissance faciale. Cloudflare injecte analytics. On révèle ce qui gouverne, on cache ce qui modifie."
+      "note": "AI companies détruisent livres physiques après numérisation. AliExpress fingerprinting WebAudio silencieux. On capture ce qu'on numérise, on cache ce qu'on piste."
     },
     {
       "label": "Souveraineté individuelle vs intelligence collective partagée",
-      "note": "avouch: reviewer IA local vs SaaS. Lorekit mémoire personnelle vs Wildstatic mutualisée. Shoehorn quantize local vs Cerebras wafer-scale."
+      "note": "Seed: agent auto-modifiable local. avouch: reviewer local. Kiwix archive hors-ligne. Mastodon 4.7 décentralisé. La souveraineté individuelle s'organise face à la mutualisation."
     },
     {
       "label": "Frugalité computationnelle vs inflation infrastructurelle",
-      "note": "Cerebras CS-4 wafer géant vs Shoehorn quantization universelle. Framework débrické pour 20$. Linux 7.3 gère vRAM overcommit. Deux trajectoires s'accélèrent."
+      "note": "MicroVM sur Apple Silicon vs AWS Bedrock x10 facturation. Zork sur Steam Controller vs cloud managé. Deux trajectoires s'accélèrent: le bas niveau local et l'inflation cloud."
     },
     {
       "label": "Vulnérabilités connues vs exploitation immédiate",
-      "note": "0day full-disclosure atteint SCADA et réseaux électriques. Rapid7: modèle par gravité obsolète. WordPress 300k sites. Le writeup redevient mode d'emploi."
+      "note": "GitLab exploitée en jours. Entra ID 10.0 en wild. ShieldBreak: zero-day sans patch, CISA 14 jours. Le writeup redevient mode d'emploi, le gap disclosure→patch devient critique."
     },
     {
       "label": "Auto-régulation des labos vs souveraineté étatique sur l'IA",
-      "note": "OpenAI s'arroge le droit de calibrer seul son rythme face aux capacités cyber. Norvège envisage de racheter le labo. Qui détient le bouton de vitesse?"
+      "note": "OpenAI s'arroge le pacing. Micron $10B consolidant semiconducteurs US. TRON rappelle que la bataille pour le contrôle des infrastructures n'est pas neuve. Qui détient le bouton?"
     }
   ]
 }

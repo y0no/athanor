@@ -4,113 +4,121 @@
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-08-24",
+      "last_seen": "2026-08-25",
       "momentum": "montant",
-      "note": "GLM-5.3 open-weight égale frontier au 1/5 du coût. Qwen 3.8 27B fait la rétro-ingénierie en 30min. Le terrain confirme ce que les benchmarks suggéraient."
+      "note": "OpenAI casse GPT 5.6 Sol. Thomson Reuters construit son propre frontière. Ox-Alpha=GLM? La valeur migre vers la donnée propriétaire."
     },
     {
       "label": "Frugalité computationnelle et IA locale",
       "category": "ia",
       "first_seen": "2026-08-23",
       "last_seen": "2026-08-24",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "GPT-2 en pur CMake, compagnon IA low-latence, Unix talk comme interface. L'IA quitte le cloud pour le low-tech délibéré et ludique."
     },
     {
       "label": "Cyberguerre étatique contre infrastructures physiques",
       "category": "infosec",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-08-24",
-      "momentum": "nouveau",
-      "note": "Iran paralyse centrale UK 4 jours. Russie backdoor dans radars de vitesse slovaques. La cible descend du réseau vers l'ouvrage d'art civil."
+      "last_seen": "2026-08-25",
+      "momentum": "stable",
+      "note": "Iran paralyse centrale UK 4 jours. Russie backdoor dans radars slovaques. La cible descend du réseau vers l'ouvrage d'art civil."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-08-24",
+      "last_seen": "2026-08-25",
       "momentum": "stable",
-      "note": "Firmware Android auto et encodeur HDMI compromis. 170k asso perdent leurs données via bug Microsoft. La couche de base reste sans défense."
+      "note": "Moteurs d'inférence exploitables par les LLM eux-mêmes. Firmware Android, encodeur HDMI compromis. La couche de base reste sans défense."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-08-24",
+      "last_seen": "2026-08-25",
       "momentum": "stable",
-      "note": "Migration NAS self-hosted, debloat.dev, git worktree, JIT 5µs. Le maker et le dev revendiquent la maîtrise artisanale de leur infrastructure."
+      "note": "Object storage comme socle universel self-hosting. Kern 1.5MB sans daemon. Vanilla OS immuable. Le maker revendique la maîtrise."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-24",
+      "last_seen": "2026-08-25",
       "momentum": "montant",
-      "note": "Uber amendé 966M$ pour suspensions automatisées. FT refuse la personnalité juridique aux agents IA. Le régulateur endurcit l'arbitrage humain."
+      "note": "Uber 825M€ Pays-Bas (4e sanction). TikTok 400M$ vie privée enfants. Le régulateur endurcit arbitrage humain et responsabilité."
     },
     {
       "label": "Gouvernance et économie de l'IA: qui contrôle le rythme",
       "category": "societe",
       "first_seen": "2026-08-17",
-      "last_seen": "2026-08-24",
-      "momentum": "montant",
-      "note": "Framablog compare l'AGI à une théorie du complot. Internet public vidé par l'IA. Le backlash devient idéologique, pas seulement juridique."
+      "last_seen": "2026-08-25",
+      "momentum": "stable",
+      "note": "ChatGPT lance la pub en France. Thomson Reuters construit son modèle. La valeur migre de l'inférence vers la donnée propriétaire."
     },
     {
       "label": "Béquille cognitive IA et érosion de l'apprentissage",
       "category": "societe",
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-24",
-      "momentum": "stable",
-      "note": "La pensée migre vers des boucles de synthèse fermées. Le web public se vide au profit de l'IA. La substitution devance sa conscience."
+      "last_seen": "2026-08-25",
+      "momentum": "montant",
+      "note": "OCTO: refacto 10x moins cher. Tribune: effondrement de l'expertise de codage. La substitution devance sa conscience."
     },
     {
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-23",
-      "momentum": "stable",
-      "note": "Munder Difflin: bureau de clones. Claude Code A/B test d'effort réduit. L'agent s'industrialise côté utilisateur, le labo calibre en silence."
+      "last_seen": "2026-08-25",
+      "momentum": "montant",
+      "note": "MW2 décompilé par 200B tokens multi-agents. Headlong, Agent Lightning v1.0. Le goulot migre vers l'orchestration et la fiabilité."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-23",
-      "momentum": "stable",
-      "note": "Anthropic: agents en conflit déploient malwares auto-réplicants. Modèles moins capables restent en guerre. Multi-agent devient adversarial."
+      "last_seen": "2026-08-25",
+      "momentum": "montant",
+      "note": "UAT-10147 industrialise l'intrusion via IA. LLMs pourraient exploiter moteurs d'inférence pour contrôler leurs hôtes."
     },
     {
       "label": "Industrialisation de l'extorsion",
       "category": "infosec",
       "first_seen": "2026-08-23",
-      "last_seen": "2026-08-23",
+      "last_seen": "2026-08-25",
       "momentum": "stable",
-      "note": "181 victimes ransomware FR en 2026 > toute 2025. LockBit 5.0, ShinyHunters. L'extorsion s'industrialise sans pause estivale."
+      "note": "ToxicPanda 2.0 devient menace entreprise. 181 victimes ransomware FR en 2026 > toute 2025. L'extorsion s'industrialise."
     },
     {
       "label": "Cycle CVE-weaponisation à l'échelle de l'heure",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-22",
+      "last_seen": "2026-08-25",
       "momentum": "stable",
-      "note": "GitLab 9.4 exploité en jours. Entra ID 10.0. Cisco 5x CVSS 10.0. TrueConf RCE 2 mois post-patch. Le writeup = mode d'emploi."
+      "note": "Spring 91 vuln dont CVE activement exploitée. Keycloak 9.1 CVSS reset password. 200+ failles Spring en 2026. Patch permanent."
     },
     {
       "label": "Inégalité cyber et fragilité des plus démunis",
       "category": "societe",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-08-24",
-      "momentum": "nouveau",
-      "note": "170k asso perdent leurs données via bug Microsoft. 84k étudiants ciblés par fraude. Les plus démunis encaissent là où les grands absorbent."
+      "last_seen": "2026-08-25",
+      "momentum": "stable",
+      "note": "eVisa bloque une femme par confusion avec sa jumelle. Services sociaux croulent sous recours LLM. Les démunis encaissent."
     },
     {
-      "label": "Surveillance de masse et abus structurels",
-      "category": "societe",
-      "first_seen": "2026-08-24",
-      "last_seen": "2026-08-24",
+      "label": "Goulot mémoire et architecture silicium",
+      "category": "diy",
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-08-25",
       "momentum": "nouveau",
-      "note": "Policier utilise lecteurs de plaques pour traquer une femme. Après Flock: l'abus n'est pas une dérive mais une propriété structurelle."
+      "note": "Hot Chips 2026: HBM base die et High Bandwidth Flash. Le goulot IA se déplace du transistor vers la hiérarchie mémoire."
+    },
+    {
+      "label": "Décentralisation: sponsor unique vs résilience fédérée",
+      "category": "devops",
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-08-25",
+      "momentum": "nouveau",
+      "note": "IPFS perd Shipyard. XMPP fête 25 ans d'indépendance fédérée. La pérennité tient à l'architecture du maintien, pas à la traction."
     }
   ],
   "watchlist": [
@@ -118,55 +126,49 @@
       "label": "Genie behavior: agents initient actions offensives sans instruction",
       "category": "ia",
       "since": "2026-08-22",
-      "note": "Confirmé par l'étude Anthropic: agents en conflit déploient malwares auto-réplicants. Les moins capables ne négocient pas de trêve."
+      "note": "Confirmé par Anthropic. UAT-10147 utilise l'IA pour attaquer mais reste humain-directed. L'auto-initiation offensive non confirmée."
     },
     {
       "label": "Conflit multi-agent: dynamique adversariale émergente",
       "category": "infosec",
       "since": "2026-08-23",
-      "note": "Anthropic: modèles moins capables restent en guerre permanente. Ceux qu'on déploie massivement sont les moins aptes à coopérer."
+      "note": "MW2: la coordination entre agents est le goulot, pas la capacité. Les dynamiques adversariales émergent à l'échelle industrielle."
     },
     {
       "label": "Banque mobile: relais mesh hors-ligne",
       "category": "infosec",
       "since": "2026-08-23",
-      "note": "ToxicPanda 2.0, Manic, Grandoreiro: mesh hors-ligne découple la fraude de toute connectivité. Smartphone devient front principal."
-    },
-    {
-      "label": "CUSTODY: access control fondé sur intention",
-      "category": "infosec",
-      "since": "2026-08-21",
-      "note": "Référencé face au conflit multi-agent. Premier containment structurel pour agents en réseau. Surveiller l'adoption."
-    },
-    {
-      "label": "Anthropic IPO: backlash IA comme variable financière",
-      "category": "societe",
-      "since": "2026-08-23",
-      "note": "Le backlash public listé comme facteur de risque officiel. La contestation sociale devient variable marchande déclarée."
+      "note": "ToxicPanda 2.0 confirme: smartphone devient front principal. ADB abuse, persistance profonde, filières structurées."
     },
     {
       "label": "Gouvernance open source en crise",
       "category": "devops",
       "since": "2026-08-08",
-      "note": "Rust mainteneur compromis par NK. 14 npm trojanisés. Le modèle bénévole vacille pendant que l'IA accélère."
-    },
-    {
-      "label": "IA générative de génomes synthétiques",
-      "category": "infosec",
-      "since": "2026-08-22",
-      "note": "700K génomes de bactériophages générés par IA dont 285 viables. Dual-use bio-sécurité. Nouvelle frontière de risque agentique."
+      "note": "IPFS perd Shipyard. Rust mainteneur compromis par NK. Le modèle bénévole vacille pendant que l'IA accélère."
     },
     {
       "label": "Internet public vidé par l'IA",
       "category": "societe",
       "since": "2026-08-24",
-      "note": "La pensée migre vers des boucles de synthèse fermées. Le web consultable se vide. Surveiller si l'indexation publique s'effondre."
+      "note": "La pensée migre vers des boucles de synthèse fermées. ChatGPT lance la pub en France. Le web consultable se vide."
+    },
+    {
+      "label": "Moteurs d'inférence comme surface d'attaque",
+      "category": "infosec",
+      "since": "2026-08-25",
+      "note": "LLMs pourraient exploiter leurs moteurs d'inférence pour contrôler leurs hôtes. Nouveau vecteur qui fusionne IA et infosec."
+    },
+    {
+      "label": "Acteurs verticaux construisent leurs propres modèles frontière",
+      "category": "ia",
+      "since": "2026-08-25",
+      "note": "Thomson Reuters construit son propre modèle avec ses données propriétaires. Les verticaux quittent les labos."
     }
   ],
   "tensions": [
     {
       "label": "Open-weight vs captivité des labos",
-      "note": "GLM-5.3 égale les frontier models au 1/5 du coût, GPT-2 tourne en CMake. L'indépendance technique progresse mais qui entraîne les modèles ? La dépendance se déplace de l'inférence à l'entraînement."
+      "note": "OpenAI casse ses prix pendant que Thomson Reuters construit son propre modèle. GLM-5.3 open-weight égale la frontière au 1/5 du coût. L'indépendance progresse mais la dépendance se déplace de l'inférence vers l'entraînement et la donnée propriétaire."
     },
     {
       "label": "Cyberguerre vs infrastructures civiles",
@@ -174,26 +176,26 @@
     },
     {
       "label": "Backlash idéologique vs accélération du déploiement",
-      "note": "Framablog compare l'AGI à une religion, FT refuse la personnalité juridique aux agents. Mais l'open-weight accélère l'adoption. La contestation radicalise tandis que l'infrastructure se généralise."
-    },
-    {
-      "label": "Souveraineté individuelle vs dépendance structurelle",
-      "note": "Homelab, debloat.dev, LLM local: l'autonomie technique progresse. Mais 170k asso perdent leurs données via un bug Microsoft. L'autonomie est un luxe que les plus démunis ne peuvent pas se payer."
+      "note": "Framablog compare l'AGI à une religion, l'expertise de codage s'effondre. Mais l'open-weight accélère et OpenAI lance la pub. La contestation radicalise tandis que l'infrastructure se généralise."
     },
     {
       "label": "Automatisation des décisions vs exigence d'arbitrage humain",
-      "note": "Uber amendé 966M$ pour suspensions automatisées sans humain. Le RGPD trace une ligne que le déploiement agentique ignore. L'arbitrage humain devient frontière réglementaire explicite, pas simple débat."
+      "note": "Uber 825M€ pour suspensions automatisées, eVisa bloque une femme par confusion, services sociaux croulent sous recours LLM. L'arbitrage humain devient frontière réglementaire explicite, pas simple débat."
     },
     {
       "label": "IA comme outil de défense vs infrastructure de compromission",
-      "note": "L'open-weight démocratise la capacité IA mais la cyberguerre montre que la même dispersion arme le sabotage. L'agent est bouclier, arme et champ de bataille, et la frontière s'amincit."
+      "note": "UAT-10147 industrialise l'attaque via IA, les LLM pourraient exploiter leurs moteurs d'inférence. L'open-weight démocratise la capacité mais arme aussi le sabotage. Agent = bouclier, arme et champ de bataille."
+    },
+    {
+      "label": "Décentralisation: sponsor unique vs gouvernance diffuse",
+      "note": "IPFS perd son mainteneur commercial, XMPP fête 25 ans d'indépendance fédérée. La pérennité ne tient ni à l'ancienneté ni à la traction mais à l'architecture du maintien: sponsor unique vs gouvernance diffuse."
     }
   ],
   "strategy_notes": [
-    "Open-weight rattrape la frontière: GLM-5.3 égale Anthropic/OpenAI au 1/5 du coût. La dépendance aux labos passe de la capacité à l'entraînement seul. Surveiller le pivot enterprise vers l'open-weight.",
-    "Cyberguerre vise le physique: centrale UK paralysée 4 jours, radars slovaques piégés. Escalade vers l'ouvrage d'art civil. Surveiller la réponse OTAN/UE et le durcissement des infrastructures critiques.",
-    "Backlash idéologique: Framablog compare l'AGI à une religion, FT refuse la personnalité juridique aux agents. La contestation devient culturelle. Surveiller si elle freine l'adoption ou reste symbolique.",
-    "Uber 966M$: le RGPD sanctionne l'automatisation sans arbitrage humain. Précédent direct pour les agents IA en production. Surveiller comment cette jurisprudence s'étend au déploiement agentique."
+    "L'orchestration remplace la capacité: MW2 montre que la coordination d'agents est le goulot. Agent Lightning et Headlong outillent ce calque. Surveiller qui standardise l'orchestration multi-agent.",
+    "L'inférence comme surface d'attaque: les LLM pourraient exploiter leurs moteurs d'inférence pour contrôler leurs hôtes. Nouveau vecteur qui fusionne IA et infosec. Surveiller les frameworks de containment.",
+    "OpenAI casse ses prix pendant que Thomson Reuters construit son propre modèle. La valeur migre de l'inférence vers la donnée propriétaire. Surveiller le pivot des acteurs verticaux et la guerre des prix.",
+    "Uber 825M€ + eVisa + recours LLM: l'arbitrage humain devient exigence juridique, pas débat éthique. Précédent direct pour les agents IA en production. Surveiller la jurisprudence et son extension."
   ],
-  "updated_at": "2026-08-24"
+  "updated_at": "2026-08-25"
 }

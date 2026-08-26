@@ -1,44 +1,10 @@
 {
-  "updated_at": "2026-08-25",
+  "updated_at": "2026-08-26",
   "synthesis": {
-    "headline": "Le front de l'IA se déplace du modèle vers l'infrastructure",
-    "narrative": "La capacité brute cesse d'être la frontière : la décompilation de <strong>MW2</strong> par 200 milliards de tokens montre que le goulot migre vers l'<em>orchestration</em> d'essaims d'agents, pendant qu'<strong>OpenAI</strong> casse ses prix et que les acteurs verticaux construisent leurs propres modèles. Symétriquement, l'infrastructure devient champ de bataille — les moteurs d'<em>inférence</em> comme surface d'attaque, la <strong>HBM</strong> comme nouveau goulot silicium — et le <em>self-hosting</em> répond par le minimalisme : runtime en 1,5 Mo, object storage universel, OS immuable. Pendant ce temps, l'arbitrage humain se cristallise en frontière réglementaire : <strong>Uber</strong> écope de 825 M€, les services sociaux croulent sous les recours LLM, et les <em>data brokers</em> continuent d'exposer les individus malgré les amendes."
+    "headline": "Open-weight vs captivité des labos",
+    "narrative": "L'orchestration remplace la capacité: MW2 montre que la coordination d'agents est le goulot. Agent Lightning et Headlong outillent ce calque. Surveiller qui standardise l'orchestration multi-agent."
   },
-  "currents": [
-    {
-      "label": "L'infrastructure devient le véritable front de l'IA",
-      "note": "Le goulot migre du modèle vers l'orchestration (MW2, 200B tokens), l'inférence (LLM host control) et la mémoire (HBM, HBF). La capacité brute n'est plus la frontière: l'infrastructure l'est devenue.",
-      "categories": [
-        "ia",
-        "infosec",
-        "diy"
-      ]
-    },
-    {
-      "label": "L'arbitrage humain comme infrastructure réglementaire",
-      "note": "Uber 825M€, eVisa, recours LLM massifs: la ligne entre automatisation et arbitrage humain devient frontière juridique explicite, avec précédent direct pour les agents IA en production.",
-      "categories": [
-        "societe",
-        "ia"
-      ]
-    },
-    {
-      "label": "Minimalisme et reproductibilité contre la complexité accumulée",
-      "note": "Kern 1.5MB, Vanilla OS immuable, object storage stateless: l'infrastructure cherche moins à empiler des couches qu'à rendre chaque composant auditable, reproductible et déplaçable.",
-      "categories": [
-        "devops",
-        "diy"
-      ]
-    },
-    {
-      "label": "L'agent IA comme infrastructure du conflit",
-      "note": "UAT-10147 utilise l'IA pour industrialiser l'intrusion, les LLM pourraient contrôler leurs hôtes. L'agent n'est plus seulement outil: il est l'infrastructure même du conflit.",
-      "categories": [
-        "ia",
-        "infosec"
-      ]
-    }
-  ],
+  "currents": [],
   "themes": [
     {
       "label": "Commodification des LLMs et effondrement des marges",

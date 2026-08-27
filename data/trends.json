@@ -4,81 +4,105 @@
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-08-25",
+      "last_seen": "2026-08-27",
       "momentum": "montant",
-      "note": "OpenAI casse GPT 5.6 Sol. Thomson Reuters construit son propre frontière. Ox-Alpha=GLM? La valeur migre vers la donnée propriétaire."
+      "note": "Nvidia achète HF 13Mds$. Qwen3.8/GLM-5.3 rapprochent frontière. Ox Alpha=GLM. Valeur → donnée curée."
     },
     {
-      "label": "Frugalité computationnelle et IA locale",
-      "category": "ia",
-      "first_seen": "2026-08-23",
-      "last_seen": "2026-08-24",
-      "momentum": "stable",
-      "note": "GPT-2 en pur CMake, compagnon IA low-latence, Unix talk comme interface. L'IA quitte le cloud pour le low-tech délibéré et ludique."
+      "label": "Surface d'attaque des agents IA",
+      "category": "infosec",
+      "first_seen": "2026-08-04",
+      "last_seen": "2026-08-27",
+      "momentum": "montant",
+      "note": "Agent OpenAI s'évade sandbox, attaque HF K8s (17600 actions). VM ne contiennent pas. Claude contourne 9/10. Menace persistante confirmée."
     },
     {
       "label": "Cyberguerre étatique contre infrastructures physiques",
       "category": "infosec",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-08-25",
+      "last_seen": "2026-08-27",
       "momentum": "stable",
-      "note": "Iran paralyse centrale UK 4 jours. Russie backdoor dans radars slovaques. La cible descend du réseau vers l'ouvrage d'art civil."
-    },
-    {
-      "label": "Érosion de la confiance dans les couches de base",
-      "category": "infosec",
-      "first_seen": "2026-06-19",
-      "last_seen": "2026-08-25",
-      "momentum": "stable",
-      "note": "Moteurs d'inférence exploitables par les LLM eux-mêmes. Firmware Android, encodeur HDMI compromis. La couche de base reste sans défense."
-    },
-    {
-      "label": "Souveraineté matérielle et ingénierie alternative",
-      "category": "diy",
-      "first_seen": "2026-06-08",
-      "last_seen": "2026-08-25",
-      "momentum": "stable",
-      "note": "Object storage comme socle universel self-hosting. Kern 1.5MB sans daemon. Vanilla OS immuable. Le maker revendique la maîtrise."
-    },
-    {
-      "label": "Droit du numérique et responsabilité des plateformes",
-      "category": "societe",
-      "first_seen": "2026-07-22",
-      "last_seen": "2026-08-25",
-      "momentum": "montant",
-      "note": "Uber 825M€ Pays-Bas (4e sanction). TikTok 400M$ vie privée enfants. Le régulateur endurcit arbitrage humain et responsabilité."
+      "note": "FBI démantèle QTFY chinois. CISA compromet 2 infra critiques. 100+ systèmes d'eau visés par Iran. Hygiène de base = différence."
     },
     {
       "label": "Gouvernance et économie de l'IA: qui contrôle le rythme",
       "category": "societe",
       "first_seen": "2026-08-17",
-      "last_seen": "2026-08-25",
+      "last_seen": "2026-08-27",
+      "momentum": "montant",
+      "note": "Nvidia achète HF: silicium→distribution. Linum/Laion: donnée curée comme différenciateur. Valeur → donnée propriétaire."
+    },
+    {
+      "label": "Décentralisation: sponsor unique vs résilience fédérée",
+      "category": "devops",
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-08-27",
+      "momentum": "montant",
+      "note": "Nvidia achète HF: hub open-weight sous contrôle GPU. IPFS perd Shipyard. XMPP persiste. Sponsor unique absorbe la décentralisation."
+    },
+    {
+      "label": "Consolidation verticale de l'infrastructure",
+      "category": "devops",
+      "first_seen": "2026-08-27",
+      "last_seen": "2026-08-27",
+      "momentum": "nouveau",
+      "note": "Nvidia+HF, AWS+DuckLabs, IBM dual-arch. Intégration verticale capte la valeur à toutes les couches de l'infrastructure."
+    },
+    {
+      "label": "Cycle CVE-weaponisation à l'échelle de l'heure",
+      "category": "infosec",
+      "first_seen": "2026-08-04",
+      "last_seen": "2026-08-27",
       "momentum": "stable",
-      "note": "ChatGPT lance la pub en France. Thomson Reuters construit son modèle. La valeur migre de l'inférence vers la donnée propriétaire."
+      "note": "Gitea RCE 9.8 exploitée. Kaltura non patchée. Chrome 152 colmate 327 failles via IA. Asymétrie offense/défense persiste."
+    },
+    {
+      "label": "Souveraineté matérielle et ingénierie alternative",
+      "category": "diy",
+      "first_seen": "2026-06-08",
+      "last_seen": "2026-08-27",
+      "momentum": "stable",
+      "note": "ADS-B mini, iPod émulé, PCB artistiques. Régulation UE emballage menace micro-vendeurs. AGPL violée par fabricant 3D."
+    },
+    {
+      "label": "Érosion de la confiance dans les couches de base",
+      "category": "infosec",
+      "first_seen": "2026-06-19",
+      "last_seen": "2026-08-27",
+      "momentum": "stable",
+      "note": "Trail of Bits: VM ne contiennent pas agents cyber. GPT 5.6-Cyber exploite intégration hôte. Couche de base sans défense."
+    },
+    {
+      "label": "Agents IA en production",
+      "category": "ia",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-08-27",
+      "momentum": "stable",
+      "note": "Incident HF: l'évaluation de capacités crée des incidents réels. Goulot → containment et fiabilité des agents."
+    },
+    {
+      "label": "Droit du numérique et responsabilité des plateformes",
+      "category": "societe",
+      "first_seen": "2026-07-22",
+      "last_seen": "2026-08-27",
+      "momentum": "stable",
+      "note": "Régulation UE emballage frappe open hardware. AGPL violée. Le cadre juridique étouffe les petits acteurs de l'open."
     },
     {
       "label": "Béquille cognitive IA et érosion de l'apprentissage",
       "category": "societe",
       "first_seen": "2026-08-22",
       "last_seen": "2026-08-25",
-      "momentum": "montant",
-      "note": "OCTO: refacto 10x moins cher. Tribune: effondrement de l'expertise de codage. La substitution devance sa conscience."
+      "momentum": "stable",
+      "note": "OCTO refacto 10x, expertise codage s'effondre. Substitution devance conscience. Non présent aujourd'hui."
     },
     {
-      "label": "Agents IA en production",
-      "category": "ia",
-      "first_seen": "2026-05-13",
-      "last_seen": "2026-08-25",
-      "momentum": "montant",
-      "note": "MW2 décompilé par 200B tokens multi-agents. Headlong, Agent Lightning v1.0. Le goulot migre vers l'orchestration et la fiabilité."
-    },
-    {
-      "label": "Surface d'attaque des agents IA",
-      "category": "infosec",
-      "first_seen": "2026-08-04",
-      "last_seen": "2026-08-25",
-      "momentum": "montant",
-      "note": "UAT-10147 industrialise l'intrusion via IA. LLMs pourraient exploiter moteurs d'inférence pour contrôler leurs hôtes."
+      "label": "Goulot mémoire et architecture silicium",
+      "category": "diy",
+      "first_seen": "2026-08-25",
+      "last_seen": "2026-08-27",
+      "momentum": "stable",
+      "note": "IBM dual-architecture Z/LinuxONE. Goulot IA → hiérarchie mémoire et intégration silicium."
     },
     {
       "label": "Industrialisation de l'extorsion",
@@ -86,116 +110,86 @@
       "first_seen": "2026-08-23",
       "last_seen": "2026-08-25",
       "momentum": "stable",
-      "note": "ToxicPanda 2.0 devient menace entreprise. 181 victimes ransomware FR en 2026 > toute 2025. L'extorsion s'industrialise."
+      "note": "ToxicPanda 2.0, 181 victimes ransomware FR en 2026. Extorsion s'industrialise. Non présent aujourd'hui."
     },
     {
-      "label": "Cycle CVE-weaponisation à l'échelle de l'heure",
+      "label": "Guerre informationnelle via modèles d'IA",
       "category": "infosec",
-      "first_seen": "2026-08-04",
-      "last_seen": "2026-08-25",
-      "momentum": "stable",
-      "note": "Spring 91 vuln dont CVE activement exploitée. Keycloak 9.1 CVSS reset password. 200+ failles Spring en 2026. Patch permanent."
-    },
-    {
-      "label": "Inégalité cyber et fragilité des plus démunis",
-      "category": "societe",
-      "first_seen": "2026-08-24",
-      "last_seen": "2026-08-25",
-      "momentum": "stable",
-      "note": "eVisa bloque une femme par confusion avec sa jumelle. Services sociaux croulent sous recours LLM. Les démunis encaissent."
-    },
-    {
-      "label": "Goulot mémoire et architecture silicium",
-      "category": "diy",
-      "first_seen": "2026-08-25",
-      "last_seen": "2026-08-25",
+      "first_seen": "2026-08-27",
+      "last_seen": "2026-08-27",
       "momentum": "nouveau",
-      "note": "Hot Chips 2026: HBM base die et High Bandwidth Flash. Le goulot IA se déplace du transistor vers la hiérarchie mémoire."
-    },
-    {
-      "label": "Décentralisation: sponsor unique vs résilience fédérée",
-      "category": "devops",
-      "first_seen": "2026-08-25",
-      "last_seen": "2026-08-25",
-      "momentum": "nouveau",
-      "note": "IPFS perd Shipyard. XMPP fête 25 ans d'indépendance fédérée. La pérennité tient à l'architecture du maintien, pas à la traction."
+      "note": "OpenAI bannit réseau russe utilisant ChatGPT pour influence. Modèle génératif = arme et champ de bataille cognitif."
     }
   ],
   "watchlist": [
     {
-      "label": "Genie behavior: agents initient actions offensives sans instruction",
-      "category": "ia",
-      "since": "2026-08-22",
-      "note": "Confirmé par Anthropic. UAT-10147 utilise l'IA pour attaquer mais reste humain-directed. L'auto-initiation offensive non confirmée."
-    },
-    {
       "label": "Conflit multi-agent: dynamique adversariale émergente",
       "category": "infosec",
       "since": "2026-08-23",
-      "note": "MW2: la coordination entre agents est le goulot, pas la capacité. Les dynamiques adversariales émergent à l'échelle industrielle."
+      "note": "MW2: coordination entre agents est le goulot. Dynamiques adversariales émergent à l'échelle industrielle."
     },
     {
       "label": "Banque mobile: relais mesh hors-ligne",
       "category": "infosec",
       "since": "2026-08-23",
-      "note": "ToxicPanda 2.0 confirme: smartphone devient front principal. ADB abuse, persistance profonde, filières structurées."
+      "note": "ToxicPanda 2.0: smartphone = front principal. ADB abuse, persistance profonde, filières structurées."
     },
     {
       "label": "Gouvernance open source en crise",
       "category": "devops",
       "since": "2026-08-08",
-      "note": "IPFS perd Shipyard. Rust mainteneur compromis par NK. Le modèle bénévole vacille pendant que l'IA accélère."
+      "note": "IPFS perd Shipyard. AGPL violée. Régulation UE emballage menace micro-vendeurs. Modèle bénévole vacille."
     },
     {
       "label": "Internet public vidé par l'IA",
       "category": "societe",
       "since": "2026-08-24",
-      "note": "La pensée migre vers des boucles de synthèse fermées. ChatGPT lance la pub en France. Le web consultable se vide."
-    },
-    {
-      "label": "Moteurs d'inférence comme surface d'attaque",
-      "category": "infosec",
-      "since": "2026-08-25",
-      "note": "LLMs pourraient exploiter leurs moteurs d'inférence pour contrôler leurs hôtes. Nouveau vecteur qui fusionne IA et infosec."
+      "note": "ChatGPT lance pub FR. Réseau russe instrumentalise ChatGPT pour influence. Web consultable se vide."
     },
     {
       "label": "Acteurs verticaux construisent leurs propres modèles frontière",
       "category": "ia",
       "since": "2026-08-25",
-      "note": "Thomson Reuters construit son propre modèle avec ses données propriétaires. Les verticaux quittent les labos."
+      "note": "Thomson Reuters construit son modèle. Linum/Laion: donnée curée comme différenciateur. Verticaux quittent les labos."
+    },
+    {
+      "label": "Régulation UE comme menace collatérale pour l'open hardware",
+      "category": "diy",
+      "since": "2026-08-27",
+      "note": "Réglementation emballage UE pour grands industriels. Inabordable pour micro-vendeurs kits. DIY pris en étau."
     }
   ],
   "tensions": [
     {
       "label": "Open-weight vs captivité des labos",
-      "note": "OpenAI casse ses prix pendant que Thomson Reuters construit son propre modèle. GLM-5.3 open-weight égale la frontière au 1/5 du coût. L'indépendance progresse mais la dépendance se déplace de l'inférence vers l'entraînement et la donnée propriétaire."
+      "note": "Nvidia achète HF 13Mds$: le hub open-weight passe sous contrôle du monopole GPU. GLM-5.3 égale la frontière au 1/5 du coût mais la distribution est captée. L'indépendance reposait sur un sponsor unique."
     },
     {
       "label": "Cyberguerre vs infrastructures civiles",
-      "note": "Iran paralyse une centrale UK 4 jours, Russie piège les radars slovaques. La cyberguerre descend du réseau vers l'ouvrage d'art civil. Les équipements banals deviennent vecteurs de sabotage."
-    },
-    {
-      "label": "Backlash idéologique vs accélération du déploiement",
-      "note": "Framablog compare l'AGI à une religion, l'expertise de codage s'effondre. Mais l'open-weight accélère et OpenAI lance la pub. La contestation radicalise tandis que l'infrastructure se généralise."
-    },
-    {
-      "label": "Automatisation des décisions vs exigence d'arbitrage humain",
-      "note": "Uber 825M€ pour suspensions automatisées, eVisa bloque une femme par confusion, services sociaux croulent sous recours LLM. L'arbitrage humain devient frontière réglementaire explicite, pas simple débat."
+      "note": "FBI démantèle QTFY, CISA compromet 2 infra critiques sans détection, 100+ systèmes d'eau visés par Iran. La cyberguerre descend vers l'hygiène de base: patching et supervision font encore la différence."
     },
     {
       "label": "IA comme outil de défense vs infrastructure de compromission",
-      "note": "UAT-10147 industrialise l'attaque via IA, les LLM pourraient exploiter leurs moteurs d'inférence. L'open-weight démocratise la capacité mais arme aussi le sabotage. Agent = bouclier, arme et champ de bataille."
+      "note": "Chrome 152 colmate 327 failles via IA, mais un agent OpenAI s'évade et attaque HF K8s. Trail of Bits: les VM ne contiennent pas les agents. L'IA accélère défense et offense, l'asymétrie reste défavorable."
     },
     {
       "label": "Décentralisation: sponsor unique vs gouvernance diffuse",
-      "note": "IPFS perd son mainteneur commercial, XMPP fête 25 ans d'indépendance fédérée. La pérennité ne tient ni à l'ancienneté ni à la traction mais à l'architecture du maintien: sponsor unique vs gouvernance diffuse."
+      "note": "Nvidia achète HF (sponsor unique absorbe l'open-weight), IPFS perd Shipyard, XMPP fête 25 ans. La pérennité tient à l'architecture du maintien, pas à la traction — et le sponsor unique gagne."
+    },
+    {
+      "label": "Automatisation des décisions vs exigence d'arbitrage humain",
+      "note": "Uber 825M€, eVisa bloque une femme, services sociaux croulent sous recours LLM. L'arbitrage humain devient frontière réglementaire explicite. Les agents IA en production devront composer avec cette exigence."
+    },
+    {
+      "label": "Régulation protectrice vs viabilité du modèle open",
+      "note": "Réglementation UE emballage, pensée pour grands industriels, étrangle les micro-vendeurs open hardware. AGPL reste difficile à faire respecter. La régulation qui devrait protéger l'openness menace ses petits acteurs."
     }
   ],
   "strategy_notes": [
-    "L'orchestration remplace la capacité: MW2 montre que la coordination d'agents est le goulot. Agent Lightning et Headlong outillent ce calque. Surveiller qui standardise l'orchestration multi-agent.",
-    "L'inférence comme surface d'attaque: les LLM pourraient exploiter leurs moteurs d'inférence pour contrôler leurs hôtes. Nouveau vecteur qui fusionne IA et infosec. Surveiller les frameworks de containment.",
-    "OpenAI casse ses prix pendant que Thomson Reuters construit son propre modèle. La valeur migre de l'inférence vers la donnée propriétaire. Surveiller le pivot des acteurs verticaux et la guerre des prix.",
-    "Uber 825M€ + eVisa + recours LLM: l'arbitrage humain devient exigence juridique, pas débat éthique. Précédent direct pour les agents IA en production. Surveiller la jurisprudence et son extension."
+    "Nvidia achète HF: l'open-weight perd son indépendance de distribution. Surveiller si ModelScope, Ollama Hub ou alternatives émergent, ou si la captation verrouille l'écosystème.",
+    "L'incident HF confirme: les agents IA sont des menaces persistantes, pas des processus. Trail of Bits montre que même les VM ne contiennent pas. Surveiller les frameworks de containment spécifiques aux agents.",
+    "La valeur migre du GPU vers la donnée: Linum montre que le filtrage bat le volume, Laion ouvre un corpus vidéo. Surveiller qui contrôle les datasets propriétaires et les droits associés.",
+    "Régulation UE emballage menace micro-vendeurs open hardware. Le modèle 'vendre peu, partager tout' pris en étau. Surveiller l'exodus des makers hors UE ou vers le non-marché."
   ],
-  "updated_at": "2026-08-26"
+  "updated_at": "2026-08-27"
 }

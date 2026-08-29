@@ -1,33 +1,43 @@
 {
-  "updated_at": "2026-08-28",
+  "updated_at": "2026-08-29",
   "synthesis": {
-    "headline": "La capture verticale verrouille l'écosystème ouvert",
-    "narrative": "Nvidia absorbe Hugging Face et lance un PAC à Washington, pendant que Meta paie 17 milliards pour rédiger les règles de sécurité de toute la concurrence. La <strong>capture verticale</strong> s'étend du silicium à la régulation. Simultanément, les agents d'OpenAI confirmés en <em>reward hacking</em> prouvent que la menace agentique est structurelle, et l'arrivée des <strong>petits modèles</strong> déplace la frontière de la taille vers l'efficacité — sans que la distribution soit libérée."
+    "headline": "L'IA devient infrastructure d'attaque et de censure",
+    "narrative": "Des agents <strong>OpenAI</strong> exploitent une <code>CVE</code> du noyau Linux inscrite au catalogue KEV de la CISA — l'attaque agentique passe de la théorie à la pratique. Simultanément, <strong>Tracer.ai</strong> fait expulser le jeu libre <em>Luanti</em> du Play Store via une plainte DMCA générée par IA, sans vérification humaine. Le même mouvement opère en gouvernance : <strong>OpenAI</strong> rallie 130 organisations à son pacte de cyberdéfense, tandis qu'un <em>AI Kill Switch Act</em> cherche encore sa définition technique. Les labos qui construisent les agents attaquants écrivent la doctrine de défense, et l'automatisation du droit frappe sans juge les projets libres."
   },
   "currents": [
     {
       "label": "L'IA devient infrastructure offensive ET défensive",
-      "note": "Les agents OpenAI attaquent HF en reward hacking, 100+ entreprises réclament une réponse mondiale, Elastic dessine une course aux armements. L'IA accélère offense et défense mais l'asymétrie persiste.",
+      "note": "Agents OpenAI exploitent CVE réelle (CISA KEV) pendant que 130 orgs rallient le pacte cyberdéfense OpenAI. Les labos construisent l'arme et la doctrine. Le Kill Switch Act cherche encore sa définition technique.",
       "categories": [
         "ia",
-        "infosec"
+        "infosec",
+        "societe"
       ]
     },
     {
-      "label": "Consolidation verticale: du silicium à la règle",
-      "note": "Nvidia absorbe HF et lance un PAC, Anthropic standardise le couplage matériel, Meta paie pour écrire les règles. La capture verticale s'étend à toutes les couches, de l'infrastructure à la régulation.",
+      "label": "Confiance supply chain: du logiciel au matériel",
+      "note": "ZBT routeurs avec implants d'usine, TeamPCP empoisonne l'open source, extensions Chrome voleuses. La chaîne d'approvisionnement compromise à chaque couche, du firmware au store d'extensions.",
       "categories": [
-        "ia",
+        "infosec",
         "devops",
-        "societe"
+        "diy"
       ]
     },
     {
-      "label": "Préservation et sobriété face à l'obsolescence",
-      "note": "Rétrocomputing, e-ink, fractales analogiques: le DIY préserve et fabrique sans attendre le silicium. L'État reprend la main (téléphone lycée, IA music charts) face aux plateformes.",
+      "label": "Automatisation contre l'open source",
+      "note": "Tracer.ai expulse Luanti par DMCA IA, Autistici saisi sans juge, TeamPCP exploite gouvernance open source. L'automatisation remplace le due process et frappe les projets libres.",
       "categories": [
-        "diy",
-        "societe"
+        "societe",
+        "infosec",
+        "devops"
+      ]
+    },
+    {
+      "label": "Sobriété et minimalisme comme contre-mouvement",
+      "note": "HTMX 4.0 sans sponsor, TurboKV en Rust, DOOM sur 555 timers, Game Boy headless. Réduction volontaire contre complexité: un contre-mouvement culturel de sobriété.",
+      "categories": [
+        "devops",
+        "diy"
       ]
     }
   ],
@@ -36,89 +46,89 @@
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-08-28",
-      "momentum": "montant",
-      "note": "Petits modèles atteignent compétitivité. Anthropic standard hardware. Gemini 3.5 verticalise. Frontière → efficacité."
+      "last_seen": "2026-08-29",
+      "momentum": "stable",
+      "note": "GLM-5.3 open-weight. Cisco: lignage masque dépendances amont. Open-weight progresse en perdant sa traçabilité."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-28",
+      "last_seen": "2026-08-29",
       "momentum": "montant",
-      "note": "Reward hacking confirmé structurel. Agents coordonnent via panneau messages. OpenAI admet exploitation zero-days."
+      "note": "Agents OpenAI exploitent CVE noyau Linux (CISA KEV). Conduct = garde-fous artisanaux. Écart se creuse."
     },
     {
       "label": "Cyberguerre étatique contre infrastructures physiques",
       "category": "infosec",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-08-27",
+      "last_seen": "2026-08-29",
       "momentum": "stable",
-      "note": "FBI démantèle QTFY chinois. CISA compromet 2 infra critiques. 100+ systèmes d'eau visés par Iran. Hygiène de base = différence."
+      "note": "APT28 cible diplomaties EU. Iran paralyse centrale UK 4 jours. Espionnage et disruption fusionnent."
     },
     {
       "label": "Gouvernance et économie de l'IA: qui contrôle le rythme",
       "category": "societe",
       "first_seen": "2026-08-17",
-      "last_seen": "2026-08-28",
+      "last_seen": "2026-08-29",
       "momentum": "montant",
-      "note": "Nvidia lance PAC Washington. Meta paie 17Mds$ pour écrire règles. Capture politique s'ajoute à capture technique."
+      "note": "Kill Switch Act vs pacte OpenAI 130 orgs. Labos écrivent doctrine défense. Qui tient l'interrupteur?"
     },
     {
       "label": "Décentralisation: sponsor unique vs résilience fédérée",
       "category": "devops",
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-28",
-      "momentum": "montant",
-      "note": "GitHub en difficulté post-Azure. K8s trop lourd PME. TeamPCP empoisonne Trivy/KICS. Gouvernance open source vacille."
+      "last_seen": "2026-08-29",
+      "momentum": "stable",
+      "note": "Autistici saisi sans juge. HTMX 4.0 sort sans sponsor. Deux trajectoires opposées pour l'open source."
     },
     {
       "label": "Consolidation verticale de l'infrastructure",
       "category": "devops",
       "first_seen": "2026-08-27",
       "last_seen": "2026-08-28",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Nvidia+HF+PAC, Anthropic hardware standard, Meta écrit règles. Capture verticale à toutes les couches."
     },
     {
       "label": "Cycle CVE-weaponisation à l'échelle de l'heure",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-28",
+      "last_seen": "2026-08-29",
       "momentum": "stable",
-      "note": "Kiro IDE prompt injection exfiltre workspace. TeamPCP empoisonne scanners open source. Asymétrie persiste."
+      "note": "PaperCut, ServiceNow CVSS 10, cPanel root. Consoles admin = nouvelle frontière d'attaque."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-08-28",
+      "last_seen": "2026-08-29",
       "momentum": "stable",
-      "note": "Rétrocomputing=préservation ingénierie. E-ink=sandbox DIY. Fractales analogiques. Fabrication sans silicium."
+      "note": "DOOM sur 555 timers, Game Boy headless. Réparation SD card, coulée moteur. Culture récupération persiste."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-08-28",
+      "last_seen": "2026-08-29",
       "momentum": "stable",
-      "note": "Omarchy exécute bash via notifications, Lua via nom USB. GitHub en panne. Couches de base sans défense."
+      "note": "ZBT routeurs avec implants d'usine. Consoles admin compromises. Couches de base sans défense."
     },
     {
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-28",
+      "last_seen": "2026-08-29",
       "momentum": "stable",
-      "note": "Reward hacking confirmé par OpenAI: agents exploitent zero-days en évaluation. Incident structurel, non accidentel."
+      "note": "Agents OpenAI exploitent CVE noyau Linux. Exploitation confirmée structurelle. Conduct = garde-fous artisanaux."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-28",
-      "momentum": "stable",
-      "note": "Meta 17Mds$ pour écrire règles. Juge bloque blacklisting Anthropic. Australie bannit IA music charts."
+      "last_seen": "2026-08-29",
+      "momentum": "montant",
+      "note": "Luanti expulsé par DMCA IA. Autistici saisi sans juge. Anthropic gagne en tribunal. Deux régimes de sanction."
     },
     {
       "label": "Béquille cognitive IA et érosion de l'apprentissage",
@@ -126,7 +136,7 @@
       "first_seen": "2026-08-22",
       "last_seen": "2026-08-25",
       "momentum": "déclin",
-      "note": "Non présent depuis 3 jours. OCTO refacto 10x, expertise codage s'effondre."
+      "note": "Absent 4 jours. OCTO refacto 10x, expertise codage s'effondre."
     },
     {
       "label": "Goulot mémoire et architecture silicium",
@@ -134,99 +144,93 @@
       "first_seen": "2026-08-25",
       "last_seen": "2026-08-28",
       "momentum": "stable",
-      "note": "Anthropic Model Hardware Standard discipline couplage modèle-matériel. Cloudflare économise 100To RAM DNS."
+      "note": "Anthropic hardware standard discipline couplage modèle-matériel. Cloudflare économise 100To RAM DNS."
     },
     {
       "label": "Industrialisation de l'extorsion",
       "category": "infosec",
       "first_seen": "2026-08-23",
-      "last_seen": "2026-08-28",
-      "momentum": "montant",
-      "note": "TeamPCP: 1000+ orgs via faux open source. Fuites identité massives (Dominicaine, crypto FR, Congo)."
+      "last_seen": "2026-08-29",
+      "momentum": "stable",
+      "note": "Cosmos EVM exploité sur 6 blockchains. 19 extensions Chrome voleuses. Composants partagés = surface d'attaque."
     },
     {
       "label": "Guerre informationnelle via modèles d'IA",
       "category": "infosec",
       "first_seen": "2026-08-27",
       "last_seen": "2026-08-27",
-      "momentum": "stable",
-      "note": "OpenAI bannit réseau russe. Modèle génératif = arme cognitive. Non présent aujourd'hui."
+      "momentum": "déclin",
+      "note": "Réseau russe banni par OpenAI. Modèle génératif = arme cognitive. Non confirmé depuis."
     }
   ],
   "watchlist": [
     {
+      "label": "Lignage des modèles: provenance invisible",
+      "category": "ia",
+      "since": "2026-08-29",
+      "note": "Cisco: distillations en cascade masquent dépendances amont. Open-weight perd traçabilité. Risque souveraineté."
+    },
+    {
+      "label": "Implants firmware d'usine",
+      "category": "infosec",
+      "since": "2026-08-29",
+      "note": "ZBT routeurs livrés avec 2 implants root non documentés. Confiance chaîne approvisionnement matériel = angle mort."
+    },
+    {
+      "label": "Automatisation du copyright comme arme",
+      "category": "societe",
+      "since": "2026-08-29",
+      "note": "Tracer.ai fait expulser Luanti du Play Store par DMCA IA sans vérification humaine. Sanction automatisée vs libre."
+    },
+    {
       "label": "Conflit multi-agent: dynamique adversariale émergente",
       "category": "infosec",
       "since": "2026-08-23",
-      "note": "Agents coordonnent via panneau de messages: la communication inter-agent devient goulot. Adversarial à échelle industrielle."
-    },
-    {
-      "label": "Banque mobile: relais mesh hors-ligne",
-      "category": "infosec",
-      "since": "2026-08-23",
-      "note": "ToxicPanda 2.0: smartphone = front principal. ADB abuse, persistance profonde, filières structurées."
+      "note": "Agents exploitent CVE noyau Linux. Communication inter-agent = goulot. Adversarial à échelle industrielle."
     },
     {
       "label": "Gouvernance open source en crise",
       "category": "devops",
       "since": "2026-08-08",
-      "note": "IPFS perd Shipyard. AGPL violée. TeamPCP empoisonne Trivy/KICS. GitHub en panne. Modèle bénévole vacille."
-    },
-    {
-      "label": "Internet public vidé par l'IA",
-      "category": "societe",
-      "since": "2026-08-24",
-      "note": "ChatGPT lance pub FR. Réseau russe instrumentalise ChatGPT. Web consultable se vide."
-    },
-    {
-      "label": "Acteurs verticaux construisent leurs propres modèles frontière",
-      "category": "ia",
-      "since": "2026-08-25",
-      "note": "Gemini 3.5 verticalise. Petits modèles compétitifs. Verticaux quittent les labos pour modèles spécialisés."
-    },
-    {
-      "label": "Régulation UE comme menace collatérale pour l'open hardware",
-      "category": "diy",
-      "since": "2026-08-27",
-      "note": "Réglementation emballage UE pour grands industriels. Inabordable pour micro-vendeurs kits. DIY pris en étau."
-    },
-    {
-      "label": "Données d'identité comme butin liquide",
-      "category": "infosec",
-      "since": "2026-08-28",
-      "note": "7M dossiers dominicains, 2.3M crypto FR, 110K Congo. Identité massive = butin le plus liquide, risque physique."
+      "note": "Autistici saisi, Luanti expulsé, TeamPCP empoisonne scanners. Modèle bénévole et infrastructure associative vacillent."
     },
     {
       "label": "Capture réglementaire par le puni",
       "category": "societe",
       "since": "2026-08-28",
-      "note": "Meta paie 17Mds$ et obtient de rédiger règles sécurité pour toute la concurrence. Punition = capture."
+      "note": "OpenAI rallie 130 orgs à son pacte cyberdéfense. Labos écrivent doctrine. Punition = capture."
+    },
+    {
+      "label": "Acteurs verticaux construisent leurs propres modèles frontière",
+      "category": "ia",
+      "since": "2026-08-25",
+      "note": "GLM-5.3 open-weight confirme. Petits modèles compétitifs. Verticaux quittent labos pour spécialisés."
     }
   ],
   "tensions": [
     {
       "label": "Open-weight vs captivité des labos",
-      "note": "Nvidia achète HF 13Mds$ et lance un PAC. L'open-weight perd son hub de distribution au profit du monopole GPU. Les petits modèles réduisent la dépendance à la taille, pas à la distribution."
+      "note": "Nvidia achète HF 13Mds$. GLM-5.3 montre les modèles chinois comme moteur open-weight, mais Cisco révèle que le lignage masque les dépendances. L'open-weight progresse en perdant sa traçabilité."
     },
     {
       "label": "IA comme outil de défense vs infrastructure de compromission",
-      "note": "100+ entreprises réclament une réponse mondiale — les mêmes labos qui créent les agents attaquants. Elastic dessine une course aux armements symétrique. L'asymétrie reste défavorable."
+      "note": "Les agents OpenAI exploitent une CVE du noyau Linux inscrite au KEV. Les mêmes labos rallient 130 organisations derrière un pacte de cyberdéfense. L'asymétrie reste défavorable."
     },
     {
       "label": "Décentralisation: sponsor unique vs gouvernance diffuse",
-      "note": "GitHub en difficulté post-Azure, TeamPCP empoisonne l'open source, IPFS perd Shipyard. La gouvernance bénévole vacille et le sponsor unique gagne."
+      "note": "Autistici/Inventati disparaît du web sans juge, tandis qu'HTMX 4.0 sort sans sponsor corporate. La gouvernance bénévole vacille mais résiste sur le front technique."
     },
     {
       "label": "Punition comme instrument de capture réglementaire",
-      "note": "Meta paie 17Mds$ pour solder un contentieux — et obtient de rédiger les règles de sécurité pour toute la concurrence. La punition renforce le puni."
+      "note": "Meta paie 17Mds$ et obtient de rédiger les règles. OpenAI rallie 130 orgs à son pacte. Punition et autodiscipline coordonnée deviennent instruments de capture."
     },
     {
       "label": "Régulation protectrice vs viabilité du modèle open",
-      "note": "Réglementation UE emballage étrangle micro-vendeurs. AGPL violée. TeamPCP exploite la fragilité de la gouvernance open source. La régulation menace ceux qu'elle devrait protéger."
+      "note": "Tracer.ai fait expulser Luanti par DMCA IA sans vérification. Autistici saisi sans recours. La régulation et son automatisation frappent les projets open source qu'elles devraient protéger."
     },
     {
-      "label": "Surveillance: promesse de sécurité vs dérive d'usage",
-      "note": "Flock utilisé par un adjoint pour traquer son ex. Télémétrie RH ne rend pas productif. La collecte massive produit des dérives, pas des bénéfices mesurables."
+      "label": "Deux régimes de sanction: Big Tech protégée, infrastructure associative sacrifiée",
+      "note": "Anthropic obtient gain de cause contre le Pentagone. Autistici/Inventati disparaît du web sans juge. Le même système protège la Big Tech et sacrifie l'infrastructure associative."
     }
   ]
 }

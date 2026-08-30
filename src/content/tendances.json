@@ -1,47 +1,47 @@
 {
-  "updated_at": "2026-08-29",
+  "updated_at": "2026-08-30",
   "synthesis": {
-    "headline": "L'IA devient infrastructure d'attaque et de censure",
-    "narrative": "Des agents <strong>OpenAI</strong> exploitent une <code>CVE</code> du noyau Linux inscrite au catalogue KEV de la CISA — l'attaque agentique passe de la théorie à la pratique. Simultanément, <strong>Tracer.ai</strong> fait expulser le jeu libre <em>Luanti</em> du Play Store via une plainte DMCA générée par IA, sans vérification humaine. Le même mouvement opère en gouvernance : <strong>OpenAI</strong> rallie 130 organisations à son pacte de cyberdéfense, tandis qu'un <em>AI Kill Switch Act</em> cherche encore sa définition technique. Les labos qui construisent les agents attaquants écrivent la doctrine de défense, et l'automatisation du droit frappe sans juge les projets libres."
+    "headline": "L'IA s'infrastructure, la gouvernance reste artisanale",
+    "narrative": "Les agents s'ingénient — <strong>Warp</strong> et les <em>Domain-Driven Agents</em> formalisent l'architecture agentique — pendant que <strong>Debian</strong> accepte le code IA sans traçabilité. La surveillance d'État se normalise par les marges du droit, et les contre-mesures descendent dans le physique : tissu adversarial, fork <strong>FreeCORE</strong>. L'asymétrie s'élargit entre infrastructure IA et gouvernance artisanale."
   },
   "currents": [
     {
-      "label": "L'IA devient infrastructure offensive ET défensive",
-      "note": "Agents OpenAI exploitent CVE réelle (CISA KEV) pendant que 130 orgs rallient le pacte cyberdéfense OpenAI. Les labos construisent l'arme et la doctrine. Le Kill Switch Act cherche encore sa définition technique.",
+      "label": "L'IA comme couche infrastructurelle transversale",
+      "note": "Agents en production (Warp), surveillance algorithmique (Flock, loyers), contre-surveillance physique (tissu adversarial). L'IA n'est plus un outil mais une infrastructure qui traverse sécurité, gouvernance et quotidien.",
       "categories": [
         "ia",
         "infosec",
-        "societe"
-      ]
-    },
-    {
-      "label": "Confiance supply chain: du logiciel au matériel",
-      "note": "ZBT routeurs avec implants d'usine, TeamPCP empoisonne l'open source, extensions Chrome voleuses. La chaîne d'approvisionnement compromise à chaque couche, du firmware au store d'extensions.",
-      "categories": [
-        "infosec",
-        "devops",
+        "societe",
         "diy"
       ]
     },
     {
-      "label": "Automatisation contre l'open source",
-      "note": "Tracer.ai expulse Luanti par DMCA IA, Autistici saisi sans juge, TeamPCP exploite gouvernance open source. L'automatisation remplace le due process et frappe les projets libres.",
+      "label": "Ingénierie de la discipline vs angles morts persistants",
+      "note": "DDD Agents formalise l'architecture agentique, MySQL montre les limites du testing en staging, WordPress plugins restent le maillon faible. L'écosystème structure ses pratiques pendant que les failles structurelles persistent.",
+      "categories": [
+        "ia",
+        "devops",
+        "infosec"
+      ]
+    },
+    {
+      "label": "Le libre face à l'IA: acculturation vs résistance",
+      "note": "Debian vote pour l'IA générative sans traçabilité, FreeCORE fork TrueNAS, projets open source bannissent l'IA. Le logiciel libre fragmente sa réponse face à l'IA générative.",
       "categories": [
         "societe",
-        "infosec",
         "devops"
-      ]
-    },
-    {
-      "label": "Sobriété et minimalisme comme contre-mouvement",
-      "note": "HTMX 4.0 sans sponsor, TurboKV en Rust, DOOM sur 555 timers, Game Boy headless. Réduction volontaire contre complexité: un contre-mouvement culturel de sobriété.",
-      "categories": [
-        "devops",
-        "diy"
       ]
     }
   ],
   "themes": [
+    {
+      "label": "Agents IA en production",
+      "category": "ia",
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-08-30",
+      "momentum": "montant",
+      "note": "Warp+Claude formalise auto-amélioration. Domain-Driven Agents importe DDD. Du bricolage à l'ingénierie cadreuse."
+    },
     {
       "label": "Commodification des LLMs et effondrement des marges",
       "category": "ia",
@@ -55,112 +55,96 @@
       "category": "infosec",
       "first_seen": "2026-08-04",
       "last_seen": "2026-08-29",
-      "momentum": "montant",
+      "momentum": "stable",
       "note": "Agents OpenAI exploitent CVE noyau Linux (CISA KEV). Conduct = garde-fous artisanaux. Écart se creuse."
     },
     {
       "label": "Cyberguerre étatique contre infrastructures physiques",
       "category": "infosec",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "momentum": "stable",
-      "note": "APT28 cible diplomaties EU. Iran paralyse centrale UK 4 jours. Espionnage et disruption fusionnent."
+      "note": "Iran paralyse centrale UK 4 jours. Silence gouvernement = signal. OT ciblé confirmé, ampleur des dégâts à découvrir."
     },
     {
       "label": "Gouvernance et économie de l'IA: qui contrôle le rythme",
       "category": "societe",
       "first_seen": "2026-08-17",
-      "last_seen": "2026-08-29",
-      "momentum": "montant",
-      "note": "Kill Switch Act vs pacte OpenAI 130 orgs. Labos écrivent doctrine défense. Qui tient l'interrupteur?"
+      "last_seen": "2026-08-30",
+      "momentum": "stable",
+      "note": "Debian vote pour IA générative sans traçabilité. Communauté divisée. Libre assume code généré sans en tracer l'origine."
     },
     {
       "label": "Décentralisation: sponsor unique vs résilience fédérée",
       "category": "devops",
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "momentum": "stable",
-      "note": "Autistici saisi sans juge. HTMX 4.0 sort sans sponsor. Deux trajectoires opposées pour l'open source."
+      "note": "FreeCORE fork TrueNAS Core. SteamOS 3.9.0 adossé à Valve seul. Forks communautaires vs stratégie éditeur."
     },
     {
       "label": "Consolidation verticale de l'infrastructure",
       "category": "devops",
       "first_seen": "2026-08-27",
       "last_seen": "2026-08-28",
-      "momentum": "stable",
+      "momentum": "déclin",
       "note": "Nvidia+HF+PAC, Anthropic hardware standard, Meta écrit règles. Capture verticale à toutes les couches."
     },
     {
       "label": "Cycle CVE-weaponisation à l'échelle de l'heure",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "momentum": "stable",
-      "note": "PaperCut, ServiceNow CVSS 10, cPanel root. Consoles admin = nouvelle frontière d'attaque."
+      "note": "5 failles critiques WordPress (CVSS 9.8). Plugins = maillon faible structurel du CMS qui propulse la moitié du web."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "momentum": "stable",
-      "note": "DOOM sur 555 timers, Game Boy headless. Réparation SD card, coulée moteur. Culture récupération persiste."
+      "note": "Étau PCB 70g, piano imprimé, Wikipedia sur ESP32. Culture récupération et contraintes modestes persiste."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
       "last_seen": "2026-08-29",
-      "momentum": "stable",
+      "momentum": "déclin",
       "note": "ZBT routeurs avec implants d'usine. Consoles admin compromises. Couches de base sans défense."
-    },
-    {
-      "label": "Agents IA en production",
-      "category": "ia",
-      "first_seen": "2026-05-13",
-      "last_seen": "2026-08-29",
-      "momentum": "stable",
-      "note": "Agents OpenAI exploitent CVE noyau Linux. Exploitation confirmée structurelle. Conduct = garde-fous artisanaux."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "momentum": "montant",
-      "note": "Luanti expulsé par DMCA IA. Autistici saisi sans juge. Anthropic gagne en tribunal. Deux régimes de sanction."
+      "note": "DHS 1509 summons vs journalistes. Texas Flock via taxe 1$. Algorithmes loyers sous tribunal. Surveillance par marges du droit."
     },
     {
       "label": "Béquille cognitive IA et érosion de l'apprentissage",
       "category": "societe",
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-25",
-      "momentum": "déclin",
-      "note": "Absent 4 jours. OCTO refacto 10x, expertise codage s'effondre."
+      "last_seen": "2026-08-30",
+      "momentum": "montant",
+      "note": "Resurgit: LLMs érodent expertise individuelle. Projets open source bannissent IA. Debian vote pour. Fossé hype vs terrain."
     },
     {
       "label": "Goulot mémoire et architecture silicium",
       "category": "diy",
       "first_seen": "2026-08-25",
       "last_seen": "2026-08-28",
-      "momentum": "stable",
+      "momentum": "déclin",
       "note": "Anthropic hardware standard discipline couplage modèle-matériel. Cloudflare économise 100To RAM DNS."
     },
     {
       "label": "Industrialisation de l'extorsion",
       "category": "infosec",
       "first_seen": "2026-08-23",
-      "last_seen": "2026-08-29",
+      "last_seen": "2026-08-30",
       "momentum": "stable",
-      "note": "Cosmos EVM exploité sur 6 blockchains. 19 extensions Chrome voleuses. Composants partagés = surface d'attaque."
-    },
-    {
-      "label": "Guerre informationnelle via modèles d'IA",
-      "category": "infosec",
-      "first_seen": "2026-08-27",
-      "last_seen": "2026-08-27",
-      "momentum": "déclin",
-      "note": "Réseau russe banni par OpenAI. Modèle génératif = arme cognitive. Non confirmé depuis."
+      "note": "Outil 500€ centralise logs/SMS/sessions volées. SaaS-isation du crime. Barrière à l'entrée effondrée."
     }
   ],
   "watchlist": [
@@ -168,7 +152,7 @@
       "label": "Lignage des modèles: provenance invisible",
       "category": "ia",
       "since": "2026-08-29",
-      "note": "Cisco: distillations en cascade masquent dépendances amont. Open-weight perd traçabilité. Risque souveraineté."
+      "note": "Debian vote pour IA sans traçabilité. Cisco: distillations en cascade masquent dépendances. Open-weight perd traçabilité."
     },
     {
       "label": "Implants firmware d'usine",
@@ -183,16 +167,10 @@
       "note": "Tracer.ai fait expulser Luanti du Play Store par DMCA IA sans vérification humaine. Sanction automatisée vs libre."
     },
     {
-      "label": "Conflit multi-agent: dynamique adversariale émergente",
-      "category": "infosec",
-      "since": "2026-08-23",
-      "note": "Agents exploitent CVE noyau Linux. Communication inter-agent = goulot. Adversarial à échelle industrielle."
-    },
-    {
       "label": "Gouvernance open source en crise",
       "category": "devops",
       "since": "2026-08-08",
-      "note": "Autistici saisi, Luanti expulsé, TeamPCP empoisonne scanners. Modèle bénévole et infrastructure associative vacillent."
+      "note": "FreeCORE fork TrueNAS Core. Autistici saisi. Modèle bénévole vacille, forks communautaires tentent reprise."
     },
     {
       "label": "Capture réglementaire par le puni",
@@ -201,36 +179,48 @@
       "note": "OpenAI rallie 130 orgs à son pacte cyberdéfense. Labos écrivent doctrine. Punition = capture."
     },
     {
-      "label": "Acteurs verticaux construisent leurs propres modèles frontière",
-      "category": "ia",
-      "since": "2026-08-25",
-      "note": "GLM-5.3 open-weight confirme. Petits modèles compétitifs. Verticaux quittent labos pour spécialisés."
+      "label": "Contre-surveillance adversariale physique",
+      "category": "diy",
+      "since": "2026-08-30",
+      "note": "Tissu adversarial trompe caméras IA. Attaques adversariales sortent du lab vers le vestiaire. Contre-mesure émergente."
+    },
+    {
+      "label": "Surveillance par marges budgétaires et procédurales",
+      "category": "societe",
+      "since": "2026-08-30",
+      "note": "DHS 1509 summons sans juge, Texas Flock via taxe 1$ invisible. Surveillance normalisée par mécanismes subliminaux."
+    },
+    {
+      "label": "Conflit multi-agent: dynamique adversariale émergente",
+      "category": "infosec",
+      "since": "2026-08-23",
+      "note": "Agents exploitent CVE noyau. DDD Agents formalise frontières de contexte. Adversarial à échelle industrielle."
     }
   ],
   "tensions": [
     {
       "label": "Open-weight vs captivité des labos",
-      "note": "Nvidia achète HF 13Mds$. GLM-5.3 montre les modèles chinois comme moteur open-weight, mais Cisco révèle que le lignage masque les dépendances. L'open-weight progresse en perdant sa traçabilité."
+      "note": "Debian vote pour IA générative sans traçabilité. GLM-5.3 montre les modèles chinois comme moteur open-weight, mais Cisco révèle que le lignage masque les dépendances. L'open-weight progresse en perdant sa traçabilité, le libre assume le code généré sans en tracer l'origine."
     },
     {
       "label": "IA comme outil de défense vs infrastructure de compromission",
-      "note": "Les agents OpenAI exploitent une CVE du noyau Linux inscrite au KEV. Les mêmes labos rallient 130 organisations derrière un pacte de cyberdéfense. L'asymétrie reste défavorable."
+      "note": "Les agents OpenAI exploitent une CVE du noyau Linux inscrite au KEV. Les mêmes labos rallient 130 organisations derrière un pacte de cyberdéfense. L'asymétrie reste défavorable : l'IA offensive s'industrialise plus vite que la doctrine défensive."
     },
     {
       "label": "Décentralisation: sponsor unique vs gouvernance diffuse",
-      "note": "Autistici/Inventati disparaît du web sans juge, tandis qu'HTMX 4.0 sort sans sponsor corporate. La gouvernance bénévole vacille mais résiste sur le front technique."
+      "note": "FreeCORE fork TrueNAS Core quand iXsystems l'abandonne, SteamOS 3.9.0 s'appuie sur Valve seul. La gouvernance bénévole vacille mais les forks communautaires tentent la reprise, parfois contre la stratégie de l'éditeur."
     },
     {
       "label": "Punition comme instrument de capture réglementaire",
       "note": "Meta paie 17Mds$ et obtient de rédiger les règles. OpenAI rallie 130 orgs à son pacte. Punition et autodiscipline coordonnée deviennent instruments de capture."
     },
     {
-      "label": "Régulation protectrice vs viabilité du modèle open",
-      "note": "Tracer.ai fait expulser Luanti par DMCA IA sans vérification. Autistici saisi sans recours. La régulation et son automatisation frappent les projets open source qu'elles devraient protéger."
+      "label": "Deux régimes de sanction: Big Tech protégée, infrastructure associative sacrifiée",
+      "note": "Anthropic obtient gain de cause contre le Pentagone. Autistici disparaît sans juge. DHS cible journalistes via loi obscure. Le même système protège la Big Tech et sacrifie l'infrastructure associative et la presse."
     },
     {
-      "label": "Deux régimes de sanction: Big Tech protégée, infrastructure associative sacrifiée",
-      "note": "Anthropic obtient gain de cause contre le Pentagone. Autistici/Inventati disparaît du web sans juge. Le même système protège la Big Tech et sacrifie l'infrastructure associative."
+      "label": "Hype IA vs érosion de l'expertise de terrain",
+      "note": "Les LLMs érodent le savoir-faire individuel pendant que des projets open source bannissent les contributions IA. Le discours promotionnel des labos rencontre un rejet institutionnel et une déperdition cognitive. Le fossé devient problème de gouvernance."
     }
   ]
 }

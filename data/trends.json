@@ -4,89 +4,113 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-08-31",
+      "last_seen": "2026-09-01",
       "momentum": "stable",
-      "note": "Claude Code trace commits par défaut. L'agentique s'outille et impose la provenance."
-    },
-    {
-      "label": "Commodification des LLMs et migration de la valeur",
-      "category": "ia",
-      "first_seen": "2026-07-07",
-      "last_seen": "2026-08-31",
-      "momentum": "stable",
-      "note": "Moats fondent. Willison: pas de sauce secrète. Nvidia déplace au-delà du GPU. Valeur migre vers l'infra."
+      "note": "Google Boost, mémoire standardisée, Almanac YC S26. L'agentique s'industrialise: du bricolage à l'infrastructure."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-31",
-      "momentum": "stable",
-      "note": "Postmortem HuggingFace. Auth agents (SPIFFE/OAuth) reste théorique. On distribue vite, on authentifie mal."
+      "last_seen": "2026-09-01",
+      "momentum": "montant",
+      "note": "Injection dans dépôt judiciaire, Claude Code cassé, Aurora utilise Cursor. Règles du modèle ≠ contrôles sécurité. L'offensive accélère."
     },
     {
-      "label": "Cyberguerre étatique contre infrastructures physiques",
-      "category": "infosec",
-      "first_seen": "2026-08-24",
-      "last_seen": "2026-08-30",
+      "label": "Commodification des LLMs et migration de la valeur",
+      "category": "ia",
+      "first_seen": "2026-07-07",
+      "last_seen": "2026-09-01",
       "momentum": "stable",
-      "note": "Pas de nouveau signal. Iran UK reste le dernier cas confirmé."
+      "note": "Crawlers IA martèlent kernel.org pour données vierges. Prédation silencieuse sur le commun."
     },
     {
       "label": "Gouvernance et économie de l'IA: qui contrôle le rythme",
       "category": "societe",
       "first_seen": "2026-08-17",
-      "last_seen": "2026-08-31",
-      "momentum": "stable",
-      "note": "UE envoie premières RFI AI Act. Phase d'exécution commence. Test de la capture réglementaire."
+      "last_seen": "2026-09-01",
+      "momentum": "montant",
+      "note": "Juge invalide sanctions Pentagone vs Anthropic. Bras de fer État-labos devant les tribunaux."
     },
     {
       "label": "Décentralisation: sponsor unique vs résilience fédérée",
       "category": "devops",
       "first_seen": "2026-08-25",
-      "last_seen": "2026-08-31",
+      "last_seen": "2026-09-01",
       "momentum": "stable",
-      "note": "NAT comme péché originel. dn42: reconstruction manuelle de la pile réseau. Retour aux fondamentaux."
-    },
-    {
-      "label": "Cycle CVE-weaponisation à l'échelle de l'heure",
-      "category": "infosec",
-      "first_seen": "2026-08-04",
-      "last_seen": "2026-08-30",
-      "momentum": "stable",
-      "note": "Pas de nouveau signal aujourd'hui."
+      "note": "Apache Iggy passe TLP. SOPS/Let's Encrypt: l'hygiène devient réflexe. Ancrages institutionnels cherchés."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-08-31",
+      "last_seen": "2026-09-01",
       "momentum": "stable",
-      "note": "Berkeley Humanoid Lite: actionneurs 3D open source modulaires. Rétro-computing persiste."
+      "note": "RotaryCell: téléphone à cadran en LTE. Reverse-engineering Cavium 10GbE. Modernité comme interface, pas remplacement."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-08-31",
+      "last_seen": "2026-09-01",
       "momentum": "stable",
-      "note": "QubesOS, U-Boot, Dahua: de l'hyperviseur au firmware, angles morts confirmés."
+      "note": "Fire Ant détourne Cisco. ValleyRAT signé, JSCeal en bytecode V8. Du firmware au bytecode, la réputation n'est plus un rempart."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-08-31",
+      "last_seen": "2026-09-01",
       "momentum": "montant",
-      "note": "UE relance portes dérobées chiffrement. Flock se retourne contre son PDG. Berkeley plie face à ICE."
+      "note": "Autistici classé terroriste. Juge borne le Pentagone. Désignation d'exception vs Big Tech protégée."
     },
     {
       "label": "Béquille cognitive IA et érosion de l'apprentissage",
       "category": "societe",
       "first_seen": "2026-08-22",
-      "last_seen": "2026-08-30",
+      "last_seen": "2026-09-01",
+      "momentum": "stable",
+      "note": "Tri algorithmique en santé mentale dégrade la prise en charge. L'algorithme remplace le jugement clinique."
+    },
+    {
+      "label": "Industrialisation de l'extorsion",
+      "category": "infosec",
+      "first_seen": "2026-08-23",
+      "last_seen": "2026-09-01",
+      "momentum": "stable",
+      "note": "McKesson 284M dossiers, 55M$ rançon. Berlin refuse de payer. Fragmentation des réponses = allié des extorqueurs."
+    },
+    {
+      "label": "Modèles de langage à diffusion",
+      "category": "ia",
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-08-31",
+      "momentum": "stable",
+      "note": "Pas de nouveau signal. Architecture alternative en attente de validation."
+    },
+    {
+      "label": "Simplicité comme avantage stratégique",
+      "category": "devops",
+      "first_seen": "2026-08-31",
+      "last_seen": "2026-09-01",
+      "momentum": "stable",
+      "note": "SOPS/age, Let's Encrypt, C++26 hardening. Moins de pièces mobiles, sécurité par défaut."
+    },
+    {
+      "label": "Contre-surveillance adversariale physique",
+      "category": "diy",
+      "first_seen": "2026-08-30",
+      "last_seen": "2026-09-01",
       "momentum": "montant",
-      "note": "Pas de nouveau signal aujourd'hui. Fossé hype vs terrain persiste."
+      "note": "TEMPEST par navigateur confirmé. Morse VHF via fuite EMI d'écran. Frontière périphérique/arme radio s'efface."
+    },
+    {
+      "label": "Cyberguerre étatique contre infrastructures physiques",
+      "category": "infosec",
+      "first_seen": "2026-08-24",
+      "last_seen": "2026-09-01",
+      "momentum": "stable",
+      "note": "Fire Ant (Chine) détourne routeurs Cisco et TACACS. Espionnage d'État change d'étage: hyperviseurs vers réseau."
     },
     {
       "label": "Goulot mémoire et architecture silicium",
@@ -94,31 +118,7 @@
       "first_seen": "2026-08-25",
       "last_seen": "2026-08-31",
       "momentum": "stable",
-      "note": "CXL calcul proche mémoire à Hot Chips. P99 0ms par design. Rapprochement calcul-données."
-    },
-    {
-      "label": "Industrialisation de l'extorsion",
-      "category": "infosec",
-      "first_seen": "2026-08-23",
-      "last_seen": "2026-08-31",
-      "momentum": "stable",
-      "note": "France: Zéro Logement Vacant 48M personnes, Alaxione 6,8M patients (4e fuite). Fragilité structurelle."
-    },
-    {
-      "label": "Modèles de langage à diffusion",
-      "category": "ia",
-      "first_seen": "2026-08-31",
-      "last_seen": "2026-08-31",
-      "momentum": "nouveau",
-      "note": "Tutoriel Kuleshov + CDLM Dieleman. Architecture alternative passe à l'implémentation reproductible."
-    },
-    {
-      "label": "Simplicité comme avantage stratégique",
-      "category": "devops",
-      "first_seen": "2026-08-31",
-      "last_seen": "2026-08-31",
-      "momentum": "nouveau",
-      "note": "SQLite/Litestream, Nix flakes, P99 0ms par design. Moins de pièces mobiles quand la gouvernance vacille."
+      "note": "Pas de nouveau signal. CXL et calcul proche mémoire en attente."
     }
   ],
   "watchlist": [
@@ -126,82 +126,82 @@
       "label": "Lignage des modèles: provenance invisible",
       "category": "ia",
       "since": "2026-08-29",
-      "note": "Claude Code impose traçabilité opt-out. Debian l'avait abandonnée. Deux visions du lignage s'affrontent."
+      "note": "Claude Code impose traçabilité opt-out. C++26 durcit au cœur du compilateur. La provenance se négocie au niveau du langage."
     },
     {
       "label": "Implants firmware d'usine",
       "category": "infosec",
       "since": "2026-08-29",
-      "note": "QubesOS, U-Boot, Dahua confirment. Couches les moins auditées = les plus exposées, hyperviseur au firmware."
+      "note": "Fire Ant confirme: routeurs Cisco détournés. Couches les moins auditées = les plus exposées."
     },
     {
       "label": "Automatisation du copyright comme arme",
       "category": "societe",
       "since": "2026-08-29",
-      "note": "Tracer.ai fait expulser Luanti du Play Store par DMCA IA sans vérification humaine. Sanction automatisée vs libre."
+      "note": "Tracer.ai fait expulser Luanti. Le précédent reste actif, pas de nouveau signal."
     },
     {
       "label": "Gouvernance open source en crise",
       "category": "devops",
       "since": "2026-08-08",
-      "note": "SQLite/Nix simplicité = réponse à la crise. dn42 reconstruction manuelle. Quand la gouvernance vacille, on simplifie."
+      "note": "Apache Iggy cherche ancrage institutionnel. La gouvernance vacille, on simplifie et on cherche des pavillons."
     },
     {
       "label": "Capture réglementaire par le puni",
       "category": "societe",
       "since": "2026-08-28",
-      "note": "UE premières RFI AI Act = test de la capture. Bruxelles saura-t-elle imposer ou les labos écriront-ils les règles?"
+      "note": "Juge invalide sanctions Pentagone vs Anthropic. La punition se heurte aux tribunaux."
     },
     {
-      "label": "Contre-surveillance adversariale physique",
-      "category": "diy",
-      "since": "2026-08-30",
-      "note": "Écran VHF via navigateur. TEMPEST par le browser. Frontière matériel banal/arme radio s'efface."
+      "label": "Prédation des données d'entraînement sur le commun",
+      "category": "ia",
+      "since": "2026-09-01",
+      "note": "Crawlers IA martèlent kernel.org. L'industrie externalise ses coûts sur le libre sans contrepartie."
     },
     {
-      "label": "Surveillance par marges budgétaires et procédurales",
-      "category": "societe",
-      "since": "2026-08-30",
-      "note": "Flock se retourne contre son PDG. Berkeley plie face à ICE. UE ProtectEU portes dérobées."
+      "label": "Infiltration étatique par processus RH",
+      "category": "infosec",
+      "since": "2026-09-01",
+      "note": "Fraude emplois NK s'étend à santé et vente. L'infiltration passe par les RH autant que par le réseau."
     },
     {
       "label": "Conflit multi-agent: dynamique adversariale émergente",
       "category": "infosec",
       "since": "2026-08-23",
-      "note": "Postmortem HuggingFace. Auth agents (SPIFFE/OAuth) reste théorique. Agents agissent en notre nom sans garde-fous."
+      "note": "Aurora utilise Cursor AI. Infostealers ciblent Claude. Agents = outils ET cibles."
     }
   ],
   "tensions": [
     {
       "label": "Open-weight vs captivité des labos",
-      "note": "Claude Code impose la traçabilité par défaut (opt-out) pendant que Debian l'abandonne. L'open-weight perd sa traçabilité, le libre assume le code sans origine, Anthropic impose la sienne."
+      "note": "Claude Code impose traçabilité par défaut (opt-out) pendant que Debian l'abandonne. C++26 durcit sa stdlib. La provenance se négocie désormais au niveau du langage et du compilateur."
     },
     {
       "label": "IA comme outil de défense vs infrastructure de compromission",
-      "note": "Postmortem HuggingFace: chaîne d'approvisionnement IA compromise. Agents prêts à agir sans auth solide. L'offensive s'industrialise plus vite que la doctrine défensive."
+      "note": "Aurora utilise Cursor AI pour piloter des intrusions. Infostealers siphonnent les sessions Claude. Les agents sont armes ET cibles. L'offensive s'industrialise plus vite que la doctrine."
     },
     {
       "label": "Décentralisation: sponsor unique vs gouvernance diffuse",
-      "note": "NAT comme péché originel. dn42 reconstruit la pile réseau. SQLite/Nix réinvestissent la simplicité. Quand la gouvernance vacille, les architectures simples redeviennent stratégiques."
+      "note": "Apache Iggy cherche un pavillon institutionnel. SOPS/Let's Encrypt deviennent des réflexes. Quand la gouvernance vacille, on simplifie et on cherche des ancrages durables."
     },
     {
       "label": "Punition comme instrument de capture réglementaire",
-      "note": "UE envoie premières RFI AI Act: test crucial. Après des mois de capture par les labos, Bruxelles saura-t-elle imposer ses exigences ou les règles seront-elles écrites par les régulés?"
+      "note": "Juge fédéral invalide les sanctions du Pentagone contre Anthropic. La punition comme levier de pression se heurte aux tribunaux. Le bras de fer État-labos change d'arène."
     },
     {
       "label": "Deux régimes de sanction: Big Tech protégée, infrastructure associative sacrifiée",
-      "note": "Flock se retourne contre son PDG. Berkeley plie face à ICE. UE relance portes dérobées. Le système protège la Big Tech, sacrifie l'associatif, normalise la surveillance par procédure."
+      "note": "Autistici classé terroriste international. Le Pentagone sanctionne Anthropic puis est invalidé. L'État criminalise le commun, protège les labos, normalise la surveillance."
     },
     {
-      "label": "Hype IA vs érosion de l'expertise de terrain",
-      "note": "LLMs érodent l'expertise pendant que des projets open source bannissent l'IA. Le discours des labos rencontre rejet et déperdition cognitive. Le fossé devient problème de gouvernance."
+      "label": "Prédation IA vs préservation du commun",
+      "note": "Crawlers IA martèlent kernel.org pour des données vierges. L'industrie IA externalise ses coûts sur les infrastructures du libre sans retour ni concertation."
     }
   ],
   "strategy_notes": [
-    "Claude Code trace par défaut vs Debian sans traçabilité: la provenance du code devient un champ de bataille. Surveiller qui impose ses standards et la réaction de la communauté.",
-    "Fuites françaises (Zéro Logement Vacant 48M, Alaxione 4e fuite): fragilité structurelle des données publiques. L'hyperspécialisation n'a pas servi de rempart. Surveiller l'effet politique.",
-    "SQLite/Nix/dn42: la simplicité redevient stratégique quand la gouvernance open source vacille. Les architectures compréhensibles par quelques personnes redeviennent un avantage. Surveiller l'adoption.",
-    "UE premières RFI AI Act: test crucial de la capacité réglementaire face à la capture par les labos. Surveiller la réponse des fournisseurs de modèles et l'écart entre exigences et application."
+    "Aurora utilise Cursor AI pour piloter des intrusions: l'agent IA devient outil offensif opérationnel, pas théorique. Surveiller la réponse des éditeurs d'outils IA et la diffusion de cette pratique.",
+    "Autistici classé organisation terroriste: escalade majeure contre l'infrastructure associative. Le régime à deux vitesses se confirme. Surveiller les réactions européennes et la solidarité du libre.",
+    "Juge fédéral invalide les sanctions du Pentagone contre Anthropic: la capture réglementaire se heurte aux tribunaux. Surveiller les recours et l'effet d'entraînement sur d'autres labos.",
+    "Crawlers IA sur kernel.org: l'industrie IA épuise le commun sans contrepartie. Surveiller les mesures de protection déployées et la possibilité d'un mouvement de blocage coordonné."
   ],
-  "updated_at": "2026-08-31"
+  "updated_at": "2026-09-01"
 }

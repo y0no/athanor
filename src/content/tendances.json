@@ -1,38 +1,38 @@
 {
-  "updated_at": "2026-09-01",
+  "updated_at": "2026-09-02",
   "synthesis": {
-    "headline": "L'IA devient arme et cible tandis que le commun s'épuise",
-    "narrative": "Les agents IA sont désormais <strong>armes</strong> et <strong>cibles</strong> simultanément: Aurora rançongiciel pilote des intrusions via <em>Cursor AI</em> pendant que des <em>infostealers</em> siphonnent les sessions Claude. L'industrie IA <strong>épuise</strong> en parallèle le commun qui la nourrit — les crawlers martèlent <code>kernel.org</code> pour des données vierges. Pendant ce temps, Washington classe <strong>Autistici</strong> en organisation terroriste tandis qu'un juge invalide les sanctions du Pentagone contre Anthropic: le régime à deux vitesses se confirme."
+    "headline": "L'IA offensive s'industrialise plus vite que ses garde-fous",
+    "narrative": "Les agents IA franchissent un seuil opérationnel: <strong>Claude Code</strong> fabrique un exploit zero-day en 90 minutes, tandis qu'<strong>Anthropic</strong> et <strong>OpenAI</strong> pubulent simultanément leurs garde-fous. La compression du cycle patch-exploit (<strong>JFrog</strong> exploité en 3 jours) fait écho à l'<em>inférence locale</em> devenue praticable: les frontières entre souveraineté, sécurité et autonomie se redessinent. Pendant ce temps, un développeur migre 65 000 lignes de Go en Rust pour 400 $, et <strong>Snapchat</strong> envoie la police chez une enseignante sans filtre humain — l'agentique devient force économique tandis que la surveillance par défaut s'intensifie."
   },
   "currents": [
     {
-      "label": "L'IA devient infrastructure offensive",
-      "note": "Aurora utilise Cursor AI pour piloter des intrusions. Infostealers ciblent les sessions Claude. Les agents sont outils d'attaque ET surface d'attaque. La doctrine défensive n'existe pas.",
+      "label": "L'IA comme couche d'accélération offensive",
+      "note": "Claude Code fabrique un zero-day en 90 min, JFrog est exploité 3 jours après son patch. L'agentique offensive et la compression du cycle patch-exploit convergent: l'IA accélère l'attaque pendant que la défense court derrière.",
       "categories": [
         "ia",
         "infosec"
       ]
     },
     {
-      "label": "Désignation d'exception vs protection de la Big Tech",
-      "note": "Autistici classé terroriste, Pentagone sanctionne Anthropic puis est invalidé. L'État criminalise le commun associatif, protège les labos, normalise la surveillance procédurale.",
+      "label": "Frugalité et relocalisation de l'intelligence",
+      "note": "Inférence locale praticable sur Mac standard, petit transformer qui bat des LLMs, outillage artisanal (io_uring, monitoring Docker). Le contre-mouvement à l'API fermée gagne du terrain sur trois fronts simultanés.",
+      "categories": [
+        "ia",
+        "diy",
+        "devops"
+      ]
+    },
+    {
+      "label": "Surveillance par défaut et contestation législative",
+      "note": "Snapchat alerte le FBI sans filtre humain, Google bloque AuroraStore, 153M permis vendus via un vérifieur KYC invisible. La captation et la surveillance s'automatisent pendant que l'EFF verrouille les fronts législatif et jurisprudentiel.",
       "categories": [
         "societe",
         "infosec"
       ]
     },
     {
-      "label": "Sécurité par défaut: du compilateur au déploiement",
-      "note": "C++26 durcit sa stdlib, SOPS/age pour les secrets, TEMPEST par navigateur. La sécurité se négocie au cœur des outils, plus en surcouche d'audit.",
-      "categories": [
-        "devops",
-        "infosec",
-        "diy"
-      ]
-    },
-    {
-      "label": "Prédation des données vs préservation du commun",
-      "note": "Crawlers IA martèlent kernel.org. L'industrie externalise ses coûts sur le libre. La quête de données vierges épuise l'infrastructure associative sans contrepartie.",
+      "label": "L'agentique comme force de transformation économique",
+      "note": "65 000 lignes Go→Rust pour 400$, Claude 5.1, Atlas world model. L'agent ne assiste plus le code: il le migre, le transforme, et redéfinit le coût du refactoring comme un calcul marginal plutôt qu'un pari d'équipe.",
       "categories": [
         "ia",
         "devops"
@@ -44,65 +44,65 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-09-01",
+      "last_seen": "2026-09-02",
       "momentum": "stable",
-      "note": "Google Boost, mémoire standardisée, Almanac YC S26. L'agentique s'industrialise: du bricolage à l'infrastructure."
+      "note": "Claude 5.1, Atlas world model, 65k Go→Rust pour 400$. L'agentique devient force de migration économique."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-09-01",
+      "last_seen": "2026-09-02",
       "momentum": "montant",
-      "note": "Injection dans dépôt judiciaire, Claude Code cassé, Aurora utilise Cursor. Règles du modèle ≠ contrôles sécurité. L'offensive accélère."
+      "note": "Claude Code fabrique un zero-day en 90 min. Labos publient garde-fous simultanément. Offensive et doctrine accélèrent en parallèle."
     },
     {
       "label": "Commodification des LLMs et migration de la valeur",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-09-01",
-      "momentum": "stable",
-      "note": "Crawlers IA martèlent kernel.org pour données vierges. Prédation silencieuse sur le commun."
+      "last_seen": "2026-09-02",
+      "momentum": "montant",
+      "note": "Inférence locale praticable (Qwen 104Go sur 48Go). Écart open/closed se resserre. L'avantage API fermée s'amincit."
     },
     {
       "label": "Gouvernance et économie de l'IA: qui contrôle le rythme",
       "category": "societe",
       "first_seen": "2026-08-17",
-      "last_seen": "2026-09-01",
-      "momentum": "montant",
-      "note": "Juge invalide sanctions Pentagone vs Anthropic. Bras de fer État-labos devant les tribunaux."
+      "last_seen": "2026-09-02",
+      "momentum": "stable",
+      "note": "EFF contre AB 1709 et réécriture du droit d'auteur. Apple vs OpenAI: forensiques comme arme. Bras de fer multi-terrain."
     },
     {
       "label": "Décentralisation: sponsor unique vs résilience fédérée",
       "category": "devops",
       "first_seen": "2026-08-25",
-      "last_seen": "2026-09-01",
+      "last_seen": "2026-09-02",
       "momentum": "stable",
-      "note": "Apache Iggy passe TLP. SOPS/Let's Encrypt: l'hygiène devient réflexe. Ancrages institutionnels cherchés."
+      "note": "Mastodon patche 4 branches en urgence. Maturité de gouvernance technique du fédiverse. SOPS/Let's Encrypt restent des réflexes."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-09-01",
+      "last_seen": "2026-09-02",
       "momentum": "stable",
-      "note": "RotaryCell: téléphone à cadran en LTE. Reverse-engineering Cavium 10GbE. Modernité comme interface, pas remplacement."
+      "note": "PZSDR RFSoC, WebFPGA, PS4→psychomètre, Nori Robotics humanoïde low-cost. Le détournement grand public devient chaîne de valeur."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-09-01",
-      "momentum": "stable",
-      "note": "Fire Ant détourne Cisco. ValleyRAT signé, JSCeal en bytecode V8. Du firmware au bytecode, la réputation n'est plus un rempart."
+      "last_seen": "2026-09-02",
+      "momentum": "montant",
+      "note": "JFrog Artifactory exploité 3j après patch (config par défaut). 153M permis via vérifieur KYC. Les maillons opaques concentrent le risque."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-09-01",
+      "last_seen": "2026-09-02",
       "momentum": "montant",
-      "note": "Autistici classé terroriste. Juge borne le Pentagone. Désignation d'exception vs Big Tech protégée."
+      "note": "Snapchat→FBI sans filtre humain. Google bloque AuroraStore. Microsoft concède un bouton 'non'. Captation par défaut contestée."
     },
     {
       "label": "Béquille cognitive IA et érosion de l'apprentissage",
@@ -110,39 +110,31 @@
       "first_seen": "2026-08-22",
       "last_seen": "2026-09-01",
       "momentum": "stable",
-      "note": "Tri algorithmique en santé mentale dégrade la prise en charge. L'algorithme remplace le jugement clinique."
+      "note": "Pas de nouveau signal. Tri algorithmique en santé mentale dégrade la prise en charge."
     },
     {
       "label": "Industrialisation de l'extorsion",
       "category": "infosec",
       "first_seen": "2026-08-23",
-      "last_seen": "2026-09-01",
+      "last_seen": "2026-09-02",
       "momentum": "stable",
-      "note": "McKesson 284M dossiers, 55M$ rançon. Berlin refuse de payer. Fragmentation des réponses = allié des extorqueurs."
-    },
-    {
-      "label": "Modèles de langage à diffusion",
-      "category": "ia",
-      "first_seen": "2026-08-31",
-      "last_seen": "2026-08-31",
-      "momentum": "stable",
-      "note": "Pas de nouveau signal. Architecture alternative en attente de validation."
+      "note": "Aesto Health 9,5M dossiers, Nutex rançongiciels. Centralisation cloud des dossiers de santé concentre risques et conséquences."
     },
     {
       "label": "Simplicité comme avantage stratégique",
       "category": "devops",
       "first_seen": "2026-08-31",
-      "last_seen": "2026-09-01",
+      "last_seen": "2026-09-02",
       "momentum": "stable",
-      "note": "SOPS/age, Let's Encrypt, C++26 hardening. Moins de pièces mobiles, sécurité par défaut."
+      "note": "io_uring sans readahead, monitoring Docker léger. L'outil sur mesure préféré aux plateformes tout-en-un."
     },
     {
       "label": "Contre-surveillance adversariale physique",
       "category": "diy",
       "first_seen": "2026-08-30",
       "last_seen": "2026-09-01",
-      "momentum": "montant",
-      "note": "TEMPEST par navigateur confirmé. Morse VHF via fuite EMI d'écran. Frontière périphérique/arme radio s'efface."
+      "momentum": "stable",
+      "note": "Pas de nouveau signal. TEMPEST navigateur et Morse VHF confirmés précédemment."
     },
     {
       "label": "Cyberguerre étatique contre infrastructures physiques",
@@ -150,15 +142,7 @@
       "first_seen": "2026-08-24",
       "last_seen": "2026-09-01",
       "momentum": "stable",
-      "note": "Fire Ant (Chine) détourne routeurs Cisco et TACACS. Espionnage d'État change d'étage: hyperviseurs vers réseau."
-    },
-    {
-      "label": "Goulot mémoire et architecture silicium",
-      "category": "diy",
-      "first_seen": "2026-08-25",
-      "last_seen": "2026-08-31",
-      "momentum": "stable",
-      "note": "Pas de nouveau signal. CXL et calcul proche mémoire en attente."
+      "note": "Pas de nouveau signal. Fire Ant (Chine) sur routeurs Cisco et TACACS."
     }
   ],
   "watchlist": [
@@ -178,19 +162,13 @@
       "label": "Automatisation du copyright comme arme",
       "category": "societe",
       "since": "2026-08-29",
-      "note": "Tracer.ai fait expulser Luanti. Le précédent reste actif, pas de nouveau signal."
+      "note": "EFF exhorte les tribunaux à ne pas réécrire le droit d'auteur sous pression IA. Le précédent Tracer.ai reste actif."
     },
     {
       "label": "Gouvernance open source en crise",
       "category": "devops",
       "since": "2026-08-08",
-      "note": "Apache Iggy cherche ancrage institutionnel. La gouvernance vacille, on simplifie et on cherche des pavillons."
-    },
-    {
-      "label": "Capture réglementaire par le puni",
-      "category": "societe",
-      "since": "2026-08-28",
-      "note": "Juge invalide sanctions Pentagone vs Anthropic. La punition se heurte aux tribunaux."
+      "note": "Mastodon montre une maturité de gouvernance technique. Apache Iggy cherche encore un pavillon institutionnel."
     },
     {
       "label": "Prédation des données d'entraînement sur le commun",
@@ -199,42 +177,48 @@
       "note": "Crawlers IA martèlent kernel.org. L'industrie externalise ses coûts sur le libre sans contrepartie."
     },
     {
-      "label": "Infiltration étatique par processus RH",
-      "category": "infosec",
-      "since": "2026-09-01",
-      "note": "Fraude emplois NK s'étend à santé et vente. L'infiltration passe par les RH autant que par le réseau."
+      "label": "Surveillance automatisée sans filtre humain",
+      "category": "societe",
+      "since": "2026-09-02",
+      "note": "Snapchat alerte le FBI sans comprendre le second degré. La modération IA devient tuyau direct vers les forces de l'ordre."
     },
     {
-      "label": "Conflit multi-agent: dynamique adversariale émergente",
+      "label": "Forensiques de poste comme arme juridique",
+      "category": "societe",
+      "since": "2026-09-02",
+      "note": "Apple extrait des preuves forensiques d'un MacBook dans son procès vs OpenAI. Les postes de travail deviennent pièces à conviction."
+    },
+    {
+      "label": "Cycle patch-exploit sous 72h",
       "category": "infosec",
-      "since": "2026-08-23",
-      "note": "Aurora utilise Cursor AI. Infostealers ciblent Claude. Agents = outils ET cibles."
+      "since": "2026-09-02",
+      "note": "JFrog exploité 3 jours après divulgation. La fenêtre de réaction se ferme. Config par défaut = surface critique."
     }
   ],
   "tensions": [
     {
       "label": "Open-weight vs captivité des labos",
-      "note": "Claude Code impose traçabilité par défaut (opt-out) pendant que Debian l'abandonne. C++26 durcit sa stdlib. La provenance se négocie désormais au niveau du langage et du compilateur."
+      "note": "L'inférence locale devient praticable (Qwen 104Go sur 48Go RAM) pendant que l'écart de capacités se resserre. L'avantage structurel des API fermées s'amincit, mais les labos publient leurs garde-fous au moment même où leurs modèles démontrent des capacités offensives concrètes."
     },
     {
       "label": "IA comme outil de défense vs infrastructure de compromission",
-      "note": "Aurora utilise Cursor AI pour piloter des intrusions. Infostealers siphonnent les sessions Claude. Les agents sont armes ET cibles. L'offensive s'industrialise plus vite que la doctrine."
+      "note": "Claude Code fabrique un zero-day en 90 minutes. Anthropic et OpenAI publient leurs doctrines de sécurité simultanément. Les agents sont armes ET cibles: l'offensive s'industrialise plus vite que la doctrine ne se formalise."
     },
     {
       "label": "Décentralisation: sponsor unique vs gouvernance diffuse",
-      "note": "Apache Iggy cherche un pavillon institutionnel. SOPS/Let's Encrypt deviennent des réflexes. Quand la gouvernance vacille, on simplifie et on cherche des ancrages durables."
-    },
-    {
-      "label": "Punition comme instrument de capture réglementaire",
-      "note": "Juge fédéral invalide les sanctions du Pentagone contre Anthropic. La punition comme levier de pression se heurte aux tribunaux. Le bras de fer État-labos change d'arène."
+      "note": "Mastodon patche 4 branches en urgence avec une maturité reconnue. Apache Iggy cherche encore un pavillon. Quand la gouvernance vacille, on simplifie et on cherche des ancrages durables."
     },
     {
       "label": "Deux régimes de sanction: Big Tech protégée, infrastructure associative sacrifiée",
-      "note": "Autistici classé terroriste international. Le Pentagone sanctionne Anthropic puis est invalidé. L'État criminalise le commun, protège les labos, normalise la surveillance."
+      "note": "Snapchat envoie la police chez une enseignante sans filtre humain. Google bloque AuroraStore et pénalise GrapheneOS. Microsoft concède enfin un bouton 'non' pour OneDrive. La captation par défaut n'est jamais une fatalité technique, mais l'insoumission est criminalisée."
     },
     {
       "label": "Prédation IA vs préservation du commun",
       "note": "Crawlers IA martèlent kernel.org pour des données vierges. L'industrie IA externalise ses coûts sur les infrastructures du libre sans retour ni concertation."
+    },
+    {
+      "label": "Frugalité vs puissance brute: la course sur deux tableaux",
+      "note": "Un transformer entraîné en 1,5h bat des LLMs sur ARC. L'inférence locale devient praticable sur Mac standard. Pendant ce temps, Claude 5.1 et Atlas repoussent les frontières de l'échelle. La course se joue sur la puissance ET la frugalité."
     }
   ]
 }

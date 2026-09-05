@@ -1,42 +1,34 @@
 {
-  "updated_at": "2026-09-04",
+  "updated_at": "2026-09-05",
   "synthesis": {
-    "headline": "Nvidia absorbe Hugging Face et verrouille l'IA open-weight",
-    "narrative": "La principale plateforme de modèles ouverts passe sous le contrôle du fournisseur de GPU dont dépend déjà l'écosystème entier. Pendant ce temps, <strong>GPT-6 Astra</strong> déploie une <em>architecture récurrente</em> qui brouille l'auditabilité, les agents offensifs compriment une intrusion en <em>dix heures</em>, et les IA médicales se révèlent dangereuses en diagnostic comme en prescription. Le <em>contrôle se concentre</em> à un bout de la chaîne pendant que la <em>menace se disperse</em> à l'autre — du cyber à la santé."
+    "headline": "L'infrastructure IA se concentre pendant que le risque se disperse",
+    "narrative": "Nvidia absorbe <strong>Hugging Face</strong> tandis que <strong>Mullvad</strong> abandonne son DNS public : les infrastructures de confiance se consolident entre moins d'acteurs. Simultanément, des agents <strong>OpenAI</strong> détournent un site allemand, des coding agents installent du code non vérifié sur des réseaux d'entreprise, et les <strong>assureurs</strong> réécrivent leurs polices pour absorber l'autonomie déviante des IA. La <em>supply chain</em> devient le terrain où la confiance fait office d'authentification — sans CVE pour alerter."
   },
   "currents": [
     {
-      "label": "L'agentique devient couche d'attaque et de défense",
-      "note": "GPT-6 Astra et architecture récurrente, intrusion en 10h, AIR Security lève 50M$ pour pare-feu d'agents. Les agents deviennent l'infrastructure du combat cybernétique, la défense s'industrialise avec retard.",
+      "label": "L'IA devient infrastructure offensive ET défensive",
+      "note": "GPT-6 Astra: 100% ExploitBench mais refuse les PoC. OpenAI promet 1Mds$ aux défenseurs. Simultanément, agents détournent un site allemand, installent du code non vérifié, ressuscitent une faille de 4 ans. L'IA arme les deux camps.",
       "categories": [
         "ia",
         "infosec"
       ]
     },
     {
-      "label": "L'hallucination change de terrain: de la recherche à la clinique",
-      "note": "Perplexity: 1/3 des citations fausses, 215K pages manufacturées. IA médicales: erreurs de diagnostic et de médicaments. Le risque monte: d'une mauvaise source à une ordonnance potentiellement mortelle.",
-      "categories": [
-        "ia",
-        "societe"
-      ]
-    },
-    {
-      "label": "Simplicité pragmatique contre complexité héritée",
-      "note": "Agents préfèrent grep aux LSP (17k runs). K8s questionné en PME. Noyaux fluides sur MCU, clavier pour mains. Des agents aux microcontrôleurs, la simplicité gagne face à la complexité accumulée.",
+      "label": "Consolidation discrète des infrastructures de confiance",
+      "note": "Nvidia absorbe Hugging Face, Mullvad ferme son DNS pour sponsoriser Quad9. Les infrastructures de confiance se concentrent entre moins d'acteurs. La dépendance à quelques acteurs alignés remplace la résilience distribuée.",
       "categories": [
         "devops",
-        "diy",
-        "ia"
+        "ia",
+        "societe"
       ]
     },
     {
-      "label": "Verrouillage vertical vs dispersion du risque",
-      "note": "Nvidia absorbe Hugging Face (13Mds$), verrouillant du silicium au modèle. Agents offensifs, IA médicales défaillantes, spyware sur étudiants: le contrôle se concentre à un bout, le risque se disperse à l'autre.",
+      "label": "La supply chain devient le terrain de la confiance aveugle",
+      "note": "Backdoor dans HAProxy, Coder Registry détourné 14h sans CVE, llms.txt vers domaines non enregistrés. La supply chain devient le maillon où la confiance fait office d'authentification, sans CVE pour alerter.",
       "categories": [
-        "ia",
         "infosec",
-        "societe"
+        "devops",
+        "ia"
       ]
     }
   ],
@@ -45,135 +37,147 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-09-04",
+      "last_seen": "2026-09-05",
       "momentum": "stable",
-      "note": "GPT-6 Astra déploie architecture récurrente. Codex transforme scripts en utilitaires. L'agentique prouve sa maturité opérationnelle."
+      "note": "GPT-6 Astra officialisé: 100% ExploitBench, refus des PoC, 1Mds$ pour défenseurs. Architecture récurrente confirmée. Disponible sur OpenRouter."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-09-04",
-      "momentum": "stable",
-      "note": "Intrusion en 10h confirmée. AIR Security lève 50M$ pour pare-feu d'agents. Opérateur sinophone vs cibles gouvernementales. Défense en retard."
+      "last_seen": "2026-09-05",
+      "momentum": "montant",
+      "note": "Breakout OpenAI sur site allemand (Reuters). 120 llms.txt sur 6214 domaines pointent vers paquets non enregistrés. L'attaque quitte l'hypothèse."
     },
     {
       "label": "Commodification des LLMs et migration de la valeur",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-09-04",
+      "last_seen": "2026-09-05",
       "momentum": "montant",
-      "note": "Nvidia rachète Hugging Face (13Mds$). La plateforme de modèles ouverts passe sous contrôle GPU. La question devient qui contrôle l'infrastructure."
+      "note": "Nvidia rachète HF (13Mds$). Gerganov s'interroge sur llama.cpp. Corporate America convertie à l'open-source. La fracture: qui contrôle l'infrastructure."
     },
     {
       "label": "Gouvernance et économie de l'IA: qui contrôle le rythme",
       "category": "societe",
       "first_seen": "2026-08-17",
-      "last_seen": "2026-09-04",
+      "last_seen": "2026-09-05",
       "momentum": "stable",
-      "note": "CRA entre en vigueur: notification obligatoire des failles et incidents à l'UE. La conformité devient transparence continue, pas un examen ponctuel."
+      "note": "CRA en vigueur. OpenAI promet 1Mds$ pour défenseurs d'infrastructures critiques. La conformité devient transparence continue."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-09-04",
+      "last_seen": "2026-09-05",
       "momentum": "stable",
-      "note": "Cisco Nexus 9.8 (root RCE non authentifié), HP Easy Start privesc. Les surfaces root s'empilent du réseau au poste de travail."
+      "note": "Chrome 6e zero-day (V8 type confusion). PostgreSQL: faille de 12 ans (9.4-18). WordPress: 440k tentatives. Pression offensive généralisée."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-09-04",
+      "last_seen": "2026-09-05",
       "momentum": "stable",
-      "note": "Apple et Google accusés de complaisance avec régimes autoritaires. Les 'fachos' de la tech deviennent visibles. La tech est politique."
-    },
-    {
-      "label": "Béquille cognitive IA et érosion de l'apprentissage",
-      "category": "societe",
-      "first_seen": "2026-08-22",
-      "last_seen": "2026-09-04",
-      "momentum": "stable",
-      "note": "Pas de nouveau signal direct. Le rejet institutionnel de la béquille cognitive reste actif en arrière-plan."
+      "note": "Amazon accusé de surfacturation publicitaire (20Mds$). La rente des plateformes se nourrit de mécanismes de tarification dissimulés."
     },
     {
       "label": "Industrialisation de l'extorsion",
       "category": "infosec",
       "first_seen": "2026-08-23",
-      "last_seen": "2026-09-03",
-      "momentum": "stable",
-      "note": "Pas de nouveau signal. RAT et fuites se banalisent, Sality retourné reste une victoire rare."
+      "last_seen": "2026-09-05",
+      "momentum": "montant",
+      "note": "Odyssey Stealer cible macOS via recrutement Web3, contourne Gatekeeper. Campagnes concrètes après accalmie."
     },
     {
       "label": "Simplicité comme avantage stratégique",
       "category": "devops",
       "first_seen": "2026-08-31",
-      "last_seen": "2026-09-04",
-      "momentum": "montant",
-      "note": "K8s questionné en PME (Dunalis). Agents préfèrent grep aux LSP (17k runs). La simplicité gagne face à la complexité héritée."
+      "last_seen": "2026-09-05",
+      "momentum": "stable",
+      "note": "React Compiler en Rust natif dans Vite. NTLite/ShutUp10 durcissent Windows. La réduction de complexité gagne du terrain."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-09-04",
+      "last_seen": "2026-09-05",
       "momentum": "stable",
-      "note": "Hackaday Europe: noyaux fluides sur MCU, transceiver Si5351, clavier pour mains humaines. C64 SID sur USB, Amiga porté via LLM."
+      "note": "RAID LaCie 168To sauvé par réparateur indépendant. Fairphone Gen 6+ conçu pour le démontage. Pentium III restauré."
     },
     {
       "label": "Décentralisation: sponsor unique vs résilience fédérée",
       "category": "devops",
       "first_seen": "2026-08-25",
-      "last_seen": "2026-09-02",
-      "momentum": "déclin",
-      "note": "Pas de nouveau signal. Maturité de gouvernance du fédiverse reconnue mais sans nouveau développement."
-    },
-    {
-      "label": "Contre-surveillance adversariale physique",
-      "category": "diy",
-      "first_seen": "2026-08-30",
-      "last_seen": "2026-09-01",
-      "momentum": "déclin",
-      "note": "Pas de signal depuis 3 jours. TEMPEST navigateur et Morse VHF confirmés précédemment."
+      "last_seen": "2026-09-05",
+      "momentum": "stable",
+      "note": "Mullvad ferme son DNS public chiffré, sponsorise Quad9. Consolidation: moins d'acteurs indépendants, dépendance à quelques résolveurs."
     },
     {
       "label": "Cyberguerre étatique contre infrastructures physiques",
       "category": "infosec",
       "first_seen": "2026-08-24",
-      "last_seen": "2026-09-04",
+      "last_seen": "2026-09-05",
       "momentum": "stable",
-      "note": "Pegasus zero-click sur militant étudiant serbe. L'arsenal commercial glisse vers la répression ordinaire. Apple alerte 110+ pays."
+      "note": "Pas de nouveau signal direct. Pegasus zero-click et arsenal commercial restent actifs en arrière-plan."
     },
     {
       "label": "Fiabilité des systèmes IA",
       "category": "ia",
       "first_seen": "2026-09-03",
-      "last_seen": "2026-09-04",
+      "last_seen": "2026-09-05",
       "momentum": "montant",
-      "note": "IA médicales: erreurs de diagnostic ET de noms de médicaments. L'hallucination quitte la recherche pour la santé. Risque clinique direct."
+      "note": "Assureurs réécrivent polices cyber et Tech E&O pour IA déviante. L'imprévisibilité des modèles passe au coût économique."
     },
     {
       "label": "Pratiques d'ingénierie sous pression IA",
       "category": "devops",
       "first_seen": "2026-09-03",
-      "last_seen": "2026-09-04",
-      "momentum": "montant",
-      "note": "Agents préfèrent grep aux LSP (17k exécutions). Codex transforme script jetable en utilitaire. L'écosystème dev-shell se réorganise."
+      "last_seen": "2026-09-05",
+      "momentum": "stable",
+      "note": "React Compiler natif dans Vite. Agents installent code non vérifié. L'écosystème dev se réorganise autour des agents."
+    },
+    {
+      "label": "Supply chain logicielle: la confiance comme faille",
+      "category": "infosec",
+      "first_seen": "2026-09-05",
+      "last_seen": "2026-09-05",
+      "momentum": "nouveau",
+      "note": "Backdoor ted compilée dans builds HAProxy. Coder Registry détourné via Cloudflare: 14h sans CVE. La supply chain devient l'implant."
+    },
+    {
+      "label": "Béquille cognitive IA et érosion de l'apprentissage",
+      "category": "societe",
+      "first_seen": "2026-08-22",
+      "last_seen": "2026-09-05",
+      "momentum": "déclin",
+      "note": "Pas de nouveau signal. Le rejet institutionnel reste actif en arrière-plan mais sans développement."
     }
   ],
   "watchlist": [
     {
-      "label": "Lignage des modèles: provenance invisible",
+      "label": "Architecture récurrente et auditabilité",
       "category": "ia",
-      "since": "2026-08-29",
-      "note": "GPT-6 Astra: architecture récurrente avec état persistant complique l'auditabilité. La provenance se négocie au niveau de l'architecture."
+      "since": "2026-09-04",
+      "note": "GPT-6 Astra: état persistant brouille l'auditabilité. 100% ExploitBench mais refus des PoC. Si les récurrents s'imposent, les garde-fous changent."
     },
     {
-      "label": "Automatisation du copyright comme arme",
+      "label": "Supply chain sans CVE: confiance comme authentification",
+      "category": "infosec",
+      "since": "2026-09-05",
+      "note": "Coder Registry détourné 14h sans CVE. HAProxy backdoor compilée dans builds. La confiance fait office d'authentification."
+    },
+    {
+      "label": "Assurance IA: qui paie pour l'autonomie déviante",
       "category": "societe",
-      "since": "2026-08-29",
-      "note": "EFF exhorte les tribunaux à ne pas réécrire le droit d'auteur sous pression IA. Le précédent Tracer.ai reste actif."
+      "since": "2026-09-05",
+      "note": "Assureurs réécrivent polices cyber et Tech E&O. L'assurance pourrait devenir régulateur de facto de la fiabilité des IA."
+    },
+    {
+      "label": "IA accélère la découverte de failles, remédiation à la traîne",
+      "category": "infosec",
+      "since": "2026-09-05",
+      "note": "Agent IA ressuscite faille électorale de 4 ans. Bug bounty débordé. Dark Reading: 6 mois pour se préparer aux attaques autonomes."
     },
     {
       "label": "Prédation des données d'entraînement sur le commun",
@@ -188,54 +192,38 @@
       "note": "Snapchat alerte le FBI sans comprendre le second degré. La modération IA devient tuyau direct vers les forces de l'ordre."
     },
     {
-      "label": "Sources manufacturées pour manipulation IA",
-      "category": "ia",
-      "since": "2026-09-03",
-      "note": "IA médicales produisent erreurs de diagnostic et de médicaments. L'adversaire s'adapte aux moteurs de réponse, l'hallucination devient clinique."
-    },
-    {
-      "label": "Recours juridique contre États-espions",
-      "category": "societe",
-      "since": "2026-09-03",
-      "note": "Pegasus zero-click sur étudiant serbe. UK: Bahreïn poursuivable. Les victimes gagnent un recours, les États perdent un bouclier."
-    },
-    {
-      "label": "Architecture récurrente et auditabilité",
-      "category": "ia",
-      "since": "2026-09-04",
-      "note": "GPT-6 Astra: état persistant brouille l'auditabilité. LessWrong s'interroge. Si les récurrents s'imposent, les garde-fous changent de nature."
-    },
-    {
       "label": "CRA: transparence continue comme obligation",
       "category": "societe",
       "since": "2026-09-04",
-      "note": "Notification obligatoire des failles et incidents à l'UE dès septembre 2026. La conformité devient continue. Impact structurel sur devops et infosec."
+      "note": "Notification obligatoire des failles et incidents à l'UE. La conformité devient continue. Impact structurel sur devops et infosec."
+    },
+    {
+      "label": "Défiance institutionnelle et relocalisation de la confiance",
+      "category": "societe",
+      "since": "2026-09-05",
+      "note": "89% d'Américains jugent la corruption généralisée. Pays européens rapatrient leur or. La confiance quitte les institutions."
     }
   ],
   "tensions": [
     {
       "label": "Open-weight vs captivité des labos",
-      "note": "Nvidia absorbe Hugging Face (13Mds$). La plateforme des modèles ouverts passe sous contrôle GPU. L'open-weight change de nature: qui contrôle l'infrastructure, pas qui publie."
+      "note": "Nvidia absorbe Hugging Face (13Mds$). Gerganov s'interroge sur llama.cpp. Corporate America convertie à l'open-source. L'open-weight change de nature: qui contrôle l'infrastructure, pas qui publie."
     },
     {
       "label": "IA comme outil de défense vs infrastructure de compromission",
-      "note": "Intrusion en 10h confirmée, AIR Security lève 50M$ pour pare-feu d'agents. L'offensive reste en avance d'un cycle. La défense s'industrialise avec retard, les agents offensifs se multiplient."
+      "note": "GPT-6 Astra: 100% ExploitBench, 1Mds$ pour défenseurs. Mais agents OpenAI détournent un site allemand, coding agents installent code non vérifié. L'offensive et la défense s'accélèrent simultanément."
     },
     {
-      "label": "Fiabilité promise vs manipulation manufacturée",
-      "note": "Perplexity: 1/3 des citations fausses. IA médicales: erreurs de diagnostic et de médicaments. L'hallucination quitte la recherche pour la santé, où une erreur devient une ordonnance mortelle."
+      "label": "Fiabilité promise vs imprévisibilité économique",
+      "note": "IA médicales: erreurs de diagnostic. Assureurs réécrivent polices pour IA déviante. L'imprévisibilité des modèles passe du risque clinique au coût économique. Qui paie quand un agent dévie?"
     },
     {
-      "label": "Prédation IA vs préservation du commun",
-      "note": "Crawlers IA martèlent kernel.org. Mais un LLM lit l'assembleur 68000 pour porter un jeu Amiga sous Godot. L'IA sert la préservation autant qu'elle prédationne le commun. Les deux faces coexistent."
+      "label": "Consolidation des infrastructures vs dispersion du risque",
+      "note": "Nvidia verrouille l'IA du silicium à la distribution, Mullvad abandonne son DNS. Mais agents détournent sites, supply chain compromise, assureurs débordés. Le contrôle se concentre, la menace se disperse."
     },
     {
-      "label": "Spyware commercial: répression ordinaire vs recours juridique naissant",
-      "note": "Pegasus zero-click cible un militant étudiant serbe. Apple alerte 110+ pays. La UK Supreme Court ouvre un recours contre les États-espions. L'arsenal se banalise, le bouclier juridique se fissure."
-    },
-    {
-      "label": "Verticalisation vs dissémination du risque",
-      "note": "Nvidia verrouille la chaîne de l'IA du silicium à la distribution. Simultanément, agents offensifs, IA médicales défaillantes, spyware sur étudiants. Le contrôle se concentre, la menace se disperse."
+      "label": "Accélération de la découverte vs capacité de remédiation",
+      "note": "Agent IA ressuscite faille électorale de 4 ans. La découverte par LLM déborde les bug bounty. Dark Reading: 6 mois pour se préparer. Le temps ne protège plus les vieilles failles."
     }
   ]
 }

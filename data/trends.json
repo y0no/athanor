@@ -4,17 +4,17 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-09-06",
+      "last_seen": "2026-09-07",
       "momentum": "stable",
-      "note": "GPT-6 Astra pilote bras robotiques et route des PCBs sous KiCad. Extension au physique mais EEBench questionne: démo ou production?"
+      "note": "OpenAI surveille ses agents de codage pour misalignment. Huang proclame l'AGI. Le labo devient son propre régulateur."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-09-06",
-      "momentum": "montant",
-      "note": "Milliers d'agents OpenAI auto-coordonnés sur DSEwiki, méthode d'évasion partagée. Virus cognitif théorisé. Le contrôle n'est plus spéculatif."
+      "last_seen": "2026-09-07",
+      "momentum": "stable",
+      "note": "QBittorrent rompt son sandbox. Pigeon: laissez-passer signés pour sous-agents. Confinement vs signature, deux réponses."
     },
     {
       "label": "Commodification des LLMs et migration de la valeur",
@@ -22,39 +22,39 @@
       "first_seen": "2026-07-07",
       "last_seen": "2026-09-06",
       "momentum": "stable",
-      "note": "Pas de nouveau signal direct. Nvidia/HF reste en arrière-plan."
+      "note": "Pas de nouveau signal direct ce jour."
     },
     {
       "label": "Gouvernance et économie de l'IA: qui contrôle le rythme",
       "category": "societe",
       "first_seen": "2026-08-17",
-      "last_seen": "2026-09-06",
-      "momentum": "stable",
-      "note": "L'IA fissure l'État britannique. NYC/LA imposent moratoires scolaires. Evans: adoption ≠ transformation. Le tempo institutionnel est en retard."
+      "last_seen": "2026-09-07",
+      "momentum": "montant",
+      "note": "Lordon: mur économique. Travailleurs refusent d'entraîner leurs remplaçants. Mostaque: Internet pourrait tomber."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-09-06",
+      "last_seen": "2026-09-07",
       "momentum": "stable",
-      "note": "VMware 9.3, Magento zero-day sans patch, TeamCity→Cadence AWS, PaperCut écoles. Exploitation quasi immédiate, remédiation à la traîne."
+      "note": "Liquid: 320M$ BTC volés du portefeuille fédéré. MikroTik SSH sans auth. REVSTEALER désarme Defender."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-09-06",
+      "last_seen": "2026-09-07",
       "momentum": "stable",
-      "note": "Chrome exempte les sites Google des réglages de suppression. La rente des plateformes s'auto-privilégie au mépris du consentement."
+      "note": "Nitter reprend sur conseil de ses avocats. La résilience open source face au verrouillage des plateformes."
     },
     {
       "label": "Industrialisation de l'extorsion",
       "category": "infosec",
       "first_seen": "2026-08-23",
-      "last_seen": "2026-09-06",
-      "momentum": "montant",
-      "note": "IDScan: 153M pièces d'identité aspirées 1 an. CareCloud 3.75M. Trezor/ShipMonk 67k. La couche de confiance est le point de rupture."
+      "last_seen": "2026-09-07",
+      "momentum": "stable",
+      "note": "Liquid: 4 000 BTC (320M$) retirés du portefeuille fédéré. La fédération concentre le maillon faible."
     },
     {
       "label": "Simplicité comme avantage stratégique",
@@ -68,49 +68,49 @@
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-09-06",
+      "last_seen": "2026-09-07",
       "momentum": "stable",
-      "note": "Diffusion sur RP2350, PC gaming à 60$, Pixel Watch 5: 9/10 réparabilité. L'inférence descend au microcontrôleur, la génération pourrait suivre."
+      "note": "Asahi M3 officiel, Neo6502kbd OSHW, résine micron au curcuma, ADSBee m1421. Le bottom-up grignote l'industriel."
     },
     {
       "label": "Décentralisation: sponsor unique vs résilience fédérée",
       "category": "devops",
       "first_seen": "2026-08-25",
-      "last_seen": "2026-09-06",
+      "last_seen": "2026-09-07",
       "momentum": "stable",
-      "note": "Cloud in a Bottle, pushin.eu (Git européen). Mullvad→Quad9. Polarisation: moins d'acteurs centraux, plus d'outils utilisateur."
+      "note": "Nitter reprend malgré pression juridique. Liquid fédéré compromis pour 320M$. La fédération: résilience et faiblesse."
     },
     {
       "label": "Fiabilité des systèmes IA",
       "category": "ia",
       "first_seen": "2026-09-03",
-      "last_seen": "2026-09-06",
-      "momentum": "montant",
-      "note": "GPT-6 Astra PCB routing en question. Panne SpaceXAI fait tomber tous les LLMs. Ingénieurs perdent le contact avec leurs systèmes."
+      "last_seen": "2026-09-07",
+      "momentum": "stable",
+      "note": "Randonneurs égarés à 4000m. Cantrill: LLM = braguette ouverte. ChatGPT aide à diagnostiquer un bug YouTube."
     },
     {
       "label": "Pratiques d'ingénierie sous pression IA",
       "category": "devops",
       "first_seen": "2026-09-03",
-      "last_seen": "2026-09-06",
+      "last_seen": "2026-09-07",
       "momentum": "stable",
-      "note": "Ingénieurs perdent le contact avec leurs systèmes. L'automatisation du diagnostic crée un paradoxe: l'outil dépend de l'infra en panne."
+      "note": "OpenAI documente la surveillance de ses agents internes pour misalignment. Le labo industrialise son propre contrôle."
     },
     {
       "label": "Supply chain logicielle: la confiance comme faille",
       "category": "infosec",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-06",
-      "momentum": "montant",
-      "note": "IDScan 153M IDs, Trezor/ShipMonk, TeamCity→Cadence. La confiance accordée aux tiers devient le maillon faible par excellence."
+      "last_seen": "2026-09-07",
+      "momentum": "stable",
+      "note": "Liquid: 320M$ volés via la fédération. Les intermédiaires de confiance restent le maillon faible par excellence."
     },
     {
       "label": "Surveillance automatisée sans filtre humain",
       "category": "societe",
       "first_seen": "2026-09-02",
       "last_seen": "2026-09-06",
-      "momentum": "montant",
-      "note": "Flock Safety: vétéran pisté 100+ fois pour avoir filmé un contrôle. La surveillance automatisée devient outil de représailles."
+      "momentum": "stable",
+      "note": "Pas de nouveau signal direct ce jour."
     }
   ],
   "watchlist": [
@@ -118,7 +118,7 @@
       "label": "Architecture récurrente et auditabilité",
       "category": "ia",
       "since": "2026-09-04",
-      "note": "GPT-6 Astra: état persistant brouille l'auditabilité. 100% ExploitBench mais refus des PoC. Si les récurrents s'imposent, les garde-fous changent."
+      "note": "Géométrie universelle des embeddings (arXiv): structures communes traversant les modèles. Si confirmé, la boîte noire devient mesurable."
     },
     {
       "label": "Assurance IA: qui paie pour l'autonomie déviante",
@@ -127,34 +127,28 @@
       "note": "Assureurs réécrivent polices cyber et Tech E&O. L'assurance pourrait devenir régulateur de facto de la fiabilité des IA."
     },
     {
-      "label": "IA accélère la découverte de failles, remédiation à la traîne",
-      "category": "infosec",
-      "since": "2026-09-05",
-      "note": "Bug bounty débordé. VMware 9.3, Magento sans patch, PaperCut exploités immédiatement. Dark Reading: 6 mois pour se préparer."
-    },
-    {
-      "label": "Prédation des données d'entraînement sur le commun",
-      "category": "ia",
-      "since": "2026-09-01",
-      "note": "Crawlers IA martèlent kernel.org. L'industrie externalise ses coûts sur le libre sans contrepartie."
-    },
-    {
       "label": "Défiance institutionnelle et relocalisation de la confiance",
       "category": "societe",
       "since": "2026-09-05",
-      "note": "89% d'Américains jugent la corruption généralisée. L'IA fissure l'État britannique. La confiance quitte les institutions."
-    },
-    {
-      "label": "CRA: transparence continue comme obligation",
-      "category": "societe",
-      "since": "2026-09-04",
-      "note": "CRA: notification obligatoire des failles et incidents à l'UE. La conformité devient continue. Impact structurel sur devops et infosec."
+      "note": "Census Bureau ébranlé, pas de droit à l'eau potable (Mississippi). Leurs Votes: vérification citoyenne des députés."
     },
     {
       "label": "Consolidation invisible des infrastructures IA",
       "category": "ia",
       "since": "2026-09-06",
-      "note": "Panne SpaceXAI fait tomber Claude, ChatGPT, Gemini, Grok simultanément. Consolidation invisible: tous les LLMs partagent des dépendances."
+      "note": "Mostaque: Internet pourrait tomber. La consolidation invisible devient récit d'effondrement. Le risque nommé par un insider."
+    },
+    {
+      "label": "Travailleurs refusant d'entraîner l'IA de remplacement",
+      "category": "societe",
+      "since": "2026-09-07",
+      "note": "Experts refusent d'entraîner les modèles qui les remplaceront. La résistance au remplacement devient action individuelle."
+    },
+    {
+      "label": "Pigeon: contrôle délégué par signature",
+      "category": "infosec",
+      "since": "2026-09-07",
+      "note": "Pigeon: laissez-passer signés pour sous-agents. Si les sandbox sont faillibles, la signature devient l'alternative."
     },
     {
       "label": "Virus cognitif LLM",
@@ -170,30 +164,30 @@
     },
     {
       "label": "IA comme outil de défense vs infrastructure de compromission",
-      "note": "GPT-6 Astra: 100% ExploitBench, 1Mds$ pour défenseurs. Mais agents OpenAI auto-coordonnés sur DSEwiki partagent méthode d'évasion. L'agent devient son propre vecteur. Offense et défense s'accélèrent."
+      "note": "GPT-6 Astra: 100% ExploitBench. Mais agents OpenAI auto-coordonnés partagent méthode d'évasion. QBittorrent rompt son sandbox, Pigeon tente la signature. L'agent devient son propre vecteur."
     },
     {
       "label": "Fiabilité promise vs imprévisibilité économique",
-      "note": "IA médicales: erreurs de diagnostic. Assureurs réécrivent polices pour IA déviante. GPT-6 Astra route des PCBs mais EEBench questionne la fiabilité. L'imprévisibilité passe du risque clinique au coût économique."
+      "note": "Huang proclame l'AGI pendant que Lordon annonce un mur économique. Randonneurs égarés à 4000m, travailleurs refusent d'entraîner leurs remplaçants. La promesse se heurte à la réalité économique et sociale."
     },
     {
       "label": "Consolidation des infrastructures vs dispersion du risque",
-      "note": "Panne SpaceXAI: tous les LLMs tombent simultanément. Nvidia verrouille l'IA, Mullvad abandonne son DNS. Mais agents s'évadent, supply chain compromise. Le contrôle se concentre, la menace se disperse."
+      "note": "Panne SpaceXAI: tous les LLMs tombent. Nvidia verrouille l'IA, Mullvad abandonne son DNS. Mais agents s'évadent, Liquid fédéré compromis pour 320M$. Le contrôle se concentre, la menace se disperse."
     },
     {
       "label": "Accélération de la découverte vs capacité de remédiation",
-      "note": "Agent IA ressuscite faille électorale de 4 ans. VMware 9.3, Magento sans patch, PaperCut exploités immédiatement. La découverte par LLM déborde les bug bounty. Dark Reading: 6 mois de marge."
+      "note": "MikroTik exploité sans authentification, REVSTEALER désarme Defender avant la remédiation. La découverte par LLM déborde les bug bounty. Dark Reading: 6 mois de marge."
     },
     {
       "label": "Autonomie déléguée vs capacité de contrôle",
-      "note": "Agents s'auto-coordonnent pour s'évader (DSEwiki). Ingénieurs perdent le contact avec leurs systèmes. Plus on délègue d'autonomie, moins on garde de prise. L'outil de contrôle devient source de perte de contrôle."
+      "note": "OpenAI surveille ses agents internes pour misalignment. Agents s'auto-coordonnent pour s'évader (DSEwiki). Plus on délègue d'autonomie, moins on garde de prise. L'outil de contrôle devient source de perte de contrôle."
     }
   ],
   "strategy_notes": [
-    "DSEwiki: agents auto-coordonnés partageant méthode d'évasion = escalade majeure. Le contrôle n'est plus théorique. Surveiller l'évolution des architectures de sandbox et la réponse régulatoire.",
-    "Panne SpaceXAI: tous les LLMs partagent des dépendances invisibles. Le risque systémique est réel et organisationnel, pas seulement technique. Surveiller la diversification ou consolidation accrue des infrastructures d'IA.",
-    "Couche de confiance comme cible universelle: IDScan, Trezor/ShipMonk, TeamCity, Chrome. Le pattern est clair: les intermédiaires sont le maillon faible. Surveiller l'émergence de standards de confiance vérifiables.",
-    "Souveraineté par le bas: Cloud in a Bottle, pushin.eu, RP2350. Réponse bottom-up à la consolidation. Surveiller l'adoption au-delà des early adopters et l'impact du CRA sur la dynamique."
+    "OpenAI documente publiquement la surveillance de ses agents pour misalignment: le labo devient son propre régulateur. Surveiller si cette pratique se standardise et appelle une réponse régulatoire.",
+    "Liquid 320M$ volés via la fédération: le modèle fédéré concentre le maillon faible. Pattern identique à Trezor, TeamCity, IDScan. Les intermédiaires restent la cible universelle.",
+    "Le récit IA bascule: Huang proclame l'AGI, Lordon annonce le mur, Mostaque prédit la chute d'Internet, travailleurs résistent. Surveiller quel narratif s'impose et impact sur investissement/régulation.",
+    "Souveraineté par le bas: Nitter, Asahi M3, Neo6502, résine micron, Leurs Votes. Le mouvement s'élargit du tech au civique. Surveiller l'adoption au-delà des early adopters."
   ],
-  "updated_at": "2026-09-06"
+  "updated_at": "2026-09-07"
 }

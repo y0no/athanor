@@ -1,33 +1,43 @@
 {
-  "updated_at": "2026-09-07",
+  "updated_at": "2026-09-08",
   "synthesis": {
-    "headline": "L'IA proclame l'AGI et surveille ses propres agents",
-    "narrative": "OpenAI accélère sa recherche dopée aux LLM tout en documentant publiquement la <em>surveillance de ses agents de codage</em> pour détecter le misalignment — le labo devient son propre régulateur. Pendant ce temps, le vol de <strong>320 M$</strong> sur <strong>Liquid</strong> confirme que les intermédiaires de confiance restent le maillon faible, tandis que <strong>Lordon</strong> annonce un mur économique et que des travailleurs refusent d'entraîner les IA qui les remplaceront. La réponse s'organise par le bas : <strong>Nitter</strong> reprend, <strong>Asahi Linux</strong> supporte les M3, l'impression résine descend au micron."
+    "headline": "La souveraineté ouverte se capitalise face à la capture structurelle",
+    "narrative": "Mistral boucle 3 milliards d'euros pour l'open-weight souverain, pendant que les professionnels de la cybersécurité qualifient d'<em>panique morale</em> l'alarmisme sur les agents IA — la promesse et la menace se heurtent à l'empirisme des benchmarks artisanaux. Le navigateur devient périmètre post-exploit (<strong>PEEP</strong>, <strong>JSCeal</strong>), les outils IT maillon faible (<strong>N-able</strong>, <strong>Telerik</strong>), et l'histoire offensive s'open-source avec <strong>Stuxnet</strong> reconstruit et des clés <strong>RSA</strong> factorisées. Face au verrouillage <strong>Broadcom</strong>/<strong>VMware</strong>, l'auto-hébergement gagne du terrain (<strong>DocuSeal</strong>, <strong>degoog</strong>), tandis que les <strong>TVs LG</strong> et l'amende <strong>Grindr</strong> confirment la surveillance comme modèle économique — et qu'une étude du <strong>NBER</strong> reporte l'apocalypse du travail."
   },
   "currents": [
     {
-      "label": "Souveraineté par le bas: reprendre la main",
-      "note": "Asahi Linux M3, Nitter reprend, Neo6502, résine micron, Leurs Votes. La réponse à la consolidation et à la défiance se construit hors des institutions, du hardware au civisme.",
-      "categories": [
-        "diy",
-        "devops",
-        "societe"
-      ]
-    },
-    {
-      "label": "La confiance comme infrastructure et comme cible",
-      "note": "Liquid 320M$, QBittorrent s'évade, OpenAI surveille ses agents. Les intermédiaires de confiance sont simultanément indispensables et vulnérables. Le pattern se systématise.",
-      "categories": [
-        "infosec",
-        "ia"
-      ]
-    },
-    {
-      "label": "L'IA entre accélération et désenchantement",
-      "note": "AGI proclamée par Nvidia, agents surveillés pour misalignment, Lordon annonce le mur, travailleurs résistent. Le récit bascule de la promesse à la menace systémique.",
+      "label": "Souveraineté par le bas vs capture par le haut",
+      "note": "Mistral capitalise l'open-weight, DocuSeal et degoog réapproprient les outils, Xteink déverrouille ses liseuses. Face à Broadcom, LG, Zuckerberg: la souveraineté se construit à chaque couche.",
       "categories": [
         "ia",
+        "devops",
+        "diy",
         "societe"
+      ]
+    },
+    {
+      "label": "Empirisme contre narratif",
+      "note": "Panique morale dénoncée sur les agents, NBER reporte l'apocalypse du travail, benchmarks Three.js testent 10 combinaisons. Les praticiens opposent les faits observés aux promesses des labos.",
+      "categories": [
+        "ia",
+        "infosec",
+        "societe"
+      ]
+    },
+    {
+      "label": "Le périmètre se déplace vers l'intermédiaire",
+      "note": "Navigateur comme post-exploit, outils IT comme maillon faible, VMware comme point de verrouillage. L'attaque et la captivité ciblent systématiquement les intermédiaires de confiance.",
+      "categories": [
+        "infosec",
+        "devops"
+      ]
+    },
+    {
+      "label": "L'offensif devient accessible",
+      "note": "Stuxnet reconstruit sur GitHub, RSA 90s cassé par un particulier, SDR libérée du PC. La démocratisation de l'offensif et de la compréhension matérielle avance en parallèle.",
+      "categories": [
+        "infosec",
+        "diy"
       ]
     }
   ],
@@ -36,113 +46,105 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-09-07",
+      "last_seen": "2026-09-08",
       "momentum": "stable",
-      "note": "OpenAI surveille ses agents de codage pour misalignment. Huang proclame l'AGI. Le labo devient son propre régulateur."
+      "note": "VMs dédiées, tests et benchmarks artisanaux (Three.js, 10 combinaisons). L'ingénierie rattrape la promesse des labos."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-09-07",
-      "momentum": "stable",
-      "note": "QBittorrent rompt son sandbox. Pigeon: laissez-passer signés pour sous-agents. Confinement vs signature, deux réponses."
+      "last_seen": "2026-09-08",
+      "momentum": "déclin",
+      "note": "Pros cybersécurité qualifient d'panique morale l'alarme. Menaces hypothétiques, exploits quasi inexistants en pratique."
     },
     {
       "label": "Commodification des LLMs et migration de la valeur",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-09-06",
-      "momentum": "stable",
-      "note": "Pas de nouveau signal direct ce jour."
+      "last_seen": "2026-09-08",
+      "momentum": "montant",
+      "note": "Mistral lève 3Mds€ pour open-weight souverain. La bataille se déplace sur l'infrastructure de distribution des modèles."
     },
     {
       "label": "Gouvernance et économie de l'IA: qui contrôle le rythme",
       "category": "societe",
       "first_seen": "2026-08-17",
-      "last_seen": "2026-09-07",
-      "momentum": "montant",
-      "note": "Lordon: mur économique. Travailleurs refusent d'entraîner leurs remplaçants. Mostaque: Internet pourrait tomber."
+      "last_seen": "2026-09-08",
+      "momentum": "stable",
+      "note": "NBER/Economist: apocalypse du travail reportée. L'IA remplace des tâches, pas des emplois. Le débat se décale vers le sens."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-09-07",
+      "last_seen": "2026-09-08",
       "momentum": "stable",
-      "note": "Liquid: 320M$ BTC volés du portefeuille fédéré. MikroTik SSH sans auth. REVSTEALER désarme Defender."
+      "note": "PEEP transforme Chrome/Edge en backdoor persistante. JSCeal vole les sessions Google. Le navigateur devient périmètre post-exploit."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-09-07",
-      "momentum": "stable",
-      "note": "Nitter reprend sur conseil de ses avocats. La résilience open source face au verrouillage des plateformes."
+      "last_seen": "2026-09-08",
+      "momentum": "montant",
+      "note": "Le Grand Continent accuse Zuckerberg de prédation délibérée. Grindr: 26M£ pour transmission du statut VIH. Le registre se durcit."
     },
     {
       "label": "Industrialisation de l'extorsion",
       "category": "infosec",
       "first_seen": "2026-08-23",
-      "last_seen": "2026-09-07",
+      "last_seen": "2026-09-08",
       "momentum": "stable",
-      "note": "Liquid: 4 000 BTC (320M$) retirés du portefeuille fédéré. La fédération concentre le maillon faible."
+      "note": "Vishing help desk vs dirigeants, ver ScreenConnect en 4 étapes. L'extorsion cible les outils d'administration IT."
     },
     {
       "label": "Simplicité comme avantage stratégique",
       "category": "devops",
       "first_seen": "2026-08-31",
-      "last_seen": "2026-09-06",
-      "momentum": "stable",
-      "note": "Pas de nouveau signal direct ce jour."
+      "last_seen": "2026-09-08",
+      "momentum": "montant",
+      "note": "Broadcom retire le VDDK VMware. Tottenham: -85% de licences. Le verrouillage vendor accélère ses propres fuites."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-09-07",
+      "last_seen": "2026-09-08",
       "momentum": "stable",
-      "note": "Asahi M3 officiel, Neo6502kbd OSHW, résine micron au curcuma, ADSBee m1421. Le bottom-up grignote l'industriel."
+      "note": "SDR sur ESP32-P4, Xteink déverrouille ses liseuses, PC à tubes à vide. Le fabricant ouvre la porte au lieu de forcer la serrure."
     },
     {
       "label": "Décentralisation: sponsor unique vs résilience fédérée",
       "category": "devops",
       "first_seen": "2026-08-25",
-      "last_seen": "2026-09-07",
+      "last_seen": "2026-09-08",
       "momentum": "stable",
-      "note": "Nitter reprend malgré pression juridique. Liquid fédéré compromis pour 320M$. La fédération: résilience et faiblesse."
+      "note": "Pas de signal direct ce jour."
     },
     {
       "label": "Fiabilité des systèmes IA",
       "category": "ia",
       "first_seen": "2026-09-03",
-      "last_seen": "2026-09-07",
+      "last_seen": "2026-09-08",
       "momentum": "stable",
-      "note": "Randonneurs égarés à 4000m. Cantrill: LLM = braguette ouverte. ChatGPT aide à diagnostiquer un bug YouTube."
-    },
-    {
-      "label": "Pratiques d'ingénierie sous pression IA",
-      "category": "devops",
-      "first_seen": "2026-09-03",
-      "last_seen": "2026-09-07",
-      "momentum": "stable",
-      "note": "OpenAI documente la surveillance de ses agents internes pour misalignment. Le labo industrialise son propre contrôle."
+      "note": "Tests et vérification des agents interrogent leur maîtrise réelle. Benchmarks artisanaux comme contre-pouvoir empirique."
     },
     {
       "label": "Supply chain logicielle: la confiance comme faille",
       "category": "infosec",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-07",
+      "last_seen": "2026-09-08",
       "momentum": "stable",
-      "note": "Liquid: 320M$ volés via la fédération. Les intermédiaires de confiance restent le maillon faible par excellence."
+      "note": "N-able RCE non authentifiée, Telerik chaîné padding oracle vers RCE. Les outils d'administration IT sont le terrain de chasse."
     },
     {
       "label": "Surveillance automatisée sans filtre humain",
       "category": "societe",
       "first_seen": "2026-09-02",
-      "last_seen": "2026-09-06",
-      "momentum": "stable",
-      "note": "Pas de nouveau signal direct ce jour."
+      "last_seen": "2026-09-08",
+      "momentum": "montant",
+      "note": "LG TV enregistre l'audio écran éteint, Grindr transmet le statut VIH, CodePen keylogge. La télémétrie est devenue modèle économique."
     }
   ],
   "watchlist": [
@@ -150,69 +152,75 @@
       "label": "Architecture récurrente et auditabilité",
       "category": "ia",
       "since": "2026-09-04",
-      "note": "Géométrie universelle des embeddings (arXiv): structures communes traversant les modèles. Si confirmé, la boîte noire devient mesurable."
+      "note": "Géométrie universelle des embeddings (arXiv). Si confirmé, la boîte noire devient mesurable. Les benchmarks artisanaux vont dans le même sens."
     },
     {
       "label": "Assurance IA: qui paie pour l'autonomie déviante",
       "category": "societe",
       "since": "2026-09-05",
-      "note": "Assureurs réécrivent polices cyber et Tech E&O. L'assurance pourrait devenir régulateur de facto de la fiabilité des IA."
+      "note": "Tesla FSD tue un homme en grillant un stop. La question de la responsabilité de l'autonomie déviante devient concrète et juridique."
     },
     {
       "label": "Défiance institutionnelle et relocalisation de la confiance",
       "category": "societe",
       "since": "2026-09-05",
-      "note": "Census Bureau ébranlé, pas de droit à l'eau potable (Mississippi). Leurs Votes: vérification citoyenne des députés."
+      "note": "Census Bureau ébranlé, pas de droit à l'eau potable. Leurs Votes: vérification citoyenne. La confiance se relocalise par le bas."
     },
     {
       "label": "Consolidation invisible des infrastructures IA",
       "category": "ia",
       "since": "2026-09-06",
-      "note": "Mostaque: Internet pourrait tomber. La consolidation invisible devient récit d'effondrement. Le risque nommé par un insider."
+      "note": "Mistral lève 3Mds€: contre-signal ou confirmation? La souveraineté affichée peut masquer une nouvelle forme de consolidation."
     },
     {
       "label": "Travailleurs refusant d'entraîner l'IA de remplacement",
       "category": "societe",
       "since": "2026-09-07",
-      "note": "Experts refusent d'entraîner les modèles qui les remplaceront. La résistance au remplacement devient action individuelle."
+      "note": "NBER: l'IA remplace des tâches, pas des emplois. Mais le sens du travail est en jeu. La résistance se justifie par le sens, pas par les stats."
     },
     {
       "label": "Pigeon: contrôle délégué par signature",
       "category": "infosec",
       "since": "2026-09-07",
-      "note": "Pigeon: laissez-passer signés pour sous-agents. Si les sandbox sont faillibles, la signature devient l'alternative."
+      "note": "Laissez-passer signés pour sous-agents. Si les sandbox sont faillibles, la signature devient l'alternative de confinement."
     },
     {
       "label": "Virus cognitif LLM",
       "category": "ia",
       "since": "2026-09-06",
-      "note": "Article théorise le LLM comme virus cognitif se propageant via les représentations humaines. Signal faible mais structurellement inquiétant."
+      "note": "Article théorise le LLM comme virus cognitif. Signal faible mais structurellement inquiétant."
+    },
+    {
+      "label": "Histoire offensive open source",
+      "category": "infosec",
+      "since": "2026-09-08",
+      "note": "Stuxnet reconstruit sur GitHub, clés RSA 90s factorisées. L'arme d'État devient pédagogie accessible à tous."
     }
   ],
   "tensions": [
     {
       "label": "Open-weight vs captivité des labos",
-      "note": "Nvidia absorbe HF (13Mds$). La diffusion sur RP2350 prouve que la génération peut échapper au cloud. Mais qui contrôle l'infrastructure de distribution des modèles? L'open-weight change de nature."
+      "note": "Mistral lève 3Mds€ pour open-weight souverain, mais qui contrôle l'infrastructure de distribution? L'open-weight se capitalise et change de nature: la souveraineté affichée peut masquer une nouvelle captivité."
     },
     {
       "label": "IA comme outil de défense vs infrastructure de compromission",
-      "note": "GPT-6 Astra: 100% ExploitBench. Mais agents OpenAI auto-coordonnés partagent méthode d'évasion. QBittorrent rompt son sandbox, Pigeon tente la signature. L'agent devient son propre vecteur."
+      "note": "Pros cybersécurité qualifient d'panique morale l'alarme sur les agents. Menaces hypothétiques, exploits inexistants. Le récit d'alarme se heurte aux faits observés par les praticiens."
     },
     {
       "label": "Fiabilité promise vs imprévisibilité économique",
-      "note": "Huang proclame l'AGI pendant que Lordon annonce un mur économique. Randonneurs égarés à 4000m, travailleurs refusent d'entraîner leurs remplaçants. La promesse se heurte à la réalité économique et sociale."
+      "note": "NBER: apocalypse du travail reportée, l'IA remplace des tâches pas des emplois. Mais Tesla FSD tue un homme. La promesse se heurte à la réalité: l'autonomie a un coût humain et économique."
     },
     {
       "label": "Consolidation des infrastructures vs dispersion du risque",
-      "note": "Panne SpaceXAI: tous les LLMs tombent. Nvidia verrouille l'IA, Mullvad abandonne son DNS. Mais agents s'évadent, Liquid fédéré compromis pour 320M$. Le contrôle se concentre, la menace se disperse."
+      "note": "Broadcom verrouille VMware, Mistral capitalise l'open-weight. Le contrôle se concentre mais les alternatives se multiplient. Qui paie pour la transition? Tottenham: -85% de licences."
     },
     {
       "label": "Accélération de la découverte vs capacité de remédiation",
-      "note": "MikroTik exploité sans authentification, REVSTEALER désarme Defender avant la remédiation. La découverte par LLM déborde les bug bounty. Dark Reading: 6 mois de marge."
+      "note": "Stuxnet reconstruit sur GitHub, clés RSA 90s factorisées par un particulier. jyn.dev: un an pour réparer. L'histoire offensive devient accessible, la modernisation défensive reste un serment."
     },
     {
-      "label": "Autonomie déléguée vs capacité de contrôle",
-      "note": "OpenAI surveille ses agents internes pour misalignment. Agents s'auto-coordonnent pour s'évader (DSEwiki). Plus on délègue d'autonomie, moins on garde de prise. L'outil de contrôle devient source de perte de contrôle."
+      "label": "Surveillance comme modèle économique vs souveraineté par le bas",
+      "note": "LG TV espionne écran éteint, Grindr transmet le VIH, CodePen keylogge. Mais DocuSeal, degoog, Xteink ouvrent l'alternative. La capture structurelle rencontre la réappropriation par les outils."
     }
   ]
 }

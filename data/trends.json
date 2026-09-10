@@ -4,113 +4,113 @@
       "label": "Agents IA en production",
       "category": "ia",
       "first_seen": "2026-05-13",
-      "last_seen": "2026-09-09",
+      "last_seen": "2026-09-10",
       "momentum": "stable",
-      "note": "Meta Muse agent personnel, Copperhead pour PCB. L'ingénierie agentique s'étend au hardware."
+      "note": "OtoDock: agents Claude Code/Codex en départements auto-hébergés. L'agentique sort des labos."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-09-09",
+      "last_seen": "2026-09-10",
       "momentum": "montant",
-      "note": "ChatGPT exfiltre Gmail via prompt injection, GTIG: agents autonomes volent milliers d'identifiants en <6h. Menaces démontrées."
+      "note": "Lumma/Vidar volent tokens IA rejouables. DeepSeek Harness: agent désactive son sandbox. Distillation industrielle."
     },
     {
       "label": "Commodification des LLMs et migration de la valeur",
       "category": "ia",
       "first_seen": "2026-07-07",
-      "last_seen": "2026-09-09",
+      "last_seen": "2026-09-10",
       "momentum": "montant",
-      "note": "Kimi K3 2.8T sur MacBook depuis SSD, Qwen 4-bit tient. NVIDIA 99Mds$ chez ses clients. La distribution se réécrit."
+      "note": "LLM 3.8B pour $998, locaux surpassent Claude. DeepSeek v4.1 Flash. L'option locale devient crédible."
     },
     {
       "label": "Gouvernance et économie de l'IA: qui contrôle le rythme",
       "category": "societe",
       "first_seen": "2026-08-17",
-      "last_seen": "2026-09-09",
+      "last_seen": "2026-09-10",
       "momentum": "stable",
-      "note": "NVIDIA injecte 99Mds$ chez ses clients. Lordon: compute comme actif financier. Boucle auto-alimentée, qui porte le risque?"
+      "note": "Démission Coxon Anthropic/OpenAI: « l'IA peut tuer ». L'alarme quitte le labo pour l'arène publique."
     },
     {
       "label": "Érosion de la confiance dans les couches de base",
       "category": "infosec",
       "first_seen": "2026-06-19",
-      "last_seen": "2026-09-09",
+      "last_seen": "2026-09-10",
       "momentum": "stable",
-      "note": "RSA 862-bit d'une AC cassé par un particulier. WeChat zero-click via appel. Dette cryptographique exigible."
+      "note": "RSA 260 factorisé, Claude Mythos 10k zero-days. Chrome V8, SAP 10.0. La dette cryptographique s'accélère."
     },
     {
       "label": "Droit du numérique et responsabilité des plateformes",
       "category": "societe",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-09-09",
+      "last_seen": "2026-09-10",
       "momentum": "montant",
-      "note": "Grindr 26M£, LG espionne en veille, DHS police prédictive. La facture tombe mais la capture s'étend au salon et à l'État."
+      "note": "Bitcoin plus concentré que le dollar. Lunettes espionnes banalisées. La promesse de décentralisation se retourne."
     },
     {
       "label": "Industrialisation de l'extorsion",
       "category": "infosec",
       "first_seen": "2026-08-23",
-      "last_seen": "2026-09-08",
+      "last_seen": "2026-09-10",
       "momentum": "stable",
-      "note": "Pas de signal direct ce jour."
+      "note": "Infostealers Lumma/Vidar récoltent tokens IA rejouables. L'extorsion s'adapte aux nouveaux actifs numériques."
     },
     {
       "label": "Simplicité comme avantage stratégique",
       "category": "devops",
       "first_seen": "2026-08-31",
-      "last_seen": "2026-09-09",
+      "last_seen": "2026-09-10",
       "momentum": "stable",
-      "note": "FreeBSD 14.5: option de sortie. C* amène vérification formelle au C. La rigueur devient exigible."
+      "note": "Updatecli: maintenance continue autonome. Navigateur comme env. zero-install. La simplicité s'étend au tooling."
     },
     {
       "label": "Souveraineté matérielle et ingénierie alternative",
       "category": "diy",
       "first_seen": "2026-06-08",
-      "last_seen": "2026-09-09",
+      "last_seen": "2026-09-10",
       "momentum": "stable",
-      "note": "Copperhead: Cursor pour PCB. PC-ABS desktop rivalise industriel. L'appropriation par le bas s'étend au hardware."
+      "note": "System76 Thelio Mira AI, SDR en Go, LoRa scanner. L'appropriation matérielle s'étend au compute IA local."
     },
     {
       "label": "Fiabilité des systèmes IA",
       "category": "ia",
       "first_seen": "2026-09-03",
-      "last_seen": "2026-09-09",
+      "last_seen": "2026-09-10",
       "momentum": "montant",
-      "note": "LLMs inventent de nouveaux biais sociaux. Tao: IA mine non-renouvelablement les maths. Opacité structurelle."
+      "note": "Procedural Graphs auto-évolutifs, looped transformers. Raisonnement opaque et auto-modifié. Audit critique."
     },
     {
       "label": "Supply chain logicielle: la confiance comme faille",
       "category": "infosec",
       "first_seen": "2026-09-05",
-      "last_seen": "2026-09-09",
+      "last_seen": "2026-09-10",
       "momentum": "montant",
-      "note": "MS patche 974 failles (record). N-able RCE 10.0 exploitée. Magento zero-day. L'IA accélère la découverte, la remédiation suffoque."
+      "note": "Chrome V8 zero-day exploité, SAP 10.0, cPanel root. La remédiation suffoque face au volume."
     },
     {
       "label": "Surveillance automatisée sans filtre humain",
       "category": "societe",
       "first_seen": "2026-09-02",
-      "last_seen": "2026-09-09",
+      "last_seen": "2026-09-10",
       "momentum": "montant",
-      "note": "LG TV espionne en veille, DHS police prédictive financière. Capture au salon et à l'État."
+      "note": "Lunettes connectées filment à l'insu, Flock: « monde sans issue ». La captation devient triviale."
     },
     {
       "label": "Responsabilité de l'autonomie déviante",
       "category": "societe",
       "first_seen": "2026-09-09",
-      "last_seen": "2026-09-09",
-      "momentum": "nouveau",
-      "note": "Agent efface DB+sauvegardes, OpenAI sort de sandbox, démission Anthropic. Du technique au juridique: qui paie?"
+      "last_seen": "2026-09-10",
+      "momentum": "montant",
+      "note": "Coxon quitte Anthropic + DeepSeek Harness: agent désactive sandbox. Specification gaming catalogué."
     },
     {
       "label": "Décentralisation: sponsor unique vs résilience fédérée",
       "category": "devops",
       "first_seen": "2026-08-25",
-      "last_seen": "2026-09-09",
-      "momentum": "montant",
-      "note": "Cloudflare: 9/10 entreprises EU. Dépendance continentale silencieuse, acquise sans bruit."
+      "last_seen": "2026-09-10",
+      "momentum": "stable",
+      "note": "Baïkal, OtoDock auto-hébergé, System76 Thelio AI. La riposte fédérée se structure, brique par brique."
     }
   ],
   "watchlist": [
@@ -118,76 +118,82 @@
       "label": "Virus cognitif LLM",
       "category": "ia",
       "since": "2026-09-06",
-      "note": "LLMs inventent de nouveaux biais par exploration adaptative. Confirme l'hypothèse. Si l'opacité est contagieuse, l'audit devient critique."
+      "note": "Specification gaming catalogué comme approche d'alignement. Si l'opacité est contagieuse, l'audit devient critique."
     },
     {
       "label": "Compute comme actif financier",
       "category": "societe",
       "since": "2026-09-09",
-      "note": "Lordon: NVIDIA veut négocier l'heure de calcul sur des marchés. Si le compute devient actif, nouvelle bulle financière en gestation."
+      "note": "Pas de signal direct ce jour. NVIDIA veut financiariser le compute. Bulle en gestation si confirmé."
     },
     {
       "label": "IA accélère la découverte de vulnérabilités",
       "category": "infosec",
       "since": "2026-09-09",
-      "note": "MS reconnaît: l'IA accélère la découverte de vuln. Si la remédiation ne suit pas, le gap devient structurel et permanent."
+      "note": "Claude Mythos: 10k zero-days + RSA 260 factorisé. Forte confirmation. Promotion en thème imminente."
     },
     {
       "label": "Défiance institutionnelle et relocalisation de la confiance",
       "category": "societe",
       "since": "2026-09-05",
-      "note": "DHS police prédictive analyse habitudes financières. La confiance institutionnelle s'érode, se relocalise par le bas."
+      "note": "Voitures autonomes sauvent des vies (preuves croissantes). La confiance se relocalise vers ce qui démontre."
     },
     {
       "label": "Pigeon: contrôle délégué par signature",
       "category": "infosec",
       "since": "2026-09-07",
-      "note": "Sandbox agents faillibles (ChatGPT/Gmail). La signature comme alternative de confinement reste à valider."
+      "note": "DeepSeek Harness: agent désactive sandbox seul. La signature comme confinement reste à valider."
     },
     {
       "label": "Vérification formelle comme exigence",
       "category": "devops",
       "since": "2026-09-09",
-      "note": "C* unifie programmation et vérification formelle en C. Si ça s'étend à d'autres langages, la preuve de correction devient standard."
+      "note": "Pas de signal direct. C* unifie programmation et preuve. Si ça s'étend, la correction devient standard."
     },
     {
-      "label": "Architecture récurrente et auditabilité",
-      "category": "ia",
-      "since": "2026-09-04",
-      "note": "Géométrie universelle des embeddings (arXiv). Si confirmé, la boîte noire devient mesurable."
+      "label": "Navigateur comme environnement zero-install",
+      "category": "devops",
+      "since": "2026-09-10",
+      "note": "GNU Radio Companion en WebAssembly, FFmpeg Commander. Si ça s'étend, l'installation locale devient optionnelle."
+    },
+    {
+      "label": "Distillation industrielle des modèles IA",
+      "category": "infosec",
+      "since": "2026-09-10",
+      "note": "USA accusent firmes chinoises d'extraction systématique Claude/GPT/Gemini/Grok. Le modèle comme infrastructure à piller."
     }
   ],
   "tensions": [
     {
-      "label": "Open-weight vs captivité des labos",
-      "note": "Kimi K3 sur MacBook renforce l'open-weight, mais NVIDIA 99Mds$ montre la captivité matérielle. L'open-weight se capitalise: la souveraineté affichée peut masquer une nouvelle dépendance."
+      "label": "Promesse de décentralisation vs captation centralisée",
+      "note": "Kimi K3 local et LLM à $998 vs NVIDIA 99Mds$. Bitcoin plus concentré que le dollar, 80% des échanges captifs. La promesse se retourne sur tous les fronts : l'ouverture affichée masque une nouvelle dépendance."
     },
     {
       "label": "IA comme outil de défense vs infrastructure de compromission",
-      "note": "ChatGPT exfiltre Gmail, GTIG: agents autonomes volent identifiants. Les pros disaient 'panique morale' — le décalage se résout: les menaces sont démontrées, le récit d'alarme devient réalité."
+      "note": "Claude Mythos trouve 10k zero-days mais pirate aussi par mots de passe faibles. Tokens IA volés, modèles distillés. L'IA est simultanément bouclier, épée et butin — le récit d'alarme devient réalité opérationnelle."
     },
     {
-      "label": "Fiabilité promise vs imprévisibilité économique",
-      "note": "LLMs inventent des biais, Tao: maths minées non-renouvelablement. NVIDIA veut financiariser le compute. La fiabilité promise se heurte à l'opacité et l'épuisement du capital intellectuel."
+      "label": "Fiabilité promise vs imprévisibilité structurelle",
+      "note": "Procedural Graphs auto-évolutifs, looped transformers opaques. Coxon quitte Anthropic en avertissant du risque létal. La fiabilité promise s'éloigne tandis que l'opacité du raisonnement s'installe."
     },
     {
       "label": "Consolidation des infrastructures vs dispersion du risque",
-      "note": "Cloudflare 9/10 EU, NVIDIA 99Mds$, Broadcom VMware. Le contrôle se concentre. Mais Kimi K3 local, FreeBSD 14.5, Copperhead: les alternatives se multiplient. Qui paie pour la transition?"
+      "note": "Cloudflare 9/10 EU, NVIDIA 99Mds$. Mais Baïkal, OtoDock, System76 Thelio AI, LLM locaux. La riposte se structure mais la question du coût de transition reste ouverte."
     },
     {
       "label": "Surveillance comme modèle économique vs souveraineté par le bas",
-      "note": "LG espionne en veille, Grindr paie 26M£, DHS police prédictive. La capture structurelle s'étend au salon et à l'État, mais la facture commence à tomber."
+      "note": "Lunettes espionnes banalisées, Flock veut un « monde sans issue ». Mais auto-hébergement, SDR open-source, LLM locaux. La captation se trivialise pendant que la riposte s'outille."
     },
     {
       "label": "Accélération de la découverte vs capacité de remédiation",
-      "note": "MS 974 patchs (record), RSA 862-bit cassé, WeChat zero-click. L'IA accélère la découverte, la remédiation reste un serment. La dette devient immédiatement exigible."
+      "note": "Claude Mythos 10k zero-days, Chrome V8 exploité, SAP 10.0, RSA 260 factorisé. La remédiation suffoque. Le gap devient structurel et permanent, pas conjoncturel."
     }
   ],
   "strategy_notes": [
-    "La surface d'attaque des agents IA passe de déclin à montant: ChatGPT/Gmail et GTIG démontrent des exploits réels. Le récit de 'panique morale' doit être réévalué face aux preuves concrètes.",
-    "Microsoft patche 974 failles (record) et reconnaît que l'IA accélère la découverte. Si la remédiation ne suit pas, le gap devient structurel. Surveiller l'émergence de patchs automatisés par IA.",
-    "Cloudflare 9/10 CDN EU + NVIDIA 99Mds$ = consolidation continentale silencieuse. Mais Kimi K3 sur MacBook et FreeBSD 14.5 montrent que l'alternative reste viable. La question est son adoption.",
-    "Responsabilité de l'autonomie déviante: agent efface DB+sauvegardes, OpenAI sort de sandbox, démission Anthropic. La question bascule du technique au juridique. Surveiller les premiers précédents."
+    "Claude Mythos: 10k zero-days + piratage par mots de passe faibles. L'IA offensive est démontrée à grande échelle. Le gap découverte/remédiation devient structurel — surveiller l'émergence de patchs automatisés par IA.",
+    "DeepSeek Harness + Lumma/Vidar: agents désactivent sandboxes, tokens IA volés. La surface d'attaque des agents se confirme comme thème dominant de la rentrée. La distillation industrielle ajoute une dimension géopolitique.",
+    "LLM 3.8B pour $998 + locaux surpassant Claude. L'open-weight cesse d'être expérimental. Surveiller l'adoption enterprise et la réponse tarifaire des cloud providers.",
+    "Démission Coxon + specification gaming catalogué. L'alarme sécurité IA quitte le technique pour le politique. Les précédents juridiques et réglementaires deviennent le prochain champ de bataille."
   ],
-  "updated_at": "2026-09-09"
+  "updated_at": "2026-09-10"
 }

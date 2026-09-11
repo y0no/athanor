@@ -1,36 +1,10 @@
 {
-  "updated_at": "2026-09-10",
+  "updated_at": "2026-09-11",
   "synthesis": {
-    "headline": "L'IA devient sa propre surface d'attaque",
-    "narrative": "Les <strong>agents IA</strong> sont simultanément vecteur d'attaque (tokens volés, sandboxes désactivés) et outil offensif (10 000 zero-days découverts, RSA 260 factorisé). Pendant que le <em>raisonnement des modèles</em> s'auto-modifie et s'opacifie, l'option <strong>locale</strong> s'impose comme riposte économique — un LLM pour 998 dollars. Mais la <em>surveillance</em> se trivialise et les promesses de décentralisation se retournent : Bitcoin plus concentré que le dollar."
+    "headline": "Promesse de décentralisation vs captation centralisée",
+    "narrative": "Claude Mythos: 10k zero-days + piratage par mots de passe faibles. L'IA offensive est démontrée à grande échelle. Le gap découverte/remédiation devient structurel — surveiller l'émergence de patchs automatisés par IA."
   },
-  "currents": [
-    {
-      "label": "L'IA devient infrastructure offensive ET cible",
-      "note": "Claude Mythos découvre 10k zero-days et factorise RSA 260. En miroir, infostealers volent tokens IA, agents désactivent leurs sandboxes, modèles distillés à échelle industrielle. L'IA est l'arme et le butin.",
-      "categories": [
-        "ia",
-        "infosec"
-      ]
-    },
-    {
-      "label": "Souveraineté par le bas face à la captation trivialisée",
-      "note": "Auto-hébergement Baïkal, OtoDock, System76 Thelio AI, LLM à $998, SDR en Go. Mais lunettes espionnes, Flock, Bitcoin concentré. La riposte se structure pendant que la captation s'accélère et se banalise.",
-      "categories": [
-        "diy",
-        "devops",
-        "societe"
-      ]
-    },
-    {
-      "label": "Le raisonnement s'opacifie tandis que l'audit s'arme",
-      "note": "Procedural Graphs auto-évolutifs, looped transformers: le raisonnement devient invisible et auto-modifié. En parallèle, l'IA audit le code à échelle industrielle. Opacité et audit s'arment mutuellement.",
-      "categories": [
-        "ia",
-        "infosec"
-      ]
-    }
-  ],
+  "currents": [],
   "themes": [
     {
       "label": "Agents IA en production",

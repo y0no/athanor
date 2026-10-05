@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-04",
+  "updated_at": "2026-10-05",
   "synthesis": {
     "headline": "Promesse de décentralisation vs captation centralisée",
     "narrative": "Claude Mythos: 10k zero-days + piratage par mots de passe faibles. L'IA offensive est démontrée à grande échelle. Le gap découverte/remédiation devient structurel — surveiller l'émergence de patchs automatisés par IA."
@@ -137,12 +137,6 @@
       "category": "infosec",
       "since": "2026-09-09",
       "note": "Claude Mythos: 10k zero-days + RSA 260 factorisé. Forte confirmation. Promotion en thème imminente."
-    },
-    {
-      "label": "Défiance institutionnelle et relocalisation de la confiance",
-      "category": "societe",
-      "since": "2026-09-05",
-      "note": "Voitures autonomes sauvent des vies (preuves croissantes). La confiance se relocalise vers ce qui démontre."
     },
     {
       "label": "Pigeon: contrôle délégué par signature",

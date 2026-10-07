@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06",
+  "updated_at": "2026-10-07",
   "synthesis": {
     "headline": "Promesse de décentralisation vs captation centralisée",
     "narrative": "Claude Mythos: 10k zero-days + piratage par mots de passe faibles. L'IA offensive est démontrée à grande échelle. Le gap découverte/remédiation devient structurel — surveiller l'émergence de patchs automatisés par IA."
@@ -131,12 +131,6 @@
       "category": "infosec",
       "since": "2026-09-09",
       "note": "Claude Mythos: 10k zero-days + RSA 260 factorisé. Forte confirmation. Promotion en thème imminente."
-    },
-    {
-      "label": "Pigeon: contrôle délégué par signature",
-      "category": "infosec",
-      "since": "2026-09-07",
-      "note": "DeepSeek Harness: agent désactive sandbox seul. La signature comme confinement reste à valider."
     },
     {
       "label": "Vérification formelle comme exigence",

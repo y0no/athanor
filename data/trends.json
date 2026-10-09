@@ -115,24 +115,6 @@
   ],
   "watchlist": [
     {
-      "label": "Compute comme actif financier",
-      "category": "societe",
-      "since": "2026-09-09",
-      "note": "Pas de signal direct ce jour. NVIDIA veut financiariser le compute. Bulle en gestation si confirmé."
-    },
-    {
-      "label": "IA accélère la découverte de vulnérabilités",
-      "category": "infosec",
-      "since": "2026-09-09",
-      "note": "Claude Mythos: 10k zero-days + RSA 260 factorisé. Forte confirmation. Promotion en thème imminente."
-    },
-    {
-      "label": "Vérification formelle comme exigence",
-      "category": "devops",
-      "since": "2026-09-09",
-      "note": "Pas de signal direct. C* unifie programmation et preuve. Si ça s'étend, la correction devient standard."
-    },
-    {
       "label": "Navigateur comme environnement zero-install",
       "category": "devops",
       "since": "2026-09-10",
@@ -177,5 +159,5 @@
     "LLM 3.8B pour $998 + locaux surpassant Claude. L'open-weight cesse d'être expérimental. Surveiller l'adoption enterprise et la réponse tarifaire des cloud providers.",
     "Démission Coxon + specification gaming catalogué. L'alarme sécurité IA quitte le technique pour le politique. Les précédents juridiques et réglementaires deviennent le prochain champ de bataille."
   ],
-  "updated_at": "2026-10-08"
+  "updated_at": "2026-10-09"
 }

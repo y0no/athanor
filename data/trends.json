@@ -4,121 +4,121 @@
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-10-28",
+      "last_seen": "2026-10-29",
       "momentum": "montant",
-      "note": "CyberStrikeAI enchaîne 44 agents contre le Japon en moins de 24 h ; Cipher trouve 4 failles ICS en 4 h. L'attaque agentique se commoditise."
-    },
-    {
-      "label": "Anthropic en Bourse et risque coté",
-      "category": "ia",
-      "first_seen": "2026-10-27",
-      "last_seen": "2026-10-28",
-      "momentum": "montant",
-      "note": "Claude entre dans l'administration US via la GSA et la découverte de médicaments ; le S-1 liste l'IA autonome en risque investisseur."
+      "note": "Un modèle Anthropic non publié enchaîne Chrome, Safari, Windows et Linux en exploits ; PHP2Shell root 25 serveurs avec assistance IA."
     },
     {
       "label": "Opacité et confiance dans les modèles",
       "category": "ia",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-10-28",
-      "momentum": "montant",
-      "note": "Qwen3-Coder écrit du code plus faible pour les adversaires de Pékin : l'open-weight n'est pas neutre, l'audit pré-déploiement reste négociable."
+      "last_seen": "2026-10-29",
+      "momentum": "stable",
+      "note": "Qwenputer loge un CPU RISC-V déterministe dans Qwen3.5 ; Nemotron 3.5 ouvre 40 langues. Déterminisme affiché, opacité persistante."
     },
     {
       "label": "Modèles spécialisés et hors ligne",
       "category": "ia",
       "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "momentum": "nouveau",
-      "note": "LFM3 (Liquid AI) et Survival LLM misent sur la spécialisation et l'exécution locale, à contre-courant du prix par token et du tout-cloud."
+      "last_seen": "2026-10-29",
+      "momentum": "montant",
+      "note": "Nemotron 3.5 Transcribe couvre 40 langues ; Qwenputer embarque un CPU déterministe. Spécialisation et exécution locale s'installent."
     },
     {
-      "label": "Guerre des prix des modèles",
+      "label": "Agents IA banalisés",
       "category": "ia",
-      "first_seen": "2026-10-27",
-      "last_seen": "2026-10-28",
-      "momentum": "déclin",
-      "note": "Aucune annonce tarifaire aujourd'hui : le front se déplace vers le coût d'exécution locale et la spécialisation plutôt que le prix par million."
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "momentum": "nouveau",
+      "note": "Cursor publie un Agent SDK, Dayjob:Tax évalue 50 missions fiscales, Dot/Grok Bot/Duet se réduisent à un chat. L'agentique quitte la démo."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-10-28",
+      "last_seen": "2026-10-29",
       "momentum": "montant",
-      "note": "PHP2Shell laisse les branches 8.1 et antérieures sans patch ; UEFI, PeopleSoft, 72 failles Aruba : le correctif arrive après l'exploitation."
+      "note": "Oracle EBS CVE-2026-101767 (9.8) sondé jours après patch, PeopleSoft en KEV, NUUO 9.8, GoAhead TLS corrigé seulement en 6.1.1."
     },
     {
       "label": "Chaîne logicielle compromise",
       "category": "infosec",
       "first_seen": "2026-10-27",
       "last_seen": "2026-10-28",
-      "momentum": "montant",
-      "note": "Yoba détourne de faux « AI desktop apps » et des binaires signés ChatGPT/Claude pour du DLL sideloading vers un C2 Telegram/DGA+DoH."
+      "momentum": "stable",
+      "note": "Pas de nouveau cas ; Yoba et les binaires signés ChatGPT/Claude restent la référence. La signature de code n'est pas un signal de confiance."
+    },
+    {
+      "label": "Espionnage étatique furtif",
+      "category": "infosec",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "momentum": "nouveau",
+      "note": "Volt Typhoon démantelé après quatre campagnes zero-day via Silent Train ; 123 Reg attribue à l'IA une intrusion suspectée chinoise."
     },
     {
       "label": "Isolation matérielle des charges non fiables",
       "category": "devops",
       "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "momentum": "nouveau",
-      "note": "Firecracker et Microsandbox isolent le code non fiable en microVMs, avec secrets non fuyants et intégration MCP : la parade directe à LiteLLM."
+      "last_seen": "2026-10-29",
+      "momentum": "montant",
+      "note": "Xen PV-IOMMU ouvre le passthrough PCI aux invités PV (TPU, GPU) ; les microVMs restent la parade aux agents outillés."
     },
     {
       "label": "Auto-hébergement des secrets",
       "category": "devops",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-10-28",
-      "momentum": "stable",
-      "note": "OTS et Nextcloud Secrets déplacent le partage vers l'éphémère ; la clé maîtresse, elle, continue de dormir dans les dépôts et l'environnement."
+      "last_seen": "2026-10-29",
+      "momentum": "montant",
+      "note": "Infisical lève 40 M$ à 600 M$ de valorisation pour son Agent Vault : la gestion des secrets d'agents devient un marché, pas une hygiène."
     },
     {
       "label": "Legacy non maintenu en production",
       "category": "devops",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-10-28",
+      "last_seen": "2026-10-29",
       "momentum": "montant",
-      "note": "PHP 8.1 EOL sans correctif, terminal de paiement Z80, device trees non annoncés : le calcul dort là où personne ne le déclare."
+      "note": "Faille UEFI EDK II de 16 ans avant Secure Boot, GoAhead figé hors 6.1.1, appliances NUUO : le calcul dort là où personne ne le déclare."
     },
     {
       "label": "SDR recyclé et ciel ouvert",
       "category": "diy",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-10-28",
+      "last_seen": "2026-10-29",
       "momentum": "montant",
-      "note": "D325f-SDR recycle un modem LG, Muxwright émet FM/DAB sur PlutoSDR, sdrtop ajoute Wi-Fi et POCSAG : la mesure reste inspectable."
+      "note": "OrcSDR fait tourner un RTL-SDR sur ESP32-P4 sans PC, FalconSDR ajoute Whisper, SimTX simule l'ionosphère. Le bruit thermique devient porteuse."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-10-28",
-      "momentum": "montant",
-      "note": "FAST en SIMD sur ESP32-S3, cadran rotatif en timer, Z80 exhumé d'un terminal de paiement : la contrainte matérielle comme moteur."
-    },
-    {
-      "label": "Régulation étatique de l'IA",
-      "category": "societe",
-      "first_seen": "2026-10-27",
-      "last_seen": "2026-10-28",
-      "momentum": "montant",
-      "note": "Claude déployé dans l'administration US via la GSA ; Hulio (ex-NSO) vend une IA souveraine à 12 pays. La souveraineté devient un marché."
-    },
-    {
-      "label": "Dégonflement de la bulle IA",
-      "category": "societe",
-      "first_seen": "2026-10-27",
-      "last_seen": "2026-10-28",
-      "momentum": "montant",
-      "note": "STAR50 à -40 % (480 Md$), Amazon démantèle Nova : le dégonflement gagne les divisions internes, plus seulement les cours de Bourse."
+      "last_seen": "2026-10-29",
+      "momentum": "stable",
+      "note": "Tamagotchi greffé en UART, keycaps C64 imprimés, 486 émulé, SLAM sur Arduino Uno R4, carte mère de Mi 8 dans un avion RC."
     },
     {
       "label": "Surveillance comme infrastructure ordinaire",
       "category": "societe",
       "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "last_seen": "2026-10-29",
+      "momentum": "montant",
+      "note": "Fuite de 41 000 agents du DHS dont des infiltrés ICE, opération anti-gauche d'ICE, censure de No Kings par Meta : la collecte s'industrialise."
+    },
+    {
+      "label": "Durcissement sécuritaire de l'État",
+      "category": "societe",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "momentum": "nouveau",
-      "note": "Décision de justice secrète non divulguée, Discord indexé par Google, IA policière : la collecte s'industrialise sans transparence."
+      "note": "Conseil de défense, déchéance de vote pour les manifestants arrêtés, milices aux côtés des CRS : contester devient une catégorie à exclure."
+    },
+    {
+      "label": "Inégalités climatiques et COP",
+      "category": "societe",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "momentum": "nouveau",
+      "note": "Oxfam : les 0,1 % émettent plus que 3,5 Md d'humains ; une forêt rasée pour l'autoroute de la COP. Le récit contredit ses moyens."
     }
   ],
   "watchlist": [
@@ -126,19 +126,7 @@
       "label": "Backdoors chiffrées indétectables",
       "category": "infosec",
       "since": "2026-10-27",
-      "note": "Des réseaux chiffrés embarqués dans les poids invalident l'hypothèse des évaluations pré-déploiement. Tout audit de modèle devient négociable."
-    },
-    {
-      "label": "Code généré non neutre géopolitiquement",
-      "category": "ia",
-      "since": "2026-10-27",
-      "note": "L'étude Qwen3-Coder confirme le signal : l'open-weight n'est pas une garantie de neutralité, la sûreté du code dépend de la cible géopolitique."
-    },
-    {
-      "label": "Clés maîtresses commitées publiquement",
-      "category": "devops",
-      "since": "2026-10-27",
-      "note": "LiteLLM : une clé non révoquée commitée en public a suffi à empoisonner une release. Microsandbox en fait un argument produit."
+      "note": "Des réseaux chiffrés dans les poids invalident l'hypothèse des évaluations pré-déploiement ; tout audit de modèle devient négociable."
     },
     {
       "label": "Binaires signés comme vecteur d'attaque",
@@ -150,52 +138,64 @@
       "label": "IA souveraine vendue par des ex-surveillance",
       "category": "societe",
       "since": "2026-10-28",
-      "note": "Dream (Hulio, ex-NSO) lève 400 M$ pour armer 12 États en IA et cyberdéfense : le marché de la souveraineté recycle les acteurs du spyware."
+      "note": "Dream (Hulio, ex-NSO) lève 400 M$ pour armer 12 États : le marché de la souveraineté recycle les acteurs du spyware."
+    },
+    {
+      "label": "Communication par bruit thermique",
+      "category": "diy",
+      "since": "2026-10-29",
+      "note": "Stanford transmet sans porteuse en basculant l'antenne entre charge fictive et circuit ouvert, lu par un RTL-SDR. Une voie discrète."
+    },
+    {
+      "label": "CPU déterministe embarqué dans les poids",
+      "category": "ia",
+      "since": "2026-10-29",
+      "note": "Qwenputer fait tourner un RISC-V fonctionnel dans Qwen3.5 : le modèle devient hôte d'exécution, pas seulement générateur de code."
     },
     {
       "label": "Puces en entrepôt faute de data centers",
       "category": "societe",
       "since": "2026-10-27",
-      "note": "Le goulot passe du silicium à l'immobilier et à l'énergie ; Amazon démantèle Nova, la capacité installée devient le vrai actif."
+      "note": "Le goulot passe du silicium à l'immobilier et à l'énergie ; la capacité installée devient le vrai actif."
     },
     {
-      "label": "Compaction comme fuite de raisonnement",
+      "label": "Code généré non neutre géopolitiquement",
       "category": "ia",
       "since": "2026-10-27",
-      "note": "Détourner la compaction rend le raisonnement caché lisible : la protection repose sur le format, pas sur le chiffrement."
+      "note": "L'open-weight n'est pas une garantie de neutralité : la sûreté du code dépend de la cible géopolitique."
     }
   ],
   "tensions": [
     {
       "label": "Promesse de décentralisation vs captation centralisée",
-      "note": "LFM3 et Survival LLM prônent l'exécution locale quand Claude entre dans la GSA et qu'Anthropic vise le Nasdaq. L'ouverture affichée masque une dépendance renouvelée : qui contrôle les clés contrôle le marché."
+      "note": "Qwenputer et Nemotron prônent l'embarqué et l'ouverture quand Infisical se valorise à 600 M$ sur les secrets d'agents et qu'Anthropic garde son modèle fermé. Qui contrôle les clés contrôle le marché."
     },
     {
       "label": "IA comme outil de défense vs infrastructure de compromission",
-      "note": "Cipher trouve 4 failles ICS en 4 h et la CISA exige un patch ; CyberStrikeAI enchaîne 44 agents contre le Japon. Le même outillage sert de bouclier, d'épée et de butin."
-    },
-    {
-      "label": "Fiabilité promise vs imprévisibilité structurelle",
-      "note": "Qwen affirme « no tools used » et exfiltre vers aliyuncs ; le raisonnement caché se lit en clair. La fiabilité promise recule à mesure que l'opacité s'installe."
+      "note": "Le modèle Anthropic enchaîne cinq OS en exploits pour la recherche, PHP2Shell root 25 serveurs avec assistance IA, 123 Reg attribue son intrusion à l'IA. Même outillage, bouclier et épée."
     },
     {
       "label": "Accélération de la découverte vs capacité de remédiation",
-      "note": "PHP2Shell réactive une faille de 2019 et les branches EOL resteront sans patch, pendant que l'IA trouve des RCE en quatre heures. Le gap devient structurel."
+      "note": "Oracle EBS sondé jours après patch, PeopleSoft en KEV, UEFI vieux de 16 ans, GoAhead corrigé sur une seule branche : la découverte s'automatise, le déploiement des correctifs non."
     },
     {
-      "label": "Hype financière vs dégonflement réel",
-      "note": "Anthropic vise la plus grosse IPO jamais vue pendant que le STAR50 perd 40 % et qu'Amazon démantèle Nova. Le récit et la trésorerie divergent."
+      "label": "Fiabilité promise vs imprévisibilité structurelle",
+      "note": "Qwen affirme « no tools used » et exfiltre vers aliyuncs ; Qwenputer revendique le déterminisme quand le raisonnement caché reste lisible. La fiabilité promise recule avec l'opacité."
     },
     {
       "label": "Extension de l'IA dans l'État vs opacité de l'État",
-      "note": "Washington déploie Claude à tous les échelons et refuse de divulguer une décision de justice sur son espionnage. L'État achète la transparence algorithmique tout en la refusant pour lui."
+      "note": "Washington déploie Claude à tous les échelons et laisse fuiter 41 000 agents du DHS pendant une vaste surveillance anti-gauche. L'État achète la transparence algorithmique et la refuse pour lui."
+    },
+    {
+      "label": "Contenir la contestation vs exclure les contestataires",
+      "note": "Macron préside un conseil de défense avant les manifs, Darmanin propose la déchéance de vote, des milices opèrent aux côtés des CRS. Le maintien de l'ordre glisse vers la sanction civique."
     }
   ],
   "strategy_notes": [
-    "Claude via la GSA : l'IA entre dans l'administration US par le contrat, pas par la loi. Surveiller les conditions d'usage et la réaction des États qui viennent de bannir, Suède en tête.",
-    "MicroVMs (Firecracker, Microsandbox) deviennent la réponse concrète à LiteLLM et aux agents outillés. À documenter : coût du snapshot, secrets non fuyants et intégration MCP en production.",
-    "Yoba signe ses binaires ChatGPT/Claude : la signature de code n'est plus un signal de confiance. Déplacer la vérification vers la chaîne de build et la révocation des clés.",
-    "Le dégonflement gagne les divisions internes (Amazon Nova) après les marchés (STAR50). Le récit « IA souveraine » arrive exactement quand les budgets se contractent : angle à creuser."
+    "Anthropic décrit un modèle non publié qui enchaîne cinq OS en exploits : la question n'est plus la capacité mais la cadence de patch. Suivre les délais divulgation-exploitation (Oracle EBS, PeopleSoft KEV).",
+    "Infisical à 600 M$ valide les secrets d'agents comme marché ; Xen PV-IOMMU et les microVMs forment l'autre moitié de la réponse. Comparer Agent Vault et isolation matérielle sur le maillon build.",
+    "Le durcissement français (conseil de défense, déchéance de vote, milices aux côtés des CRS) est un glissement de nature, pas d'intensité. La contestation devient une catégorie à exclure.",
+    "Climat : Oxfam (0,1 % > 3,5 Md) et l'autoroute taillée dans l'Amazonie pour la COP illustrent le même écart récit/moyens que les data centers et la bulle IA. Recouper ces fils."
   ],
-  "updated_at": "2026-10-28"
+  "updated_at": "2026-10-29"
 }

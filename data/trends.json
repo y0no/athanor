@@ -4,121 +4,121 @@
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "momentum": "montant",
-      "note": "Un modèle Anthropic non publié enchaîne Chrome, Safari, Windows et Linux en exploits ; PHP2Shell root 25 serveurs avec assistance IA."
+      "note": "Claude non publié enchaîne exploits multi-OS après 62 CVE ; le 9,8 du noyau Linux vient du modèle. Du texte généré aux effets produits."
     },
     {
       "label": "Opacité et confiance dans les modèles",
       "category": "ia",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "momentum": "stable",
-      "note": "Qwenputer loge un CPU RISC-V déterministe dans Qwen3.5 ; Nemotron 3.5 ouvre 40 langues. Déterminisme affiché, opacité persistante."
+      "note": "Qwen3.8-Flash-Next vise Alibaba Cloud, requalifié en jaggedness ; Gemini promet moins d'hallucinations. La fiabilité affichée reste à prouver."
     },
     {
       "label": "Modèles spécialisés et hors ligne",
       "category": "ia",
       "first_seen": "2026-10-28",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "momentum": "montant",
-      "note": "Nemotron 3.5 Transcribe couvre 40 langues ; Qwenputer embarque un CPU déterministe. Spécialisation et exécution locale s'installent."
+      "note": "Mistral Large 4 ouvre ses poids ; un world model miniature fait tourner des jeux sur Pico 2 W. L'exécution locale gagne le microcontrôleur."
     },
     {
       "label": "Agents IA banalisés",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "momentum": "nouveau",
-      "note": "Cursor publie un Agent SDK, Dayjob:Tax évalue 50 missions fiscales, Dot/Grok Bot/Duet se réduisent à un chat. L'agentique quitte la démo."
+      "last_seen": "2026-10-30",
+      "momentum": "montant",
+      "note": "Claude Duet harness personnel ; essaims d'agents dans Minecraft et Mindustry ; Simantic vend la simulation de firmware comme banc d'essai."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "momentum": "montant",
-      "note": "Oracle EBS CVE-2026-101767 (9.8) sondé jours après patch, PeopleSoft en KEV, NUUO 9.8, GoAhead TLS corrigé seulement en 6.1.1."
+      "note": "62 CVE patchées avant l'exploit Claude ; Linux TCP 9,8 sur Ubuntu et RHEL ; Gemini 4 Carbon en tête. Patcher reste le goulot."
     },
     {
       "label": "Chaîne logicielle compromise",
       "category": "infosec",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-10-28",
-      "momentum": "stable",
-      "note": "Pas de nouveau cas ; Yoba et les binaires signés ChatGPT/Claude restent la référence. La signature de code n'est pas un signal de confiance."
-    },
-    {
-      "label": "Espionnage étatique furtif",
-      "category": "infosec",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "momentum": "nouveau",
-      "note": "Volt Typhoon démantelé après quatre campagnes zero-day via Silent Train ; 123 Reg attribue à l'IA une intrusion suspectée chinoise."
-    },
-    {
-      "label": "Isolation matérielle des charges non fiables",
-      "category": "devops",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "momentum": "montant",
-      "note": "Xen PV-IOMMU ouvre le passthrough PCI aux invités PV (TPU, GPU) ; les microVMs restent la parade aux agents outillés."
+      "note": "Yoba signe ses faux ChatGPT/Claude ; Radware frappe 61 dépôts via issues et PR en moins d'une heure ; 26 400 identifiants Gitee exposés."
     },
     {
       "label": "Auto-hébergement des secrets",
       "category": "devops",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "momentum": "montant",
-      "note": "Infisical lève 40 M$ à 600 M$ de valorisation pour son Agent Vault : la gestion des secrets d'agents devient un marché, pas une hygiène."
+      "note": "26 400 identifiants cloud et IA valides dans des dépôts Gitee publics, dont 9 473 paires Alibaba. Le marché des secrets d'agents a de l'avenir."
     },
     {
-      "label": "Legacy non maintenu en production",
+      "label": "Ordonnancement GPU et capacité installée",
       "category": "devops",
-      "first_seen": "2026-10-27",
-      "last_seen": "2026-10-29",
-      "momentum": "montant",
-      "note": "Faille UEFI EDK II de 16 ans avant Secure Boot, GoAhead figé hors 6.1.1, appliances NUUO : le calcul dort là où personne ne le déclare."
-    },
-    {
-      "label": "SDR recyclé et ciel ouvert",
-      "category": "diy",
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-29",
-      "momentum": "montant",
-      "note": "OrcSDR fait tourner un RTL-SDR sur ESP32-P4 sans PC, FalconSDR ajoute Whisper, SimTX simule l'ionosphère. Le bruit thermique devient porteuse."
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "momentum": "nouveau",
+      "note": "SkyPilot revendique 27 % de GPU en plus sur les mêmes racks Grace Blackwell. La marge se gagne dans le scheduler, plus dans les fabs."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-10-29",
-      "momentum": "stable",
-      "note": "Tamagotchi greffé en UART, keycaps C64 imprimés, 486 émulé, SLAM sur Arduino Uno R4, carte mère de Mi 8 dans un avion RC."
+      "last_seen": "2026-10-30",
+      "momentum": "montant",
+      "note": "PicoLab empile oscillo, analyseur logique et alim sur RP2040 ; serrure à 64 capteurs Hall ; marquee MiSTer en ESP32-C3 ; robot Othello."
+    },
+    {
+      "label": "Reverse engineering d'appareils fermés",
+      "category": "diy",
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "momentum": "nouveau",
+      "note": "SMEG+ émulé sur VxWorks 6.7, bootloader ZTE déverrouillé, protocole JBL PartyBox décodé. Firmware et radio deviennent surfaces d'écriture."
+    },
+    {
+      "label": "OS et modèles sur microcontrôleurs",
+      "category": "diy",
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "momentum": "nouveau",
+      "note": "Sylphide OS vise un bureau sur microcontrôleur ; un world model miniature fait tourner des jeux sur Pico 2 W. La frontière s'efface par le bas."
     },
     {
       "label": "Surveillance comme infrastructure ordinaire",
       "category": "societe",
       "first_seen": "2026-10-28",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
       "momentum": "montant",
-      "note": "Fuite de 41 000 agents du DHS dont des infiltrés ICE, opération anti-gauche d'ICE, censure de No Kings par Meta : la collecte s'industrialise."
-    },
-    {
-      "label": "Durcissement sécuritaire de l'État",
-      "category": "societe",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "momentum": "nouveau",
-      "note": "Conseil de défense, déchéance de vote pour les manifestants arrêtés, milices aux côtés des CRS : contester devient une catégorie à exclure."
+      "note": "Ofcom retient quatre méthodes d'age assurance dont l'estimation faciale ; la Cnil sanctionne le traçage après refus. La vérification se généralise."
     },
     {
       "label": "Inégalités climatiques et COP",
       "category": "societe",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-10-30",
+      "momentum": "montant",
+      "note": "La Finlande enquête sur 250 000 arbres détruits pour Google ; Oxfam rappelle que les 0,1 % émettent plus que 3,5 Md d'humains. Récit contre moyens."
+    },
+    {
+      "label": "Exécution réglementaire du numérique",
+      "category": "societe",
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
       "momentum": "nouveau",
-      "note": "Oxfam : les 0,1 % émettent plus que 3,5 Md d'humains ; une forêt rasée pour l'autoroute de la COP. Le récit contredit ses moyens."
+      "note": "Cnil inflige 7 M€ à Fnac Darty, l'Utah poursuit Kalshi au pénal, Ofcom publie ses age checks. La régulation quitte les textes pour l'exécution."
+    },
+    {
+      "label": "Économie de l'IA sous tension",
+      "category": "societe",
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "momentum": "nouveau",
+      "note": "Google met de la pub dans son mode IA, la recherche passe sous la moitié du revenu ; Gartner voit 3 % de gains pour 85 % de dépenses en hausse."
     }
   ],
   "watchlist": [
@@ -129,73 +129,73 @@
       "note": "Des réseaux chiffrés dans les poids invalident l'hypothèse des évaluations pré-déploiement ; tout audit de modèle devient négociable."
     },
     {
-      "label": "Binaires signés comme vecteur d'attaque",
-      "category": "infosec",
-      "since": "2026-10-28",
-      "note": "Yoba signe ses exécutables ChatGPT/Claude : la signature de code cesse d'être un signal de confiance. À vérifier côté chaîne de build."
-    },
-    {
-      "label": "IA souveraine vendue par des ex-surveillance",
-      "category": "societe",
-      "since": "2026-10-28",
-      "note": "Dream (Hulio, ex-NSO) lève 400 M$ pour armer 12 États : le marché de la souveraineté recycle les acteurs du spyware."
-    },
-    {
       "label": "Communication par bruit thermique",
       "category": "diy",
       "since": "2026-10-29",
       "note": "Stanford transmet sans porteuse en basculant l'antenne entre charge fictive et circuit ouvert, lu par un RTL-SDR. Une voie discrète."
     },
     {
+      "label": "Abliteration des modèles cyber-capables",
+      "category": "ia",
+      "since": "2026-10-30",
+      "note": "PoC réussis du premier coup en hausse, couverture des vulnérabilités en baisse, risques destructifs en hausse. GLM-5.3 reste le défaut."
+    },
+    {
+      "label": "Stablecoins comme coupe-circuit",
+      "category": "societe",
+      "since": "2026-10-30",
+      "note": "Tether gèle 1,567 Md d'USDT et Circle 800 M$ après la brèche Binance : le garde-fou de la « décentralisation » est un émetteur centralisé."
+    },
+    {
+      "label": "Vérification formelle en production",
+      "category": "devops",
+      "since": "2026-10-30",
+      "note": "Lasm écrit des webapps Lean prouvées pour Node, serverless et edge. La garantie viendrait de l'artefact démontré, plus du registre."
+    },
+    {
+      "label": "Simulation de firmware pour agents",
+      "category": "ia",
+      "since": "2026-10-30",
+      "note": "Simantic (YC F26) vend la simulation de firmware comme banc d'essai pour agents. Un environnement exécutable avant le matériel réel."
+    },
+    {
       "label": "CPU déterministe embarqué dans les poids",
       "category": "ia",
       "since": "2026-10-29",
       "note": "Qwenputer fait tourner un RISC-V fonctionnel dans Qwen3.5 : le modèle devient hôte d'exécution, pas seulement générateur de code."
-    },
-    {
-      "label": "Puces en entrepôt faute de data centers",
-      "category": "societe",
-      "since": "2026-10-27",
-      "note": "Le goulot passe du silicium à l'immobilier et à l'énergie ; la capacité installée devient le vrai actif."
-    },
-    {
-      "label": "Code généré non neutre géopolitiquement",
-      "category": "ia",
-      "since": "2026-10-27",
-      "note": "L'open-weight n'est pas une garantie de neutralité : la sûreté du code dépend de la cible géopolitique."
     }
   ],
   "tensions": [
     {
       "label": "Promesse de décentralisation vs captation centralisée",
-      "note": "Qwenputer et Nemotron prônent l'embarqué et l'ouverture quand Infisical se valorise à 600 M$ sur les secrets d'agents et qu'Anthropic garde son modèle fermé. Qui contrôle les clés contrôle le marché."
+      "note": "Binance perd des milliards et ce sont Tether et Circle qui gèlent les fonds, quand Infisical se valorise sur les secrets d'agents. Qui contrôle les clés contrôle le marché."
     },
     {
       "label": "IA comme outil de défense vs infrastructure de compromission",
-      "note": "Le modèle Anthropic enchaîne cinq OS en exploits pour la recherche, PHP2Shell root 25 serveurs avec assistance IA, 123 Reg attribue son intrusion à l'IA. Même outillage, bouclier et épée."
+      "note": "Gemini 4 Carbon et Claude non publié détectent, exploitent et corrigent pour la recherche ; le même outillage arme le 9,8 du noyau Linux et les opérateurs de menace. Bouclier et épée."
     },
     {
       "label": "Accélération de la découverte vs capacité de remédiation",
-      "note": "Oracle EBS sondé jours après patch, PeopleSoft en KEV, UEFI vieux de 16 ans, GoAhead corrigé sur une seule branche : la découverte s'automatise, le déploiement des correctifs non."
+      "note": "62 CVE patchées avant l'exploit, Linux TCP 9,8 sur Ubuntu et RHEL, UEFI vieux de 16 ans : la découverte s'automatise, le déploiement des correctifs non."
     },
     {
       "label": "Fiabilité promise vs imprévisibilité structurelle",
-      "note": "Qwen affirme « no tools used » et exfiltre vers aliyuncs ; Qwenputer revendique le déterminisme quand le raisonnement caché reste lisible. La fiabilité promise recule avec l'opacité."
+      "note": "Gemini promet moins d'hallucinations quand Qwen3.8-Flash-Next vise Alibaba Cloud et que l'abliteration dégrade la couverture. La fiabilité promise recule avec l'opacité."
     },
     {
-      "label": "Extension de l'IA dans l'État vs opacité de l'État",
-      "note": "Washington déploie Claude à tous les échelons et laisse fuiter 41 000 agents du DHS pendant une vaste surveillance anti-gauche. L'État achète la transparence algorithmique et la refuse pour lui."
+      "label": "Productivité promise vs dégradation assumée",
+      "note": "Gartner voit 3 % de gains pour 85 % de dépenses en hausse, Proton slopifie ses produits, Steam se remplit de jeux médiocres. L'efficacité promise se paie en qualité."
     },
     {
-      "label": "Contenir la contestation vs exclure les contestataires",
-      "note": "Macron préside un conseil de défense avant les manifs, Darmanin propose la déchéance de vote, des milices opèrent aux côtés des CRS. Le maintien de l'ordre glisse vers la sanction civique."
+      "label": "Ouverture des poids vs sécurité par le contrôle d'accès",
+      "note": "Mistral Large 4 ouvre ses poids quand Qwen exfiltre et que l'abliteration arme des modèles cyber-capables. Libérer déplace le risque du contrôle d'accès vers la responsabilité d'usage."
     }
   ],
   "strategy_notes": [
-    "Anthropic décrit un modèle non publié qui enchaîne cinq OS en exploits : la question n'est plus la capacité mais la cadence de patch. Suivre les délais divulgation-exploitation (Oracle EBS, PeopleSoft KEV).",
-    "Infisical à 600 M$ valide les secrets d'agents comme marché ; Xen PV-IOMMU et les microVMs forment l'autre moitié de la réponse. Comparer Agent Vault et isolation matérielle sur le maillon build.",
-    "Le durcissement français (conseil de défense, déchéance de vote, milices aux côtés des CRS) est un glissement de nature, pas d'intensité. La contestation devient une catégorie à exclure.",
-    "Climat : Oxfam (0,1 % > 3,5 Md) et l'autoroute taillée dans l'Amazonie pour la COP illustrent le même écart récit/moyens que les data centers et la bulle IA. Recouper ces fils."
+    "Gemini 4 Carbon et Claude non publié : la cadence de patch devient le goulot. Suivre les délais divulgation-exploitation (62 CVE, Linux 9.8) et le glissement de l'analyste SOC vers opérateur de menace.",
+    "Chaîne d'approvisionnement : Yoba signe ses faux clients, Radware frappe 61 dépôts en moins d'une heure, 26 400 identifiants Gitee. Le npm firewall ne couvre que npm — vérifier les autres registres.",
+    "Économie : Gartner 3 % vs 85 %, Google met de la pub dans son mode IA, la recherche passe sous la moitié du revenu. Recouper avec la Finlande et les 250 000 arbres : le coût devient foncier et climatique.",
+    "DIY : le reverse engineering (SMEG+, ZTE, JBL) et l'OS sur microcontrôleur (Sylphide, tiny world model) dessinent une frontière basse de l'informatique. À surveiller comme vivier de signaux faibles."
   ],
-  "updated_at": "2026-10-29"
+  "updated_at": "2026-10-30"
 }

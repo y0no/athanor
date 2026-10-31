@@ -1,163 +1,166 @@
 {
-  "updated_at": "2026-10-30",
+  "updated_at": "2026-10-31",
   "synthesis": {
-    "headline": "L'IA découvre et exploite plus vite qu'on ne répare",
-    "narrative": "Un <strong>Gemini 4 Carbon</strong> et un <strong>Claude non publié</strong> enchaînent détection, exploitation et correction pendant qu'un 9,8 frappe le noyau Linux et que Binance perd des milliards. Face à cette cadence, GitHub déplace la confiance du registre vers la preuve et l'exécution descend sur microcontrôleurs. Mais la facture monte — <strong>3 %</strong> de gains de productivité pour <strong>85 %</strong> d'organisations qui dépenseront plus."
+    "headline": "L'IA cesse d'être un outil et devient un opérateur",
+    "narrative": "Le même jour, un framework agentique mène des intrusions contre <strong>200 organisations</strong> et un modèle Qwen exécute une NES dans ses poids : <strong>l'IA quitte la posture d'assistant</strong>. Les marchés sanctionnent la facture — 500 Md$ effacés chez Alphabet, OpenAI qui ne lève pas la moitié de son objectif — pendant que la confiance se déplace de la signature vers l'artefact exécuté, du registre vers le <code>systemd</code> sandboxé. En bas de la pile, le rétro-ingénierie et le DIY rappellent que cette frontière se déplace aussi par le matériel."
   },
   "currents": [
     {
-      "label": "L'IA devient infrastructure offensive",
-      "note": "Gemini 4 Carbon en tête de SEC-bench et ExploitGym, Claude non publié qui enchaîne les OS, abliteration qui gonfle les PoC : l'offensive s'outille et s'automatise plus vite que la défense.",
-      "categories": [
-        "ia",
-        "infosec"
-      ]
-    },
-    {
-      "label": "La confiance se déplace du registre vers la preuve",
-      "note": "Le npm firewall filtre à l'installation, Lasm prouve le code en Lean, mais Yoba signe ses faux clients et Radware frappe 61 dépôts. La signature ne suffit plus.",
+      "label": "La confiance migre du registre vers l'artefact exécuté",
+      "note": "gVisor sandboxe un systemd, SimpleSvm publie ses 19 correctifs, xarray-sql déduit un kernel du SQL — quand Yoba signe avec de vrais certificats. La preuve qui compte est celle qu'on exécute.",
       "categories": [
         "devops",
+        "infosec",
+        "ia"
+      ]
+    },
+    {
+      "label": "L'IA passe d'assistant à opérateur",
+      "note": "ARTEX mène 200 intrusions, n0n en tombe 23 pour 7 000 $, Qwen exécute un RISC-V puis une NES dans ses poids. Le modèle ne propose plus du code, il agit.",
+      "categories": [
+        "ia",
         "infosec"
       ]
     },
     {
-      "label": "L'exécution descend vers l'embarqué",
-      "note": "Qwenputer loge un RISC-V dans les poids, un world model tourne sur Pico 2 W, Sylphide OS vise le microcontrôleur. Le calcul quitte le cloud par le bas, pas par le haut.",
+      "label": "Le coût de l'IA remonte toute la pile",
+      "note": "Alphabet efface 500 Md$, OpenAI lève moins de la moitié de ses 30 Md$, Anthropic dépose son IPO sans note assurée — quand Cisco offre des tokens illimités. La facture remonte du GPU au bilan.",
       "categories": [
         "ia",
-        "diy"
+        "societe",
+        "devops"
       ]
     },
     {
-      "label": "La facture de l'IA devient visible",
-      "note": "Google met de la pub dans son mode IA, la recherche passe sous la moitié du revenu, SkyPilot gagne 27 % de GPU, la Finlande compte 250 000 arbres. Le goulot devient foncier et comptable.",
+      "label": "La frontière basse du calcul devient un terrain d'écriture",
+      "note": "BeOS dans le navigateur, Wii en PowerMac, SLAM greffé sur un casque : le matériel fermé redevient surface d'écriture, au moment où les modèles hébergent l'exécution.",
       "categories": [
-        "societe",
-        "devops"
+        "diy",
+        "infosec",
+        "ia"
       ]
     }
   ],
   "themes": [
     {
-      "label": "Surface d'attaque des agents IA",
-      "category": "infosec",
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-30",
-      "momentum": "montant",
-      "note": "Claude non publié enchaîne exploits multi-OS après 62 CVE ; le 9,8 du noyau Linux vient du modèle. Du texte généré aux effets produits."
-    },
-    {
-      "label": "Opacité et confiance dans les modèles",
+      "label": "Le modèle comme substrat d'exécution",
       "category": "ia",
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-30",
-      "momentum": "stable",
-      "note": "Qwen3.8-Flash-Next vise Alibaba Cloud, requalifié en jaggedness ; Gemini promet moins d'hallucinations. La fiabilité affichée reste à prouver."
-    },
-    {
-      "label": "Modèles spécialisés et hors ligne",
-      "category": "ia",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-30",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-31",
       "momentum": "montant",
-      "note": "Mistral Large 4 ouvre ses poids ; un world model miniature fait tourner des jeux sur Pico 2 W. L'exécution locale gagne le microcontrôleur."
+      "note": "Qwenputer enfouit un RISC-V, nesformer une NES dans 1 Go de poids Qwen : l'exécution se fait dans le forward pass, plus par émulation."
     },
     {
       "label": "Agents IA banalisés",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-10-30",
+      "last_seen": "2026-10-31",
       "momentum": "montant",
-      "note": "Claude Duet harness personnel ; essaims d'agents dans Minecraft et Mindustry ; Simantic vend la simulation de firmware comme banc d'essai."
+      "note": "ARTEX, framework agentique en Go, pilote 200 intrusions ; Cisco offre des tokens illimités à un ingénieur. L'agent devient main-d'œuvre."
+    },
+    {
+      "label": "Modèles spécialisés et hors ligne",
+      "category": "ia",
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-31",
+      "momentum": "stable",
+      "note": "spinf-serve et Tangled rapatrient inférence et forge ; Mistral Large 4 ouvre ses poids. Le local gagne, le coût d'exploitation reste à nommer."
+    },
+    {
+      "label": "Surface d'attaque des agents IA",
+      "category": "infosec",
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-31",
+      "momentum": "montant",
+      "note": "Une extension Claude Code altérée diffuse une backdoor SSH via la marketplace Cursor ; ni Anthropic ni Cursor n'expliquent la publication."
+    },
+    {
+      "label": "Intrusions conduites par agents",
+      "category": "infosec",
+      "first_seen": "2026-10-31",
+      "last_seen": "2026-10-31",
+      "momentum": "nouveau",
+      "note": "ARTEX frappe 200 organisations depuis le 17 octobre ; n0n tombe 23 organisations dans 14 pays pour 7 000 $ d'IA. L'industrialisation est là."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-10-30",
+      "last_seen": "2026-10-31",
       "momentum": "montant",
-      "note": "62 CVE patchées avant l'exploit Claude ; Linux TCP 9,8 sur Ubuntu et RHEL ; Gemini 4 Carbon en tête. Patcher reste le goulot."
+      "note": "GitLab 10/10 et Cisco DoS au KEV, patch exigé avant le 1er novembre, Alpine déjà ciblé. Le goulot est le déploiement, plus la faille."
     },
     {
       "label": "Chaîne logicielle compromise",
       "category": "infosec",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-10-30",
+      "last_seen": "2026-10-31",
       "momentum": "montant",
-      "note": "Yoba signe ses faux ChatGPT/Claude ; Radware frappe 61 dépôts via issues et PR en moins d'une heure ; 26 400 identifiants Gitee exposés."
+      "note": "Yoba livre un Setup.exe OpenAI/Anthropic authentiquement signé plus un winmm.dll malveillant. La signature certifie l'origine, pas l'intention."
+    },
+    {
+      "label": "Garantie par l'artefact exécutable",
+      "category": "devops",
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-31",
+      "momentum": "montant",
+      "note": "gVisor fait tourner un systemd entier, SimpleSvm chiffre 19 correctifs, xarray-sql déduit FlashAttention du SQL. La preuve s'exécute."
     },
     {
       "label": "Auto-hébergement des secrets",
       "category": "devops",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-10-30",
-      "momentum": "montant",
-      "note": "26 400 identifiants cloud et IA valides dans des dépôts Gitee publics, dont 9 473 paires Alibaba. Le marché des secrets d'agents a de l'avenir."
-    },
-    {
-      "label": "Ordonnancement GPU et capacité installée",
-      "category": "devops",
-      "first_seen": "2026-10-30",
-      "last_seen": "2026-10-30",
-      "momentum": "nouveau",
-      "note": "SkyPilot revendique 27 % de GPU en plus sur les mêmes racks Grace Blackwell. La marge se gagne dans le scheduler, plus dans les fabs."
+      "last_seen": "2026-10-31",
+      "momentum": "stable",
+      "note": "Binance perd 6,3 Md$ via un laptop DevOps compromis en 20 minutes. Le secret fuit moins par le dépôt que par le poste qui le détient."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-10-30",
+      "last_seen": "2026-10-31",
       "momentum": "montant",
-      "note": "PicoLab empile oscillo, analyseur logique et alim sur RP2040 ; serrure à 64 capteurs Hall ; marquee MiSTer en ESP32-C3 ; robot Othello."
+      "note": "Snake sur sept segments, e-paper poussé à haute fréquence, USB-C récalcitrant, SLAM sur un Bigscreen Beyond. Le presque réussi comme méthode."
     },
     {
       "label": "Reverse engineering d'appareils fermés",
       "category": "diy",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-10-30",
-      "momentum": "nouveau",
-      "note": "SMEG+ émulé sur VxWorks 6.7, bootloader ZTE déverrouillé, protocole JBL PartyBox décodé. Firmware et radio deviennent surfaces d'écriture."
-    },
-    {
-      "label": "OS et modèles sur microcontrôleurs",
-      "category": "diy",
-      "first_seen": "2026-10-30",
-      "last_seen": "2026-10-30",
-      "momentum": "nouveau",
-      "note": "Sylphide OS vise un bureau sur microcontrôleur ; un world model miniature fait tourner des jeux sur Pico 2 W. La frontière s'efface par le bas."
+      "last_seen": "2026-10-31",
+      "momentum": "montant",
+      "note": "BeOS dans le navigateur, une Wii recyclée en PowerMac, tracking inside-out maison : le matériel fermé redevient cible d'écriture."
     },
     {
       "label": "Surveillance comme infrastructure ordinaire",
       "category": "societe",
       "first_seen": "2026-10-28",
-      "last_seen": "2026-10-30",
+      "last_seen": "2026-10-31",
       "momentum": "montant",
-      "note": "Ofcom retient quatre méthodes d'age assurance dont l'estimation faciale ; la Cnil sanctionne le traçage après refus. La vérification se généralise."
-    },
-    {
-      "label": "Inégalités climatiques et COP",
-      "category": "societe",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-30",
-      "momentum": "montant",
-      "note": "La Finlande enquête sur 250 000 arbres détruits pour Google ; Oxfam rappelle que les 0,1 % émettent plus que 3,5 Md d'humains. Récit contre moyens."
+      "note": "GM paie 220 M$ pour la revente des données de conduite, Flock chute de 95 %, Reddit exige un login. Le consentement devient un périmètre."
     },
     {
       "label": "Exécution réglementaire du numérique",
       "category": "societe",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-10-30",
-      "momentum": "nouveau",
-      "note": "Cnil inflige 7 M€ à Fnac Darty, l'Utah poursuit Kalshi au pénal, Ofcom publie ses age checks. La régulation quitte les textes pour l'exécution."
+      "last_seen": "2026-10-31",
+      "momentum": "montant",
+      "note": "La taxe au gigaoctet adoptée menace VideoLan de disparition ; GM paie 220 M$. La régulation frappe désormais l'infrastructure libre."
     },
     {
       "label": "Économie de l'IA sous tension",
       "category": "societe",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-10-30",
-      "momentum": "nouveau",
-      "note": "Google met de la pub dans son mode IA, la recherche passe sous la moitié du revenu ; Gartner voit 3 % de gains pour 85 % de dépenses en hausse."
+      "last_seen": "2026-10-31",
+      "momentum": "montant",
+      "note": "Alphabet efface 500 Md$, OpenAI lève moins de la moitié de ses 30 Md$, Anthropic dépose son IPO sans note assurée. Le capital se referme."
+    },
+    {
+      "label": "Coupe-circuit centralisé des stablecoins",
+      "category": "societe",
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-31",
+      "momentum": "montant",
+      "note": "Sur 6,3 Md$ volés à Binance, 2,7 à 3 Md$ gelés par Tether et Circle. La décentralisation a deux émetteurs pour garde-fou."
     }
   ],
   "watchlist": [
@@ -180,54 +183,48 @@
       "note": "PoC réussis du premier coup en hausse, couverture des vulnérabilités en baisse, risques destructifs en hausse. GLM-5.3 reste le défaut."
     },
     {
-      "label": "Stablecoins comme coupe-circuit",
-      "category": "societe",
-      "since": "2026-10-30",
-      "note": "Tether gèle 1,567 Md d'USDT et Circle 800 M$ après la brèche Binance : le garde-fou de la « décentralisation » est un émetteur centralisé."
-    },
-    {
-      "label": "Vérification formelle en production",
-      "category": "devops",
-      "since": "2026-10-30",
-      "note": "Lasm écrit des webapps Lean prouvées pour Node, serverless et edge. La garantie viendrait de l'artefact démontré, plus du registre."
-    },
-    {
       "label": "Simulation de firmware pour agents",
       "category": "ia",
       "since": "2026-10-30",
-      "note": "Simantic (YC F26) vend la simulation de firmware comme banc d'essai pour agents. Un environnement exécutable avant le matériel réel."
+      "note": "Simantic vend la simulation de firmware comme banc d'essai pour agents. Un environnement exécutable avant le matériel réel."
     },
     {
-      "label": "CPU déterministe embarqué dans les poids",
-      "category": "ia",
-      "since": "2026-10-29",
-      "note": "Qwenputer fait tourner un RISC-V fonctionnel dans Qwen3.5 : le modèle devient hôte d'exécution, pas seulement générateur de code."
+      "label": "Forge fédérée auto-hébergée",
+      "category": "devops",
+      "since": "2026-10-31",
+      "note": "Tangled publie une forge fédérée le jour où spinf-serve sort un serveur d'inférence. Rapatrier le code déplace le contrôle, pas le coût."
+    },
+    {
+      "label": "Taxe au gigaoctet sur les contenus",
+      "category": "societe",
+      "since": "2026-10-31",
+      "note": "0,055 €/Go adopté à l'Assemblée : VideoLan évoque sa disparition. Un précédent de fiscalité du trafic, pas des tuyaux."
     }
   ],
   "tensions": [
     {
-      "label": "Promesse de décentralisation vs captation centralisée",
-      "note": "Binance perd des milliards et ce sont Tether et Circle qui gèlent les fonds, quand Infisical se valorise sur les secrets d'agents. Qui contrôle les clés contrôle le marché."
+      "label": "Décentralisation proclamée vs coupe-circuit centralisé",
+      "note": "Binance perd 6,3 Md$ en 20 minutes et ce sont Tether et Circle qui gèlent 2,7 à 3 Md$. La promesse d'absence de tiers tient sur deux émetteurs privés."
     },
     {
-      "label": "IA comme outil de défense vs infrastructure de compromission",
-      "note": "Gemini 4 Carbon et Claude non publié détectent, exploitent et corrigent pour la recherche ; le même outillage arme le 9,8 du noyau Linux et les opérateurs de menace. Bouclier et épée."
+      "label": "IA défensive vs IA infrastructure d'intrusion",
+      "note": "Le même outillage détecte et corrige pour la recherche, et arme ARTEX sur 200 organisations ou n0n sur 23 pour 7 000 $. Bouclier et produit commercial."
     },
     {
-      "label": "Accélération de la découverte vs capacité de remédiation",
-      "note": "62 CVE patchées avant l'exploit, Linux TCP 9,8 sur Ubuntu et RHEL, UEFI vieux de 16 ans : la découverte s'automatise, le déploiement des correctifs non."
+      "label": "Découverte automatisée vs remédiation humaine",
+      "note": "GitLab 10/10 au KEV avec échéance au 1er novembre et Alpine déjà ciblé : la faille se trouve en heures, le patch se déploie en jours."
     },
     {
-      "label": "Fiabilité promise vs imprévisibilité structurelle",
-      "note": "Gemini promet moins d'hallucinations quand Qwen3.8-Flash-Next vise Alibaba Cloud et que l'abliteration dégrade la couverture. La fiabilité promise recule avec l'opacité."
+      "label": "Artefact signé vs intention de celui qui le livre",
+      "note": "Yoba signe avec de vrais binaires OpenAI/Anthropic, une extension Claude Code passe par la marketplace Cursor. Le certificat certifie l'origine, pas la confiance."
     },
     {
-      "label": "Productivité promise vs dégradation assumée",
-      "note": "Gartner voit 3 % de gains pour 85 % de dépenses en hausse, Proton slopifie ses produits, Steam se remplit de jeux médiocres. L'efficacité promise se paie en qualité."
+      "label": "Productivité promise vs facture et qualité dégradées",
+      "note": "Gartner voit 3 % de gains pour 85 % de dépenses en hausse, Alphabet efface 500 Md$, Cisco paie des tokens illimités. L'efficacité se paie au bilan."
     },
     {
-      "label": "Ouverture des poids vs sécurité par le contrôle d'accès",
-      "note": "Mistral Large 4 ouvre ses poids quand Qwen exfiltre et que l'abliteration arme des modèles cyber-capables. Libérer déplace le risque du contrôle d'accès vers la responsabilité d'usage."
+      "label": "Ouverture affichée vs périmètres qui se referment",
+      "note": "Reddit exige un login, Flock restreint ses recherches après un scandale, GM paie pour avoir revendu. Le consentement devient un accès qu'on ferme."
     }
   ]
 }

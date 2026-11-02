@@ -1,116 +1,116 @@
 {
   "themes": [
     {
-      "label": "Le modèle comme substrat d'exécution",
-      "category": "ia",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-11-01",
-      "momentum": "montant",
-      "note": "bootgpt dans un secteur d'amorçage, modèle post-entraîné sur demoscenes, NES Contra en WASM : l'exécution se déplace encore."
-    },
-    {
       "label": "Agents IA banalisés",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "momentum": "montant",
-      "note": "GPT-5.6 Sol finit Factorio en pacifique, cinq Qwen agrégés battent Fable 5. Planification longue et composition deviennent routine."
+      "note": "Northstar lève 7 M$ pour des agents supervisés ; 50 équipes s'effondrent en bureaucratie dans Minecraft. La coordination est le mur."
+    },
+    {
+      "label": "Le modèle comme substrat d'exécution",
+      "category": "ia",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-11-02",
+      "momentum": "stable",
+      "note": "ScanRuler fait de la mesure une primitive d'IA, Jet Studio s'écrit au LLM, Doom tourne sur une caméra : l'exécution se déplace sans rupture."
     },
     {
       "label": "Modèles spécialisés et hors ligne",
       "category": "ia",
       "first_seen": "2026-10-28",
-      "last_seen": "2026-11-01",
-      "momentum": "montant",
-      "note": "Cinq Qwen3.8-27B agrégés battent Fable 5 sur LiveCodeBench Hard ; un modèle embarqué analyse le WiFi. Le local gagne par composition."
+      "last_seen": "2026-11-02",
+      "momentum": "stable",
+      "note": "NightDX recalibre son modèle de propagation sur la réception réelle ; l'inférence embarquée devient un instrument de mesure."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "momentum": "stable",
-      "note": "Parameter.ai prend des comptes ChatGPT ; Anthropic bloque le rétro-engineering de jeux. Le compte et l'usage deviennent le périmètre."
+      "note": "Northstar vend la supervision humaine et des intégrations MCP ; le compte reste le périmètre, comme le montre le vol de cookies M365."
     },
     {
       "label": "Intrusions conduites par agents",
       "category": "infosec",
       "first_seen": "2026-10-31",
-      "last_seen": "2026-11-01",
-      "momentum": "montant",
-      "note": "Chainalysis percée par techniques agentiques, Anthropic en 12 h, VOLTA note ses victimes via OpenRouter. L'agent devient outil, puis juge."
+      "last_seen": "2026-11-02",
+      "momentum": "stable",
+      "note": "TraderTraitor trojanise la chaîne Terraform et industrialise des leurres assistés par IA ; l'agent recule devant la chaîne d'outils."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "momentum": "montant",
-      "note": "CVE-2026-98432 à 9,8 sur TCP Linux, chaîne Ivanti au KEV vers root. Le goulot reste le déploiement, pas la découverte."
+      "note": "LXD et Mirage2FA tous deux à 10.0, fenêtre d'exploitation d'une heure : le correctif existe, le déploiement non."
     },
     {
-      "label": "Exfiltration par canaux physiques",
+      "label": "Détournement de session, MFA contourné",
       "category": "infosec",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-11-01",
-      "momentum": "montant",
-      "note": "La RAM d'une machine air-gap épelle des secrets en radio, après le bruit thermique de Stanford. L'isolement réseau cesse d'être une frontière."
+      "first_seen": "2026-11-02",
+      "last_seen": "2026-11-02",
+      "momentum": "nouveau",
+      "note": "4 561 cookies M365 volés via AiTM ; le second facteur n'est pas cassé mais contourné, la parade est cryptographique (WHfB/FIDO2)."
     },
     {
       "label": "Garantie par l'artefact exécutable",
       "category": "devops",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-01",
-      "momentum": "montant",
-      "note": "Jepsen analyse ParticleDB, wafmeow admet qu'un match n'est pas une preuve d'absence. La vérification s'exécute, limites comprises."
+      "last_seen": "2026-11-02",
+      "momentum": "stable",
+      "note": "FloppoScope analyse en local, NightDX se confronte au réel ; le message PHP-FPM ment sur sa cause. L'outil dit ce qu'il ne couvre pas."
+    },
+    {
+      "label": "Outillage local invisible",
+      "category": "devops",
+      "first_seen": "2026-11-02",
+      "last_seen": "2026-11-02",
+      "momentum": "nouveau",
+      "note": "OmniDiff content-aware et Swift Download Manager en Rust : le gain se joue sur ce qu'on ne voit plus, pas sur ce qu'on exhibe."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "momentum": "montant",
-      "note": "Echo Dot rooté, action camera rallongée par batterie externe, modem LTE USB-C. Le périmètre fermé par le fabricant se rouvre à la pince."
+      "note": "Caméra enfant HX3302B fait tourner Doom, Tang Nano 9K à 15 $ héberge un RISC-V, ADS-B sous 50 $ : le jetable exécute."
     },
     {
       "label": "Reverse engineering d'appareils fermés",
       "category": "diy",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "momentum": "montant",
-      "note": "BBRouter simule le SAP-1 en 3D, NES Contra réécrit en C puis WASM, Echo Dot rooté. Le matériel fermé redevient cible d'écriture."
+      "note": "Dump firmware sans ouvrir le boîtier, toolchain OpenRISC, ScanRuler reconstruit la CAO depuis un scan : le fermé redevient écrivable."
     },
     {
       "label": "Instruments de mesure fabriqués maison",
       "category": "diy",
       "first_seen": "2026-11-01",
-      "last_seen": "2026-11-01",
-      "momentum": "nouveau",
-      "note": "Analyseur WiFi à modèle embarqué, frigo Einstein-Szilard transparent, électrodes WT20 au spectre lisible. Mesurer devient un projet."
+      "last_seen": "2026-11-02",
+      "momentum": "montant",
+      "note": "SweepSA, NightDX, FloppoScope, ADS-B : mesurer devient un projet et l'instrument doit prouver ce qu'il capte."
     },
     {
       "label": "Économie de l'IA sous tension",
       "category": "societe",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "momentum": "montant",
-      "note": "Alphabet -500 Md$, Nasdaq -2 000 Md$ en octobre, dossier Anthropic qui enfonce la tech. Le ROI devient la question du bilan."
+      "note": "Apollo constate zéro rendement, part du capital des travailleurs au plus bas depuis 1947, dette IA interrogée : le ROI devient politique."
     },
     {
       "label": "Exécution réglementaire du numérique",
       "category": "societe",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "momentum": "montant",
-      "note": "Taxe de 0,055 €/Go adoptée, data center Google validé de nuit à Hermantown. La régulation frappe le trafic et l'implantation."
-    },
-    {
-      "label": "Sanction judiciaire des usages IA",
-      "category": "societe",
-      "first_seen": "2026-11-01",
-      "last_seen": "2026-11-01",
-      "momentum": "nouveau",
-      "note": "Tribunal brésilien contre une prompt injection, Copyright Office qui rétablit une formalité, dataset piraté effacé. Le juge précède la loi."
+      "note": "CNIL 7 M€ via noyb, VPN retirés de l'App Store russe, caméras Flock débranchées, data centers en conseil municipal."
     }
   ],
   "watchlist": [
@@ -127,22 +127,10 @@
       "note": "PoC réussis du premier coup en hausse, couverture des vulnérabilités en baisse. GLM-5.3 reste le défaut."
     },
     {
-      "label": "Simulation de firmware pour agents",
-      "category": "ia",
-      "since": "2026-10-30",
-      "note": "Simantic vend la simulation de firmware comme banc d'essai pour agents. Un environnement exécutable avant le matériel réel."
-    },
-    {
       "label": "Forge fédérée auto-hébergée",
       "category": "devops",
       "since": "2026-10-31",
       "note": "Tangled publie une forge fédérée le jour où spinf-serve sort un serveur d'inférence. Rapatrier le code déplace le contrôle, pas le coût."
-    },
-    {
-      "label": "Watermarking qui dégrade le texte",
-      "category": "ia",
-      "since": "2026-11-01",
-      "note": "Le filigrane des textes IA abaisse leur qualité. Si le garde-fou se paie en output, la détection devient un arbitrage produit."
     },
     {
       "label": "Agrégation de petits modèles vs frontière",
@@ -155,39 +143,51 @@
       "category": "infosec",
       "since": "2026-11-01",
       "note": "VOLTA-AUTODOXER interroge OpenRouter pour scorer la valeur et l'OPSEC de chaque victime. Le tri des cibles devient un service."
+    },
+    {
+      "label": "Trojanisation de la chaîne Terraform",
+      "category": "infosec",
+      "since": "2026-11-02",
+      "note": "TraderTraitor compromet l'outillage de build lui-même : si la CI devient le vecteur, le périmètre de confiance remonte d'un cran."
+    },
+    {
+      "label": "Instruments qui se recalibrent sur le réel",
+      "category": "diy",
+      "since": "2026-11-02",
+      "note": "NightDX ajuste son modèle de propagation sur ce que l'antenne capte. Un instrument qui apprend de sa propre mesure, motif à exporter."
     }
   ],
   "tensions": [
     {
       "label": "IA défensive vs IA infrastructure d'intrusion",
-      "note": "Le même outillage détecte et corrige pour la recherche, et perce Anthropic en 12 h ou note ses victimes chez Chainalysis. Bouclier et produit commercial, sans frontière stable."
+      "note": "Le même outillage détecte et corrige pour la recherche, et perce Anthropic en 12 h ou trojanise Terraform. Bouclier et produit commercial, sans frontière stable."
     },
     {
       "label": "Découverte automatisée vs remédiation humaine",
-      "note": "CVE-2026-98432 à 9,8 sur TCP Linux et chaîne Ivanti au KEV : la faille se trouve en heures, le patch se déploie en jours. Le goulot est organisationnel."
+      "note": "LXD et Mirage2FA à 10.0 : la faille se trouve en heures, le patch se déploie en jours. Le goulot est organisationnel, pas technique."
     },
     {
-      "label": "Productivité promise vs facture et qualité dégradées",
-      "note": "Alphabet efface 500 Md$, le Nasdaq 2 000 Md$, le watermarking abaisse la qualité des textes. L'efficacité se paie au bilan et dans l'output."
+      "label": "Productivité promise vs facture et partage de la valeur",
+      "note": "Alphabet efface 500 Md$, Apollo mesure zéro rendement, la part du capital tombe au plus bas depuis 1947. L'efficacité se paie au bilan et dans les salaires."
     },
     {
       "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "Anthropic bloque le rétro-engineering de jeux, le Copyright Office rétablit une formalité, les quotas ChatGPT et Codex fusionnent. Le contrôle se facture."
+      "note": "Apple retire les VPN de Russie, Anthropic bloque le rétro-engineering, Flock ignore la résiliation. Le contrôle se facture et se conteste à la prise électrique."
     },
     {
       "label": "Preuve d'un match vs preuve d'absence",
-      "note": "wafmeow trouve un WAF mais ne prouve pas son absence, Jepsen valide ParticleDB sur ses seuls scénarios. L'outillage dit ce qu'il ne couvre pas."
+      "note": "FloppoScope analyse en local, NightDX se recalibre, PHP-FPM ment sur sa cause. L'outillage dit ce qu'il ne couvre pas — encore faut-il l'écouter."
     },
     {
-      "label": "Échelle brute vs agrégation de petits modèles",
-      "note": "Cinq Qwen3.8-27B revendiquent Fable 5 sur LiveCodeBench Hard pendant que les labs frontière brûlent du capex. La composition défie la taille."
+      "label": "Autonomie vendue vs coordination impossible",
+      "note": "Northstar vend des agents supervisés à 7 M$ pendant que 50 équipes d'agents s'effondrent en bureaucratie. L'autonomie se démontre en solo, pas en société."
     }
   ],
   "strategy_notes": [
-    "VOLTA-AUTODOXER note la valeur de ses victimes via OpenRouter : suivre l'apparition de LLM dans la boucle de monétisation des malwares, pas seulement dans la génération de code.",
-    "CVE-2026-98432 à 9,8 sur la pile TCP Linux et chaîne Ivanti au KEV : le délai publication→déploiement reste le seul indicateur d'exposition réel.",
-    "Cinq Qwen3.8-27B agrégés battent Fable 5 sur LiveCodeBench Hard : si l'agrégation tient, l'argument capex des labs frontière s'affaiblit. À recouper avec les 2 000 Md$ du Nasdaq.",
-    "Watermarking et blocage du rétro-engineering chez Anthropic : mesurer le coût qualité des garde-fous, c'est là que se jouera l'adoption."
+    "Deux CVSS 10.0 le même jour (LXD, Mirage2FA) : suivre la fenêtre publication→déploiement, pas le score. Sur LXD, le certificat public suffit — la clé privée n'est plus un prérequis.",
+    "TraderTraitor trojanise la chaîne Terraform et industrialise des leurres assistés par IA : la supply chain de build devient le point d'entrée du crime étatique, à recouper avec les 6,43 Md$ de Binance.",
+    "Apollo constate zéro rendement de l'IA quand la part du capital des travailleurs américains tombe au plus bas depuis 1947 : la question n'est plus la capacité mais la distribution de la valeur.",
+    "NightDX recalibre son modèle de propagation sur ce que l'antenne capte réellement : un instrument qui apprend de sa propre mesure, motif à surveiller dans le DIY et au-delà."
   ],
-  "updated_at": "2026-11-01"
+  "updated_at": "2026-11-02"
 }

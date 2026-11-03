@@ -4,133 +4,129 @@
       "label": "Agents IA banalisés",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-02",
+      "last_seen": "2026-11-03",
       "momentum": "montant",
-      "note": "Northstar lève 7 M$ pour des agents supervisés ; 50 équipes s'effondrent en bureaucratie dans Minecraft. La coordination est le mur."
+      "note": "Chirurgie sur souris, Momentic, plugin Modernization : le verrou passe de la capacité à la supervision et à qui signe le geste irréversible."
     },
     {
       "label": "Le modèle comme substrat d'exécution",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-02",
+      "last_seen": "2026-11-03",
       "momentum": "stable",
-      "note": "ScanRuler fait de la mesure une primitive d'IA, Jet Studio s'écrit au LLM, Doom tourne sur une caméra : l'exécution se déplace sans rupture."
+      "note": "Astra lit et réécrit les poids d'un Qwen ; LongCat-2.5 pose la multimodalité native en socle agentique. L'exécution vit dans les tenseurs."
     },
     {
-      "label": "Modèles spécialisés et hors ligne",
+      "label": "Backdoors dans les poids, audit post-déploiement",
       "category": "ia",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-11-02",
-      "momentum": "stable",
-      "note": "NightDX recalibre son modèle de propagation sur la réception réelle ; l'inférence embarquée devient un instrument de mesure."
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-11-03",
+      "momentum": "montant",
+      "note": "Empoisonnement du pré-entraînement et édition de poids confirment les backdoors indétectables ; l'audit devient un addendum post-déploiement."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-02",
-      "momentum": "stable",
-      "note": "Northstar vend la supervision humaine et des intégrations MCP ; le compte reste le périmètre, comme le montre le vol de cookies M365."
+      "last_seen": "2026-11-03",
+      "momentum": "montant",
+      "note": "Extension claude-code malveillante servie via Cursor, intégrations MCP : le compte et l'éditeur restent le périmètre réel de l'agent."
     },
     {
       "label": "Intrusions conduites par agents",
       "category": "infosec",
       "first_seen": "2026-10-31",
-      "last_seen": "2026-11-02",
-      "momentum": "stable",
-      "note": "TraderTraitor trojanise la chaîne Terraform et industrialise des leurres assistés par IA ; l'agent recule devant la chaîne d'outils."
+      "last_seen": "2026-11-03",
+      "momentum": "montant",
+      "note": "CL-UNK-1211, DarkBlinders, TA397 : scripts possiblement générés par IA, plus rapides mais plus détectables. L'effort migre vers la cible."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-02",
+      "last_seen": "2026-11-03",
       "momentum": "montant",
-      "note": "LXD et Mirage2FA tous deux à 10.0, fenêtre d'exploitation d'une heure : le correctif existe, le déploiement non."
+      "note": "Ubuntu sans patch 3 semaines, Ivanti et Siemens exploités, 250 000 sites .fr en PHP vulnérable : la fenêtre est devenue le périmètre."
     },
     {
       "label": "Détournement de session, MFA contourné",
       "category": "infosec",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-02",
-      "momentum": "nouveau",
-      "note": "4 561 cookies M365 volés via AiTM ; le second facteur n'est pas cassé mais contourné, la parade est cryptographique (WHfB/FIDO2)."
+      "last_seen": "2026-11-03",
+      "momentum": "stable",
+      "note": "Abus d'AD CS via une usurpation du support IT sur Teams : plus d'exploit, un certificat mal configuré et un employé convaincu suffisent."
+    },
+    {
+      "label": "Supply chain de l'outillage de confiance",
+      "category": "infosec",
+      "first_seen": "2026-11-02",
+      "last_seen": "2026-11-03",
+      "momentum": "montant",
+      "note": "Binance via un portable, cPGuard par son canal de mise à jour, extension Cursor : l'outil de confiance est le point d'entrée."
     },
     {
       "label": "Garantie par l'artefact exécutable",
       "category": "devops",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-02",
-      "momentum": "stable",
-      "note": "FloppoScope analyse en local, NightDX se confronte au réel ; le message PHP-FPM ment sur sa cause. L'outil dit ce qu'il ne couvre pas."
+      "last_seen": "2026-11-03",
+      "momentum": "montant",
+      "note": "Codex ramène la revue d'un backport noyau à 30 min et 149 CVE atterrissent en stable : la forge devient le goulot, pas la détection."
     },
     {
       "label": "Outillage local invisible",
       "category": "devops",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-02",
-      "momentum": "nouveau",
-      "note": "OmniDiff content-aware et Swift Download Manager en Rust : le gain se joue sur ce qu'on ne voit plus, pas sur ce qu'on exhibe."
+      "last_seen": "2026-11-03",
+      "momentum": "stable",
+      "note": "Cloudflare divise par deux ses builds DNS, PostHog quitte DuckDB : le gain se joue sur le coût de possession, pas la performance brute."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-02",
+      "last_seen": "2026-11-03",
       "momentum": "montant",
-      "note": "Caméra enfant HX3302B fait tourner Doom, Tang Nano 9K à 15 $ héberge un RISC-V, ADS-B sous 50 $ : le jetable exécute."
+      "note": "Un GL-MT6000 sous OpenWrt sort du CSI 80 MHz, un RTL-SDR décode le 406 MHz, un Chumby de 2009 redevient radio : le jetable mesure."
     },
     {
       "label": "Reverse engineering d'appareils fermés",
       "category": "diy",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-02",
+      "last_seen": "2026-11-03",
       "momentum": "montant",
-      "note": "Dump firmware sans ouvrir le boîtier, toolchain OpenRISC, ScanRuler reconstruit la CAO depuis un scan : le fermé redevient écrivable."
+      "note": "NEMESIS libère les Gen5W Hyundai/Kia, un Carminat Renault jailbreaké pour l'heure, firmware Polyend ouvert : le fermé redevient écrivable."
     },
     {
       "label": "Instruments de mesure fabriqués maison",
       "category": "diy",
       "first_seen": "2026-11-01",
-      "last_seen": "2026-11-02",
+      "last_seen": "2026-11-03",
       "momentum": "montant",
-      "note": "SweepSA, NightDX, FloppoScope, ADS-B : mesurer devient un projet et l'instrument doit prouver ce qu'il capte."
+      "note": "CSI Wi-Fi, balises COSPAS-SARSAT, NightDX : la mesure sort du capteur dédié et vient du récepteur déjà là — sans dire qui bouge."
     },
     {
       "label": "Économie de l'IA sous tension",
       "category": "societe",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-02",
+      "last_seen": "2026-11-03",
       "momentum": "montant",
-      "note": "Apollo constate zéro rendement, part du capital des travailleurs au plus bas depuis 1947, dette IA interrogée : le ROI devient politique."
+      "note": "Tokens internes d'Anthropic > masse salariale, Oracle lève 20 Md$, IPO contestée à la SEC, 3 500 Md$ de correction sur les puces."
     },
     {
       "label": "Exécution réglementaire du numérique",
       "category": "societe",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-02",
+      "last_seen": "2026-11-03",
       "momentum": "montant",
-      "note": "CNIL 7 M€ via noyb, VPN retirés de l'App Store russe, caméras Flock débranchées, data centers en conseil municipal."
+      "note": "Annonce 48 du Mofcom, premier contrôle chinois à l'export de l'IA frontière ; TikTok sommé en France ; Ford promet la privacy."
     }
   ],
   "watchlist": [
-    {
-      "label": "Backdoors chiffrées indétectables",
-      "category": "infosec",
-      "since": "2026-10-27",
-      "note": "Des réseaux chiffrés dans les poids invalident l'hypothèse des évaluations pré-déploiement ; tout audit de modèle devient négociable."
-    },
     {
       "label": "Abliteration des modèles cyber-capables",
       "category": "ia",
       "since": "2026-10-30",
       "note": "PoC réussis du premier coup en hausse, couverture des vulnérabilités en baisse. GLM-5.3 reste le défaut."
-    },
-    {
-      "label": "Forge fédérée auto-hébergée",
-      "category": "devops",
-      "since": "2026-10-31",
-      "note": "Tangled publie une forge fédérée le jour où spinf-serve sort un serveur d'inférence. Rapatrier le code déplace le contrôle, pas le coût."
     },
     {
       "label": "Agrégation de petits modèles vs frontière",
@@ -139,55 +135,73 @@
       "note": "Cinq Qwen3.8-27B battent Fable 5 sur LiveCodeBench Hard. Si ça se reproduit, l'argument capex des labs frontière s'effondre."
     },
     {
+      "label": "Forge fédérée auto-hébergée",
+      "category": "devops",
+      "since": "2026-10-31",
+      "note": "Tangled et spinf-serve ; OpenAI documente la mise à l'échelle de son Git. Rapatrier le code déplace le contrôle, pas le coût."
+    },
+    {
       "label": "Monétisation des victimes notée par LLM",
       "category": "infosec",
       "since": "2026-11-01",
       "note": "VOLTA-AUTODOXER interroge OpenRouter pour scorer la valeur et l'OPSEC de chaque victime. Le tri des cibles devient un service."
     },
     {
-      "label": "Trojanisation de la chaîne Terraform",
+      "label": "Scripts d'intrusion générés par IA, plus détectables",
       "category": "infosec",
-      "since": "2026-11-02",
-      "note": "TraderTraitor compromet l'outillage de build lui-même : si la CI devient le vecteur, le périmètre de confiance remonte d'un cran."
+      "since": "2026-11-03",
+      "note": "Unit 42 note des scripts possiblement générés par IA : production accélérée mais empreinte forensique plus lisible. À confirmer."
     },
     {
       "label": "Instruments qui se recalibrent sur le réel",
       "category": "diy",
       "since": "2026-11-02",
       "note": "NightDX ajuste son modèle de propagation sur ce que l'antenne capte. Un instrument qui apprend de sa propre mesure, motif à exporter."
+    },
+    {
+      "label": "Firmware ouvert, survie non garantie",
+      "category": "diy",
+      "since": "2026-11-03",
+      "note": "Polyend publie les sources de son Tracker. Ouvrir rend la survie possible, pas garantie : elle dépend de qui maintient le dépôt."
+    },
+    {
+      "label": "Le token comme ligne de paie",
+      "category": "societe",
+      "since": "2026-11-03",
+      "note": "Anthropic valorise sa consommation interne au prix public au-dessus des salaires. Chiffre contestable, mais il crée un ratio comparable."
     }
   ],
   "tensions": [
     {
       "label": "IA défensive vs IA infrastructure d'intrusion",
-      "note": "Le même outillage détecte et corrige pour la recherche, et perce Anthropic en 12 h ou trojanise Terraform. Bouclier et produit commercial, sans frontière stable."
+      "note": "Le même outillage détecte et corrige pour la recherche, et trojanise Terraform ou génère des scripts d'espionnage. Bouclier et produit commercial, sans frontière stable."
     },
     {
       "label": "Découverte automatisée vs remédiation humaine",
-      "note": "LXD et Mirage2FA à 10.0 : la faille se trouve en heures, le patch se déploie en jours. Le goulot est organisationnel, pas technique."
+      "note": "Ubuntu laisse un RCE noyau sans patch trois semaines, 250 000 sites .fr restent vulnérables : la faille se trouve en heures, le correctif se déploie en mois. Le goulot est organisationnel."
     },
     {
       "label": "Productivité promise vs facture et partage de la valeur",
-      "note": "Alphabet efface 500 Md$, Apollo mesure zéro rendement, la part du capital tombe au plus bas depuis 1947. L'efficacité se paie au bilan et dans les salaires."
+      "note": "Anthropic consomme en tokens plus qu'elle ne paie en salaires, Oracle lève 20 Md$, la part du capital des travailleurs est au plus bas depuis 1947. L'efficacité se paie au bilan."
     },
     {
       "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "Apple retire les VPN de Russie, Anthropic bloque le rétro-engineering, Flock ignore la résiliation. Le contrôle se facture et se conteste à la prise électrique."
+      "note": "Ford promet la privacy, Polyend ouvre son firmware, pendant que Pékin contrôle l'export de l'IA frontière et qu'Apple retire les VPN. Le contrôle se facture et se conteste."
     },
     {
-      "label": "Preuve d'un match vs preuve d'absence",
-      "note": "FloppoScope analyse en local, NightDX se recalibre, PHP-FPM ment sur sa cause. L'outillage dit ce qu'il ne couvre pas — encore faut-il l'écouter."
+      "label": "Preuve sur banc d'essai vs preuve en production",
+      "note": "Les backdoors vivent dans les poids et échappent aux évaluations pré-déploiement ; le seul audit livré est un addendum post-mise en service. La garantie arrive après le risque."
     },
     {
       "label": "Autonomie vendue vs coordination impossible",
-      "note": "Northstar vend des agents supervisés à 7 M$ pendant que 50 équipes d'agents s'effondrent en bureaucratie. L'autonomie se démontre en solo, pas en société."
+      "note": "Northstar vend des agents supervisés pendant que 50 équipes d'agents s'effondrent en bureaucratie ; un agent opère une souris de labo mais personne ne signe le geste irréversible."
     }
   ],
   "strategy_notes": [
-    "Deux CVSS 10.0 le même jour (LXD, Mirage2FA) : suivre la fenêtre publication→déploiement, pas le score. Sur LXD, le certificat public suffit — la clé privée n'est plus un prérequis.",
-    "TraderTraitor trojanise la chaîne Terraform et industrialise des leurres assistés par IA : la supply chain de build devient le point d'entrée du crime étatique, à recouper avec les 6,43 Md$ de Binance.",
-    "Apollo constate zéro rendement de l'IA quand la part du capital des travailleurs américains tombe au plus bas depuis 1947 : la question n'est plus la capacité mais la distribution de la valeur.",
-    "NightDX recalibre son modèle de propagation sur ce que l'antenne capte réellement : un instrument qui apprend de sa propre mesure, motif à surveiller dans le DIY et au-delà."
+    "Trois entrées par l'outil de confiance en 72 h (Binance, cPGuard, extension Cursor) : suivre les canaux de mise à jour et les dépôts, pas les CVE. Le périmètre de build est devenu le vrai périmètre.",
+    "Ubuntu sans patch depuis 3 semaines sur CVE-2026-98432 et 250 000 sites .fr en PHP vulnérable : mesurer la fenêtre publication→déploiement par éditeur est le seul indicateur qui compte encore.",
+    "Chez Anthropic, les tokens internes au prix catalogue dépassent la masse salariale : chiffre contestable (auto-inférence) mais il installe le coût de l'IA comme ligne comparable aux salaires. À recouper avec Oracle et les 3 500 Md$ de correction sur les puces.",
+    "L'annonce 48 du Mofcom est le premier contrôle chinois à l'export sur l'IA frontière : le verrouillage change de camp et le marché des semi-conducteurs commence à le chiffrer."
   ],
-  "updated_at": "2026-11-02"
+  "updated_at": "2026-11-03"
 }

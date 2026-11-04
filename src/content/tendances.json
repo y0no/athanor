@@ -1,44 +1,43 @@
 {
-  "updated_at": "2026-11-03",
+  "updated_at": "2026-11-04",
   "synthesis": {
-    "headline": "Le contrôle migre vers les outils qui produisent code et modèles.",
-    "narrative": "Les poids d'un modèle s'éditent et s'empoisonnent (<em>Astra</em>, backdoors de pré-entraînement) pendant qu'un canal de mise à jour, une extension d'éditeur ou un portable de développeur suffisent à ouvrir un périmètre entier. Le même jour, <strong>Ubuntu</strong> laisse un RCE noyau sans patch depuis trois semaines et 250 000 sites <code>.fr</code> tournent sur un PHP vulnérable : la découverte s'automatise, la remédiation reste humaine. Côté DIY, le routeur du salon et un RTL-SDR deviennent des instruments de mesure — mais le CSI dit qu'un canal bouge, jamais qui bouge. Et la facture tombe : chez <strong>Anthropic</strong>, les tokens consommés en interne dépassent la masse salariale, quand <strong>Oracle</strong> lève 20 Md$ et que Pékin met l'IA frontière sous contrôle à l'export."
+    "headline": "La confiance se pirate dans les tuyaux, pas dans le code",
+    "narrative": "Binance à 6,43 Md$ via une installation Homebrew, cPGuard par son canal de mise à jour, 1,3 million de box avec une backdoor d'usine : le point d'entrée s'est déplacé vers <strong>ce qui livre le logiciel</strong>. Pendant que <strong>LLMjacking</strong> transforme l'inférence volée en monnaie et que les agents de code se voient assigner des rôles séparés pour tenir la facture, le DIY répond par le même geste — un tiers qui reprend le dépôt d'un goTenna abandonné. La réparation, elle, reste humaine : 98,4 % des vulnérabilités trouvées par un trio de modèles, un démantèlement qui arrive <em>après</em> la livraison."
   },
   "currents": [
     {
-      "label": "Le périmètre de confiance remonte d'un cran",
-      "note": "Canal de mise à jour cPGuard, extension Cursor, portable Binance, chaîne Terraform, poids d'un modèle : l'entrée n'est plus la faille mais l'outil qui produit. Auditer l'artefact ne suffit plus.",
+      "label": "La chaîne de livraison devient le périmètre",
+      "note": "Homebrew, canal de mise à jour cPGuard, firmware d'usine, dépôt communautaire repris par un tiers : ce qui installe et ce qui met à jour décide de ce qui est sûr.",
       "categories": [
         "infosec",
         "devops",
+        "diy"
+      ]
+    },
+    {
+      "label": "L'inférence est devenue une ressource à voler et à économiser",
+      "note": "LLMjacking revend des tokens volés jusqu'à 1 M$ de cloud, TokenEconomizer coupe 30 % de la même facture. Attaque et optimisation visent le même compteur.",
+      "categories": [
+        "ia",
+        "infosec",
+        "societe"
+      ]
+    },
+    {
+      "label": "La mesure se déplace du banc d'essai vers le terrain",
+      "note": "Celestia agrège les modèles, MLEP apprend l'OT sur 15 s de session, l'AERO se décode depuis l'Alberta : c'est le réel capté qui fixe la précision utile.",
+      "categories": [
+        "ia",
+        "infosec",
+        "diy"
+      ]
+    },
+    {
+      "label": "Le contrôle se déplace de l'État vers la plateforme",
+      "note": "Google coupe Search aux écoles qui refusent son IA et conditionne la parole de ses chercheurs : le verrou n'est plus réglementaire, il est contractuel.",
+      "categories": [
+        "societe",
         "ia"
-      ]
-    },
-    {
-      "label": "La facture précède le gain",
-      "note": "Tokens internes d'Anthropic au-dessus des salaires, Oracle qui lève 20 Md$, 3 500 Md$ de correction sur les puces, PostHog quittant DuckDB : le coût de possession arbitre avant la performance.",
-      "categories": [
-        "societe",
-        "ia",
-        "devops"
-      ]
-    },
-    {
-      "label": "Mesurer n'est pas prouver",
-      "note": "Le CSI Wi-Fi dit qu'un canal bouge sans dire qui bouge, la balise 406 ne livre que ce que l'émetteur veut, Codex produit des backports peu relus. L'instrument gagne en portée ce qu'il perd en preuve.",
-      "categories": [
-        "diy",
-        "devops",
-        "infosec"
-      ]
-    },
-    {
-      "label": "Le contrôle se déplace vers la couche modèle",
-      "note": "Pékin met l'IA frontière sous contrôle à l'export, Astra édite les poids d'un Qwen, les backdoors vivent dans les tenseurs : régulation et attaque visent le même objet, ni code ni prompt.",
-      "categories": [
-        "societe",
-        "ia",
-        "infosec"
       ]
     }
   ],
@@ -47,121 +46,121 @@
       "label": "Agents IA banalisés",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-03",
+      "last_seen": "2026-11-04",
       "momentum": "montant",
-      "note": "Chirurgie sur souris, Momentic, plugin Modernization : le verrou passe de la capacité à la supervision et à qui signe le geste irréversible."
+      "note": "elephant-goldfish sépare produire, relire, arbitrer ; TokenEconomizer coupe 18-31 % de tokens. La supervision devient un poste de coût."
     },
     {
       "label": "Le modèle comme substrat d'exécution",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-03",
-      "momentum": "stable",
-      "note": "Astra lit et réécrit les poids d'un Qwen ; LongCat-2.5 pose la multimodalité native en socle agentique. L'exécution vit dans les tenseurs."
+      "last_seen": "2026-11-04",
+      "momentum": "montant",
+      "note": "Astra réécrit les poids de Qwen3.5-0.8B, honnibal.dev juge le post trompeur ; Qwen 3.8 27B lit ses poids sur un laptop."
     },
     {
       "label": "Backdoors dans les poids, audit post-déploiement",
       "category": "ia",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-03",
-      "momentum": "montant",
-      "note": "Empoisonnement du pré-entraînement et édition de poids confirment les backdoors indétectables ; l'audit devient un addendum post-déploiement."
+      "last_seen": "2026-11-04",
+      "momentum": "déclin",
+      "note": "Rien de neuf sur les poids ; l'angle backdoor migre vers le firmware d'usine (XCPE) et les canaux de mise à jour."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-03",
+      "last_seen": "2026-11-04",
       "momentum": "montant",
-      "note": "Extension claude-code malveillante servie via Cursor, intégrations MCP : le compte et l'éditeur restent le périmètre réel de l'agent."
+      "note": "Greeter transforme un « hello » en JS via Flowise (CVE-2024-58351) ; AnyModelBot route 70+ modèles. L'infra IA est la cible."
     },
     {
       "label": "Intrusions conduites par agents",
       "category": "infosec",
       "first_seen": "2026-10-31",
-      "last_seen": "2026-11-03",
+      "last_seen": "2026-11-04",
       "momentum": "montant",
-      "note": "CL-UNK-1211, DarkBlinders, TA397 : scripts possiblement générés par IA, plus rapides mais plus détectables. L'effort migre vers la cible."
+      "note": "3AM laisse l'exécution boucler et réviser ses scripts ; le NCSC date à 2028 l'attaque IA des infra critiques britanniques."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-03",
+      "last_seen": "2026-11-04",
       "momentum": "montant",
-      "note": "Ubuntu sans patch 3 semaines, Ivanti et Siemens exploités, 250 000 sites .fr en PHP vulnérable : la fenêtre est devenue le périmètre."
-    },
-    {
-      "label": "Détournement de session, MFA contourné",
-      "category": "infosec",
-      "first_seen": "2026-11-02",
-      "last_seen": "2026-11-03",
-      "momentum": "stable",
-      "note": "Abus d'AD CS via une usurpation du support IT sur Teams : plus d'exploit, un certificat mal configuré et un employé convaincu suffisent."
+      "note": "Un trio de modèles trouve 61/62 vulns web réelles ; XCPE est démantelé après 1,3 M de box livrées. Trouver va vite, corriger non."
     },
     {
       "label": "Supply chain de l'outillage de confiance",
       "category": "infosec",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-03",
+      "last_seen": "2026-11-04",
       "momentum": "montant",
-      "note": "Binance via un portable, cPGuard par son canal de mise à jour, extension Cursor : l'outil de confiance est le point d'entrée."
+      "note": "Binance 6,43 Md$ via Homebrew et faux entretiens, cPGuard par son canal de MAJ, Chainstack : la chaîne d'assemblage s'ajoute aux dépôts."
     },
     {
-      "label": "Garantie par l'artefact exécutable",
-      "category": "devops",
-      "first_seen": "2026-10-30",
-      "last_seen": "2026-11-03",
-      "momentum": "montant",
-      "note": "Codex ramène la revue d'un backport noyau à 30 min et 149 CVE atterrissent en stable : la forge devient le goulot, pas la détection."
+      "label": "L'inférence comme monnaie",
+      "category": "infosec",
+      "first_seen": "2026-11-04",
+      "last_seen": "2026-11-04",
+      "momentum": "nouveau",
+      "note": "LLMjacking : jusqu'à 1 M$ de cloud, 100 k$/jour, revente de tokens via « LLM Mixers ». L'identité volée se monétise en inférence."
     },
     {
       "label": "Outillage local invisible",
       "category": "devops",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-03",
-      "momentum": "stable",
-      "note": "Cloudflare divise par deux ses builds DNS, PostHog quitte DuckDB : le gain se joue sur le coût de possession, pas la performance brute."
+      "last_seen": "2026-11-04",
+      "momentum": "montant",
+      "note": "ByteDance réécrit sa couche disque (USDB), PostgreSQL se lit par ses pages et son WAL : posséder la brique plutôt qu'abstraire."
+    },
+    {
+      "label": "Dette opérationnelle ordinaire",
+      "category": "devops",
+      "first_seen": "2026-11-04",
+      "last_seen": "2026-11-04",
+      "momentum": "nouveau",
+      "note": "LXC sans casser les snapshots, fuseaux canadiens réparés à la main : ni CVE ni correctif, des conventions qui coûtent des heures."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-03",
+      "last_seen": "2026-11-04",
       "momentum": "montant",
-      "note": "Un GL-MT6000 sous OpenWrt sort du CSI 80 MHz, un RTL-SDR décode le 406 MHz, un Chumby de 2009 redevient radio : le jetable mesure."
+      "note": "goTenna Mesh orphelin ranimé par Backtrail Pro, Flipper One en précommande : c'est un tiers, pas le fabricant, qui tient le dépôt."
     },
     {
       "label": "Reverse engineering d'appareils fermés",
       "category": "diy",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-03",
+      "last_seen": "2026-11-04",
       "momentum": "montant",
-      "note": "NEMESIS libère les Gen5W Hyundai/Kia, un Carminat Renault jailbreaké pour l'heure, firmware Polyend ouvert : le fermé redevient écrivable."
+      "note": "Un driver Rust user-mode décode les trames RF des télécommandes LG Magic Motion à 111 Hz via un CP2102."
     },
     {
       "label": "Instruments de mesure fabriqués maison",
       "category": "diy",
       "first_seen": "2026-11-01",
-      "last_seen": "2026-11-03",
+      "last_seen": "2026-11-04",
       "momentum": "montant",
-      "note": "CSI Wi-Fi, balises COSPAS-SARSAT, NightDX : la mesure sort du capteur dédié et vient du récepteur déjà là — sans dire qui bouge."
+      "note": "L'AERO d'Inmarsat décodé depuis l'Alberta à 10500 bps ; le télémètre HOTO à 2 mm. Le signal capté fixe la précision utile."
     },
     {
       "label": "Économie de l'IA sous tension",
       "category": "societe",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-03",
-      "momentum": "montant",
-      "note": "Tokens internes d'Anthropic > masse salariale, Oracle lève 20 Md$, IPO contestée à la SEC, 3 500 Md$ de correction sur les puces."
+      "last_seen": "2026-11-04",
+      "momentum": "stable",
+      "note": "La facture d'inférence devient à la fois surface d'attaque (LLMjacking) et objet d'optimisation (TokenEconomizer)."
     },
     {
-      "label": "Exécution réglementaire du numérique",
+      "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
-      "first_seen": "2026-10-30",
-      "last_seen": "2026-11-03",
-      "momentum": "montant",
-      "note": "Annonce 48 du Mofcom, premier contrôle chinois à l'export de l'IA frontière ; TikTok sommé en France ; Ford promet la privacy."
+      "first_seen": "2026-11-04",
+      "last_seen": "2026-11-04",
+      "momentum": "nouveau",
+      "note": "Des chercheurs de DeepMind réclament le droit de parler ; Google coupe Search aux écoles qui refusent son IA. Le levier est contractuel."
     }
   ],
   "watchlist": [
@@ -169,75 +168,63 @@
       "label": "Abliteration des modèles cyber-capables",
       "category": "ia",
       "since": "2026-10-30",
-      "note": "PoC réussis du premier coup en hausse, couverture des vulnérabilités en baisse. GLM-5.3 reste le défaut."
+      "note": "Celestia : l'agrégation de modèles complémentaires (61/62) bat le surcroît d'effort. Le fine-tuning offensif reste le levier à suivre."
     },
     {
       "label": "Agrégation de petits modèles vs frontière",
       "category": "ia",
       "since": "2026-11-01",
-      "note": "Cinq Qwen3.8-27B battent Fable 5 sur LiveCodeBench Hard. Si ça se reproduit, l'argument capex des labs frontière s'effondre."
+      "note": "Qwen 3.8 27B lit ses poids sur un laptop, mais 7 modèles sur 111 tiennent sur une machine. Le vrai banc d'essai, c'est le matériel."
     },
     {
-      "label": "Forge fédérée auto-hébergée",
-      "category": "devops",
-      "since": "2026-10-31",
-      "note": "Tangled et spinf-serve ; OpenAI documente la mise à l'échelle de son Git. Rapatrier le code déplace le contrôle, pas le coût."
+      "label": "Le droit comme code exploitable",
+      "category": "societe",
+      "since": "2026-11-04",
+      "note": "Schneier : l'IA automatise les exploits juridiques, l'interprétation humaine devient le goulot. Même asymétrie que dans le logiciel."
     },
     {
-      "label": "Monétisation des victimes notée par LLM",
-      "category": "infosec",
-      "since": "2026-11-01",
-      "note": "VOLTA-AUTODOXER interroge OpenRouter pour scorer la valeur et l'OPSEC de chaque victime. Le tri des cibles devient un service."
-    },
-    {
-      "label": "Scripts d'intrusion générés par IA, plus détectables",
-      "category": "infosec",
-      "since": "2026-11-03",
-      "note": "Unit 42 note des scripts possiblement générés par IA : production accélérée mais empreinte forensique plus lisible. À confirmer."
+      "label": "Preuve vérifiable, papier compris",
+      "category": "societe",
+      "since": "2026-11-04",
+      "note": "Trail of Bits : la crypto électorale n'audite qu'en complément du papier. Motif à exporter hors du vote, vers tout audit de dernier recours."
     },
     {
       "label": "Instruments qui se recalibrent sur le réel",
       "category": "diy",
       "since": "2026-11-02",
-      "note": "NightDX ajuste son modèle de propagation sur ce que l'antenne capte. Un instrument qui apprend de sa propre mesure, motif à exporter."
+      "note": "AERO 10500 bps décodé depuis l'Alberta, NightDX ajuste son modèle sur ce que l'antenne capte : un instrument qui apprend de sa mesure."
     },
     {
       "label": "Firmware ouvert, survie non garantie",
       "category": "diy",
       "since": "2026-11-03",
-      "note": "Polyend publie les sources de son Tracker. Ouvrir rend la survie possible, pas garantie : elle dépend de qui maintient le dépôt."
-    },
-    {
-      "label": "Le token comme ligne de paie",
-      "category": "societe",
-      "since": "2026-11-03",
-      "note": "Anthropic valorise sa consommation interne au prix public au-dessus des salaires. Chiffre contestable, mais il crée un ratio comparable."
+      "note": "goTenna abandonné, ranimé par un tiers et non par le fabricant. Ouvrir rend la survie possible ; la communauté la décide."
     }
   ],
   "tensions": [
     {
       "label": "IA défensive vs IA infrastructure d'intrusion",
-      "note": "Le même outillage détecte et corrige pour la recherche, et trojanise Terraform ou génère des scripts d'espionnage. Bouclier et produit commercial, sans frontière stable."
+      "note": "Le même banc Celestia sert la recherche (61/62 vulns trouvées) et l'offensive (Greeter, 3AM). Bouclier et produit commercial, sans frontière stable entre les deux."
     },
     {
       "label": "Découverte automatisée vs remédiation humaine",
-      "note": "Ubuntu laisse un RCE noyau sans patch trois semaines, 250 000 sites .fr restent vulnérables : la faille se trouve en heures, le correctif se déploie en mois. Le goulot est organisationnel."
+      "note": "98,4 % des vulns web trouvées par un trio de modèles, mais XCPE démantelé après 1,3 M de box livrées et Ubuntu sans patch trois semaines. Le goulot reste organisationnel."
     },
     {
       "label": "Productivité promise vs facture et partage de la valeur",
-      "note": "Anthropic consomme en tokens plus qu'elle ne paie en salaires, Oracle lève 20 Md$, la part du capital des travailleurs est au plus bas depuis 1947. L'efficacité se paie au bilan."
+      "note": "TokenEconomizer coupe 30 % de tokens quand LLMjacking en revend pour 1 M$ : optimisation et pillage se disputent la même facture, devenue indicateur de sécurité."
     },
     {
       "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "Ford promet la privacy, Polyend ouvre son firmware, pendant que Pékin contrôle l'export de l'IA frontière et qu'Apple retire les VPN. Le contrôle se facture et se conteste."
+      "note": "goTenna ranimé par un tiers, Flipper One en précommande, pendant que Google coupe Search aux écoles qui refusent son IA et que Pékin contrôle l'export. Le contrôle se facture."
     },
     {
       "label": "Preuve sur banc d'essai vs preuve en production",
-      "note": "Les backdoors vivent dans les poids et échappent aux évaluations pré-déploiement ; le seul audit livré est un addendum post-mise en service. La garantie arrive après le risque."
+      "note": "Les backdoors vivent dans les poids et le firmware d'usine, hors évaluation pré-déploiement ; le vote papier reste la seule preuve recomptable. La garantie arrive après le risque."
     },
     {
       "label": "Autonomie vendue vs coordination impossible",
-      "note": "Northstar vend des agents supervisés pendant que 50 équipes d'agents s'effondrent en bureaucratie ; un agent opère une souris de labo mais personne ne signe le geste irréversible."
+      "note": "elephant-goldfish sépare produire, relire et arbitrer et laisse les compromis à l'humain : l'aveu que l'agent seul ne tient pas, mais que personne ne signe le geste irréversible."
     }
   ]
 }

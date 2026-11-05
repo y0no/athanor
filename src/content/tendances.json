@@ -1,22 +1,22 @@
 {
-  "updated_at": "2026-11-04",
+  "updated_at": "2026-11-05",
   "synthesis": {
-    "headline": "La confiance se pirate dans les tuyaux, pas dans le code",
-    "narrative": "Binance à 6,43 Md$ via une installation Homebrew, cPGuard par son canal de mise à jour, 1,3 million de box avec une backdoor d'usine : le point d'entrée s'est déplacé vers <strong>ce qui livre le logiciel</strong>. Pendant que <strong>LLMjacking</strong> transforme l'inférence volée en monnaie et que les agents de code se voient assigner des rôles séparés pour tenir la facture, le DIY répond par le même geste — un tiers qui reprend le dépôt d'un goTenna abandonné. La réparation, elle, reste humaine : 98,4 % des vulnérabilités trouvées par un trio de modèles, un démantèlement qui arrive <em>après</em> la livraison."
+    "headline": "La confiance ne se signe plus, elle se vérifie",
+    "narrative": "Anthropic publie des avancées sur l'inférence prouvable le jour où Nvidia plafonne son RTX Spark à 35 % sous Linux à cause d'un firmware chiffré : la garantie se loge désormais dans la couche qu'on peut inspecter. Côté infosec, c'est précisément cette couche qu'on attaque — Homebrew, invitations Google Calendar, images de conteneurs — et l'inférence volée s'y revend comme une monnaie. Pendant que Revolut divise sa facture par dix en rapatriant un modèle chinois et que Garry Tan assume 200 000 dollars de tokens, le DIY publie la preuve inverse : sur un TCL, le root logiciel est <em>prouvé impossible</em>, et l'échec documenté vaut plateforme."
   },
   "currents": [
     {
-      "label": "La chaîne de livraison devient le périmètre",
-      "note": "Homebrew, canal de mise à jour cPGuard, firmware d'usine, dépôt communautaire repris par un tiers : ce qui installe et ce qui met à jour décide de ce qui est sûr.",
+      "label": "La preuve devient l'unité de confiance",
+      "note": "Inférence prouvable, langage à sûreté démontrable, vote papier, preuve négative d'un root impossible : la garantie migre du contrat vers ce qu'on peut rejouer soi-même.",
       "categories": [
-        "infosec",
+        "ia",
         "devops",
-        "diy"
+        "societe"
       ]
     },
     {
-      "label": "L'inférence est devenue une ressource à voler et à économiser",
-      "note": "LLMjacking revend des tokens volés jusqu'à 1 M$ de cloud, TokenEconomizer coupe 30 % de la même facture. Attaque et optimisation visent le même compteur.",
+      "label": "La facture d'inférence est devenue un indicateur de sécurité",
+      "note": "Revolut coupe sa dépense par dix, Garry Tan en assume 200 k$, LLMjacking en revend 1 M$ : le budget tokens signale à la fois l'adoption, l'optimisation et la compromission.",
       "categories": [
         "ia",
         "infosec",
@@ -24,19 +24,20 @@
       ]
     },
     {
-      "label": "La mesure se déplace du banc d'essai vers le terrain",
-      "note": "Celestia agrège les modèles, MLEP apprend l'OT sur 15 s de session, l'AERO se décode depuis l'Alberta : c'est le réel capté qui fixe la précision utile.",
+      "label": "Le canal de distribution est le nouveau périmètre",
+      "note": "Homebrew, invitations Calendar, images Docker Hub, firmware de mise à jour : l'attaque et la défense passent par le même tuyau, la CVE n'est plus l'entrée.",
       "categories": [
-        "ia",
         "infosec",
+        "devops",
         "diy"
       ]
     },
     {
-      "label": "Le contrôle se déplace de l'État vers la plateforme",
-      "note": "Google coupe Search aux écoles qui refusent son IA et conditionne la parole de ses chercheurs : le verrou n'est plus réglementaire, il est contractuel.",
+      "label": "Le contrôle se déplace du régulateur vers le contrat et le firmware",
+      "note": "Google conditionne Gemini à l'activation par l'établissement, NYT attaque Brave, un tensiomètre exige un compte, Nvidia chiffre son firmware : le verrou est technique et contractuel.",
       "categories": [
         "societe",
+        "diy",
         "ia"
       ]
     }
@@ -46,121 +47,121 @@
       "label": "Agents IA banalisés",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-04",
+      "last_seen": "2026-11-05",
       "momentum": "montant",
-      "note": "elephant-goldfish sépare produire, relire, arbitrer ; TokenEconomizer coupe 18-31 % de tokens. La supervision devient un poste de coût."
+      "note": "OpenAI rachète Pierre Computer, Garry Tan assume 200 k$ de tokens, OCTO gèle le résultat en données : l'arbitrage remplace la génération."
     },
     {
       "label": "Le modèle comme substrat d'exécution",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-04",
+      "last_seen": "2026-11-05",
       "momentum": "montant",
-      "note": "Astra réécrit les poids de Qwen3.5-0.8B, honnibal.dev juge le post trompeur ; Qwen 3.8 27B lit ses poids sur un laptop."
+      "note": "Ripple-65B et Kimi K3.1 Pro déposent leurs poids ; Revolut quitte Claude Code pour un modèle chinois auto-hébergé, facture divisée par dix."
     },
     {
-      "label": "Backdoors dans les poids, audit post-déploiement",
+      "label": "Preuve vérifiable de l'inférence",
       "category": "ia",
-      "first_seen": "2026-10-27",
-      "last_seen": "2026-11-04",
-      "momentum": "déclin",
-      "note": "Rien de neuf sur les poids ; l'angle backdoor migre vers le firmware d'usine (XCPE) et les canaux de mise à jour."
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05",
+      "momentum": "nouveau",
+      "note": "Anthropic avance sur l'inférence prouvable quand le firmware chiffré de Nvidia plafonne le RTX Spark à 35 % sous Linux."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-04",
+      "last_seen": "2026-11-05",
       "momentum": "montant",
-      "note": "Greeter transforme un « hello » en JS via Flowise (CVE-2024-58351) ; AnyModelBot route 70+ modèles. L'infra IA est la cible."
-    },
-    {
-      "label": "Intrusions conduites par agents",
-      "category": "infosec",
-      "first_seen": "2026-10-31",
-      "last_seen": "2026-11-04",
-      "momentum": "montant",
-      "note": "3AM laisse l'exécution boucler et réviser ses scripts ; le NCSC date à 2028 l'attaque IA des infra critiques britanniques."
+      "note": "Haiou injecte de la publicité tierce dans les instructions de confiance de Codex ; les tokens WorkOS, Northflank et Trigger.dev sont siphonnés."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-04",
+      "last_seen": "2026-11-05",
       "momentum": "montant",
-      "note": "Un trio de modèles trouve 61/62 vulns web réelles ; XCPE est démantelé après 1,3 M de box livrées. Trouver va vite, corriger non."
+      "note": "OpenAI sort 948 élévations de privilèges Linux pour 1,2 M$ d'API ; Xen laisse 4.6 à 4.16 non patchées, Firecracker attend sa PR seccomp."
     },
     {
       "label": "Supply chain de l'outillage de confiance",
       "category": "infosec",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-04",
+      "last_seen": "2026-11-05",
       "momentum": "montant",
-      "note": "Binance 6,43 Md$ via Homebrew et faux entretiens, cPGuard par son canal de MAJ, Chainstack : la chaîne d'assemblage s'ajoute aux dépôts."
+      "note": "Binance 6,34 Md$ via fausse interview, devoir piégé et Homebrew altéré ; CloudFire relaie le flux MFA par invitations Calendar crédibles."
     },
     {
       "label": "L'inférence comme monnaie",
       "category": "infosec",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-04",
+      "last_seen": "2026-11-05",
+      "momentum": "montant",
+      "note": "WorkOS, Northflank, Trigger.dev, Chainstack : tokens siphonnés et revendus, des clés partagées exposent des dizaines de clients."
+    },
+    {
+      "label": "Évasions d'hyperviseur",
+      "category": "infosec",
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05",
       "momentum": "nouveau",
-      "note": "LLMjacking : jusqu'à 1 M$ de cloud, 100 k$/jour, revente de tokens via « LLM Mixers ». L'identité volée se monétise en inférence."
+      "note": "Firecracker FC-05 puis FC-03 via io_uring mènent du guest à l'hôte ; Xen XSA-523 laisse une VM lire dom0, branches 4.6-4.16 non patchées."
     },
     {
       "label": "Outillage local invisible",
       "category": "devops",
       "first_seen": "2026-11-02",
-      "last_seen": "2026-11-04",
+      "last_seen": "2026-11-05",
       "momentum": "montant",
-      "note": "ByteDance réécrit sa couche disque (USDB), PostgreSQL se lit par ses pages et son WAL : posséder la brique plutôt qu'abstraire."
+      "note": "Qualys pousse son agent en DaemonSet via Docker Hub ; benchfmt, Codemap et Gauge mesurent et cartographient le code depuis la machine, hors SaaS."
     },
     {
-      "label": "Dette opérationnelle ordinaire",
+      "label": "Sûreté prouvée, héritages non migrés",
       "category": "devops",
-      "first_seen": "2026-11-04",
-      "last_seen": "2026-11-04",
+      "first_seen": "2026-11-05",
+      "last_seen": "2026-11-05",
       "momentum": "nouveau",
-      "note": "LXC sans casser les snapshots, fuseaux canadiens réparés à la main : ni CVE ni correctif, des conventions qui coûtent des heures."
-    },
-    {
-      "label": "Matériel détourné au-delà des specs",
-      "category": "diy",
-      "first_seen": "2026-10-27",
-      "last_seen": "2026-11-04",
-      "momentum": "montant",
-      "note": "goTenna Mesh orphelin ranimé par Backtrail Pro, Flipper One en précommande : c'est un tiers, pas le fabricant, qui tient le dépôt."
-    },
-    {
-      "label": "Reverse engineering d'appareils fermés",
-      "category": "diy",
-      "first_seen": "2026-10-30",
-      "last_seen": "2026-11-04",
-      "momentum": "montant",
-      "note": "Un driver Rust user-mode décode les trames RF des télécommandes LG Magic Motion à 111 Hz via un CP2102."
+      "note": "Evergreen pose la sûreté comme propriété démontrable pendant que XSLT s'éteint sans remplaçant et qu'un malloc() perdu reste exécutable."
     },
     {
       "label": "Instruments de mesure fabriqués maison",
       "category": "diy",
       "first_seen": "2026-11-01",
-      "last_seen": "2026-11-04",
+      "last_seen": "2026-11-05",
       "momentum": "montant",
-      "note": "L'AERO d'Inmarsat décodé depuis l'Alberta à 10500 bps ; le télémètre HOTO à 2 mm. Le signal capté fixe la précision utile."
+      "note": "ESPica32 tient une station SDR en quatre composants, Clever Quest Lab décode huit modes dans un onglet : la réception quitte le PC."
+    },
+    {
+      "label": "Reverse engineering d'appareils fermés",
+      "category": "diy",
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-11-05",
+      "momentum": "montant",
+      "note": "Les AirPods 3 livrent leur IMU à 210 Hz, DOOM tourne sur une caméra jouet, et le TCL publie la preuve que le root logiciel est impossible."
+    },
+    {
+      "label": "Matériel détourné au-delà des specs",
+      "category": "diy",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-11-05",
+      "momentum": "montant",
+      "note": "Tensiomètre à abonnement, horloge Renault liée à sa carte SD, minuteur absurde : reprendre la main sur des objets qui se ferment, hors fabricant."
     },
     {
       "label": "Économie de l'IA sous tension",
       "category": "societe",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-04",
-      "momentum": "stable",
-      "note": "La facture d'inférence devient à la fois surface d'attaque (LLMjacking) et objet d'optimisation (TokenEconomizer)."
+      "last_seen": "2026-11-05",
+      "momentum": "montant",
+      "note": "Revolut divise sa facture par dix, Garry Tan assume 200 k$ de tokens, LLMjacking en revend pour 1 M$ : le coût devient surface d'attaque."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-04",
-      "momentum": "nouveau",
-      "note": "Des chercheurs de DeepMind réclament le droit de parler ; Google coupe Search aux écoles qui refusent son IA. Le levier est contractuel."
+      "last_seen": "2026-11-05",
+      "momentum": "montant",
+      "note": "Google désactive Gemini par défaut dans les écoles, NYT assigne Brave, NYC vise la biométrie : le contrôle passe au contrat d'établissement."
     }
   ],
   "watchlist": [
@@ -168,63 +169,69 @@
       "label": "Abliteration des modèles cyber-capables",
       "category": "ia",
       "since": "2026-10-30",
-      "note": "Celestia : l'agrégation de modèles complémentaires (61/62) bat le surcroît d'effort. Le fine-tuning offensif reste le levier à suivre."
+      "note": "OpenAI sort 948 exploits noyau en 30 h pour 1,2 M$ : la découverte offensive s'industrialise, le fine-tuning reste le levier à suivre."
     },
     {
       "label": "Agrégation de petits modèles vs frontière",
       "category": "ia",
       "since": "2026-11-01",
-      "note": "Qwen 3.8 27B lit ses poids sur un laptop, mais 7 modèles sur 111 tiennent sur une machine. Le vrai banc d'essai, c'est le matériel."
+      "note": "Ripple-65B revendique le SOTA ouvert sur le code agentique ; le vrai banc d'essai reste le matériel sur lequel on rapatrie les poids."
     },
     {
       "label": "Le droit comme code exploitable",
       "category": "societe",
       "since": "2026-11-04",
-      "note": "Schneier : l'IA automatise les exploits juridiques, l'interprétation humaine devient le goulot. Même asymétrie que dans le logiciel."
+      "note": "Felix Ringe récidive sur les failles juridiques, NYT assigne Brave : l'interprétation humaine reste le goulot, comme dans le logiciel."
     },
     {
-      "label": "Preuve vérifiable, papier compris",
-      "category": "societe",
-      "since": "2026-11-04",
-      "note": "Trail of Bits : la crypto électorale n'audite qu'en complément du papier. Motif à exporter hors du vote, vers tout audit de dernier recours."
-    },
-    {
-      "label": "Instruments qui se recalibrent sur le réel",
+      "label": "Preuve négative comme publication",
       "category": "diy",
-      "since": "2026-11-02",
-      "note": "AERO 10500 bps décodé depuis l'Alberta, NightDX ajuste son modèle sur ce que l'antenne capte : un instrument qui apprend de sa mesure."
+      "since": "2026-11-05",
+      "note": "Le TCL documente pourquoi le root est impossible, octets de marqueur et IR à 56 kHz : l'échec prouvé convertit la boîte noire en plateforme."
     },
     {
-      "label": "Firmware ouvert, survie non garantie",
-      "category": "diy",
-      "since": "2026-11-03",
-      "note": "goTenna abandonné, ranimé par un tiers et non par le fabricant. Ouvrir rend la survie possible ; la communauté la décide."
+      "label": "Le prompt comme surface publicitaire",
+      "category": "infosec",
+      "since": "2026-11-05",
+      "note": "Haiou glisse des publicités tierces dans les instructions de confiance de Codex : le prompt devient un canal de monétisation et de supply-chain."
+    },
+    {
+      "label": "MFA contournée par l'invitation calendrier",
+      "category": "infosec",
+      "since": "2026-11-05",
+      "note": "CloudFire relaie tout le flux d'authentification via un reverse proxy et des invitations crédibles : 68 676 messages bloqués."
+    },
+    {
+      "label": "Firmware chiffré, performance plafonnée",
+      "category": "ia",
+      "since": "2026-11-05",
+      "note": "Le RTX Spark perd 65 % de sa vitesse d'inférence sous Linux à cause d'un firmware chiffré : l'opacité devient un coût mesurable."
     }
   ],
   "tensions": [
     {
       "label": "IA défensive vs IA infrastructure d'intrusion",
-      "note": "Le même banc Celestia sert la recherche (61/62 vulns trouvées) et l'offensive (Greeter, 3AM). Bouclier et produit commercial, sans frontière stable entre les deux."
+      "note": "Le pipeline OpenAI trouve 948 failles noyau quand les tokens WorkOS et Chainstack se revendent en LLMjacking : le même outillage sert l'audit et le commerce d'accès."
     },
     {
       "label": "Découverte automatisée vs remédiation humaine",
-      "note": "98,4 % des vulns web trouvées par un trio de modèles, mais XCPE démantelé après 1,3 M de box livrées et Ubuntu sans patch trois semaines. Le goulot reste organisationnel."
+      "note": "948 élévations de privilèges en 30 h d'un côté, Xen 4.6-4.16 non patchées et une PR seccomp en revue de l'autre : le goulot reste organisationnel."
     },
     {
       "label": "Productivité promise vs facture et partage de la valeur",
-      "note": "TokenEconomizer coupe 30 % de tokens quand LLMjacking en revend pour 1 M$ : optimisation et pillage se disputent la même facture, devenue indicateur de sécurité."
+      "note": "Revolut divise sa facture par dix en quittant Claude Code, Garry Tan assume 200 k$ de tokens, LLMjacking en revend pour 1 M$ : la même dépense est optimisée et pillée."
     },
     {
       "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "goTenna ranimé par un tiers, Flipper One en précommande, pendant que Google coupe Search aux écoles qui refusent son IA et que Pékin contrôle l'export. Le contrôle se facture."
+      "note": "Kimi et Ripple déposent leurs poids pendant que Google désactive Gemini par défaut dans les écoles et que des tensiomètres exigent un abonnement : le contrôle se facture."
     },
     {
       "label": "Preuve sur banc d'essai vs preuve en production",
-      "note": "Les backdoors vivent dans les poids et le firmware d'usine, hors évaluation pré-déploiement ; le vote papier reste la seule preuve recomptable. La garantie arrive après le risque."
+      "note": "Anthropic prouve l'inférence côté serveur quand le firmware du laptop reste chiffré ; Evergreen certifie le neuf pendant que XSLT meurt sans migration."
     },
     {
       "label": "Autonomie vendue vs coordination impossible",
-      "note": "elephant-goldfish sépare produire, relire et arbitrer et laisse les compromis à l'humain : l'aveu que l'agent seul ne tient pas, mais que personne ne signe le geste irréversible."
+      "note": "OCTO jette 113 scripts avant de figer le résultat en données sans tokens : l'agent produit, mais geler ce qui est fini reste une décision humaine."
     }
   ]
 }

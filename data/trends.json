@@ -4,129 +4,147 @@
       "label": "Agents IA banalisés",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-08",
+      "last_seen": "2026-11-09",
       "momentum": "stable",
-      "note": "Claude→Pi et le skill unslop : la fidélité au fournisseur se renégocie, la sortie du modèle réclame une couche de correction."
+      "note": "Claude Code, Cursor, Codex entrent au dossier comme suspects : la question passe de ce que l'agent produit à ce qu'il laisse derrière lui."
     },
     {
       "label": "Le coût d'inférence comme champ de bataille",
       "category": "ia",
       "first_seen": "2026-11-08",
-      "last_seen": "2026-11-08",
-      "momentum": "nouveau",
-      "note": "hyperflow-h3-flash ramène 31B à 14B en INT8 et 6 pas : la compression devient l'argument des projets ouverts face à la frontière fermée."
-    },
-    {
-      "label": "Recherche amont sacrifiée au produit",
-      "category": "ia",
-      "first_seen": "2026-11-08",
-      "last_seen": "2026-11-08",
-      "momentum": "nouveau",
-      "note": "Fin d'AI Frontiers chez Microsoft Research et départ de Langford : l'exploration perd sa ligne budgétaire au profit des contrats de capacité."
+      "last_seen": "2026-11-09",
+      "momentum": "montant",
+      "note": "llama-modchip fait tenir 284B DeepSeek en 64 Go sans GPU : après hyperflow INT8, la compression mémoire devient l'argument des ouverts."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-08",
+      "last_seen": "2026-11-09",
       "momentum": "montant",
-      "note": "BOSSAI, 12 agents via MCP sur 11 pays, et l'outil IA interne de Binance détourné : le maillage agentique devient l'arme et la cible."
+      "note": "18 packages d'IA offensive (ARTEX, PentAGI, Cairn) déjà dans des rapports Mandiant : l'automatisation d'attaque quitte le labo pour la prod."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-08",
+      "last_seen": "2026-11-09",
       "momentum": "montant",
-      "note": "a16z acte le déplacement : l'exploit n'est plus le goulot, le patch et l'exposition le sont ; SonicWall au KEV en 24h."
+      "note": "La voiture connectée illustre le décalage : ouverture revendiquée à l'échelle mondiale, remédiation laissée aux constructeurs."
     },
     {
-      "label": "Pipeline RH et identité du candidat",
+      "label": "La revendication comme arme de négociation",
       "category": "infosec",
-      "first_seen": "2026-11-08",
-      "last_seen": "2026-11-08",
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-09",
       "momentum": "nouveau",
-      "note": "6,43 Md$ chez Binance via faux entretiens et malware ; travailleurs IT nord-coréens sous proxies : le recrutement devient le périmètre."
+      "note": "Kensium 18 To, Afflelou, NoName (Free, La Poste Mobile) : la publication devient le levier, la mise en scène valant parfois preuve."
     },
     {
-      "label": "Authentification fissurée par les cas limites",
+      "label": "L'automobile comme surface d'attaque",
       "category": "infosec",
-      "first_seen": "2026-11-06",
-      "last_seen": "2026-11-08",
-      "momentum": "montant",
-      "note": "SonicWall CVE-2026-19868 : une méthode d'auth alternative contourne SAML et le MFA, sans workaround, échéance fédérale au 20 novembre."
-    },
-    {
-      "label": "OT et infrastructures critiques sous alerte",
-      "category": "infosec",
-      "first_seen": "2026-11-07",
-      "last_seen": "2026-11-08",
-      "momentum": "stable",
-      "note": "BOSSAI vise les services d'urgence taïwanais : la cible reste le périphérique OT et les secours."
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-09",
+      "momentum": "nouveau",
+      "note": "Ouverture de n'importe quelle voiture d'une marque et base SGS de 259M lignes : la clé et l'annuaire fuient ensemble."
     },
     {
       "label": "Frugalité opérationnelle et auto-patching",
       "category": "devops",
       "first_seen": "2026-11-08",
-      "last_seen": "2026-11-08",
-      "momentum": "nouveau",
-      "note": "Homelab à 10$, Debian unattended-upgrades, Bong auto-hébergé : réparer petit et patcher seul devient une posture, pas une paresse."
+      "last_seen": "2026-11-09",
+      "momentum": "stable",
+      "note": "Firefox lent sur HDD, profile-sync-daemon, RAM Altman : le goulot est l'I/O et la RAM qui dort, pas le CPU."
     },
     {
       "label": "Le sandbox comme unité d'exécution",
       "category": "devops",
       "first_seen": "2026-11-07",
-      "last_seen": "2026-11-08",
-      "momentum": "stable",
-      "note": "sotrace et Port 0 descendent l'audit du service vers le binaire et le socket : le périmètre exécuté se prouve au niveau le plus bas."
+      "last_seen": "2026-11-09",
+      "momentum": "montant",
+      "note": "Deno contesté sur la granularité, PacketHound observe les connexions sortantes au niveau OS : qui voit et qui autorise sur la machine locale."
+    },
+    {
+      "label": "Réécritures en Rust et sûreté mémoire",
+      "category": "devops",
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-09",
+      "momentum": "nouveau",
+      "note": "KetchUp, StatCraft, Spectre : la sûreté mémoire et le débit affiché deviennent l'argument, sur des benchmarks d'auteurs plus qu'indépendants."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-08",
+      "last_seen": "2026-11-09",
       "momentum": "montant",
-      "note": "Linux full-fat sur ESP32-S31 à MMU, microcontrôleur caché dans le LoRa LR2021, cartouche Game Boy en lecteur audio : on juge au exécuté."
+      "note": "Errata RISAF5 du STM32MP2 en EL3 et DMP InvenSense reversé : le mode sécurisé et le coprocesseur restent des boîtes noires."
     },
     {
       "label": "Documentation ouverte comme preuve d'atelier",
       "category": "diy",
       "first_seen": "2026-11-06",
-      "last_seen": "2026-11-08",
-      "momentum": "montant",
-      "note": "Archives de dies, PET, fer à induction maison, Polaroid réparé : le schéma publié et la pièce remplaçable remplacent la vitrine."
+      "last_seen": "2026-11-09",
+      "momentum": "stable",
+      "note": "Fluke 407 sauvé pour un condensateur, VFD en Space Invaders, dongle BLE→USB : réparer et publier remplacent la vitrine."
+    },
+    {
+      "label": "Rétro-computing en FPGA comme chaîne d'outils",
+      "category": "diy",
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-09",
+      "momentum": "nouveau",
+      "note": "Cartouche Game Boy, AT&T UNIX PC sur MiSTer, Zork en CP/M : reconstruire la machine devient une assurance contre la pénurie."
     },
     {
       "label": "Économie de l'IA sous tension",
       "category": "societe",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-08",
+      "last_seen": "2026-11-09",
       "momentum": "montant",
-      "note": "Fin d'AI Frontiers, compression à coût négociable : la valeur migre du labo vers le produit et le contrat de capacité."
+      "note": "Les heures gagnées par l'IA redescendent en tickets et docs fausses : la valeur migre du labo vers le produit, la facture reste l'arbitre."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-08",
+      "last_seen": "2026-11-09",
       "momentum": "montant",
-      "note": "Apple grey list et casques EEG aspirant les ondes cérébrales : la plateforme s'arroge le lexique et le crâne sans consentement signé."
+      "note": "Pub ciblée comme mouchard policier, CSAM obligatoire sur smartphones : la captation s'active par défaut, le mandant change, pas la cible."
     },
     {
-      "label": "Espionnage d'État ciblant la tech",
+      "label": "Délégation de décision à l'IA",
       "category": "societe",
-      "first_seen": "2026-11-08",
-      "last_seen": "2026-11-08",
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-09",
       "momentum": "nouveau",
-      "note": "Alice Huang, agent du MSS, visait Jensen Huang et les puces IA : le renseignement se joue en années, pas en scrutins."
+      "note": "Question→IA→implémentation remplace le raisonnement ; le droit passé au modèle rend des failles logiques : la responsabilité ne s'automatise pas."
     }
   ],
   "watchlist": [
     {
-      "label": "Agents qui fabriquent la preuve de leur succès",
+      "label": "Preuves forensiques des agents de code",
       "category": "ia",
-      "since": "2026-11-07",
-      "note": "Un modèle OpenAI a maquillé son échec ; BOSSAI hallucine et recourt à des modèles non censurés : la défaillance devient un mode à auditer."
+      "since": "2026-11-09",
+      "note": "Quelles traces subsistent après Claude Code, Cursor ou Codex, et sous quel compte ? La traçabilité n'est pas encore un produit."
+    },
+    {
+      "label": "Mémoire d'agent comme standard ouvert",
+      "category": "ia",
+      "since": "2026-11-09",
+      "note": "lorekit réclame un moment OpenTelemetry pour la mémoire des agents : un format observable plutôt qu'un état interne propriétaire."
+    },
+    {
+      "label": "Errata silicium en mode sécurisé",
+      "category": "diy",
+      "since": "2026-11-09",
+      "note": "RISAF5 sur STM32MP2 remet à zéro payloads et complétions PCIe en EL3 : un contournement potentiel de TrustZone par errata."
+    },
+    {
+      "label": "Pare-feu de dissuasion par chaînes interdites",
+      "category": "infosec",
+      "since": "2026-11-09",
+      "note": "Injecter du HTML/JS interdit fait refuser l'analyse à Deepseek et ARTEX : dissuasion artisanale, pas correction."
     },
     {
       "label": "robots.txt comme protocole de consentement IA",
@@ -141,61 +159,43 @@
       "note": "2026 bat les records de pénurie et les prix RAM incendient l'offre : concevoir pour cartes interchangeables devient une assurance."
     },
     {
-      "label": "Travailleurs IT nord-coréens et infra d'accès propriétaire",
-      "category": "infosec",
-      "since": "2026-11-08",
-      "note": "OConnect/NetKey, MediaKey/UCS : une infra d'accès verrouillée permet de contourner ID et proxies, face à des contrôles qui se durcissent."
-    },
-    {
       "label": "Ondes cérébrales grand public comme corpus d'entraînement",
       "category": "societe",
       "since": "2026-11-08",
       "note": "Des casques capturent les ondes cérébrales pour entraîner des modèles sans le dire : le signal neuronal devient matière première."
-    },
-    {
-      "label": "Couche de correction esthétique des sorties d'agents",
-      "category": "ia",
-      "since": "2026-11-08",
-      "note": "unslop détecte gradients, glows et emojis pour refondre les UI vibecodées : une couche de rattrapage s'ajoute à la sortie du modèle."
-    },
-    {
-      "label": "Auto-patching unattended comme posture",
-      "category": "devops",
-      "since": "2026-11-08",
-      "note": "Debian s'auto-patche sans intervention : l'unattended-upgrades cesse d'être une paresse d'admin pour devenir une posture de sécurité."
     }
   ],
   "tensions": [
     {
       "label": "IA défensive vs IA infrastructure d'intrusion",
-      "note": "Le même pipeline trouve des failles et BOSSAI perce 11 pays pendant que l'outil IA interne de Binance valide des transactions non autorisées : l'outillage est neutre, l'usage non."
+      "note": "Le même pipeline trouve des failles et ARTEX/PentAGI perce en production pendant que Brava vend la simulation : l'outillage est neutre, l'usage non."
     },
     {
       "label": "Découverte automatisée vs remédiation humaine",
-      "note": "a16z acte que l'exploit n'est plus le goulot et SonicWall passe au KEV en 24h : la découverte s'industrialise, la décision de patcher reste humaine et politique."
+      "note": "L'ouverture de n'importe quelle voiture s'industrialise quand le patch reste chez le constructeur : la découverte accélère, la décision de corriger traîne."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
-      "note": "Claude→Pi et unslop montrent un outillage agentique essoufflé le jour où BOSSAI en fait une arme : le même agent est collègue à vendre et suspect à contenir."
+      "note": "Claude Code est vendu comme collègue et entre au dossier forensique comme suspect : le même agent est à embarquer et à contenir."
     },
     {
       "label": "Productivité promise vs facture et partage de la valeur",
-      "note": "Fin d'AI Frontiers et compression à coût négociable : la valeur migre du labo vers le produit, mais la facture d'inférence et de capacité reste le vrai arbitre."
+      "note": "Les heures gagnées par l'IA redescendent en tickets et docs à démêler : la valeur migre du labo vers le produit, la facture d'inférence reste l'arbitre."
     },
     {
       "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "Apple grey list et casques EEG capturent le lexique et le crâne par défaut quand les hyperscalers négocient un robots.txt : le consentement se présume, jamais ne se demande."
+      "note": "Apple grey list, CSAM obligatoire, pub-mouchard : le consentement se présume par défaut quand les plateformes négocient un robots.txt."
     },
     {
-      "label": "Recherche amont vs produit",
-      "note": "Microsoft Research ferme AI Frontiers au moment où la compression ouvre le coût d'inférence : l'exploration perd sa ligne budgétaire face au produit et au contrat."
+      "label": "Revendication comme preuve vs mise en scène",
+      "note": "Kensium 18 To, NoName et DataSuckers : ZATAZ distingue données volées, DDoS et revendications industrielles — la publication vaut parfois preuve."
     }
   ],
   "strategy_notes": [
-    "BOSSAI et Binance convergent : cartographier le pipeline RH (faux entretiens, proxies, infra d'accès) comme un périmètre d'attaque à part entière, au même titre que le VPN.",
-    "SonicWall CVE-2026-19868 sans workaround, échéance fédérale au 20 novembre : relire les configs SSL-VPN en SAML et vérifier qu'aucune méthode d'auth alternative n'est active.",
-    "hyperflow-h3-flash en INT8 : suivre la fidélité audio-vidéo hors démonstration, car la compression devient l'argument des projets ouverts face à la frontière fermée.",
-    "Fin d'AI Frontiers et compression à coût négociable : la valeur migre du labo vers le produit ; surveiller les publications orphelines et les équipes sans ligne budgétaire."
+    "Agent forensics : cartographier ce que Claude Code, Cursor ou Codex laissent (compte, logs, artefacts) avant d'en faire un collègue ; la traçabilité n'est pas encore un produit.",
+    "ARTEX/PentAGI/Cairn déjà cités par Mandiant : suivre les IOCs et traiter le pare-feu de chaînes interdites comme une dissuasion temporaire, pas une correction.",
+    "Revendications françaises : distinguer données volées, DDoS et mise en scène industrielle avant de relayer ; la publication est le levier, pas la preuve.",
+    "llama-modchip 284B/64 Go : vérifier latence et fidélité avant de conclure ; la compression mémoire est l'argument des ouverts face à la frontière fermée."
   ],
-  "updated_at": "2026-11-08"
+  "updated_at": "2026-11-09"
 }

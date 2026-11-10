@@ -1,44 +1,35 @@
 {
-  "updated_at": "2026-11-09",
+  "updated_at": "2026-11-10",
   "synthesis": {
-    "headline": "L'IA industrialise l'attaque bien plus vite que la preuve",
-    "narrative": "Les agents de code passent du statut de collègue à celui de suspect forensique, pendant que dix-huit packages d'IA offensive entrent dans les rapports d'incident. En France, la revendication de fuite devient l'arme de négociation, et la voiture connectée ajoute une surface de masse où la clé et l'annuaire fuient ensemble. Partout, <strong>la découverte s'automatise plus vite que la remédiation, l'attribution et la traçabilité</strong> — le goulot n'est plus l'exploit mais la preuve."
+    "headline": "Le watt et la preuve remplacent le benchmark",
+    "narrative": "L'IA ne se vend plus au score mais au <strong>watt</strong> et au <strong>dollar/heure</strong> : DeepX promet 100B sous 5 W, le même H100 varie de 2,69 à 12,29 $/h et CoreWeave emprunte à 16 %. En face, la confiance migre du produit vers la <strong>chaîne</strong> qui le publie — Qubole, Ethersphere, Nextcloud — pendant que Claude prouve formellement 239 points OSS-Fuzz et qu'Opus 5.5 est accusé d'être bridé. Le DIY répond au verrouillage en récupérant le SDR, le firmware et le transport, du TETRA sur Retevis C62 à NomadNet sans TCP/IP."
   },
   "currents": [
     {
-      "label": "La preuve comme goulot universel",
-      "note": "Forensique des agents, attribution des fuites, remédiation des voitures, responsabilité des décisions : partout l'action s'industrialise, la preuve reste artisanale.",
+      "label": "Le coût devient la métrique souveraine",
+      "note": "Du watt par token (DeepX 100B/5W) au dollar/heure GPU (2,69 vs 12,29$) en passant par le rendement CoreWeave à 16% : le prix arbitre le modèle, l'infra et la politique.",
       "categories": [
         "ia",
-        "infosec",
         "devops",
         "societe"
       ]
     },
     {
-      "label": "L'IA devient infrastructure offensive",
-      "note": "ARTEX, PentAGI, Cairn déjà dans Mandiant, TAP automatise les jailbreaks, Brava vend la simulation : le même pipeline sert attaque et défense.",
+      "label": "La confiance se déplace du produit vers la chaîne",
+      "note": "Qubole, Ethersphere, Nextcloud : on hérite du droit de publier. En parallèle, Opus 5.5 serait bridé et les agents laissent des traces non tracées : la confiance se joue sur la chaîne, pas sur le produit.",
       "categories": [
         "ia",
-        "infosec"
-      ]
-    },
-    {
-      "label": "Le consentement présumé par défaut",
-      "note": "Pub-mouchard, CSAM obligatoire, robots.txt piétiné, ondes cérébrales aspirées, données auto revendues : la captation s'active sans demander.",
-      "categories": [
-        "societe",
         "infosec",
-        "diy"
+        "devops"
       ]
     },
     {
-      "label": "Compression et frugalité contre la pénurie",
-      "note": "284B en 64 Go sans GPU, profile-sync-daemon, réparation de vintage, cartes interchangeables : tenir et réparer remplacent l'achat de puissance.",
+      "label": "Reprendre la main sur ce qui est fermé",
+      "note": "SDR récupéré (TETRA, ESP32-C5), Harley et Corsair reversés, NomadNet sans TCP/IP, macOS modélise la famille : le DIY et l'auto-hébergement répondent au verrouillage par la réappropriation.",
       "categories": [
-        "ia",
+        "diy",
         "devops",
-        "diy"
+        "societe"
       ]
     }
   ],
@@ -47,121 +38,121 @@
       "label": "Agents IA banalisés",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-09",
-      "momentum": "stable",
-      "note": "Claude Code, Cursor, Codex entrent au dossier comme suspects : la question passe de ce que l'agent produit à ce qu'il laisse derrière lui."
+      "last_seen": "2026-11-10",
+      "momentum": "montant",
+      "note": "Mandat 100% IA : l'équipe ne comprend plus son code ; ChatGPT Desktop transmet l'agent SSH en prod. La dette migre vers la compréhension."
     },
     {
       "label": "Le coût d'inférence comme champ de bataille",
       "category": "ia",
       "first_seen": "2026-11-08",
-      "last_seen": "2026-11-09",
+      "last_seen": "2026-11-10",
       "momentum": "montant",
-      "note": "llama-modchip fait tenir 284B DeepSeek en 64 Go sans GPU : après hyperflow INT8, la compression mémoire devient l'argument des ouverts."
+      "note": "DeepX 100B sous 5 W, TPU 8i Max, Muse Ember : la métrique n'est plus le paramètre mais le watt et le coût par token."
+    },
+    {
+      "label": "Vérification formelle assistée par IA",
+      "category": "ia",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "momentum": "nouveau",
+      "note": "Claude+Theorem/Rocq prouve 239 points OSS-Fuzz en RISC-V ; la garantie s'arrête aux specs et à la couverture de modèle bornée."
+    },
+    {
+      "label": "Soupçons de bridage et confiance modèle",
+      "category": "ia",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "momentum": "nouveau",
+      "note": "Fable 5.2 record à 65 mais Opus 5.5 accusé d'être bridé depuis le 3 nov ; 6000€ de crédits en 7 jours, la confiance se mesure en rumeurs."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-09",
+      "last_seen": "2026-11-10",
       "momentum": "montant",
-      "note": "18 packages d'IA offensive (ARTEX, PentAGI, Cairn) déjà dans des rapports Mandiant : l'automatisation d'attaque quitte le labo pour la prod."
+      "note": "Office Party charge lo_socket_shim.so via LD_PRELOAD ; BOSSAI extrait 7 districts de Taipei ; personne n'a de threat model d'agent."
+    },
+    {
+      "label": "Chaîne d'approvisionnement : le tiers devient la porte",
+      "category": "infosec",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "momentum": "nouveau",
+      "note": "Qubole (creds AWS), Ethersphere (bee-js piégé), Nextcloud (LXC) : on ne casse plus le produit, on hérite du droit de publier."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-09",
+      "last_seen": "2026-11-10",
       "momentum": "montant",
-      "note": "La voiture connectée illustre le décalage : ouverture revendiquée à l'échelle mondiale, remédiation laissée aux constructeurs."
+      "note": "20M+ exposés (Frontline, Iris Plaza, Perry Johnson) ; NY AG impose 300k$ + 9,7M conditionnels : l'amende devient contrat de mise à niveau."
     },
     {
-      "label": "La revendication comme arme de négociation",
-      "category": "infosec",
-      "first_seen": "2026-11-09",
-      "last_seen": "2026-11-09",
-      "momentum": "nouveau",
-      "note": "Kensium 18 To, Afflelou, NoName (Free, La Poste Mobile) : la publication devient le levier, la mise en scène valant parfois preuve."
-    },
-    {
-      "label": "L'automobile comme surface d'attaque",
-      "category": "infosec",
-      "first_seen": "2026-11-09",
-      "last_seen": "2026-11-09",
-      "momentum": "nouveau",
-      "note": "Ouverture de n'importe quelle voiture d'une marque et base SGS de 259M lignes : la clé et l'annuaire fuient ensemble."
-    },
-    {
-      "label": "Frugalité opérationnelle et auto-patching",
+      "label": "L'infra au prix réel",
       "category": "devops",
-      "first_seen": "2026-11-08",
-      "last_seen": "2026-11-09",
-      "momentum": "stable",
-      "note": "Firefox lent sur HDD, profile-sync-daemon, RAM Altman : le goulot est l'I/O et la RAM qui dort, pas le CPU."
-    },
-    {
-      "label": "Le sandbox comme unité d'exécution",
-      "category": "devops",
-      "first_seen": "2026-11-07",
-      "last_seen": "2026-11-09",
-      "momentum": "montant",
-      "note": "Deno contesté sur la granularité, PacketHound observe les connexions sortantes au niveau OS : qui voit et qui autorise sur la machine locale."
-    },
-    {
-      "label": "Réécritures en Rust et sûreté mémoire",
-      "category": "devops",
-      "first_seen": "2026-11-09",
-      "last_seen": "2026-11-09",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
       "momentum": "nouveau",
-      "note": "KetchUp, StatCraft, Spectre : la sûreté mémoire et le débit affiché deviennent l'argument, sur des benchmarks d'auteurs plus qu'indépendants."
+      "note": "Même H100 à 2,69$ ou 12,29$/h ; Amazon remplace Sonnet par Strands Decider : le modèle devient composant interchangeable arbitré au prix."
+    },
+    {
+      "label": "Reprendre la main sur la couche transport",
+      "category": "devops",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "momentum": "nouveau",
+      "note": "NomadNet/Reticulum sans TCP/IP, ProxyBridge force le proxy TCP/UDP, multicast vs broadcast : la plomberie se réapproprie."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-09",
+      "last_seen": "2026-11-10",
       "momentum": "montant",
-      "note": "Errata RISAF5 du STM32MP2 en EL3 et DMP InvenSense reversé : le mode sécurisé et le coprocesseur restent des boîtes noires."
+      "note": "Harley diagnostic niveau concessionnaire, firmware Corsair MM800, ST680a disséqué : rouvrir ce qui a été fermé, du port au silicium."
     },
     {
-      "label": "Documentation ouverte comme preuve d'atelier",
+      "label": "SDR pirate et firmware grand public",
       "category": "diy",
-      "first_seen": "2026-11-06",
-      "last_seen": "2026-11-09",
-      "momentum": "stable",
-      "note": "Fluke 407 sauvé pour un condensateur, VFD en Space Invaders, dongle BLE→USB : réparer et publier remplacent la vitrine."
-    },
-    {
-      "label": "Rétro-computing en FPGA comme chaîne d'outils",
-      "category": "diy",
-      "first_seen": "2026-11-09",
-      "last_seen": "2026-11-09",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
       "momentum": "nouveau",
-      "note": "Cartouche Game Boy, AT&T UNIX PC sur MiSTer, Zork en CP/M : reconstruire la machine devient une assurance contre la pénurie."
+      "note": "TETRA sur Retevis C62 via OpenRTX, ESP32-C5 80 MS/s, Loran-C : le SDR se récupère plus qu'il ne s'achète, pénurie aidant."
+    },
+    {
+      "label": "Le signal ambiant comme capteur",
+      "category": "diy",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
+      "momentum": "nouveau",
+      "note": "La TV voit à travers les murs par fading, la géoloc écoute les avions, un bip reste à localiser : le quotidien devient émetteur."
     },
     {
       "label": "Économie de l'IA sous tension",
       "category": "societe",
       "first_seen": "2026-10-30",
-      "last_seen": "2026-11-09",
+      "last_seen": "2026-11-10",
       "momentum": "montant",
-      "note": "Les heures gagnées par l'IA redescendent en tickets et docs fausses : la valeur migre du labo vers le produit, la facture reste l'arbitre."
+      "note": "CoreWeave rendement 16%, Congrès 2027 cible datacenters et Musk : politique et crédit convergent sur la facture IA."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-09",
+      "last_seen": "2026-11-10",
       "momentum": "montant",
-      "note": "Pub ciblée comme mouchard policier, CSAM obligatoire sur smartphones : la captation s'active par défaut, le mandant change, pas la cible."
+      "note": "Gemini envoie Drive/mails à des annotateurs, macOS note 144 variables familiales, CNIL sanctionne 10 collectivités : consentement présumé."
     },
     {
-      "label": "Délégation de décision à l'IA",
+      "label": "Espionnage et prétoire autour de l'IA",
       "category": "societe",
-      "first_seen": "2026-11-09",
-      "last_seen": "2026-11-09",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-10",
       "momentum": "nouveau",
-      "note": "Question→IA→implémentation remplace le raisonnement ; le droit passé au modèle rend des failles logiques : la responsabilité ne s'automatise pas."
+      "note": "Ingénieur OpenAI et device caché, espionne Nvidia, Tajani sur le dark web : ce qu'il faut protéger entoure le modèle, pas le modèle."
     }
   ],
   "watchlist": [
@@ -169,19 +160,19 @@
       "label": "Preuves forensiques des agents de code",
       "category": "ia",
       "since": "2026-11-09",
-      "note": "Quelles traces subsistent après Claude Code, Cursor ou Codex, et sous quel compte ? La traçabilité n'est pas encore un produit."
+      "note": "Quelles traces laissent Claude Code, Cursor, Codex ? ChatGPT Desktop transmet déjà l'agent SSH : la traçabilité n'est pas encore un produit."
     },
     {
       "label": "Mémoire d'agent comme standard ouvert",
       "category": "ia",
       "since": "2026-11-09",
-      "note": "lorekit réclame un moment OpenTelemetry pour la mémoire des agents : un format observable plutôt qu'un état interne propriétaire."
+      "note": "lorekit réclame un OpenTelemetry de la mémoire d'agent : un format observable plutôt qu'un état interne propriétaire."
     },
     {
       "label": "Errata silicium en mode sécurisé",
       "category": "diy",
       "since": "2026-11-09",
-      "note": "RISAF5 sur STM32MP2 remet à zéro payloads et complétions PCIe en EL3 : un contournement potentiel de TrustZone par errata."
+      "note": "RISAF5 sur STM32MP2 remet à zéro payloads et complétions PCIe en EL3 : contournement potentiel de TrustZone par errata."
     },
     {
       "label": "Pare-feu de dissuasion par chaînes interdites",
@@ -190,48 +181,54 @@
       "note": "Injecter du HTML/JS interdit fait refuser l'analyse à Deepseek et ARTEX : dissuasion artisanale, pas correction."
     },
     {
-      "label": "robots.txt comme protocole de consentement IA",
+      "label": "Amendes conditionnelles comme contrat de mise à niveau",
+      "category": "infosec",
+      "since": "2026-11-10",
+      "note": "NY AG : 300k$ dont 100k pour l'État, jusqu'à 9,7M si MFA/chiffrement ne suivent pas. La sanction devient feuille de route chiffrée."
+    },
+    {
+      "label": "Graphe familial embarqué dans l'OS",
       "category": "societe",
-      "since": "2026-11-07",
-      "note": "Les hyperscalers veulent réécrire le robots.txt qu'ils ont piétiné : le refus d'aspiration deviendrait une négociation entre plateformes."
+      "since": "2026-11-10",
+      "note": "macOS livre EntityTagging_Family et 144 variables notant la famille : le cercle intime devient une probabilité CoreML d'office."
     },
     {
       "label": "Pénurie de SBC et prix RAM",
       "category": "diy",
       "since": "2026-11-06",
-      "note": "2026 bat les records de pénurie et les prix RAM incendient l'offre : concevoir pour cartes interchangeables devient une assurance."
+      "note": "2026 bat les records de pénurie, les prix RAM incendient l'offre : récupérer le silicium et concevoir interchangeable devient une assurance."
     },
     {
-      "label": "Ondes cérébrales grand public comme corpus d'entraînement",
+      "label": "robots.txt comme protocole de consentement IA",
       "category": "societe",
-      "since": "2026-11-08",
-      "note": "Des casques capturent les ondes cérébrales pour entraîner des modèles sans le dire : le signal neuronal devient matière première."
+      "since": "2026-11-07",
+      "note": "Les hyperscalers veulent réécrire le robots.txt qu'ils ont piétiné : le refus d'aspiration deviendrait une négociation entre plateformes."
     }
   ],
   "tensions": [
     {
       "label": "IA défensive vs IA infrastructure d'intrusion",
-      "note": "Le même pipeline trouve des failles et ARTEX/PentAGI perce en production pendant que Brava vend la simulation : l'outillage est neutre, l'usage non."
+      "note": "Le même pipeline trouve des failles et BOSSAI perce sept districts de Taipei pendant que Brava vend la simulation : l'outillage est neutre, l'usage non."
     },
     {
       "label": "Découverte automatisée vs remédiation humaine",
-      "note": "L'ouverture de n'importe quelle voiture s'industrialise quand le patch reste chez le constructeur : la découverte accélère, la décision de corriger traîne."
+      "note": "L'ouverture de n'importe quelle voiture s'industrialise quand le patch reste chez le constructeur ; l'amende NY conditionne la remédiation au lieu de l'imposer."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
-      "note": "Claude Code est vendu comme collègue et entre au dossier forensique comme suspect : le même agent est à embarquer et à contenir."
+      "note": "Claude Code est vendu comme collègue, entre au dossier forensique et reçoit l'agent SSH en prod : le même agent est à embarquer et à contenir."
     },
     {
       "label": "Productivité promise vs facture et partage de la valeur",
-      "note": "Les heures gagnées par l'IA redescendent en tickets et docs à démêler : la valeur migre du labo vers le produit, la facture d'inférence reste l'arbitre."
+      "note": "6000€ de crédits en 7 jours pour douze mois d'ingénieur, CoreWeave à 16% : la valeur migre du labo vers le produit, la facture reste l'arbitre."
     },
     {
       "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "Apple grey list, CSAM obligatoire, pub-mouchard : le consentement se présume par défaut quand les plateformes négocient un robots.txt."
+      "note": "Gemini envoie les fichiers intimes à des annotateurs, macOS note la famille, CSAM obligatoire : le consentement se présume quand les plateformes négocient."
     },
     {
-      "label": "Revendication comme preuve vs mise en scène",
-      "note": "Kensium 18 To, NoName et DataSuckers : ZATAZ distingue données volées, DDoS et revendications industrielles — la publication vaut parfois preuve."
+      "label": "Preuve formelle vs pilotage humain",
+      "note": "Anthropic prouve 239 points OSS-Fuzz mais la garantie s'arrête aux specs ; Ginux naît d'un pilotage humain sans preuve : la rigueur change de camp, pas de main."
     }
   ]
 }

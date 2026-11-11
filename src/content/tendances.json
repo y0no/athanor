@@ -1,33 +1,40 @@
 {
-  "updated_at": "2026-11-10",
+  "updated_at": "2026-11-11",
   "synthesis": {
-    "headline": "Le watt et la preuve remplacent le benchmark",
-    "narrative": "L'IA ne se vend plus au score mais au <strong>watt</strong> et au <strong>dollar/heure</strong> : DeepX promet 100B sous 5 W, le même H100 varie de 2,69 à 12,29 $/h et CoreWeave emprunte à 16 %. En face, la confiance migre du produit vers la <strong>chaîne</strong> qui le publie — Qubole, Ethersphere, Nextcloud — pendant que Claude prouve formellement 239 points OSS-Fuzz et qu'Opus 5.5 est accusé d'être bridé. Le DIY répond au verrouillage en récupérant le SDR, le firmware et le transport, du TETRA sur Retevis C62 à NomadNet sans TCP/IP."
+    "headline": "La preuve avance plus vite que la garantie",
+    "narrative": "DeepMind fait vérifier <strong>Signal tel qu'il est déployé</strong> et attrape deux bugs réintroduits, mais la garantie s'arrête au build de Google ; Anthropic scinde <strong>Mythos</strong> armé et <strong>Fable</strong> bridé, faisant du garde-fou un réglage de déploiement. Pendant que la preuve se borne, la production s'emballe : 58 % des équipes livrent plus vite que leur revue et 1200 correctifs tombent en un jour. En face, le DIY et le devops répondent à la pénurie en lisant le <code>DeviceTree</code> d'un Pi non annoncé et en remontant leur pile chez eux, tandis que Palantir installe son CISO à la CISA : l'arbitre de la confiance n'est plus le modèle, c'est l'institution qui le déploie."
   },
   "currents": [
     {
-      "label": "Le coût devient la métrique souveraine",
-      "note": "Du watt par token (DeepX 100B/5W) au dollar/heure GPU (2,69 vs 12,29$) en passant par le rendement CoreWeave à 16% : le prix arbitre le modèle, l'infra et la politique.",
+      "label": "La garantie se déplace vers la preuve bornée",
+      "note": "Signal en Lean, 239 points OSS-Fuzz, artefacts publiés : on prouve plus de choses, sur un périmètre plus étroit, et le build vérifié devient l'unité de confiance plutôt que le protocole.",
       "categories": [
         "ia",
-        "devops",
+        "infosec"
+      ]
+    },
+    {
+      "label": "La confiance se règle au déploiement, pas au modèle",
+      "note": "Mythos réservé aux vetted, Fable bridé, documents WhatsApp réécrits, ADN filtré chez le fournisseur : le même socle produit des comportements différents selon qui le déploie et pour qui.",
+      "categories": [
+        "ia",
+        "infosec",
         "societe"
       ]
     },
     {
-      "label": "La confiance se déplace du produit vers la chaîne",
-      "note": "Qubole, Ethersphere, Nextcloud : on hérite du droit de publier. En parallèle, Opus 5.5 serait bridé et les agents laissent des traces non tracées : la confiance se joue sur la chaîne, pas sur le produit.",
+      "label": "La contrainte matérielle devient moteur de conception",
+      "note": "RAM en flamme, SBC rares, DeviceTree lu avant annonce, SDR recyclé, .NET 11 vendu à l'empreinte mémoire : la rareté impose de faire plus avec le silicium déjà là.",
       "categories": [
-        "ia",
-        "infosec",
+        "diy",
         "devops"
       ]
     },
     {
-      "label": "Reprendre la main sur ce qui est fermé",
-      "note": "SDR récupéré (TETRA, ESP32-C5), Harley et Corsair reversés, NomadNet sans TCP/IP, macOS modélise la famille : le DIY et l'auto-hébergement répondent au verrouillage par la réappropriation.",
+      "label": "Le tiers hérite du droit de publier et de patcher",
+      "note": "60 % d'inflation de paquets, dépendances transitives à moitié auditées, amendes conditionnelles, Palantir à la CISA : la confiance se délègue à des intermédiaires qu'on ne choisit pas.",
       "categories": [
-        "diy",
+        "infosec",
         "devops",
         "societe"
       ]
@@ -38,121 +45,121 @@
       "label": "Agents IA banalisés",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
       "momentum": "montant",
-      "note": "Mandat 100% IA : l'équipe ne comprend plus son code ; ChatGPT Desktop transmet l'agent SSH en prod. La dette migre vers la compréhension."
-    },
-    {
-      "label": "Le coût d'inférence comme champ de bataille",
-      "category": "ia",
-      "first_seen": "2026-11-08",
-      "last_seen": "2026-11-10",
-      "momentum": "montant",
-      "note": "DeepX 100B sous 5 W, TPU 8i Max, Muse Ember : la métrique n'est plus le paramètre mais le watt et le coût par token."
+      "note": "Linux Foundation : 58 % livrent plus vite que la revue, 60 % d'inflation de paquets ; la dette migre vers la vérification humaine."
     },
     {
       "label": "Vérification formelle assistée par IA",
       "category": "ia",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "momentum": "nouveau",
-      "note": "Claude+Theorem/Rocq prouve 239 points OSS-Fuzz en RISC-V ; la garantie s'arrête aux specs et à la couverture de modèle bornée."
+      "last_seen": "2026-11-11",
+      "momentum": "montant",
+      "note": "DeepMind prouve Signal déployé (PQXDH, Triple Ratchet), 6,5M preuves Lean, attrape 2 bugs réintroduits ; garantie bornée au build."
     },
     {
       "label": "Soupçons de bridage et confiance modèle",
       "category": "ia",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "momentum": "nouveau",
-      "note": "Fable 5.2 record à 65 mais Opus 5.5 accusé d'être bridé depuis le 3 nov ; 6000€ de crédits en 7 jours, la confiance se mesure en rumeurs."
+      "last_seen": "2026-11-11",
+      "momentum": "montant",
+      "note": "Mythos 5.2 restreint pour la chasse aux failles, Fable 5.2 large : le garde-fou devient réglage de déploiement, pas propriété du modèle."
+    },
+    {
+      "label": "Le coût d'inférence comme champ de bataille",
+      "category": "ia",
+      "first_seen": "2026-11-08",
+      "last_seen": "2026-11-11",
+      "momentum": "stable",
+      "note": "Aucune puce aujourd'hui : l'arbitrage coût se déplace vers le runtime (.NET 11) et l'accès élargi à Gemini 4 Carbon."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-10",
-      "momentum": "montant",
-      "note": "Office Party charge lo_socket_shim.so via LD_PRELOAD ; BOSSAI extrait 7 districts de Taipei ; personne n'a de threat model d'agent."
+      "last_seen": "2026-11-11",
+      "momentum": "stable",
+      "note": "Aucun nouvel incident agent ; la scission Mythos/Fable déplace la question vers le socle partagé et les garde-fous de déploiement."
     },
     {
       "label": "Chaîne d'approvisionnement : le tiers devient la porte",
       "category": "infosec",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "momentum": "nouveau",
-      "note": "Qubole (creds AWS), Ethersphere (bee-js piégé), Nextcloud (LXC) : on ne casse plus le produit, on hérite du droit de publier."
+      "last_seen": "2026-11-11",
+      "momentum": "montant",
+      "note": "60 % d'inflation de paquets liée à l'IA, dépendances transitives auditées une fois sur deux : le code généré gonfle la porte d'entrée."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
       "momentum": "montant",
-      "note": "20M+ exposés (Frontline, Iris Plaza, Perry Johnson) ; NY AG impose 300k$ + 9,7M conditionnels : l'amende devient contrat de mise à niveau."
+      "note": "1200 correctifs en un jour (SAP 4x10.0, MS 1093 CVE), OpenSSH 10 ans, N-able 30 zero-days, Xen Orchestra exploité : le patch suit l'attaque."
     },
     {
       "label": "L'infra au prix réel",
       "category": "devops",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "momentum": "nouveau",
-      "note": "Même H100 à 2,69$ ou 12,29$/h ; Amazon remplace Sonnet par Strands Decider : le modèle devient composant interchangeable arbitré au prix."
+      "last_seen": "2026-11-11",
+      "momentum": "montant",
+      "note": ".NET 11 vend latence et empreinte mémoire ; l'arbitrage se fait au coût par instance, pas au benchmark."
     },
     {
-      "label": "Reprendre la main sur la couche transport",
+      "label": "Déplacer la frontière noyau/utilisateur",
       "category": "devops",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
+      "momentum": "montant",
+      "note": "Ginux fait tourner un noyau en espace utilisateur : déboguer comme un processus, au prix de l'isolation ; la rigueur change de camp."
+    },
+    {
+      "label": "La pile cloud se remonte chez soi",
+      "category": "devops",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
       "momentum": "nouveau",
-      "note": "NomadNet/Reticulum sans TCP/IP, ProxyBridge force le proxy TCP/UDP, multicast vs broadcast : la plomberie se réapproprie."
+      "note": "Ntfy, HolyArrs 15 Mo, rVPN furtif : la pile se remonte brique par brique ; reste qui patche et qui répond quand ça tombe."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
       "momentum": "montant",
-      "note": "Harley diagnostic niveau concessionnaire, firmware Corsair MM800, ST680a disséqué : rouvrir ce qui a été fermé, du port au silicium."
+      "note": "Sidekick ressuscité au SDK, Lobo MAX-80 de 1982, A2DP greffé sur ESP32, Print & Place : lire et rouvrir avant d'acheter."
+    },
+    {
+      "label": "Pénurie de silicium, contrainte de conception",
+      "category": "diy",
+      "first_seen": "2026-11-06",
+      "last_seen": "2026-11-11",
+      "momentum": "montant",
+      "note": "DeviceTree du Pi Zero 3W fuité avant annonce, RAM en flamme : lire la doc matérielle et recycler devient une assurance."
     },
     {
       "label": "SDR pirate et firmware grand public",
       "category": "diy",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "momentum": "nouveau",
-      "note": "TETRA sur Retevis C62 via OpenRTX, ESP32-C5 80 MS/s, Loran-C : le SDR se récupère plus qu'il ne s'achète, pénurie aidant."
-    },
-    {
-      "label": "Le signal ambiant comme capteur",
-      "category": "diy",
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
-      "momentum": "nouveau",
-      "note": "La TV voit à travers les murs par fading, la géoloc écoute les avions, un bip reste à localiser : le quotidien devient émetteur."
-    },
-    {
-      "label": "Économie de l'IA sous tension",
-      "category": "societe",
-      "first_seen": "2026-10-30",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
       "momentum": "montant",
-      "note": "CoreWeave rendement 16%, Congrès 2027 cible datacenters et Musk : politique et crédit convergent sur la facture IA."
+      "note": "SatHunterSDR suit le Doppler des CubeSats avec RTL-SDR et Android ; le matériel banal remplace le rotor dédié."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-10",
+      "last_seen": "2026-11-11",
       "momentum": "montant",
-      "note": "Gemini envoie Drive/mails à des annotateurs, macOS note 144 variables familiales, CNIL sanctionne 10 collectivités : consentement présumé."
+      "note": "WhatsApp réécrit les documents en transit, fingerprinting résiduel, ADN synthèse filtré côté fournisseur : le garde-fou se place sur le canal."
     },
     {
-      "label": "Espionnage et prétoire autour de l'IA",
+      "label": "Palantir dans l'appareil d'État",
       "category": "societe",
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-10",
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
       "momentum": "nouveau",
-      "note": "Ingénieur OpenAI et device caché, espionne Nvidia, Tajani sur le dark web : ce qu'il faut protéger entoure le modèle, pas le modèle."
+      "note": "Le CISO de Palantir prend la CISA, un ex-sénateur rejoint la firme : le privé n'entoure plus l'État, il en occupe les organes."
     }
   ],
   "watchlist": [
@@ -169,6 +176,24 @@
       "note": "lorekit réclame un OpenTelemetry de la mémoire d'agent : un format observable plutôt qu'un état interne propriétaire."
     },
     {
+      "label": "Modèles armés à accès restreint",
+      "category": "ia",
+      "since": "2026-11-11",
+      "note": "Mythos 5.2 n'est distribué qu'à des vetted : une capacité offensive gatée par le fournisseur crée un marché à deux vitesses, sans règle publique."
+    },
+    {
+      "label": "Dump coordonné de zero-days comme levier",
+      "category": "infosec",
+      "since": "2026-11-11",
+      "note": "N-able coupe N-central après 30 zero-days lâchés d'un coup : la divulgation massive devient un rapport de force éditeur/chercheur."
+    },
+    {
+      "label": "La preuve comme gate de release",
+      "category": "infosec",
+      "since": "2026-11-11",
+      "note": "DeepMind vérifie Signal tel que déployé et attrape deux régressions : si la preuve entre en CI, elle concurrence la revue humaine, pas la spec."
+    },
+    {
       "label": "Errata silicium en mode sécurisé",
       "category": "diy",
       "since": "2026-11-09",
@@ -181,54 +206,36 @@
       "note": "Injecter du HTML/JS interdit fait refuser l'analyse à Deepseek et ARTEX : dissuasion artisanale, pas correction."
     },
     {
-      "label": "Amendes conditionnelles comme contrat de mise à niveau",
-      "category": "infosec",
-      "since": "2026-11-10",
-      "note": "NY AG : 300k$ dont 100k pour l'État, jusqu'à 9,7M si MFA/chiffrement ne suivent pas. La sanction devient feuille de route chiffrée."
-    },
-    {
-      "label": "Graphe familial embarqué dans l'OS",
-      "category": "societe",
-      "since": "2026-11-10",
-      "note": "macOS livre EntityTagging_Family et 144 variables notant la famille : le cercle intime devient une probabilité CoreML d'office."
-    },
-    {
-      "label": "Pénurie de SBC et prix RAM",
-      "category": "diy",
-      "since": "2026-11-06",
-      "note": "2026 bat les records de pénurie, les prix RAM incendient l'offre : récupérer le silicium et concevoir interchangeable devient une assurance."
-    },
-    {
       "label": "robots.txt comme protocole de consentement IA",
       "category": "societe",
       "since": "2026-11-07",
-      "note": "Les hyperscalers veulent réécrire le robots.txt qu'ils ont piétiné : le refus d'aspiration deviendrait une négociation entre plateformes."
+      "note": "Les hyperscalers veulent réécrire le robots.txt qu'ils ont piétiné ; l'ADN synthèse montre la même bascule : filtrer côté fournisseur."
     }
   ],
   "tensions": [
     {
       "label": "IA défensive vs IA infrastructure d'intrusion",
-      "note": "Le même pipeline trouve des failles et BOSSAI perce sept districts de Taipei pendant que Brava vend la simulation : l'outillage est neutre, l'usage non."
+      "note": "Mythos chasse les failles à accès restreint quand Fable, largement distribué, bat GPT-6 Cyber sur l'attaque multi-étapes : même socle, deux camps, et le garde-fou n'est qu'un réglage."
     },
     {
       "label": "Découverte automatisée vs remédiation humaine",
-      "note": "L'ouverture de n'importe quelle voiture s'industrialise quand le patch reste chez le constructeur ; l'amende NY conditionne la remédiation au lieu de l'imposer."
+      "note": "1200 correctifs en un jour, un OpenSSH corrigé après dix ans, N-able hors ligne : la découverte s'industrialise, le déploiement du patch reste manuel et calendaire."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
       "note": "Claude Code est vendu comme collègue, entre au dossier forensique et reçoit l'agent SSH en prod : le même agent est à embarquer et à contenir."
     },
     {
-      "label": "Productivité promise vs facture et partage de la valeur",
-      "note": "6000€ de crédits en 7 jours pour douze mois d'ingénieur, CoreWeave à 16% : la valeur migre du labo vers le produit, la facture reste l'arbitre."
+      "label": "Productivité promise vs dette de compréhension",
+      "note": "58 % des équipes livrent plus vite que leur revue, 60 % d'inflation de paquets : le gain de vitesse se paie en code que personne ne relit ni ne comprend."
     },
     {
       "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "Gemini envoie les fichiers intimes à des annotateurs, macOS note la famille, CSAM obligatoire : le consentement se présume quand les plateformes négocient."
+      "note": "Gemini 4 Carbon élargi et artefacts de preuve publiés d'un côté, Mythos réservé aux vetted et documents WhatsApp réécrits de l'autre : l'ouverture choisit ses bénéficiaires."
     },
     {
       "label": "Preuve formelle vs pilotage humain",
-      "note": "Anthropic prouve 239 points OSS-Fuzz mais la garantie s'arrête aux specs ; Ginux naît d'un pilotage humain sans preuve : la rigueur change de camp, pas de main."
+      "note": "Signal prouvé en Lean attrape deux bugs réintroduits, Ginux revendique un noyau en espace utilisateur sans preuve : la rigueur change de camp, pas de main."
     }
   ]
 }

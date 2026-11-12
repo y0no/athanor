@@ -1,21 +1,22 @@
 {
-  "updated_at": "2026-11-11",
+  "updated_at": "2026-11-12",
   "synthesis": {
-    "headline": "La preuve avance plus vite que la garantie",
-    "narrative": "DeepMind fait vérifier <strong>Signal tel qu'il est déployé</strong> et attrape deux bugs réintroduits, mais la garantie s'arrête au build de Google ; Anthropic scinde <strong>Mythos</strong> armé et <strong>Fable</strong> bridé, faisant du garde-fou un réglage de déploiement. Pendant que la preuve se borne, la production s'emballe : 58 % des équipes livrent plus vite que leur revue et 1200 correctifs tombent en un jour. En face, le DIY et le devops répondent à la pénurie en lisant le <code>DeviceTree</code> d'un Pi non annoncé et en remontant leur pile chez eux, tandis que Palantir installe son CISO à la CISA : l'arbitre de la confiance n'est plus le modèle, c'est l'institution qui le déploie."
+    "headline": "Le garde-fou des agents quitte le prompt pour l'exécution",
+    "narrative": "La sécurité des agents change de couche : une backdoor tient dans <strong>moins de 10 neurones</strong>, Bay lève 50 M$ pour approuver chaque action, et la CI s'épingle par SHA. Pendant ce temps, <strong>35 578 apps générées</strong> s'ouvrent sans authentification et une RCE Apache se corrige en 2.4.71 — la dette de génération est déjà devenue surface publique. En face, United ferme ses réservations aux agents quand l'épargne-retraite alimente la valorisation : le débat se déplace de ce que l'agent sait faire vers <em>qui a le droit d'agir</em>."
   },
   "currents": [
     {
-      "label": "La garantie se déplace vers la preuve bornée",
-      "note": "Signal en Lean, 239 points OSS-Fuzz, artefacts publiés : on prouve plus de choses, sur un périmètre plus étroit, et le build vérifié devient l'unité de confiance plutôt que le protocole.",
+      "label": "Le garde-fou migre du prompt vers l'exécution",
+      "note": "Backdoor sous le prompt, politiques runtime de Bay, épinglage SHA des actions, fenêtre de patch Apache : la sécurité se déplace de ce que dit le modèle vers ce que la chaîne exécute.",
       "categories": [
         "ia",
-        "infosec"
+        "infosec",
+        "devops"
       ]
     },
     {
-      "label": "La confiance se règle au déploiement, pas au modèle",
-      "note": "Mythos réservé aux vetted, Fable bridé, documents WhatsApp réécrits, ADN filtré chez le fournisseur : le même socle produit des comportements différents selon qui le déploie et pour qui.",
+      "label": "La dette de génération devient surface publique",
+      "note": "Agents qui écrivent le code, 35 578 apps Grok ouvertes sans auth, EEG entraîné sans consentement : ce qui est produit sans relecture finit exposé, et personne ne répond.",
       "categories": [
         "ia",
         "infosec",
@@ -23,18 +24,19 @@
       ]
     },
     {
-      "label": "La contrainte matérielle devient moteur de conception",
-      "note": "RAM en flamme, SBC rares, DeviceTree lu avant annonce, SDR recyclé, .NET 11 vendu à l'empreinte mémoire : la rareté impose de faire plus avec le silicium déjà là.",
+      "label": "L'accès se marchande, la capacité se gate",
+      "note": "Mythos réservé aux vetted, agents refusés par United, robots.txt réécrit, ACR des TV : le débat quitte la capacité pour le droit d'agir et pour qui l'accorde.",
       "categories": [
-        "diy",
-        "devops"
+        "ia",
+        "societe",
+        "infosec"
       ]
     },
     {
-      "label": "Le tiers hérite du droit de publier et de patcher",
-      "note": "60 % d'inflation de paquets, dépendances transitives à moitié auditées, amendes conditionnelles, Palantir à la CISA : la confiance se délègue à des intermédiaires qu'on ne choisit pas.",
+      "label": "Reprendre la main sur la machine",
+      "note": "Glitching A100, pile cloud remontée chez soi, émulateur Zig, fingerprinting Firefox : bricoler, héberger, réécrire pour rester propriétaire de ce qu'on exécute.",
       "categories": [
-        "infosec",
+        "diy",
         "devops",
         "societe"
       ]
@@ -45,121 +47,121 @@
       "label": "Agents IA banalisés",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-11",
-      "momentum": "montant",
-      "note": "Linux Foundation : 58 % livrent plus vite que la revue, 60 % d'inflation de paquets ; la dette migre vers la vérification humaine."
+      "last_seen": "2026-11-12",
+      "momentum": "stable",
+      "note": "48 agents trouvent une structure maya en 72 h ; AWS déplace le métier vers la spécification et la vérification, plus vers l'écriture."
     },
     {
       "label": "Vérification formelle assistée par IA",
       "category": "ia",
       "first_seen": "2026-11-10",
       "last_seen": "2026-11-11",
-      "momentum": "montant",
-      "note": "DeepMind prouve Signal déployé (PQXDH, Triple Ratchet), 6,5M preuves Lean, attrape 2 bugs réintroduits ; garantie bornée au build."
+      "momentum": "stable",
+      "note": "Aucun signal ce jour ; le fil reste la preuve bornée au build et son entrée en CI comme gate de release."
     },
     {
       "label": "Soupçons de bridage et confiance modèle",
       "category": "ia",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-11",
-      "momentum": "montant",
-      "note": "Mythos 5.2 restreint pour la chasse aux failles, Fable 5.2 large : le garde-fou devient réglage de déploiement, pas propriété du modèle."
+      "last_seen": "2026-11-12",
+      "momentum": "stable",
+      "note": "Backdoor implantée en modifiant moins de 10 neurones : la confiance quitte le réglage de déploiement pour l'intégrité des poids."
     },
     {
       "label": "Le coût d'inférence comme champ de bataille",
       "category": "ia",
       "first_seen": "2026-11-08",
-      "last_seen": "2026-11-11",
-      "momentum": "stable",
-      "note": "Aucune puce aujourd'hui : l'arbitrage coût se déplace vers le runtime (.NET 11) et l'accès élargi à Gemini 4 Carbon."
+      "last_seen": "2026-11-12",
+      "momentum": "montant",
+      "note": "Apple attaque le coût par la récupération RAG et la distillation Attention vers Mamba ; tinyGPT ouvre le capot. Inspecter et payer."
+    },
+    {
+      "label": "Contrôle d'exécution des agents",
+      "category": "ia",
+      "first_seen": "2026-11-12",
+      "last_seen": "2026-11-12",
+      "momentum": "nouveau",
+      "note": "Bay lève 50 M$ pour approuver, bloquer, rediriger chaque action ; agent-audit-kit et agent-airlock côté open source."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-11",
-      "momentum": "stable",
-      "note": "Aucun nouvel incident agent ; la scission Mythos/Fable déplace la question vers le socle partagé et les garde-fous de déploiement."
+      "last_seen": "2026-11-12",
+      "momentum": "montant",
+      "note": "35 578 apps Grok sur 37 571 ouvertes sans auth, AntiFox rebondit vers AWS, l'agent Token casse trois règles par défaut."
     },
     {
       "label": "Chaîne d'approvisionnement : le tiers devient la porte",
       "category": "infosec",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-11",
+      "last_seen": "2026-11-12",
       "momentum": "montant",
-      "note": "60 % d'inflation de paquets liée à l'IA, dépendances transitives auditées une fois sur deux : le code généré gonfle la porte d'entrée."
+      "note": "ScreenConnect : 288 endpoints via clients pirates, cinq extensions coupées ; le vecteur est le canal tiers, pas la CVE."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-11",
+      "last_seen": "2026-11-12",
       "momentum": "montant",
-      "note": "1200 correctifs en un jour (SAP 4x10.0, MS 1093 CVE), OpenSSH 10 ans, N-able 30 zero-days, Xen Orchestra exploité : le patch suit l'attaque."
-    },
-    {
-      "label": "L'infra au prix réel",
-      "category": "devops",
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-11",
-      "momentum": "montant",
-      "note": ".NET 11 vend latence et empreinte mémoire ; l'arbitrage se fait au coût par instance, pas au benchmark."
-    },
-    {
-      "label": "Déplacer la frontière noyau/utilisateur",
-      "category": "devops",
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-11",
-      "momentum": "montant",
-      "note": "Ginux fait tourner un noyau en espace utilisateur : déboguer comme un processus, au prix de l'isolation ; la rigueur change de camp."
+      "note": "CVE-2026-119618 : RCE non auth dans mod_http2, correctif en 2.4.71 ; c'est le parc installé qui tranche, pas le score."
     },
     {
       "label": "La pile cloud se remonte chez soi",
       "category": "devops",
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-11",
+      "last_seen": "2026-11-12",
+      "momentum": "montant",
+      "note": "Tunnel SSH, tmux retrouvé, Atuin Threads : le poste d'ops devient une constellation de sessions à reprendre et à auditer."
+    },
+    {
+      "label": "La CI se verrouille par hash",
+      "category": "devops",
+      "first_seen": "2026-11-12",
+      "last_seen": "2026-11-12",
       "momentum": "nouveau",
-      "note": "Ntfy, HolyArrs 15 Mo, rVPN furtif : la pile se remonte brique par brique ; reste qui patche et qui répond quand ça tombe."
+      "note": "Épingler chaque action GitHub par SHA plutôt que par tag : la surface n'est plus le binaire produit mais les lignes uses:."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-11",
+      "last_seen": "2026-11-12",
       "momentum": "montant",
-      "note": "Sidekick ressuscité au SDK, Lobo MAX-80 de 1982, A2DP greffé sur ESP32, Print & Place : lire et rouvrir avant d'acheter."
-    },
-    {
-      "label": "Pénurie de silicium, contrainte de conception",
-      "category": "diy",
-      "first_seen": "2026-11-06",
-      "last_seen": "2026-11-11",
-      "momentum": "montant",
-      "note": "DeviceTree du Pi Zero 3W fuité avant annonce, RAM en flamme : lire la doc matérielle et recycler devient une assurance."
+      "note": "Glitching de tension : une carte minière rend son A100 entier. Le SKU se joue dans le firmware, pas dans le masque de gravure."
     },
     {
       "label": "SDR pirate et firmware grand public",
       "category": "diy",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-11",
+      "last_seen": "2026-11-12",
       "momentum": "montant",
-      "note": "SatHunterSDR suit le Doppler des CubeSats avec RTL-SDR et Android ; le matériel banal remplace le rotor dédié."
+      "note": "D325f-SDR 2.0, MultiScan pseudo-spectre, ATS Mini dans le navigateur : le front-end RF recule devant le logiciel."
+    },
+    {
+      "label": "Reconstruire pour comprendre",
+      "category": "diy",
+      "first_seen": "2026-11-12",
+      "last_seen": "2026-11-12",
+      "momentum": "nouveau",
+      "note": "Émulateur CPU 32 bits en Zig, Elite sur Commodore Pet, Pong en CHIP-8 : réécrire la pile pour la relire, à contre-courant."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-11",
+      "last_seen": "2026-11-12",
       "momentum": "montant",
-      "note": "WhatsApp réécrit les documents en transit, fingerprinting résiduel, ADN synthèse filtré côté fournisseur : le garde-fou se place sur le canal."
+      "note": "EEG Muse entraîné sans le dire, 17 questions aux TV, fingerprinting Firefox, fichiers d'identité détournés : consentement réaffecté."
     },
     {
-      "label": "Palantir dans l'appareil d'État",
+      "label": "Agents refusés et bulle IA",
       "category": "societe",
-      "first_seen": "2026-11-11",
-      "last_seen": "2026-11-11",
+      "first_seen": "2026-11-12",
+      "last_seen": "2026-11-12",
       "momentum": "nouveau",
-      "note": "Le CISO de Palantir prend la CISA, un ex-sénateur rejoint la firme : le privé n'entoure plus l'État, il en occupe les organes."
+      "note": "United Airlines ferme ses réservations aux agents quand l'épargne-retraite alimente la valorisation : même objet, deux camps."
     }
   ],
   "watchlist": [
@@ -167,75 +169,69 @@
       "label": "Preuves forensiques des agents de code",
       "category": "ia",
       "since": "2026-11-09",
-      "note": "Quelles traces laissent Claude Code, Cursor, Codex ? ChatGPT Desktop transmet déjà l'agent SSH : la traçabilité n'est pas encore un produit."
-    },
-    {
-      "label": "Mémoire d'agent comme standard ouvert",
-      "category": "ia",
-      "since": "2026-11-09",
-      "note": "lorekit réclame un OpenTelemetry de la mémoire d'agent : un format observable plutôt qu'un état interne propriétaire."
+      "note": "Atuin Threads synchronise les sessions d'agents sur toutes les machines : la reprise est outillée, la traçabilité reste à inventer."
     },
     {
       "label": "Modèles armés à accès restreint",
       "category": "ia",
       "since": "2026-11-11",
-      "note": "Mythos 5.2 n'est distribué qu'à des vetted : une capacité offensive gatée par le fournisseur crée un marché à deux vitesses, sans règle publique."
+      "note": "Mythos 5.2 réservé aux vetted : une capacité offensive gatée par le fournisseur crée un marché à deux vitesses, sans règle publique."
     },
     {
-      "label": "Dump coordonné de zero-days comme levier",
+      "label": "Backdoor sous le prompt",
+      "category": "ia",
+      "since": "2026-11-12",
+      "note": "Moins de 10 neurones suffisent à armer un agent : si les poids sont la surface, l'intégrité du modèle devient un contrôle de release."
+    },
+    {
+      "label": "Dump coordonné et canal tiers comme levier",
       "category": "infosec",
       "since": "2026-11-11",
-      "note": "N-able coupe N-central après 30 zero-days lâchés d'un coup : la divulgation massive devient un rapport de force éditeur/chercheur."
+      "note": "Après N-central, ScreenConnect : couper les extensions tierces devient la réponse réflexe ; le rapport de force éditeur/chercheur se durcit."
     },
     {
-      "label": "La preuve comme gate de release",
-      "category": "infosec",
-      "since": "2026-11-11",
-      "note": "DeepMind vérifie Signal tel que déployé et attrape deux régressions : si la preuve entre en CI, elle concurrence la revue humaine, pas la spec."
-    },
-    {
-      "label": "Errata silicium en mode sécurisé",
+      "label": "Errata et verrous silicium",
       "category": "diy",
       "since": "2026-11-09",
-      "note": "RISAF5 sur STM32MP2 remet à zéro payloads et complétions PCIe en EL3 : contournement potentiel de TrustZone par errata."
-    },
-    {
-      "label": "Pare-feu de dissuasion par chaînes interdites",
-      "category": "infosec",
-      "since": "2026-11-09",
-      "note": "Injecter du HTML/JS interdit fait refuser l'analyse à Deepseek et ARTEX : dissuasion artisanale, pas correction."
+      "note": "RISAF5 sur STM32MP2, glitching A100 : le matériel arbitre ce qui est permis, et l'errata devient un contournement de TrustZone."
     },
     {
       "label": "robots.txt comme protocole de consentement IA",
       "category": "societe",
       "since": "2026-11-07",
-      "note": "Les hyperscalers veulent réécrire le robots.txt qu'ils ont piétiné ; l'ADN synthèse montre la même bascule : filtrer côté fournisseur."
+      "note": "Hyperscalers, EEG Muse, ACR des TV : le filtrage se déplace côté fournisseur, la protection devient une faveur technique."
+    },
+    {
+      "label": "Alarme fantôme et site unique",
+      "category": "devops",
+      "since": "2026-11-12",
+      "note": "Un faux détecteur de fumée a failli noyer le seul DC new-yorkais de Jane Street : la redondance est une procédure, pas un onduleur."
     }
   ],
   "tensions": [
     {
       "label": "IA défensive vs IA infrastructure d'intrusion",
-      "note": "Mythos chasse les failles à accès restreint quand Fable, largement distribué, bat GPT-6 Cyber sur l'attaque multi-étapes : même socle, deux camps, et le garde-fou n'est qu'un réglage."
+      "note": "AntiFox, plateforme de pentest agentique, sert de tremplin vers des identifiants AWS de prod quand Mythos chasse les failles à accès restreint : même socle, deux camps, garde-fou réglable."
     },
     {
-      "label": "Découverte automatisée vs remédiation humaine",
-      "note": "1200 correctifs en un jour, un OpenSSH corrigé après dix ans, N-able hors ligne : la découverte s'industrialise, le déploiement du patch reste manuel et calendaire."
+      "label": "Découverte automatisée vs remédiation calendaire",
+      "note": "Une RCE Apache corrigée en 2.4.71 le 11 novembre, 1200 correctifs en un jour ailleurs : la découverte s'industrialise, le déploiement du patch reste manuel et dépend du parc."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
-      "note": "Claude Code est vendu comme collègue, entre au dossier forensique et reçoit l'agent SSH en prod : le même agent est à embarquer et à contenir."
+      "note": "L'agent Token casse identité, privilèges et traçabilité dès qu'il agit en session authentifiée, United lui ferme ses réservations : à embarquer et à contenir en même temps."
     },
     {
       "label": "Productivité promise vs dette de compréhension",
-      "note": "58 % des équipes livrent plus vite que leur revue, 60 % d'inflation de paquets : le gain de vitesse se paie en code que personne ne relit ni ne comprend."
+      "note": "58 % livrent plus vite que leur revue, 35 578 apps générées s'ouvrent sans authentification : le gain de vitesse se convertit directement en surface d'attaque publique."
     },
     {
       "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "Gemini 4 Carbon élargi et artefacts de preuve publiés d'un côté, Mythos réservé aux vetted et documents WhatsApp réécrits de l'autre : l'ouverture choisit ses bénéficiaires."
+      "note": "Artefacts de preuve publiés et Gemini élargi d'un côté, Mythos réservé aux vetted et agents refusés par United de l'autre : l'ouverture choisit ses bénéficiaires."
     },
     {
-      "label": "Preuve formelle vs pilotage humain",
-      "note": "Signal prouvé en Lean attrape deux bugs réintroduits, Ginux revendique un noyau en espace utilisateur sans preuve : la rigueur change de camp, pas de main."
+      "label": "Propriété du matériel vs verrou firmware",
+      "note": "Une carte minière contient un A100 entier que seul le glitching libère : on possède le silicium, le vendeur garde la décision de ce qu'il exécute."
     }
   ]
 }

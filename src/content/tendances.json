@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-11-12",
+  "updated_at": "2026-11-13",
   "synthesis": {
-    "headline": "Le garde-fou des agents quitte le prompt pour l'exécution",
-    "narrative": "La sécurité des agents change de couche : une backdoor tient dans <strong>moins de 10 neurones</strong>, Bay lève 50 M$ pour approuver chaque action, et la CI s'épingle par SHA. Pendant ce temps, <strong>35 578 apps générées</strong> s'ouvrent sans authentification et une RCE Apache se corrige en 2.4.71 — la dette de génération est déjà devenue surface publique. En face, United ferme ses réservations aux agents quand l'épargne-retraite alimente la valorisation : le débat se déplace de ce que l'agent sait faire vers <em>qui a le droit d'agir</em>."
+    "headline": "Le contrôle migre du modèle vers ce qui l'exécute",
+    "narrative": "<strong>Edge0-145B</strong> et <code>smolmaxxing</code> ramènent la capacité frontière sur le poste, mais le runtime qui l'arbitre reste tenu par un tiers — la confiance se déplace des poids signés aux secrets maîtres. Le même jour, Apache, Node, MongoDB, Quay et Citrix publient leurs correctifs : la découverte s'industrialise, le déploiement reste manuel, et c'est le parc qui tranche. Pendant que Microsoft 365 tombe et que les crédits SLA se réclament à la main, le DIY oppose deux issues au verrou matériel, ouvrir le masque avec <strong>Baochip</strong> ou décrire la serrure du <strong>BIONZ X</strong>. La facture, elle, change de camp : Chicago refuse l'IA imposée et les ruraux paient l'électricité des data centers."
   },
   "currents": [
     {
-      "label": "Le garde-fou migre du prompt vers l'exécution",
-      "note": "Backdoor sous le prompt, politiques runtime de Bay, épinglage SHA des actions, fenêtre de patch Apache : la sécurité se déplace de ce que dit le modèle vers ce que la chaîne exécute.",
+      "label": "Le contrôle se déplace du modèle vers le runtime et la clé",
+      "note": "Poids signés, runtime local, secrets maîtres, sessions vivantes : la confiance quitte le réglage de déploiement pour l'intégrité de ce qui s'exécute et de qui peut le prouver.",
       "categories": [
         "ia",
         "infosec",
@@ -15,29 +15,28 @@
       ]
     },
     {
-      "label": "La dette de génération devient surface publique",
-      "note": "Agents qui écrivent le code, 35 578 apps Grok ouvertes sans auth, EEG entraîné sans consentement : ce qui est produit sans relecture finit exposé, et personne ne répond.",
+      "label": "Le défaut par configuration devient la faille",
+      "note": "HTTP/2 actif par défaut chez Apache et Node, M365 sur un seul socle Azure, clés semées par l'horloge : ce qui n'a pas été choisi décide de la faille.",
+      "categories": [
+        "infosec",
+        "devops"
+      ]
+    },
+    {
+      "label": "L'autonomie se paie en local",
+      "note": "Edge0, smolmaxxing, Baochip, Coway : on rapatrie la capacité et le contrôle, mais la facture (électricité, SLA, clés) change de camp sans disparaître.",
       "categories": [
         "ia",
-        "infosec",
+        "diy",
         "societe"
       ]
     },
     {
-      "label": "L'accès se marchande, la capacité se gate",
-      "note": "Mythos réservé aux vetted, agents refusés par United, robots.txt réécrit, ACR des TV : le débat quitte la capacité pour le droit d'agir et pour qui l'accorde.",
+      "label": "La preuve remplace l'outil",
+      "note": "ConfGoOne, PDF Veracode, forensique des checkpoints, crédit SLA à réclamer : ce qui compte est la trace opposable, pas l'outil qui la produit.",
       "categories": [
-        "ia",
-        "societe",
-        "infosec"
-      ]
-    },
-    {
-      "label": "Reprendre la main sur la machine",
-      "note": "Glitching A100, pile cloud remontée chez soi, émulateur Zig, fingerprinting Firefox : bricoler, héberger, réécrire pour rester propriétaire de ce qu'on exécute.",
-      "categories": [
-        "diy",
         "devops",
+        "infosec",
         "societe"
       ]
     }
@@ -47,121 +46,121 @@
       "label": "Agents IA banalisés",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "momentum": "stable",
-      "note": "48 agents trouvent une structure maya en 72 h ; AWS déplace le métier vers la spécification et la vérification, plus vers l'écriture."
-    },
-    {
-      "label": "Vérification formelle assistée par IA",
-      "category": "ia",
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-11",
-      "momentum": "stable",
-      "note": "Aucun signal ce jour ; le fil reste la preuve bornée au build et son entrée en CI comme gate de release."
+      "note": "AgentRun auto-améliorant et Modern Web Guidance : l'agent devient un composant qu'on outille et qu'on révise, pas un assistant qu'on croit."
     },
     {
       "label": "Soupçons de bridage et confiance modèle",
       "category": "ia",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-12",
-      "momentum": "stable",
-      "note": "Backdoor implantée en modifiant moins de 10 neurones : la confiance quitte le réglage de déploiement pour l'intégrité des poids."
+      "last_seen": "2026-11-13",
+      "momentum": "montant",
+      "note": "La forensique des checkpoints lit l'empreinte des GPU sous contrôle export ; Libreagi veut sauver les poids. Provenance = contrôle de release."
     },
     {
       "label": "Le coût d'inférence comme champ de bataille",
       "category": "ia",
       "first_seen": "2026-11-08",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "momentum": "montant",
-      "note": "Apple attaque le coût par la récupération RAG et la distillation Attention vers Mamba ; tinyGPT ouvre le capot. Inspecter et payer."
+      "note": "Edge0-145B et smolmaxxing font tourner la capacité frontière en local, Apple publie Foundation Models : le runtime devient le point de contrôle."
     },
     {
       "label": "Contrôle d'exécution des agents",
       "category": "ia",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-12",
-      "momentum": "nouveau",
-      "note": "Bay lève 50 M$ pour approuver, bloquer, rediriger chaque action ; agent-audit-kit et agent-airlock côté open source."
+      "last_seen": "2026-11-13",
+      "momentum": "montant",
+      "note": "Anthropic retire une fonction sans préavis (issue 109446), l'écosystème s'outille seul : qui décide de ce que l'agent peut faire."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-12",
-      "momentum": "montant",
-      "note": "35 578 apps Grok sur 37 571 ouvertes sans auth, AntiFox rebondit vers AWS, l'agent Token casse trois règles par défaut."
+      "last_seen": "2026-11-13",
+      "momentum": "stable",
+      "note": "Aucun signal ce jour ; le fil reste les apps générées exposées sans auth et les règles par défaut cassées par l'agent Token."
     },
     {
       "label": "Chaîne d'approvisionnement : le tiers devient la porte",
       "category": "infosec",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "momentum": "montant",
-      "note": "ScreenConnect : 288 endpoints via clients pirates, cinq extensions coupées ; le vecteur est le canal tiers, pas la CVE."
+      "note": "CloudFire détourne Google Calendar et des sessions vivantes, Quay expose ses clés de signature : le canal de confiance est l'arme."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "momentum": "montant",
-      "note": "CVE-2026-119618 : RCE non auth dans mod_http2, correctif en 2.4.71 ; c'est le parc installé qui tranche, pas le score."
+      "note": "Apache mod_http2, MongoDB, Quay, Citrix, Node.js 16 failles le même jour : le correctif existe, c'est le parc qui tranche."
+    },
+    {
+      "label": "Secrets maîtres à faible entropie",
+      "category": "infosec",
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "momentum": "nouveau",
+      "note": "Open WebUI sème sa clé avec rand() à la seconde, InfiniteWP n'a que 31 bits, Home Assistant ne révoque rien : la clé naît d'une horloge."
     },
     {
       "label": "La pile cloud se remonte chez soi",
       "category": "devops",
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "momentum": "montant",
-      "note": "Tunnel SSH, tmux retrouvé, Atuin Threads : le poste d'ops devient une constellation de sessions à reprendre et à auditer."
+      "note": "ConfGoOne audite hors ligne, ShiftLab simule le SOC, Veracode est remplacé : l'audit et la preuve rentrent à la maison."
     },
     {
       "label": "La CI se verrouille par hash",
       "category": "devops",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
+      "momentum": "stable",
+      "note": "Aucun signal ce jour ; l'épinglage SHA reste la réponse au canal tiers, la surface n'est plus le binaire mais les lignes uses:."
+    },
+    {
+      "label": "Panne unique, trois 9 perdus",
+      "category": "devops",
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
       "momentum": "nouveau",
-      "note": "Épingler chaque action GitHub par SHA plutôt que par tag : la surface n'est plus le binaire produit mais les lignes uses:."
+      "note": "M365 et Azure tombent ensemble, 99,8 % sur l'année, le crédit SLA se réclame à la main : la redondance est une procédure."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "momentum": "montant",
-      "note": "Glitching de tension : une carte minière rend son A100 entier. Le SKU se joue dans le firmware, pas dans le masque de gravure."
-    },
-    {
-      "label": "SDR pirate et firmware grand public",
-      "category": "diy",
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-12",
-      "momentum": "montant",
-      "note": "D325f-SDR 2.0, MultiScan pseudo-spectre, ATS Mini dans le navigateur : le front-end RF recule devant le logiciel."
+      "note": "Coway, Ray-Ban, Wonderboom : le cloud tombe, le firmware résiste. Baochip-1x porte l'ouverture jusqu'au masque 22 nm."
     },
     {
       "label": "Reconstruire pour comprendre",
       "category": "diy",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-12",
-      "momentum": "nouveau",
-      "note": "Émulateur CPU 32 bits en Zig, Elite sur Commodore Pet, Pong en CHIP-8 : réécrire la pile pour la relire, à contre-courant."
+      "last_seen": "2026-11-13",
+      "momentum": "montant",
+      "note": "Émulation clean-room du BIONZ X, 1476 tests, boot non revendiqué : décrire la serrure plutôt que la forcer."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-12",
+      "last_seen": "2026-11-13",
       "momentum": "montant",
-      "note": "EEG Muse entraîné sans le dire, 17 questions aux TV, fingerprinting Firefox, fichiers d'identité détournés : consentement réaffecté."
+      "note": "Penlink Webloc reconstitue 12 mois de déplacements, LQDN attaque, Google affiche la confidentialité de ses lunettes."
     },
     {
       "label": "Agents refusés et bulle IA",
       "category": "societe",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-12",
-      "momentum": "nouveau",
-      "note": "United Airlines ferme ses réservations aux agents quand l'épargne-retraite alimente la valorisation : même objet, deux camps."
+      "last_seen": "2026-11-13",
+      "momentum": "montant",
+      "note": "Chicago préfère perdre Search, Retailleau chiffre 300 000 postes, l'électricité des DC est payée par les ruraux."
     }
   ],
   "watchlist": [
@@ -169,69 +168,69 @@
       "label": "Preuves forensiques des agents de code",
       "category": "ia",
       "since": "2026-11-09",
-      "note": "Atuin Threads synchronise les sessions d'agents sur toutes les machines : la reprise est outillée, la traçabilité reste à inventer."
+      "note": "Atuin Threads synchronise les sessions d'agents ; AgentRun revendique l'auto-amélioration. La reprise est outillée, la traçabilité reste à inventer."
     },
     {
       "label": "Modèles armés à accès restreint",
       "category": "ia",
       "since": "2026-11-11",
-      "note": "Mythos 5.2 réservé aux vetted : une capacité offensive gatée par le fournisseur crée un marché à deux vitesses, sans règle publique."
+      "note": "Mythos 5.2 réservé aux vetted face à Edge0 en local : une capacité offensive gatée par le fournisseur crée un marché à deux vitesses."
     },
     {
-      "label": "Backdoor sous le prompt",
+      "label": "Le runtime, nouveau point de contrôle",
       "category": "ia",
-      "since": "2026-11-12",
-      "note": "Moins de 10 neurones suffisent à armer un agent : si les poids sont la surface, l'intégrité du modèle devient un contrôle de release."
+      "since": "2026-11-13",
+      "note": "Edge0 tourne sur l'ordinateur de l'utilisateur mais le runtime arbitre : posséder le silicium ne suffit plus si la plateforme décide."
     },
     {
       "label": "Dump coordonné et canal tiers comme levier",
       "category": "infosec",
       "since": "2026-11-11",
-      "note": "Après N-central, ScreenConnect : couper les extensions tierces devient la réponse réflexe ; le rapport de force éditeur/chercheur se durcit."
+      "note": "Après N-central et ScreenConnect, CloudFire : le canal tiers de confiance devient le vecteur ; couper les extensions reste le réflexe."
     },
     {
       "label": "Errata et verrous silicium",
       "category": "diy",
       "since": "2026-11-09",
-      "note": "RISAF5 sur STM32MP2, glitching A100 : le matériel arbitre ce qui est permis, et l'errata devient un contournement de TrustZone."
+      "note": "RISAF5 sur STM32MP2, glitching A100, Baochip mostly-open : le matériel arbitre ce qui est permis, l'errata devient contournement."
     },
     {
       "label": "robots.txt comme protocole de consentement IA",
       "category": "societe",
       "since": "2026-11-07",
-      "note": "Hyperscalers, EEG Muse, ACR des TV : le filtrage se déplace côté fournisseur, la protection devient une faveur technique."
+      "note": "Hyperscalers, EEG Muse, ACR des TV, lunettes Google : le filtrage se déplace côté fournisseur, la protection devient une faveur technique."
     },
     {
-      "label": "Alarme fantôme et site unique",
-      "category": "devops",
-      "since": "2026-11-12",
-      "note": "Un faux détecteur de fumée a failli noyer le seul DC new-yorkais de Jane Street : la redondance est une procédure, pas un onduleur."
+      "label": "Gouvernance Nvidia et enquête Singapour",
+      "category": "societe",
+      "since": "2026-11-13",
+      "note": "Huang démissionne, Singapour juge Washington peu coopératif, la question à 1000 Md$ : la gouvernance Nvidia devient un sujet politique."
     }
   ],
   "tensions": [
     {
       "label": "IA défensive vs IA infrastructure d'intrusion",
-      "note": "AntiFox, plateforme de pentest agentique, sert de tremplin vers des identifiants AWS de prod quand Mythos chasse les failles à accès restreint : même socle, deux camps, garde-fou réglable."
+      "note": "AntiFox, pentest agentique, sert de tremplin vers des identifiants AWS de prod quand Mythos chasse les failles à accès restreint : même socle, deux camps, garde-fou réglable."
     },
     {
       "label": "Découverte automatisée vs remédiation calendaire",
-      "note": "Une RCE Apache corrigée en 2.4.71 le 11 novembre, 1200 correctifs en un jour ailleurs : la découverte s'industrialise, le déploiement du patch reste manuel et dépend du parc."
+      "note": "Une RCE Apache corrigée en 2.4.71, Node, MongoDB, Quay et Citrix le même jour : la découverte s'industrialise, le déploiement du patch reste manuel et dépend du parc."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
-      "note": "L'agent Token casse identité, privilèges et traçabilité dès qu'il agit en session authentifiée, United lui ferme ses réservations : à embarquer et à contenir en même temps."
-    },
-    {
-      "label": "Productivité promise vs dette de compréhension",
-      "note": "58 % livrent plus vite que leur revue, 35 578 apps générées s'ouvrent sans authentification : le gain de vitesse se convertit directement en surface d'attaque publique."
+      "note": "L'agent Token casse identité, privilèges et traçabilité en session authentifiée, Anthropic retire une brique sans préavis : à embarquer et à contenir en même temps."
     },
     {
       "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "Artefacts de preuve publiés et Gemini élargi d'un côté, Mythos réservé aux vetted et agents refusés par United de l'autre : l'ouverture choisit ses bénéficiaires."
+      "note": "Artefacts de preuve publiés et Edge0 en local d'un côté, Mythos réservé aux vetted et agents refusés par United de l'autre : l'ouverture choisit ses bénéficiaires."
     },
     {
       "label": "Propriété du matériel vs verrou firmware",
-      "note": "Une carte minière contient un A100 entier que seul le glitching libère : on possède le silicium, le vendeur garde la décision de ce qu'il exécute."
+      "note": "Une carte minière contient un A100 que seul le glitching libère, un Wonderboom résiste à toute extraction : on possède le silicium, le vendeur garde la décision."
+    },
+    {
+      "label": "Le local promet l'autonomie, la clé reste au vendeur",
+      "note": "Edge0 promet la capacité sur son propre ordinateur, Home Assistant s'auto-héberge, mais le runtime et les jetons restent tenus par le fournisseur : le local déplace la dépendance."
     }
   ]
 }

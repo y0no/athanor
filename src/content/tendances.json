@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-11-13",
+  "updated_at": "2026-11-14",
   "synthesis": {
-    "headline": "Le contrôle migre du modèle vers ce qui l'exécute",
-    "narrative": "<strong>Edge0-145B</strong> et <code>smolmaxxing</code> ramènent la capacité frontière sur le poste, mais le runtime qui l'arbitre reste tenu par un tiers — la confiance se déplace des poids signés aux secrets maîtres. Le même jour, Apache, Node, MongoDB, Quay et Citrix publient leurs correctifs : la découverte s'industrialise, le déploiement reste manuel, et c'est le parc qui tranche. Pendant que Microsoft 365 tombe et que les crédits SLA se réclament à la main, le DIY oppose deux issues au verrou matériel, ouvrir le masque avec <strong>Baochip</strong> ou décrire la serrure du <strong>BIONZ X</strong>. La facture, elle, change de camp : Chicago refuse l'IA imposée et les ruraux paient l'électricité des data centers."
+    "headline": "On ne casse plus la clé, on prend celui qui la détient",
+    "narrative": "Le même jour, un hôte malveillant lit les VM SEV-SNP et forge leur attestation, un agent aligné est trompé par les faits qu'on lui masque, et un Trezor revendu exfiltre sa phrase de récupération. <strong>La clé n'est jamais cassée : elle est obtenue, signée ou recopiée</strong>, ce qui déplace la défense du chiffrement vers la chaîne d'approvisionnement et le runtime. En face, 65 universités suisses quittent Drive pour Nextcloud en 32 heures pendant que M365 tombe mondialement : la sortie du cloud se planifie, la panne se réclame à la main. Et tandis que les modèles généraux absorbent robotique et mathématiques, le matériel se reprend à la main, du Hackintosh ressuscité au Borland reconstruit à l'octet près."
   },
   "currents": [
     {
-      "label": "Le contrôle se déplace du modèle vers le runtime et la clé",
-      "note": "Poids signés, runtime local, secrets maîtres, sessions vivantes : la confiance quitte le réglage de déploiement pour l'intégrité de ce qui s'exécute et de qui peut le prouver.",
+      "label": "La confiance migre du modèle vers l'hôte et la clé",
+      "note": "Fog trompe l'agent par ses faits, Mior lit la VM par l'hôte, Trezor livre la phrase par le revendeur : le rempart est toujours en aval du chiffrement.",
       "categories": [
         "ia",
         "infosec",
@@ -15,28 +15,27 @@
       ]
     },
     {
-      "label": "Le défaut par configuration devient la faille",
-      "note": "HTTP/2 actif par défaut chez Apache et Node, M365 sur un seul socle Azure, clés semées par l'horloge : ce qui n'a pas été choisi décide de la faille.",
+      "label": "L'automatisation gagne la fabrique, pas le résultat",
+      "note": "Workers parallèles, agent-desktop sans écran, mais Blow constate un logiciel inchangé et M365 tombe : le gain est dans la production, pas dans la promesse.",
       "categories": [
-        "infosec",
+        "ia",
         "devops"
       ]
     },
     {
-      "label": "L'autonomie se paie en local",
-      "note": "Edge0, smolmaxxing, Baochip, Coway : on rapatrie la capacité et le contrôle, mais la facture (électricité, SLA, clés) change de camp sans disparaître.",
+      "label": "Le verrou se déplace du silicium vers le firmware",
+      "note": "Stela contourne Apple, le 8BitDo se reflashe, SEV-SNP cède à son hôte : posséder le matériel ne décide plus de ce qu'il exécute.",
       "categories": [
-        "ia",
         "diy",
-        "societe"
+        "infosec",
+        "devops"
       ]
     },
     {
-      "label": "La preuve remplace l'outil",
-      "note": "ConfGoOne, PDF Veracode, forensique des checkpoints, crédit SLA à réclamer : ce qui compte est la trace opposable, pas l'outil qui la produit.",
+      "label": "La sortie du cloud devient une procédure",
+      "note": "585 To vers Nextcloud en 32 h, bhyve en live-migration, pendant que M365 tombe et que Google révoque Search : l'autonomie se planifie ou se subit.",
       "categories": [
         "devops",
-        "infosec",
         "societe"
       ]
     }
@@ -46,121 +45,121 @@
       "label": "Agents IA banalisés",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-13",
-      "momentum": "stable",
-      "note": "AgentRun auto-améliorant et Modern Web Guidance : l'agent devient un composant qu'on outille et qu'on révise, pas un assistant qu'on croit."
+      "last_seen": "2026-11-14",
+      "momentum": "montant",
+      "note": "Claude Code lance des workers parallèles sans supervision, agent-desktop pilote sans écran : l'agent change d'échelle, pas le logiciel produit."
     },
     {
-      "label": "Soupçons de bridage et confiance modèle",
+      "label": "Contrôle d'exécution des agents",
       "category": "ia",
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-13",
+      "first_seen": "2026-11-12",
+      "last_seen": "2026-11-14",
       "momentum": "montant",
-      "note": "La forensique des checkpoints lit l'empreinte des GPU sous contrôle export ; Libreagi veut sauver les poids. Provenance = contrôle de release."
+      "note": "Fog trompe un agent aligné en masquant les faits, un déclencheur codé en dur passe dans Claude Code : le harnais est la faille."
     },
     {
       "label": "Le coût d'inférence comme champ de bataille",
       "category": "ia",
       "first_seen": "2026-11-08",
       "last_seen": "2026-11-13",
-      "momentum": "montant",
-      "note": "Edge0-145B et smolmaxxing font tourner la capacité frontière en local, Apple publie Foundation Models : le runtime devient le point de contrôle."
+      "momentum": "stable",
+      "note": "Aucun signal ce jour ; Edge0 et Apple FM ont installé le runtime comme point de contrôle, la capacité frontière tourne en local."
     },
     {
-      "label": "Contrôle d'exécution des agents",
+      "label": "Le modèle général absorbe les disciplines",
       "category": "ia",
-      "first_seen": "2026-11-12",
-      "last_seen": "2026-11-13",
-      "momentum": "montant",
-      "note": "Anthropic retire une fonction sans préavis (issue 109446), l'écosystème s'outille seul : qui décide de ce que l'agent peut faire."
+      "first_seen": "2026-11-14",
+      "last_seen": "2026-11-14",
+      "momentum": "nouveau",
+      "note": "OpenAI dissout son équipe robotique, 600 expériences mesurent JEPA, l'IA prouve du Gödel : la discipline devient une sortie du modèle général."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-13",
-      "momentum": "stable",
-      "note": "Aucun signal ce jour ; le fil reste les apps générées exposées sans auth et les règles par défaut cassées par l'agent Token."
+      "last_seen": "2026-11-14",
+      "momentum": "montant",
+      "note": "Fog et le déclencheur codé en dur : l'agent se détourne par ses entrées et son harnais, pas par ses poids. L'audit indépendant devient le contrôle."
     },
     {
       "label": "Chaîne d'approvisionnement : le tiers devient la porte",
       "category": "infosec",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-13",
+      "last_seen": "2026-11-14",
       "momentum": "montant",
-      "note": "CloudFire détourne Google Calendar et des sessions vivantes, Quay expose ses clés de signature : le canal de confiance est l'arme."
+      "note": "Trezor revendu avec implant CryptoBilis, N-able exploité via sa Legacy API : le canal de confiance reste l'arme, du revendeur au connecteur."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-13",
+      "last_seen": "2026-11-14",
       "momentum": "montant",
-      "note": "Apache mod_http2, MongoDB, Quay, Citrix, Node.js 16 failles le même jour : le correctif existe, c'est le parc qui tranche."
+      "note": "N-able exploité quelques heures après le PoC sur des serveurs patchés, Patch Tuesday à 1 100 CVE : la fenêtre se compte en heures."
     },
     {
-      "label": "Secrets maîtres à faible entropie",
+      "label": "Le silicium ne protège plus de l'hôte",
       "category": "infosec",
-      "first_seen": "2026-11-13",
-      "last_seen": "2026-11-13",
+      "first_seen": "2026-11-14",
+      "last_seen": "2026-11-14",
       "momentum": "nouveau",
-      "note": "Open WebUI sème sa clé avec rand() à la seconde, InfiniteWP n'a que 31 bits, Home Assistant ne révoque rien : la clé naît d'une horloge."
+      "note": "Mior et Skyfall : un hôte malveillant lit et altère les VM SEV-SNP et forge leur attestation. Le locataire dépend du firmware de son fournisseur."
+    },
+    {
+      "label": "La clé s'obtient, elle ne se casse pas",
+      "category": "infosec",
+      "first_seen": "2026-11-14",
+      "last_seen": "2026-11-14",
+      "momentum": "nouveau",
+      "note": "FaceStealer, EIP-7702, implant Trezor : la clé privée n'est jamais cassée, elle est obtenue ou signée. La défense sort du chiffrement."
     },
     {
       "label": "La pile cloud se remonte chez soi",
       "category": "devops",
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-13",
+      "last_seen": "2026-11-14",
       "momentum": "montant",
-      "note": "ConfGoOne audite hors ligne, ShiftLab simule le SOC, Veracode est remplacé : l'audit et la preuve rentrent à la maison."
-    },
-    {
-      "label": "La CI se verrouille par hash",
-      "category": "devops",
-      "first_seen": "2026-11-12",
-      "last_seen": "2026-11-13",
-      "momentum": "stable",
-      "note": "Aucun signal ce jour ; l'épinglage SHA reste la réponse au canal tiers, la surface n'est plus le binaire mais les lignes uses:."
+      "note": "65 universités suisses bouclent 585 To vers Nextcloud en 32 h, FreeBSD ouvre la live-migration bhyve : l'infra rentre à la maison, méthodiquement."
     },
     {
       "label": "Panne unique, trois 9 perdus",
       "category": "devops",
       "first_seen": "2026-11-13",
-      "last_seen": "2026-11-13",
-      "momentum": "nouveau",
-      "note": "M365 et Azure tombent ensemble, 99,8 % sur l'année, le crédit SLA se réclame à la main : la redondance est une procédure."
+      "last_seen": "2026-11-14",
+      "momentum": "montant",
+      "note": "M365 tombe mondialement le 13, la reprise s'étale, le crédit SLA se réclame à la main : la redondance est une procédure, pas un onduleur."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-13",
+      "last_seen": "2026-11-14",
       "momentum": "montant",
-      "note": "Coway, Ray-Ban, Wonderboom : le cloud tombe, le firmware résiste. Baochip-1x porte l'ouverture jusqu'au masque 22 nm."
+      "note": "Stela ressuscite macOS sur x86, un ESP32 fait tourner X, le 8BitDo se reflashe : le firmware décide de qui possède l'objet."
     },
     {
       "label": "Reconstruire pour comprendre",
       "category": "diy",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-13",
+      "last_seen": "2026-11-14",
       "momentum": "montant",
-      "note": "Émulation clean-room du BIONZ X, 1476 tests, boot non revendiqué : décrire la serrure plutôt que la forcer."
+      "note": "Borland C++ 2.0 reconstruit à l'octet près, tranZPUter en drop-in, une LGA1851 sauvée par une résistance : décrire, réimplémenter, réparer."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-13",
+      "last_seen": "2026-11-14",
       "momentum": "montant",
-      "note": "Penlink Webloc reconstitue 12 mois de déplacements, LQDN attaque, Google affiche la confidentialité de ses lunettes."
+      "note": "Citizen Lab documente la surveillance par la pub, des universités lâchent Flock, le wallet européen fait de l'accès une permission révocable."
     },
     {
-      "label": "Agents refusés et bulle IA",
+      "label": "Bulle IA, rareté organisée et refus",
       "category": "societe",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-13",
+      "last_seen": "2026-11-14",
       "momentum": "montant",
-      "note": "Chicago préfère perdre Search, Retailleau chiffre 300 000 postes, l'électricité des DC est payée par les ruraux."
+      "note": "Nvidia accusé de financer ses clients pour organiser la rareté, 1 Md$ cédé avant l'affaire Huang, Google coupe Search aux écoles."
     }
   ],
   "watchlist": [
@@ -168,7 +167,7 @@
       "label": "Preuves forensiques des agents de code",
       "category": "ia",
       "since": "2026-11-09",
-      "note": "Atuin Threads synchronise les sessions d'agents ; AgentRun revendique l'auto-amélioration. La reprise est outillée, la traçabilité reste à inventer."
+      "note": "Doc-foundry fait écrire les règles de détection par une IA puis les exécute : la preuve devient un artefact, la trace reste à inventer."
     },
     {
       "label": "Modèles armés à accès restreint",
@@ -177,60 +176,66 @@
       "note": "Mythos 5.2 réservé aux vetted face à Edge0 en local : une capacité offensive gatée par le fournisseur crée un marché à deux vitesses."
     },
     {
-      "label": "Le runtime, nouveau point de contrôle",
+      "label": "Le harnais, vraie surface d'attaque",
       "category": "ia",
-      "since": "2026-11-13",
-      "note": "Edge0 tourne sur l'ordinateur de l'utilisateur mais le runtime arbitre : posséder le silicium ne suffit plus si la plateforme décide."
+      "since": "2026-11-14",
+      "note": "Un déclencheur codé en dur obtenu en une session sur Claude Code : l'agent se compromet par son outillage, pas par ses poids."
     },
     {
-      "label": "Dump coordonné et canal tiers comme levier",
+      "label": "Attestation forgée, locataire sans recours",
       "category": "infosec",
-      "since": "2026-11-11",
-      "note": "Après N-central et ScreenConnect, CloudFire : le canal tiers de confiance devient le vecteur ; couper les extensions reste le réflexe."
+      "since": "2026-11-14",
+      "note": "Mior forge le rapport signé de SEV-SNP : si l'attestation ment, le locataire n'a d'autre recours que le firmware de son hôte."
+    },
+    {
+      "label": "Implants dans la chaîne de revente",
+      "category": "infosec",
+      "since": "2026-11-14",
+      "note": "Trois Trezor revendus par CryptoBilis portent une carte fille qui lit la phrase à l'écran : le revendeur entre dans le périmètre de confiance."
     },
     {
       "label": "Errata et verrous silicium",
       "category": "diy",
       "since": "2026-11-09",
-      "note": "RISAF5 sur STM32MP2, glitching A100, Baochip mostly-open : le matériel arbitre ce qui est permis, l'errata devient contournement."
+      "note": "Stela contourne Apple, le 8BitDo se reflashe : le verrou tient au firmware plus qu'au masque, et l'errata devient la porte."
+    },
+    {
+      "label": "FreeBSD rattrape le poste de travail",
+      "category": "devops",
+      "since": "2026-11-14",
+      "note": "Live-migration bhyve et serveur distant de Zed sur BSD : la pile libre comble son retard infra, au prix de contorsions."
     },
     {
       "label": "robots.txt comme protocole de consentement IA",
       "category": "societe",
       "since": "2026-11-07",
-      "note": "Hyperscalers, EEG Muse, ACR des TV, lunettes Google : le filtrage se déplace côté fournisseur, la protection devient une faveur technique."
-    },
-    {
-      "label": "Gouvernance Nvidia et enquête Singapour",
-      "category": "societe",
-      "since": "2026-11-13",
-      "note": "Huang démissionne, Singapour juge Washington peu coopératif, la question à 1000 Md$ : la gouvernance Nvidia devient un sujet politique."
+      "note": "Google révoque Search aux écoles qui refusent l'IA : le filtrage se déplace côté fournisseur, la protection devient une faveur technique."
     }
   ],
   "tensions": [
     {
       "label": "IA défensive vs IA infrastructure d'intrusion",
-      "note": "AntiFox, pentest agentique, sert de tremplin vers des identifiants AWS de prod quand Mythos chasse les failles à accès restreint : même socle, deux camps, garde-fou réglable."
+      "note": "Fog montre qu'un agent aligné se trompe par ses entrées, Doc-foundry prouve ses détections en les exécutant, et le même harnais produit un déclencheur caché : même socle, garde-fou réglable."
     },
     {
       "label": "Découverte automatisée vs remédiation calendaire",
-      "note": "Une RCE Apache corrigée en 2.4.71, Node, MongoDB, Quay et Citrix le même jour : la découverte s'industrialise, le déploiement du patch reste manuel et dépend du parc."
+      "note": "N-able exploité quelques heures après le PoC sur des serveurs patchés, Patch Tuesday à 1 100 CVE : la découverte s'industrialise, le déploiement reste manuel et dépend du parc."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
-      "note": "L'agent Token casse identité, privilèges et traçabilité en session authentifiée, Anthropic retire une brique sans préavis : à embarquer et à contenir en même temps."
+      "note": "Claude Code lance des workers parallèles sans supervision quand un déclencheur codé en dur s'obtient en une session : à faire tourner plus vite et à contenir en même temps."
+    },
+    {
+      "label": "Automatisation de la fabrique vs stagnation du produit",
+      "note": "Blow demande pourquoi le logiciel n'a pas bougé si l'IA a résolu le code, pendant que les agents changent d'échelle : le gain est dans la production, pas dans le résultat."
     },
     {
       "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "Artefacts de preuve publiés et Edge0 en local d'un côté, Mythos réservé aux vetted et agents refusés par United de l'autre : l'ouverture choisit ses bénéficiaires."
+      "note": "Edge0 en local et artefacts de preuve publiés d'un côté, Mythos réservé aux vetted et Search révoqué aux écoles de l'autre : l'ouverture choisit ses bénéficiaires."
     },
     {
-      "label": "Propriété du matériel vs verrou firmware",
-      "note": "Une carte minière contient un A100 que seul le glitching libère, un Wonderboom résiste à toute extraction : on possède le silicium, le vendeur garde la décision."
-    },
-    {
-      "label": "Le local promet l'autonomie, la clé reste au vendeur",
-      "note": "Edge0 promet la capacité sur son propre ordinateur, Home Assistant s'auto-héberge, mais le runtime et les jetons restent tenus par le fournisseur : le local déplace la dépendance."
+      "label": "Propriété du matériel vs arbitrage de l'hôte",
+      "note": "Un Trezor revendu livre sa phrase, une VM SEV-SNP cède à son hyperviseur, un Hackintosh ressuscite macOS : posséder l'objet ne décide plus de ce qu'il fait."
     }
   ]
 }

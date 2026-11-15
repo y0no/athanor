@@ -1,42 +1,43 @@
 {
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-15",
   "synthesis": {
-    "headline": "On ne casse plus la clé, on prend celui qui la détient",
-    "narrative": "Le même jour, un hôte malveillant lit les VM SEV-SNP et forge leur attestation, un agent aligné est trompé par les faits qu'on lui masque, et un Trezor revendu exfiltre sa phrase de récupération. <strong>La clé n'est jamais cassée : elle est obtenue, signée ou recopiée</strong>, ce qui déplace la défense du chiffrement vers la chaîne d'approvisionnement et le runtime. En face, 65 universités suisses quittent Drive pour Nextcloud en 32 heures pendant que M365 tombe mondialement : la sortie du cloud se planifie, la panne se réclame à la main. Et tandis que les modèles généraux absorbent robotique et mathématiques, le matériel se reprend à la main, du Hackintosh ressuscité au Borland reconstruit à l'octet près."
+    "headline": "La confiance quitte le modèle pour le harnais",
+    "narrative": "GLM-5.3 et DeepSeek V3 banalisent les poids, mais la valeur migre vers le <strong>service</strong>, la passerelle et le harnais qui font tourner l'agent. Au même moment, un ZIP exécute des hooks Git, Lovable expose ses utilisateurs et PostgreSQL livre 52 CVE d'un coup : la couche d'exécution est devenue le point de contrôle et la surface d'attaque. Côté DIY et régulation, le firmware et la procédure décident pareillement de qui possède l'objet et de qui organise le manque."
   },
   "currents": [
     {
-      "label": "La confiance migre du modèle vers l'hôte et la clé",
-      "note": "Fog trompe l'agent par ses faits, Mior lit la VM par l'hôte, Trezor livre la phrase par le revendeur : le rempart est toujours en aval du chiffrement.",
+      "label": "Le harnais devient le point de contrôle",
+      "note": "Magpie route les modèles, Gawain type le Python, Turbo-Browser-MCP garde les soumissions, un ZIP cache des hooks Git : la couche d'exécution est à la fois le produit et la faille.",
       "categories": [
         "ia",
+        "devops",
+        "infosec"
+      ]
+    },
+    {
+      "label": "La confiance se déplace vers ce qui s'inspecte",
+      "note": "L'IRS ouvre son code, PyPI affiche des signaux, l'EFF exige un mandat, l'ICO trace les consultations : la preuve passe de l'audit interne à l'interface publique.",
+      "categories": [
+        "devops",
         "infosec",
-        "devops"
+        "societe"
       ]
     },
     {
-      "label": "L'automatisation gagne la fabrique, pas le résultat",
-      "note": "Workers parallèles, agent-desktop sans écran, mais Blow constate un logiciel inchangé et M365 tombe : le gain est dans la production, pas dans la promesse.",
+      "label": "La rareté et la clé deviennent des objets de procédure",
+      "note": "Le dossier DRAM survit au rejet, Nvidia est visé pour financements circulaires, le DOJ saisit 1,2 Md$ : le marché et la clé sortent du technique pour entrer au pénal.",
       "categories": [
-        "ia",
-        "devops"
+        "societe",
+        "infosec"
       ]
     },
     {
-      "label": "Le verrou se déplace du silicium vers le firmware",
-      "note": "Stela contourne Apple, le 8BitDo se reflashe, SEV-SNP cède à son hôte : posséder le matériel ne décide plus de ce qu'il exécute.",
+      "label": "Le firmware décide de qui possède l'objet",
+      "note": "DIVINER sur Cardputer, DSP sur ESP32, errata VHDL, cœur RV64 ouvert : le silicium est un canevas, la valeur est dans ce qu'on y flashe et ce qu'on audite.",
       "categories": [
         "diy",
         "infosec",
         "devops"
-      ]
-    },
-    {
-      "label": "La sortie du cloud devient une procédure",
-      "note": "585 To vers Nextcloud en 32 h, bhyve en live-migration, pendant que M365 tombe et que Google révoque Search : l'autonomie se planifie ou se subit.",
-      "categories": [
-        "devops",
-        "societe"
       ]
     }
   ],
@@ -45,121 +46,121 @@
       "label": "Agents IA banalisés",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-14",
+      "last_seen": "2026-11-15",
       "momentum": "montant",
-      "note": "Claude Code lance des workers parallèles sans supervision, agent-desktop pilote sans écran : l'agent change d'échelle, pas le logiciel produit."
+      "note": "Agweb donne un navigateur aux agents, Magpie une passerelle locale : le modèle devient interchangeable, l'outillage propre devient le produit."
     },
     {
       "label": "Contrôle d'exécution des agents",
       "category": "ia",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-14",
+      "last_seen": "2026-11-15",
       "momentum": "montant",
-      "note": "Fog trompe un agent aligné en masquant les faits, un déclencheur codé en dur passe dans Claude Code : le harnais est la faille."
+      "note": "Magpie route les modèles, Gawain type le Python, Turbo-Browser-MCP garde les soumissions : le garde-fou remonte dans l'outillage."
     },
     {
       "label": "Le coût d'inférence comme champ de bataille",
       "category": "ia",
       "first_seen": "2026-11-08",
-      "last_seen": "2026-11-13",
-      "momentum": "stable",
-      "note": "Aucun signal ce jour ; Edge0 et Apple FM ont installé le runtime comme point de contrôle, la capacité frontière tourne en local."
-    },
-    {
-      "label": "Le modèle général absorbe les disciplines",
-      "category": "ia",
-      "first_seen": "2026-11-14",
-      "last_seen": "2026-11-14",
-      "momentum": "nouveau",
-      "note": "OpenAI dissout son équipe robotique, 600 expériences mesurent JEPA, l'IA prouve du Gödel : la discipline devient une sortie du modèle général."
+      "last_seen": "2026-11-15",
+      "momentum": "montant",
+      "note": "GLM-5.3 tient 607 tok/s sur deux DGX via vLLM, DeepSeek V3 se réimplémente en 200 lignes de Jax : la barrière passe du poids au service."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-14",
+      "last_seen": "2026-11-15",
       "momentum": "montant",
-      "note": "Fog et le déclencheur codé en dur : l'agent se détourne par ses entrées et son harnais, pas par ses poids. L'audit indépendant devient le contrôle."
+      "note": "Un ZIP cache des hooks Git exécutés au premier git status ; les submit guards de MCP : l'entrée et l'outillage restent la faille de l'agent."
     },
     {
       "label": "Chaîne d'approvisionnement : le tiers devient la porte",
       "category": "infosec",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-14",
+      "last_seen": "2026-11-15",
       "momentum": "montant",
-      "note": "Trezor revendu avec implant CryptoBilis, N-able exploité via sa Legacy API : le canal de confiance reste l'arme, du revendeur au connecteur."
+      "note": "Lovable expose passeports et 200k messages, Uber via Fireworks AI : la plateforme générée et le sous-traitant entrent au périmètre."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-14",
+      "last_seen": "2026-11-15",
       "momentum": "montant",
-      "note": "N-able exploité quelques heures après le PoC sur des serveurs patchés, Patch Tuesday à 1 100 CVE : la fenêtre se compte en heures."
+      "note": "100k CVE annuelles, PostgreSQL livre 52 correctifs d'un coup, UnrealIRCd au KEV : le débit de découverte dépasse l'absorption des équipes."
+    },
+    {
+      "label": "La clé s'obtient, elle ne se casse pas",
+      "category": "infosec",
+      "first_seen": "2026-11-14",
+      "last_seen": "2026-11-15",
+      "momentum": "montant",
+      "note": "Le DOJ saisit 1,2 Md$, Unocoin voit son backup multisig exploité : après qui peut signer, la question devient qui peut restaurer."
     },
     {
       "label": "Le silicium ne protège plus de l'hôte",
       "category": "infosec",
       "first_seen": "2026-11-14",
       "last_seen": "2026-11-14",
-      "momentum": "nouveau",
-      "note": "Mior et Skyfall : un hôte malveillant lit et altère les VM SEV-SNP et forge leur attestation. Le locataire dépend du firmware de son fournisseur."
-    },
-    {
-      "label": "La clé s'obtient, elle ne se casse pas",
-      "category": "infosec",
-      "first_seen": "2026-11-14",
-      "last_seen": "2026-11-14",
-      "momentum": "nouveau",
-      "note": "FaceStealer, EIP-7702, implant Trezor : la clé privée n'est jamais cassée, elle est obtenue ou signée. La défense sort du chiffrement."
+      "momentum": "stable",
+      "note": "Aucun signal ce jour ; Mior et Skyfall ont montré qu'un hôte lit et forge l'attestation SEV-SNP : le locataire dépend du firmware."
     },
     {
       "label": "La pile cloud se remonte chez soi",
       "category": "devops",
       "first_seen": "2026-11-11",
       "last_seen": "2026-11-14",
-      "momentum": "montant",
-      "note": "65 universités suisses bouclent 585 To vers Nextcloud en 32 h, FreeBSD ouvre la live-migration bhyve : l'infra rentre à la maison, méthodiquement."
+      "momentum": "stable",
+      "note": "Aucun signal ce jour ; les universités suisses ont bouclé 585 To vers Nextcloud, FreeBSD ouvre bhyve : l'infra rentre à la maison."
     },
     {
-      "label": "Panne unique, trois 9 perdus",
+      "label": "La transparence comme interface de confiance",
       "category": "devops",
-      "first_seen": "2026-11-13",
-      "last_seen": "2026-11-14",
-      "momentum": "montant",
-      "note": "M365 tombe mondialement le 13, la reprise s'étale, le crédit SLA se réclame à la main : la redondance est une procédure, pas un onduleur."
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-15",
+      "momentum": "nouveau",
+      "note": "L'IRS ouvre le code de sa télédéclaration, PyPI refait ses pages autour de signaux de sécurité : ce qui se voit fait office de preuve."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-14",
+      "last_seen": "2026-11-15",
       "momentum": "montant",
-      "note": "Stela ressuscite macOS sur x86, un ESP32 fait tourner X, le 8BitDo se reflashe : le firmware décide de qui possède l'objet."
+      "note": "DIVINER transforme le Cardputer en synthé, un DSP simule la lampe sur ESP32 : le firmware décide de l'instrument, la carte est un canevas."
     },
     {
       "label": "Reconstruire pour comprendre",
       "category": "diy",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-14",
+      "last_seen": "2026-11-15",
       "momentum": "montant",
-      "note": "Borland C++ 2.0 reconstruit à l'octet près, tranZPUter en drop-in, une LGA1851 sauvée par une résistance : décrire, réimplémenter, réparer."
+      "note": "Hazeltine réparé, Score Perfect extrait en quatre ans, BASIC du Apple 1 reconstitué : la couche lisible décide de la survie."
+    },
+    {
+      "label": "Errata et specs non auditées",
+      "category": "diy",
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-15",
+      "momentum": "montant",
+      "note": "sqrt(2) faux dans le package VHDL standard, cœur RV64IMAFDV ouvert qui fait tourner Linux : ce qui est normalisé n'est pas vérifié."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-14",
+      "last_seen": "2026-11-15",
       "momentum": "montant",
-      "note": "Citizen Lab documente la surveillance par la pub, des universités lâchent Flock, le wallet européen fait de l'accès une permission révocable."
+      "note": "L'EFF exige un mandat pour l'ALPR, l'ICO poursuit 300 consultations : le curseur passe à qui doit rendre des comptes sur chaque requête."
     },
     {
       "label": "Bulle IA, rareté organisée et refus",
       "category": "societe",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-14",
+      "last_seen": "2026-11-15",
       "momentum": "montant",
-      "note": "Nvidia accusé de financer ses clients pour organiser la rareté, 1 Md$ cédé avant l'affaire Huang, Google coupe Search aux écoles."
+      "note": "Le dossier DRAM survit au rejet, Nvidia accusé de financements circulaires : la rareté organisée passe du soupçon à l'instruction."
     }
   ],
   "watchlist": [
@@ -176,34 +177,34 @@
       "note": "Mythos 5.2 réservé aux vetted face à Edge0 en local : une capacité offensive gatée par le fournisseur crée un marché à deux vitesses."
     },
     {
-      "label": "Le harnais, vraie surface d'attaque",
+      "label": "La passerelle locale d'agents",
       "category": "ia",
-      "since": "2026-11-14",
-      "note": "Un déclencheur codé en dur obtenu en une session sur Claude Code : l'agent se compromet par son outillage, pas par ses poids."
+      "since": "2026-11-15",
+      "note": "Magpie fait tourner Codex sur DeepSeek et Claude Code sur Kimi depuis la barre de menus : le routage local devient le point de contrôle."
     },
     {
-      "label": "Attestation forgée, locataire sans recours",
+      "label": "L'archive reçue exécute du code",
       "category": "infosec",
-      "since": "2026-11-14",
-      "note": "Mior forge le rapport signé de SEV-SNP : si l'attestation ment, le locataire n'a d'autre recours que le firmware de son hôte."
+      "since": "2026-11-15",
+      "note": "Un ZIP d'offre d'emploi embarque des hooks Git qui s'exécutent au premier git status : la pièce jointe redevient un vecteur d'exécution."
     },
     {
-      "label": "Implants dans la chaîne de revente",
+      "label": "Le backup multisig devient la porte",
       "category": "infosec",
-      "since": "2026-11-14",
-      "note": "Trois Trezor revendus par CryptoBilis portent une carte fille qui lit la phrase à l'écran : le revendeur entre dans le périmètre de confiance."
-    },
-    {
-      "label": "Errata et verrous silicium",
-      "category": "diy",
-      "since": "2026-11-09",
-      "note": "Stela contourne Apple, le 8BitDo se reflashe : le verrou tient au firmware plus qu'au masque, et l'errata devient la porte."
+      "since": "2026-11-15",
+      "note": "Unocoin enquête sur l'exploitation de son mécanisme de sauvegarde multisig : après la clé, le chemin de recovery est la surface à défendre."
     },
     {
       "label": "FreeBSD rattrape le poste de travail",
       "category": "devops",
       "since": "2026-11-14",
       "note": "Live-migration bhyve et serveur distant de Zed sur BSD : la pile libre comble son retard infra, au prix de contorsions."
+    },
+    {
+      "label": "Le silicium libre monte en complexité",
+      "category": "diy",
+      "since": "2026-11-15",
+      "note": "Fursoy publie un cœur RV64IMAFDV hors-ordre qui fait tourner Linux 6.6 : l'ouverture matérielle progresse sans audit équivalent."
     },
     {
       "label": "robots.txt comme protocole de consentement IA",
@@ -214,28 +215,28 @@
   ],
   "tensions": [
     {
-      "label": "IA défensive vs IA infrastructure d'intrusion",
-      "note": "Fog montre qu'un agent aligné se trompe par ses entrées, Doc-foundry prouve ses détections en les exécutant, et le même harnais produit un déclencheur caché : même socle, garde-fou réglable."
+      "label": "Ouverture affichée vs périmètres qui se referment",
+      "note": "GLM-5.3 servi en open et DeepSeek V3 en 200 lignes de Jax d'un côté, Mythos réservé aux vetted et Search révoqué aux écoles de l'autre : l'ouverture choisit ses bénéficiaires."
     },
     {
       "label": "Découverte automatisée vs remédiation calendaire",
-      "note": "N-able exploité quelques heures après le PoC sur des serveurs patchés, Patch Tuesday à 1 100 CVE : la découverte s'industrialise, le déploiement reste manuel et dépend du parc."
+      "note": "100k CVE annuelles, PostgreSQL 52 correctifs d'un coup, UnrealIRCd exploité au KEV : la découverte s'industrialise, le déploiement reste manuel et dépend du parc."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
-      "note": "Claude Code lance des workers parallèles sans supervision quand un déclencheur codé en dur s'obtient en une session : à faire tourner plus vite et à contenir en même temps."
-    },
-    {
-      "label": "Automatisation de la fabrique vs stagnation du produit",
-      "note": "Blow demande pourquoi le logiciel n'a pas bougé si l'IA a résolu le code, pendant que les agents changent d'échelle : le gain est dans la production, pas dans le résultat."
-    },
-    {
-      "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "Edge0 en local et artefacts de preuve publiés d'un côté, Mythos réservé aux vetted et Search révoqué aux écoles de l'autre : l'ouverture choisit ses bénéficiaires."
+      "note": "Agweb et Magpie outillent l'agent pour qu'il travaille seul quand un ZIP cache des hooks Git et qu'un submit guard doit deviner ce qui est légitime : à faire tourner plus vite et à contenir en même temps."
     },
     {
       "label": "Propriété du matériel vs arbitrage de l'hôte",
-      "note": "Un Trezor revendu livre sa phrase, une VM SEV-SNP cède à son hyperviseur, un Hackintosh ressuscite macOS : posséder l'objet ne décide plus de ce qu'il fait."
+      "note": "Un Trezor revendu livre sa phrase, une VM SEV-SNP cède à son hyperviseur, un Cardputer devient synthé : posséder l'objet ne décide plus de ce qu'il fait."
+    },
+    {
+      "label": "Transparence affichée vs preuve vérifiable",
+      "note": "L'IRS ouvre son code et PyPI affiche des signaux de sécurité, mais un dépôt lisible ne dit rien du build qui l'a produit : l'interface publique fait office d'engagement sans preuve."
+    },
+    {
+      "label": "Qui peut signer vs qui peut restaurer",
+      "note": "Le DOJ frappe la sortie des fonds, Unocoin voit son backup multisig exploité : après la clé privée, le chemin de recovery devient la surface à défendre."
     }
   ]
 }

@@ -1,43 +1,44 @@
 {
-  "updated_at": "2026-11-15",
+  "updated_at": "2026-11-16",
   "synthesis": {
-    "headline": "La confiance quitte le modèle pour le harnais",
-    "narrative": "GLM-5.3 et DeepSeek V3 banalisent les poids, mais la valeur migre vers le <strong>service</strong>, la passerelle et le harnais qui font tourner l'agent. Au même moment, un ZIP exécute des hooks Git, Lovable expose ses utilisateurs et PostgreSQL livre 52 CVE d'un coup : la couche d'exécution est devenue le point de contrôle et la surface d'attaque. Côté DIY et régulation, le firmware et la procédure décident pareillement de qui possède l'objet et de qui organise le manque."
+    "headline": "L'attaque s'industrialise, la remédiation reste artisanale",
+    "narrative": "Les agents sortent du banc : <strong>Daybreak</strong> vend l'attaque et la défense, <strong>ARTEX</strong> boucle un accès privilégié en trois heures, quand la remédiation médiane reste à sept jours et qu'un noyau Debian fige des machines. Le même jour, <strong>Maileva</strong> expose 22 millions de courriers et une clé <strong>Fireworks AI</strong> trojanise une extension de code : la chaîne de tiers est devenue le point d'entrée. En face, la preuve se déplace vers l'artefact rejouable — archive d'incidents, branches de base en secondes, trames USB annotées — pendant que Washington renomme son office et que l'Italie sanctionne le consentement par défaut."
   },
   "currents": [
     {
-      "label": "Le harnais devient le point de contrôle",
-      "note": "Magpie route les modèles, Gawain type le Python, Turbo-Browser-MCP garde les soumissions, un ZIP cache des hooks Git : la couche d'exécution est à la fois le produit et la faille.",
+      "label": "L'offensive et la défense s'industrialisent ensemble",
+      "note": "Daybreak vend des agents qui attaquent et colmatent, ARTEX enchaîne les CVE connues en 3h, brainproxy et prodsec-skills arment le camp d'en face. Le scope devient la seule ligne de défense.",
       "categories": [
         "ia",
-        "devops",
         "infosec"
       ]
     },
     {
-      "label": "La confiance se déplace vers ce qui s'inspecte",
-      "note": "L'IRS ouvre son code, PyPI affiche des signaux, l'EFF exige un mandat, l'ICO trace les consultations : la preuve passe de l'audit interne à l'interface publique.",
+      "label": "La preuve se déplace vers l'artefact rejouable",
+      "note": "Orca archive 417 incidents, db-branch clone une base en secondes, TheHackingMachine impose le retour au snapshot, usb-rea annote la trame. Ce qui n'est pas rejouable ou mesuré ne vaut plus preuve.",
       "categories": [
-        "devops",
+        "ia",
         "infosec",
+        "devops",
+        "diy"
+      ]
+    },
+    {
+      "label": "Le tiers détient le fichier, la clé et le tuyau",
+      "note": "Maileva expose 22M de courriers prêts à hameçonner, une clé Fireworks trojanise une extension, Meta accède aux galeries par défaut. La responsabilité se dilue dans la chaîne.",
+      "categories": [
+        "infosec",
+        "devops",
         "societe"
       ]
     },
     {
-      "label": "La rareté et la clé deviennent des objets de procédure",
-      "note": "Le dossier DRAM survit au rejet, Nvidia est visé pour financements circulaires, le DOJ saisit 1,2 Md$ : le marché et la clé sortent du technique pour entrer au pénal.",
+      "label": "L'affichage tient lieu de réforme",
+      "note": "Le Pentagone renomme son office, l'Italie sanctionne 805 M€, Alpha facture l'IA sans résultat : l'étiquette, l'amende et le prix signalent le changement sans le produire.",
       "categories": [
         "societe",
-        "infosec"
-      ]
-    },
-    {
-      "label": "Le firmware décide de qui possède l'objet",
-      "note": "DIVINER sur Cardputer, DSP sur ESP32, errata VHDL, cœur RV64 ouvert : le silicium est un canevas, la valeur est dans ce qu'on y flashe et ce qu'on audite.",
-      "categories": [
-        "diy",
-        "infosec",
-        "devops"
+        "devops",
+        "ia"
       ]
     }
   ],
@@ -46,121 +47,121 @@
       "label": "Agents IA banalisés",
       "category": "ia",
       "first_seen": "2026-10-29",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "momentum": "montant",
-      "note": "Agweb donne un navigateur aux agents, Magpie une passerelle locale : le modèle devient interchangeable, l'outillage propre devient le produit."
+      "note": "Daybreak, prodsec-skills, Orca : l'agent devient cible, outil de test et objet d'archive. L'outillage propre reste le produit."
     },
     {
       "label": "Contrôle d'exécution des agents",
       "category": "ia",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "momentum": "montant",
-      "note": "Magpie route les modèles, Gawain type le Python, Turbo-Browser-MCP garde les soumissions : le garde-fou remonte dans l'outillage."
+      "note": "prodsec-skills (138 guides) et brainproxy (MCP, scope strict) : le garde-fou se bibliothécarise, sans dire qui trace son exécution."
+    },
+    {
+      "label": "L'offensive s'outille et se vend",
+      "category": "ia",
+      "first_seen": "2026-11-16",
+      "last_seen": "2026-11-16",
+      "momentum": "nouveau",
+      "note": "Daybreak Red Team/Defense vendus par l'acteur qui gate ses modèles, ARTEX à 3h, brainproxy en Rust : le pentest devient un produit."
     },
     {
       "label": "Le coût d'inférence comme champ de bataille",
       "category": "ia",
       "first_seen": "2026-11-08",
-      "last_seen": "2026-11-15",
-      "momentum": "montant",
-      "note": "GLM-5.3 tient 607 tok/s sur deux DGX via vLLM, DeepSeek V3 se réimplémente en 200 lignes de Jax : la barrière passe du poids au service."
+      "last_seen": "2026-11-16",
+      "momentum": "stable",
+      "note": "Raschka sur les embeddings positionnels, Qwen4-Max sans fiche : la longueur de contexte et les noyaux décident, pas le score affiché."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "momentum": "montant",
-      "note": "Un ZIP cache des hooks Git exécutés au premier git status ; les submit guards de MCP : l'entrée et l'outillage restent la faille de l'agent."
+      "note": "Orca recense 417 incidents d'agents, une clé Fireworks trojanise l'extension Claude Code de Cursor : la chaîne d'outils est la faille."
     },
     {
       "label": "Chaîne d'approvisionnement : le tiers devient la porte",
       "category": "infosec",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "momentum": "montant",
-      "note": "Lovable expose passeports et 200k messages, Uber via Fireworks AI : la plateforme générée et le sous-traitant entrent au périmètre."
+      "note": "Maileva/La Poste (22M), 34 fédérations, Aréas : le prestataire détient le fichier prêt à hameçonner. La question est qui détient quoi."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "momentum": "montant",
-      "note": "100k CVE annuelles, PostgreSQL livre 52 correctifs d'un coup, UnrealIRCd au KEV : le débit de découverte dépasse l'absorption des équipes."
-    },
-    {
-      "label": "La clé s'obtient, elle ne se casse pas",
-      "category": "infosec",
-      "first_seen": "2026-11-14",
-      "last_seen": "2026-11-15",
-      "momentum": "montant",
-      "note": "Le DOJ saisit 1,2 Md$, Unocoin voit son backup multisig exploité : après qui peut signer, la question devient qui peut restaurer."
-    },
-    {
-      "label": "Le silicium ne protège plus de l'hôte",
-      "category": "infosec",
-      "first_seen": "2026-11-14",
-      "last_seen": "2026-11-14",
-      "momentum": "stable",
-      "note": "Aucun signal ce jour ; Mior et Skyfall ont montré qu'un hôte lit et forge l'attestation SEV-SNP : le locataire dépend du firmware."
+      "note": "ARTEX à 3h contre 7 jours de remédiation médiane, exploit Apache non validé, FortiClient sans CVE : le parc non patché fait l'écart."
     },
     {
       "label": "La pile cloud se remonte chez soi",
       "category": "devops",
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-14",
-      "momentum": "stable",
-      "note": "Aucun signal ce jour ; les universités suisses ont bouclé 585 To vers Nextcloud, FreeBSD ouvre bhyve : l'infra rentre à la maison."
+      "last_seen": "2026-11-16",
+      "momentum": "montant",
+      "note": "Protomaps et Mosquitto rendent tuiles et broker banals à héberger : l'installation se simplifie, l'exploitation reste à charge."
+    },
+    {
+      "label": "Le débit n'est pas la mesure",
+      "category": "devops",
+      "first_seen": "2026-11-16",
+      "last_seen": "2026-11-16",
+      "momentum": "nouveau",
+      "note": "37k lignes/jour chez YC contre 78k autopsiées ; db-branch et TheHackingMachine : la métrique devient la vitesse de retour à un état sain."
     },
     {
       "label": "La transparence comme interface de confiance",
       "category": "devops",
       "first_seen": "2026-11-15",
-      "last_seen": "2026-11-15",
-      "momentum": "nouveau",
-      "note": "L'IRS ouvre le code de sa télédéclaration, PyPI refait ses pages autour de signaux de sécurité : ce qui se voit fait office de preuve."
+      "last_seen": "2026-11-16",
+      "momentum": "stable",
+      "note": "Le Pentagone renomme son CDAO en Super Intelligence Office, Lutnick pousse sur les puces : l'étiquette bouge, la mécanique non."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "momentum": "montant",
-      "note": "DIVINER transforme le Cardputer en synthé, un DSP simule la lampe sur ESP32 : le firmware décide de l'instrument, la carte est un canevas."
+      "note": "VapourDeck 486, drone à voilure asymétrique, slicer non planaire : la contrainte (bus, aéro, buse) est déplacée, pas composée."
     },
     {
       "label": "Reconstruire pour comprendre",
       "category": "diy",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "momentum": "montant",
-      "note": "Hazeltine réparé, Score Perfect extrait en quatre ans, BASIC du Apple 1 reconstitué : la couche lisible décide de la survie."
+      "note": "Sprite_tm documente son 486 de bout en bout : la documentation exhaustive devient la seule preuve disponible d'un montage."
     },
     {
-      "label": "Errata et specs non auditées",
+      "label": "Sonder le matériel fermé",
       "category": "diy",
-      "first_seen": "2026-11-09",
-      "last_seen": "2026-11-15",
-      "momentum": "montant",
-      "note": "sqrt(2) faux dans le package VHDL standard, cœur RV64IMAFDV ouvert qui fait tourner Linux : ce qui est normalisé n'est pas vérifié."
+      "first_seen": "2026-11-16",
+      "last_seen": "2026-11-16",
+      "momentum": "nouveau",
+      "note": "usb-rea annote les trames USB à la volée, le PWM des dalles OLED se mesure : faute de firmware auditable, on écoute le signal."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "momentum": "montant",
-      "note": "L'EFF exige un mandat pour l'ALPR, l'ICO poursuit 300 consultations : le curseur passe à qui doit rendre des comptes sur chaque requête."
+      "note": "805 M€ à Meta pour une galerie activée par défaut : le « par défaut » devient juridiquement signifiant, l'appel est déjà annoncé."
     },
     {
-      "label": "Bulle IA, rareté organisée et refus",
+      "label": "L'IA s'installe avant d'avoir prouvé",
       "category": "societe",
-      "first_seen": "2026-11-12",
-      "last_seen": "2026-11-15",
-      "momentum": "montant",
-      "note": "Le dossier DRAM survit au rejet, Nvidia accusé de financements circulaires : la rareté organisée passe du soupçon à l'instruction."
+      "first_seen": "2026-11-16",
+      "last_seen": "2026-11-16",
+      "momentum": "nouveau",
+      "note": "Who is Hiring au plus bas sur 12 ans, Alpha à 75k$/an avec la moitié des élèves sous l'objectif maths : la promesse se facture avant preuve."
     }
   ],
   "watchlist": [
@@ -168,75 +169,69 @@
       "label": "Preuves forensiques des agents de code",
       "category": "ia",
       "since": "2026-11-09",
-      "note": "Doc-foundry fait écrire les règles de détection par une IA puis les exécute : la preuve devient un artefact, la trace reste à inventer."
-    },
-    {
-      "label": "Modèles armés à accès restreint",
-      "category": "ia",
-      "since": "2026-11-11",
-      "note": "Mythos 5.2 réservé aux vetted face à Edge0 en local : une capacité offensive gatée par le fournisseur crée un marché à deux vitesses."
+      "note": "Orca publie 417 incidents d'agents en séparant préjudice vérifié et allégation : le référentiel existe, la trace d'exécution reste à inventer."
     },
     {
       "label": "La passerelle locale d'agents",
       "category": "ia",
       "since": "2026-11-15",
-      "note": "Magpie fait tourner Codex sur DeepSeek et Claude Code sur Kimi depuis la barre de menus : le routage local devient le point de contrôle."
+      "note": "Magpie fait tourner Codex sur DeepSeek depuis la barre de menus : le routage local devient le point de contrôle et de journalisation."
     },
     {
       "label": "L'archive reçue exécute du code",
       "category": "infosec",
       "since": "2026-11-15",
-      "note": "Un ZIP d'offre d'emploi embarque des hooks Git qui s'exécutent au premier git status : la pièce jointe redevient un vecteur d'exécution."
+      "note": "Un ZIP d'offre d'emploi embarque des hooks Git exécutés au premier git status : la pièce jointe redevient un vecteur d'exécution."
     },
     {
-      "label": "Le backup multisig devient la porte",
+      "label": "La clé de service contamine la distribution",
       "category": "infosec",
-      "since": "2026-11-15",
-      "note": "Unocoin enquête sur l'exploitation de son mécanisme de sauvegarde multisig : après la clé, le chemin de recovery est la surface à défendre."
+      "since": "2026-11-16",
+      "note": "Une clé Fireworks AI volée trojanise l'extension Claude Code servie par Cursor, 5000 utilisateurs : le secret du fournisseur devient canal."
     },
     {
-      "label": "FreeBSD rattrape le poste de travail",
+      "label": "Le patch qui fige le parc",
       "category": "devops",
-      "since": "2026-11-14",
-      "note": "Live-migration bhyve et serveur distant de Zed sur BSD : la pile libre comble son retard infra, au prix de contorsions."
+      "since": "2026-11-16",
+      "note": "Noyau Debian 6.1.0-55 : des machines ne répondent plus après mise à jour. Le geste de déploiement devient le premier risque opérationnel."
     },
     {
       "label": "Le silicium libre monte en complexité",
       "category": "diy",
       "since": "2026-11-15",
-      "note": "Fursoy publie un cœur RV64IMAFDV hors-ordre qui fait tourner Linux 6.6 : l'ouverture matérielle progresse sans audit équivalent."
+      "note": "Un cœur RV64IMAFDV hors-ordre fait tourner Linux 6.6 : l'ouverture matérielle progresse sans audit équivalent."
     },
     {
       "label": "robots.txt comme protocole de consentement IA",
       "category": "societe",
       "since": "2026-11-07",
-      "note": "Google révoque Search aux écoles qui refusent l'IA : le filtrage se déplace côté fournisseur, la protection devient une faveur technique."
+      "note": "Google révoque Search aux écoles qui refusent l'IA, l'Italie sanctionne le consentement par défaut : la protection devient une faveur technique."
     }
   ],
   "tensions": [
     {
       "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "GLM-5.3 servi en open et DeepSeek V3 en 200 lignes de Jax d'un côté, Mythos réservé aux vetted et Search révoqué aux écoles de l'autre : l'ouverture choisit ses bénéficiaires."
+      "note": "Daybreak vend l'offensive pendant que l'accès aux modèles reste gaté aux vetted ; DeepSeek se réimplémente en 200 lignes de Jax. L'ouverture choisit ses bénéficiaires."
     },
     {
       "label": "Découverte automatisée vs remédiation calendaire",
-      "note": "100k CVE annuelles, PostgreSQL 52 correctifs d'un coup, UnrealIRCd exploité au KEV : la découverte s'industrialise, le déploiement reste manuel et dépend du parc."
+      "note": "ARTEX obtient l'accès privilégié en 3h, la remédiation médiane d'une critique reste à 7 jours, et un patch noyau Debian fige des machines. Industrialiser l'attaque ne déploie rien."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
-      "note": "Agweb et Magpie outillent l'agent pour qu'il travaille seul quand un ZIP cache des hooks Git et qu'un submit guard doit deviner ce qui est légitime : à faire tourner plus vite et à contenir en même temps."
-    },
-    {
-      "label": "Propriété du matériel vs arbitrage de l'hôte",
-      "note": "Un Trezor revendu livre sa phrase, une VM SEV-SNP cède à son hyperviseur, un Cardputer devient synthé : posséder l'objet ne décide plus de ce qu'il fait."
+      "note": "Daybreak Red Team et prodsec-skills outillent l'agent pour attaquer et se défendre, quand une clé Fireworks trojanise une extension de code. À faire tourner plus vite et à contenir en même temps."
     },
     {
       "label": "Transparence affichée vs preuve vérifiable",
-      "note": "L'IRS ouvre son code et PyPI affiche des signaux de sécurité, mais un dépôt lisible ne dit rien du build qui l'a produit : l'interface publique fait office d'engagement sans preuve."
+      "note": "Le Pentagone renomme son CDAO, l'IRS ouvre son code, PyPI affiche des signaux : un dépôt lisible ne dit rien du build qui l'a produit. L'interface publique tient lieu d'engagement."
     },
     {
-      "label": "Qui peut signer vs qui peut restaurer",
-      "note": "Le DOJ frappe la sortie des fonds, Unocoin voit son backup multisig exploité : après la clé privée, le chemin de recovery devient la surface à défendre."
+      "label": "Propriété du matériel vs arbitrage de l'hôte",
+      "note": "Un VapourDeck se documente de bout en bout, une dalle OLED se mesure au PWM, une VM SEV-SNP cède à son hyperviseur : posséder l'objet ne décide plus de ce qu'il fait."
+    },
+    {
+      "label": "Volume produit vs qualité mesurable",
+      "note": "37 000 lignes par jour revendiquées chez YC, 78 400 lignes autopsiées deux jours plus tard ; Alpha facture 75k$ et rate ses objectifs. Le débit se mesure, le résultat se constate."
     }
   ]
 }

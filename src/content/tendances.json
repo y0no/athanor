@@ -1,167 +1,167 @@
 {
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-17",
   "synthesis": {
-    "headline": "L'attaque s'industrialise, la remédiation reste artisanale",
-    "narrative": "Les agents sortent du banc : <strong>Daybreak</strong> vend l'attaque et la défense, <strong>ARTEX</strong> boucle un accès privilégié en trois heures, quand la remédiation médiane reste à sept jours et qu'un noyau Debian fige des machines. Le même jour, <strong>Maileva</strong> expose 22 millions de courriers et une clé <strong>Fireworks AI</strong> trojanise une extension de code : la chaîne de tiers est devenue le point d'entrée. En face, la preuve se déplace vers l'artefact rejouable — archive d'incidents, branches de base en secondes, trames USB annotées — pendant que Washington renomme son office et que l'Italie sanctionne le consentement par défaut."
+    "headline": "L'attaque s'automatise pendant que la remédiation reste calendaire",
+    "narrative": "Un agent de <strong>Google</strong> transforme un correctif en exploit pendant que <strong>Claude Mythos</strong> écrit les noyaux GPU d'<strong>AMD</strong> : la même capacité autonome sert des deux côtés de la ligne. En face, la remédiation reste calendaire — sept jours médians, un correctif de juillet qui réveille une panne de messagerie en novembre, des banques qui tombent en cascade. Le risque s'est déplacé vers <em>le tiers qui construit, sert ou héberge</em> : clé <strong>Fireworks</strong>, <strong>Optimizely</strong>, <strong>Maileva</strong>, <strong>Expedia</strong>. Pendant ce temps, l'atelier et le résolveur DNS domestique rappellent que la seule preuve disponible reste celle qu'on instrumente soi-même."
   },
   "currents": [
     {
-      "label": "L'offensive et la défense s'industrialisent ensemble",
-      "note": "Daybreak vend des agents qui attaquent et colmatent, ARTEX enchaîne les CVE connues en 3h, brainproxy et prodsec-skills arment le camp d'en face. Le scope devient la seule ligne de défense.",
+      "label": "Le tiers détient la clé, le client hérite de la brèche",
+      "note": "Fireworks trojanise Cursor, Optimizely sert du malware à Zoom et GitLab, Maileva expose 22M d'adresses. L'identité machine et l'outil de masquage deviennent la frontière, et leur mauvaise attribution la brèche.",
+      "categories": [
+        "infosec",
+        "devops",
+        "ia"
+      ]
+    },
+    {
+      "label": "La preuve se déplace du produit vers l'exécution",
+      "note": "Mythos revendique les noyaux, un Show HN mesure 1,499x, OpenAI publie ses propres évaluations, Windows 11 télémètre les agents. Ce qui compte n'est plus le résultat annoncé mais la trace d'exécution.",
       "categories": [
         "ia",
+        "devops",
         "infosec"
       ]
     },
     {
-      "label": "La preuve se déplace vers l'artefact rejouable",
-      "note": "Orca archive 417 incidents, db-branch clone une base en secondes, TheHackingMachine impose le retour au snapshot, usb-rea annote la trame. Ce qui n'est pas rejouable ou mesuré ne vaut plus preuve.",
+      "label": "L'automatisation offensive précède la norme",
+      "note": "Un agent transforme un patch en exploit, ARTEX moissonne les clés d'API, Washington refuse le traité sur les robots tueurs et verrouille l'accès aux puces. La capacité avance, le cadre recule.",
       "categories": [
         "ia",
         "infosec",
-        "devops",
-        "diy"
-      ]
-    },
-    {
-      "label": "Le tiers détient le fichier, la clé et le tuyau",
-      "note": "Maileva expose 22M de courriers prêts à hameçonner, une clé Fireworks trojanise une extension, Meta accède aux galeries par défaut. La responsabilité se dilue dans la chaîne.",
-      "categories": [
-        "infosec",
-        "devops",
         "societe"
       ]
     },
     {
-      "label": "L'affichage tient lieu de réforme",
-      "note": "Le Pentagone renomme son office, l'Italie sanctionne 805 M€, Alpha facture l'IA sans résultat : l'étiquette, l'amende et le prix signalent le changement sans le produire.",
+      "label": "L'atelier devient l'instrument de mesure",
+      "note": "ESP32 contre le brouillage, Arduino sur la fréquence du réseau, résolveur DNS auto-hébergé, interception QUIC : faute de documentation fiable, on mesure et on journalise soi-même.",
       "categories": [
-        "societe",
+        "diy",
         "devops",
-        "ia"
+        "societe"
       ]
     }
   ],
   "themes": [
     {
-      "label": "Agents IA banalisés",
-      "category": "ia",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-11-16",
-      "momentum": "montant",
-      "note": "Daybreak, prodsec-skills, Orca : l'agent devient cible, outil de test et objet d'archive. L'outillage propre reste le produit."
-    },
-    {
       "label": "Contrôle d'exécution des agents",
       "category": "ia",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-16",
+      "last_seen": "2026-11-17",
       "momentum": "montant",
-      "note": "prodsec-skills (138 guides) et brainproxy (MCP, scope strict) : le garde-fou se bibliothécarise, sans dire qui trace son exécution."
+      "note": "Ne plus prêter ses identifiants à l'agent, payer Claude Code 38 % moins cher : périmètre et facture deviennent les critères d'adoption."
     },
     {
       "label": "L'offensive s'outille et se vend",
       "category": "ia",
       "first_seen": "2026-11-16",
-      "last_seen": "2026-11-16",
-      "momentum": "nouveau",
-      "note": "Daybreak Red Team/Defense vendus par l'acteur qui gate ses modèles, ARTEX à 3h, brainproxy en Rust : le pentest devient un produit."
+      "last_seen": "2026-11-17",
+      "momentum": "montant",
+      "note": "Un agent Google transforme un correctif en exploit sans humain, ARTEX moissonne les clés LiteLLM/Dify : l'attaque devient une capacité de série."
     },
     {
       "label": "Le coût d'inférence comme champ de bataille",
       "category": "ia",
       "first_seen": "2026-11-08",
-      "last_seen": "2026-11-16",
-      "momentum": "stable",
-      "note": "Raschka sur les embeddings positionnels, Qwen4-Max sans fiche : la longueur de contexte et les noyaux décident, pas le score affiché."
+      "last_seen": "2026-11-17",
+      "momentum": "montant",
+      "note": "Mythos écrit les noyaux GPU d'AMD (12 mois à 3 jours), un tuilage BF16 gagne 1,499x sur A40 : le gain se joue dans la mémoire."
+    },
+    {
+      "label": "Le débit n'est pas la mesure",
+      "category": "ia",
+      "first_seen": "2026-11-16",
+      "last_seen": "2026-11-17",
+      "momentum": "montant",
+      "note": "OpenAI publie ses évaluations embarquées, Ask HN demande pourquoi le backlog de bugs ne fond pas : la preuve passe devant le volume produit."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-16",
+      "last_seen": "2026-11-17",
       "momentum": "montant",
-      "note": "Orca recense 417 incidents d'agents, une clé Fireworks trojanise l'extension Claude Code de Cursor : la chaîne d'outils est la faille."
+      "note": "Les clés d'API de LiteLLM et Dify sont le butin, Cloudflare visé via des jetons CI/CD : la chaîne d'outils de l'agent reste la faille."
     },
     {
       "label": "Chaîne d'approvisionnement : le tiers devient la porte",
       "category": "infosec",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-16",
+      "last_seen": "2026-11-17",
       "momentum": "montant",
-      "note": "Maileva/La Poste (22M), 34 fédérations, Aréas : le prestataire détient le fichier prêt à hameçonner. La question est qui détient quoi."
+      "note": "Optimizely sert du malware à Zoom et GitLab, Maileva expose 22M d'adresses, Expedia enquête : le tiers construit, sert ou héberge."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-16",
+      "last_seen": "2026-11-17",
       "momentum": "montant",
-      "note": "ARTEX à 3h contre 7 jours de remédiation médiane, exploit Apache non validé, FortiClient sans CVE : le parc non patché fait l'écart."
+      "note": "Log4Shell exploité contre vCenter, CVE-2026-90436 sur Confluence, Project Zero à 30 jours en 2028 : la divulgation presse, le patch traîne."
     },
     {
       "label": "La pile cloud se remonte chez soi",
       "category": "devops",
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-16",
+      "last_seen": "2026-11-17",
       "momentum": "montant",
-      "note": "Protomaps et Mosquitto rendent tuiles et broker banals à héberger : l'installation se simplifie, l'exploitation reste à charge."
+      "note": "Un résolveur DNS auto-hébergé et l'interception HTTP/3 obligent à comprendre QUIC et QPACK : ce qu'on croyait délégué redevient à instrumenter."
     },
     {
-      "label": "Le débit n'est pas la mesure",
+      "label": "Le déploiement devient le premier risque",
       "category": "devops",
       "first_seen": "2026-11-16",
-      "last_seen": "2026-11-16",
-      "momentum": "nouveau",
-      "note": "37k lignes/jour chez YC contre 78k autopsiées ; db-branch et TheHackingMachine : la métrique devient la vitesse de retour à un état sain."
+      "last_seen": "2026-11-17",
+      "momentum": "montant",
+      "note": "Un correctif de juillet réveille une panne Microsoft en novembre, Chase entraîne Wells Fargo et Truist : la dépendance mutuelle, pas l'attaque."
     },
     {
-      "label": "La transparence comme interface de confiance",
+      "label": "Identité machine et privilèges",
       "category": "devops",
-      "first_seen": "2026-11-15",
-      "last_seen": "2026-11-16",
-      "momentum": "stable",
-      "note": "Le Pentagone renomme son CDAO en Super Intelligence Office, Lutnick pousse sur les puces : l'étiquette bouge, la mécanique non."
+      "first_seen": "2026-11-17",
+      "last_seen": "2026-11-17",
+      "momentum": "nouveau",
+      "note": "Infisical acte la fin d'Active Directory, PostgreSQL Anonymizer corrige 12 CVE critiques : le rôle, machine ou base, tient lieu de frontière."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-16",
+      "last_seen": "2026-11-17",
       "momentum": "montant",
-      "note": "VapourDeck 486, drone à voilure asymétrique, slicer non planaire : la contrainte (bus, aéro, buse) est déplacée, pas composée."
+      "note": "Mécanisme de cassette refait au PCB, outil à tarauder auto-centrant : quand la pièce du commerce disparaît, l'atelier redessine la contrainte."
     },
     {
       "label": "Reconstruire pour comprendre",
       "category": "diy",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-16",
+      "last_seen": "2026-11-17",
       "momentum": "montant",
-      "note": "Sprite_tm documente son 486 de bout en bout : la documentation exhaustive devient la seule preuve disponible d'un montage."
+      "note": "Un code de bouton ressuscite des ThinkPad, WINUDF rend le DVD à DOS : la survie tient à un savoir non écrit, qui se répare mais ne s'audite pas."
     },
     {
       "label": "Sonder le matériel fermé",
       "category": "diy",
       "first_seen": "2026-11-16",
-      "last_seen": "2026-11-16",
-      "momentum": "nouveau",
-      "note": "usb-rea annote les trames USB à la volée, le PWM des dalles OLED se mesure : faute de firmware auditable, on écoute le signal."
+      "last_seen": "2026-11-17",
+      "momentum": "montant",
+      "note": "ESP32-C5 contre le brouillage Wi-Fi, Arduino qui suit la fréquence du réseau, manche à capteurs : l'instrument devient un objet d'atelier."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-16",
+      "last_seen": "2026-11-17",
       "momentum": "montant",
-      "note": "805 M€ à Meta pour une galerie activée par défaut : le « par défaut » devient juridiquement signifiant, l'appel est déjà annoncé."
+      "note": "Washington bloque l'accès indirect de la Chine à l'IA américaine, neuf pays signent San Francisco, le traité sur les robots tueurs est refusé."
     },
     {
-      "label": "L'IA s'installe avant d'avoir prouvé",
-      "category": "societe",
-      "first_seen": "2026-11-16",
-      "last_seen": "2026-11-16",
-      "momentum": "nouveau",
-      "note": "Who is Hiring au plus bas sur 12 ans, Alpha à 75k$/an avec la moitié des élèves sous l'objectif maths : la promesse se facture avant preuve."
+      "label": "La transparence comme interface de confiance",
+      "category": "devops",
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-17",
+      "momentum": "montant",
+      "note": "Windows 11 télémètre les agents de code installés, Project Zero ramène la divulgation à 30 jours : le vendeur choisit ce qu'il montre."
     }
   ],
   "watchlist": [
@@ -169,7 +169,7 @@
       "label": "Preuves forensiques des agents de code",
       "category": "ia",
       "since": "2026-11-09",
-      "note": "Orca publie 417 incidents d'agents en séparant préjudice vérifié et allégation : le référentiel existe, la trace d'exécution reste à inventer."
+      "note": "Orca sépare préjudice vérifié et allégation sur 417 incidents d'agents : le référentiel existe, la trace d'exécution reste à inventer."
     },
     {
       "label": "La passerelle locale d'agents",
@@ -184,16 +184,16 @@
       "note": "Un ZIP d'offre d'emploi embarque des hooks Git exécutés au premier git status : la pièce jointe redevient un vecteur d'exécution."
     },
     {
-      "label": "La clé de service contamine la distribution",
+      "label": "Le jeton CI/CD comme chemin vers le edge",
       "category": "infosec",
-      "since": "2026-11-16",
-      "note": "Une clé Fireworks AI volée trojanise l'extension Claude Code servie par Cursor, 5000 utilisateurs : le secret du fournisseur devient canal."
+      "since": "2026-11-17",
+      "note": "ARTEX vise Cloudflare via des jetons CI/CD compromis : l'intégration continue devient le chemin le plus court vers le bord du réseau."
     },
     {
-      "label": "Le patch qui fige le parc",
+      "label": "L'outil de conformité est une surface d'attaque",
       "category": "devops",
-      "since": "2026-11-16",
-      "note": "Noyau Debian 6.1.0-55 : des machines ne répondent plus après mise à jour. Le geste de déploiement devient le premier risque opérationnel."
+      "since": "2026-11-17",
+      "note": "PostgreSQL Anonymizer corrige 12 CVE critiques dont un accès superutilisateur : le masquage des données personnelles fuit par son propre rôle."
     },
     {
       "label": "Le silicium libre monte en complexité",
@@ -211,27 +211,27 @@
   "tensions": [
     {
       "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "Daybreak vend l'offensive pendant que l'accès aux modèles reste gaté aux vetted ; DeepSeek se réimplémente en 200 lignes de Jax. L'ouverture choisit ses bénéficiaires."
+      "note": "Washington bloque l'accès indirect de la Chine, neuf alliés signent San Francisco, Mythos reste gaté aux vetted ; DeepSeek se réimplémente en 200 lignes de Jax. L'ouverture choisit ses bénéficiaires."
     },
     {
       "label": "Découverte automatisée vs remédiation calendaire",
-      "note": "ARTEX obtient l'accès privilégié en 3h, la remédiation médiane d'une critique reste à 7 jours, et un patch noyau Debian fige des machines. Industrialiser l'attaque ne déploie rien."
+      "note": "Un agent Google obtient un exploit en heures, Project Zero passe à 30 jours en 2028, mais la remédiation médiane reste à sept jours et un correctif de juillet fait tomber la messagerie en novembre."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
-      "note": "Daybreak Red Team et prodsec-skills outillent l'agent pour attaquer et se défendre, quand une clé Fireworks trojanise une extension de code. À faire tourner plus vite et à contenir en même temps."
+      "note": "On outille l'agent pour attaquer et se défendre le jour même où l'on explique comment ne pas lui prêter ses identifiants. À faire tourner plus vite et à contenir en même temps."
     },
     {
       "label": "Transparence affichée vs preuve vérifiable",
-      "note": "Le Pentagone renomme son CDAO, l'IRS ouvre son code, PyPI affiche des signaux : un dépôt lisible ne dit rien du build qui l'a produit. L'interface publique tient lieu d'engagement."
+      "note": "OpenAI publie les évaluations qu'il choisit, Windows 11 télémètre les agents installés, Project Zero fixe son propre calendrier : l'interface publique tient lieu d'engagement."
     },
     {
       "label": "Propriété du matériel vs arbitrage de l'hôte",
-      "note": "Un VapourDeck se documente de bout en bout, une dalle OLED se mesure au PWM, une VM SEV-SNP cède à son hyperviseur : posséder l'objet ne décide plus de ce qu'il fait."
+      "note": "Un ThinkPad ressuscite par un code non documenté, une cassette se refait au PCB, une VM SEV-SNP cède à son hyperviseur : posséder l'objet ne décide plus de ce qu'il fait."
     },
     {
       "label": "Volume produit vs qualité mesurable",
-      "note": "37 000 lignes par jour revendiquées chez YC, 78 400 lignes autopsiées deux jours plus tard ; Alpha facture 75k$ et rate ses objectifs. Le débit se mesure, le résultat se constate."
+      "note": "Mythos annonce 12 mois d'onboarding ramenés à 3 jours, un tuilage BF16 mesure 1,499x sur A40 ; 37 000 lignes par jour revendiquées, 78 400 autopsiées. Le débit s'annonce, le résultat se mesure."
     }
   ]
 }

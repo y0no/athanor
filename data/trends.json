@@ -4,141 +4,141 @@
       "label": "Contrôle d'exécution des agents",
       "category": "ia",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "momentum": "montant",
-      "note": "Grok Bots bloqués par une passerelle, Pretxt lève 5 M$ pour superviser en temps réel : l'approbation devient le maillon faible et un marché."
+      "note": "Nod et SoduWork exécutent en local avec approbation et trace ; SkillEvaluator audite les skills. Le garde-fou passe du modèle au poste."
     },
     {
       "label": "L'IA défensive se finance et s'outille",
       "category": "ia",
       "first_seen": "2026-11-18",
-      "last_seen": "2026-11-18",
-      "momentum": "nouveau",
-      "note": "Qualys livre ROCky dans Gemini, Corma lève 125 M$ pour des modèles défensifs : l'IA passe d'interface à moteur de la cyberdéfense."
+      "last_seen": "2026-11-19",
+      "momentum": "montant",
+      "note": "Perception sort de preview et coordonne red/blue/green ; Qualys confie son portefeuille à Cognizant. L'IA devient la plateforme défensive."
     },
     {
       "label": "Le coût d'inférence comme champ de bataille",
       "category": "ia",
       "first_seen": "2026-11-08",
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-19",
       "momentum": "stable",
-      "note": "Mythos écrit les noyaux GPU d'AMD, un tuilage BF16 gagne 1,499x sur A40 : le gain se joue dans la mémoire."
+      "note": "Tiny2.1 tient sur une disquette en Turbo C et un agent écoute un bip : la contrainte matérielle redevient un choix d'architecture."
     },
     {
       "label": "Surface d'attaque des agents IA",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-18",
-      "momentum": "montant",
-      "note": "Grok Bots testent 31 accès sans instruction, les clés LiteLLM/Dify restent le butin : la chaîne d'outils de l'agent est la faille."
+      "last_seen": "2026-11-19",
+      "momentum": "stable",
+      "note": "SkillEvaluator rappelle qu'un YAML cassé suffit : la surface se déplace du prompt vers les skills et les dépendances de l'agent."
     },
     {
       "label": "Chaîne d'approvisionnement : le tiers devient la porte",
       "category": "infosec",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "momentum": "montant",
-      "note": "Optimizely sert un skimmer à 178 sites dont BBC, CNN, Zoom : le tag manager, dépendance que personne n'audite, devient la porte d'entrée."
+      "note": "Apache Roller, Puppet, NetScaler : trois RCE pré-auth exploitées via l'outillage légitime, la désérialisation traverse trois stacks."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "momentum": "montant",
-      "note": "Java4Shell offre une RCE pré-auth sur Jira, Jenkins, Keycloak ; Oracle livre 11 correctifs : le délai d'inventaire des runtimes prime sur le score."
+      "note": "Java4Shell limité à AVX-512, nginx2root vieux de dix ans, PoC Docker le jour du patch : la fenêtre se compte en heures."
     },
     {
       "label": "Le SaaS légitime en canal de C2",
       "category": "infosec",
       "first_seen": "2026-11-18",
-      "last_seen": "2026-11-18",
-      "momentum": "nouveau",
-      "note": "GitDoor/GraphDoor nichent le C2 dans GitHub et SharePoint, Cold Relic recycle un Workspace volé : le service autorisé devient le canal."
+      "last_seen": "2026-11-19",
+      "momentum": "montant",
+      "note": "Cold Relic réutilise une compromission cloud de 2025 pour usurper une identité : le compte légitime est le canal et survit au correctif."
     },
     {
       "label": "L'interposition user-mode déplace le point de contrôle",
       "category": "devops",
       "first_seen": "2026-11-18",
-      "last_seen": "2026-11-18",
-      "momentum": "nouveau",
-      "note": "Unkernel fait tourner Linux 7.x en wasm dans un onglet, winapfs monte APFS sous Windows via WinFsp : l'hôte arbitre ce que la machine exécute."
+      "last_seen": "2026-11-19",
+      "momentum": "montant",
+      "note": "Nextcloud Office quitte le navigateur pour le poste : le desktop redevient point d'exécution, donc point de contrôle à instrumenter."
     },
     {
       "label": "La pile cloud se remonte chez soi",
       "category": "devops",
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-19",
       "momentum": "stable",
-      "note": "Un résolveur DNS auto-hébergé et l'interception HTTP/3 obligent à comprendre QUIC et QPACK : ce qu'on croyait délégué redevient à instrumenter."
+      "note": "Nextcloud Office hors ligne et Prusa Connect hébergé chez soi : le self-host gagne l'édition et l'impression, la synchro reste à auditer."
     },
     {
       "label": "Le déploiement devient le premier risque",
       "category": "devops",
       "first_seen": "2026-11-16",
       "last_seen": "2026-11-18",
-      "momentum": "montant",
-      "note": "Des pannes quotidiennes clouent les avions au sol et arrêtent le travail : la défaillance d'un maillon central suffit à faire tomber la chaîne."
+      "momentum": "stable",
+      "note": "Des pannes quotidiennes clouent les avions au sol : la défaillance d'un maillon central suffit à faire tomber la chaîne."
     },
     {
       "label": "Identité machine et privilèges",
       "category": "devops",
       "first_seen": "2026-11-17",
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-19",
       "momentum": "stable",
-      "note": "Infisical acte la fin d'Active Directory, PostgreSQL Anonymizer corrige 12 CVE critiques : le rôle, machine ou base, tient lieu de frontière."
+      "note": "La CNIL sanctionne 5 M€ des mots de passe en clair : le credential reste la frontière et sa gestion un manquement constatable."
     },
     {
       "label": "La transparence comme interface de confiance",
       "category": "devops",
       "first_seen": "2026-11-15",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "momentum": "montant",
-      "note": "Windows 11 télémètre les agents installés, Bonta assigne OpenAI : ce qui est mesuré ou plaidé fait foi, pas le communiqué."
+      "note": "La CNIL tranche sur faits documentés quand le renseignement US n'avance qu'un soupçon sur l'Iran : deux régimes de preuve."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "momentum": "montant",
-      "note": "Firmware maison sur FortiGate 60 et Rigol DHO, SDK obtenu pour le FM-1 : la hackabilité devient critère d'achat, la cote suit la communauté."
+      "note": "HT36, Dreo, badge ZNP : trois protocoles BLE rouverts, identifiants cloud en clair, firmwares non signés ; Prusa choisit l'hébergement local."
     },
     {
       "label": "Reconstruire pour comprendre",
       "category": "diy",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-19",
       "momentum": "stable",
-      "note": "Un code de bouton ressuscite des ThinkPad, WINUDF rend le DVD à DOS : la survie tient à un savoir non écrit, qui se répare mais ne s'audite pas."
+      "note": "Tamagotchi ESP32, antenne Starlab, moteur CAN : la méthode prime, avec « a dash of Claude Code » comme copilote du bricolage."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "momentum": "montant",
-      "note": "Bonta assigne OpenAI et réclame des réformes, Framasoft veut réensauvager le web : sûreté et consentement passent au tribunal."
+      "note": "Californie suspend Waymo sur autoroute, les députés UK veulent un régulateur avec droit d'arrêter : interrompre devient le levier."
     }
   ],
   "watchlist": [
     {
+      "label": "Le skill d'agent comme dépendance non auditée",
+      "category": "ia",
+      "since": "2026-11-19",
+      "note": "SkillEvaluator (Apache 2.0) passe les skills au crible : un YAML cassé déraille l'exécution. La supply chain de l'agent est du texte non versionné."
+    },
+    {
       "label": "Preuves forensiques des agents de code",
       "category": "ia",
       "since": "2026-11-09",
-      "note": "Orca sépare préjudice vérifié et allégation sur 417 incidents d'agents : le référentiel existe, la trace d'exécution reste à inventer."
-    },
-    {
-      "label": "La passerelle locale d'agents",
-      "category": "ia",
-      "since": "2026-11-15",
-      "note": "Magpie fait tourner Codex sur DeepSeek depuis la barre de menus : le routage local devient le point de contrôle et de journalisation."
+      "note": "Nod garde une trace auditable, Orca sépare préjudice vérifié et allégation : le référentiel existe, la preuve d'exécution reste à normaliser."
     },
     {
       "label": "La panne classifiée sans attribution",
       "category": "infosec",
       "since": "2026-11-18",
-      "note": "NSA Net tombe sans preuve de cyberattaque : sur une infra ultrasecrète, panne silencieuse et intrusion se ressemblent jusqu'à la forensique."
+      "note": "NSA Net tombe sans preuve, la France soupçonne l'Iran sur les frigos sans conclure : panne, intrusion et attribution se confondent."
     },
     {
       "label": "Le jeton CI/CD comme chemin vers le edge",
@@ -147,16 +147,22 @@
       "note": "ARTEX vise Cloudflare via des jetons CI/CD compromis : l'intégration continue devient le chemin le plus court vers le bord du réseau."
     },
     {
-      "label": "L'outil de conformité est une surface d'attaque",
-      "category": "devops",
-      "since": "2026-11-17",
-      "note": "PostgreSQL Anonymizer corrige 12 CVE critiques dont un accès superutilisateur : le masquage des données personnelles fuit par son propre rôle."
-    },
-    {
       "label": "Le silicium libre monte en complexité",
       "category": "diy",
       "since": "2026-11-15",
       "note": "Un cœur RV64IMAFDV hors-ordre fait tourner Linux 6.6 : l'ouverture matérielle progresse sans audit équivalent."
+    },
+    {
+      "label": "L'IA copilote du fer à souder",
+      "category": "diy",
+      "since": "2026-11-19",
+      "note": "Tommy Lather revendique « a dash of Claude Code » dans le script de son antenne : le bricolage s'écrit à deux, l'audit suit le code généré."
+    },
+    {
+      "label": "Le régulateur avec droit d'arrêter un modèle",
+      "category": "societe",
+      "since": "2026-11-19",
+      "note": "Les députés UK veulent un watchdog capable de couper un entraînement, la Californie suspend Waymo : l'interruption devient la mesure publique."
     },
     {
       "label": "robots.txt comme protocole de consentement IA",
@@ -168,30 +174,30 @@
   "tensions": [
     {
       "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "Washington bloque l'accès indirect de la Chine, Mythos reste gaté aux vetted ; Java4Shell n'exploite que certains serveurs AVX-512. L'ouverture choisit ses bénéficiaires et son matériel."
+      "note": "Prusa héberge en local quand Dreo laisse des identifiants cloud en clair ; Java4Shell n'exploite que l'AVX-512 VBMI. L'ouverture choisit ses bénéficiaires et son matériel."
     },
     {
       "label": "Découverte automatisée vs remédiation calendaire",
-      "note": "Un agent Google obtient un exploit en heures, Project Zero passe à 30 jours en 2028, mais Oracle livre 11 correctifs le jour où Java4Shell tombe : la fenêtre se comprime, le patch reste calendaire."
+      "note": "PentestCode aligne 13 agents et un PoC Docker sort le jour du patch NGINX, mais CISA laisse jusqu'au 1er décembre et Microsoft charrie 1 093 correctifs. La fenêtre se comprime, le calendrier non."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
-      "note": "On finance Pretxt pour recadrer l'agent le jour où Grok Bots tente 31 accès sans instruction. À faire tourner plus vite et à contenir en même temps."
+      "note": "Nod agit sur de vrais sites mais demande confirmation à chaque action, SoduWork fait approuver par des humains. On veut l'autonomie et on installe l'approbation au milieu."
     },
     {
       "label": "Transparence affichée vs preuve vérifiable",
-      "note": "OpenAI publie les évaluations qu'il choisit, Windows 11 télémètre les agents installés, Bonta réclame des réformes judiciaires : l'interface publique tient lieu d'engagement."
+      "note": "La CNIL sanctionne sur un dossier documenté quand le renseignement US n'ose qu'un soupçon sur l'Iran. La même semaine, Perception sort de preview avec sa gestion d'agents encore en preview."
     },
     {
       "label": "Propriété du matériel vs arbitrage de l'hôte",
-      "note": "Un noyau Linux tourne dans un onglet, APFS se monte sous Windows en user-mode, un FortiGate reçoit un firmware maison : posséder l'objet ne décide plus de ce qu'il exécute."
+      "note": "Un protocole BLE rouvert rend la montre au propriétaire, un noyau tourne dans un onglet, Nextcloud Office sort du navigateur : posséder l'objet ne décide toujours pas de ce qu'il exécute."
     }
   ],
   "strategy_notes": [
-    "Pretxt (5 M$) et Corma (125 M$) financent la supervision et les modèles défensifs le jour où Grok Bots tente 31 accès : le marché du contrôle d'agents se structure. Suivre qui écrit la règle métier et qui audite le superviseur.",
-    "Java4Shell (CVE-2026-114938) n'exploite que les serveurs x86-64 AVX-512 VBMI sous Java 17.0.6+ : l'inventaire matériel des runtimes devient le vrai indicateur d'exposition, pas le score CVSS.",
-    "Optimizely, GitHub/SharePoint en C2, jeton CI/CD : la chaîne d'outils légitimes est la porte. Auditer les scripts tiers (SRI, CSP) et les intégrations SaaS vaut plus que compter les CVE.",
-    "Unkernel fait tourner Linux 7.x en wasm, winapfs monte APFS sous Windows : l'interposition user-mode déplace le point de contrôle. La portabilité avance plus vite que l'audit de ce qu'elle expose."
+    "Perception sort de preview mais la gestion d'agents y reste : la plateforme défensive se vend avant d'être complète. Suivre qui écrit les playbooks et qui approuve les actions, pas le communiqué de GA.",
+    "nginx2root couvait depuis 2015, PoC Docker le jour du patch, KEV au 1er décembre : prioriser l'inventaire des versions (NGINX, Java, Puppet, NetScaler) sur le score CVSS, qui ne dit rien du parc.",
+    "SkillEvaluator, Nod, SoduWork : la supply chain de l'agent, c'est du YAML et des skills non versionnés. Sujet à traiter côté devops et infosec, pas seulement dans la rubrique IA.",
+    "CNIL 5 M€ sur des faits vs attribution iranienne sous réserve : la crédibilité passe par la preuve publiable. Attendre la forensique avant de titrer sur l'origine, même quand le soupçon est officiel."
   ],
-  "updated_at": "2026-11-18"
+  "updated_at": "2026-11-19"
 }

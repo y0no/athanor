@@ -1,43 +1,41 @@
 {
-  "updated_at": "2026-11-20",
+  "updated_at": "2026-11-21",
   "synthesis": {
-    "headline": "Le familier est devenu la première surface d'attaque",
-    "narrative": "Un deepfake de Musk, une offre d'emploi piégée, une pub Google Ads : <strong>le vecteur n'est plus l'inconnu mais le contenu attendu</strong>. En face, la défense se déplace — le garde-fou d'agent reste au poste, la CAO et le jeu repassent en local, le firmware reflashé rend la machine à son propriétaire. Mais la même semaine, FastUnlock se démontre <em>sans CVE ni correctif</em>, la Commission européenne reste perturbée sans attribution et Google porte la rétention Gemini à deux mois : <code>la preuve publiable</code> devient la seule monnaie qui vaille."
+    "headline": "L'agent trouve la faille avant que le correctif n'existe",
+    "narrative": "Les agents autonomes de <strong>Cairn</strong> trouvent des 0-day sans humain pendant que <strong>Cisco</strong> et <strong>KVM</strong> rappellent que le correctif arrive toujours après l'exploit. L'attribution reste à deux vitesses : un nom posé sur <strong>vCenter</strong>, un soupçon sans preuve sur <strong>ARTEX</strong>. En face, le local-first (<strong>PhoneBox</strong>) et le bricolage (<strong>Farcall</strong>, FireWire en USB-C) réinstallent la maîtrise sur l'objet, quand <strong>Signal</strong> et l'Arcom déplacent la bataille vers qui contrôle l'écran et la parole."
   },
   "currents": [
     {
-      "label": "Le poste redevient le point de contrôle",
-      "note": "Garde-fou d'agent exécuté en local, CAO et jeu hors ligne, firmware reflashé : l'exécution revient sur la machine, et avec elle l'audit du poste plutôt que du service.",
+      "label": "L'IA devient l'attaquant, pas seulement l'outil",
+      "note": "Cairn trouve un 0-day seul, la Commission confirme une attaque assistée par IA, Bell Canada impute un vol à un acteur agentique. La défense doit s'automatiser au même rythme.",
       "categories": [
         "ia",
-        "devops",
-        "diy"
+        "infosec"
       ]
     },
     {
-      "label": "Le contenu attendu comme vecteur",
-      "note": "Deepfake Musk, offre d'emploi piégée, Lucet sur Google Ads : la confiance portée au familier remplace l'inconnu comme porte d'entrée, et la détection du synthétique ne suffit plus.",
-      "categories": [
-        "ia",
-        "infosec",
-        "societe"
-      ]
-    },
-    {
-      "label": "La preuve plutôt que la promesse",
-      "note": "FastUnlock sans CVE, attribution européenne en suspens, Londres contraint d'avouer : ce qui compte est ce qui est publiable, pas ce qui est annoncé.",
+      "label": "La fenêtre de correctif se referme",
+      "note": "KVM sans workaround, vCenter exploité depuis septembre, PoC Cisco en heures, SonicWall Gen 6 sans correctif : le calendrier de patch cesse d'être un repère.",
       "categories": [
         "infosec",
-        "societe",
         "devops"
       ]
     },
     {
-      "label": "L'appareil possédé reste gouverné ailleurs",
-      "note": "MyQ en boucle sans serveur, mesh devolo dont le firmware décide, Gemini qui retient deux mois : la propriété de l'objet ne règle pas la politique de la donnée.",
+      "label": "Le local-first comme refus de la dépendance",
+      "note": "PhoneBox sans cloud, Farcall en SSH, FireWire réécrit : reprendre la main sur l'objet déplace la question vers ce que l'agent local garde et expose.",
       "categories": [
-        "diy",
         "devops",
+        "diy",
+        "societe"
+      ]
+    },
+    {
+      "label": "La preuve remplace la détection",
+      "note": "Phrack jugé par des détecteurs, attribution nommée ou non, Signal qui ferme l'écran : c'est la provenance et le canal qu'on vérifie, plus le contenu.",
+      "categories": [
+        "ia",
+        "infosec",
         "societe"
       ]
     }
@@ -49,7 +47,7 @@
       "first_seen": "2026-11-12",
       "last_seen": "2026-11-20",
       "momentum": "stable",
-      "note": "GPT-6.2 ramène la faille de prompt au rang de leurre ordinaire ; le garde-fou reste au poste (Nod, SkillEvaluator), pas dans le modèle."
+      "note": "Pas de nouveau signal ; le garde-fou reste au poste (Nod, SkillEvaluator), la faille de prompt un leurre ordinaire."
     },
     {
       "label": "L'IA défensive se finance et s'outille",
@@ -57,39 +55,39 @@
       "first_seen": "2026-11-18",
       "last_seen": "2026-11-19",
       "momentum": "stable",
-      "note": "Rien de neuf ce jour ; la plateforme défensive reste vendue avant d'être complète, gestion d'agents encore en preview."
-    },
-    {
-      "label": "Le coût d'inférence comme champ de bataille",
-      "category": "ia",
-      "first_seen": "2026-11-08",
-      "last_seen": "2026-11-19",
-      "momentum": "stable",
-      "note": "Tiny2.1 sur disquette : la contrainte matérielle comme choix d'architecture. Pas de nouveau signal, le thème plafonne."
+      "note": "Plateau : la plateforme défensive reste vendue avant d'être complète, gestion d'agents encore en preview."
     },
     {
       "label": "Le leurre familier comme vecteur",
       "category": "ia",
       "first_seen": "2026-11-20",
       "last_seen": "2026-11-20",
+      "momentum": "stable",
+      "note": "Deepfake Musk, offre piégée, Ads : le contenu attendu passe les filtres. Pas de nouveau cas ce jour."
+    },
+    {
+      "label": "L'attaquant agentique",
+      "category": "infosec",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
       "momentum": "nouveau",
-      "note": "Deepfake Musk, offre d'emploi piégée, Lucet sur Google Ads : le contenu attendu passe les filtres, la vérification arrive après le clic."
+      "note": "Cairn trouve un 0-day seul, la Commission confirme une attaque assistée par IA, Bell Canada impute un vol à un acteur agentique."
     },
     {
       "label": "Chaîne d'approvisionnement : le tiers devient la porte",
       "category": "infosec",
       "first_seen": "2026-11-10",
       "last_seen": "2026-11-20",
-      "momentum": "montant",
-      "note": "Infoblox via un prestataire, N-able en cloud, Commission européenne dix jours : le sous-traitant est l'entrée, l'attribution attend sa preuve."
+      "momentum": "stable",
+      "note": "Infoblox, N-able, Commission européenne : le sous-traitant est l'entrée. Pas de nouveau cas ce jour."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-20",
+      "last_seen": "2026-11-21",
       "momentum": "montant",
-      "note": "FastUnlock sans CVE ni correctif, vCenter 9.8 sans workaround, PoC NGINX2Root le jour du patch : l'absence de calendrier remplace le retard."
+      "note": "KVM lit 127 Go d'hôte, vCenter exploité depuis septembre, PoC Cisco en quelques heures, SonicWall Gen 6 sans correctif."
     },
     {
       "label": "Le SaaS légitime en canal de C2",
@@ -97,15 +95,15 @@
       "first_seen": "2026-11-18",
       "last_seen": "2026-11-19",
       "momentum": "stable",
-      "note": "Cold Relic réutilise une compromission cloud de 2025 ; pas de nouveau cas ce jour, le compte légitime reste le canal qui survit au correctif."
+      "note": "Cold Relic réutilise une compromission cloud ; pas de nouveau cas, le compte légitime survit au correctif."
     },
     {
       "label": "La pile cloud se remonte chez soi",
       "category": "devops",
       "first_seen": "2026-11-11",
-      "last_seen": "2026-11-20",
+      "last_seen": "2026-11-21",
       "momentum": "montant",
-      "note": "DabbleCAD hors ligne, TIE Fighter en P2P WASM, mesh devolo : le local-first gagne la CAO et le jeu ; la politique firmware reste à auditer."
+      "note": "PhoneBox recycle un Android en deck local, MIT, sans cloud ; la question passe au réseau et à la mémoire de l'agent."
     },
     {
       "label": "Identité machine et privilèges",
@@ -113,47 +111,55 @@
       "first_seen": "2026-11-17",
       "last_seen": "2026-11-19",
       "momentum": "stable",
-      "note": "CNIL 5 M€ sur des mots de passe en clair ; rien de neuf, le credential reste la frontière et sa gestion un manquement constatable."
+      "note": "CNIL 5 M€ sur des mots de passe en clair ; rien de neuf, le credential reste la frontière."
     },
     {
       "label": "La transparence comme interface de confiance",
       "category": "devops",
       "first_seen": "2026-11-15",
-      "last_seen": "2026-11-20",
+      "last_seen": "2026-11-21",
       "momentum": "montant",
-      "note": "Londres avoue l'ordre Apple en justice, Google garde Gemini deux mois : la transparence se gagne en procédure, l'opacité s'installe par défaut."
+      "note": "Un tribunal arrache à Londres l'aveu de l'ordre Apple ; la transparence se gagne en procédure, l'opacité par défaut."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-20",
+      "last_seen": "2026-11-21",
       "momentum": "montant",
-      "note": "OpenMicroCam en 4K45, badge JieLi reflashé, DVR DirecTV : la doc modèle par modèle, verrous inclus, est le vrai prix de l'ouverture."
+      "note": "FireWire en USB-C via XMOS, étiquettes e-paper en cadres, Contra dumpé : la puce déjà payée fait autre chose."
     },
     {
       "label": "Reconstruire pour comprendre",
       "category": "diy",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-20",
-      "momentum": "stable",
-      "note": "Dreamcast lisant des cartouches N64, cube de 24 576 LED, UT2004 sans installeur : le détournement assume le plaisir comme seule justification."
+      "last_seen": "2026-11-21",
+      "momentum": "montant",
+      "note": "Farcall émule un PC 1981 en SSH, WDDM2 greffé sur Windows 7 pour une RTX 5060 : le détour assume le plaisir."
     },
     {
       "label": "L'appareil qui résiste à son propriétaire",
       "category": "diy",
       "first_seen": "2026-11-20",
       "last_seen": "2026-11-20",
-      "momentum": "nouveau",
-      "note": "HomeView collé à la pâte thermique, MyQ en boucle hors ligne, moniteur qui bride 2,5 Gbps : l'hostilité est un choix de conception."
+      "momentum": "stable",
+      "note": "HomeView collé, MyQ en boucle, moniteur bridé : l'hostilité est un choix de conception. Pas de nouveau cas."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-19",
-      "momentum": "stable",
-      "note": "Waymo suspendu en Californie, watchdog UK avec droit d'arrêter ; rien de neuf ce jour, l'interruption reste la mesure publique."
+      "last_seen": "2026-11-21",
+      "momentum": "montant",
+      "note": "Signal bloque les captures contre Siri/Gemini, l'autorité néerlandaise juge six lunettes IA dangereuses."
+    },
+    {
+      "label": "Le créateur devenu média régulé",
+      "category": "societe",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-21",
+      "momentum": "nouveau",
+      "note": "L'Arcom étend le pluralisme aux créateurs SMAD pour 2027 : la qualification de média devient le champ de bataille."
     }
   ],
   "watchlist": [
@@ -170,16 +176,22 @@
       "note": "Commission européenne perturbée dix jours, ARTEX soupçonné sans preuve : panne, intrusion et attribution continuent de se confondre."
     },
     {
-      "label": "Le jeton CI/CD comme chemin vers le edge",
-      "category": "infosec",
-      "since": "2026-11-17",
-      "note": "ARTEX viserait Cloudflare via des jetons CI/CD compromis : l'intégration continue reste le chemin le plus court vers le bord du réseau."
-    },
-    {
       "label": "Le 0-day publié sans CVE",
       "category": "infosec",
       "since": "2026-11-20",
       "note": "FastUnlock se démontre sans identifiant ni calendrier : le registre CVE cesse d'être le passage obligé de la divulgation."
+    },
+    {
+      "label": "La provenance éditoriale comme preuve",
+      "category": "ia",
+      "since": "2026-11-21",
+      "note": "Phrack 73 : 10 articles sur 30 signalés IA par des détecteurs, verdict suggestif. C'est la provenance du canal qu'il faut établir, pas le style."
+    },
+    {
+      "label": "Le matériel de bord en fin de support",
+      "category": "infosec",
+      "since": "2026-11-21",
+      "note": "SonicWall laisse les Gen 6 sans correctif, même critiques, et renvoie aux Gen 8 : le bord du réseau reste exposé et impatchable."
     },
     {
       "label": "Le silicium libre monte en complexité",
@@ -188,48 +200,36 @@
       "note": "Un cœur RV64IMAFDV hors-ordre fait tourner Linux 6.6 : l'ouverture matérielle progresse sans audit équivalent."
     },
     {
-      "label": "L'IA copilote du fer à souder",
-      "category": "diy",
-      "since": "2026-11-19",
-      "note": "Tommy Lather revendique « a dash of Claude Code » dans son antenne : le bricolage s'écrit à deux, l'audit suit le code généré."
-    },
-    {
       "label": "Gouvernance des poids ouverts",
       "category": "societe",
       "since": "2026-11-20",
       "note": "Poids ouverts : propriété, provenance, tests continus, plan de repli testé — quatre conditions rarement écrites, aucune traçabilité."
-    },
-    {
-      "label": "Le régulateur avec droit d'arrêter un modèle",
-      "category": "societe",
-      "since": "2026-11-19",
-      "note": "Les députés UK veulent un watchdog capable de couper un entraînement : l'interruption devient la mesure publique de la sécurité."
     }
   ],
   "tensions": [
     {
-      "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "Prusa héberge en local quand Dreo laisse des identifiants cloud en clair ; OpenMicroCam ne confirme qu'un couple puce/capteur. L'ouverture choisit ses bénéficiaires et son matériel."
-    },
-    {
       "label": "Découverte automatisée vs remédiation calendaire",
-      "note": "FastUnlock n'a ni CVE ni correctif, vCenter sort sans workaround, un PoC NGINX2Root tombe le jour du patch. La fenêtre ne se comprime plus, elle disparaît."
+      "note": "Cairn trouve un 0-day seul, un PoC Cisco tombe en quelques heures, KVM n'a pas de workaround. La fenêtre ne se comprime plus, elle disparaît."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
-      "note": "Nod agit sur de vrais sites mais demande confirmation, SoduWork fait approuver par des humains. On veut l'autonomie et on installe l'approbation au milieu."
+      "note": "On veut des agents autonomes (Cairn, Nod) et on installe l'approbation humaine au milieu. La même autonomie sert l'attaquant et l'assistant."
+    },
+    {
+      "label": "Attribution nommée vs preuve publiable",
+      "note": "vCenter est attribué à Armory Castle, ARTEX reste soupçonné sans preuve. Un nom posé n'est pas une preuve ; la démonstration technique fait foi."
     },
     {
       "label": "Transparence affichée vs preuve vérifiable",
-      "note": "Londres n'avoue l'ordre Apple que sous contrainte judiciaire, Google allonge la rétention Gemini, l'attribution de l'attaque européenne reste en suspens. La preuve publiable devient le seul étalon."
+      "note": "Londres n'avoue l'ordre Apple que sous contrainte judiciaire, Signal referme l'écran que l'OS ouvre aux assistants. La preuve publiable devient l'étalon."
     },
     {
       "label": "Propriété du matériel vs arbitrage de l'hôte",
-      "note": "Un protocole BLE rouvert rend la montre au propriétaire, un MyQ privé de cloud redémarre en boucle, un moniteur bride 2,5 Gbps. Posséder l'objet ne décide pas de ce qu'il exécute."
+      "note": "FireWire réécrit en USB-C, étiquettes e-paper détournées, MyQ privé de cloud en boucle. Posséder l'objet ne décide pas de ce qu'il exécute."
     },
     {
-      "label": "Détecter le faux vs vérifier le canal",
-      "note": "Le deepfake Musk est bloqué par Coinbase après l'intention de payer, pas par la victime. La défense migre de la détection du synthétique vers la vérification du canal officiel."
+      "label": "Ouverture affichée vs périmètres qui se referment",
+      "note": "PhoneBox promet le local sans cloud quand SonicWall abandonne ses Gen 6. L'ouverture choisit ses bénéficiaires, le support choisit ses dates."
     }
   ]
 }

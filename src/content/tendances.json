@@ -1,41 +1,40 @@
 {
-  "updated_at": "2026-11-21",
+  "updated_at": "2026-11-22",
   "synthesis": {
-    "headline": "L'agent trouve la faille avant que le correctif n'existe",
-    "narrative": "Les agents autonomes de <strong>Cairn</strong> trouvent des 0-day sans humain pendant que <strong>Cisco</strong> et <strong>KVM</strong> rappellent que le correctif arrive toujours après l'exploit. L'attribution reste à deux vitesses : un nom posé sur <strong>vCenter</strong>, un soupçon sans preuve sur <strong>ARTEX</strong>. En face, le local-first (<strong>PhoneBox</strong>) et le bricolage (<strong>Farcall</strong>, FireWire en USB-C) réinstallent la maîtrise sur l'objet, quand <strong>Signal</strong> et l'Arcom déplacent la bataille vers qui contrôle l'écran et la parole."
+    "headline": "L'agent autonome est devenu la surface d'attaque",
+    "narrative": "Les agents IA trouvent seuls un 0-day dans l'imagerie médicale et obtiennent root en 48 heures, pendant que trois fournisseurs d'inférence laissent fuiter des prompts et qu'une page web suffit à vider la mémoire de Meta Muse. La même semaine, les releases détournées d'<code>agent-framework</code> exfiltrent les identifiants Azure et CI, et le KEV fédéral court après des failles déjà exploitées. En face, le DIY et le DevOps répondent par l'artefact reproductible — binaire recompilé, firmware maison, diff de build — et la société par la procédure : l'IPT arrache à Londres l'aveu de l'ordre Apple, Signal ferme l'écran aux assistants. Partout, la preuve vérifiable prend le pas sur la déclaration."
   },
   "currents": [
     {
-      "label": "L'IA devient l'attaquant, pas seulement l'outil",
-      "note": "Cairn trouve un 0-day seul, la Commission confirme une attaque assistée par IA, Bell Canada impute un vol à un acteur agentique. La défense doit s'automatiser au même rythme.",
+      "label": "L'agent devient la surface d'attaque",
+      "note": "Trouveur de 0-day (MONAI), cible (prompts volés, Meta Muse), vecteur (agent-framework). La même autonomie sert des deux côtés et la détection arrive après coup.",
       "categories": [
         "ia",
         "infosec"
       ]
     },
     {
-      "label": "La fenêtre de correctif se referme",
-      "note": "KVM sans workaround, vCenter exploité depuis septembre, PoC Cisco en heures, SonicWall Gen 6 sans correctif : le calendrier de patch cesse d'être un repère.",
+      "label": "La preuve par l'artefact reproductible",
+      "note": "Recompiler (elf64-recomp), diffuser un build (windissect), re-firmwarer (CMU200), forcer un aveu (IPT) : la démonstration technique remplace la déclaration.",
+      "categories": [
+        "devops",
+        "infosec",
+        "diy"
+      ]
+    },
+    {
+      "label": "Le tiers et le package comme porte d'entrée",
+      "note": "agent-framework détourné, Entra Connect Health, KEV : la dépendance officielle est l'entrée. La supply chain de l'agent rejoint celle du logiciel.",
       "categories": [
         "infosec",
         "devops"
       ]
     },
     {
-      "label": "Le local-first comme refus de la dépendance",
-      "note": "PhoneBox sans cloud, Farcall en SSH, FireWire réécrit : reprendre la main sur l'objet déplace la question vers ce que l'agent local garde et expose.",
+      "label": "Reprendre la main sur l'abandonné",
+      "note": "free60 sans cloud, NT 4.0 sur Pi, Signal qui ferme l'écran : posséder l'objet et décider de ce qu'il exécute redevient un acte politique.",
       "categories": [
-        "devops",
         "diy",
-        "societe"
-      ]
-    },
-    {
-      "label": "La preuve remplace la détection",
-      "note": "Phrack jugé par des détecteurs, attribution nommée ou non, Signal qui ferme l'écran : c'est la provenance et le canal qu'on vérifie, plus le contenu.",
-      "categories": [
-        "ia",
-        "infosec",
         "societe"
       ]
     }
@@ -45,136 +44,124 @@
       "label": "Contrôle d'exécution des agents",
       "category": "ia",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-20",
-      "momentum": "stable",
-      "note": "Pas de nouveau signal ; le garde-fou reste au poste (Nod, SkillEvaluator), la faille de prompt un leurre ordinaire."
-    },
-    {
-      "label": "L'IA défensive se finance et s'outille",
-      "category": "ia",
-      "first_seen": "2026-11-18",
-      "last_seen": "2026-11-19",
-      "momentum": "stable",
-      "note": "Plateau : la plateforme défensive reste vendue avant d'être complète, gestion d'agents encore en preview."
+      "last_seen": "2026-11-22",
+      "momentum": "montant",
+      "note": "Les releases 1.26.1/1.26.2 d'agent-framework (Microsoft) exfiltrent identifiants Azure/CI : le runtime de l'agent est la dépendance à auditer."
     },
     {
       "label": "Le leurre familier comme vecteur",
       "category": "ia",
       "first_seen": "2026-11-20",
-      "last_seen": "2026-11-20",
-      "momentum": "stable",
-      "note": "Deepfake Musk, offre piégée, Ads : le contenu attendu passe les filtres. Pas de nouveau cas ce jour."
+      "last_seen": "2026-11-22",
+      "momentum": "montant",
+      "note": "Pasay City : 18 interpellés, face-swap pour se faire passer pour la police japonaise sur LINE. Le deepfake réchauffe un leurre connu."
+    },
+    {
+      "label": "L'agent, cible et mémoire exposée",
+      "category": "ia",
+      "first_seen": "2026-11-22",
+      "last_seen": "2026-11-22",
+      "momentum": "nouveau",
+      "note": "Dragos : 3 fournisseurs d'inférence fuient des prompts (dont Zero Data Retention), OpenRouter débranche ; une page web vide Meta Muse."
     },
     {
       "label": "L'attaquant agentique",
       "category": "infosec",
       "first_seen": "2026-11-21",
-      "last_seen": "2026-11-21",
-      "momentum": "nouveau",
-      "note": "Cairn trouve un 0-day seul, la Commission confirme une attaque assistée par IA, Bell Canada impute un vol à un acteur agentique."
+      "last_seen": "2026-11-22",
+      "momentum": "montant",
+      "note": "Agents IA autonomes : 0-day MONAI Label, root en 48h chez des universités, attribution Chine au conditionnel. L'échelle change."
     },
     {
       "label": "Chaîne d'approvisionnement : le tiers devient la porte",
       "category": "infosec",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-20",
-      "momentum": "stable",
-      "note": "Infoblox, N-able, Commission européenne : le sous-traitant est l'entrée. Pas de nouveau cas ce jour."
+      "last_seen": "2026-11-22",
+      "momentum": "montant",
+      "note": "agent-framework détourné, Entra Connect Health : le package officiel et l'API du fournisseur deviennent l'entrée."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-21",
+      "last_seen": "2026-11-22",
       "momentum": "montant",
-      "note": "KVM lit 127 Go d'hôte, vCenter exploité depuis septembre, PoC Cisco en quelques heures, SonicWall Gen 6 sans correctif."
+      "note": "KEV ajoute Roller, Expressway, NetWeaver, vCenter (échéance 23/11) ; Ghostscript et GPGME corrigés. Le calendrier ne dit rien de la vitesse."
     },
     {
-      "label": "Le SaaS légitime en canal de C2",
+      "label": "L'État attaqué dans ses bases et réseaux",
       "category": "infosec",
-      "first_seen": "2026-11-18",
-      "last_seen": "2026-11-19",
-      "momentum": "stable",
-      "note": "Cold Relic réutilise une compromission cloud ; pas de nouveau cas, le compte légitime survit au correctif."
-    },
-    {
-      "label": "La pile cloud se remonte chez soi",
-      "category": "devops",
-      "first_seen": "2026-11-11",
-      "last_seen": "2026-11-21",
-      "momentum": "montant",
-      "note": "PhoneBox recycle un Android en deck local, MIT, sans cloud ; la question passe au réseau et à la mémoire de l'agent."
+      "first_seen": "2026-11-22",
+      "last_seen": "2026-11-22",
+      "momentum": "nouveau",
+      "note": "FBI/NCIC, MAE autrichien, SilentAir et GTPDoor via signalisation télécom : périmètre confirmé, ampleur inconnue, attribution absente."
     },
     {
       "label": "Identité machine et privilèges",
       "category": "devops",
       "first_seen": "2026-11-17",
-      "last_seen": "2026-11-19",
-      "momentum": "stable",
-      "note": "CNIL 5 M€ sur des mots de passe en clair ; rien de neuf, le credential reste la frontière."
+      "last_seen": "2026-11-22",
+      "momentum": "montant",
+      "note": "agent-framework vole Azure/CI, Entra Connect Health expose les métadonnées de tenants : le credential cloud reste la frontière."
     },
     {
       "label": "La transparence comme interface de confiance",
       "category": "devops",
       "first_seen": "2026-11-15",
-      "last_seen": "2026-11-21",
+      "last_seen": "2026-11-22",
       "momentum": "montant",
-      "note": "Un tribunal arrache à Londres l'aveu de l'ordre Apple ; la transparence se gagne en procédure, l'opacité par défaut."
+      "note": "L'IPT force le Home Office à avouer l'ordre Apple ; Signal ferme l'écran aux agents. La preuve se gagne en procédure."
+    },
+    {
+      "label": "Le binaire recompilé comme preuve",
+      "category": "devops",
+      "first_seen": "2026-11-22",
+      "last_seen": "2026-11-22",
+      "momentum": "nouveau",
+      "note": "elf64-recomp (x86→ARM64), windissect (130+ DLL en interfaces prouvées), c2scope : la preuve passe à l'artefact reproductible."
     },
     {
       "label": "Matériel détourné au-delà des specs",
       "category": "diy",
       "first_seen": "2026-10-27",
-      "last_seen": "2026-11-21",
+      "last_seen": "2026-11-22",
       "momentum": "montant",
-      "note": "FireWire en USB-C via XMOS, étiquettes e-paper en cadres, Contra dumpé : la puce déjà payée fait autre chose."
+      "note": "free60 relève la MADV Mini sans app ni cloud, firmware CMU200, ESP32 sur MDA, WarpKVM HDMI→CSI : la puce payée fait autre chose."
     },
     {
       "label": "Reconstruire pour comprendre",
       "category": "diy",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-21",
+      "last_seen": "2026-11-22",
       "momentum": "montant",
-      "note": "Farcall émule un PC 1981 en SSH, WDDM2 greffé sur Windows 7 pour une RTX 5060 : le détour assume le plaisir."
+      "note": "Windows NT 4.0 sur Pi (PINT), Forager demake C99, elf64-recomp : le détour inutile assume le plaisir et la preuve."
     },
     {
       "label": "L'appareil qui résiste à son propriétaire",
       "category": "diy",
       "first_seen": "2026-11-20",
-      "last_seen": "2026-11-20",
+      "last_seen": "2026-11-22",
       "momentum": "stable",
-      "note": "HomeView collé, MyQ en boucle, moniteur bridé : l'hostilité est un choix de conception. Pas de nouveau cas."
+      "note": "free60 sans app ni cloud, CMU200 re-firmwaré : reprendre la main sur l'abandonné est un choix de conception."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-21",
+      "last_seen": "2026-11-22",
       "momentum": "montant",
-      "note": "Signal bloque les captures contre Siri/Gemini, l'autorité néerlandaise juge six lunettes IA dangereuses."
+      "note": "Signal bloque les captures contre les agents IA (protection incomplète), l'IPT force l'aveu Apple. Qui lit vos messages, sur quelle preuve."
     },
     {
       "label": "Le créateur devenu média régulé",
       "category": "societe",
       "first_seen": "2026-11-21",
       "last_seen": "2026-11-21",
-      "momentum": "nouveau",
-      "note": "L'Arcom étend le pluralisme aux créateurs SMAD pour 2027 : la qualification de média devient le champ de bataille."
+      "momentum": "stable",
+      "note": "Pas de nouveau signal ; l'Arcom étend le pluralisme aux créateurs SMAD pour 2027."
     }
   ],
   "watchlist": [
-    {
-      "label": "Le skill d'agent comme dépendance non auditée",
-      "category": "ia",
-      "since": "2026-11-19",
-      "note": "SkillEvaluator passe les skills au crible : un YAML cassé déraille l'exécution. La supply chain de l'agent est du texte non versionné."
-    },
-    {
-      "label": "La panne classifiée sans attribution",
-      "category": "infosec",
-      "since": "2026-11-18",
-      "note": "Commission européenne perturbée dix jours, ARTEX soupçonné sans preuve : panne, intrusion et attribution continuent de se confondre."
-    },
     {
       "label": "Le 0-day publié sans CVE",
       "category": "infosec",
@@ -185,7 +172,7 @@
       "label": "La provenance éditoriale comme preuve",
       "category": "ia",
       "since": "2026-11-21",
-      "note": "Phrack 73 : 10 articles sur 30 signalés IA par des détecteurs, verdict suggestif. C'est la provenance du canal qu'il faut établir, pas le style."
+      "note": "Phrack 73 : 10 articles sur 30 signalés IA par des détecteurs, verdict suggestif. C'est la provenance du canal qu'il faut établir."
     },
     {
       "label": "Le matériel de bord en fin de support",
@@ -204,32 +191,44 @@
       "category": "societe",
       "since": "2026-11-20",
       "note": "Poids ouverts : propriété, provenance, tests continus, plan de repli testé — quatre conditions rarement écrites, aucune traçabilité."
+    },
+    {
+      "label": "La rétention zéro qui ne retient rien",
+      "category": "ia",
+      "since": "2026-11-22",
+      "note": "Trois fournisseurs d'inférence fuient des prompts estampillés Zero Data Retention : la promesse de non-stockage n'est pas vérifiable."
+    },
+    {
+      "label": "Le firmware comme dernier recours",
+      "category": "diy",
+      "since": "2026-11-22",
+      "note": "free60 et CMU200 re-firmwarés sans cloud : le firmware maison devient le dernier recours quand l'app et le support disparaissent."
     }
   ],
   "tensions": [
     {
       "label": "Découverte automatisée vs remédiation calendaire",
-      "note": "Cairn trouve un 0-day seul, un PoC Cisco tombe en quelques heures, KVM n'a pas de workaround. La fenêtre ne se comprime plus, elle disparaît."
+      "note": "Les agents trouvent un 0-day MONAI Label et root en 48h ; CISA fixe l'échéance KEV au 23/11. La fenêtre ne se comprime plus, elle disparaît."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
-      "note": "On veut des agents autonomes (Cairn, Nod) et on installe l'approbation humaine au milieu. La même autonomie sert l'attaquant et l'assistant."
+      "note": "Le même agent autonome trouve des failles (Cairn, MONAI) et sert de vecteur (Meta Muse, prompts volés). L'autonomie ne se range pas d'un côté."
     },
     {
       "label": "Attribution nommée vs preuve publiable",
-      "note": "vCenter est attribué à Armory Castle, ARTEX reste soupçonné sans preuve. Un nom posé n'est pas une preuve ; la démonstration technique fait foi."
+      "note": "MONAI attribué à la Chine au conditionnel, ARTEX soupçonné sans preuve. Un nom posé n'est pas une démonstration."
     },
     {
       "label": "Transparence affichée vs preuve vérifiable",
-      "note": "Londres n'avoue l'ordre Apple que sous contrainte judiciaire, Signal referme l'écran que l'OS ouvre aux assistants. La preuve publiable devient l'étalon."
+      "note": "L'IPT arrache l'aveu Apple, Signal ferme l'écran que l'OS ouvre. La preuve publiable devient l'étalon."
     },
     {
       "label": "Propriété du matériel vs arbitrage de l'hôte",
-      "note": "FireWire réécrit en USB-C, étiquettes e-paper détournées, MyQ privé de cloud en boucle. Posséder l'objet ne décide pas de ce qu'il exécute."
+      "note": "free60 relève la MADV Mini sans cloud, NT 4.0 démarre sur Pi. Posséder l'objet ne décide pas de ce qu'il exécute."
     },
     {
       "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "PhoneBox promet le local sans cloud quand SonicWall abandonne ses Gen 6. L'ouverture choisit ses bénéficiaires, le support choisit ses dates."
+      "note": "PhoneBox promet le local quand SonicWall abandonne ses Gen 6. L'ouverture choisit ses bénéficiaires, le support ses dates."
     }
   ]
 }

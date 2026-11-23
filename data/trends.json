@@ -4,113 +4,113 @@
       "label": "Contrôle d'exécution des agents",
       "category": "ia",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-22",
+      "last_seen": "2026-11-23",
       "momentum": "montant",
-      "note": "Les releases 1.26.1/1.26.2 d'agent-framework (Microsoft) exfiltrent identifiants Azure/CI : le runtime de l'agent est la dépendance à auditer."
+      "note": "AgentArena (red-team MCP), OWASP Xpsd (triage), fast-anything (portage par agent) : l'agent est outil à auditer et à outiller."
+    },
+    {
+      "label": "L'agent, cible et mémoire exposée",
+      "category": "ia",
+      "first_seen": "2026-11-22",
+      "last_seen": "2026-11-23",
+      "momentum": "montant",
+      "note": "Prompts fuient via fournisseurs et revendeurs, Zero Data Retention invérifiable ; AgentArena outille la contre-mesure locale."
+    },
+    {
+      "label": "La censure devient une ligne de budget",
+      "category": "ia",
+      "first_seen": "2026-11-23",
+      "last_seen": "2026-11-23",
+      "momentum": "nouveau",
+      "note": "GPT-5.1 contourne le Grand Pare-feu pour 1 $ de tokens : la censure passe de compétence à budget, la traçabilité reste en suspens."
+    },
+    {
+      "label": "L'attaquant agentique",
+      "category": "infosec",
+      "first_seen": "2026-11-21",
+      "last_seen": "2026-11-23",
+      "momentum": "montant",
+      "note": "Microsoft : attaques accélérées par l'IA sur infrastructures critiques ; la fenêtre découverte→exploit se referme."
+    },
+    {
+      "label": "Chaîne d'approvisionnement : le tiers devient la porte",
+      "category": "infosec",
+      "first_seen": "2026-11-10",
+      "last_seen": "2026-11-23",
+      "momentum": "montant",
+      "note": "Entra Connect Health, cloud GL.iNet, Cleverbridge, MAE autrichien via prestataire : identité, firmware, paiement compromis par le tiers."
+    },
+    {
+      "label": "Gap découverte vs remédiation",
+      "category": "infosec",
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-11-23",
+      "momentum": "montant",
+      "note": "Microsoft met en garde contre la mise à jour non testée ; OWASP Xpsd trie la reachability. Le calendrier ne dit rien de la vitesse."
+    },
+    {
+      "label": "L'État attaqué dans ses bases et réseaux",
+      "category": "infosec",
+      "first_seen": "2026-11-22",
+      "last_seen": "2026-11-23",
+      "momentum": "montant",
+      "note": "USDA perturbe les paiements agricoles, MAE autrichien dérobé via prestataire : périmètre confirmé, ampleur inconnue."
+    },
+    {
+      "label": "Identité machine et privilèges",
+      "category": "devops",
+      "first_seen": "2026-11-17",
+      "last_seen": "2026-11-23",
+      "momentum": "montant",
+      "note": "Entra Connect Health expose métadonnées de tenant ; GL.iNet exige rotation des identifiants. Le credential cloud reste la frontière."
+    },
+    {
+      "label": "Le binaire recompilé comme preuve",
+      "category": "devops",
+      "first_seen": "2026-11-22",
+      "last_seen": "2026-11-23",
+      "momentum": "montant",
+      "note": "fast-anything porte 5% en Rust avec preuve d'équivalence, OWASP Xpsd sort du SARIF : la preuve passe à l'artefact reproductible."
+    },
+    {
+      "label": "Matériel détourné au-delà des specs",
+      "category": "diy",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-11-23",
+      "momentum": "montant",
+      "note": "GPU analogique à 20 cents sur CH570, Echo Dot re-câblé, TinyWifiDongle : la puce payée fait autre chose."
+    },
+    {
+      "label": "Reconstruire pour comprendre",
+      "category": "diy",
+      "first_seen": "2026-11-12",
+      "last_seen": "2026-11-23",
+      "momentum": "montant",
+      "note": "bitluni réduit un GPU à un composant, la robotique souple change de métrique : le détour assume le plaisir et la preuve."
+    },
+    {
+      "label": "L'appareil qui résiste à son propriétaire",
+      "category": "diy",
+      "first_seen": "2026-11-20",
+      "last_seen": "2026-11-23",
+      "momentum": "montant",
+      "note": "Echo Dot évide Amazon, TinyWifiDongle en 4 lignes de C++ : le firmware maison comme dernier recours."
+    },
+    {
+      "label": "Contrôle de la parole et de l'accès",
+      "category": "societe",
+      "first_seen": "2026-11-04",
+      "last_seen": "2026-11-23",
+      "momentum": "montant",
+      "note": "LiveTalking auto-hébergé : l'ouverture du code n'est pas la preuve du traitement ; qui lit vos messages, sur quelle preuve."
     },
     {
       "label": "Le leurre familier comme vecteur",
       "category": "ia",
       "first_seen": "2026-11-20",
       "last_seen": "2026-11-22",
-      "momentum": "montant",
-      "note": "Pasay City : 18 interpellés, face-swap pour se faire passer pour la police japonaise sur LINE. Le deepfake réchauffe un leurre connu."
-    },
-    {
-      "label": "L'agent, cible et mémoire exposée",
-      "category": "ia",
-      "first_seen": "2026-11-22",
-      "last_seen": "2026-11-22",
-      "momentum": "nouveau",
-      "note": "Dragos : 3 fournisseurs d'inférence fuient des prompts (dont Zero Data Retention), OpenRouter débranche ; une page web vide Meta Muse."
-    },
-    {
-      "label": "L'attaquant agentique",
-      "category": "infosec",
-      "first_seen": "2026-11-21",
-      "last_seen": "2026-11-22",
-      "momentum": "montant",
-      "note": "Agents IA autonomes : 0-day MONAI Label, root en 48h chez des universités, attribution Chine au conditionnel. L'échelle change."
-    },
-    {
-      "label": "Chaîne d'approvisionnement : le tiers devient la porte",
-      "category": "infosec",
-      "first_seen": "2026-11-10",
-      "last_seen": "2026-11-22",
-      "momentum": "montant",
-      "note": "agent-framework détourné, Entra Connect Health : le package officiel et l'API du fournisseur deviennent l'entrée."
-    },
-    {
-      "label": "Gap découverte vs remédiation",
-      "category": "infosec",
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-11-22",
-      "momentum": "montant",
-      "note": "KEV ajoute Roller, Expressway, NetWeaver, vCenter (échéance 23/11) ; Ghostscript et GPGME corrigés. Le calendrier ne dit rien de la vitesse."
-    },
-    {
-      "label": "L'État attaqué dans ses bases et réseaux",
-      "category": "infosec",
-      "first_seen": "2026-11-22",
-      "last_seen": "2026-11-22",
-      "momentum": "nouveau",
-      "note": "FBI/NCIC, MAE autrichien, SilentAir et GTPDoor via signalisation télécom : périmètre confirmé, ampleur inconnue, attribution absente."
-    },
-    {
-      "label": "Identité machine et privilèges",
-      "category": "devops",
-      "first_seen": "2026-11-17",
-      "last_seen": "2026-11-22",
-      "momentum": "montant",
-      "note": "agent-framework vole Azure/CI, Entra Connect Health expose les métadonnées de tenants : le credential cloud reste la frontière."
-    },
-    {
-      "label": "La transparence comme interface de confiance",
-      "category": "devops",
-      "first_seen": "2026-11-15",
-      "last_seen": "2026-11-22",
-      "momentum": "montant",
-      "note": "L'IPT force le Home Office à avouer l'ordre Apple ; Signal ferme l'écran aux agents. La preuve se gagne en procédure."
-    },
-    {
-      "label": "Le binaire recompilé comme preuve",
-      "category": "devops",
-      "first_seen": "2026-11-22",
-      "last_seen": "2026-11-22",
-      "momentum": "nouveau",
-      "note": "elf64-recomp (x86→ARM64), windissect (130+ DLL en interfaces prouvées), c2scope : la preuve passe à l'artefact reproductible."
-    },
-    {
-      "label": "Matériel détourné au-delà des specs",
-      "category": "diy",
-      "first_seen": "2026-10-27",
-      "last_seen": "2026-11-22",
-      "momentum": "montant",
-      "note": "free60 relève la MADV Mini sans app ni cloud, firmware CMU200, ESP32 sur MDA, WarpKVM HDMI→CSI : la puce payée fait autre chose."
-    },
-    {
-      "label": "Reconstruire pour comprendre",
-      "category": "diy",
-      "first_seen": "2026-11-12",
-      "last_seen": "2026-11-22",
-      "momentum": "montant",
-      "note": "Windows NT 4.0 sur Pi (PINT), Forager demake C99, elf64-recomp : le détour inutile assume le plaisir et la preuve."
-    },
-    {
-      "label": "L'appareil qui résiste à son propriétaire",
-      "category": "diy",
-      "first_seen": "2026-11-20",
-      "last_seen": "2026-11-22",
       "momentum": "stable",
-      "note": "free60 sans app ni cloud, CMU200 re-firmwaré : reprendre la main sur l'abandonné est un choix de conception."
-    },
-    {
-      "label": "Contrôle de la parole et de l'accès",
-      "category": "societe",
-      "first_seen": "2026-11-04",
-      "last_seen": "2026-11-22",
-      "momentum": "montant",
-      "note": "Signal bloque les captures contre les agents IA (protection incomplète), l'IPT force l'aveu Apple. Qui lit vos messages, sur quelle preuve."
+      "note": "Pas de nouveau signal ; le deepfake réchauffe un leurre connu (faux policier japonais sur LINE)."
     },
     {
       "label": "Le créateur devenu média régulé",
@@ -132,25 +132,19 @@
       "label": "La provenance éditoriale comme preuve",
       "category": "ia",
       "since": "2026-11-21",
-      "note": "Phrack 73 : 10 articles sur 30 signalés IA par des détecteurs, verdict suggestif. C'est la provenance du canal qu'il faut établir."
+      "note": "Phrack 73 : 10 articles sur 30 signalés IA par des détecteurs. C'est la provenance du canal qu'il faut établir."
     },
     {
       "label": "Le matériel de bord en fin de support",
       "category": "infosec",
       "since": "2026-11-21",
-      "note": "SonicWall laisse les Gen 6 sans correctif, même critiques, et renvoie aux Gen 8 : le bord du réseau reste exposé et impatchable."
+      "note": "SonicWall laisse les Gen 6 sans correctif et renvoie aux Gen 8 : le bord du réseau reste exposé et impatchable."
     },
     {
       "label": "Le silicium libre monte en complexité",
       "category": "diy",
       "since": "2026-11-15",
       "note": "Un cœur RV64IMAFDV hors-ordre fait tourner Linux 6.6 : l'ouverture matérielle progresse sans audit équivalent."
-    },
-    {
-      "label": "Gouvernance des poids ouverts",
-      "category": "societe",
-      "since": "2026-11-20",
-      "note": "Poids ouverts : propriété, provenance, tests continus, plan de repli testé — quatre conditions rarement écrites, aucune traçabilité."
     },
     {
       "label": "La rétention zéro qui ne retient rien",
@@ -162,40 +156,52 @@
       "label": "Le firmware comme dernier recours",
       "category": "diy",
       "since": "2026-11-22",
-      "note": "free60 et CMU200 re-firmwarés sans cloud : le firmware maison devient le dernier recours quand l'app et le support disparaissent."
+      "note": "Echo Dot re-câblé, TinyWifiDongle : le firmware maison devient le dernier recours quand l'app et le support disparaissent."
+    },
+    {
+      "label": "Le red-team d'agents s'outille",
+      "category": "infosec",
+      "since": "2026-11-23",
+      "note": "AgentArena (attaquant LLM, juge, 5 défenses) et OWASP Xpsd (reachability) : l'agent qui fuit devient l'agent qui trie."
+    },
+    {
+      "label": "Gouvernance des poids ouverts",
+      "category": "societe",
+      "since": "2026-11-20",
+      "note": "Poids ouverts : propriété, provenance, tests continus, plan de repli — quatre conditions rarement écrites, aucune traçabilité."
     }
   ],
   "tensions": [
     {
       "label": "Découverte automatisée vs remédiation calendaire",
-      "note": "Les agents trouvent un 0-day MONAI Label et root en 48h ; CISA fixe l'échéance KEV au 23/11. La fenêtre ne se comprime plus, elle disparaît."
+      "note": "Les agents trouvent un 0-day et root en 48h ; Microsoft met en garde contre la mise à jour non testée. La fenêtre ne se comprime plus, elle disparaît."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
-      "note": "Le même agent autonome trouve des failles (Cairn, MONAI) et sert de vecteur (Meta Muse, prompts volés). L'autonomie ne se range pas d'un côté."
+      "note": "Le même agent trouve des failles (AgentArena, OWASP Xpsd) et sert de vecteur (prompts volés, Meta Muse). L'autonomie ne se range pas d'un côté."
     },
     {
       "label": "Attribution nommée vs preuve publiable",
-      "note": "MONAI attribué à la Chine au conditionnel, ARTEX soupçonné sans preuve. Un nom posé n'est pas une démonstration."
+      "note": "MONAI attribué à la Chine au conditionnel, MAE autrichien sans attribution. Un nom posé n'est pas une démonstration."
     },
     {
       "label": "Transparence affichée vs preuve vérifiable",
-      "note": "L'IPT arrache l'aveu Apple, Signal ferme l'écran que l'OS ouvre. La preuve publiable devient l'étalon."
+      "note": "LiveTalking promet l'auto-hébergement, Zero Data Retention fuit. L'ouverture du code n'est pas la preuve du traitement."
     },
     {
       "label": "Propriété du matériel vs arbitrage de l'hôte",
-      "note": "free60 relève la MADV Mini sans cloud, NT 4.0 démarre sur Pi. Posséder l'objet ne décide pas de ce qu'il exécute."
+      "note": "Echo Dot évide Amazon, NT 4.0 démarre sur Pi. Posséder l'objet ne décide pas de ce qu'il exécute."
     },
     {
-      "label": "Ouverture affichée vs périmètres qui se referment",
-      "note": "PhoneBox promet le local quand SonicWall abandonne ses Gen 6. L'ouverture choisit ses bénéficiaires, le support ses dates."
+      "label": "Contournement bon marché vs traçabilité non résolue",
+      "note": "GPT-5.1 contourne le Pare-feu pour 1 $, mais les journaux et la rétention restent. Le coût baisse, la trace demeure."
     }
   ],
   "strategy_notes": [
-    "L'agent est désormais cible, vecteur et arme : MONAI (0-day), Meta Muse (mémoire), agent-framework (identifiants). Suivre la vitesse découverte→exploit et la rétention réelle des prompts.",
-    "La supply chain de l'agent rejoint celle du logiciel : releases détournées d'agent-framework, skills non audités. Demander la provenance et le diff de build avant de chroniquer un package.",
-    "Attribution à deux vitesses : MONAI nommé (Chine, conditionnel), ARTEX sans preuve. Ne pas traiter un nom posé comme preuve publiable dans le digest.",
-    "Le local-first et le firmware maison (free60, CMU200) déplacent la question vers ce que l'appareil garde et laisse écouter. Demander la politique de données avant de célébrer l'autonomie."
+    "L'agent est cible, vecteur et outil de triage : AgentArena, OWASP Xpsd, fast-anything. Suivre la preuve d'équivalence et la rétention réelle des prompts avant de chroniquer un package.",
+    "Le tiers est le périmètre : Entra Connect Health, GL.iNet, Cleverbridge, MAE autrichien. Demander qui administre identité, firmware et paiement avant de qualifier une brèche.",
+    "GPT-5.1 déplace la censure vers le budget : 1 $ de tokens suffit. La question n'est plus la compétence mais la traçabilité — journaux, rétention, provenance.",
+    "Le local-first et le firmware maison (Echo Dot, TinyWifiDongle, LiveTalking) déplacent la question vers ce que l'appareil garde. L'ouverture du code n'est pas la preuve du traitement."
   ],
-  "updated_at": "2026-11-22"
+  "updated_at": "2026-11-23"
 }

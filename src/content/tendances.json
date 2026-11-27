@@ -1,31 +1,13 @@
 {
-  "updated_at": "2026-11-26",
+  "updated_at": "2026-11-27",
   "synthesis": {
-    "headline": "La preuve n'est plus dans le document mais dans le comportement",
-    "narrative": "Le poids ouvert ne se prouve plus par sa fiche mais par sa <strong>latence</strong>, quand la vérification Lean d'Anthropic circule hors de ses murs et que le verdict Huawei se gagne chef par chef. La périphérie non administrée reste la porte — DNS du Trésor à trois dollars, registre Hex.pm, forge GitHub, chaudière Electrolux — pendant que l'OT de Danfoss attend un firmware qui n'existe pas. La réponse se déplace vers l'économie (quotas GPT-6.2, primes d'assurance, licences SDR) et vers la soustraction (Minipg, Qwen bare metal, firmware maison). Ce qui manque partout n'est pas la capacité mais la <em>preuve vérifiable</em>."
+    "headline": "L'autonomie s'arrête où l'irréversible commence",
+    "narrative": "Les agents de DeepMind pilotent une part du compute de Gemini, mais le connecteur Gmail de Workspace <strong>ne peut pas envoyer d'e-mail</strong> : la capacité s'annonce, la limite se code. Pendant que la forge GitHub devient le point d'entrée — 7 600 dépôts empoisonnés, 1Password tombé par un compte employé —, le DIY déplace la radio dans le firmware d'un Pi 5 et l'auto-hébergement IA déplace le contrôle sans fournir d'identité de modèle. Partout, <em>produire n'est pas prouver</em> : CVSS N/A, correctif Drupal incomplet, palmarès de citations."
   },
   "currents": [
     {
-      "label": "La preuve se déplace vers le comportement",
-      "note": "Latence de « Jev », artefact Lean qui circule, verdict Huawei chef par chef, PoC Drupal : on ne croit plus la documentation, on mesure ou on publie l'artefact.",
-      "categories": [
-        "ia",
-        "infosec",
-        "societe"
-      ]
-    },
-    {
-      "label": "Le tiers non administré reste le périmètre",
-      "note": "DNS du Trésor à 3 $, registre Hex.pm, forge GitHub, assureur, chaudière Electrolux : la porte est toujours chez quelqu'un qu'on ne contrôle pas.",
-      "categories": [
-        "infosec",
-        "devops",
-        "societe"
-      ]
-    },
-    {
-      "label": "Réduire les couches plutôt qu'ajouter des contrôles",
-      "note": "Qwen en bare metal, Minipg en un binaire, API en Rust, firmware maison, SDR en WebUSB : la soustraction remplace l'empilement de garde-fous.",
+      "label": "Le contrôle migre vers celui qui exécute",
+      "note": "Quota GPT-6.2, connecteur Gmail bridé, firmware patché du Pi 5, Euro Office en local : la gouvernance ne passe plus par la norme ni par l'API, mais par ce que l'exécutant accepte de faire.",
       "categories": [
         "ia",
         "devops",
@@ -33,12 +15,30 @@
       ]
     },
     {
-      "label": "La contrainte devient économique",
-      "note": "Quotas GPT-6.2, 35 Md de tokens pour une symphonie, primes d'assurance, licences SDR : le budget, pas la capacité, arbitre ce qu'on ose demander.",
+      "label": "Le tiers de confiance est le périmètre réel",
+      "note": "Dépôt GitHub, paquet utils, IPFS, outil RMM signé, compte employé, visa H-1B, fiche Play Store : l'entrée et la règle appartiennent à un intermédiaire qu'on n'audite pas.",
       "categories": [
-        "ia",
+        "infosec",
         "societe",
         "devops"
+      ]
+    },
+    {
+      "label": "Produire n'est pas prouver",
+      "note": "Palmarès de citations, registre de maladies guéries, CVSS N/A, Todo.md en guise d'implémentation, firmware libre sur design verrouillé : l'artefact circule plus vite que son attestation.",
+      "categories": [
+        "ia",
+        "infosec",
+        "diy"
+      ]
+    },
+    {
+      "label": "Le calcul cherche un nouveau domicile",
+      "note": "Un million de data centres spatiaux d'un côté, trois VM dans un onglet et un modèle en bare metal de l'autre : entre orbite et poste de travail, l'hyperscaler cesse d'être la seule évidence d'architecture.",
+      "categories": [
+        "devops",
+        "diy",
+        "ia"
       ]
     }
   ],
@@ -47,121 +47,121 @@
       "label": "Contrôle d'exécution des agents",
       "category": "ia",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-26",
+      "last_seen": "2026-11-27",
       "momentum": "montant",
-      "note": "OpenAI resserre les quotas GPT-6.2 (Astra -40 %, Sol -25 %) : le plafond d'usage devient le seul contrôle appliqué, sans sandbox ni journal."
+      "note": "Agents DeepMind pilotent une part du compute Gemini ; le connecteur Gmail de Workspace ne peut pas envoyer. L'autonomie s'arrête à l'irréversible."
     },
     {
       "label": "La frontière sort du texte",
       "category": "ia",
       "first_seen": "2026-11-25",
-      "last_seen": "2026-11-26",
+      "last_seen": "2026-11-27",
       "momentum": "montant",
-      "note": "GRH Lean circule hors d'Anthropic, le multiagent se proclame avenir, arXiv dénonce le bruit : produire n'est pas démontrer."
+      "note": "Incertitude enseignée face aux palmarès de citations et à « diseases cured by AI » : le verdict tient au compte, pas à la barre d'erreur."
     },
     {
       "label": "Poids ouverts : la provenance non prouvable",
       "category": "ia",
       "first_seen": "2026-11-25",
-      "last_seen": "2026-11-26",
+      "last_seen": "2026-11-27",
       "momentum": "montant",
-      "note": "Qwen en bare metal, « Jev » identifié à sa latence : faute de fiche vérifiable, le comportement temporel devient preuve d'identité."
+      "note": "Fork llama.cpp AMD, DeepSeekMath, auto-hébergement : le contrôle passe au propriétaire de la machine, pas la preuve du modèle."
     },
     {
       "label": "L'attaquant agentique",
       "category": "infosec",
       "first_seen": "2026-11-21",
-      "last_seen": "2026-11-26",
+      "last_seen": "2026-11-27",
       "momentum": "montant",
-      "note": "2 Md d'identifiants moissonnés, 1Password, Hunt.io : la matière première reste le credential valide, l'attribution reste une tentative."
+      "note": "Cinq zero-days MiCollab exploités en attaques soupçonnées assistées par IA ; WeaveLotus et Volant Manticore passent par le tiers de confiance."
     },
     {
       "label": "Chaîne d'approvisionnement : le tiers devient la porte",
       "category": "infosec",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-26",
+      "last_seen": "2026-11-27",
       "momentum": "montant",
-      "note": "Hex.pm CVSS 10.0 sur six registres, 28 prises DNS sur AWS, GitHub dégradé : la périphérie cède, le cœur tient encore."
+      "note": "PolinRider empoisonne 7 600 dépôts GitHub, 1Password tombe via un compte employé : la forge devient le point d'entrée, pas l'outil."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-26",
+      "last_seen": "2026-11-27",
       "momentum": "montant",
-      "note": "Drupal exploité avant l'échéance CISA du 27, GeoServer sondé, NFS root dormant 12 ans, Danfoss sans firmware : la fenêtre disparaît."
+      "note": "Second patch Drupal, CVSS N/A, 10 failles KEV en une fournée, 3 jours pour Juniper : le correctif annoncé ne dit pas le trou fermé."
     },
     {
       "label": "L'État attaqué dans ses bases et réseaux",
       "category": "infosec",
       "first_seen": "2026-11-22",
-      "last_seen": "2026-11-26",
-      "momentum": "montant",
-      "note": "FinCEN déconnecte ses systèmes sans qualifier l'ampleur ; cinq sous-domaines du Trésor repris à 3 $ : cœur et périphérie, même mois."
+      "last_seen": "2026-11-27",
+      "momentum": "stable",
+      "note": "WeaveLotus vise Bangkok et Manille pour la mer de Chine, Volant Manticore frappe Chypre : l'espionnage passe par l'application exposée."
     },
     {
       "label": "L'indépendance de la pile",
       "category": "devops",
       "first_seen": "2026-11-25",
-      "last_seen": "2026-11-26",
+      "last_seen": "2026-11-27",
       "momentum": "montant",
-      "note": "Minipg en un binaire, API Anthropic réécrite en Rust sans rustacés, tunnel SSH déguisé en HTTPS : moins de couches, un récit à croire."
+      "note": "CyberEther v2 réécrit son moteur SDR sur Vulkan/Metal/WebGPU, Rvoip en Rust, Skrash natif : l'abstraction GPU remplace le pilote vendeur."
     },
     {
-      "label": "Reconstruire pour comprendre",
-      "category": "diy",
-      "first_seen": "2026-11-12",
-      "last_seen": "2026-11-26",
-      "momentum": "montant",
-      "note": "G15 sans pilote sous Windows 11, C64 à double barre d'espace, musée sur cartouche Game Boy : le support d'origine comme dernier recours."
-    },
-    {
-      "label": "L'appareil qui résiste à son propriétaire",
-      "category": "diy",
-      "first_seen": "2026-11-20",
-      "last_seen": "2026-11-26",
-      "momentum": "montant",
-      "note": "Malahit DSP4s : firmware gratuit, design verrouillé sous licence. Posséder l'objet ne décide toujours pas de ce qu'il exécute."
-    },
-    {
-      "label": "L'ingéniosité passive",
-      "category": "diy",
-      "first_seen": "2026-11-25",
-      "last_seen": "2026-11-26",
-      "momentum": "montant",
-      "note": "Muscles LCE-graphène qui se mesurent eux-mêmes, moteurs pas-à-pas en guirlande : l'intelligence migre dans l'objet, pas dans le contrôleur."
+      "label": "L'environnement de dev redescend sur le poste",
+      "category": "devops",
+      "first_seen": "2026-11-27",
+      "last_seen": "2026-11-27",
+      "momentum": "nouveau",
+      "note": "Trois VM Linux dans un onglet, simulateurs iOS dans le Finder, Euro Office desktop : le provisioning distant perd son rôle de point d'entrée."
     },
     {
       "label": "Le spectre ouvert",
       "category": "diy",
       "first_seen": "2026-11-26",
-      "last_seen": "2026-11-26",
-      "momentum": "nouveau",
-      "note": "Antennaut en WebUSB sans compte, répéteur DMR Tier III open source : l'ouverture radio avance par les extrémités, pas par les fabricants."
+      "last_seen": "2026-11-27",
+      "momentum": "montant",
+      "note": "Saturn IE/RE en FPGA, BCM43455 du Pi 5 détourné en SDR, ESP32-C5 à 26 $ en client KiwiSDR : le firmware décide de ce qu'on écoute."
+    },
+    {
+      "label": "L'appareil qui résiste à son propriétaire",
+      "category": "diy",
+      "first_seen": "2026-11-20",
+      "last_seen": "2026-11-27",
+      "momentum": "montant",
+      "note": "Deux prises Belkin identiques, l'une morte avec le cloud, l'autre locale ; Android reflashé : le protocole et l'hôte décident, pas l'achat."
+    },
+    {
+      "label": "Reconstruire pour comprendre",
+      "category": "diy",
+      "first_seen": "2026-11-12",
+      "last_seen": "2026-11-27",
+      "momentum": "stable",
+      "note": "Terrarium ESP32 simulant la météo calédonienne, smartphones en troisième vie : reprendre l'objet pour comprendre ce qu'il exécute."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-26",
+      "last_seen": "2026-11-27",
       "momentum": "montant",
-      "note": "C-22 au Canada, chaudière Electrolux en Ukraine routant vers Moscou : la loi autorise l'écoute, l'objet l'exécute sans mandat."
+      "note": "Google publiera téléphone et adresse des devs Android solo ; f-ck_data_brokers traque les courtiers : même donnée exigée et pourchassée."
+    },
+    {
+      "label": "La règle vient de l'intermédiaire",
+      "category": "societe",
+      "first_seen": "2026-11-26",
+      "last_seen": "2026-11-27",
+      "momentum": "montant",
+      "note": "IBM donne trois semaines aux titulaires H-1B pour quitter les États-Unis : une date butoir interne fait office de politique migratoire privée."
     },
     {
       "label": "Le verdict comme preuve",
       "category": "societe",
       "first_seen": "2026-11-25",
       "last_seen": "2026-11-26",
-      "momentum": "montant",
-      "note": "Huawei coupable chef par chef, tarifs Trump contre 14 partenaires encore à l'état de proposition : deux leviers, deux certitudes."
-    },
-    {
-      "label": "La règle vient de l'intermédiaire",
-      "category": "societe",
-      "first_seen": "2026-11-26",
-      "last_seen": "2026-11-26",
-      "momentum": "nouveau",
-      "note": "Le NYT interdit Photoshop IA à ses photographes, les assureurs tarifient la fracture IA : ni le régulateur ni l'éditeur ne tranchent."
+      "momentum": "stable",
+      "note": "Huawei coupable chef par chef, tarifs Trump encore à l'état de proposition : deux leviers, deux certitudes ; rien de neuf ce jour."
     }
   ],
   "watchlist": [
@@ -178,16 +178,16 @@
       "note": "La vérification Lean de GRH circule hors d'Anthropic : qui audite l'artefact quand il quitte son auteur ?"
     },
     {
+      "label": "Le C2 logé dans la blockchain",
+      "category": "infosec",
+      "since": "2026-11-27",
+      "note": "PolinRider localise son serveur via la dernière transaction Ethereum : le blocage réseau classique devient inopérant, le registre public sert de canal."
+    },
+    {
       "label": "L'OT condamné à l'isolation réseau",
       "category": "infosec",
       "since": "2026-11-26",
-      "note": "Danfoss AK-SM 8xxA sans firmware correctif, Santos en contournement manuel : l'isolation est une consigne, pas une propriété."
-    },
-    {
-      "label": "Le sous-domaine périmé à trois dollars",
-      "category": "infosec",
-      "since": "2026-11-25",
-      "note": "28 prises de contrôle DNS sur AWS encore vivantes après 450 000 IP scannées : la périphérie oubliée reste la moins chère."
+      "note": "Danfoss AK-SM 8xxA sans firmware correctif, Juniper à trois jours : l'isolation est une consigne d'exploitation, pas une propriété du produit."
     },
     {
       "label": "L'actionneur qui se mesure lui-même",
@@ -196,42 +196,48 @@
       "note": "Fibres LCE-graphène auto-sensibles : le muscle devient capteur, ce qui rapproche la machine du petit muscle de la main."
     },
     {
+      "label": "Le calcul en orbite",
+      "category": "devops",
+      "since": "2026-11-27",
+      "note": "L'ESO juge nécessaire de se positionner sur un million de data centres spatiaux : quand un observatoire prend parti, le voisinage change de nature."
+    },
+    {
       "label": "L'assureur comme régulateur de fait",
       "category": "societe",
       "since": "2026-11-26",
       "note": "La prime remplace la norme : les assureurs cyber dessinent la fracture entre défendus et exposés, et les sous-équipés paient d'abord."
     },
     {
-      "label": "La chaudière qui route vers Moscou",
+      "label": "Le soupçon délégué au tir",
       "category": "societe",
-      "since": "2026-11-26",
-      "note": "Electrolux en Ukraine joignant Rusklimat, utilisateurs aiguillés vers Hommyn : l'objet domestique route vers un tiers non documenté."
+      "since": "2026-11-27",
+      "note": "Le Sénat adopte le « permis de tuer » : présomption de culpabilité plutôt que justification du tir. Source unique, à confirmer par le texte de loi."
     }
   ],
   "tensions": [
     {
       "label": "Découverte automatisée vs remédiation calendaire",
-      "note": "Un scanner Anthropic trouve la RCE Drupal, elle est exploitée avant l'échéance CISA du 27 novembre ; NFS dormait 12 ans, Danfoss n'a pas de firmware. La fenêtre ne se comprime plus, elle disparaît."
+      "note": "Le second patch Drupal ne ferme qu'une partie des états vulnérables, dix failles KEV tombent en une fournée, Juniper laisse trois jours et Danfoss n'a aucun firmware. La fenêtre ne se comprime plus, elle disparaît."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
-      "note": "Le même agent trouve une clé en six minutes et sert de vecteur ; le quota GPT-6.2 arbitre ce qu'on ose demander. L'autonomie ne se range pas d'un côté."
+      "note": "Les agents de DeepMind pilotent du compute réel et le connecteur Gmail s'interdit l'envoi, quand cinq zero-days MiCollab sont exploités en attaques soupçonnées assistées par IA. La même autonomie sert des deux côtés."
     },
     {
       "label": "Le modèle juge vs le modèle jugé",
-      "note": "GRH Lean circule, arXiv dénonce l'industrialisation du bruit, « Jev » s'identifie à sa latence : quand l'évaluateur est aussi un modèle, la preuve devient circulaire."
+      "note": "L'incertitude se vulgarise comme chapitre de statistiques au moment où des palmarès de citations et un registre de maladies « guéries par IA » publient des verdicts sans barre d'erreur. La preuve devient un classement."
     },
     {
       "label": "Transparence affichée vs preuve vérifiable",
-      "note": "Minipg est un binaire inspectable, l'API Rust d'Anthropic un récit sans rustacés, Malahit un firmware libre sur design verrouillé. L'ouverture du code n'est pas la preuve du traitement."
+      "note": "CyberEther affiche un code depuis 2021 quand Rvoip et Skrash n'exposent qu'un Todo.md ; le fork llama.cpp AMD déplace le contrôle sans fournir d'identité de modèle. L'ouverture du dépôt n'est pas la preuve du traitement."
     },
     {
       "label": "Propriété du matériel vs arbitrage de l'hôte",
-      "note": "Malahit sous licence, chaudière Electrolux routant vers Moscou : posséder l'objet ne décide ni de ce qu'il exécute, ni de ce qu'il garde, ni vers qui il parle."
+      "note": "Deux prises Belkin identiques divergent selon le cloud, une carte ESP32-C5 sans RF propre dépend de récepteurs publics, un Pi 5 n'écoute que par firmware patché. Posséder l'objet ne décide ni de ce qu'il exécute ni vers qui il parle."
     },
     {
-      "label": "L'infrastructure qu'on paie vs la sortie qu'on bricole",
-      "note": "Les assureurs tarifient la fracture IA quand le DIY répond firmware et SDR en WebUSB. Réparer l'entrée ou posséder la sortie, il faut choisir le levier."
+      "label": "Le calcul s'éloigne en orbite vs redescend sur le poste",
+      "note": "Le même jour, l'ESO accompagne un million de data centres spatiaux et Nextcloud ramène sa suite bureautique sur le desktop, pendant que trois VM tiennent dans un onglet. Le lieu du calcul redevient un argument politique."
     }
   ]
 }

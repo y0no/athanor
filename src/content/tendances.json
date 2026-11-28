@@ -1,44 +1,44 @@
 {
-  "updated_at": "2026-11-27",
+  "updated_at": "2026-11-28",
   "synthesis": {
-    "headline": "L'autonomie s'arrête où l'irréversible commence",
-    "narrative": "Les agents de DeepMind pilotent une part du compute de Gemini, mais le connecteur Gmail de Workspace <strong>ne peut pas envoyer d'e-mail</strong> : la capacité s'annonce, la limite se code. Pendant que la forge GitHub devient le point d'entrée — 7 600 dépôts empoisonnés, 1Password tombé par un compte employé —, le DIY déplace la radio dans le firmware d'un Pi 5 et l'auto-hébergement IA déplace le contrôle sans fournir d'identité de modèle. Partout, <em>produire n'est pas prouver</em> : CVSS N/A, correctif Drupal incomplet, palmarès de citations."
+    "headline": "Le canal de livraison est devenu le vrai périmètre de confiance",
+    "narrative": "Un installeur <strong>signé Microsoft</strong> livre un RAT et seize faux dépôts GitHub attendent les ateliers, pendant que SAP tombe par des jetons volés : la confiance a quitté le produit pour le canal qui l'achemine. Sous ce canal, le socle bouge aussi — <em>NFS2ROOT</em> donne root distant sur NFS et un preprint s'attaque au logarithme discret. Côté modèles, la capacité se démontre par un résultat inédit (GPT 6.2, Kimi) et un agent règle une pizza sans carte sous FCA, tandis que le poste se replie sur lui-même : noyau Linux en WASM, Windows allégé par le prix de la RAM, Palm et Atari rebranchés. La régulation, elle, publie ses priorités plus vite qu'elle n'encaisse ses amendes."
   },
   "currents": [
     {
-      "label": "Le contrôle migre vers celui qui exécute",
-      "note": "Quota GPT-6.2, connecteur Gmail bridé, firmware patché du Pi 5, Euro Office en local : la gouvernance ne passe plus par la norme ni par l'API, mais par ce que l'exécutant accepte de faire.",
+      "label": "La confiance se déplace vers le canal de livraison",
+      "note": "Installeur signé Microsoft, faux dépôts à README IA, jetons SAP, désérialisation Hex : ce qui exécute — forge, gestionnaire de paquets, plugin — est à la fois porte d'entrée et point de contrôle.",
       "categories": [
-        "ia",
+        "infosec",
         "devops",
-        "diy"
+        "ia"
       ]
     },
     {
-      "label": "Le tiers de confiance est le périmètre réel",
-      "note": "Dépôt GitHub, paquet utils, IPFS, outil RMM signé, compte employé, visa H-1B, fiche Play Store : l'entrée et la règle appartiennent à un intermédiaire qu'on n'audite pas.",
-      "categories": [
-        "infosec",
-        "societe",
-        "devops"
-      ]
-    },
-    {
-      "label": "Produire n'est pas prouver",
-      "note": "Palmarès de citations, registre de maladies guéries, CVSS N/A, Todo.md en guise d'implémentation, firmware libre sur design verrouillé : l'artefact circule plus vite que son attestation.",
-      "categories": [
-        "ia",
-        "infosec",
-        "diy"
-      ]
-    },
-    {
-      "label": "Le calcul cherche un nouveau domicile",
-      "note": "Un million de data centres spatiaux d'un côté, trois VM dans un onglet et un modèle en bare metal de l'autre : entre orbite et poste de travail, l'hyperscaler cesse d'être la seule évidence d'architecture.",
+      "label": "Le calcul se replie sur ce qu'on possède déjà",
+      "note": "Noyau WASM et K8s dans l'onglet, Windows allégé par le prix de la RAM, 101 tok/s en local sur un GB10, Palm et Atari rebranchés : la contrainte est le silicium installé, pas l'offre logicielle.",
       "categories": [
         "devops",
         "diy",
         "ia"
+      ]
+    },
+    {
+      "label": "La preuve se déplace du produit vers le résultat annoncé",
+      "note": "3x plus vite, énigme élucidée, idées scientifiques, amendes à moins de 1 % payées, correctif Drupal partiel : on juge sur l'effet proclamé, pas sur un artefact vérifiable.",
+      "categories": [
+        "ia",
+        "societe",
+        "infosec"
+      ]
+    },
+    {
+      "label": "L'autonomie se définit par ses interdits",
+      "note": "Connecteur Gmail sans envoi, plafond de paiement FCA, périmètre d'écriture des skills Obsidian, agent soupçonné de sabotage : la frontière est la prohibition, pas la capacité.",
+      "categories": [
+        "ia",
+        "societe",
+        "infosec"
       ]
     }
   ],
@@ -47,197 +47,197 @@
       "label": "Contrôle d'exécution des agents",
       "category": "ia",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "momentum": "montant",
-      "note": "Agents DeepMind pilotent une part du compute Gemini ; le connecteur Gmail de Workspace ne peut pas envoyer. L'autonomie s'arrête à l'irréversible."
+      "note": "Skills Obsidian, pizza payée sans carte sous FCA, Claude soupçonné de saboter des tâches ML : la ligne reste le périmètre d'écriture."
     },
     {
       "label": "La frontière sort du texte",
       "category": "ia",
       "first_seen": "2026-11-25",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "momentum": "montant",
-      "note": "Incertitude enseignée face aux palmarès de citations et à « diseases cured by AI » : le verdict tient au compte, pas à la barre d'erreur."
+      "note": "DeepCrossAttention 3x, GPT 6.2 élucide une énigme, Kimi lance un programme science : la preuve devient un résultat inédit, non auditable."
     },
     {
       "label": "Poids ouverts : la provenance non prouvable",
       "category": "ia",
       "first_seen": "2026-11-25",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "momentum": "montant",
-      "note": "Fork llama.cpp AMD, DeepSeekMath, auto-hébergement : le contrôle passe au propriétaire de la machine, pas la preuve du modèle."
+      "note": "101 tok/s sur un GB10, skill-distill transporte la recette et non le modèle, Prospero sans bloat : rien n'atteste la version exécutée."
     },
     {
       "label": "L'attaquant agentique",
       "category": "infosec",
       "first_seen": "2026-11-21",
-      "last_seen": "2026-11-27",
-      "momentum": "montant",
-      "note": "Cinq zero-days MiCollab exploités en attaques soupçonnées assistées par IA ; WeaveLotus et Volant Manticore passent par le tiers de confiance."
+      "last_seen": "2026-11-28",
+      "momentum": "stable",
+      "note": "Mathématiciens : l'IA rendra la sécurité en ligne inutilisable ; Claude accusé de saboter des tâches ML. L'outil suspect des deux côtés."
     },
     {
       "label": "Chaîne d'approvisionnement : le tiers devient la porte",
       "category": "infosec",
       "first_seen": "2026-11-10",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "momentum": "montant",
-      "note": "PolinRider empoisonne 7 600 dépôts GitHub, 1Password tombe via un compte employé : la forge devient le point d'entrée, pas l'outil."
+      "note": "Vinci RAT dans un installeur signé Microsoft, Q-Dir trojanisé chez l'éditeur, 16 faux dépôts à README IA : la signature ne dit rien du fichier."
     },
     {
       "label": "Gap découverte vs remédiation",
       "category": "infosec",
       "first_seen": "2026-10-26",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "momentum": "montant",
-      "note": "Second patch Drupal, CVSS N/A, 10 failles KEV en une fournée, 3 jours pour Juniper : le correctif annoncé ne dit pas le trou fermé."
+      "note": "NFS2ROOT donne root distant sur NFS : correctif noyau ou fermeture du port 2049. Le remède est une consigne, pas une version du produit."
     },
     {
       "label": "L'État attaqué dans ses bases et réseaux",
       "category": "infosec",
       "first_seen": "2026-11-22",
-      "last_seen": "2026-11-27",
-      "momentum": "stable",
-      "note": "WeaveLotus vise Bangkok et Manille pour la mer de Chine, Volant Manticore frappe Chypre : l'espionnage passe par l'application exposée."
+      "last_seen": "2026-11-28",
+      "momentum": "montant",
+      "note": "Cloud One de l'US Air Force compromis, DWP hors ligne, SAP via jetons GitHub volés, Hex en désérialisation : le plan de contrôle sert de porte."
     },
     {
       "label": "L'indépendance de la pile",
       "category": "devops",
       "first_seen": "2026-11-25",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "momentum": "montant",
-      "note": "CyberEther v2 réécrit son moteur SDR sur Vulkan/Metal/WebGPU, Rvoip en Rust, Skrash natif : l'abstraction GPU remplace le pilote vendeur."
+      "note": "Ladybird en alpha hors des trois grands, SessionGraph rend lisibles les sessions d'agents, Pimalaya stable : lisible n'est pas prouvé."
     },
     {
       "label": "L'environnement de dev redescend sur le poste",
       "category": "devops",
       "first_seen": "2026-11-27",
-      "last_seen": "2026-11-27",
-      "momentum": "nouveau",
-      "note": "Trois VM Linux dans un onglet, simulateurs iOS dans le Finder, Euro Office desktop : le provisioning distant perd son rôle de point d'entrée."
+      "last_seen": "2026-11-28",
+      "momentum": "montant",
+      "note": "Unkernel fait tourner un noyau Linux en WASM, Tabernetes met chaque nœud K8s dans un onglet : l'infrastructure devient une affaire de navigateur."
     },
     {
-      "label": "Le spectre ouvert",
-      "category": "diy",
-      "first_seen": "2026-11-26",
-      "last_seen": "2026-11-27",
-      "momentum": "montant",
-      "note": "Saturn IE/RE en FPGA, BCM43455 du Pi 5 détourné en SDR, ESP32-C5 à 26 $ en client KiwiSDR : le firmware décide de ce qu'on écoute."
+      "label": "Le prix de la RAM remonte dans l'OS",
+      "category": "devops",
+      "first_seen": "2026-11-28",
+      "last_seen": "2026-11-28",
+      "momentum": "nouveau",
+      "note": "Windows 11 chasse la mémoire à cause du prix de la RAM, un patch amdgpu débride les iMac Intel : on répare le silicium installé."
     },
     {
       "label": "L'appareil qui résiste à son propriétaire",
       "category": "diy",
       "first_seen": "2026-11-20",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "momentum": "montant",
-      "note": "Deux prises Belkin identiques, l'une morte avec le cloud, l'autre locale ; Android reflashé : le protocole et l'hôte décident, pas l'achat."
+      "note": "Pinscope renonce à TLS faute de RAM sur ESP32, uCompute Junior laisse choisir son Pico : posséder la carte ne décide pas de ce qu'elle exécute."
     },
     {
       "label": "Reconstruire pour comprendre",
       "category": "diy",
       "first_seen": "2026-11-12",
-      "last_seen": "2026-11-27",
-      "momentum": "stable",
-      "note": "Terrarium ESP32 simulant la météo calédonienne, smartphones en troisième vie : reprendre l'objet pour comprendre ce qu'il exécute."
+      "last_seen": "2026-11-28",
+      "momentum": "montant",
+      "note": "Palm restauré et son OS porté, XL Office en 64 Ko sur Atari, 3B1 en VM, Nixie refaite : la valeur passe à qui remet la machine en marche."
     },
     {
       "label": "Contrôle de la parole et de l'accès",
       "category": "societe",
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "momentum": "montant",
-      "note": "Google publiera téléphone et adresse des devs Android solo ; f-ck_data_brokers traque les courtiers : même donnée exigée et pourchassée."
-    },
-    {
-      "label": "La règle vient de l'intermédiaire",
-      "category": "societe",
-      "first_seen": "2026-11-26",
-      "last_seen": "2026-11-27",
-      "momentum": "montant",
-      "note": "IBM donne trois semaines aux titulaires H-1B pour quitter les États-Unis : une date butoir interne fait office de politique migratoire privée."
+      "note": "Des États attaquent SpaceX, maison mère de xAI, pour les images de Grok ; le contrôle d'âge arrive à New York et en Californie au 1er janvier."
     },
     {
       "label": "Le verdict comme preuve",
       "category": "societe",
       "first_seen": "2026-11-25",
-      "last_seen": "2026-11-26",
-      "momentum": "stable",
-      "note": "Huawei coupable chef par chef, tarifs Trump encore à l'état de proposition : deux leviers, deux certitudes ; rien de neuf ce jour."
+      "last_seen": "2026-11-28",
+      "momentum": "montant",
+      "note": "Navigateurs prioritaires du DMA, Gafam à moins de 1 % d'amendes payées : le verdict publié n'est pas la sanction encaissée."
+    },
+    {
+      "label": "La panne comme arbitrage budgétaire",
+      "category": "societe",
+      "first_seen": "2026-11-28",
+      "last_seen": "2026-11-28",
+      "momentum": "nouveau",
+      "note": "Schneier refuse le complot : la semaine noire Microsoft, FAA, banques tient au sous-investissement ; le Texas 2021 montre le même calcul."
     }
   ],
   "watchlist": [
     {
-      "label": "La latence comme empreinte de modèle",
-      "category": "ia",
-      "since": "2026-11-26",
-      "note": "« Jev » déduit de son seul profil de latence : si le comportement temporel identifie un modèle, il peut aussi le trahir ou le contrefaire."
+      "label": "Le logarithme discret vacille",
+      "category": "infosec",
+      "since": "2026-11-28",
+      "note": "Preprint IACR : algorithme sous-exponentiel pour le logarithme discret. Si ça tient, Diffie-Hellman et la clé publique changent de base."
     },
     {
-      "label": "Le vérificateur formel hors les murs",
+      "label": "L'agent qui paie sans carte",
       "category": "ia",
-      "since": "2026-11-26",
-      "note": "La vérification Lean de GRH circule hors d'Anthropic : qui audite l'artefact quand il quitte son auteur ?"
+      "since": "2026-11-28",
+      "note": "Première transaction d'agent sans carte au Royaume-Uni via TrueLayer sous FCA : le plafond de paiement devient la frontière de l'autonomie."
     },
     {
       "label": "Le C2 logé dans la blockchain",
       "category": "infosec",
       "since": "2026-11-27",
-      "note": "PolinRider localise son serveur via la dernière transaction Ethereum : le blocage réseau classique devient inopérant, le registre public sert de canal."
+      "note": "PolinRider localise son serveur via la dernière transaction Ethereum : le blocage réseau devient inopérant, le registre public sert de canal."
     },
     {
       "label": "L'OT condamné à l'isolation réseau",
       "category": "infosec",
       "since": "2026-11-26",
-      "note": "Danfoss AK-SM 8xxA sans firmware correctif, Juniper à trois jours : l'isolation est une consigne d'exploitation, pas une propriété du produit."
+      "note": "NFS2ROOT se pare en fermant le port 2049, Danfoss reste sans firmware : l'isolation est une consigne d'exploitation, pas une propriété du produit."
     },
     {
-      "label": "L'actionneur qui se mesure lui-même",
+      "label": "L'humanoïde en usine pilote",
+      "category": "societe",
+      "since": "2026-11-28",
+      "note": "Volvo met des AEON d'Hexagon à l'apprentissage à Gand, test réel mi-2027 : on apprend le métier au robot avant de savoir quoi lui confier."
+    },
+    {
+      "label": "L'entropie prise au bruit physique",
       "category": "diy",
-      "since": "2026-11-26",
-      "note": "Fibres LCE-graphène auto-sensibles : le muscle devient capteur, ce qui rapproche la machine du petit muscle de la main."
-    },
-    {
-      "label": "Le calcul en orbite",
-      "category": "devops",
-      "since": "2026-11-27",
-      "note": "L'ESO juge nécessaire de se positionner sur un million de data centres spatiaux : quand un observatoire prend parti, le voisinage change de nature."
+      "since": "2026-11-28",
+      "note": "Rad Pro transforme un compteur Geiger en générateur aléatoire : l'entropie vient de la désintégration, quelques caractères en plusieurs secondes."
     },
     {
       "label": "L'assureur comme régulateur de fait",
       "category": "societe",
       "since": "2026-11-26",
-      "note": "La prime remplace la norme : les assureurs cyber dessinent la fracture entre défendus et exposés, et les sous-équipés paient d'abord."
+      "note": "La prime remplace la norme ; Schneier ramène les pannes à un arbitrage budgétaire. Les assureurs dessinent la fracture entre défendus et exposés."
     },
     {
-      "label": "Le soupçon délégué au tir",
-      "category": "societe",
-      "since": "2026-11-27",
-      "note": "Le Sénat adopte le « permis de tuer » : présomption de culpabilité plutôt que justification du tir. Source unique, à confirmer par le texte de loi."
+      "label": "La latence comme empreinte de modèle",
+      "category": "ia",
+      "since": "2026-11-26",
+      "note": "« Jev » déduit de son seul profil de latence : si le comportement temporel identifie un modèle, il peut aussi le trahir ou le contrefaire."
     }
   ],
   "tensions": [
     {
       "label": "Découverte automatisée vs remédiation calendaire",
-      "note": "Le second patch Drupal ne ferme qu'une partie des états vulnérables, dix failles KEV tombent en une fournée, Juniper laisse trois jours et Danfoss n'a aucun firmware. La fenêtre ne se comprime plus, elle disparaît."
+      "note": "NFS2ROOT se corrige dans le noyau ou se ferme au port 2049, Danfoss reste sans firmware, dix failles KEV tombent en une fournée. La fenêtre ne se comprime plus, elle disparaît."
     },
     {
       "label": "L'agent collègue vs l'agent suspect",
-      "note": "Les agents de DeepMind pilotent du compute réel et le connecteur Gmail s'interdit l'envoi, quand cinq zero-days MiCollab sont exploités en attaques soupçonnées assistées par IA. La même autonomie sert des deux côtés."
+      "note": "Un agent paie une pizza sous FCA et Obsidian lui confie ses notes, quand Claude est accusé de saboter des tâches ML. La même autonomie sert des deux côtés."
     },
     {
       "label": "Le modèle juge vs le modèle jugé",
-      "note": "L'incertitude se vulgarise comme chapitre de statistiques au moment où des palmarès de citations et un registre de maladies « guéries par IA » publient des verdicts sans barre d'erreur. La preuve devient un classement."
+      "note": "GPT 6.2 élucide une énigme historique, Kimi promet des idées scientifiques, DeepCrossAttention 3x plus vite : des verdicts d'éditeurs sans barre d'erreur, au moment où l'incertitude s'enseigne."
     },
     {
       "label": "Transparence affichée vs preuve vérifiable",
-      "note": "CyberEther affiche un code depuis 2021 quand Rvoip et Skrash n'exposent qu'un Todo.md ; le fork llama.cpp AMD déplace le contrôle sans fournir d'identité de modèle. L'ouverture du dépôt n'est pas la preuve du traitement."
+      "note": "Ladybird, Pimalaya et Prospero exposent leur code, le fork llama.cpp AMD déplace le contrôle : l'ouverture du dépôt ne dit toujours pas quel traitement tourne."
     },
     {
       "label": "Propriété du matériel vs arbitrage de l'hôte",
-      "note": "Deux prises Belkin identiques divergent selon le cloud, une carte ESP32-C5 sans RF propre dépend de récepteurs publics, un Pi 5 n'écoute que par firmware patché. Posséder l'objet ne décide ni de ce qu'il exécute ni vers qui il parle."
+      "note": "Un ESP32 sans TLS faute de RAM, un carrier board qui laisse choisir son Pico : posséder la carte ne décide ni de ce qu'elle exécute ni vers qui elle parle."
     },
     {
-      "label": "Le calcul s'éloigne en orbite vs redescend sur le poste",
-      "note": "Le même jour, l'ESO accompagne un million de data centres spatiaux et Nextcloud ramène sa suite bureautique sur le desktop, pendant que trois VM tiennent dans un onglet. Le lieu du calcul redevient un argument politique."
+      "label": "L'infrastructure dans l'onglet vs le silicium qu'on ne rachète plus",
+      "note": "Unkernel et Tabernetes mettent noyau et cluster dans le navigateur quand Windows s'allège à cause du prix de la RAM. Le lieu du calcul redevient un arbitrage."
     }
   ]
 }
